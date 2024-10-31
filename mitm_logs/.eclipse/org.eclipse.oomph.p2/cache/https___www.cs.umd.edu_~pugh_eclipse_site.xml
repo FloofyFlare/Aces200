@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <description url="http://www.cs.umd.edu/~pugh/eclipse">
+    Update Site for the University of Maryland's Course Project Manager Eclipse plugin.  The Course Project Manager allows for projects to be submitted to the submit server (aka Marmoset().
+  </description>
+  <feature url="features/edu.umd.cs.eclipse.courseProjectManager_0.3.1.jar" id="edu.umd.cs.eclipse.courseProjectManager" version="0.3.1"/>
+</site>

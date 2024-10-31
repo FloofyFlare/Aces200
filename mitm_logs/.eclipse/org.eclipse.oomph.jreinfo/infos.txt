@@ -1,0 +1,3 @@
+/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home:11:0:15:64:true:1650427730000:x86_64
+/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home:17:0:6:64:true:1674260365000:x86_64
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home:1:8:0:64:false:1673254756000:x86_64

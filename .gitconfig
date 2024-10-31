@@ -11,3 +11,6 @@
 [grep]
   lineNumber = true
   column = true
+[user]
+	email = darkninja4347@yahoo.com
+	name = FloofyFlare
