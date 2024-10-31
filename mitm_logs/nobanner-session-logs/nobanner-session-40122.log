@@ -1,0 +1,35 @@
+(node:650158) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-40122',
+  containerIp: '10.0.3.199',
+  mitmPort: 40122,
+  autoAccessFixed: 1
+}
+2024-10-31 14:00:02.855 - [Info] MITM Version: 2
+2024-10-31 14:00:02.857 - [Info] Auto Access Enabled: true
+2024-10-31 14:00:02.857 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-10-31 14:00:02.880 - [Info] SSH man-in-the-middle server for 10.0.3.199 listening on 10.0.3.1:40122
+2024-10-31 14:00:54.194 - [Debug] [Connection] Attacker connected: 80.64.30.138 | Client Identification: SSH-2.0-libssh_0.10.5
+2024-10-31 14:00:54.963 - [Debug] [Auth] Attacker 80.64.30.138 trying to authenticate with 'none'
+2024-10-31 14:00:54.964 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-10-31 14:00:55.258 - [Debug] [Auth] Attacker 80.64.30.138 trying to authenticate with 'password'
+2024-10-31 14:00:55.259 - [Debug] [Auto Access] Attacker: 80.64.30.138, Threshold: 1, Attempts: 1
+2024-10-31 14:00:55.260 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-10-31 14:00:55.261 - [Debug] [Auth] Attacker: 80.64.30.138 has so far made 1 attempts. Remaining: 5 attempts
+2024-10-31 14:00:55.541 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

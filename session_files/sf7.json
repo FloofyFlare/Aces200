@@ -1,0 +1,27 @@
+{
+  "session_id": "umd_career_services_007",
+  "user_id": "user_23456",
+  "session_date": "2024-10-23",
+  "messages": [
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T16:45:00",
+      "text": "How can I schedule a meeting with a career counselor?"
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T16:45:05",
+      "text": "You can schedule an appointment with a career counselor through Careers4Terps. Would you like the link to log in?"
+    },
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T16:45:15",
+      "text": "Yes, please."
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T16:45:25",
+      "text": "Here’s the link to Careers4Terps: [Careers4Terps](https://careers.umd.edu/careers4terps)."
+    }
+  ]
+}

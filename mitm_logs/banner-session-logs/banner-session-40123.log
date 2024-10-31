@@ -1,0 +1,42 @@
+(node:658016) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-40123',
+  containerIp: '10.0.3.221',
+  mitmPort: 40123,
+  autoAccessFixed: 1
+}
+2024-10-31 14:19:41.713 - [Info] MITM Version: 2
+2024-10-31 14:19:41.715 - [Info] Auto Access Enabled: true
+2024-10-31 14:19:41.715 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-10-31 14:19:41.734 - [Info] SSH man-in-the-middle server for 10.0.3.221 listening on 10.0.3.1:40123
+2024-10-31 15:14:38.652 - [Debug] [Connection] Attacker connected: 118.35.34.59 | Client Identification: SSH-2.0-SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2024-10-31 15:14:43.332 - [Debug] [Connection] Attacker closed the connection
+2024-10-31 15:16:50.355 - [Debug] [Connection] Attacker connected: 80.64.30.139 | Client Identification: SSH-2.0-libssh_0.10.5
+2024-10-31 15:16:51.142 - [Debug] [Auth] Attacker 80.64.30.139 trying to authenticate with 'none'
+2024-10-31 15:16:51.143 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-10-31 15:16:51.468 - [Debug] [Auth] Attacker 80.64.30.139 trying to authenticate with 'password'
+2024-10-31 15:16:51.469 - [Debug] [Auto Access] Attacker: 80.64.30.139, Threshold: 1, Attempts: 1
+2024-10-31 15:16:51.470 - [Debug] [Auto Access] Compromising the honeypot
+2024-10-31 15:16:51.470 - [Debug] [Auto Access] Adding the following credentials: 'sshd:admin'
+2024-10-31 15:16:51.613 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-10-31 15:16:51.615 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-10-31 15:16:51.615 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.221
+2024-10-31 15:16:51.713 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-10-31 15:16:52.645 - [Debug] [Connection] Attacker closed connection
+2024-10-31 15:16:52.656 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-10-31 15:16:52.660 - [Debug] [LXC] Container's OpenSSH server closed connection

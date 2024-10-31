@@ -1,0 +1,37 @@
+{
+  "session_id": "umd_academic_advising_003",
+  "user_id": "user_54321",
+  "session_date": "2024-10-23",
+  "messages": [
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T12:10:00",
+      "text": "I’m not sure what courses to take next semester. Can you help?"
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T12:10:05",
+      "text": "Of course! Have you already spoken to your academic advisor?"
+    },
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T12:10:20",
+      "text": "No, I haven’t."
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T12:10:30",
+      "text": "No problem! You can schedule an appointment through TerpEngage or explore your major’s course requirements online. Would you like the link to TerpEngage or the course catalog?"
+    },
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T12:10:45",
+      "text": "Yes, the course catalog link, please."
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T12:10:50",
+      "text": "Here’s the link to the UMD course catalog: [Course Catalog](https://www.umd.edu/catalog)."
+    }
+  ]
+}

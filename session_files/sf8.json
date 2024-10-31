@@ -1,0 +1,27 @@
+{
+  "session_id": "umd_it_support_008",
+  "user_id": "user_34567",
+  "session_date": "2024-10-23",
+  "messages": [
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T17:30:00",
+      "text": "I’m having trouble accessing my UMD email. Can you help?"
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T17:30:05",
+      "text": "I’m sorry to hear that! Have you tried resetting your password through the UMD Directory?"
+    },
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T17:30:20",
+      "text": "Not yet."
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T17:30:30",
+      "text": "You can reset your password here: [UMD Directory](https://www.directory.umd.edu/passwordreset). If you’re still having trouble, you can contact IT support at itsupport@umd.edu."
+    }
+  ]
+}

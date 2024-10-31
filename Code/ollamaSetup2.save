@@ -1,0 +1,40 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 <container_name>"
+  exit 1
+fi
+
+# Variables
+CONTAINER_NAME="$1"
+DISTRO="ubuntu" # You can change this to any supported distro
+RELEASE="focal" # Ubuntu 20.04 (Focal Fossa), adjust as needed
+
+# Create LXC container
+echo "Creating LXC container..."
+sudo lxc-create -t download -n $CONTAINER_NAME -- --dist $DISTRO --release $RELEASE --arch amd64
+
+# Start the container
+echo "Starting container..."
+sudo lxc-start -n $CONTAINER_NAME
+
+# Wait for the container to start
+sleep 5
+
+# Update and install curl inside the container
+echo "Installing curl..."
+sudo lxc-attach -n $CONTAINER_NAME -- bash -c "apt-get install -y curl"
+
+# Install Ollama inside the container
+echo "Installing Ollama..."
+sudo lxc-attach -n $CONTAINER_NAME -- bash -c "curl -fsSL https://ollama.com/install.sh | sh"
+
+# Run the model
+echo "Running Ollama model..."
+sudo lxc-attach -n $CONTAINER_NAME -- bash -c "./ollama run qwen:0.5b-chat-v1.5-q2_K"
+
+
+
+# Keep the container running
+echo "LXC container setup complete. Container is running the Ollama model."
+

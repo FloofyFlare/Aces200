@@ -1,0 +1,27 @@
+{
+  "session_id": "umd_dining_006",
+  "user_id": "user_12347",
+  "session_date": "2024-10-23",
+  "messages": [
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T15:30:00",
+      "text": "Where can I find the dining hall menu for today?"
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T15:30:05",
+      "text": "You can view today’s dining hall menus by visiting the Dining Services website. Would you like the link?"
+    },
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T15:30:15",
+      "text": "Yes, that would be great."
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T15:30:25",
+      "text": "Here’s the link to today’s menu: [UMD Dining Menus](https://www.dining.umd.edu/menus)."
+    }
+  ]
+}

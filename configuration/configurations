@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ -z "$1" ]; then
+  echo "Please provide an argument between 1 and 4."
+  exit 1
+fi
+
+# Store the argument
+option=$1
+
+# Display different messages based on the argument
+case $option in
+  1)
+    echo "You selected option 1: Start the process"
+    ;;
+  2)
+    echo "You selected option 2: Stop the process"
+    ;;
+  3)
+    echo "You selected option 3: Restart the process"
+    ;;
+  4)
+    echo "You selected option 4: Check the status"
+    ;;
+  *)
+    echo "Invalid option. Please choose between 1 and 4."
+    ;;
+esac

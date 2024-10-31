@@ -1,0 +1,75 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ -z "$1" ]; then
+  echo "Please provide an argument between 1 and 4."
+  exit 1
+fi
+
+# Store the argument
+option=$1
+
+# Display different messages based on the argument
+case $option in
+  1)
+	#!/bin/bash
+
+# Replace "container_name" with the name of your LXC container
+container_name="your_container_name"
+
+# File path inside the container
+file_path="/path/to/your/file.sh"
+
+# Create the file inside the container
+lxc exec $container_name -- bash -c "cat << 'EOF' > $file_path
+#!/bin/bash
+
+red=\$(tput setaf 1)
+yellow=\$(tput setaf 3)
+white=\$(tput setaf 7)
+green=\$(tput setaf 2)
+blue=\$(tput setaf 4)
+magenta=\$(tput setaf 5)
+cyan=\$(tput setaf 6)
+reset=\$(tput sgr0)
+
+echo -e \"\${red}\$(figlet -f slant 'Welcome to')\${reset}\"
+echo -e \"\${white}\$(figlet -f slant \"University of Maryland's\")\${reset}\"
+echo -e \"\${yellow}\$(figlet -f slant 'Official Chatbot')\${reset}\"
+
+echo -e \"\${white}==============================================================\${reset}\"
+echo -e \"\${red}  ⚠️  You are now interacting with a chatbot ⚠️ \${reset}\"
+echo -e \"\${red}  This system is monitored for quality and security.\${reset}\"
+echo -e \"\${red}  All interactions are recorded for further analysis.\${reset}\"
+echo -e \"\${white}==============================================================\${reset}\"
+
+echo -e \"\${white}*\${reset} \${green}This chatbot is designed to assist you with queries related to academic services, general campus information, and more.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}Feel free to ask questions, explore resources, or get personalized help from the comfort of your device.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}For information on how to use a chatbot, refer to the HELP file.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}Our chatbot is here to provide fast, 24/7 support.\${reset}\"
+echo -e \"\${white}==============================================================\${reset}\"
+
+echo -e \"\${red}ALERT: \${white}Chatbot active and ready to assist.\${reset}\"
+echo -e \"\${red}ALERT: \${white}Use Chatbot by running the command 'ollama run qwen:0.5b-chat-v1.5-q2_K'\${reset}\"
+EOF"
+
+# Make the file executable
+lxc exec $container_name -- chmod +x $file_path
+
+echo "File created and made executable inside the container."
+
+    echo "You selected option 1: Start the process"
+    ;;
+  2)
+    echo "You selected option 2: Stop the process"
+    ;;
+  3)
+    echo "You selected option 3: Restart the process"
+    ;;
+  4)
+    echo "You selected option 4: Check the status"
+    ;;
+  *)
+    echo "Invalid option. Please choose between 1 and 4."
+    ;;
+esac

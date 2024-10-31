@@ -1,0 +1,116 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ -z "$1" ]; then
+  echo "FAIL: provide an argument between 1 and 4."
+  exit 1
+fi
+
+if [ -z "$2" ]; then
+  echo "FAIL: provide a container Name."
+  exit 1
+fi
+
+# Store the argument
+option=$1
+container_name=$2
+file_path="/root/helpstartchatbot.sh"
+
+# Display different messages based on the argument
+case $option in
+  1)
+		echo "banner & setup/help script added"
+    # Modify the .bashrc file in the container
+    sudo lxc-attach -n $container_name -- bash -c "cat << 'EOF' > /root/.bashrc
+red=\$(tput setaf 1)
+yellow=\$(tput setaf 3)
+white=\$(tput setaf 7)
+green=\$(tput setaf 2)
+blue=\$(tput setaf 4)
+magenta=\$(tput setaf 5)
+cyan=\$(tput setaf 6)
+reset=\$(tput sgr0)
+
+echo -e \"\${white}Welcome to the University of Maryland's\${reset}\"
+echo -e \"\${yellow}Official Chatbot\${reset}\"
+
+echo -e \"\${white}==============================================================\${reset}\"
+echo -e \"\${red}  ⚠️  You are now interacting with a chatbot ⚠️  \${reset}\"
+echo -e \"\${red}  This system is monitored for quality and security.\${reset}\"
+echo -e \"\${red}  All interactions are recorded for further analysis.\${reset}\"
+echo -e \"\${white}==============================================================\${reset}\"
+
+echo -e \"\${white}*\${reset} \${green}This chatbot is designed to assist you with queries related to academic services, general campus information, and more.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}Feel free to ask questions, explore resources, or get personalized help from the comfort of your device.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}For information on how to use a chatbot, refer to the HELP file.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}Our chatbot is here to provide fast, 24/7 support.\${reset}\"
+echo -e \"\${white}==============================================================\${reset}\"
+
+echo -e \"\${red}ALERT: \${white}Chatbot active and ready to assist.\${reset}\"
+echo -e \"\${red}ALERT: \${white}Use Chatbot by running the script '$file_path'\${reset}\"
+EOF"
+
+    # Create the startchatbot.sh file
+    sudo lxc-attach -n $container_name -- bash -c "cat << 'EOF' > /root/startchatbot.sh
+#!/bin/bash
+sudo systemctl start ollama.service
+echo 'You can now start the chatbot by running \"ollama run qwen:0.5b-chat-v1.5-q2_K\"'
+EOF"
+
+    # Make the chatbot script executable
+    sudo lxc-attach -n $container_name -- chmod +x /root/startchatbot.sh
+    ;;
+    
+  2)
+		echo "setup/help script added"
+    # Create the startchatbot.sh file
+    sudo lxc-attach -n $container_name -- bash -c "cat << 'EOF' > /root/startchatbot.sh
+#!/bin/bash
+sudo systemctl start ollama.service
+echo 'You can now start the chatbot by running \"ollama run qwen:0.5b-chat-v1.5-q2_K\"'
+EOF"
+
+    # Make the chatbot script executable
+    sudo lxc-attach -n $container_name -- chmod +x /root/startchatbot.sh
+    ;;
+    
+  3)
+		echo "banner added"
+    # Modify the .bashrc file in the container
+    sudo lxc-attach -n $container_name -- bash -c "cat << 'EOF' > /root/.bashrc
+red=\$(tput setaf 1)
+yellow=\$(tput setaf 3)
+white=\$(tput setaf 7)
+green=\$(tput setaf 2)
+blue=\$(tput setaf 4)
+magenta=\$(tput setaf 5)
+cyan=\$(tput setaf 6)
+reset=\$(tput sgr0)
+
+echo -e \"\${white}Welcome to the University of Maryland's\${reset}\"
+echo -e \"\${yellow}Official Chatbot\${reset}\"
+
+echo -e \"\${white}==============================================================\${reset}\"
+echo -e \"\${red}  ⚠️  You are now interacting with a chatbot ⚠️  \${reset}\"
+echo -e \"\${red}  This system is monitored for quality and security.\${reset}\"
+echo -e \"\${red}  All interactions are recorded for further analysis.\${reset}\"
+echo -e \"\${white}==============================================================\${reset}\"
+
+echo -e \"\${white}*\${reset} \${green}This chatbot is designed to assist you with queries related to academic services, general campus information, and more.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}Feel free to ask questions, explore resources, or get personalized help from the comfort of your device.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}For information on how to use a chatbot, refer to the HELP file.\${reset}\"
+echo -e \"\${white}*\${reset} \${green}Our chatbot is here to provide fast, 24/7 support.\${reset}\"
+echo -e \"\${white}==============================================================\${reset}\"
+
+echo -e \"\${red}ALERT: \${white}Chatbot active and ready to assist.\${reset}\"
+EOF"
+    ;;
+    
+  4)
+    echo "Nothing added"
+    ;;
+    
+  *)
+    echo "Invalid option. Please choose between 1 and 4."
+    ;;
+esac

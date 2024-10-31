@@ -1,0 +1,27 @@
+{
+  "session_id": "umd_admissions_001",
+  "user_id": "user_12345",
+  "session_date": "2024-10-23",
+  "messages": [
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T10:15:00",
+      "text": "Hi, I’m interested in applying to the University of Maryland. Can you tell me about the application deadlines?"
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T10:15:05",
+      "text": "Hello! The University of Maryland has different application deadlines depending on whether you’re applying as a freshman, transfer, or international student. For freshmen applying for the fall semester, the early action deadline is November 1st. Would you like more information on how to apply?"
+    },
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T10:15:20",
+      "text": "Yes, what documents do I need to submit?"
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T10:15:30",
+      "text": "For a freshman application, you'll need to submit the following: a completed application form, official high school transcripts, SAT/ACT scores (optional for the upcoming cycle), a personal statement, and two letters of recommendation. You may also submit a resume and additional information. Let me know if you need more details on any of these."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "session_id": "umd_campus_life_004",
+  "user_id": "user_45678",
+  "session_date": "2024-10-23",
+  "messages": [
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T13:05:00",
+      "text": "What events are happening on campus this week?"
+    },
+    {
+      "from": "bot",
+      "timestamp": "2024-10-23T13:05:05",
+      "text": "There are several exciting events this week! You can check out the UMD events calendar here: [UMD Events](https://www.umd.edu/events). Some highlights include a career fair, the Terps football game, and a student concert on Friday. Anything specific you're interested in?"
+    },
+    {
+      "from": "user",
+      "timestamp": "2024-10-23T13:05:20",
+      "text": "Thanks! I’ll check it out."
+    }
+  ]
+}

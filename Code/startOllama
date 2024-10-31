@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo systemctl start ollama.service
+
+echo "You can now start the chatbot by running 'ollama run qwen:0.5b-chat-v1.5-q2_K'"

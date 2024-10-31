@@ -1,0 +1,26 @@
+(node:14933) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-40118',
+  containerIp: '10.0.3.153',
+  mitmPort: 40118,
+  autoAccessFixed: 1
+}
+2024-10-29 17:00:30.405 - [Info] MITM Version: 2
+2024-10-29 17:00:30.407 - [Info] Auto Access Enabled: true
+2024-10-29 17:00:30.408 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-10-29 17:00:30.432 - [Info] SSH man-in-the-middle server for 10.0.3.153 listening on 10.0.3.1:40118
