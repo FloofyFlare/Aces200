@@ -15,6 +15,8 @@ container_name=$1
 MITM_pid=$(sudo forever list 2>/dev/null | grep "$container_name" | xargs | cut -d" " -f19)
 sudo forever stop "$MITM_pid"
 
+cp /var/lib/lxc/"$container_name"/rootfs/var/log/auth.log /home/student/auth_logs/"$container_name"
+
 # ==== DELETE MITM PREROUTING AND NAT RULES ====
 sudo iptables --table nat --delete PREROUTING --source 0.0.0.0/0 --destination "$external_ip" --jump DNAT --to-destination "$container_ip"
 sudo iptables --table nat --delete POSTROUTING --source "$container_ip" --destination 0.0.0.0/0 --jump SNAT --to-source "$external_ip"

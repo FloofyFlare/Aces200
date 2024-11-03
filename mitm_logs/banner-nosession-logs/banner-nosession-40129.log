@@ -1,0 +1,65 @@
+(node:704845) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-nosession-40129',
+  containerIp: '10.0.3.124',
+  mitmPort: 40129,
+  autoAccessFixed: 1
+}
+2024-10-31 16:15:49.811 - [Info] MITM Version: 2
+2024-10-31 16:15:49.813 - [Info] Auto Access Enabled: true
+2024-10-31 16:15:49.814 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-10-31 16:15:49.827 - [Info] SSH man-in-the-middle server for 10.0.3.124 listening on 10.0.3.1:40129
+2024-11-02 02:12:04.277 - [Debug] [Connection] Attacker connected: 129.2.19.33 | Client Identification: SSH-2.0-libssh2_1.8.0
+2024-11-02 02:12:06.678 - [Debug] [Auth] Attacker 129.2.19.33 trying to authenticate with 'keyboard-interactive'
+2024-11-02 02:12:06.678 - [Debug] [Auth] Attacker authentication error: Keyboard-interactive is not supported
+2024-11-02 02:12:06.681 - [Debug] [Auth] Attacker: 129.2.19.33 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-02 02:12:07.299 - [Debug] [Auth] Attacker 129.2.19.33 trying to authenticate with 'password'
+2024-11-02 02:12:07.300 - [Debug] [Auto Access] Attacker: 129.2.19.33, Threshold: 1, Attempts: 1
+2024-11-02 02:12:07.300 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-02 02:12:07.301 - [Debug] [Auto Access] Adding the following credentials: 'LIBRSYSISVC:fbsn-WVNdHuaE4uS!GT7mEJa'
+2024-11-02 02:12:07.571 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-02 02:12:07.573 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-02 02:12:07.573 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.124
+2024-11-02 02:12:07.681 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-02 02:12:08.284 - [Debug] [SHELL] Opened shell for attacker
+2024-11-02 02:12:08.291 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2024-11-02 02:12:08.532 - [Debug] [SHELL] Attacker Keystroke: PS1='__SysAidSSh2__:$'[LF]
+2024-11-02 02:12:08.539 - [Debug] [SHELL] line from reader: PS1='__SysAidSSh2__:$'
+2024-11-02 02:12:08.540 - [Debug] [SHELL] Keystroke buffer: 80,83,49,61,39,95,95,83,121,115,65,105,100,83,83,104,50,95,95,58,36,39,10
+2024-11-02 02:12:08.751 - [Debug] [SHELL] Attacker Keystroke: hostname[LF]
+2024-11-02 02:12:08.752 - [Debug] [SHELL] line from reader: hostname
+2024-11-02 02:12:08.752 - [Debug] [SHELL] Keystroke buffer: 104,111,115,116,110,97,109,101,10
+2024-11-02 02:12:08.970 - [Debug] [SHELL] Attacker Keystroke: uname[Space]-a[LF]
+2024-11-02 02:12:08.973 - [Debug] [SHELL] line from reader: uname -a
+2024-11-02 02:12:08.973 - [Debug] [SHELL] Keystroke buffer: 117,110,97,109,101,32,45,97,10
+2024-11-02 02:12:09.188 - [Debug] [SHELL] Attacker Keystroke: cat[Space]/etc/*-release[LF]
+2024-11-02 02:12:09.190 - [Debug] [SHELL] line from reader: cat /etc/*-release
+2024-11-02 02:12:09.190 - [Debug] [SHELL] Keystroke buffer: 99,97,116,32,47,101,116,99,47,42,45,114,101,108,101,97,115,101,10
+2024-11-02 02:12:09.407 - [Debug] [SHELL] Attacker Keystroke: sudo[Space]echo[Space]ok[LF]
+2024-11-02 02:12:09.408 - [Debug] [SHELL] line from reader: sudo echo ok
+2024-11-02 02:12:09.408 - [Debug] [SHELL] Keystroke buffer: 115,117,100,111,32,101,99,104,111,32,111,107,10
+2024-11-02 02:12:09.516 - [Debug] [SHELL] Attacker Keystroke: fbsn-WVNdHuaE4uS!GT7mEJa[LF]
+2024-11-02 02:12:09.519 - [Debug] [SHELL] line from reader: fbsn-WVNdHuaE4uS!GT7mEJa
+2024-11-02 02:12:09.519 - [Debug] [SHELL] Keystroke buffer: 102,98,115,110,45,87,86,78,100,72,117,97,69,52,117,83,33,71,84,55,109,69,74,97,10
+2024-11-02 02:12:09.626 - [Debug] [SHELL] Attacker ended the shell
+2024-11-02 02:12:09.690 - [Debug] [Connection] Attacker closed connection
+2024-11-02 02:12:09.718 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-02 02:12:09.725 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-02 02:12:09.728 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2024-11-02 02:12:09.728 - [Debug] [SHELL] Honeypot ended shell
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

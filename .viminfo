@@ -14,8 +14,10 @@
 ~Msle0~/\<sudo\>
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1730405141,,"wq!"
 :wq
-|2,0,1730405049,,"wq"
+|2,0,1730405138,,"wq"
 :w
 |2,0,1730403208,,"w"
 :q
@@ -26,8 +28,6 @@
 |2,0,1730158150,,"q!"
 :Wq
 |2,0,1730139771,,"Wq"
-:wq!
-|2,0,1730070327,,"wq!"
 :'<,'>q
 |2,0,1729788634,,"'<,'>q"
 :dG
@@ -91,34 +91,38 @@
 |3,0,36,0,1,0,1730070254,"e"
 
 # File marks:
-'0  1  0  /tmp/crontab.jhpYQK/crontab
-|4,48,1,0,1730405049,"/tmp/crontab.jhpYQK/crontab"
-'1  24  34  /tmp/crontab.zArP2g/crontab
-|4,49,24,34,1730405041,"/tmp/crontab.zArP2g/crontab"
-'2  80  49  ~/monitor.sh
-|4,50,80,49,1730403214,"~/monitor.sh"
-'3  35  0  ~/destroy_container.sh
-|4,51,35,0,1730403009,"~/destroy_container.sh"
-'4  35  1  ~/destroy_container.sh
-|4,52,35,1,1730397354,"~/destroy_container.sh"
+'0  18  98  ~/destroy_container.sh
+|4,48,18,98,1730405141,"~/destroy_container.sh"
+'1  1  0  /tmp/crontab.jhpYQK/crontab
+|4,49,1,0,1730405049,"/tmp/crontab.jhpYQK/crontab"
+'2  24  34  /tmp/crontab.zArP2g/crontab
+|4,50,24,34,1730405041,"/tmp/crontab.zArP2g/crontab"
+'3  80  49  ~/monitor.sh
+|4,51,80,49,1730403214,"~/monitor.sh"
+'4  37  0  ~/destroy_container.sh
+|4,52,37,0,1730403009,"~/destroy_container.sh"
 '5  35  0  ~/destroy_container.sh
-|4,53,35,0,1730262553,"~/destroy_container.sh"
-'6  35  0  ~/destroy_container.sh
-|4,54,35,0,1730262553,"~/destroy_container.sh"
-'7  1  0  ~/destroy_container.sh
-|4,55,1,0,1730262532,"~/destroy_container.sh"
-'8  1  0  ~/destroy_container.sh
-|4,56,1,0,1730262532,"~/destroy_container.sh"
-'9  1  0  ~/destroy_container.sh
-|4,57,1,0,1730262532,"~/destroy_container.sh"
+|4,53,35,0,1730403009,"~/destroy_container.sh"
+'6  37  1  ~/destroy_container.sh
+|4,54,37,1,1730397354,"~/destroy_container.sh"
+'7  35  1  ~/destroy_container.sh
+|4,55,35,1,1730397354,"~/destroy_container.sh"
+'8  37  0  ~/destroy_container.sh
+|4,56,37,0,1730262553,"~/destroy_container.sh"
+'9  37  0  ~/destroy_container.sh
+|4,57,37,0,1730262553,"~/destroy_container.sh"
 
 # Jumplist (newest first):
+-'  18  98  ~/destroy_container.sh
+|4,39,18,98,1730405141,"~/destroy_container.sh"
 -'  1  0  /tmp/crontab.jhpYQK/crontab
 |4,39,1,0,1730405049,"/tmp/crontab.jhpYQK/crontab"
 -'  24  34  /tmp/crontab.zArP2g/crontab
 |4,39,24,34,1730405041,"/tmp/crontab.zArP2g/crontab"
 -'  24  34  /tmp/crontab.zArP2g/crontab
 |4,39,24,34,1730405041,"/tmp/crontab.zArP2g/crontab"
+-'  1  0  ~/destroy_container.sh
+|4,39,1,0,1730404992,"~/destroy_container.sh"
 -'  1  0  /tmp/crontab.zArP2g/crontab
 |4,39,1,0,1730404920,"/tmp/crontab.zArP2g/crontab"
 -'  1  0  /tmp/crontab.zArP2g/crontab
@@ -131,6 +135,8 @@
 |4,39,80,49,1730403214,"~/monitor.sh"
 -'  80  49  ~/monitor.sh
 |4,39,80,49,1730403214,"~/monitor.sh"
+-'  80  49  ~/monitor.sh
+|4,39,80,49,1730403214,"~/monitor.sh"
 -'  1  0  ~/monitor.sh
 |4,39,1,0,1730403197,"~/monitor.sh"
 -'  1  0  ~/monitor.sh
@@ -139,6 +145,10 @@
 |4,39,1,0,1730403197,"~/monitor.sh"
 -'  1  0  ~/monitor.sh
 |4,39,1,0,1730403197,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730403197,"~/monitor.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730403009,"~/destroy_container.sh"
 -'  35  0  ~/destroy_container.sh
 |4,39,35,0,1730403009,"~/destroy_container.sh"
 -'  35  0  ~/destroy_container.sh
@@ -251,16 +261,6 @@
 |4,39,1,0,1730262532,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
 |4,39,1,0,1730262532,"~/destroy_container.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
 |4,39,29,0,1730249363,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
@@ -315,6 +315,78 @@
 |4,39,29,0,1730249363,"~/monitor.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/destroy_container.sh
+	*	1730405140	0
+	"	18	98
+	^	18	99
+	.	18	98
+	+	1	0
+	+	1	87
+	+	1	28
+	+	1	40
+	+	1	51
+	+	1	0
+	+	1	156
+	+	1	4
+	+	1	19
+	+	1	22
+	+	1	2
+	+	1	16
+	+	1	43
+	+	1	47
+	+	1	0
+	+	1	22
+	+	1	0
+	+	1	26
+	+	1	81
+	+	1	56
+	+	1	3
+	+	1	81
+	+	1	0
+	+	1	4
+	+	1	7
+	+	1	47
+	+	1	0
+	+	1	90
+	+	1	100
+	+	1	18
+	+	1	81
+	+	1	75
+	+	1	80
+	+	1	81
+	+	1	13
+	+	1	10
+	+	1	99
+	+	1	0
+	+	1	34
+	+	1	13
+	+	1	68
+	+	1	0
+	+	1	36
+	+	1	20
+	+	1	29
+	+	1	0
+	+	1	22
+	+	1	0
+	+	1	11
+	+	37	1
+	+	25	156
+	+	37	0
+	+	28	51
+	+	14	0
+	+	15	66
+	+	13	16
+	+	15	64
+	+	16	28
+	+	15	89
+	+	37	0
+	+	38	0
+	+	37	1
+	+	35	1
+	+	37	0
+	+	18	98
+	i	15	0
 
 > /tmp/crontab.jhpYQK/crontab
 	*	1730405047	0
@@ -432,77 +504,6 @@
 	+	80	50
 	+	89	27
 	+	80	49
-
-> ~/destroy_container.sh
-	*	1730403008	0
-	"	35	0
-	^	35	0
-	.	35	0
-	+	1	0
-	+	1	87
-	+	1	28
-	+	1	40
-	+	1	51
-	+	1	0
-	+	1	156
-	+	1	4
-	+	1	19
-	+	1	22
-	+	1	2
-	+	1	16
-	+	1	43
-	+	1	47
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	26
-	+	1	81
-	+	1	56
-	+	1	3
-	+	1	81
-	+	1	0
-	+	1	4
-	+	1	7
-	+	1	47
-	+	1	0
-	+	1	90
-	+	1	100
-	+	1	18
-	+	1	81
-	+	1	75
-	+	1	80
-	+	1	81
-	+	1	13
-	+	1	10
-	+	1	99
-	+	1	0
-	+	1	34
-	+	1	13
-	+	1	68
-	+	1	0
-	+	1	36
-	+	1	20
-	+	1	29
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	11
-	+	35	1
-	+	23	156
-	+	35	0
-	+	26	51
-	+	14	0
-	+	15	66
-	+	13	16
-	+	15	64
-	+	16	28
-	+	15	89
-	+	35	0
-	+	36	0
-	+	35	1
-	+	33	1
-	+	35	0
-	i	15	0
 
 > ~/create_container.sh
 	*	1730247775	0

@@ -5,7 +5,7 @@
 cd . || exit
 
 # Stage all changes
-git add .
+git add --all -- ':!.ssh'
 
 # Commit with a timestamp message
 git commit -m "Automated commit on $(date +"%Y-%m-%d %H:%M:%S")"

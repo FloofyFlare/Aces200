@@ -1,0 +1,93 @@
+(node:694233) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-nosession-40125',
+  containerIp: '10.0.3.194',
+  mitmPort: 40125,
+  autoAccessFixed: 1
+}
+2024-10-31 16:08:06.901 - [Info] MITM Version: 2
+2024-10-31 16:08:06.903 - [Info] Auto Access Enabled: true
+2024-10-31 16:08:06.903 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-10-31 16:08:06.915 - [Info] SSH man-in-the-middle server for 10.0.3.194 listening on 10.0.3.1:40125
+2024-10-31 16:09:53.219 - [Debug] [Connection] Attacker connected: 10.174.123.84 | Client Identification: SSH-2.0-OpenSSH_9.6
+2024-10-31 16:09:55.688 - [Debug] [Auth] Attacker 10.174.123.84 trying to authenticate with 'none'
+2024-10-31 16:09:55.688 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-10-31 16:09:57.262 - [Debug] [Auth] Attacker 10.174.123.84 trying to authenticate with 'password'
+2024-10-31 16:09:57.263 - [Debug] [Auto Access] Attacker: 10.174.123.84, Threshold: 1, Attempts: 1
+2024-10-31 16:09:57.264 - [Debug] [Auto Access] Compromising the honeypot
+2024-10-31 16:09:57.264 - [Debug] [Auto Access] Adding the following credentials: 'gitikasaravanan:1234'
+2024-10-31 16:09:57.569 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-10-31 16:09:57.571 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-10-31 16:09:57.571 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.194
+2024-10-31 16:09:57.673 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-10-31 16:09:57.952 - [Debug] [SHELL] Opened shell for attacker
+2024-10-31 16:09:57.954 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2024-10-31 16:09:59.380 - [Debug] [SHELL] Attacker Keystroke: l
+2024-10-31 16:09:59.456 - [Debug] [SHELL] Attacker Keystroke: s
+2024-10-31 16:09:59.516 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-10-31 16:09:59.517 - [Debug] [SHELL] line from reader: ls
+2024-10-31 16:09:59.517 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2024-10-31 16:10:00.086 - [Debug] [SHELL] Attacker Keystroke: l
+2024-10-31 16:10:00.389 - [Debug] [SHELL] Attacker Keystroke: s
+2024-10-31 16:10:00.678 - [Debug] [SHELL] Attacker Keystroke: -
+2024-10-31 16:10:01.226 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-10-31 16:10:01.552 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-10-31 16:10:01.624 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-10-31 16:10:02.130 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-10-31 16:10:02.292 - [Debug] [SHELL] Attacker Keystroke: -
+2024-10-31 16:10:02.465 - [Debug] [SHELL] Attacker Keystroke: l
+2024-10-31 16:10:02.510 - [Debug] [SHELL] Attacker Keystroke: a
+2024-10-31 16:10:02.596 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-10-31 16:10:02.597 - [Debug] [SHELL] line from reader: ls -la
+2024-10-31 16:10:02.597 - [Debug] [SHELL] Keystroke buffer: 108,115,45,32,127,127,32,45,108,97,13
+2024-10-31 16:10:04.312 - [Debug] [SHELL] Attacker Keystroke: e
+2024-10-31 16:10:04.542 - [Debug] [SHELL] Attacker Keystroke: c
+2024-10-31 16:10:04.543 - [Debug] [SHELL] Attacker Keystroke: h
+2024-10-31 16:10:04.585 - [Debug] [SHELL] Attacker Keystroke: o
+2024-10-31 16:10:04.693 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-10-31 16:10:05.286 - [Debug] [SHELL] Attacker Keystroke: "
+2024-10-31 16:10:05.619 - [Debug] [SHELL] Attacker Keystroke: H
+2024-10-31 16:10:05.928 - [Debug] [SHELL] Attacker Keystroke: e
+2024-10-31 16:10:06.113 - [Debug] [SHELL] Attacker Keystroke: l
+2024-10-31 16:10:06.182 - [Debug] [SHELL] Attacker Keystroke: l
+2024-10-31 16:10:06.349 - [Debug] [SHELL] Attacker Keystroke: o
+2024-10-31 16:10:06.518 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-10-31 16:10:06.640 - [Debug] [SHELL] Attacker Keystroke: w
+2024-10-31 16:10:06.667 - [Debug] [SHELL] Attacker Keystroke: o
+2024-10-31 16:10:06.726 - [Debug] [SHELL] Attacker Keystroke: r
+2024-10-31 16:10:06.856 - [Debug] [SHELL] Attacker Keystroke: l
+2024-10-31 16:10:07.686 - [Debug] [SHELL] Attacker Keystroke: d
+2024-10-31 16:10:07.867 - [Debug] [SHELL] Attacker Keystroke: !
+2024-10-31 16:10:08.467 - [Debug] [SHELL] Attacker Keystroke: "
+2024-10-31 16:10:08.843 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-10-31 16:10:08.844 - [Debug] [SHELL] line from reader: echo "Hello world!"
+2024-10-31 16:10:08.844 - [Debug] [SHELL] Keystroke buffer: 101,99,104,111,32,34,72,101,108,108,111,32,119,111,114,108,100,33,34,13
+2024-10-31 16:10:10.573 - [Debug] [SHELL] Attacker Keystroke: e
+2024-10-31 16:10:10.830 - [Debug] [SHELL] Attacker Keystroke: x
+2024-10-31 16:10:10.891 - [Debug] [SHELL] Attacker Keystroke: i
+2024-10-31 16:10:10.991 - [Debug] [SHELL] Attacker Keystroke: t
+2024-10-31 16:10:11.086 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-10-31 16:10:11.087 - [Debug] [SHELL] line from reader: exit
+2024-10-31 16:10:11.087 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2024-10-31 16:10:11.097 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2024-10-31 16:10:11.101 - [Debug] [SHELL] Honeypot ended shell
+2024-10-31 16:10:11.170 - [Debug] [SHELL] Attacker ended the shell
+2024-10-31 16:10:11.172 - [Debug] [Connection] Attacker closed connection
+2024-10-31 16:10:11.178 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-10-31 16:10:11.178 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

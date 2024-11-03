@@ -24,3 +24,36 @@ Started with the following options:
 2024-10-29 17:00:30.407 - [Info] Auto Access Enabled: true
 2024-10-29 17:00:30.408 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-10-29 17:00:30.432 - [Info] SSH man-in-the-middle server for 10.0.3.153 listening on 10.0.3.1:40118
+2024-10-31 16:12:51.360 - [Debug] [Connection] Attacker connected: 10.174.123.84 | Client Identification: SSH-2.0-OpenSSH_9.6
+2024-10-31 16:12:52.878 - [Debug] [Auth] Attacker 10.174.123.84 trying to authenticate with 'none'
+2024-10-31 16:12:52.879 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-10-31 16:12:54.759 - [Debug] [Auth] Attacker 10.174.123.84 trying to authenticate with 'password'
+2024-10-31 16:12:54.760 - [Debug] [Auto Access] Attacker: 10.174.123.84, Threshold: 1, Attempts: 1
+2024-10-31 16:12:54.760 - [Debug] [Auto Access] Compromising the honeypot
+2024-10-31 16:12:54.761 - [Debug] [Auto Access] Adding the following credentials: 'gitikasaravanan:1234'
+2024-10-31 16:12:55.134 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-10-31 16:12:55.136 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-10-31 16:12:55.137 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.153
+2024-10-31 16:12:55.296 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-10-31 16:12:55.652 - [Debug] [SHELL] Opened shell for attacker
+2024-10-31 16:12:55.655 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2024-10-31 16:12:57.120 - [Debug] [SHELL] Attacker Keystroke: l
+2024-10-31 16:12:57.180 - [Debug] [SHELL] Attacker Keystroke: s
+2024-10-31 16:12:57.291 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-10-31 16:12:58.149 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-10-31 16:12:58.151 - [Debug] [SHELL] line from reader: ls 
+2024-10-31 16:12:58.151 - [Debug] [SHELL] Keystroke buffer: 108,115,32,13
+2024-10-31 16:12:58.748 - [Debug] [SHELL] Attacker Keystroke: e
+2024-10-31 16:12:59.015 - [Debug] [SHELL] Attacker Keystroke: x
+2024-10-31 16:12:59.166 - [Debug] [SHELL] Attacker Keystroke: i
+2024-10-31 16:12:59.222 - [Debug] [SHELL] Attacker Keystroke: t
+2024-10-31 16:12:59.338 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-10-31 16:12:59.339 - [Debug] [SHELL] line from reader: exit
+2024-10-31 16:12:59.340 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2024-10-31 16:12:59.456 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2024-10-31 16:12:59.457 - [Debug] [SHELL] Honeypot ended shell
+2024-10-31 16:12:59.473 - [Debug] [SHELL] Attacker ended the shell
+2024-10-31 16:12:59.475 - [Debug] [Connection] Attacker closed connection
+2024-10-31 16:12:59.494 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-10-31 16:12:59.495 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
