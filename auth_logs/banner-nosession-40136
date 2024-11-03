@@ -1,0 +1,25 @@
+Nov  3 18:01:22 banner-nosession-40136 systemd-logind[164]: New seat seat0.
+Nov  3 18:01:26 banner-nosession-40136 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:01:26 banner-nosession-40136 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:01:34 banner-nosession-40136 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:01:34 banner-nosession-40136 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:01:34 banner-nosession-40136 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:01:44 banner-nosession-40136 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:01:44 banner-nosession-40136 usermod[765]: change user 'sshd' password
+Nov  3 18:01:44 banner-nosession-40136 chage[772]: changed password expiry for sshd
+Nov  3 18:01:46 banner-nosession-40136 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:01:46 banner-nosession-40136 sshd[1207]: Server listening on :: port 22.
+Nov  3 18:01:47 banner-nosession-40136 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:01:47 banner-nosession-40136 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:01:47 banner-nosession-40136 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:01:53 banner-nosession-40136 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:02:22 banner-nosession-40136 useradd[1556]: new group: name=ts3server, GID=1001
+Nov  3 18:02:22 banner-nosession-40136 useradd[1556]: new user: name=ts3server, UID=1001, GID=1001, home=/home/ts3server, shell=/bin/bash, from=none
+Nov  3 18:02:23 banner-nosession-40136 usermod[1565]: change user 'ts3server' password
+Nov  3 18:02:23 banner-nosession-40136 sshd[1572]: Accepted password for ts3server from 10.0.3.1 port 37442 ssh2
+Nov  3 18:02:23 banner-nosession-40136 sshd[1572]: pam_unix(sshd:session): session opened for user ts3server by (uid=0)
+Nov  3 18:02:23 banner-nosession-40136 systemd-logind[164]: New session 9 of user ts3server.
+Nov  3 18:02:23 banner-nosession-40136 systemd: pam_unix(systemd-user:session): session opened for user ts3server by (uid=0)
+Nov  3 18:02:28 banner-nosession-40136 sshd[1572]: pam_unix(sshd:session): session closed for user ts3server
+Nov  3 18:02:28 banner-nosession-40136 systemd-logind[164]: Session 9 logged out. Waiting for processes to exit.
+Nov  3 18:02:28 banner-nosession-40136 systemd-logind[164]: Removed session 9.

@@ -1,0 +1,27 @@
+Nov  3 18:35:41 nobanner-session-40152 systemd-logind[164]: New seat seat0.
+Nov  3 18:35:45 nobanner-session-40152 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:35:45 nobanner-session-40152 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:35:53 nobanner-session-40152 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:35:53 nobanner-session-40152 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:35:53 nobanner-session-40152 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:36:06 nobanner-session-40152 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:36:06 nobanner-session-40152 usermod[765]: change user 'sshd' password
+Nov  3 18:36:06 nobanner-session-40152 chage[772]: changed password expiry for sshd
+Nov  3 18:36:08 nobanner-session-40152 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:36:08 nobanner-session-40152 sshd[1207]: Server listening on :: port 22.
+Nov  3 18:36:11 nobanner-session-40152 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:36:11 nobanner-session-40152 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:36:11 nobanner-session-40152 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:36:25 nobanner-session-40152 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:37:10 nobanner-session-40152 useradd[1553]: new group: name=sinusbot, GID=1001
+Nov  3 18:37:10 nobanner-session-40152 useradd[1553]: new user: name=sinusbot, UID=1001, GID=1001, home=/home/sinusbot, shell=/bin/bash, from=none
+Nov  3 18:37:16 nobanner-session-40152 usermod[1562]: change user 'sinusbot' password
+Nov  3 18:37:16 nobanner-session-40152 sshd[1569]: Accepted password for sinusbot from 10.0.3.1 port 35426 ssh2
+Nov  3 18:37:16 nobanner-session-40152 sshd[1569]: pam_unix(sshd:session): session opened for user sinusbot by (uid=0)
+Nov  3 18:37:16 nobanner-session-40152 systemd-logind[164]: New session 30 of user sinusbot.
+Nov  3 18:37:16 nobanner-session-40152 systemd: pam_unix(systemd-user:session): session opened for user sinusbot by (uid=0)
+Nov  3 18:37:24 nobanner-session-40152 sshd[1586]: Received disconnect from 10.0.3.1 port 35426:11: 
+Nov  3 18:37:24 nobanner-session-40152 sshd[1586]: Disconnected from user sinusbot 10.0.3.1 port 35426
+Nov  3 18:37:24 nobanner-session-40152 sshd[1569]: pam_unix(sshd:session): session closed for user sinusbot
+Nov  3 18:37:24 nobanner-session-40152 systemd-logind[164]: Session 30 logged out. Waiting for processes to exit.
+Nov  3 18:37:24 nobanner-session-40152 systemd-logind[164]: Removed session 30.

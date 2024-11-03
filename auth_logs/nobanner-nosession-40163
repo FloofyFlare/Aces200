@@ -1,0 +1,27 @@
+Nov  3 18:50:59 nobanner-nosession-40163 systemd-logind[164]: New seat seat0.
+Nov  3 18:51:02 nobanner-nosession-40163 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:51:02 nobanner-nosession-40163 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:51:10 nobanner-nosession-40163 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:51:10 nobanner-nosession-40163 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:51:10 nobanner-nosession-40163 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:51:24 nobanner-nosession-40163 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:51:24 nobanner-nosession-40163 usermod[765]: change user 'sshd' password
+Nov  3 18:51:24 nobanner-nosession-40163 chage[772]: changed password expiry for sshd
+Nov  3 18:51:26 nobanner-nosession-40163 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:51:26 nobanner-nosession-40163 sshd[1207]: Server listening on :: port 22.
+Nov  3 18:51:28 nobanner-nosession-40163 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:51:28 nobanner-nosession-40163 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:51:28 nobanner-nosession-40163 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:51:36 nobanner-nosession-40163 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:52:30 nobanner-nosession-40163 useradd[1550]: new group: name=dummy, GID=1001
+Nov  3 18:52:30 nobanner-nosession-40163 useradd[1550]: new user: name=dummy, UID=1001, GID=1001, home=/home/dummy, shell=/bin/bash, from=none
+Nov  3 18:52:30 nobanner-nosession-40163 usermod[1559]: change user 'dummy' password
+Nov  3 18:52:30 nobanner-nosession-40163 sshd[1566]: Accepted password for dummy from 10.0.3.1 port 46044 ssh2
+Nov  3 18:52:30 nobanner-nosession-40163 sshd[1566]: pam_unix(sshd:session): session opened for user dummy by (uid=0)
+Nov  3 18:52:30 nobanner-nosession-40163 systemd-logind[164]: New session 45 of user dummy.
+Nov  3 18:52:30 nobanner-nosession-40163 systemd: pam_unix(systemd-user:session): session opened for user dummy by (uid=0)
+Nov  3 18:52:35 nobanner-nosession-40163 sshd[1583]: Received disconnect from 10.0.3.1 port 46044:11: 
+Nov  3 18:52:35 nobanner-nosession-40163 sshd[1583]: Disconnected from user dummy 10.0.3.1 port 46044
+Nov  3 18:52:35 nobanner-nosession-40163 sshd[1566]: pam_unix(sshd:session): session closed for user dummy
+Nov  3 18:52:35 nobanner-nosession-40163 systemd-logind[164]: Session 45 logged out. Waiting for processes to exit.
+Nov  3 18:52:35 nobanner-nosession-40163 systemd-logind[164]: Removed session 45.

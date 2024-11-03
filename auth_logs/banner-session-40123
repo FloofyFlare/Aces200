@@ -1,0 +1,53 @@
+Nov  3 00:17:01 banner-session-40123 CRON[2439]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 00:17:01 banner-session-40123 CRON[2439]: pam_unix(cron:session): session closed for user root
+Nov  3 01:17:01 banner-session-40123 CRON[2445]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 01:17:01 banner-session-40123 CRON[2445]: pam_unix(cron:session): session closed for user root
+Nov  3 02:17:01 banner-session-40123 CRON[2451]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 02:17:01 banner-session-40123 CRON[2451]: pam_unix(cron:session): session closed for user root
+Nov  3 03:10:01 banner-session-40123 CRON[2459]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 03:10:01 banner-session-40123 CRON[2459]: pam_unix(cron:session): session closed for user root
+Nov  3 03:17:01 banner-session-40123 CRON[2462]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 03:17:01 banner-session-40123 CRON[2462]: pam_unix(cron:session): session closed for user root
+Nov  3 03:30:01 banner-session-40123 CRON[2467]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 03:30:02 banner-session-40123 CRON[2467]: pam_unix(cron:session): session closed for user root
+Nov  3 04:17:01 banner-session-40123 CRON[2472]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 04:17:01 banner-session-40123 CRON[2472]: pam_unix(cron:session): session closed for user root
+Nov  3 05:17:01 banner-session-40123 CRON[2478]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 05:17:01 banner-session-40123 CRON[2478]: pam_unix(cron:session): session closed for user root
+Nov  3 06:17:01 banner-session-40123 CRON[2484]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 06:17:01 banner-session-40123 CRON[2484]: pam_unix(cron:session): session closed for user root
+Nov  3 06:25:01 banner-session-40123 CRON[2537]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 06:25:01 banner-session-40123 CRON[2537]: pam_unix(cron:session): session closed for user root
+Nov  3 06:47:01 banner-session-40123 CRON[2586]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 06:47:01 banner-session-40123 CRON[2586]: pam_unix(cron:session): session closed for user root
+Nov  3 07:17:01 banner-session-40123 CRON[2591]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 07:17:01 banner-session-40123 CRON[2591]: pam_unix(cron:session): session closed for user root
+Nov  3 08:17:01 banner-session-40123 CRON[2597]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 08:17:01 banner-session-40123 CRON[2597]: pam_unix(cron:session): session closed for user root
+Nov  3 09:17:01 banner-session-40123 CRON[2604]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 09:17:01 banner-session-40123 CRON[2604]: pam_unix(cron:session): session closed for user root
+Nov  3 10:17:01 banner-session-40123 CRON[2660]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 10:17:01 banner-session-40123 CRON[2660]: pam_unix(cron:session): session closed for user root
+Nov  3 11:17:01 banner-session-40123 CRON[2666]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 11:17:01 banner-session-40123 CRON[2666]: pam_unix(cron:session): session closed for user root
+Nov  3 12:10:43 banner-session-40123 sshd[2672]: Accepted password for sshd from 10.0.3.1 port 56796 ssh2
+Nov  3 12:10:43 banner-session-40123 sshd[2672]: pam_unix(sshd:session): session opened for user sshd by (uid=0)
+Nov  3 12:10:43 banner-session-40123 systemd-logind[164]: New session 567 of user sshd.
+Nov  3 12:10:43 banner-session-40123 systemd: pam_unix(systemd-user:session): session opened for user sshd by (uid=0)
+Nov  3 12:10:44 banner-session-40123 sshd[2689]: Received disconnect from 10.0.3.1 port 56796:11: 
+Nov  3 12:10:44 banner-session-40123 sshd[2689]: Disconnected from user sshd 10.0.3.1 port 56796
+Nov  3 12:10:44 banner-session-40123 sshd[2672]: pam_unix(sshd:session): session closed for user sshd
+Nov  3 12:10:44 banner-session-40123 systemd-logind[164]: Session 567 logged out. Waiting for processes to exit.
+Nov  3 12:10:44 banner-session-40123 systemd-logind[164]: Removed session 567.
+Nov  3 12:17:01 banner-session-40123 CRON[2692]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 12:17:01 banner-session-40123 CRON[2692]: pam_unix(cron:session): session closed for user root
+Nov  3 13:17:01 banner-session-40123 CRON[2698]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 13:17:01 banner-session-40123 CRON[2698]: pam_unix(cron:session): session closed for user root
+Nov  3 14:17:01 banner-session-40123 CRON[2705]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 14:17:01 banner-session-40123 CRON[2705]: pam_unix(cron:session): session closed for user root
+Nov  3 15:17:01 banner-session-40123 CRON[2712]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 15:17:01 banner-session-40123 CRON[2712]: pam_unix(cron:session): session closed for user root
+Nov  3 16:17:01 banner-session-40123 CRON[2718]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 16:17:01 banner-session-40123 CRON[2718]: pam_unix(cron:session): session closed for user root
+Nov  3 17:17:01 banner-session-40123 CRON[2724]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 17:17:01 banner-session-40123 CRON[2724]: pam_unix(cron:session): session closed for user root

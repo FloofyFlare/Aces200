@@ -62,3 +62,4 @@ Started with the following options:
 2024-11-02 02:16:13.211 - [Debug] [LXC] Container's OpenSSH server closed connection
 2024-11-02 02:16:13.217 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
 2024-11-02 02:16:13.218 - [Debug] [SHELL] Honeypot ended shell
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

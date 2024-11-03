@@ -1,0 +1,25 @@
+Nov  3 18:52:58 nobanner-session-40164 systemd-logind[164]: New seat seat0.
+Nov  3 18:53:02 nobanner-session-40164 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:53:02 nobanner-session-40164 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:53:10 nobanner-session-40164 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:53:10 nobanner-session-40164 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:53:10 nobanner-session-40164 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:53:20 nobanner-session-40164 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:53:20 nobanner-session-40164 usermod[765]: change user 'sshd' password
+Nov  3 18:53:20 nobanner-session-40164 chage[772]: changed password expiry for sshd
+Nov  3 18:53:22 nobanner-session-40164 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:53:22 nobanner-session-40164 sshd[1207]: Server listening on :: port 22.
+Nov  3 18:53:24 nobanner-session-40164 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:53:24 nobanner-session-40164 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:53:24 nobanner-session-40164 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:53:30 nobanner-session-40164 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:55:32 nobanner-session-40164 useradd[1553]: new group: name=vhserver, GID=1001
+Nov  3 18:55:32 nobanner-session-40164 useradd[1553]: new user: name=vhserver, UID=1001, GID=1001, home=/home/vhserver, shell=/bin/bash, from=none
+Nov  3 18:55:33 nobanner-session-40164 usermod[1562]: change user 'vhserver' password
+Nov  3 18:55:33 nobanner-session-40164 sshd[1569]: Accepted password for vhserver from 10.0.3.1 port 54978 ssh2
+Nov  3 18:55:33 nobanner-session-40164 sshd[1569]: pam_unix(sshd:session): session opened for user vhserver by (uid=0)
+Nov  3 18:55:33 nobanner-session-40164 systemd-logind[164]: New session 47 of user vhserver.
+Nov  3 18:55:33 nobanner-session-40164 systemd: pam_unix(systemd-user:session): session opened for user vhserver by (uid=0)
+Nov  3 18:55:38 nobanner-session-40164 sshd[1569]: pam_unix(sshd:session): session closed for user vhserver
+Nov  3 18:55:38 nobanner-session-40164 systemd-logind[164]: Session 47 logged out. Waiting for processes to exit.
+Nov  3 18:55:38 nobanner-session-40164 systemd-logind[164]: Removed session 47.

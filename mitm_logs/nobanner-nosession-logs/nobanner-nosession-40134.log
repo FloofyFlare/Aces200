@@ -1,0 +1,83 @@
+(node:8360) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-40134',
+  containerIp: '10.0.3.99',
+  mitmPort: 40134,
+  autoAccessFixed: 1
+}
+2024-11-03 12:56:56.591 - [Info] MITM Version: 2
+2024-11-03 12:56:56.593 - [Info] Auto Access Enabled: true
+2024-11-03 12:56:56.594 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-03 12:56:56.614 - [Info] SSH man-in-the-middle server for 10.0.3.99 listening on 10.0.3.1:40134
+2024-11-03 12:57:43.285 - [Debug] [Connection] Attacker connected: 216.15.8.133 | Client Identification: SSH-2.0-OpenSSH_8.6
+2024-11-03 12:57:47.557 - [Debug] [Auth] Attacker 216.15.8.133 trying to authenticate with 'none'
+2024-11-03 12:57:47.558 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-03 12:57:47.620 - [Debug] [Auth] Attacker 216.15.8.133 trying to authenticate with 'publickey'
+2024-11-03 12:57:47.621 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2024-11-03 12:57:47.622 - [Debug] [Auth] Attacker: 216.15.8.133 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-03 12:57:49.724 - [Debug] [Auth] Attacker 216.15.8.133 trying to authenticate with 'password'
+2024-11-03 12:57:49.725 - [Debug] [Auto Access] Attacker: 216.15.8.133, Threshold: 1, Attempts: 1
+2024-11-03 12:57:49.725 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-03 12:57:49.725 - [Debug] [Auto Access] Adding the following credentials: 'anikarai:yeyrt'
+2024-11-03 12:57:50.016 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-03 12:57:50.066 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-03 12:57:50.067 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.99
+2024-11-03 12:57:50.145 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-03 12:57:50.732 - [Debug] [SHELL] Opened shell for attacker
+2024-11-03 12:57:50.736 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2024-11-03 12:57:54.041 - [Debug] [SHELL] Attacker Keystroke: h
+2024-11-03 12:57:54.348 - [Debug] [SHELL] Attacker Keystroke: e
+2024-11-03 12:57:54.854 - [Debug] [SHELL] Attacker Keystroke: l
+2024-11-03 12:57:55.009 - [Debug] [SHELL] Attacker Keystroke: l
+2024-11-03 12:57:55.242 - [Debug] [SHELL] Attacker Keystroke: o
+2024-11-03 12:57:55.524 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 12:57:55.526 - [Debug] [SHELL] line from reader: hello
+2024-11-03 12:57:55.526 - [Debug] [SHELL] Keystroke buffer: 104,101,108,108,111,13
+2024-11-03 12:57:56.338 - [Debug] [SHELL] Attacker Keystroke: t
+2024-11-03 12:57:56.528 - [Debug] [SHELL] Attacker Keystroke: h
+2024-11-03 12:57:56.637 - [Debug] [SHELL] Attacker Keystroke: i
+2024-11-03 12:57:56.918 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 12:57:57.156 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-11-03 12:57:57.706 - [Debug] [SHELL] Attacker Keystroke: i
+2024-11-03 12:57:57.838 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 12:57:57.948 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-11-03 12:57:58.136 - [Debug] [SHELL] Attacker Keystroke: a
+2024-11-03 12:57:58.500 - [Debug] [SHELL] Attacker Keystroke: n
+2024-11-03 12:57:58.926 - [Debug] [SHELL] Attacker Keystroke: i
+2024-11-03 12:57:59.103 - [Debug] [SHELL] Attacker Keystroke: k
+2024-11-03 12:57:59.653 - [Debug] [SHELL] Attacker Keystroke: a
+2024-11-03 12:58:00.180 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 12:58:00.181 - [Debug] [SHELL] line from reader: this is anika
+2024-11-03 12:58:00.181 - [Debug] [SHELL] Keystroke buffer: 116,104,105,115,32,105,115,32,97,110,105,107,97,13
+2024-11-03 12:58:20.755 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 12:58:21.402 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 12:58:21.982 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 12:58:22.064 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 12:58:22.268 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 12:58:22.460 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 12:58:23.460 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 12:58:23.644 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 12:58:24.094 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 12:58:24.095 - [Debug] [SHELL] line from reader: ss
+2024-11-03 12:58:24.095 - [Debug] [SHELL] Keystroke buffer: 115,115,115,127,127,127,115,115,13
+2024-11-03 12:58:55.641 - [Debug] [Connection] Attacker connected: 4.240.96.126 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-03 12:58:56.814 - [Debug] [Auth] Attacker 4.240.96.126 trying to authenticate with 'password'
+2024-11-03 12:58:56.815 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-03 12:58:56.815 - [Debug] [Auth] Attacker: 4.240.96.126 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-03 12:58:57.235 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

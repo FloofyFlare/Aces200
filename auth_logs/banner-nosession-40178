@@ -1,0 +1,27 @@
+Nov  3 22:37:09 banner-nosession-40178 systemd-logind[165]: New seat seat0.
+Nov  3 22:37:13 banner-nosession-40178 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 22:37:13 banner-nosession-40178 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 22:37:21 banner-nosession-40178 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 22:37:21 banner-nosession-40178 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 22:37:21 banner-nosession-40178 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 22:37:33 banner-nosession-40178 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 22:37:33 banner-nosession-40178 usermod[765]: change user 'sshd' password
+Nov  3 22:37:34 banner-nosession-40178 chage[772]: changed password expiry for sshd
+Nov  3 22:37:36 banner-nosession-40178 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 22:37:36 banner-nosession-40178 sshd[1207]: Server listening on :: port 22.
+Nov  3 22:37:39 banner-nosession-40178 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 22:37:39 banner-nosession-40178 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 22:37:39 banner-nosession-40178 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 22:37:47 banner-nosession-40178 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 22:39:59 banner-nosession-40178 useradd[1556]: new group: name=config, GID=1001
+Nov  3 22:39:59 banner-nosession-40178 useradd[1556]: new user: name=config, UID=1001, GID=1001, home=/home/config, shell=/bin/bash, from=none
+Nov  3 22:39:59 banner-nosession-40178 usermod[1565]: change user 'config' password
+Nov  3 22:39:59 banner-nosession-40178 sshd[1572]: Accepted password for config from 10.0.3.1 port 37234 ssh2
+Nov  3 22:39:59 banner-nosession-40178 sshd[1572]: pam_unix(sshd:session): session opened for user config by (uid=0)
+Nov  3 22:39:59 banner-nosession-40178 systemd-logind[165]: New session 85 of user config.
+Nov  3 22:39:59 banner-nosession-40178 systemd: pam_unix(systemd-user:session): session opened for user config by (uid=0)
+Nov  3 22:40:02 banner-nosession-40178 sshd[1589]: Received disconnect from 10.0.3.1 port 37234:11: 
+Nov  3 22:40:02 banner-nosession-40178 sshd[1589]: Disconnected from user config 10.0.3.1 port 37234
+Nov  3 22:40:02 banner-nosession-40178 sshd[1572]: pam_unix(sshd:session): session closed for user config
+Nov  3 22:40:02 banner-nosession-40178 systemd-logind[165]: Session 85 logged out. Waiting for processes to exit.
+Nov  3 22:40:02 banner-nosession-40178 systemd-logind[165]: Removed session 85.

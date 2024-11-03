@@ -1,0 +1,27 @@
+Nov  3 18:43:19 nobanner-session-40157 systemd-logind[164]: New seat seat0.
+Nov  3 18:43:23 nobanner-session-40157 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:43:23 nobanner-session-40157 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:43:31 nobanner-session-40157 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:43:31 nobanner-session-40157 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:43:31 nobanner-session-40157 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:43:42 nobanner-session-40157 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:43:42 nobanner-session-40157 usermod[765]: change user 'sshd' password
+Nov  3 18:43:42 nobanner-session-40157 chage[772]: changed password expiry for sshd
+Nov  3 18:43:45 nobanner-session-40157 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:43:45 nobanner-session-40157 sshd[1207]: Server listening on :: port 22.
+Nov  3 18:43:47 nobanner-session-40157 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:43:47 nobanner-session-40157 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:43:47 nobanner-session-40157 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:43:54 nobanner-session-40157 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:45:23 nobanner-session-40157 useradd[1553]: new group: name=oscar, GID=1001
+Nov  3 18:45:23 nobanner-session-40157 useradd[1553]: new user: name=oscar, UID=1001, GID=1001, home=/home/oscar, shell=/bin/bash, from=none
+Nov  3 18:45:23 nobanner-session-40157 usermod[1562]: change user 'oscar' password
+Nov  3 18:45:23 nobanner-session-40157 sshd[1569]: Accepted password for oscar from 10.0.3.1 port 52092 ssh2
+Nov  3 18:45:23 nobanner-session-40157 sshd[1569]: pam_unix(sshd:session): session opened for user oscar by (uid=0)
+Nov  3 18:45:23 nobanner-session-40157 systemd-logind[164]: New session 37 of user oscar.
+Nov  3 18:45:23 nobanner-session-40157 systemd: pam_unix(systemd-user:session): session opened for user oscar by (uid=0)
+Nov  3 18:45:29 nobanner-session-40157 sshd[1586]: Received disconnect from 10.0.3.1 port 52092:11: 
+Nov  3 18:45:29 nobanner-session-40157 sshd[1586]: Disconnected from user oscar 10.0.3.1 port 52092
+Nov  3 18:45:29 nobanner-session-40157 sshd[1569]: pam_unix(sshd:session): session closed for user oscar
+Nov  3 18:45:29 nobanner-session-40157 systemd-logind[164]: Session 37 logged out. Waiting for processes to exit.
+Nov  3 18:45:29 nobanner-session-40157 systemd-logind[164]: Removed session 37.

@@ -15,7 +15,7 @@ container_name=$1
 MITM_pid=$(sudo forever list 2>/dev/null | grep "$container_name" | xargs | cut -d" " -f19)
 sudo forever stop "$MITM_pid"
 
-cp /var/lib/lxc/"$container_name"/rootfs/var/log/auth.log /home/student/auth_logs/"$container_name"
+sudo cp /var/lib/lxc/"$container_name"/rootfs/var/log/auth.log /home/student/auth_logs/"$container_name"
 
 # ==== DELETE MITM PREROUTING AND NAT RULES ====
 sudo iptables --table nat --delete PREROUTING --source 0.0.0.0/0 --destination "$external_ip" --jump DNAT --to-destination "$container_ip"
@@ -34,4 +34,4 @@ sleep 3
 # ==== ADD THE NOW FREE IP ADDRESS BACK TO free_ip_addr.txt
 # echo "$external_ip" >> free_ip_addr.txt
 # Call create_container.sh to create a new container
-/home/student/create_container.sh "$external_ip"
+#/home/student/create_container.sh "$external_ip"

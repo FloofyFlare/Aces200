@@ -14,18 +14,22 @@
 ~Msle0~/\<sudo\>
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1730673840,,"q"
+:wq
+|2,0,1730673459,,"wq"
+:q!
+|2,0,1730672015,,"q!"
+:sq
+|2,0,1730672011,,"sq"
+:w
+|2,0,1730668534,,"w"
+:21
+|2,0,1730655972,,"21"
 :wq!
 |2,0,1730405141,,"wq!"
-:wq
-|2,0,1730405138,,"wq"
-:w
-|2,0,1730403208,,"w"
-:q
-|2,0,1730262553,,"q"
 :Q
 |2,0,1730247861,,"Q"
-:q!
-|2,0,1730158150,,"q!"
 :Wq
 |2,0,1730139771,,"Wq"
 :'<,'>q
@@ -60,267 +64,372 @@
 	s
 |3,0,0,0,1,0,1729826452,"s"
 ""1	LINE	0
-	# echo "128.8.238.179" >> /home/student/free_ip_addr.txt
-|3,1,1,1,1,0,1730243276,"# echo \"128.8.238.179\" >> /home/student/free_ip_addr.txt"
+	  # echo "CURRENT TIME: $current_time"
+|3,1,1,1,1,0,1730672678,"  # echo \"CURRENT TIME: $current_time\""
 "2	LINE	0
-	# echo "128.8.238.90" >> /home/student/free_ip_addr.txt
-|3,0,2,1,1,0,1730243276,"# echo \"128.8.238.90\" >> /home/student/free_ip_addr.txt"
+	  done
+|3,0,2,1,1,0,1730672660,"  done"
 "3	LINE	0
-	# echo "128.8.238.129" > /home/student/free_ip_addr.txt
-|3,0,3,1,1,0,1730243275,"# echo \"128.8.238.129\" > /home/student/free_ip_addr.txt"
+	  do
+|3,0,3,1,1,0,1730672656,"  do"
 "4	LINE	0
-	# rm /home/student/free_ip_addr.txt
-|3,0,4,1,1,0,1730243275,"# rm /home/student/free_ip_addr.txt"
+	  timeout --foreground 1 tail -n 0 -F "$mitm_log_path" | while read -r line
+|3,0,4,1,1,0,1730672656,"  timeout --foreground 1 tail -n 0 -F \"$mitm_log_path\" | while read -r line"
 "5	LINE	0
-	# sudo /home/student/create_container.sh
-|3,0,5,1,1,0,1730243269,"# sudo /home/student/create_container.sh"
+	# echo "128.8.238.179" >> /home/student/free_ip_addr.txt
+|3,0,5,1,1,0,1730243276,"# echo \"128.8.238.179\" >> /home/student/free_ip_addr.txt"
 "6	LINE	0
-	128.8.238.90
-|3,0,6,1,1,0,1730159127,"128.8.238.90"
+	# echo "128.8.238.90" >> /home/student/free_ip_addr.txt
+|3,0,6,1,1,0,1730243276,"# echo \"128.8.238.90\" >> /home/student/free_ip_addr.txt"
 "7	LINE	0
-	128.8.238.90
-|3,0,7,1,1,0,1730159125,"128.8.238.90"
+	# echo "128.8.238.129" > /home/student/free_ip_addr.txt
+|3,0,7,1,1,0,1730243275,"# echo \"128.8.238.129\" > /home/student/free_ip_addr.txt"
 "8	LINE	0
-	while ! sudo lxc-info -n "$container_name" | grep -q "RUNNING"; do
-|3,0,8,1,1,0,1730157955,"while ! sudo lxc-info -n \"$container_name\" | grep -q \"RUNNING\"; do"
+	# rm /home/student/free_ip_addr.txt
+|3,0,8,1,1,0,1730243275,"# rm /home/student/free_ip_addr.txt"
 "9	LINE	0
-	  sleep 1
-|3,0,9,1,1,0,1730157955,"  sleep 1"
+	# sudo /home/student/create_container.sh
+|3,0,9,1,1,0,1730243269,"# sudo /home/student/create_container.sh"
 "-	CHAR	0
 	e
 |3,0,36,0,1,0,1730070254,"e"
 
 # File marks:
-'0  18  98  ~/destroy_container.sh
-|4,48,18,98,1730405141,"~/destroy_container.sh"
-'1  1  0  /tmp/crontab.jhpYQK/crontab
-|4,49,1,0,1730405049,"/tmp/crontab.jhpYQK/crontab"
-'2  24  34  /tmp/crontab.zArP2g/crontab
-|4,50,24,34,1730405041,"/tmp/crontab.zArP2g/crontab"
-'3  80  49  ~/monitor.sh
-|4,51,80,49,1730403214,"~/monitor.sh"
+'0  1  0  ~/monitor.sh
+|4,48,1,0,1730674194,"~/monitor.sh"
+'1  77  0  ~/monitor.sh
+|4,49,77,0,1730673840,"~/monitor.sh"
+'2  77  0  ~/monitor.sh
+|4,50,77,0,1730673840,"~/monitor.sh"
+'3  37  0  ~/destroy_container.sh
+|4,51,37,0,1730673459,"~/destroy_container.sh"
 '4  37  0  ~/destroy_container.sh
-|4,52,37,0,1730403009,"~/destroy_container.sh"
-'5  35  0  ~/destroy_container.sh
-|4,53,35,0,1730403009,"~/destroy_container.sh"
-'6  37  1  ~/destroy_container.sh
-|4,54,37,1,1730397354,"~/destroy_container.sh"
-'7  35  1  ~/destroy_container.sh
-|4,55,35,1,1730397354,"~/destroy_container.sh"
-'8  37  0  ~/destroy_container.sh
-|4,56,37,0,1730262553,"~/destroy_container.sh"
-'9  37  0  ~/destroy_container.sh
-|4,57,37,0,1730262553,"~/destroy_container.sh"
+|4,52,37,0,1730672880,"~/destroy_container.sh"
+'5  88  4  ~/monitor.sh
+|4,53,88,4,1730672723,"~/monitor.sh"
+'6  88  4  ~/monitor.sh
+|4,54,88,4,1730672723,"~/monitor.sh"
+'7  88  4  ~/monitor.sh
+|4,55,88,4,1730672723,"~/monitor.sh"
+'8  88  4  ~/monitor.sh
+|4,56,88,4,1730672723,"~/monitor.sh"
+'9  29  0  ~/monitor.sh
+|4,57,29,0,1730672015,"~/monitor.sh"
 
 # Jumplist (newest first):
--'  18  98  ~/destroy_container.sh
-|4,39,18,98,1730405141,"~/destroy_container.sh"
--'  1  0  /tmp/crontab.jhpYQK/crontab
-|4,39,1,0,1730405049,"/tmp/crontab.jhpYQK/crontab"
--'  24  34  /tmp/crontab.zArP2g/crontab
-|4,39,24,34,1730405041,"/tmp/crontab.zArP2g/crontab"
--'  24  34  /tmp/crontab.zArP2g/crontab
-|4,39,24,34,1730405041,"/tmp/crontab.zArP2g/crontab"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730404992,"~/destroy_container.sh"
--'  1  0  /tmp/crontab.zArP2g/crontab
-|4,39,1,0,1730404920,"/tmp/crontab.zArP2g/crontab"
--'  1  0  /tmp/crontab.zArP2g/crontab
-|4,39,1,0,1730404920,"/tmp/crontab.zArP2g/crontab"
--'  80  49  ~/monitor.sh
-|4,39,80,49,1730403214,"~/monitor.sh"
--'  80  49  ~/monitor.sh
-|4,39,80,49,1730403214,"~/monitor.sh"
--'  80  49  ~/monitor.sh
-|4,39,80,49,1730403214,"~/monitor.sh"
--'  80  49  ~/monitor.sh
-|4,39,80,49,1730403214,"~/monitor.sh"
--'  80  49  ~/monitor.sh
-|4,39,80,49,1730403214,"~/monitor.sh"
 -'  1  0  ~/monitor.sh
-|4,39,1,0,1730403197,"~/monitor.sh"
+|4,39,1,0,1730674194,"~/monitor.sh"
+-'  77  0  ~/monitor.sh
+|4,39,77,0,1730673840,"~/monitor.sh"
+-'  77  0  ~/monitor.sh
+|4,39,77,0,1730673840,"~/monitor.sh"
 -'  1  0  ~/monitor.sh
-|4,39,1,0,1730403197,"~/monitor.sh"
--'  1  0  ~/monitor.sh
-|4,39,1,0,1730403197,"~/monitor.sh"
--'  1  0  ~/monitor.sh
-|4,39,1,0,1730403197,"~/monitor.sh"
--'  1  0  ~/monitor.sh
-|4,39,1,0,1730403197,"~/monitor.sh"
+|4,39,1,0,1730673466,"~/monitor.sh"
 -'  37  0  ~/destroy_container.sh
-|4,39,37,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730403009,"~/destroy_container.sh"
+|4,39,37,0,1730673459,"~/destroy_container.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730673459,"~/destroy_container.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730673459,"~/destroy_container.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730673459,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
+|4,39,1,0,1730673452,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
+|4,39,1,0,1730673452,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
+|4,39,1,0,1730673452,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
+|4,39,1,0,1730673452,"~/destroy_container.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730672880,"~/destroy_container.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730672880,"~/destroy_container.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730672880,"~/destroy_container.sh"
+-'  37  0  ~/destroy_container.sh
+|4,39,37,0,1730672880,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
+|4,39,1,0,1730672868,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
+|4,39,1,0,1730672868,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
+|4,39,1,0,1730672868,"~/destroy_container.sh"
 -'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730403002,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  35  1  ~/destroy_container.sh
-|4,39,35,1,1730397354,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730397345,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  35  0  ~/destroy_container.sh
-|4,39,35,0,1730262553,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262541,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
--'  1  0  ~/destroy_container.sh
-|4,39,1,0,1730262532,"~/destroy_container.sh"
+|4,39,1,0,1730672868,"~/destroy_container.sh"
+-'  88  4  ~/monitor.sh
+|4,39,88,4,1730672723,"~/monitor.sh"
+-'  88  4  ~/monitor.sh
+|4,39,88,4,1730672723,"~/monitor.sh"
+-'  88  4  ~/monitor.sh
+|4,39,88,4,1730672723,"~/monitor.sh"
+-'  88  4  ~/monitor.sh
+|4,39,88,4,1730672723,"~/monitor.sh"
+-'  88  4  ~/monitor.sh
+|4,39,88,4,1730672723,"~/monitor.sh"
+-'  88  4  ~/monitor.sh
+|4,39,88,4,1730672723,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730672640,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730672640,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730672640,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730672640,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
 -'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
--'  29  0  ~/monitor.sh
-|4,39,29,0,1730249363,"~/monitor.sh"
+|4,39,29,0,1730672015,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670350,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670350,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670350,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670350,"~/monitor.sh"
+-'  102  0  ~/monitor.sh
+|4,39,102,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  102  0  ~/monitor.sh
+|4,39,102,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  102  0  ~/monitor.sh
+|4,39,102,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  102  0  ~/monitor.sh
+|4,39,102,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  102  0  ~/monitor.sh
+|4,39,102,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  102  0  ~/monitor.sh
+|4,39,102,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  106  0  ~/monitor.sh
+|4,39,106,0,1730670193,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670185,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670185,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670185,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1730670185,"~/monitor.sh"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
+-'  1  0  ~/auth_logs/mo
+|4,39,1,0,1730670177,"~/auth_logs/mo"
 
 # History of marks within files (newest to oldest):
 
+> ~/monitor.sh
+	*	1730673839	0
+	"	77	0
+	.	63	0
+	+	59	29
+	+	57	13
+	+	63	35
+	+	67	9
+	+	68	9
+	+	88	7
+	+	89	7
+	+	58	0
+	+	63	3
+	+	55	11
+	+	63	75
+	+	73	3
+	+	72	3
+	+	76	11
+	+	59	1
+	+	76	2
+	+	71	1
+	+	76	41
+	+	71	13
+	+	77	8
+	+	77	7
+	+	76	44
+	+	84	0
+	+	55	0
+	+	60	0
+	+	32	11
+	+	49	15
+	+	56	1
+	+	100	1
+	+	89	6
+	+	89	41
+	+	79	5
+	+	81	39
+	+	68	9
+	+	68	43
+	+	61	44
+	+	49	5
+	+	32	1
+	+	46	14
+	+	42	6
+	+	47	26
+	+	51	4
+	+	48	0
+	+	63	59
+	+	88	6
+	+	79	18
+	+	80	15
+	+	47	32
+	+	72	2
+	+	104	0
+	+	71	0
+	+	68	0
+	+	88	7
+	+	89	0
+	+	88	6
+	+	75	5
+	+	76	3
+	+	77	3
+	+	78	5
+	+	79	5
+	+	80	5
+	+	81	5
+	+	82	5
+	+	83	3
+	+	85	0
+	+	77	49
+	+	86	27
+	+	88	42
+	+	80	48
+	+	77	49
+	+	5	15
+	+	39	86
+	+	45	39
+	+	46	28
+	+	47	46
+	+	54	30
+	+	55	31
+	+	61	25
+	+	63	28
+	+	68	24
+	+	74	24
+	+	76	36
+	+	81	22
+	+	89	22
+	+	98	16
+	+	99	16
+	+	101	17
+	+	77	50
+	+	86	27
+	+	77	49
+	+	65	0
+	+	64	46
+	+	100	0
+	+	101	0
+	+	102	0
+	+	64	45
+	+	63	0
+	+	70	0
+	+	64	26
+	+	63	0
+
 > ~/destroy_container.sh
-	*	1730405140	0
-	"	18	98
-	^	18	99
-	.	18	98
+	*	1730673457	0
+	"	37	0
+	^	37	1
+	.	37	0
 	+	1	0
 	+	1	87
 	+	1	28
@@ -370,9 +479,9 @@
 	+	1	22
 	+	1	0
 	+	1	11
-	+	37	1
+	+	36	53
 	+	25	156
-	+	37	0
+	+	36	52
 	+	28	51
 	+	14	0
 	+	15	66
@@ -380,13 +489,53 @@
 	+	15	64
 	+	16	28
 	+	15	89
+	+	36	52
 	+	37	0
-	+	38	0
-	+	37	1
+	+	36	53
 	+	35	1
-	+	37	0
+	+	36	52
 	+	18	98
+	+	36	53
+	+	18	4
+	+	36	52
+	+	37	0
 	i	15	0
+
+> ~/auth_logs/mo
+	*	1730670176	0
+	"	1	0
+
+> ~/reboot.sh
+	*	1730655974	0
+	"	13	0
+	^	12	1
+	.	12	0
+	+	14	32
+	+	7	33
+	+	7	0
+	+	7	53
+	+	14	4
+	+	4	9
+	+	5	0
+	+	7	0
+	+	7	17
+	+	7	1
+	+	10	0
+	+	9	45
+	+	10	0
+	+	14	1
+	+	7	1
+	+	12	47
+	+	14	0
+	+	7	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+
+> ~/destroy.sh
+	*	1730654619	0
+	"	1	0
 
 > /tmp/crontab.jhpYQK/crontab
 	*	1730405047	0
@@ -398,112 +547,6 @@
 	^	24	34
 	.	24	33
 	+	24	33
-
-> ~/monitor.sh
-	*	1730403212	0
-	"	80	49
-	^	80	50
-	.	80	49
-	+	102	35
-	+	104	61
-	+	38	0
-	+	36	16
-	+	42	21
-	+	93	10
-	+	64	39
-	+	45	9
-	+	64	25
-	+	34	0
-	+	59	29
-	+	57	13
-	+	63	35
-	+	69	9
-	+	70	9
-	+	91	7
-	+	92	7
-	+	58	0
-	+	63	3
-	+	55	11
-	+	66	75
-	+	76	3
-	+	75	3
-	+	79	11
-	+	59	1
-	+	79	2
-	+	74	1
-	+	79	41
-	+	74	13
-	+	80	8
-	+	80	7
-	+	79	44
-	+	87	0
-	+	55	0
-	+	60	0
-	+	32	11
-	+	49	15
-	+	56	1
-	+	103	1
-	+	92	6
-	+	92	41
-	+	82	5
-	+	84	39
-	+	70	9
-	+	70	43
-	+	61	44
-	+	49	5
-	+	32	1
-	+	46	14
-	+	42	6
-	+	47	26
-	+	51	4
-	+	48	0
-	+	66	59
-	+	91	6
-	+	82	18
-	+	83	15
-	+	47	32
-	+	75	2
-	+	107	0
-	+	74	0
-	+	70	0
-	+	91	7
-	+	92	0
-	+	91	6
-	+	78	5
-	+	79	3
-	+	80	3
-	+	81	5
-	+	82	5
-	+	83	5
-	+	84	5
-	+	85	5
-	+	86	3
-	+	88	0
-	+	80	49
-	+	89	27
-	+	91	42
-	+	83	48
-	+	80	49
-	+	5	15
-	+	39	86
-	+	45	39
-	+	46	28
-	+	47	46
-	+	54	30
-	+	55	31
-	+	61	25
-	+	66	28
-	+	70	24
-	+	77	24
-	+	79	36
-	+	84	22
-	+	92	22
-	+	101	16
-	+	102	16
-	+	104	17
-	+	80	50
-	+	89	27
-	+	80	49
 
 > ~/create_container.sh
 	*	1730247775	0
@@ -593,30 +636,6 @@
 	+	73	0
 	+	72	0
 	+	73	0
-
-> ~/reboot.sh
-	*	1730243281	0
-	"	8	0
-	^	8	0
-	.	7	0
-	+	14	32
-	+	7	33
-	+	7	0
-	+	7	53
-	+	14	4
-	+	4	9
-	+	5	0
-	+	7	0
-	+	7	17
-	+	7	1
-	+	10	0
-	+	9	45
-	+	10	0
-	+	14	1
-	+	7	1
-	+	12	47
-	+	14	0
-	+	7	0
 
 > ~/creat_container.sh
 	*	1730211176	0

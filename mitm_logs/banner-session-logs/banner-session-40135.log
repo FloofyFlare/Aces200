@@ -1,0 +1,90 @@
+(node:11109) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-40135',
+  containerIp: '10.0.3.246',
+  mitmPort: 40135,
+  autoAccessFixed: 1
+}
+2024-11-03 13:00:17.912 - [Info] MITM Version: 2
+2024-11-03 13:00:17.914 - [Info] Auto Access Enabled: true
+2024-11-03 13:00:17.915 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-03 13:00:17.924 - [Info] SSH man-in-the-middle server for 10.0.3.246 listening on 10.0.3.1:40135
+2024-11-03 13:00:28.762 - [Debug] [Connection] Attacker connected: 216.15.8.133 | Client Identification: SSH-2.0-OpenSSH_8.6
+2024-11-03 13:00:30.852 - [Debug] [Auth] Attacker 216.15.8.133 trying to authenticate with 'none'
+2024-11-03 13:00:30.852 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-03 13:00:30.901 - [Debug] [Auth] Attacker 216.15.8.133 trying to authenticate with 'publickey'
+2024-11-03 13:00:30.903 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2024-11-03 13:00:30.906 - [Debug] [Auth] Attacker: 216.15.8.133 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-03 13:00:32.101 - [Debug] [Auth] Attacker 216.15.8.133 trying to authenticate with 'password'
+2024-11-03 13:00:32.102 - [Debug] [Auto Access] Attacker: 216.15.8.133, Threshold: 1, Attempts: 1
+2024-11-03 13:00:32.102 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-03 13:00:32.102 - [Debug] [Auto Access] Adding the following credentials: 'anikarai:hutr'
+2024-11-03 13:00:32.419 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-03 13:00:32.421 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-03 13:00:32.421 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.246
+2024-11-03 13:00:32.532 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-03 13:00:32.736 - [Debug] [SHELL] Opened shell for attacker
+2024-11-03 13:00:32.739 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2024-11-03 13:00:36.565 - [Debug] [SHELL] Attacker Keystroke: l
+2024-11-03 13:00:36.874 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 13:00:37.408 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 13:00:37.409 - [Debug] [SHELL] line from reader: ls
+2024-11-03 13:00:37.409 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2024-11-03 13:00:40.777 - [Debug] [SHELL] Attacker Keystroke: /
+2024-11-03 13:00:41.055 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 13:00:41.240 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 13:00:42.068 - [Debug] [SHELL] Attacker Keystroke: c
+2024-11-03 13:00:42.318 - [Debug] [SHELL] Attacker Keystroke: c
+2024-11-03 13:00:42.378 - [Debug] [SHELL] Attacker Keystroke: d
+2024-11-03 13:00:42.858 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 13:00:43.121 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 13:00:43.221 - [Debug] [SHELL] Attacker Keystroke: d
+2024-11-03 13:00:43.962 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-11-03 13:00:44.164 - [Debug] [SHELL] Attacker Keystroke: /
+2024-11-03 13:00:44.517 - [Debug] [SHELL] Attacker Keystroke: u
+2024-11-03 13:00:44.650 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 13:00:44.793 - [Debug] [SHELL] Attacker Keystroke: r
+2024-11-03 13:00:45.211 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 13:00:45.212 - [Debug] [SHELL] line from reader: cd /usr
+2024-11-03 13:00:45.212 - [Debug] [SHELL] Keystroke buffer: 47,127,127,99,99,100,127,127,100,32,47,117,115,114,13
+2024-11-03 13:00:45.858 - [Debug] [SHELL] Attacker Keystroke: l
+2024-11-03 13:00:45.983 - [Debug] [SHELL] Attacker Keystroke: s
+2024-11-03 13:00:46.255 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 13:00:46.256 - [Debug] [SHELL] line from reader: ls
+2024-11-03 13:00:46.256 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2024-11-03 13:00:54.342 - [Debug] [SHELL] Attacker Keystroke: c
+2024-11-03 13:00:54.868 - [Debug] [SHELL] Attacker Keystroke: d
+2024-11-03 13:00:54.909 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-11-03 13:00:55.191 - [Debug] [SHELL] Attacker Keystroke: session_files
+2024-11-03 13:00:56.053 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 13:00:56.054 - [Debug] [SHELL] line from reader: cd session_files
+2024-11-03 13:00:56.054 - [Debug] [SHELL] Keystroke buffer: 99,100,32,115,101,115,115,105,111,110,95,102,105,108,101,115,13
+2024-11-03 13:00:56.569 - [Debug] [SHELL] Attacker Keystroke: e
+2024-11-03 13:00:56.756 - [Debug] [SHELL] Attacker Keystroke: x
+2024-11-03 13:00:56.917 - [Debug] [SHELL] Attacker Keystroke: i
+2024-11-03 13:00:57.058 - [Debug] [SHELL] Attacker Keystroke: t
+2024-11-03 13:00:57.452 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 13:00:57.453 - [Debug] [SHELL] line from reader: exit
+2024-11-03 13:00:57.453 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2024-11-03 13:00:57.457 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2024-11-03 13:00:57.457 - [Debug] [SHELL] Honeypot ended shell
+2024-11-03 13:00:57.509 - [Debug] [SHELL] Attacker ended the shell
+2024-11-03 13:00:57.511 - [Debug] [Connection] Attacker closed connection
+2024-11-03 13:00:57.517 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-03 13:00:57.523 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

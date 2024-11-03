@@ -60,17 +60,13 @@ current_time=0
 
 while [[ -f /home/student/"$container_name"_last_active.txt ]]
 do
-  # echo "CURRENT TIME: $current_time"
-  timeout --foreground 1 tail -n 0 -F "$mitm_log_path" | while read -r line
-  do
     date +%s > /home/student/"$container_name"_last_active.txt # Rewrite time of the last command
-    if echo "$line" | grep -q "Attacker closed connection";
+    if echo "$mitm_log_path" | grep -q "Attacker closed";
       then
         # echo "RECYCLING SINCE ATTACKER ENDED SESSION"
         rm /home/student/"$container_name"_last_active.txt
         break
     fi
-  done
 
   current_time=$(date +%s)
   # echo "CURRENT TIME = $current_time"
@@ -101,6 +97,6 @@ sudo iptables --delete INPUT -s "$attacker_ip" -d 10.0.3.1 -p tcp --dport "$MITM
 rm /home/student/"$container_name"_start_time.txt
 rm /home/student/"$container_name"_attacker_ip.txt
 # rm "$container_name"_last_active.txt
-sudo /home/student/destroy_container.sh "$container_name" "$external_ip" 
+/home/student/destroy_container.sh "$container_name" "$external_ip" 
 
 

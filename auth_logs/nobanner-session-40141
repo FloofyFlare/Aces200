@@ -1,0 +1,25 @@
+Nov  3 18:18:23 nobanner-session-40141 systemd-logind[164]: New seat seat0.
+Nov  3 18:18:27 nobanner-session-40141 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:18:27 nobanner-session-40141 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:18:36 nobanner-session-40141 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:18:36 nobanner-session-40141 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:18:36 nobanner-session-40141 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:18:52 nobanner-session-40141 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:18:53 nobanner-session-40141 usermod[766]: change user 'sshd' password
+Nov  3 18:18:53 nobanner-session-40141 chage[773]: changed password expiry for sshd
+Nov  3 18:18:55 nobanner-session-40141 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:18:55 nobanner-session-40141 sshd[1208]: Server listening on :: port 22.
+Nov  3 18:18:56 nobanner-session-40141 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:18:56 nobanner-session-40141 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:18:56 nobanner-session-40141 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:19:03 nobanner-session-40141 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:19:52 nobanner-session-40141 useradd[1554]: new group: name=gaop, GID=1001
+Nov  3 18:19:52 nobanner-session-40141 useradd[1554]: new user: name=gaop, UID=1001, GID=1001, home=/home/gaop, shell=/bin/bash, from=none
+Nov  3 18:19:52 nobanner-session-40141 usermod[1563]: change user 'gaop' password
+Nov  3 18:19:52 nobanner-session-40141 sshd[1570]: Accepted password for gaop from 10.0.3.1 port 49028 ssh2
+Nov  3 18:19:52 nobanner-session-40141 sshd[1570]: pam_unix(sshd:session): session opened for user gaop by (uid=0)
+Nov  3 18:19:52 nobanner-session-40141 systemd-logind[164]: New session 14 of user gaop.
+Nov  3 18:19:52 nobanner-session-40141 systemd: pam_unix(systemd-user:session): session opened for user gaop by (uid=0)
+Nov  3 18:19:57 nobanner-session-40141 sshd[1570]: pam_unix(sshd:session): session closed for user gaop
+Nov  3 18:19:57 nobanner-session-40141 systemd-logind[164]: Session 14 logged out. Waiting for processes to exit.
+Nov  3 18:19:57 nobanner-session-40141 systemd-logind[164]: Removed session 14.

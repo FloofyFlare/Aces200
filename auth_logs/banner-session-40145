@@ -1,0 +1,21 @@
+Nov  3 18:25:19 banner-session-40145 systemd-logind[164]: New seat seat0.
+Nov  3 18:25:22 banner-session-40145 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:25:22 banner-session-40145 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:25:30 banner-session-40145 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:25:30 banner-session-40145 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:25:30 banner-session-40145 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:25:59 banner-session-40145 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:25:59 banner-session-40145 usermod[765]: change user 'sshd' password
+Nov  3 18:25:59 banner-session-40145 chage[772]: changed password expiry for sshd
+Nov  3 18:26:01 banner-session-40145 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:26:01 banner-session-40145 sshd[1207]: Server listening on :: port 22.
+Nov  3 18:26:04 banner-session-40145 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:26:04 banner-session-40145 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:26:04 banner-session-40145 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:26:11 banner-session-40145 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:28:06 banner-session-40145 useradd[1559]: failed adding user 'root', data deleted
+Nov  3 18:28:06 banner-session-40145 usermod[1560]: change user 'root' password
+Nov  3 18:28:06 banner-session-40145 sshd[1567]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov  3 18:28:08 banner-session-40145 sshd[1567]: Failed password for root from 10.0.3.1 port 54764 ssh2
+Nov  3 18:28:08 banner-session-40145 sshd[1567]: Received disconnect from 10.0.3.1 port 54764:11:  [preauth]
+Nov  3 18:28:08 banner-session-40145 sshd[1567]: Disconnected from authenticating user root 10.0.3.1 port 54764 [preauth]

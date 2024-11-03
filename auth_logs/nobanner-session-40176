@@ -1,0 +1,27 @@
+Nov  3 22:30:32 nobanner-session-40176 systemd-logind[165]: New seat seat0.
+Nov  3 22:30:36 nobanner-session-40176 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 22:30:36 nobanner-session-40176 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 22:30:44 nobanner-session-40176 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 22:30:44 nobanner-session-40176 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 22:30:44 nobanner-session-40176 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 22:30:56 nobanner-session-40176 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 22:30:57 nobanner-session-40176 usermod[766]: change user 'sshd' password
+Nov  3 22:30:57 nobanner-session-40176 chage[773]: changed password expiry for sshd
+Nov  3 22:30:58 nobanner-session-40176 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  3 22:30:58 nobanner-session-40176 sshd[1208]: Server listening on :: port 22.
+Nov  3 22:31:00 nobanner-session-40176 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 22:31:00 nobanner-session-40176 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 22:31:00 nobanner-session-40176 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 22:31:09 nobanner-session-40176 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 22:31:46 nobanner-session-40176 useradd[1554]: new group: name=misp, GID=1001
+Nov  3 22:31:46 nobanner-session-40176 useradd[1554]: new user: name=misp, UID=1001, GID=1001, home=/home/misp, shell=/bin/bash, from=none
+Nov  3 22:31:47 nobanner-session-40176 usermod[1563]: change user 'misp' password
+Nov  3 22:31:47 nobanner-session-40176 sshd[1570]: Accepted password for misp from 10.0.3.1 port 33450 ssh2
+Nov  3 22:31:47 nobanner-session-40176 sshd[1570]: pam_unix(sshd:session): session opened for user misp by (uid=0)
+Nov  3 22:31:47 nobanner-session-40176 systemd-logind[165]: New session 81 of user misp.
+Nov  3 22:31:47 nobanner-session-40176 systemd: pam_unix(systemd-user:session): session opened for user misp by (uid=0)
+Nov  3 22:31:49 nobanner-session-40176 sshd[1587]: Received disconnect from 10.0.3.1 port 33450:11: 
+Nov  3 22:31:49 nobanner-session-40176 sshd[1587]: Disconnected from user misp 10.0.3.1 port 33450
+Nov  3 22:31:49 nobanner-session-40176 sshd[1570]: pam_unix(sshd:session): session closed for user misp
+Nov  3 22:31:49 nobanner-session-40176 systemd-logind[165]: Session 81 logged out. Waiting for processes to exit.
+Nov  3 22:31:49 nobanner-session-40176 systemd-logind[165]: Removed session 81.

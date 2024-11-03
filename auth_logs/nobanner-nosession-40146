@@ -1,0 +1,25 @@
+Nov  3 18:25:30 nobanner-nosession-40146 systemd-logind[164]: New seat seat0.
+Nov  3 18:25:33 nobanner-nosession-40146 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 18:25:33 nobanner-nosession-40146 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:25:41 nobanner-nosession-40146 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:25:41 nobanner-nosession-40146 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 18:25:41 nobanner-nosession-40146 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:26:04 nobanner-nosession-40146 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 18:26:04 nobanner-nosession-40146 usermod[765]: change user 'sshd' password
+Nov  3 18:26:04 nobanner-nosession-40146 chage[772]: changed password expiry for sshd
+Nov  3 18:26:06 nobanner-nosession-40146 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  3 18:26:06 nobanner-nosession-40146 sshd[1207]: Server listening on :: port 22.
+Nov  3 18:26:08 nobanner-nosession-40146 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:26:08 nobanner-nosession-40146 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 18:26:08 nobanner-nosession-40146 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 18:26:15 nobanner-nosession-40146 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 18:27:36 nobanner-nosession-40146 useradd[1550]: new group: name=vhserver2, GID=1001
+Nov  3 18:27:36 nobanner-nosession-40146 useradd[1550]: new user: name=vhserver2, UID=1001, GID=1001, home=/home/vhserver2, shell=/bin/bash, from=none
+Nov  3 18:27:36 nobanner-nosession-40146 usermod[1559]: change user 'vhserver2' password
+Nov  3 18:27:36 nobanner-nosession-40146 sshd[1566]: Accepted password for vhserver2 from 10.0.3.1 port 55036 ssh2
+Nov  3 18:27:36 nobanner-nosession-40146 sshd[1566]: pam_unix(sshd:session): session opened for user vhserver2 by (uid=0)
+Nov  3 18:27:36 nobanner-nosession-40146 systemd-logind[164]: New session 20 of user vhserver2.
+Nov  3 18:27:36 nobanner-nosession-40146 systemd: pam_unix(systemd-user:session): session opened for user vhserver2 by (uid=0)
+Nov  3 18:27:41 nobanner-nosession-40146 sshd[1566]: pam_unix(sshd:session): session closed for user vhserver2
+Nov  3 18:27:41 nobanner-nosession-40146 systemd-logind[164]: Session 20 logged out. Waiting for processes to exit.
+Nov  3 18:27:41 nobanner-nosession-40146 systemd-logind[164]: Removed session 20.

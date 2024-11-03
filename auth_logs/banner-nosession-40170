@@ -1,0 +1,27 @@
+Nov  3 20:50:45 banner-nosession-40170 systemd-logind[164]: New seat seat0.
+Nov  3 20:50:49 banner-nosession-40170 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 20:50:49 banner-nosession-40170 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 20:50:57 banner-nosession-40170 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 20:50:57 banner-nosession-40170 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 20:50:57 banner-nosession-40170 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 20:51:06 banner-nosession-40170 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 20:51:06 banner-nosession-40170 usermod[766]: change user 'sshd' password
+Nov  3 20:51:06 banner-nosession-40170 chage[773]: changed password expiry for sshd
+Nov  3 20:51:08 banner-nosession-40170 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  3 20:51:08 banner-nosession-40170 sshd[1208]: Server listening on :: port 22.
+Nov  3 20:51:09 banner-nosession-40170 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 20:51:10 banner-nosession-40170 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 20:51:10 banner-nosession-40170 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 20:51:18 banner-nosession-40170 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 20:56:19 banner-nosession-40170 useradd[1558]: new group: name=guest, GID=1001
+Nov  3 20:56:19 banner-nosession-40170 useradd[1558]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov  3 20:56:19 banner-nosession-40170 usermod[1567]: change user 'guest' password
+Nov  3 20:56:19 banner-nosession-40170 sshd[1574]: Accepted password for guest from 10.0.3.1 port 43908 ssh2
+Nov  3 20:56:19 banner-nosession-40170 sshd[1574]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov  3 20:56:19 banner-nosession-40170 systemd-logind[164]: New session 62 of user guest.
+Nov  3 20:56:19 banner-nosession-40170 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov  3 20:56:23 banner-nosession-40170 sshd[1591]: Received disconnect from 10.0.3.1 port 43908:11: 
+Nov  3 20:56:23 banner-nosession-40170 sshd[1591]: Disconnected from user guest 10.0.3.1 port 43908
+Nov  3 20:56:23 banner-nosession-40170 sshd[1574]: pam_unix(sshd:session): session closed for user guest
+Nov  3 20:56:23 banner-nosession-40170 systemd-logind[164]: Session 62 logged out. Waiting for processes to exit.
+Nov  3 20:56:23 banner-nosession-40170 systemd-logind[164]: Removed session 62.

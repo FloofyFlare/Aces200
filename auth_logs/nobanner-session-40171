@@ -1,0 +1,40 @@
+Nov  3 20:52:16 nobanner-session-40171 systemd-logind[164]: New seat seat0.
+Nov  3 20:52:20 nobanner-session-40171 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  3 20:52:20 nobanner-session-40171 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 20:52:28 nobanner-session-40171 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 20:52:28 nobanner-session-40171 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  3 20:52:28 nobanner-session-40171 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 20:52:38 nobanner-session-40171 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  3 20:52:39 nobanner-session-40171 usermod[766]: change user 'sshd' password
+Nov  3 20:52:39 nobanner-session-40171 chage[773]: changed password expiry for sshd
+Nov  3 20:52:41 nobanner-session-40171 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  3 20:52:41 nobanner-session-40171 sshd[1208]: Server listening on :: port 22.
+Nov  3 20:52:43 nobanner-session-40171 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 20:52:43 nobanner-session-40171 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  3 20:52:43 nobanner-session-40171 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  3 20:52:50 nobanner-session-40171 sudo: pam_unix(sudo:session): session closed for user root
+Nov  3 20:59:15 nobanner-session-40171 useradd[1555]: new group: name=wikijs, GID=1001
+Nov  3 20:59:15 nobanner-session-40171 useradd[1555]: new user: name=wikijs, UID=1001, GID=1001, home=/home/wikijs, shell=/bin/bash, from=none
+Nov  3 20:59:16 nobanner-session-40171 usermod[1564]: change user 'wikijs' password
+Nov  3 20:59:16 nobanner-session-40171 sshd[1571]: Accepted password for wikijs from 10.0.3.1 port 51148 ssh2
+Nov  3 20:59:16 nobanner-session-40171 sshd[1571]: pam_unix(sshd:session): session opened for user wikijs by (uid=0)
+Nov  3 20:59:16 nobanner-session-40171 systemd-logind[164]: New session 65 of user wikijs.
+Nov  3 20:59:16 nobanner-session-40171 systemd: pam_unix(systemd-user:session): session opened for user wikijs by (uid=0)
+Nov  3 20:59:26 nobanner-session-40171 sshd[1588]: Received disconnect from 10.0.3.1 port 51148:11: 
+Nov  3 20:59:26 nobanner-session-40171 sshd[1588]: Disconnected from user wikijs 10.0.3.1 port 51148
+Nov  3 20:59:26 nobanner-session-40171 sshd[1571]: pam_unix(sshd:session): session closed for user wikijs
+Nov  3 20:59:26 nobanner-session-40171 systemd-logind[164]: Session 65 logged out. Waiting for processes to exit.
+Nov  3 20:59:26 nobanner-session-40171 systemd-logind[164]: Removed session 65.
+Nov  3 21:16:52 nobanner-session-40171 sshd[1597]: Accepted password for wikijs from 10.0.3.1 port 39450 ssh2
+Nov  3 21:16:52 nobanner-session-40171 sshd[1597]: pam_unix(sshd:session): session opened for user wikijs by (uid=0)
+Nov  3 21:16:52 nobanner-session-40171 systemd-logind[164]: New session 68 of user wikijs.
+Nov  3 21:16:52 nobanner-session-40171 systemd: pam_unix(systemd-user:session): session opened for user wikijs by (uid=0)
+Nov  3 21:17:00 nobanner-session-40171 sshd[1614]: Received disconnect from 10.0.3.1 port 39450:11: 
+Nov  3 21:17:00 nobanner-session-40171 sshd[1614]: Disconnected from user wikijs 10.0.3.1 port 39450
+Nov  3 21:17:00 nobanner-session-40171 sshd[1597]: pam_unix(sshd:session): session closed for user wikijs
+Nov  3 21:17:00 nobanner-session-40171 systemd-logind[164]: Session 68 logged out. Waiting for processes to exit.
+Nov  3 21:17:00 nobanner-session-40171 systemd-logind[164]: Removed session 68.
+Nov  3 21:17:01 nobanner-session-40171 CRON[1618]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 21:17:01 nobanner-session-40171 CRON[1618]: pam_unix(cron:session): session closed for user root
+Nov  3 22:17:01 nobanner-session-40171 CRON[1626]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  3 22:17:01 nobanner-session-40171 CRON[1626]: pam_unix(cron:session): session closed for user root
