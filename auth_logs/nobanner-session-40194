@@ -1,0 +1,27 @@
+Nov  4 16:29:20 nobanner-session-40194 systemd-logind[164]: New seat seat0.
+Nov  4 16:29:23 nobanner-session-40194 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 16:29:23 nobanner-session-40194 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:29:31 nobanner-session-40194 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:29:31 nobanner-session-40194 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 16:29:31 nobanner-session-40194 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:29:46 nobanner-session-40194 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 16:29:46 nobanner-session-40194 usermod[765]: change user 'sshd' password
+Nov  4 16:29:46 nobanner-session-40194 chage[772]: changed password expiry for sshd
+Nov  4 16:29:49 nobanner-session-40194 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 16:29:49 nobanner-session-40194 sshd[1207]: Server listening on :: port 22.
+Nov  4 16:29:51 nobanner-session-40194 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:29:52 nobanner-session-40194 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 16:29:52 nobanner-session-40194 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:30:01 nobanner-session-40194 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:30:32 nobanner-session-40194 useradd[1553]: new group: name=ivadmin, GID=1001
+Nov  4 16:30:32 nobanner-session-40194 useradd[1553]: new user: name=ivadmin, UID=1001, GID=1001, home=/home/ivadmin, shell=/bin/bash, from=none
+Nov  4 16:30:32 nobanner-session-40194 usermod[1562]: change user 'ivadmin' password
+Nov  4 16:30:32 nobanner-session-40194 sshd[1569]: Accepted password for ivadmin from 10.0.3.1 port 32828 ssh2
+Nov  4 16:30:32 nobanner-session-40194 sshd[1569]: pam_unix(sshd:session): session opened for user ivadmin by (uid=0)
+Nov  4 16:30:32 nobanner-session-40194 systemd-logind[164]: New session 178 of user ivadmin.
+Nov  4 16:30:33 nobanner-session-40194 systemd: pam_unix(systemd-user:session): session opened for user ivadmin by (uid=0)
+Nov  4 16:30:34 nobanner-session-40194 sshd[1586]: Received disconnect from 10.0.3.1 port 32828:11: 
+Nov  4 16:30:34 nobanner-session-40194 sshd[1586]: Disconnected from user ivadmin 10.0.3.1 port 32828
+Nov  4 16:30:34 nobanner-session-40194 sshd[1569]: pam_unix(sshd:session): session closed for user ivadmin
+Nov  4 16:30:34 nobanner-session-40194 systemd-logind[164]: Session 178 logged out. Waiting for processes to exit.
+Nov  4 16:30:34 nobanner-session-40194 systemd-logind[164]: Removed session 178.

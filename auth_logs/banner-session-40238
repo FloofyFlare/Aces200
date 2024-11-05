@@ -1,0 +1,25 @@
+Nov  4 19:38:30 banner-session-40238 systemd-logind[164]: New seat seat0.
+Nov  4 19:38:33 banner-session-40238 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 19:38:33 banner-session-40238 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 19:38:42 banner-session-40238 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 19:38:42 banner-session-40238 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 19:38:42 banner-session-40238 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 19:38:59 banner-session-40238 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 19:39:00 banner-session-40238 usermod[765]: change user 'sshd' password
+Nov  4 19:39:00 banner-session-40238 chage[772]: changed password expiry for sshd
+Nov  4 19:39:02 banner-session-40238 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 19:39:02 banner-session-40238 sshd[1207]: Server listening on :: port 22.
+Nov  4 19:39:04 banner-session-40238 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 19:39:04 banner-session-40238 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 19:39:04 banner-session-40238 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 19:39:14 banner-session-40238 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 19:39:27 banner-session-40238 useradd[1559]: new group: name=yq, GID=1001
+Nov  4 19:39:27 banner-session-40238 useradd[1559]: new user: name=yq, UID=1001, GID=1001, home=/home/yq, shell=/bin/bash, from=none
+Nov  4 19:39:27 banner-session-40238 usermod[1568]: change user 'yq' password
+Nov  4 19:39:27 banner-session-40238 sshd[1575]: Accepted password for yq from 10.0.3.1 port 54750 ssh2
+Nov  4 19:39:27 banner-session-40238 sshd[1575]: pam_unix(sshd:session): session opened for user yq by (uid=0)
+Nov  4 19:39:27 banner-session-40238 systemd-logind[164]: New session 254 of user yq.
+Nov  4 19:39:27 banner-session-40238 systemd: pam_unix(systemd-user:session): session opened for user yq by (uid=0)
+Nov  4 19:39:34 banner-session-40238 sshd[1575]: pam_unix(sshd:session): session closed for user yq
+Nov  4 19:39:34 banner-session-40238 systemd-logind[164]: Session 254 logged out. Waiting for processes to exit.
+Nov  4 19:39:34 banner-session-40238 systemd-logind[164]: Removed session 254.

@@ -1,0 +1,24 @@
+Nov  4 16:27:26 nobanner-nosession-40192 systemd-logind[165]: New seat seat0.
+Nov  4 16:27:29 nobanner-nosession-40192 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 16:27:29 nobanner-nosession-40192 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:27:38 nobanner-nosession-40192 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:27:38 nobanner-nosession-40192 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 16:27:38 nobanner-nosession-40192 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:27:56 nobanner-nosession-40192 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 16:27:57 nobanner-nosession-40192 usermod[765]: change user 'sshd' password
+Nov  4 16:27:57 nobanner-nosession-40192 chage[772]: changed password expiry for sshd
+Nov  4 16:28:00 nobanner-nosession-40192 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 16:28:00 nobanner-nosession-40192 sshd[1207]: Server listening on :: port 22.
+Nov  4 16:28:02 nobanner-nosession-40192 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:28:02 nobanner-nosession-40192 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 16:28:02 nobanner-nosession-40192 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:28:12 nobanner-nosession-40192 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:28:47 nobanner-nosession-40192 useradd[1550]: new group: name=fftp, GID=1001
+Nov  4 16:28:47 nobanner-nosession-40192 useradd[1550]: new user: name=fftp, UID=1001, GID=1001, home=/home/fftp, shell=/bin/bash, from=none
+Nov  4 16:28:47 nobanner-nosession-40192 usermod[1559]: change user 'fftp' password
+Nov  4 16:28:47 nobanner-nosession-40192 sshd[1566]: Accepted password for fftp from 10.0.3.1 port 57508 ssh2
+Nov  4 16:28:47 nobanner-nosession-40192 sshd[1566]: pam_unix(sshd:session): session opened for user fftp by (uid=0)
+Nov  4 16:28:47 nobanner-nosession-40192 systemd-logind[165]: New session 175 of user fftp.
+Nov  4 16:28:47 nobanner-nosession-40192 systemd: pam_unix(systemd-user:session): session opened for user fftp by (uid=0)
+Nov  4 16:28:53 nobanner-nosession-40192 sshd[1566]: pam_unix(sshd:session): session closed for user fftp
+Nov  4 16:28:53 nobanner-nosession-40192 systemd-logind[165]: Session 175 logged out. Waiting for processes to exit.

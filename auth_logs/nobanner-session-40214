@@ -1,0 +1,27 @@
+Nov  4 17:27:10 nobanner-session-40214 systemd-logind[164]: New seat seat0.
+Nov  4 17:27:14 nobanner-session-40214 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 17:27:14 nobanner-session-40214 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:27:22 nobanner-session-40214 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:27:22 nobanner-session-40214 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 17:27:22 nobanner-session-40214 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:27:34 nobanner-session-40214 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 17:27:34 nobanner-session-40214 usermod[765]: change user 'sshd' password
+Nov  4 17:27:34 nobanner-session-40214 chage[772]: changed password expiry for sshd
+Nov  4 17:27:36 nobanner-session-40214 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 17:27:36 nobanner-session-40214 sshd[1207]: Server listening on :: port 22.
+Nov  4 17:27:38 nobanner-session-40214 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:27:38 nobanner-session-40214 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 17:27:38 nobanner-session-40214 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:27:46 nobanner-session-40214 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:28:34 nobanner-session-40214 useradd[1553]: new group: name=oneadmin, GID=1001
+Nov  4 17:28:34 nobanner-session-40214 useradd[1553]: new user: name=oneadmin, UID=1001, GID=1001, home=/home/oneadmin, shell=/bin/bash, from=none
+Nov  4 17:28:34 nobanner-session-40214 usermod[1562]: change user 'oneadmin' password
+Nov  4 17:28:34 nobanner-session-40214 sshd[1569]: Accepted password for oneadmin from 10.0.3.1 port 41104 ssh2
+Nov  4 17:28:34 nobanner-session-40214 sshd[1569]: pam_unix(sshd:session): session opened for user oneadmin by (uid=0)
+Nov  4 17:28:34 nobanner-session-40214 systemd-logind[164]: New session 212 of user oneadmin.
+Nov  4 17:28:34 nobanner-session-40214 systemd: pam_unix(systemd-user:session): session opened for user oneadmin by (uid=0)
+Nov  4 17:28:35 nobanner-session-40214 sshd[1586]: Received disconnect from 10.0.3.1 port 41104:11: 
+Nov  4 17:28:35 nobanner-session-40214 sshd[1586]: Disconnected from user oneadmin 10.0.3.1 port 41104
+Nov  4 17:28:35 nobanner-session-40214 sshd[1569]: pam_unix(sshd:session): session closed for user oneadmin
+Nov  4 17:28:35 nobanner-session-40214 systemd-logind[164]: Session 212 logged out. Waiting for processes to exit.
+Nov  4 17:28:35 nobanner-session-40214 systemd-logind[164]: Removed session 212.

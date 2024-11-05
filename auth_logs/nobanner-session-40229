@@ -1,0 +1,27 @@
+Nov  4 18:15:50 nobanner-session-40229 systemd-logind[165]: New seat seat0.
+Nov  4 18:15:54 nobanner-session-40229 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 18:15:54 nobanner-session-40229 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:16:03 nobanner-session-40229 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:16:03 nobanner-session-40229 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 18:16:03 nobanner-session-40229 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:16:14 nobanner-session-40229 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 18:16:14 nobanner-session-40229 usermod[765]: change user 'sshd' password
+Nov  4 18:16:14 nobanner-session-40229 chage[772]: changed password expiry for sshd
+Nov  4 18:16:16 nobanner-session-40229 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 18:16:16 nobanner-session-40229 sshd[1207]: Server listening on :: port 22.
+Nov  4 18:16:18 nobanner-session-40229 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:16:18 nobanner-session-40229 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 18:16:18 nobanner-session-40229 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:16:25 nobanner-session-40229 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:16:41 nobanner-session-40229 useradd[1553]: new group: name=pradmin, GID=1001
+Nov  4 18:16:41 nobanner-session-40229 useradd[1553]: new user: name=pradmin, UID=1001, GID=1001, home=/home/pradmin, shell=/bin/bash, from=none
+Nov  4 18:16:41 nobanner-session-40229 usermod[1562]: change user 'pradmin' password
+Nov  4 18:16:41 nobanner-session-40229 sshd[1569]: Accepted password for pradmin from 10.0.3.1 port 44738 ssh2
+Nov  4 18:16:41 nobanner-session-40229 sshd[1569]: pam_unix(sshd:session): session opened for user pradmin by (uid=0)
+Nov  4 18:16:41 nobanner-session-40229 systemd-logind[165]: New session 236 of user pradmin.
+Nov  4 18:16:41 nobanner-session-40229 systemd: pam_unix(systemd-user:session): session opened for user pradmin by (uid=0)
+Nov  4 18:16:45 nobanner-session-40229 sshd[1586]: Received disconnect from 10.0.3.1 port 44738:11: 
+Nov  4 18:16:45 nobanner-session-40229 sshd[1586]: Disconnected from user pradmin 10.0.3.1 port 44738
+Nov  4 18:16:45 nobanner-session-40229 sshd[1569]: pam_unix(sshd:session): session closed for user pradmin
+Nov  4 18:16:45 nobanner-session-40229 systemd-logind[165]: Session 236 logged out. Waiting for processes to exit.
+Nov  4 18:16:45 nobanner-session-40229 systemd-logind[165]: Removed session 236.

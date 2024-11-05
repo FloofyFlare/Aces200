@@ -1,0 +1,27 @@
+Nov  4 17:40:07 banner-nosession-40218 systemd-logind[164]: New seat seat0.
+Nov  4 17:40:10 banner-nosession-40218 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 17:40:10 banner-nosession-40218 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:40:19 banner-nosession-40218 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:40:19 banner-nosession-40218 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 17:40:19 banner-nosession-40218 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:40:36 banner-nosession-40218 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 17:40:36 banner-nosession-40218 usermod[765]: change user 'sshd' password
+Nov  4 17:40:36 banner-nosession-40218 chage[772]: changed password expiry for sshd
+Nov  4 17:40:39 banner-nosession-40218 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 17:40:39 banner-nosession-40218 sshd[1207]: Server listening on :: port 22.
+Nov  4 17:40:41 banner-nosession-40218 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:40:41 banner-nosession-40218 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 17:40:41 banner-nosession-40218 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:40:50 banner-nosession-40218 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:44:12 banner-nosession-40218 useradd[1556]: new group: name=support, GID=1001
+Nov  4 17:44:12 banner-nosession-40218 useradd[1556]: new user: name=support, UID=1001, GID=1001, home=/home/support, shell=/bin/bash, from=none
+Nov  4 17:44:13 banner-nosession-40218 usermod[1565]: change user 'support' password
+Nov  4 17:44:13 banner-nosession-40218 sshd[1572]: Accepted password for support from 10.0.3.1 port 39292 ssh2
+Nov  4 17:44:13 banner-nosession-40218 sshd[1572]: pam_unix(sshd:session): session opened for user support by (uid=0)
+Nov  4 17:44:13 banner-nosession-40218 systemd-logind[164]: New session 222 of user support.
+Nov  4 17:44:13 banner-nosession-40218 systemd: pam_unix(systemd-user:session): session opened for user support by (uid=0)
+Nov  4 17:44:15 banner-nosession-40218 sshd[1589]: Received disconnect from 10.0.3.1 port 39292:11: 
+Nov  4 17:44:15 banner-nosession-40218 sshd[1589]: Disconnected from user support 10.0.3.1 port 39292
+Nov  4 17:44:15 banner-nosession-40218 sshd[1572]: pam_unix(sshd:session): session closed for user support
+Nov  4 17:44:15 banner-nosession-40218 systemd-logind[164]: Session 222 logged out. Waiting for processes to exit.
+Nov  4 17:44:15 banner-nosession-40218 systemd-logind[164]: Removed session 222.

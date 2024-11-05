@@ -1,0 +1,58 @@
+Nov  4 16:38:13 banner-nosession-40198 systemd-logind[164]: New seat seat0.
+Nov  4 16:38:16 banner-nosession-40198 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 16:38:16 banner-nosession-40198 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:38:24 banner-nosession-40198 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:38:24 banner-nosession-40198 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 16:38:24 banner-nosession-40198 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:38:39 banner-nosession-40198 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 16:38:39 banner-nosession-40198 usermod[765]: change user 'sshd' password
+Nov  4 16:38:39 banner-nosession-40198 chage[772]: changed password expiry for sshd
+Nov  4 16:38:41 banner-nosession-40198 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 16:38:41 banner-nosession-40198 sshd[1207]: Server listening on :: port 22.
+Nov  4 16:38:43 banner-nosession-40198 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:38:43 banner-nosession-40198 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 16:38:43 banner-nosession-40198 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:38:53 banner-nosession-40198 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:56:41 banner-nosession-40198 useradd[1558]: new group: name=k, GID=1001
+Nov  4 16:56:41 banner-nosession-40198 useradd[1558]: new user: name=k, UID=1001, GID=1001, home=/home/k, shell=/bin/bash, from=none
+Nov  4 16:56:41 banner-nosession-40198 usermod[1567]: change user 'k' password
+Nov  4 16:56:41 banner-nosession-40198 sshd[1574]: Accepted password for k from 10.0.3.1 port 42476 ssh2
+Nov  4 16:56:41 banner-nosession-40198 sshd[1574]: pam_unix(sshd:session): session opened for user k by (uid=0)
+Nov  4 16:56:41 banner-nosession-40198 systemd-logind[164]: New session 191 of user k.
+Nov  4 16:56:41 banner-nosession-40198 systemd: pam_unix(systemd-user:session): session opened for user k by (uid=0)
+Nov  4 16:56:47 banner-nosession-40198 sshd[1591]: Received disconnect from 10.0.3.1 port 42476:11: 
+Nov  4 16:56:47 banner-nosession-40198 sshd[1591]: Disconnected from user k 10.0.3.1 port 42476
+Nov  4 16:56:47 banner-nosession-40198 sshd[1574]: pam_unix(sshd:session): session closed for user k
+Nov  4 16:56:47 banner-nosession-40198 systemd-logind[164]: Session 191 logged out. Waiting for processes to exit.
+Nov  4 16:56:47 banner-nosession-40198 systemd-logind[164]: Removed session 191.
+Nov  4 17:00:34 banner-nosession-40198 sshd[1598]: Accepted password for k from 10.0.3.1 port 47322 ssh2
+Nov  4 17:00:34 banner-nosession-40198 sshd[1598]: pam_unix(sshd:session): session opened for user k by (uid=0)
+Nov  4 17:00:34 banner-nosession-40198 systemd-logind[164]: New session 195 of user k.
+Nov  4 17:00:34 banner-nosession-40198 systemd: pam_unix(systemd-user:session): session opened for user k by (uid=0)
+Nov  4 17:00:41 banner-nosession-40198 sshd[1615]: Received disconnect from 10.0.3.1 port 47322:11: 
+Nov  4 17:00:41 banner-nosession-40198 sshd[1615]: Disconnected from user k 10.0.3.1 port 47322
+Nov  4 17:00:41 banner-nosession-40198 sshd[1598]: pam_unix(sshd:session): session closed for user k
+Nov  4 17:00:41 banner-nosession-40198 systemd-logind[164]: Session 195 logged out. Waiting for processes to exit.
+Nov  4 17:00:41 banner-nosession-40198 systemd-logind[164]: Removed session 195.
+Nov  4 17:00:51 banner-nosession-40198 systemd: pam_unix(systemd-user:session): session closed for user k
+Nov  4 17:17:01 banner-nosession-40198 CRON[1623]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 17:17:01 banner-nosession-40198 CRON[1623]: pam_unix(cron:session): session closed for user root
+Nov  4 17:23:24 banner-nosession-40198 sshd[1627]: Accepted password for k from 10.0.3.1 port 55332 ssh2
+Nov  4 17:23:24 banner-nosession-40198 sshd[1627]: pam_unix(sshd:session): session opened for user k by (uid=0)
+Nov  4 17:23:24 banner-nosession-40198 systemd-logind[164]: New session 208 of user k.
+Nov  4 17:23:24 banner-nosession-40198 systemd: pam_unix(systemd-user:session): session opened for user k by (uid=0)
+Nov  4 17:23:28 banner-nosession-40198 sshd[1644]: Received disconnect from 10.0.3.1 port 55332:11: 
+Nov  4 17:23:28 banner-nosession-40198 sshd[1644]: Disconnected from user k 10.0.3.1 port 55332
+Nov  4 17:23:28 banner-nosession-40198 sshd[1627]: pam_unix(sshd:session): session closed for user k
+Nov  4 17:23:28 banner-nosession-40198 systemd-logind[164]: Session 208 logged out. Waiting for processes to exit.
+Nov  4 17:23:28 banner-nosession-40198 systemd-logind[164]: Removed session 208.
+Nov  4 17:23:38 banner-nosession-40198 systemd: pam_unix(systemd-user:session): session closed for user k
+Nov  4 17:29:55 banner-nosession-40198 sshd[1651]: Accepted password for k from 10.0.3.1 port 35862 ssh2
+Nov  4 17:29:55 banner-nosession-40198 sshd[1651]: pam_unix(sshd:session): session opened for user k by (uid=0)
+Nov  4 17:29:55 banner-nosession-40198 systemd-logind[164]: New session 214 of user k.
+Nov  4 17:29:55 banner-nosession-40198 systemd: pam_unix(systemd-user:session): session opened for user k by (uid=0)
+Nov  4 17:30:01 banner-nosession-40198 sshd[1668]: Received disconnect from 10.0.3.1 port 35862:11: 
+Nov  4 17:30:01 banner-nosession-40198 sshd[1668]: Disconnected from user k 10.0.3.1 port 35862
+Nov  4 17:30:01 banner-nosession-40198 sshd[1651]: pam_unix(sshd:session): session closed for user k
+Nov  4 17:30:01 banner-nosession-40198 systemd-logind[164]: Session 214 logged out. Waiting for processes to exit.
+Nov  4 17:30:01 banner-nosession-40198 systemd-logind[164]: Removed session 214.

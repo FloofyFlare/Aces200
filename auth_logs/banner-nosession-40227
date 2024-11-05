@@ -1,0 +1,24 @@
+Nov  4 18:13:04 banner-nosession-40227 systemd-logind[165]: New seat seat0.
+Nov  4 18:13:07 banner-nosession-40227 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 18:13:07 banner-nosession-40227 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:13:16 banner-nosession-40227 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:13:16 banner-nosession-40227 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 18:13:16 banner-nosession-40227 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:13:30 banner-nosession-40227 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 18:13:30 banner-nosession-40227 usermod[766]: change user 'sshd' password
+Nov  4 18:13:30 banner-nosession-40227 chage[773]: changed password expiry for sshd
+Nov  4 18:13:33 banner-nosession-40227 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  4 18:13:33 banner-nosession-40227 sshd[1208]: Server listening on :: port 22.
+Nov  4 18:13:35 banner-nosession-40227 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:13:35 banner-nosession-40227 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 18:13:35 banner-nosession-40227 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:13:42 banner-nosession-40227 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:13:56 banner-nosession-40227 useradd[1557]: failed adding user 'ubuntu', data deleted
+Nov  4 18:13:56 banner-nosession-40227 usermod[1558]: change user 'ubuntu' password
+Nov  4 18:13:57 banner-nosession-40227 sshd[1565]: Accepted password for ubuntu from 10.0.3.1 port 52896 ssh2
+Nov  4 18:13:57 banner-nosession-40227 sshd[1565]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov  4 18:13:57 banner-nosession-40227 systemd-logind[165]: New session 230 of user ubuntu.
+Nov  4 18:13:57 banner-nosession-40227 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov  4 18:14:02 banner-nosession-40227 sshd[1565]: pam_unix(sshd:session): session closed for user ubuntu
+Nov  4 18:14:02 banner-nosession-40227 systemd-logind[165]: Session 230 logged out. Waiting for processes to exit.
+Nov  4 18:14:02 banner-nosession-40227 systemd-logind[165]: Removed session 230.

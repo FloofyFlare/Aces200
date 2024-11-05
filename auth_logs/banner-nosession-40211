@@ -1,0 +1,23 @@
+Nov  4 17:16:46 banner-nosession-40211 systemd-logind[164]: New seat seat0.
+Nov  4 17:16:49 banner-nosession-40211 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 17:16:49 banner-nosession-40211 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:16:59 banner-nosession-40211 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:16:59 banner-nosession-40211 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 17:16:59 banner-nosession-40211 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:17:01 banner-nosession-40211 CRON[431]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 17:17:01 banner-nosession-40211 CRON[431]: pam_unix(cron:session): session closed for user root
+Nov  4 17:17:17 banner-nosession-40211 useradd[760]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 17:17:17 banner-nosession-40211 usermod[768]: change user 'sshd' password
+Nov  4 17:17:17 banner-nosession-40211 chage[775]: changed password expiry for sshd
+Nov  4 17:17:19 banner-nosession-40211 sshd[1210]: Server listening on 0.0.0.0 port 22.
+Nov  4 17:17:19 banner-nosession-40211 sshd[1210]: Server listening on :: port 22.
+Nov  4 17:17:21 banner-nosession-40211 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:17:21 banner-nosession-40211 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 17:17:21 banner-nosession-40211 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:17:30 banner-nosession-40211 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:19:39 banner-nosession-40211 useradd[1559]: failed adding user 'root', data deleted
+Nov  4 17:19:39 banner-nosession-40211 usermod[1560]: change user 'root' password
+Nov  4 17:19:39 banner-nosession-40211 sshd[1567]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov  4 17:19:41 banner-nosession-40211 sshd[1567]: Failed password for root from 10.0.3.1 port 56292 ssh2
+Nov  4 17:19:43 banner-nosession-40211 sshd[1567]: Received disconnect from 10.0.3.1 port 56292:11:  [preauth]
+Nov  4 17:19:43 banner-nosession-40211 sshd[1567]: Disconnected from authenticating user root 10.0.3.1 port 56292 [preauth]

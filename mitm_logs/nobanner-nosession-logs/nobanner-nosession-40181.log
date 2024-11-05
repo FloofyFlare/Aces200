@@ -1,0 +1,67 @@
+(node:1002577) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-40181',
+  containerIp: '10.0.3.19',
+  mitmPort: 40181,
+  autoAccessFixed: 1
+}
+2024-11-03 19:52:41.453 - [Info] MITM Version: 2
+2024-11-03 19:52:41.464 - [Info] Auto Access Enabled: true
+2024-11-03 19:52:41.465 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-03 19:52:41.475 - [Info] SSH man-in-the-middle server for 10.0.3.19 listening on 10.0.3.1:40181
+2024-11-03 19:52:45.621 - [Debug] [Connection] Attacker connected: 10.173.171.148 | Client Identification: SSH-2.0-OpenSSH_9.6
+2024-11-03 19:52:47.146 - [Debug] [Auth] Attacker 10.173.171.148 trying to authenticate with 'none'
+2024-11-03 19:52:47.149 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-03 19:52:48.773 - [Debug] [Auth] Attacker 10.173.171.148 trying to authenticate with 'password'
+2024-11-03 19:52:48.775 - [Debug] [Auto Access] Attacker: 10.173.171.148, Threshold: 1, Attempts: 1
+2024-11-03 19:52:48.775 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-03 19:52:48.775 - [Debug] [Auto Access] Adding the following credentials: 'gitikasaravanan:1234'
+2024-11-03 19:52:48.999 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-03 19:52:49.001 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-03 19:52:49.002 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.19
+2024-11-03 19:52:49.075 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-03 19:52:49.245 - [Debug] [SHELL] Opened shell for attacker
+2024-11-03 19:52:49.250 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2024-11-03 19:52:50.501 - [Debug] [SHELL] Attacker Keystroke: e
+2024-11-03 19:52:50.675 - [Debug] [SHELL] Attacker Keystroke: c
+2024-11-03 19:52:50.796 - [Debug] [SHELL] Attacker Keystroke: h
+2024-11-03 19:52:50.932 - [Debug] [SHELL] Attacker Keystroke: o
+2024-11-03 19:52:51.029 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2024-11-03 19:52:51.510 - [Debug] [SHELL] Attacker Keystroke: g
+2024-11-03 19:52:51.547 - [Debug] [SHELL] Attacker Keystroke: e
+2024-11-03 19:52:51.920 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 19:52:52.031 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 19:52:52.466 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 19:52:52.603 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 19:52:52.771 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 19:52:52.939 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 19:52:53.058 - [Debug] [SHELL] Attacker Keystroke: [DEL]
+2024-11-03 19:52:53.538 - [Debug] [SHELL] Attacker Keystroke: e
+2024-11-03 19:52:53.736 - [Debug] [SHELL] Attacker Keystroke: x
+2024-11-03 19:52:53.827 - [Debug] [SHELL] Attacker Keystroke: i
+2024-11-03 19:52:53.922 - [Debug] [SHELL] Attacker Keystroke: t
+2024-11-03 19:52:54.011 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2024-11-03 19:52:54.013 - [Debug] [SHELL] line from reader: exit
+2024-11-03 19:52:54.013 - [Debug] [SHELL] Keystroke buffer: 101,99,104,111,32,103,101,127,127,127,127,127,127,127,101,120,105,116,13
+2024-11-03 19:52:54.020 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2024-11-03 19:52:54.020 - [Debug] [SHELL] Honeypot ended shell
+2024-11-03 19:52:54.027 - [Debug] [SHELL] Attacker ended the shell
+2024-11-03 19:52:54.029 - [Debug] [Connection] Attacker closed connection
+2024-11-03 19:52:54.035 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-03 19:52:54.036 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

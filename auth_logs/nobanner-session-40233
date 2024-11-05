@@ -1,0 +1,27 @@
+Nov  4 18:22:33 nobanner-session-40233 systemd-logind[164]: New seat seat0.
+Nov  4 18:22:37 nobanner-session-40233 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 18:22:37 nobanner-session-40233 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:22:45 nobanner-session-40233 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:22:45 nobanner-session-40233 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 18:22:45 nobanner-session-40233 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:23:02 nobanner-session-40233 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 18:23:02 nobanner-session-40233 usermod[765]: change user 'sshd' password
+Nov  4 18:23:02 nobanner-session-40233 chage[772]: changed password expiry for sshd
+Nov  4 18:23:05 nobanner-session-40233 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 18:23:05 nobanner-session-40233 sshd[1207]: Server listening on :: port 22.
+Nov  4 18:23:07 nobanner-session-40233 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:23:07 nobanner-session-40233 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 18:23:07 nobanner-session-40233 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:23:16 nobanner-session-40233 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:24:01 nobanner-session-40233 useradd[1553]: new group: name=tmp, GID=1001
+Nov  4 18:24:01 nobanner-session-40233 useradd[1553]: new user: name=tmp, UID=1001, GID=1001, home=/home/tmp, shell=/bin/bash, from=none
+Nov  4 18:24:01 nobanner-session-40233 usermod[1562]: change user 'tmp' password
+Nov  4 18:24:02 nobanner-session-40233 sshd[1569]: Accepted password for tmp from 10.0.3.1 port 47846 ssh2
+Nov  4 18:24:02 nobanner-session-40233 sshd[1569]: pam_unix(sshd:session): session opened for user tmp by (uid=0)
+Nov  4 18:24:02 nobanner-session-40233 systemd-logind[164]: New session 243 of user tmp.
+Nov  4 18:24:02 nobanner-session-40233 systemd: pam_unix(systemd-user:session): session opened for user tmp by (uid=0)
+Nov  4 18:24:05 nobanner-session-40233 sshd[1586]: Received disconnect from 10.0.3.1 port 47846:11: 
+Nov  4 18:24:05 nobanner-session-40233 sshd[1586]: Disconnected from user tmp 10.0.3.1 port 47846
+Nov  4 18:24:05 nobanner-session-40233 sshd[1569]: pam_unix(sshd:session): session closed for user tmp
+Nov  4 18:24:05 nobanner-session-40233 systemd-logind[164]: Session 243 logged out. Waiting for processes to exit.
+Nov  4 18:24:05 nobanner-session-40233 systemd-logind[164]: Removed session 243.

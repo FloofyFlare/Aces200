@@ -1,0 +1,27 @@
+Nov  4 00:58:32 banner-nosession-40183 systemd-logind[164]: New seat seat0.
+Nov  4 00:58:36 banner-nosession-40183 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 00:58:36 banner-nosession-40183 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 00:58:44 banner-nosession-40183 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 00:58:44 banner-nosession-40183 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 00:58:44 banner-nosession-40183 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 00:58:53 banner-nosession-40183 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 00:58:53 banner-nosession-40183 usermod[766]: change user 'sshd' password
+Nov  4 00:58:53 banner-nosession-40183 chage[773]: changed password expiry for sshd
+Nov  4 00:58:55 banner-nosession-40183 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  4 00:58:55 banner-nosession-40183 sshd[1208]: Server listening on :: port 22.
+Nov  4 00:58:58 banner-nosession-40183 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 00:58:58 banner-nosession-40183 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 00:58:58 banner-nosession-40183 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 00:59:06 banner-nosession-40183 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 01:05:40 banner-nosession-40183 useradd[1558]: new group: name=gitikasaravanan, GID=1001
+Nov  4 01:05:40 banner-nosession-40183 useradd[1558]: new user: name=gitikasaravanan, UID=1001, GID=1001, home=/home/gitikasaravanan, shell=/bin/bash, from=none
+Nov  4 01:05:40 banner-nosession-40183 usermod[1567]: change user 'gitikasaravanan' password
+Nov  4 01:05:41 banner-nosession-40183 sshd[1574]: Accepted password for gitikasaravanan from 10.0.3.1 port 46378 ssh2
+Nov  4 01:05:41 banner-nosession-40183 sshd[1574]: pam_unix(sshd:session): session opened for user gitikasaravanan by (uid=0)
+Nov  4 01:05:41 banner-nosession-40183 systemd-logind[164]: New session 100 of user gitikasaravanan.
+Nov  4 01:05:41 banner-nosession-40183 systemd: pam_unix(systemd-user:session): session opened for user gitikasaravanan by (uid=0)
+Nov  4 01:05:43 banner-nosession-40183 sshd[1591]: Received disconnect from 10.0.3.1 port 46378:11: 
+Nov  4 01:05:43 banner-nosession-40183 sshd[1591]: Disconnected from user gitikasaravanan 10.0.3.1 port 46378
+Nov  4 01:05:43 banner-nosession-40183 sshd[1574]: pam_unix(sshd:session): session closed for user gitikasaravanan
+Nov  4 01:05:43 banner-nosession-40183 systemd-logind[164]: Session 100 logged out. Waiting for processes to exit.
+Nov  4 01:05:43 banner-nosession-40183 systemd-logind[164]: Removed session 100.

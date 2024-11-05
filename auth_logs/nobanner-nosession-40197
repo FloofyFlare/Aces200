@@ -1,0 +1,27 @@
+Nov  4 16:32:52 nobanner-nosession-40197 systemd-logind[164]: New seat seat0.
+Nov  4 16:32:55 nobanner-nosession-40197 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 16:32:55 nobanner-nosession-40197 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:33:04 nobanner-nosession-40197 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:33:04 nobanner-nosession-40197 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 16:33:04 nobanner-nosession-40197 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:33:21 nobanner-nosession-40197 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 16:33:21 nobanner-nosession-40197 usermod[765]: change user 'sshd' password
+Nov  4 16:33:21 nobanner-nosession-40197 chage[772]: changed password expiry for sshd
+Nov  4 16:33:23 nobanner-nosession-40197 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 16:33:23 nobanner-nosession-40197 sshd[1207]: Server listening on :: port 22.
+Nov  4 16:33:25 nobanner-nosession-40197 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:33:25 nobanner-nosession-40197 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 16:33:25 nobanner-nosession-40197 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:33:33 nobanner-nosession-40197 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:37:39 nobanner-nosession-40197 useradd[1550]: new group: name=pi, GID=1001
+Nov  4 16:37:39 nobanner-nosession-40197 useradd[1550]: new user: name=pi, UID=1001, GID=1001, home=/home/pi, shell=/bin/bash, from=none
+Nov  4 16:37:39 nobanner-nosession-40197 usermod[1559]: change user 'pi' password
+Nov  4 16:37:39 nobanner-nosession-40197 sshd[1566]: Accepted password for pi from 10.0.3.1 port 56088 ssh2
+Nov  4 16:37:39 nobanner-nosession-40197 sshd[1566]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Nov  4 16:37:39 nobanner-nosession-40197 systemd-logind[164]: New session 184 of user pi.
+Nov  4 16:37:39 nobanner-nosession-40197 systemd: pam_unix(systemd-user:session): session opened for user pi by (uid=0)
+Nov  4 16:37:42 nobanner-nosession-40197 sshd[1583]: Received disconnect from 10.0.3.1 port 56088:11: 
+Nov  4 16:37:42 nobanner-nosession-40197 sshd[1583]: Disconnected from user pi 10.0.3.1 port 56088
+Nov  4 16:37:42 nobanner-nosession-40197 sshd[1566]: pam_unix(sshd:session): session closed for user pi
+Nov  4 16:37:42 nobanner-nosession-40197 systemd-logind[164]: Session 184 logged out. Waiting for processes to exit.
+Nov  4 16:37:42 nobanner-nosession-40197 systemd-logind[164]: Removed session 184.

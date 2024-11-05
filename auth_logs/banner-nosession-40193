@@ -1,0 +1,27 @@
+Nov  4 16:28:14 banner-nosession-40193 systemd-logind[165]: New seat seat0.
+Nov  4 16:28:18 banner-nosession-40193 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 16:28:18 banner-nosession-40193 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:28:26 banner-nosession-40193 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:28:26 banner-nosession-40193 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 16:28:26 banner-nosession-40193 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:28:44 banner-nosession-40193 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 16:28:44 banner-nosession-40193 usermod[765]: change user 'sshd' password
+Nov  4 16:28:44 banner-nosession-40193 chage[772]: changed password expiry for sshd
+Nov  4 16:28:47 banner-nosession-40193 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 16:28:47 banner-nosession-40193 sshd[1207]: Server listening on :: port 22.
+Nov  4 16:28:49 banner-nosession-40193 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:28:49 banner-nosession-40193 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 16:28:49 banner-nosession-40193 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:28:58 banner-nosession-40193 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:32:00 banner-nosession-40193 useradd[1556]: new group: name=nabeel, GID=1001
+Nov  4 16:32:00 banner-nosession-40193 useradd[1556]: new user: name=nabeel, UID=1001, GID=1001, home=/home/nabeel, shell=/bin/bash, from=none
+Nov  4 16:32:00 banner-nosession-40193 usermod[1565]: change user 'nabeel' password
+Nov  4 16:32:01 banner-nosession-40193 sshd[1572]: Accepted password for nabeel from 10.0.3.1 port 54484 ssh2
+Nov  4 16:32:01 banner-nosession-40193 sshd[1572]: pam_unix(sshd:session): session opened for user nabeel by (uid=0)
+Nov  4 16:32:01 banner-nosession-40193 systemd-logind[165]: New session 180 of user nabeel.
+Nov  4 16:32:01 banner-nosession-40193 systemd: pam_unix(systemd-user:session): session opened for user nabeel by (uid=0)
+Nov  4 16:32:02 banner-nosession-40193 sshd[1589]: Received disconnect from 10.0.3.1 port 54484:11: 
+Nov  4 16:32:02 banner-nosession-40193 sshd[1589]: Disconnected from user nabeel 10.0.3.1 port 54484
+Nov  4 16:32:02 banner-nosession-40193 sshd[1572]: pam_unix(sshd:session): session closed for user nabeel
+Nov  4 16:32:02 banner-nosession-40193 systemd-logind[165]: Session 180 logged out. Waiting for processes to exit.
+Nov  4 16:32:02 banner-nosession-40193 systemd-logind[165]: Removed session 180.

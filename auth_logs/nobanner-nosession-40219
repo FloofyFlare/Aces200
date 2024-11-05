@@ -1,0 +1,27 @@
+Nov  4 17:44:44 nobanner-nosession-40219 systemd-logind[164]: New seat seat0.
+Nov  4 17:44:48 nobanner-nosession-40219 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 17:44:48 nobanner-nosession-40219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:44:57 nobanner-nosession-40219 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:44:57 nobanner-nosession-40219 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 17:44:57 nobanner-nosession-40219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:45:11 nobanner-nosession-40219 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 17:45:11 nobanner-nosession-40219 usermod[765]: change user 'sshd' password
+Nov  4 17:45:11 nobanner-nosession-40219 chage[772]: changed password expiry for sshd
+Nov  4 17:45:13 nobanner-nosession-40219 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 17:45:13 nobanner-nosession-40219 sshd[1207]: Server listening on :: port 22.
+Nov  4 17:45:15 nobanner-nosession-40219 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:45:15 nobanner-nosession-40219 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 17:45:15 nobanner-nosession-40219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:45:23 nobanner-nosession-40219 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:46:38 nobanner-nosession-40219 useradd[1550]: new group: name=vtiger, GID=1001
+Nov  4 17:46:38 nobanner-nosession-40219 useradd[1550]: new user: name=vtiger, UID=1001, GID=1001, home=/home/vtiger, shell=/bin/bash, from=none
+Nov  4 17:46:39 nobanner-nosession-40219 usermod[1559]: change user 'vtiger' password
+Nov  4 17:46:39 nobanner-nosession-40219 sshd[1566]: Accepted password for vtiger from 10.0.3.1 port 51444 ssh2
+Nov  4 17:46:39 nobanner-nosession-40219 sshd[1566]: pam_unix(sshd:session): session opened for user vtiger by (uid=0)
+Nov  4 17:46:39 nobanner-nosession-40219 systemd-logind[164]: New session 224 of user vtiger.
+Nov  4 17:46:39 nobanner-nosession-40219 systemd: pam_unix(systemd-user:session): session opened for user vtiger by (uid=0)
+Nov  4 17:46:40 nobanner-nosession-40219 sshd[1583]: Received disconnect from 10.0.3.1 port 51444:11: 
+Nov  4 17:46:40 nobanner-nosession-40219 sshd[1583]: Disconnected from user vtiger 10.0.3.1 port 51444
+Nov  4 17:46:40 nobanner-nosession-40219 sshd[1566]: pam_unix(sshd:session): session closed for user vtiger
+Nov  4 17:46:40 nobanner-nosession-40219 systemd-logind[164]: Session 224 logged out. Waiting for processes to exit.
+Nov  4 17:46:40 nobanner-nosession-40219 systemd-logind[164]: Removed session 224.

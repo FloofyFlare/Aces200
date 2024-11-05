@@ -1,0 +1,61 @@
+Nov  4 01:42:09 nobanner-nosession-40186 systemd-logind[164]: New seat seat0.
+Nov  4 01:42:12 nobanner-nosession-40186 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 01:42:12 nobanner-nosession-40186 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 01:42:20 nobanner-nosession-40186 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 01:42:20 nobanner-nosession-40186 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 01:42:20 nobanner-nosession-40186 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 01:42:31 nobanner-nosession-40186 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 01:42:31 nobanner-nosession-40186 usermod[766]: change user 'sshd' password
+Nov  4 01:42:31 nobanner-nosession-40186 chage[773]: changed password expiry for sshd
+Nov  4 01:42:33 nobanner-nosession-40186 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  4 01:42:33 nobanner-nosession-40186 sshd[1208]: Server listening on :: port 22.
+Nov  4 01:42:35 nobanner-nosession-40186 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 01:42:35 nobanner-nosession-40186 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 01:42:35 nobanner-nosession-40186 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 01:42:42 nobanner-nosession-40186 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 01:46:41 nobanner-nosession-40186 useradd[1551]: new group: name=admin, GID=1001
+Nov  4 01:46:41 nobanner-nosession-40186 useradd[1551]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov  4 01:46:41 nobanner-nosession-40186 usermod[1560]: change user 'admin' password
+Nov  4 01:46:41 nobanner-nosession-40186 sshd[1567]: Accepted password for admin from 10.0.3.1 port 50582 ssh2
+Nov  4 01:46:41 nobanner-nosession-40186 sshd[1567]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov  4 01:46:41 nobanner-nosession-40186 systemd-logind[164]: New session 107 of user admin.
+Nov  4 01:46:41 nobanner-nosession-40186 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov  4 01:46:43 nobanner-nosession-40186 sshd[1584]: Received disconnect from 10.0.3.1 port 50582:11: 
+Nov  4 01:46:43 nobanner-nosession-40186 sshd[1584]: Disconnected from user admin 10.0.3.1 port 50582
+Nov  4 01:46:43 nobanner-nosession-40186 sshd[1567]: pam_unix(sshd:session): session closed for user admin
+Nov  4 01:46:43 nobanner-nosession-40186 systemd-logind[164]: Session 107 logged out. Waiting for processes to exit.
+Nov  4 01:46:43 nobanner-nosession-40186 systemd-logind[164]: Removed session 107.
+Nov  4 02:17:01 nobanner-nosession-40186 CRON[1591]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 02:17:01 nobanner-nosession-40186 CRON[1591]: pam_unix(cron:session): session closed for user root
+Nov  4 03:10:01 nobanner-nosession-40186 CRON[1597]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 03:10:01 nobanner-nosession-40186 CRON[1597]: pam_unix(cron:session): session closed for user root
+Nov  4 03:17:01 nobanner-nosession-40186 CRON[1600]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 03:17:01 nobanner-nosession-40186 CRON[1600]: pam_unix(cron:session): session closed for user root
+Nov  4 04:17:01 nobanner-nosession-40186 CRON[1606]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 04:17:01 nobanner-nosession-40186 CRON[1606]: pam_unix(cron:session): session closed for user root
+Nov  4 05:17:01 nobanner-nosession-40186 CRON[1612]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 05:17:01 nobanner-nosession-40186 CRON[1612]: pam_unix(cron:session): session closed for user root
+Nov  4 06:17:02 nobanner-nosession-40186 CRON[1618]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 06:17:02 nobanner-nosession-40186 CRON[1618]: pam_unix(cron:session): session closed for user root
+Nov  4 06:25:01 nobanner-nosession-40186 CRON[1623]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 06:25:01 nobanner-nosession-40186 CRON[1623]: pam_unix(cron:session): session closed for user root
+Nov  4 07:17:01 nobanner-nosession-40186 CRON[1733]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 07:17:01 nobanner-nosession-40186 CRON[1733]: pam_unix(cron:session): session closed for user root
+Nov  4 08:17:01 nobanner-nosession-40186 CRON[1739]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 08:17:01 nobanner-nosession-40186 CRON[1739]: pam_unix(cron:session): session closed for user root
+Nov  4 09:17:01 nobanner-nosession-40186 CRON[1745]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 09:17:01 nobanner-nosession-40186 CRON[1745]: pam_unix(cron:session): session closed for user root
+Nov  4 10:17:01 nobanner-nosession-40186 CRON[1751]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 10:17:01 nobanner-nosession-40186 CRON[1751]: pam_unix(cron:session): session closed for user root
+Nov  4 11:17:01 nobanner-nosession-40186 CRON[1809]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 11:17:01 nobanner-nosession-40186 CRON[1809]: pam_unix(cron:session): session closed for user root
+Nov  4 12:17:01 nobanner-nosession-40186 CRON[1815]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 12:17:01 nobanner-nosession-40186 CRON[1815]: pam_unix(cron:session): session closed for user root
+Nov  4 13:17:01 nobanner-nosession-40186 CRON[1821]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 13:17:01 nobanner-nosession-40186 CRON[1821]: pam_unix(cron:session): session closed for user root
+Nov  4 14:17:01 nobanner-nosession-40186 CRON[1827]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 14:17:01 nobanner-nosession-40186 CRON[1827]: pam_unix(cron:session): session closed for user root
+Nov  4 15:17:01 nobanner-nosession-40186 CRON[1833]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 15:17:01 nobanner-nosession-40186 CRON[1833]: pam_unix(cron:session): session closed for user root
+Nov  4 16:17:01 nobanner-nosession-40186 CRON[1840]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  4 16:17:01 nobanner-nosession-40186 CRON[1840]: pam_unix(cron:session): session closed for user root

@@ -1,0 +1,27 @@
+Nov  4 16:52:58 nobanner-nosession-40201 systemd-logind[164]: New seat seat0.
+Nov  4 16:53:01 nobanner-nosession-40201 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 16:53:01 nobanner-nosession-40201 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:53:10 nobanner-nosession-40201 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:53:10 nobanner-nosession-40201 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 16:53:10 nobanner-nosession-40201 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:53:23 nobanner-nosession-40201 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 16:53:24 nobanner-nosession-40201 usermod[765]: change user 'sshd' password
+Nov  4 16:53:24 nobanner-nosession-40201 chage[772]: changed password expiry for sshd
+Nov  4 16:53:26 nobanner-nosession-40201 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 16:53:26 nobanner-nosession-40201 sshd[1207]: Server listening on :: port 22.
+Nov  4 16:53:28 nobanner-nosession-40201 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:53:28 nobanner-nosession-40201 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 16:53:28 nobanner-nosession-40201 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 16:53:38 nobanner-nosession-40201 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 16:54:58 nobanner-nosession-40201 useradd[1550]: new group: name=Admin, GID=1001
+Nov  4 16:54:58 nobanner-nosession-40201 useradd[1550]: new user: name=Admin, UID=1001, GID=1001, home=/home/Admin, shell=/bin/bash, from=none
+Nov  4 16:54:58 nobanner-nosession-40201 usermod[1559]: change user 'Admin' password
+Nov  4 16:54:58 nobanner-nosession-40201 sshd[1566]: Accepted password for Admin from 10.0.3.1 port 52878 ssh2
+Nov  4 16:54:58 nobanner-nosession-40201 sshd[1566]: pam_unix(sshd:session): session opened for user Admin by (uid=0)
+Nov  4 16:54:58 nobanner-nosession-40201 systemd-logind[164]: New session 189 of user Admin.
+Nov  4 16:54:58 nobanner-nosession-40201 systemd: pam_unix(systemd-user:session): session opened for user Admin by (uid=0)
+Nov  4 16:55:00 nobanner-nosession-40201 sshd[1583]: Received disconnect from 10.0.3.1 port 52878:11: 
+Nov  4 16:55:00 nobanner-nosession-40201 sshd[1583]: Disconnected from user Admin 10.0.3.1 port 52878
+Nov  4 16:55:00 nobanner-nosession-40201 sshd[1566]: pam_unix(sshd:session): session closed for user Admin
+Nov  4 16:55:00 nobanner-nosession-40201 systemd-logind[164]: Session 189 logged out. Waiting for processes to exit.
+Nov  4 16:55:00 nobanner-nosession-40201 systemd-logind[164]: Removed session 189.

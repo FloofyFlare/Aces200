@@ -1,0 +1,39 @@
+(node:1006872) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-40182',
+  containerIp: '10.0.3.43',
+  mitmPort: 40182,
+  autoAccessFixed: 1
+}
+2024-11-03 19:58:04.730 - [Info] MITM Version: 2
+2024-11-03 19:58:04.732 - [Info] Auto Access Enabled: true
+2024-11-03 19:58:04.732 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-03 19:58:04.742 - [Info] SSH man-in-the-middle server for 10.0.3.43 listening on 10.0.3.1:40182
+2024-11-03 19:59:19.970 - [Debug] [Connection] Attacker connected: 203.92.41.39 | Client Identification: SSH-2.0-OpenSSH_7.4
+2024-11-03 19:59:22.483 - [Debug] [Auth] Attacker 203.92.41.39 trying to authenticate with 'password'
+2024-11-03 19:59:22.484 - [Debug] [Auto Access] Attacker: 203.92.41.39, Threshold: 1, Attempts: 1
+2024-11-03 19:59:22.484 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-03 19:59:22.485 - [Debug] [Auto Access] Adding the following credentials: 'admin:654321'
+2024-11-03 19:59:22.718 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-03 19:59:22.720 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-03 19:59:22.721 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.43
+2024-11-03 19:59:22.786 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-03 19:59:24.719 - [Debug] [Connection] Attacker closed connection
+2024-11-03 19:59:24.725 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-03 19:59:24.726 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

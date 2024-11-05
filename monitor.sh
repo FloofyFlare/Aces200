@@ -60,8 +60,9 @@ current_time=0
 
 while [[ -f /home/student/"$container_name"_last_active.txt ]]
 do
+  # echo "CURRENT TIME: $current_time"
     date +%s > /home/student/"$container_name"_last_active.txt # Rewrite time of the last command
-    if echo "$mitm_log_path" | grep -q "Attacker closed";
+    if cat "$mitm_log_path" | grep -q "Attacker closed";
       then
         # echo "RECYCLING SINCE ATTACKER ENDED SESSION"
         rm /home/student/"$container_name"_last_active.txt
@@ -73,10 +74,10 @@ do
   if [[ -f /home/student/"$container_name"_last_active.txt ]]
   then
     last_active=$(cat /home/student/"$container_name"_last_active.txt)
-    if [[ $(($current_time - $last_active)) -ge 30 ]]
+    if [[ $(($current_time - $last_active)) -ge 120 ]]
       then
       # valid_line=1
-      echo "RECYCLING SINCE TIME IDLE EXCEEDED 60 SECONDS"
+      echo "RECYCLING SINCE TIME IDLE EXCEEDED 2 MINUTES"
       rm /home/student/"$container_name"_last_active.txt
       break
     fi
@@ -84,7 +85,7 @@ do
 
   if [[ $(($start_time + 300)) -le $current_time ]]
   then
-      echo "RECYCLING SINCE TIME EXCEEDED 2 MIN"
+      echo "RECYCLING SINCE TIME EXCEEDED 5 MIN"
       rm /home/student/"$container_name"_last_active.txt
       break
   fi
@@ -94,9 +95,11 @@ done
 sudo iptables --delete INPUT -d 10.0.3.1 -p tcp --dport "$MITM_port" --jump DROP
 sudo iptables --delete INPUT -s "$attacker_ip" -d 10.0.3.1 -p tcp --dport "$MITM_port" --jump ACCEPT
 
+echo Start time: "$start_time" > /home/student/times/"$container_name"
+echo End time: $(date +%s) >> /home/student/times/"$container_name"
+echo External IP: : "$external_ip" >> /home/student/times/"$container_name"
+
 rm /home/student/"$container_name"_start_time.txt
 rm /home/student/"$container_name"_attacker_ip.txt
 # rm "$container_name"_last_active.txt
 /home/student/destroy_container.sh "$container_name" "$external_ip" 
-
-

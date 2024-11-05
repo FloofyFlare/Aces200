@@ -1,0 +1,27 @@
+Nov  4 17:07:45 banner-nosession-40207 systemd-logind[165]: New seat seat0.
+Nov  4 17:07:48 banner-nosession-40207 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 17:07:48 banner-nosession-40207 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:07:57 banner-nosession-40207 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:07:57 banner-nosession-40207 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 17:07:57 banner-nosession-40207 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:08:13 banner-nosession-40207 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 17:08:13 banner-nosession-40207 usermod[765]: change user 'sshd' password
+Nov  4 17:08:13 banner-nosession-40207 chage[772]: changed password expiry for sshd
+Nov  4 17:08:15 banner-nosession-40207 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 17:08:15 banner-nosession-40207 sshd[1207]: Server listening on :: port 22.
+Nov  4 17:08:17 banner-nosession-40207 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:08:17 banner-nosession-40207 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 17:08:17 banner-nosession-40207 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:08:25 banner-nosession-40207 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:10:30 banner-nosession-40207 useradd[1556]: new group: name=ofbiz, GID=1001
+Nov  4 17:10:30 banner-nosession-40207 useradd[1556]: new user: name=ofbiz, UID=1001, GID=1001, home=/home/ofbiz, shell=/bin/bash, from=none
+Nov  4 17:10:31 banner-nosession-40207 usermod[1565]: change user 'ofbiz' password
+Nov  4 17:10:31 banner-nosession-40207 sshd[1572]: Accepted password for ofbiz from 10.0.3.1 port 37734 ssh2
+Nov  4 17:10:31 banner-nosession-40207 sshd[1572]: pam_unix(sshd:session): session opened for user ofbiz by (uid=0)
+Nov  4 17:10:31 banner-nosession-40207 systemd-logind[165]: New session 199 of user ofbiz.
+Nov  4 17:10:31 banner-nosession-40207 systemd: pam_unix(systemd-user:session): session opened for user ofbiz by (uid=0)
+Nov  4 17:10:32 banner-nosession-40207 sshd[1589]: Received disconnect from 10.0.3.1 port 37734:11: 
+Nov  4 17:10:32 banner-nosession-40207 sshd[1589]: Disconnected from user ofbiz 10.0.3.1 port 37734
+Nov  4 17:10:32 banner-nosession-40207 sshd[1572]: pam_unix(sshd:session): session closed for user ofbiz
+Nov  4 17:10:32 banner-nosession-40207 systemd-logind[165]: Session 199 logged out. Waiting for processes to exit.
+Nov  4 17:10:32 banner-nosession-40207 systemd-logind[165]: Removed session 199.

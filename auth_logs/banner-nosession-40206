@@ -1,0 +1,27 @@
+Nov  4 17:04:06 banner-nosession-40206 systemd-logind[164]: New seat seat0.
+Nov  4 17:04:09 banner-nosession-40206 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 17:04:09 banner-nosession-40206 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:04:17 banner-nosession-40206 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:04:17 banner-nosession-40206 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 17:04:17 banner-nosession-40206 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:04:30 banner-nosession-40206 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 17:04:30 banner-nosession-40206 usermod[765]: change user 'sshd' password
+Nov  4 17:04:30 banner-nosession-40206 chage[772]: changed password expiry for sshd
+Nov  4 17:04:33 banner-nosession-40206 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 17:04:33 banner-nosession-40206 sshd[1207]: Server listening on :: port 22.
+Nov  4 17:04:35 banner-nosession-40206 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:04:35 banner-nosession-40206 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 17:04:35 banner-nosession-40206 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 17:04:46 banner-nosession-40206 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 17:07:15 banner-nosession-40206 useradd[1556]: new group: name=roberto, GID=1001
+Nov  4 17:07:15 banner-nosession-40206 useradd[1556]: new user: name=roberto, UID=1001, GID=1001, home=/home/roberto, shell=/bin/bash, from=none
+Nov  4 17:07:15 banner-nosession-40206 usermod[1565]: change user 'roberto' password
+Nov  4 17:07:15 banner-nosession-40206 sshd[1572]: Accepted password for roberto from 10.0.3.1 port 36076 ssh2
+Nov  4 17:07:15 banner-nosession-40206 sshd[1572]: pam_unix(sshd:session): session opened for user roberto by (uid=0)
+Nov  4 17:07:15 banner-nosession-40206 systemd-logind[164]: New session 197 of user roberto.
+Nov  4 17:07:15 banner-nosession-40206 systemd: pam_unix(systemd-user:session): session opened for user roberto by (uid=0)
+Nov  4 17:07:17 banner-nosession-40206 sshd[1589]: Received disconnect from 10.0.3.1 port 36076:11: 
+Nov  4 17:07:17 banner-nosession-40206 sshd[1589]: Disconnected from user roberto 10.0.3.1 port 36076
+Nov  4 17:07:17 banner-nosession-40206 sshd[1572]: pam_unix(sshd:session): session closed for user roberto
+Nov  4 17:07:17 banner-nosession-40206 systemd-logind[164]: Session 197 logged out. Waiting for processes to exit.
+Nov  4 17:07:17 banner-nosession-40206 systemd-logind[164]: Removed session 197.

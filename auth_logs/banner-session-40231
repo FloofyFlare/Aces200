@@ -1,0 +1,25 @@
+Nov  4 18:18:23 banner-session-40231 systemd-logind[164]: New seat seat0.
+Nov  4 18:18:26 banner-session-40231 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  4 18:18:26 banner-session-40231 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:18:34 banner-session-40231 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:18:34 banner-session-40231 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  4 18:18:34 banner-session-40231 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:18:56 banner-session-40231 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  4 18:18:56 banner-session-40231 usermod[765]: change user 'sshd' password
+Nov  4 18:18:56 banner-session-40231 chage[772]: changed password expiry for sshd
+Nov  4 18:18:58 banner-session-40231 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  4 18:18:58 banner-session-40231 sshd[1207]: Server listening on :: port 22.
+Nov  4 18:19:01 banner-session-40231 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:19:01 banner-session-40231 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  4 18:19:01 banner-session-40231 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  4 18:19:10 banner-session-40231 sudo: pam_unix(sudo:session): session closed for user root
+Nov  4 18:19:46 banner-session-40231 useradd[1559]: new group: name=vadmin, GID=1001
+Nov  4 18:19:46 banner-session-40231 useradd[1559]: new user: name=vadmin, UID=1001, GID=1001, home=/home/vadmin, shell=/bin/bash, from=none
+Nov  4 18:19:46 banner-session-40231 usermod[1568]: change user 'vadmin' password
+Nov  4 18:19:46 banner-session-40231 sshd[1575]: Accepted password for vadmin from 10.0.3.1 port 36780 ssh2
+Nov  4 18:19:46 banner-session-40231 sshd[1575]: pam_unix(sshd:session): session opened for user vadmin by (uid=0)
+Nov  4 18:19:46 banner-session-40231 systemd-logind[164]: New session 241 of user vadmin.
+Nov  4 18:19:46 banner-session-40231 systemd: pam_unix(systemd-user:session): session opened for user vadmin by (uid=0)
+Nov  4 18:19:52 banner-session-40231 sshd[1575]: pam_unix(sshd:session): session closed for user vadmin
+Nov  4 18:19:52 banner-session-40231 systemd-logind[164]: Session 241 logged out. Waiting for processes to exit.
+Nov  4 18:19:52 banner-session-40231 systemd-logind[164]: Removed session 241.
