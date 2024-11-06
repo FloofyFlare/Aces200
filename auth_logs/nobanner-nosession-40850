@@ -1,0 +1,27 @@
+Nov  6 19:52:13 nobanner-nosession-40850 systemd-logind[164]: New seat seat0.
+Nov  6 19:52:16 nobanner-nosession-40850 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 19:52:16 nobanner-nosession-40850 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:52:26 nobanner-nosession-40850 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:52:26 nobanner-nosession-40850 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 19:52:26 nobanner-nosession-40850 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:52:45 nobanner-nosession-40850 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 19:52:45 nobanner-nosession-40850 usermod[756]: change user 'sshd' password
+Nov  6 19:52:45 nobanner-nosession-40850 chage[763]: changed password expiry for sshd
+Nov  6 19:52:47 nobanner-nosession-40850 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 19:52:47 nobanner-nosession-40850 sshd[1198]: Server listening on :: port 22.
+Nov  6 19:52:49 nobanner-nosession-40850 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:52:49 nobanner-nosession-40850 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 19:52:49 nobanner-nosession-40850 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:53:01 nobanner-nosession-40850 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:56:09 nobanner-nosession-40850 useradd[1536]: new group: name=near, GID=1001
+Nov  6 19:56:09 nobanner-nosession-40850 useradd[1536]: new user: name=near, UID=1001, GID=1001, home=/home/near, shell=/bin/bash, from=none
+Nov  6 19:56:10 nobanner-nosession-40850 usermod[1545]: change user 'near' password
+Nov  6 19:56:10 nobanner-nosession-40850 sshd[1552]: Accepted password for near from 10.0.3.1 port 59840 ssh2
+Nov  6 19:56:10 nobanner-nosession-40850 sshd[1552]: pam_unix(sshd:session): session opened for user near by (uid=0)
+Nov  6 19:56:10 nobanner-nosession-40850 systemd-logind[164]: New session 1350 of user near.
+Nov  6 19:56:10 nobanner-nosession-40850 systemd: pam_unix(systemd-user:session): session opened for user near by (uid=0)
+Nov  6 19:56:11 nobanner-nosession-40850 sshd[1569]: Received disconnect from 10.0.3.1 port 59840:11: 
+Nov  6 19:56:11 nobanner-nosession-40850 sshd[1569]: Disconnected from user near 10.0.3.1 port 59840
+Nov  6 19:56:11 nobanner-nosession-40850 sshd[1552]: pam_unix(sshd:session): session closed for user near
+Nov  6 19:56:11 nobanner-nosession-40850 systemd-logind[164]: Session 1350 logged out. Waiting for processes to exit.
+Nov  6 19:56:11 nobanner-nosession-40850 systemd-logind[164]: Removed session 1350.

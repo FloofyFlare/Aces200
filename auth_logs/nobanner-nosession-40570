@@ -1,0 +1,27 @@
+Nov  6 12:29:42 nobanner-nosession-40570 systemd-logind[164]: New seat seat0.
+Nov  6 12:29:45 nobanner-nosession-40570 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 12:29:45 nobanner-nosession-40570 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 12:29:54 nobanner-nosession-40570 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 12:29:54 nobanner-nosession-40570 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 12:29:54 nobanner-nosession-40570 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 12:30:09 nobanner-nosession-40570 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 12:30:09 nobanner-nosession-40570 usermod[756]: change user 'sshd' password
+Nov  6 12:30:09 nobanner-nosession-40570 chage[763]: changed password expiry for sshd
+Nov  6 12:30:11 nobanner-nosession-40570 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 12:30:11 nobanner-nosession-40570 sshd[1198]: Server listening on :: port 22.
+Nov  6 12:30:13 nobanner-nosession-40570 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 12:30:13 nobanner-nosession-40570 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 12:30:13 nobanner-nosession-40570 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 12:30:21 nobanner-nosession-40570 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 12:31:53 nobanner-nosession-40570 useradd[1536]: new group: name=bitrix, GID=1001
+Nov  6 12:31:53 nobanner-nosession-40570 useradd[1536]: new user: name=bitrix, UID=1001, GID=1001, home=/home/bitrix, shell=/bin/bash, from=none
+Nov  6 12:31:53 nobanner-nosession-40570 usermod[1545]: change user 'bitrix' password
+Nov  6 12:31:53 nobanner-nosession-40570 sshd[1552]: Accepted password for bitrix from 10.0.3.1 port 45306 ssh2
+Nov  6 12:31:53 nobanner-nosession-40570 sshd[1552]: pam_unix(sshd:session): session opened for user bitrix by (uid=0)
+Nov  6 12:31:53 nobanner-nosession-40570 systemd-logind[164]: New session 856 of user bitrix.
+Nov  6 12:31:53 nobanner-nosession-40570 systemd: pam_unix(systemd-user:session): session opened for user bitrix by (uid=0)
+Nov  6 12:31:55 nobanner-nosession-40570 sshd[1569]: Received disconnect from 10.0.3.1 port 45306:11: 
+Nov  6 12:31:55 nobanner-nosession-40570 sshd[1569]: Disconnected from user bitrix 10.0.3.1 port 45306
+Nov  6 12:31:55 nobanner-nosession-40570 sshd[1552]: pam_unix(sshd:session): session closed for user bitrix
+Nov  6 12:31:55 nobanner-nosession-40570 systemd-logind[164]: Session 856 logged out. Waiting for processes to exit.
+Nov  6 12:31:55 nobanner-nosession-40570 systemd-logind[164]: Removed session 856.

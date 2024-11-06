@@ -1,0 +1,25 @@
+Nov  6 08:38:36 banner-nosession-40428 systemd-logind[164]: New seat seat0.
+Nov  6 08:38:40 banner-nosession-40428 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 08:38:40 banner-nosession-40428 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:38:48 banner-nosession-40428 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:38:48 banner-nosession-40428 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 08:38:48 banner-nosession-40428 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:39:13 banner-nosession-40428 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 08:39:13 banner-nosession-40428 usermod[765]: change user 'sshd' password
+Nov  6 08:39:14 banner-nosession-40428 chage[772]: changed password expiry for sshd
+Nov  6 08:39:16 banner-nosession-40428 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 08:39:16 banner-nosession-40428 sshd[1207]: Server listening on :: port 22.
+Nov  6 08:39:20 banner-nosession-40428 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:39:20 banner-nosession-40428 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 08:39:20 banner-nosession-40428 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:39:33 banner-nosession-40428 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:39:57 banner-nosession-40428 useradd[1556]: new group: name=debian, GID=1001
+Nov  6 08:39:57 banner-nosession-40428 useradd[1556]: new user: name=debian, UID=1001, GID=1001, home=/home/debian, shell=/bin/bash, from=none
+Nov  6 08:39:57 banner-nosession-40428 usermod[1565]: change user 'debian' password
+Nov  6 08:39:57 banner-nosession-40428 sshd[1572]: Accepted password for debian from 10.0.3.1 port 39558 ssh2
+Nov  6 08:39:57 banner-nosession-40428 sshd[1572]: pam_unix(sshd:session): session opened for user debian by (uid=0)
+Nov  6 08:39:57 banner-nosession-40428 systemd-logind[164]: New session 608 of user debian.
+Nov  6 08:39:57 banner-nosession-40428 systemd: pam_unix(systemd-user:session): session opened for user debian by (uid=0)
+Nov  6 08:40:02 banner-nosession-40428 sshd[1572]: pam_unix(sshd:session): session closed for user debian
+Nov  6 08:40:02 banner-nosession-40428 systemd-logind[164]: Session 608 logged out. Waiting for processes to exit.
+Nov  6 08:40:02 banner-nosession-40428 systemd-logind[164]: Removed session 608.

@@ -1,0 +1,25 @@
+Nov  6 18:51:13 banner-session-40812 systemd-logind[164]: New seat seat0.
+Nov  6 18:51:16 banner-session-40812 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 18:51:16 banner-session-40812 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:51:25 banner-session-40812 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:51:25 banner-session-40812 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 18:51:25 banner-session-40812 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:51:44 banner-session-40812 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 18:51:44 banner-session-40812 usermod[756]: change user 'sshd' password
+Nov  6 18:51:44 banner-session-40812 chage[763]: changed password expiry for sshd
+Nov  6 18:51:47 banner-session-40812 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 18:51:47 banner-session-40812 sshd[1198]: Server listening on :: port 22.
+Nov  6 18:51:49 banner-session-40812 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:51:49 banner-session-40812 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 18:51:49 banner-session-40812 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:51:57 banner-session-40812 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:53:00 banner-session-40812 useradd[1545]: new group: name=vf, GID=1001
+Nov  6 18:53:00 banner-session-40812 useradd[1545]: new user: name=vf, UID=1001, GID=1001, home=/home/vf, shell=/bin/bash, from=none
+Nov  6 18:53:00 banner-session-40812 usermod[1554]: change user 'vf' password
+Nov  6 18:53:01 banner-session-40812 sshd[1561]: Accepted password for vf from 10.0.3.1 port 55634 ssh2
+Nov  6 18:53:01 banner-session-40812 sshd[1561]: pam_unix(sshd:session): session opened for user vf by (uid=0)
+Nov  6 18:53:01 banner-session-40812 systemd-logind[164]: New session 1282 of user vf.
+Nov  6 18:53:01 banner-session-40812 systemd: pam_unix(systemd-user:session): session opened for user vf by (uid=0)
+Nov  6 18:53:06 banner-session-40812 sshd[1561]: pam_unix(sshd:session): session closed for user vf
+Nov  6 18:53:06 banner-session-40812 systemd-logind[164]: Session 1282 logged out. Waiting for processes to exit.
+Nov  6 18:53:06 banner-session-40812 systemd-logind[164]: Removed session 1282.

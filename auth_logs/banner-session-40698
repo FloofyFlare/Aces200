@@ -1,0 +1,21 @@
+Nov  6 15:53:23 banner-session-40698 systemd-logind[164]: New seat seat0.
+Nov  6 15:53:26 banner-session-40698 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 15:53:26 banner-session-40698 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:53:34 banner-session-40698 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:53:34 banner-session-40698 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 15:53:34 banner-session-40698 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:53:46 banner-session-40698 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 15:53:46 banner-session-40698 usermod[756]: change user 'sshd' password
+Nov  6 15:53:46 banner-session-40698 chage[763]: changed password expiry for sshd
+Nov  6 15:53:48 banner-session-40698 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 15:53:48 banner-session-40698 sshd[1198]: Server listening on :: port 22.
+Nov  6 15:53:51 banner-session-40698 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:53:51 banner-session-40698 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 15:53:51 banner-session-40698 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:53:59 banner-session-40698 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:57:31 banner-session-40698 useradd[1545]: failed adding user 'ubuntu', data deleted
+Nov  6 15:57:31 banner-session-40698 usermod[1546]: change user 'ubuntu' password
+Nov  6 15:57:31 banner-session-40698 sshd[1553]: Accepted password for ubuntu from 10.0.3.1 port 39796 ssh2
+Nov  6 15:57:31 banner-session-40698 sshd[1553]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov  6 15:57:31 banner-session-40698 systemd-logind[164]: New session 442 of user ubuntu.
+Nov  6 15:57:31 banner-session-40698 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)

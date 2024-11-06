@@ -1,0 +1,30 @@
+Nov  6 05:15:38 nobanner-session-40353 systemd-logind[164]: New seat seat0.
+Nov  6 05:15:42 nobanner-session-40353 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 05:15:42 nobanner-session-40353 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 05:15:49 nobanner-session-40353 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 05:15:49 nobanner-session-40353 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 05:15:49 nobanner-session-40353 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 05:16:11 nobanner-session-40353 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 05:16:12 nobanner-session-40353 usermod[765]: change user 'sshd' password
+Nov  6 05:16:12 nobanner-session-40353 chage[772]: changed password expiry for sshd
+Nov  6 05:16:15 nobanner-session-40353 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 05:16:15 nobanner-session-40353 sshd[1207]: Server listening on :: port 22.
+Nov  6 05:16:17 nobanner-session-40353 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 05:16:17 nobanner-session-40353 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 05:16:17 nobanner-session-40353 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 05:16:24 nobanner-session-40353 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 05:17:01 nobanner-session-40353 CRON[1553]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  6 05:17:01 nobanner-session-40353 CRON[1553]: pam_unix(cron:session): session closed for user root
+Nov  6 05:31:08 nobanner-session-40353 useradd[1558]: new group: name=LIBRSYSISVC, GID=1001
+Nov  6 05:31:08 nobanner-session-40353 useradd[1558]: new user: name=LIBRSYSISVC, UID=1001, GID=1001, home=/home/LIBRSYSISVC, shell=/bin/bash, from=none
+Nov  6 05:31:08 nobanner-session-40353 usermod[1567]: change user 'LIBRSYSISVC' password
+Nov  6 05:31:09 nobanner-session-40353 sshd[1574]: Accepted password for LIBRSYSISVC from 10.0.3.1 port 37268 ssh2
+Nov  6 05:31:09 nobanner-session-40353 sshd[1574]: pam_unix(sshd:session): session opened for user LIBRSYSISVC by (uid=0)
+Nov  6 05:31:09 nobanner-session-40353 systemd-logind[164]: New session 489 of user LIBRSYSISVC.
+Nov  6 05:31:09 nobanner-session-40353 systemd: pam_unix(systemd-user:session): session opened for user LIBRSYSISVC by (uid=0)
+Nov  6 05:31:10 nobanner-session-40353 sudo: LIBRSYSISVC : user NOT in sudoers ; TTY=pts/5 ; PWD=/home/LIBRSYSISVC ; USER=root ; COMMAND=/usr/bin/echo ok
+Nov  6 05:31:10 nobanner-session-40353 sshd[1591]: Received disconnect from 10.0.3.1 port 37268:11: 
+Nov  6 05:31:10 nobanner-session-40353 sshd[1591]: Disconnected from user LIBRSYSISVC 10.0.3.1 port 37268
+Nov  6 05:31:10 nobanner-session-40353 sshd[1574]: pam_unix(sshd:session): session closed for user LIBRSYSISVC
+Nov  6 05:31:10 nobanner-session-40353 systemd-logind[164]: Session 489 logged out. Waiting for processes to exit.
+Nov  6 05:31:10 nobanner-session-40353 systemd-logind[164]: Removed session 489.

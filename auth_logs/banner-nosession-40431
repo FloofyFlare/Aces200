@@ -1,0 +1,27 @@
+Nov  6 08:47:22 banner-nosession-40431 systemd-logind[164]: New seat seat0.
+Nov  6 08:47:25 banner-nosession-40431 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 08:47:25 banner-nosession-40431 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:47:34 banner-nosession-40431 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:47:34 banner-nosession-40431 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 08:47:34 banner-nosession-40431 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:47:47 banner-nosession-40431 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 08:47:48 banner-nosession-40431 usermod[765]: change user 'sshd' password
+Nov  6 08:47:48 banner-nosession-40431 chage[772]: changed password expiry for sshd
+Nov  6 08:47:50 banner-nosession-40431 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 08:47:50 banner-nosession-40431 sshd[1207]: Server listening on :: port 22.
+Nov  6 08:47:52 banner-nosession-40431 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:47:52 banner-nosession-40431 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 08:47:52 banner-nosession-40431 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:48:01 banner-nosession-40431 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:53:11 banner-nosession-40431 useradd[1557]: new group: name=ethereumdocker, GID=1001
+Nov  6 08:53:11 banner-nosession-40431 useradd[1557]: new user: name=ethereumdocker, UID=1001, GID=1001, home=/home/ethereumdocker, shell=/bin/bash, from=none
+Nov  6 08:53:11 banner-nosession-40431 usermod[1566]: change user 'ethereumdocker' password
+Nov  6 08:53:11 banner-nosession-40431 sshd[1573]: Accepted password for ethereumdocker from 10.0.3.1 port 48830 ssh2
+Nov  6 08:53:11 banner-nosession-40431 sshd[1573]: pam_unix(sshd:session): session opened for user ethereumdocker by (uid=0)
+Nov  6 08:53:11 banner-nosession-40431 systemd-logind[164]: New session 612 of user ethereumdocker.
+Nov  6 08:53:11 banner-nosession-40431 systemd: pam_unix(systemd-user:session): session opened for user ethereumdocker by (uid=0)
+Nov  6 08:53:12 banner-nosession-40431 sshd[1590]: Received disconnect from 10.0.3.1 port 48830:11: 
+Nov  6 08:53:12 banner-nosession-40431 sshd[1590]: Disconnected from user ethereumdocker 10.0.3.1 port 48830
+Nov  6 08:53:12 banner-nosession-40431 sshd[1573]: pam_unix(sshd:session): session closed for user ethereumdocker
+Nov  6 08:53:12 banner-nosession-40431 systemd-logind[164]: Session 612 logged out. Waiting for processes to exit.
+Nov  6 08:53:12 banner-nosession-40431 systemd-logind[164]: Removed session 612.

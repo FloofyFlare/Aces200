@@ -1,0 +1,50 @@
+(node:3072060) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-40561',
+  containerIp: '10.0.3.5',
+  mitmPort: 40561,
+  autoAccessFixed: 1
+}
+2024-11-06 07:18:20.080 - [Info] MITM Version: 2
+2024-11-06 07:18:20.083 - [Info] Auto Access Enabled: true
+2024-11-06 07:18:20.083 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 07:18:20.095 - [Info] SSH man-in-the-middle server for 10.0.3.5 listening on 10.0.3.1:40561
+2024-11-06 07:19:34.856 - [Debug] [Connection] Attacker connected: 190.145.200.210 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-06 07:19:35.585 - [Debug] [Auth] Attacker 190.145.200.210 trying to authenticate with 'password'
+2024-11-06 07:19:35.586 - [Debug] [Auto Access] Attacker: 190.145.200.210, Threshold: 1, Attempts: 1
+2024-11-06 07:19:35.587 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-06 07:19:35.587 - [Debug] [Auto Access] Adding the following credentials: 'jfadmin:jfadmin'
+2024-11-06 07:19:35.890 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-06 07:19:35.892 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-06 07:19:35.892 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.5
+2024-11-06 07:19:35.979 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-06 07:19:36.597 - [Debug] [EXEC] Noninteractive mode attacker command: cd ~; chattr -ia .ssh; lockr -ia .ssh
+2024-11-06 07:19:37.064 - [Debug] [Connection] Attacker connected: 190.145.200.210 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-06 07:19:37.780 - [Debug] [Auth] Attacker 190.145.200.210 trying to authenticate with 'password'
+2024-11-06 07:19:37.781 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-06 07:19:37.782 - [Debug] [Auth] Attacker: 190.145.200.210 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-06 07:19:37.956 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 07:19:38.032 - [Debug] [Connection] Attacker connected: 190.145.200.210 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-06 07:19:38.460 - [Debug] [Auth] Attacker 190.145.200.210 trying to authenticate with 'password'
+2024-11-06 07:19:38.461 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-06 07:19:38.461 - [Debug] [Auth] Attacker: 190.145.200.210 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-06 07:19:38.719 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 07:19:38.755 - [Debug] [Connection] Attacker closed connection
+2024-11-06 07:19:38.762 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-06 07:19:38.763 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

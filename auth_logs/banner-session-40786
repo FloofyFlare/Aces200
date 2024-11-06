@@ -1,0 +1,27 @@
+Nov  6 18:16:32 banner-session-40786 systemd-logind[164]: New seat seat0.
+Nov  6 18:16:35 banner-session-40786 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 18:16:35 banner-session-40786 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:16:44 banner-session-40786 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:16:44 banner-session-40786 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 18:16:44 banner-session-40786 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:16:55 banner-session-40786 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 18:16:55 banner-session-40786 usermod[756]: change user 'sshd' password
+Nov  6 18:16:55 banner-session-40786 chage[763]: changed password expiry for sshd
+Nov  6 18:16:57 banner-session-40786 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 18:16:57 banner-session-40786 sshd[1198]: Server listening on :: port 22.
+Nov  6 18:16:59 banner-session-40786 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:16:59 banner-session-40786 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 18:16:59 banner-session-40786 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:17:01 banner-session-40786 CRON[1337]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  6 18:17:01 banner-session-40786 CRON[1337]: pam_unix(cron:session): session closed for user root
+Nov  6 18:17:07 banner-session-40786 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:17:27 banner-session-40786 useradd[1548]: new group: name=admin, GID=1001
+Nov  6 18:17:27 banner-session-40786 useradd[1548]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov  6 18:17:27 banner-session-40786 usermod[1557]: change user 'admin' password
+Nov  6 18:17:27 banner-session-40786 sshd[1564]: Accepted password for admin from 10.0.3.1 port 41922 ssh2
+Nov  6 18:17:27 banner-session-40786 sshd[1564]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov  6 18:17:27 banner-session-40786 systemd-logind[164]: New session 1240 of user admin.
+Nov  6 18:17:27 banner-session-40786 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov  6 18:17:33 banner-session-40786 sshd[1564]: pam_unix(sshd:session): session closed for user admin
+Nov  6 18:17:33 banner-session-40786 systemd-logind[164]: Session 1240 logged out. Waiting for processes to exit.
+Nov  6 18:17:33 banner-session-40786 systemd-logind[164]: Removed session 1240.

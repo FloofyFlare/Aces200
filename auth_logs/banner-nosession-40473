@@ -1,0 +1,27 @@
+Nov  6 09:56:51 banner-nosession-40473 systemd-logind[165]: New seat seat0.
+Nov  6 09:56:54 banner-nosession-40473 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 09:56:54 banner-nosession-40473 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:57:02 banner-nosession-40473 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:57:02 banner-nosession-40473 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 09:57:02 banner-nosession-40473 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:57:16 banner-nosession-40473 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 09:57:17 banner-nosession-40473 usermod[765]: change user 'sshd' password
+Nov  6 09:57:17 banner-nosession-40473 chage[772]: changed password expiry for sshd
+Nov  6 09:57:20 banner-nosession-40473 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 09:57:20 banner-nosession-40473 sshd[1207]: Server listening on :: port 22.
+Nov  6 09:57:22 banner-nosession-40473 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:57:22 banner-nosession-40473 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 09:57:22 banner-nosession-40473 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:57:32 banner-nosession-40473 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:02:41 banner-nosession-40473 useradd[1557]: new group: name=sol, GID=1001
+Nov  6 10:02:41 banner-nosession-40473 useradd[1557]: new user: name=sol, UID=1001, GID=1001, home=/home/sol, shell=/bin/bash, from=none
+Nov  6 10:02:41 banner-nosession-40473 usermod[1566]: change user 'sol' password
+Nov  6 10:02:41 banner-nosession-40473 sshd[1573]: Accepted password for sol from 10.0.3.1 port 53020 ssh2
+Nov  6 10:02:41 banner-nosession-40473 sshd[1573]: pam_unix(sshd:session): session opened for user sol by (uid=0)
+Nov  6 10:02:41 banner-nosession-40473 systemd-logind[165]: New session 678 of user sol.
+Nov  6 10:02:41 banner-nosession-40473 systemd: pam_unix(systemd-user:session): session opened for user sol by (uid=0)
+Nov  6 10:02:42 banner-nosession-40473 sshd[1590]: Received disconnect from 10.0.3.1 port 53020:11: 
+Nov  6 10:02:42 banner-nosession-40473 sshd[1590]: Disconnected from user sol 10.0.3.1 port 53020
+Nov  6 10:02:42 banner-nosession-40473 sshd[1573]: pam_unix(sshd:session): session closed for user sol
+Nov  6 10:02:42 banner-nosession-40473 systemd-logind[165]: Session 678 logged out. Waiting for processes to exit.
+Nov  6 10:02:42 banner-nosession-40473 systemd-logind[165]: Removed session 678.

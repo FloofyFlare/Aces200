@@ -1,0 +1,25 @@
+Nov  6 14:30:36 banner-nosession-40640 systemd-logind[164]: New seat seat0.
+Nov  6 14:30:39 banner-nosession-40640 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 14:30:39 banner-nosession-40640 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:30:48 banner-nosession-40640 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:30:48 banner-nosession-40640 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 14:30:48 banner-nosession-40640 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:30:59 banner-nosession-40640 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 14:30:59 banner-nosession-40640 usermod[756]: change user 'sshd' password
+Nov  6 14:30:59 banner-nosession-40640 chage[763]: changed password expiry for sshd
+Nov  6 14:31:02 banner-nosession-40640 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 14:31:02 banner-nosession-40640 sshd[1198]: Server listening on :: port 22.
+Nov  6 14:31:04 banner-nosession-40640 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:31:04 banner-nosession-40640 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 14:31:04 banner-nosession-40640 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:31:12 banner-nosession-40640 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:32:25 banner-nosession-40640 useradd[1542]: new group: name=ip, GID=1001
+Nov  6 14:32:25 banner-nosession-40640 useradd[1542]: new user: name=ip, UID=1001, GID=1001, home=/home/ip, shell=/bin/bash, from=none
+Nov  6 14:32:26 banner-nosession-40640 usermod[1551]: change user 'ip' password
+Nov  6 14:32:26 banner-nosession-40640 sshd[1558]: Accepted password for ip from 10.0.3.1 port 40906 ssh2
+Nov  6 14:32:26 banner-nosession-40640 sshd[1558]: pam_unix(sshd:session): session opened for user ip by (uid=0)
+Nov  6 14:32:26 banner-nosession-40640 systemd-logind[164]: New session 973 of user ip.
+Nov  6 14:32:26 banner-nosession-40640 systemd: pam_unix(systemd-user:session): session opened for user ip by (uid=0)
+Nov  6 14:32:33 banner-nosession-40640 sshd[1558]: pam_unix(sshd:session): session closed for user ip
+Nov  6 14:32:33 banner-nosession-40640 systemd-logind[164]: Session 973 logged out. Waiting for processes to exit.
+Nov  6 14:32:33 banner-nosession-40640 systemd-logind[164]: Removed session 973.

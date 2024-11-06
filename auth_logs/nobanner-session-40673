@@ -1,0 +1,25 @@
+Nov  6 15:14:42 nobanner-session-40673 systemd-logind[164]: New seat seat0.
+Nov  6 15:14:45 nobanner-session-40673 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 15:14:45 nobanner-session-40673 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:14:54 nobanner-session-40673 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:14:54 nobanner-session-40673 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 15:14:54 nobanner-session-40673 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:15:11 nobanner-session-40673 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 15:15:11 nobanner-session-40673 usermod[756]: change user 'sshd' password
+Nov  6 15:15:11 nobanner-session-40673 chage[763]: changed password expiry for sshd
+Nov  6 15:15:14 nobanner-session-40673 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 15:15:14 nobanner-session-40673 sshd[1198]: Server listening on :: port 22.
+Nov  6 15:15:16 nobanner-session-40673 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:15:16 nobanner-session-40673 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 15:15:16 nobanner-session-40673 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:15:23 nobanner-session-40673 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:16:33 nobanner-session-40673 useradd[1539]: new group: name=pk, GID=1001
+Nov  6 15:16:33 nobanner-session-40673 useradd[1539]: new user: name=pk, UID=1001, GID=1001, home=/home/pk, shell=/bin/bash, from=none
+Nov  6 15:16:33 nobanner-session-40673 usermod[1548]: change user 'pk' password
+Nov  6 15:16:34 nobanner-session-40673 sshd[1555]: Accepted password for pk from 10.0.3.1 port 36012 ssh2
+Nov  6 15:16:34 nobanner-session-40673 sshd[1555]: pam_unix(sshd:session): session opened for user pk by (uid=0)
+Nov  6 15:16:34 nobanner-session-40673 systemd-logind[164]: New session 1030 of user pk.
+Nov  6 15:16:34 nobanner-session-40673 systemd: pam_unix(systemd-user:session): session opened for user pk by (uid=0)
+Nov  6 15:16:41 nobanner-session-40673 sshd[1555]: pam_unix(sshd:session): session closed for user pk
+Nov  6 15:16:41 nobanner-session-40673 systemd-logind[164]: Session 1030 logged out. Waiting for processes to exit.
+Nov  6 15:16:41 nobanner-session-40673 systemd-logind[164]: Removed session 1030.

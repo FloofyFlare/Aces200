@@ -1,0 +1,27 @@
+Nov  6 19:39:13 nobanner-nosession-40842 systemd-logind[165]: New seat seat0.
+Nov  6 19:39:16 nobanner-nosession-40842 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 19:39:16 nobanner-nosession-40842 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:39:24 nobanner-nosession-40842 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:39:24 nobanner-nosession-40842 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 19:39:24 nobanner-nosession-40842 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:39:41 nobanner-nosession-40842 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 19:39:41 nobanner-nosession-40842 usermod[756]: change user 'sshd' password
+Nov  6 19:39:41 nobanner-nosession-40842 chage[763]: changed password expiry for sshd
+Nov  6 19:39:44 nobanner-nosession-40842 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 19:39:44 nobanner-nosession-40842 sshd[1198]: Server listening on :: port 22.
+Nov  6 19:39:46 nobanner-nosession-40842 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:39:46 nobanner-nosession-40842 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 19:39:46 nobanner-nosession-40842 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:39:55 nobanner-nosession-40842 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:40:04 nobanner-nosession-40842 useradd[1536]: new group: name=zxfang, GID=1001
+Nov  6 19:40:04 nobanner-nosession-40842 useradd[1536]: new user: name=zxfang, UID=1001, GID=1001, home=/home/zxfang, shell=/bin/bash, from=none
+Nov  6 19:40:05 nobanner-nosession-40842 usermod[1545]: change user 'zxfang' password
+Nov  6 19:40:05 nobanner-nosession-40842 sshd[1552]: Accepted password for zxfang from 10.0.3.1 port 39392 ssh2
+Nov  6 19:40:05 nobanner-nosession-40842 sshd[1552]: pam_unix(sshd:session): session opened for user zxfang by (uid=0)
+Nov  6 19:40:05 nobanner-nosession-40842 systemd-logind[165]: New session 1334 of user zxfang.
+Nov  6 19:40:05 nobanner-nosession-40842 systemd: pam_unix(systemd-user:session): session opened for user zxfang by (uid=0)
+Nov  6 19:40:06 nobanner-nosession-40842 sshd[1569]: Received disconnect from 10.0.3.1 port 39392:11: 
+Nov  6 19:40:06 nobanner-nosession-40842 sshd[1569]: Disconnected from user zxfang 10.0.3.1 port 39392
+Nov  6 19:40:06 nobanner-nosession-40842 sshd[1552]: pam_unix(sshd:session): session closed for user zxfang
+Nov  6 19:40:06 nobanner-nosession-40842 systemd-logind[165]: Session 1334 logged out. Waiting for processes to exit.
+Nov  6 19:40:06 nobanner-nosession-40842 systemd-logind[165]: Removed session 1334.

@@ -1,0 +1,25 @@
+Nov  6 15:22:05 nobanner-session-40676 systemd-logind[165]: New seat seat0.
+Nov  6 15:22:09 nobanner-session-40676 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 15:22:09 nobanner-session-40676 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:22:18 nobanner-session-40676 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:22:18 nobanner-session-40676 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 15:22:18 nobanner-session-40676 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:22:37 nobanner-session-40676 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 15:22:37 nobanner-session-40676 usermod[756]: change user 'sshd' password
+Nov  6 15:22:37 nobanner-session-40676 chage[763]: changed password expiry for sshd
+Nov  6 15:22:40 nobanner-session-40676 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 15:22:40 nobanner-session-40676 sshd[1198]: Server listening on :: port 22.
+Nov  6 15:22:42 nobanner-session-40676 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:22:42 nobanner-session-40676 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 15:22:42 nobanner-session-40676 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:22:56 nobanner-session-40676 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:24:06 nobanner-session-40676 useradd[1539]: new group: name=bb, GID=1001
+Nov  6 15:24:06 nobanner-session-40676 useradd[1539]: new user: name=bb, UID=1001, GID=1001, home=/home/bb, shell=/bin/bash, from=none
+Nov  6 15:24:06 nobanner-session-40676 usermod[1548]: change user 'bb' password
+Nov  6 15:24:06 nobanner-session-40676 sshd[1555]: Accepted password for bb from 10.0.3.1 port 59746 ssh2
+Nov  6 15:24:06 nobanner-session-40676 sshd[1555]: pam_unix(sshd:session): session opened for user bb by (uid=0)
+Nov  6 15:24:06 nobanner-session-40676 systemd-logind[165]: New session 1040 of user bb.
+Nov  6 15:24:07 nobanner-session-40676 systemd: pam_unix(systemd-user:session): session opened for user bb by (uid=0)
+Nov  6 15:24:14 nobanner-session-40676 sshd[1555]: pam_unix(sshd:session): session closed for user bb
+Nov  6 15:24:14 nobanner-session-40676 systemd-logind[165]: Session 1040 logged out. Waiting for processes to exit.
+Nov  6 15:24:14 nobanner-session-40676 systemd-logind[165]: Removed session 1040.

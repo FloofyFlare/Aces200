@@ -1,0 +1,26 @@
+Nov  6 07:47:33 nobanner-session-40405 systemd-logind[165]: New seat seat0.
+Nov  6 07:47:36 nobanner-session-40405 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 07:47:36 nobanner-session-40405 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 07:47:44 nobanner-session-40405 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 07:47:44 nobanner-session-40405 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 07:47:44 nobanner-session-40405 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 07:47:56 nobanner-session-40405 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 07:47:57 nobanner-session-40405 usermod[756]: change user 'sshd' password
+Nov  6 07:47:57 nobanner-session-40405 chage[763]: changed password expiry for sshd
+Nov  6 07:47:59 nobanner-session-40405 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 07:47:59 nobanner-session-40405 sshd[1198]: Server listening on :: port 22.
+Nov  6 07:48:02 nobanner-session-40405 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 07:48:02 nobanner-session-40405 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 07:48:02 nobanner-session-40405 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 07:48:11 nobanner-session-40405 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 07:53:20 nobanner-session-40405 useradd[1540]: failed adding user 'mail', data deleted
+Nov  6 07:53:21 nobanner-session-40405 usermod[1541]: change user 'mail' password
+Nov  6 07:53:21 nobanner-session-40405 sshd[1548]: Accepted password for mail from 10.0.3.1 port 56582 ssh2
+Nov  6 07:53:21 nobanner-session-40405 sshd[1548]: pam_unix(sshd:session): session opened for user mail by (uid=0)
+Nov  6 07:53:21 nobanner-session-40405 systemd-logind[165]: New session 566 of user mail.
+Nov  6 07:53:21 nobanner-session-40405 systemd: pam_unix(systemd-user:session): session opened for user mail by (uid=0)
+Nov  6 07:53:23 nobanner-session-40405 sshd[1565]: Received disconnect from 10.0.3.1 port 56582:11: 
+Nov  6 07:53:23 nobanner-session-40405 sshd[1565]: Disconnected from user mail 10.0.3.1 port 56582
+Nov  6 07:53:23 nobanner-session-40405 sshd[1548]: pam_unix(sshd:session): session closed for user mail
+Nov  6 07:53:23 nobanner-session-40405 systemd-logind[165]: Session 566 logged out. Waiting for processes to exit.
+Nov  6 07:53:23 nobanner-session-40405 systemd-logind[165]: Removed session 566.

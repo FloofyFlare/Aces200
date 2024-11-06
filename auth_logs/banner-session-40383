@@ -1,0 +1,26 @@
+Nov  6 06:41:42 banner-session-40383 systemd-logind[165]: New seat seat0.
+Nov  6 06:41:45 banner-session-40383 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 06:41:45 banner-session-40383 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 06:41:54 banner-session-40383 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 06:41:54 banner-session-40383 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 06:41:54 banner-session-40383 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 06:42:11 banner-session-40383 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 06:42:11 banner-session-40383 usermod[756]: change user 'sshd' password
+Nov  6 06:42:11 banner-session-40383 chage[763]: changed password expiry for sshd
+Nov  6 06:42:13 banner-session-40383 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 06:42:13 banner-session-40383 sshd[1198]: Server listening on :: port 22.
+Nov  6 06:42:15 banner-session-40383 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 06:42:15 banner-session-40383 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 06:42:15 banner-session-40383 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 06:42:24 banner-session-40383 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 06:44:16 banner-session-40383 useradd[1545]: failed adding user 'nobody', data deleted
+Nov  6 06:44:16 banner-session-40383 usermod[1546]: change user 'nobody' password
+Nov  6 06:44:17 banner-session-40383 sshd[1553]: Accepted password for nobody from 10.0.3.1 port 44794 ssh2
+Nov  6 06:44:17 banner-session-40383 sshd[1553]: pam_unix(sshd:session): session opened for user nobody by (uid=0)
+Nov  6 06:44:17 banner-session-40383 systemd-logind[165]: New session 537 of user nobody.
+Nov  6 06:44:17 banner-session-40383 systemd: pam_unix(systemd-user:session): session opened for user nobody by (uid=0)
+Nov  6 06:44:18 banner-session-40383 sshd[1570]: Received disconnect from 10.0.3.1 port 44794:11: 
+Nov  6 06:44:18 banner-session-40383 sshd[1570]: Disconnected from user nobody 10.0.3.1 port 44794
+Nov  6 06:44:18 banner-session-40383 sshd[1553]: pam_unix(sshd:session): session closed for user nobody
+Nov  6 06:44:18 banner-session-40383 systemd-logind[165]: Session 537 logged out. Waiting for processes to exit.
+Nov  6 06:44:18 banner-session-40383 systemd-logind[165]: Removed session 537.

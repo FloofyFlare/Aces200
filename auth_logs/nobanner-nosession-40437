@@ -1,0 +1,25 @@
+Nov  6 09:00:01 nobanner-nosession-40437 systemd-logind[164]: New seat seat0.
+Nov  6 09:00:05 nobanner-nosession-40437 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 09:00:05 nobanner-nosession-40437 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:00:20 nobanner-nosession-40437 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:00:20 nobanner-nosession-40437 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 09:00:20 nobanner-nosession-40437 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:00:40 nobanner-nosession-40437 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 09:00:41 nobanner-nosession-40437 usermod[765]: change user 'sshd' password
+Nov  6 09:00:41 nobanner-nosession-40437 chage[772]: changed password expiry for sshd
+Nov  6 09:00:43 nobanner-nosession-40437 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 09:00:43 nobanner-nosession-40437 sshd[1207]: Server listening on :: port 22.
+Nov  6 09:00:46 nobanner-nosession-40437 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:00:46 nobanner-nosession-40437 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 09:00:46 nobanner-nosession-40437 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:00:55 nobanner-nosession-40437 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:04:41 nobanner-nosession-40437 useradd[1550]: new group: name=buser, GID=1001
+Nov  6 09:04:41 nobanner-nosession-40437 useradd[1550]: new user: name=buser, UID=1001, GID=1001, home=/home/buser, shell=/bin/bash, from=none
+Nov  6 09:04:41 nobanner-nosession-40437 usermod[1559]: change user 'buser' password
+Nov  6 09:04:41 nobanner-nosession-40437 sshd[1566]: Accepted password for buser from 10.0.3.1 port 52098 ssh2
+Nov  6 09:04:41 nobanner-nosession-40437 sshd[1566]: pam_unix(sshd:session): session opened for user buser by (uid=0)
+Nov  6 09:04:41 nobanner-nosession-40437 systemd-logind[164]: New session 622 of user buser.
+Nov  6 09:04:41 nobanner-nosession-40437 systemd: pam_unix(systemd-user:session): session opened for user buser by (uid=0)
+Nov  6 09:04:46 nobanner-nosession-40437 sshd[1566]: pam_unix(sshd:session): session closed for user buser
+Nov  6 09:04:46 nobanner-nosession-40437 systemd-logind[164]: Session 622 logged out. Waiting for processes to exit.
+Nov  6 09:04:46 nobanner-nosession-40437 systemd-logind[164]: Removed session 622.

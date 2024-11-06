@@ -1,0 +1,37 @@
+(node:3463448) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-40698',
+  containerIp: '10.0.3.234',
+  mitmPort: 40698,
+  autoAccessFixed: 1
+}
+2024-11-06 10:54:02.380 - [Info] MITM Version: 2
+2024-11-06 10:54:02.391 - [Info] Auto Access Enabled: true
+2024-11-06 10:54:02.393 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 10:54:02.417 - [Info] SSH man-in-the-middle server for 10.0.3.234 listening on 10.0.3.1:40698
+2024-11-06 10:55:30.265 - [Debug] [Connection] Attacker connected: 117.50.188.36 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-06 10:57:30.719 - [Debug] [Connection] Attacker connected: 190.85.15.251 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-06 10:57:31.239 - [Debug] [Auth] Attacker 190.85.15.251 trying to authenticate with 'password'
+2024-11-06 10:57:31.240 - [Debug] [Auto Access] Attacker: 190.85.15.251, Threshold: 1, Attempts: 1
+2024-11-06 10:57:31.240 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-06 10:57:31.241 - [Debug] [Auto Access] Adding the following credentials: 'ubuntu:ubuntu'
+2024-11-06 10:57:31.419 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-06 10:57:31.420 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-06 10:57:31.421 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.234
+2024-11-06 10:57:31.543 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

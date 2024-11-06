@@ -1,0 +1,27 @@
+Nov  6 19:21:24 nobanner-nosession-40830 systemd-logind[165]: New seat seat0.
+Nov  6 19:21:27 nobanner-nosession-40830 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 19:21:27 nobanner-nosession-40830 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:21:36 nobanner-nosession-40830 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:21:36 nobanner-nosession-40830 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 19:21:36 nobanner-nosession-40830 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:21:54 nobanner-nosession-40830 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 19:21:54 nobanner-nosession-40830 usermod[756]: change user 'sshd' password
+Nov  6 19:21:54 nobanner-nosession-40830 chage[763]: changed password expiry for sshd
+Nov  6 19:21:56 nobanner-nosession-40830 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 19:21:56 nobanner-nosession-40830 sshd[1198]: Server listening on :: port 22.
+Nov  6 19:21:58 nobanner-nosession-40830 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:21:58 nobanner-nosession-40830 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 19:21:58 nobanner-nosession-40830 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:22:16 nobanner-nosession-40830 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:22:31 nobanner-nosession-40830 useradd[1536]: new group: name=gr, GID=1001
+Nov  6 19:22:31 nobanner-nosession-40830 useradd[1536]: new user: name=gr, UID=1001, GID=1001, home=/home/gr, shell=/bin/bash, from=none
+Nov  6 19:22:31 nobanner-nosession-40830 usermod[1545]: change user 'gr' password
+Nov  6 19:22:32 nobanner-nosession-40830 sshd[1552]: Accepted password for gr from 10.0.3.1 port 51762 ssh2
+Nov  6 19:22:32 nobanner-nosession-40830 sshd[1552]: pam_unix(sshd:session): session opened for user gr by (uid=0)
+Nov  6 19:22:32 nobanner-nosession-40830 systemd-logind[165]: New session 1314 of user gr.
+Nov  6 19:22:32 nobanner-nosession-40830 systemd: pam_unix(systemd-user:session): session opened for user gr by (uid=0)
+Nov  6 19:22:32 nobanner-nosession-40830 sshd[1569]: Received disconnect from 10.0.3.1 port 51762:11: 
+Nov  6 19:22:32 nobanner-nosession-40830 sshd[1569]: Disconnected from user gr 10.0.3.1 port 51762
+Nov  6 19:22:32 nobanner-nosession-40830 sshd[1552]: pam_unix(sshd:session): session closed for user gr
+Nov  6 19:22:32 nobanner-nosession-40830 systemd-logind[165]: Session 1314 logged out. Waiting for processes to exit.
+Nov  6 19:22:32 nobanner-nosession-40830 systemd-logind[165]: Removed session 1314.

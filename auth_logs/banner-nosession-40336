@@ -1,0 +1,27 @@
+Nov  6 04:34:46 banner-nosession-40336 systemd-logind[164]: New seat seat0.
+Nov  6 04:34:49 banner-nosession-40336 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 04:34:49 banner-nosession-40336 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 04:34:58 banner-nosession-40336 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 04:34:58 banner-nosession-40336 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 04:34:58 banner-nosession-40336 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 04:35:17 banner-nosession-40336 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 04:35:17 banner-nosession-40336 usermod[765]: change user 'sshd' password
+Nov  6 04:35:17 banner-nosession-40336 chage[772]: changed password expiry for sshd
+Nov  6 04:35:19 banner-nosession-40336 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 04:35:19 banner-nosession-40336 sshd[1207]: Server listening on :: port 22.
+Nov  6 04:35:20 banner-nosession-40336 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 04:35:20 banner-nosession-40336 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 04:35:20 banner-nosession-40336 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 04:35:29 banner-nosession-40336 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 04:45:40 banner-nosession-40336 useradd[1557]: new group: name=cc, GID=1001
+Nov  6 04:45:40 banner-nosession-40336 useradd[1557]: new user: name=cc, UID=1001, GID=1001, home=/home/cc, shell=/bin/bash, from=none
+Nov  6 04:45:40 banner-nosession-40336 usermod[1566]: change user 'cc' password
+Nov  6 04:45:40 banner-nosession-40336 sshd[1573]: Accepted password for cc from 10.0.3.1 port 42174 ssh2
+Nov  6 04:45:40 banner-nosession-40336 sshd[1573]: pam_unix(sshd:session): session opened for user cc by (uid=0)
+Nov  6 04:45:41 banner-nosession-40336 systemd-logind[164]: New session 468 of user cc.
+Nov  6 04:45:41 banner-nosession-40336 systemd: pam_unix(systemd-user:session): session opened for user cc by (uid=0)
+Nov  6 04:45:43 banner-nosession-40336 sshd[1590]: Received disconnect from 10.0.3.1 port 42174:11: 
+Nov  6 04:45:43 banner-nosession-40336 sshd[1590]: Disconnected from user cc 10.0.3.1 port 42174
+Nov  6 04:45:43 banner-nosession-40336 sshd[1573]: pam_unix(sshd:session): session closed for user cc
+Nov  6 04:45:43 banner-nosession-40336 systemd-logind[164]: Session 468 logged out. Waiting for processes to exit.
+Nov  6 04:45:43 banner-nosession-40336 systemd-logind[164]: Removed session 468.

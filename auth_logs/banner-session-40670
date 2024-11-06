@@ -1,0 +1,27 @@
+Nov  6 15:11:31 banner-session-40670 systemd-logind[164]: New seat seat0.
+Nov  6 15:11:34 banner-session-40670 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 15:11:34 banner-session-40670 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:11:42 banner-session-40670 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:11:42 banner-session-40670 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 15:11:42 banner-session-40670 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:11:56 banner-session-40670 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 15:11:56 banner-session-40670 usermod[756]: change user 'sshd' password
+Nov  6 15:11:56 banner-session-40670 chage[763]: changed password expiry for sshd
+Nov  6 15:11:59 banner-session-40670 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 15:11:59 banner-session-40670 sshd[1198]: Server listening on :: port 22.
+Nov  6 15:12:01 banner-session-40670 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:12:01 banner-session-40670 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 15:12:01 banner-session-40670 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 15:12:12 banner-session-40670 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 15:12:36 banner-session-40670 useradd[1545]: new group: name=debian, GID=1001
+Nov  6 15:12:36 banner-session-40670 useradd[1545]: new user: name=debian, UID=1001, GID=1001, home=/home/debian, shell=/bin/bash, from=none
+Nov  6 15:12:38 banner-session-40670 usermod[1554]: change user 'debian' password
+Nov  6 15:12:38 banner-session-40670 sshd[1561]: Accepted password for debian from 10.0.3.1 port 39440 ssh2
+Nov  6 15:12:38 banner-session-40670 sshd[1561]: pam_unix(sshd:session): session opened for user debian by (uid=0)
+Nov  6 15:12:38 banner-session-40670 systemd-logind[164]: New session 1026 of user debian.
+Nov  6 15:12:38 banner-session-40670 systemd: pam_unix(systemd-user:session): session opened for user debian by (uid=0)
+Nov  6 15:12:40 banner-session-40670 sshd[1578]: Received disconnect from 10.0.3.1 port 39440:11: 
+Nov  6 15:12:40 banner-session-40670 sshd[1578]: Disconnected from user debian 10.0.3.1 port 39440
+Nov  6 15:12:40 banner-session-40670 sshd[1561]: pam_unix(sshd:session): session closed for user debian
+Nov  6 15:12:40 banner-session-40670 systemd-logind[164]: Session 1026 logged out. Waiting for processes to exit.
+Nov  6 15:12:40 banner-session-40670 systemd-logind[164]: Removed session 1026.

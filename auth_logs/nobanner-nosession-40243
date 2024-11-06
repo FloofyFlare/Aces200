@@ -1,0 +1,27 @@
+Nov  5 21:26:32 nobanner-nosession-40243 systemd-logind[166]: New seat seat0.
+Nov  5 21:26:35 nobanner-nosession-40243 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  5 21:26:35 nobanner-nosession-40243 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  5 21:26:44 nobanner-nosession-40243 sudo: pam_unix(sudo:session): session closed for user root
+Nov  5 21:26:44 nobanner-nosession-40243 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  5 21:26:44 nobanner-nosession-40243 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  5 21:26:56 nobanner-nosession-40243 useradd[758]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  5 21:26:56 nobanner-nosession-40243 usermod[766]: change user 'sshd' password
+Nov  5 21:26:56 nobanner-nosession-40243 chage[773]: changed password expiry for sshd
+Nov  5 21:26:58 nobanner-nosession-40243 sshd[1208]: Server listening on 0.0.0.0 port 22.
+Nov  5 21:26:58 nobanner-nosession-40243 sshd[1208]: Server listening on :: port 22.
+Nov  5 21:27:00 nobanner-nosession-40243 sudo: pam_unix(sudo:session): session closed for user root
+Nov  5 21:27:00 nobanner-nosession-40243 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  5 21:27:00 nobanner-nosession-40243 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  5 21:27:09 nobanner-nosession-40243 sudo: pam_unix(sudo:session): session closed for user root
+Nov  5 21:31:00 nobanner-nosession-40243 useradd[1551]: new group: name=config, GID=1001
+Nov  5 21:31:00 nobanner-nosession-40243 useradd[1551]: new user: name=config, UID=1001, GID=1001, home=/home/config, shell=/bin/bash, from=none
+Nov  5 21:31:00 nobanner-nosession-40243 usermod[1560]: change user 'config' password
+Nov  5 21:31:00 nobanner-nosession-40243 sshd[1567]: Accepted password for config from 10.0.3.1 port 43394 ssh2
+Nov  5 21:31:00 nobanner-nosession-40243 sshd[1567]: pam_unix(sshd:session): session opened for user config by (uid=0)
+Nov  5 21:31:00 nobanner-nosession-40243 systemd-logind[166]: New session 301 of user config.
+Nov  5 21:31:00 nobanner-nosession-40243 systemd: pam_unix(systemd-user:session): session opened for user config by (uid=0)
+Nov  5 21:31:03 nobanner-nosession-40243 sshd[1584]: Received disconnect from 10.0.3.1 port 43394:11: 
+Nov  5 21:31:03 nobanner-nosession-40243 sshd[1584]: Disconnected from user config 10.0.3.1 port 43394
+Nov  5 21:31:03 nobanner-nosession-40243 sshd[1567]: pam_unix(sshd:session): session closed for user config
+Nov  5 21:31:03 nobanner-nosession-40243 systemd-logind[166]: Session 301 logged out. Waiting for processes to exit.
+Nov  5 21:31:03 nobanner-nosession-40243 systemd-logind[166]: Removed session 301.

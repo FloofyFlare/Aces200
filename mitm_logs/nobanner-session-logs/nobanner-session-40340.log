@@ -1,0 +1,29 @@
+(node:2387326) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-40340',
+  containerIp: '10.0.3.156',
+  mitmPort: 40340,
+  autoAccessFixed: 1
+}
+2024-11-05 23:46:56.274 - [Info] MITM Version: 2
+2024-11-05 23:46:56.276 - [Info] Auto Access Enabled: true
+2024-11-05 23:46:56.277 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-05 23:46:56.296 - [Info] SSH man-in-the-middle server for 10.0.3.156 listening on 10.0.3.1:40340
+2024-11-05 23:47:45.269 - [Debug] [Connection] Attacker connected: 147.185.132.117 | Client Identification: SSH-2.0-ZGrab ZGrab SSH Survey
+2024-11-05 23:47:47.183 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

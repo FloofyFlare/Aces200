@@ -1,0 +1,27 @@
+Nov  6 16:09:19 nobanner-session-40708 systemd-logind[164]: New seat seat0.
+Nov  6 16:09:24 nobanner-session-40708 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 16:09:24 nobanner-session-40708 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:09:33 nobanner-session-40708 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:09:33 nobanner-session-40708 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 16:09:33 nobanner-session-40708 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:09:46 nobanner-session-40708 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 16:09:46 nobanner-session-40708 usermod[756]: change user 'sshd' password
+Nov  6 16:09:46 nobanner-session-40708 chage[763]: changed password expiry for sshd
+Nov  6 16:09:48 nobanner-session-40708 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 16:09:48 nobanner-session-40708 sshd[1198]: Server listening on :: port 22.
+Nov  6 16:09:50 nobanner-session-40708 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:09:50 nobanner-session-40708 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 16:09:50 nobanner-session-40708 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:10:00 nobanner-session-40708 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:10:12 nobanner-session-40708 useradd[1539]: new group: name=zh, GID=1001
+Nov  6 16:10:12 nobanner-session-40708 useradd[1539]: new user: name=zh, UID=1001, GID=1001, home=/home/zh, shell=/bin/bash, from=none
+Nov  6 16:10:12 nobanner-session-40708 usermod[1548]: change user 'zh' password
+Nov  6 16:10:12 nobanner-session-40708 sshd[1555]: Accepted password for zh from 10.0.3.1 port 36170 ssh2
+Nov  6 16:10:12 nobanner-session-40708 sshd[1555]: pam_unix(sshd:session): session opened for user zh by (uid=0)
+Nov  6 16:10:12 nobanner-session-40708 systemd-logind[164]: New session 1093 of user zh.
+Nov  6 16:10:12 nobanner-session-40708 systemd: pam_unix(systemd-user:session): session opened for user zh by (uid=0)
+Nov  6 16:10:16 nobanner-session-40708 sshd[1572]: Received disconnect from 10.0.3.1 port 36170:11: 
+Nov  6 16:10:16 nobanner-session-40708 sshd[1572]: Disconnected from user zh 10.0.3.1 port 36170
+Nov  6 16:10:16 nobanner-session-40708 sshd[1555]: pam_unix(sshd:session): session closed for user zh
+Nov  6 16:10:16 nobanner-session-40708 systemd-logind[164]: Session 1093 logged out. Waiting for processes to exit.
+Nov  6 16:10:16 nobanner-session-40708 systemd-logind[164]: Removed session 1093.

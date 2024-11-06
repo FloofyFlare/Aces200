@@ -1,0 +1,27 @@
+Nov  6 08:53:39 banner-nosession-40433 systemd-logind[164]: New seat seat0.
+Nov  6 08:53:42 banner-nosession-40433 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 08:53:42 banner-nosession-40433 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:53:51 banner-nosession-40433 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:53:51 banner-nosession-40433 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 08:53:51 banner-nosession-40433 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:54:07 banner-nosession-40433 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 08:54:07 banner-nosession-40433 usermod[765]: change user 'sshd' password
+Nov  6 08:54:07 banner-nosession-40433 chage[772]: changed password expiry for sshd
+Nov  6 08:54:11 banner-nosession-40433 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 08:54:11 banner-nosession-40433 sshd[1207]: Server listening on :: port 22.
+Nov  6 08:54:13 banner-nosession-40433 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:54:13 banner-nosession-40433 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 08:54:13 banner-nosession-40433 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:54:21 banner-nosession-40433 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:59:30 banner-nosession-40433 useradd[1557]: new group: name=ether, GID=1001
+Nov  6 08:59:30 banner-nosession-40433 useradd[1557]: new user: name=ether, UID=1001, GID=1001, home=/home/ether, shell=/bin/bash, from=none
+Nov  6 08:59:30 banner-nosession-40433 usermod[1566]: change user 'ether' password
+Nov  6 08:59:30 banner-nosession-40433 sshd[1573]: Accepted password for ether from 10.0.3.1 port 38364 ssh2
+Nov  6 08:59:30 banner-nosession-40433 sshd[1573]: pam_unix(sshd:session): session opened for user ether by (uid=0)
+Nov  6 08:59:30 banner-nosession-40433 systemd-logind[164]: New session 620 of user ether.
+Nov  6 08:59:31 banner-nosession-40433 systemd: pam_unix(systemd-user:session): session opened for user ether by (uid=0)
+Nov  6 08:59:31 banner-nosession-40433 sshd[1590]: Received disconnect from 10.0.3.1 port 38364:11: 
+Nov  6 08:59:31 banner-nosession-40433 sshd[1590]: Disconnected from user ether 10.0.3.1 port 38364
+Nov  6 08:59:31 banner-nosession-40433 sshd[1573]: pam_unix(sshd:session): session closed for user ether
+Nov  6 08:59:31 banner-nosession-40433 systemd-logind[164]: Session 620 logged out. Waiting for processes to exit.
+Nov  6 08:59:31 banner-nosession-40433 systemd-logind[164]: Removed session 620.

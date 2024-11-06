@@ -1,0 +1,27 @@
+Nov  6 08:56:06 banner-session-40434 systemd-logind[164]: New seat seat0.
+Nov  6 08:56:09 banner-session-40434 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 08:56:09 banner-session-40434 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:56:17 banner-session-40434 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:56:17 banner-session-40434 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 08:56:17 banner-session-40434 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:56:30 banner-session-40434 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 08:56:31 banner-session-40434 usermod[756]: change user 'sshd' password
+Nov  6 08:56:31 banner-session-40434 chage[763]: changed password expiry for sshd
+Nov  6 08:56:33 banner-session-40434 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 08:56:33 banner-session-40434 sshd[1198]: Server listening on :: port 22.
+Nov  6 08:56:36 banner-session-40434 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:56:36 banner-session-40434 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 08:56:36 banner-session-40434 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:56:44 banner-session-40434 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:57:38 banner-session-40434 useradd[1545]: new group: name=Config, GID=1001
+Nov  6 08:57:38 banner-session-40434 useradd[1545]: new user: name=Config, UID=1001, GID=1001, home=/home/Config, shell=/bin/bash, from=none
+Nov  6 08:57:38 banner-session-40434 usermod[1554]: change user 'Config' password
+Nov  6 08:57:38 banner-session-40434 sshd[1561]: Accepted password for Config from 10.0.3.1 port 50964 ssh2
+Nov  6 08:57:38 banner-session-40434 sshd[1561]: pam_unix(sshd:session): session opened for user Config by (uid=0)
+Nov  6 08:57:38 banner-session-40434 systemd-logind[164]: New session 616 of user Config.
+Nov  6 08:57:38 banner-session-40434 systemd: pam_unix(systemd-user:session): session opened for user Config by (uid=0)
+Nov  6 08:57:39 banner-session-40434 sshd[1578]: Received disconnect from 10.0.3.1 port 50964:11: 
+Nov  6 08:57:39 banner-session-40434 sshd[1578]: Disconnected from user Config 10.0.3.1 port 50964
+Nov  6 08:57:39 banner-session-40434 sshd[1561]: pam_unix(sshd:session): session closed for user Config
+Nov  6 08:57:39 banner-session-40434 systemd-logind[164]: Session 616 logged out. Waiting for processes to exit.
+Nov  6 08:57:39 banner-session-40434 systemd-logind[164]: Removed session 616.

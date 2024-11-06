@@ -1,0 +1,17 @@
+Nov  6 06:33:17 nobanner-nosession-40377 systemd-logind[164]: New seat seat0.
+Nov  6 06:33:21 nobanner-nosession-40377 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 06:33:21 nobanner-nosession-40377 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 06:33:29 nobanner-nosession-40377 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 06:33:29 nobanner-nosession-40377 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 06:33:29 nobanner-nosession-40377 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 06:33:43 nobanner-nosession-40377 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 06:33:43 nobanner-nosession-40377 usermod[765]: change user 'sshd' password
+Nov  6 06:33:43 nobanner-nosession-40377 chage[772]: changed password expiry for sshd
+Nov  6 06:33:45 nobanner-nosession-40377 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 06:33:45 nobanner-nosession-40377 sshd[1207]: Server listening on :: port 22.
+Nov  6 06:33:47 nobanner-nosession-40377 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 06:33:47 nobanner-nosession-40377 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 06:33:47 nobanner-nosession-40377 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 06:33:55 nobanner-nosession-40377 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 06:34:00 nobanner-nosession-40377 useradd[1550]: new group: name=ftp, GID=1001
+Nov  6 06:34:00 nobanner-nosession-40377 useradd[1550]: new user: name=ftp, UID=1001, GID=1001, home=/home/ftp, shell=/bin/bash, from=none

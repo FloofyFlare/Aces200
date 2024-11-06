@@ -1,0 +1,27 @@
+Nov  6 16:52:20 nobanner-nosession-40735 systemd-logind[165]: New seat seat0.
+Nov  6 16:52:23 nobanner-nosession-40735 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 16:52:23 nobanner-nosession-40735 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:52:31 nobanner-nosession-40735 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:52:31 nobanner-nosession-40735 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 16:52:31 nobanner-nosession-40735 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:52:44 nobanner-nosession-40735 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 16:52:44 nobanner-nosession-40735 usermod[756]: change user 'sshd' password
+Nov  6 16:52:44 nobanner-nosession-40735 chage[763]: changed password expiry for sshd
+Nov  6 16:52:46 nobanner-nosession-40735 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 16:52:46 nobanner-nosession-40735 sshd[1198]: Server listening on :: port 22.
+Nov  6 16:52:47 nobanner-nosession-40735 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:52:47 nobanner-nosession-40735 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 16:52:47 nobanner-nosession-40735 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:52:54 nobanner-nosession-40735 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:55:20 nobanner-nosession-40735 useradd[1536]: new group: name=default, GID=1001
+Nov  6 16:55:20 nobanner-nosession-40735 useradd[1536]: new user: name=default, UID=1001, GID=1001, home=/home/default, shell=/bin/bash, from=none
+Nov  6 16:55:20 nobanner-nosession-40735 usermod[1545]: change user 'default' password
+Nov  6 16:55:20 nobanner-nosession-40735 sshd[1552]: Accepted password for default from 10.0.3.1 port 60766 ssh2
+Nov  6 16:55:20 nobanner-nosession-40735 sshd[1552]: pam_unix(sshd:session): session opened for user default by (uid=0)
+Nov  6 16:55:20 nobanner-nosession-40735 systemd-logind[165]: New session 1138 of user default.
+Nov  6 16:55:20 nobanner-nosession-40735 systemd: pam_unix(systemd-user:session): session opened for user default by (uid=0)
+Nov  6 16:55:22 nobanner-nosession-40735 sshd[1569]: Received disconnect from 10.0.3.1 port 60766:11: 
+Nov  6 16:55:22 nobanner-nosession-40735 sshd[1569]: Disconnected from user default 10.0.3.1 port 60766
+Nov  6 16:55:22 nobanner-nosession-40735 sshd[1552]: pam_unix(sshd:session): session closed for user default
+Nov  6 16:55:22 nobanner-nosession-40735 systemd-logind[165]: Session 1138 logged out. Waiting for processes to exit.
+Nov  6 16:55:22 nobanner-nosession-40735 systemd-logind[165]: Removed session 1138.

@@ -1,0 +1,26 @@
+Nov  6 18:58:15 nobanner-session-40816 systemd-logind[164]: New seat seat0.
+Nov  6 18:58:19 nobanner-session-40816 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 18:58:19 nobanner-session-40816 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:58:27 nobanner-session-40816 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:58:27 nobanner-session-40816 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 18:58:27 nobanner-session-40816 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:58:41 nobanner-session-40816 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 18:58:41 nobanner-session-40816 usermod[756]: change user 'sshd' password
+Nov  6 18:58:42 nobanner-session-40816 chage[763]: changed password expiry for sshd
+Nov  6 18:58:45 nobanner-session-40816 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 18:58:45 nobanner-session-40816 sshd[1198]: Server listening on :: port 22.
+Nov  6 18:58:47 nobanner-session-40816 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:58:47 nobanner-session-40816 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 18:58:47 nobanner-session-40816 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:58:57 nobanner-session-40816 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:59:09 nobanner-session-40816 useradd[1539]: failed adding user 'ubuntu', data deleted
+Nov  6 18:59:09 nobanner-session-40816 usermod[1540]: change user 'ubuntu' password
+Nov  6 18:59:09 nobanner-session-40816 sshd[1547]: Accepted password for ubuntu from 10.0.3.1 port 33260 ssh2
+Nov  6 18:59:09 nobanner-session-40816 sshd[1547]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov  6 18:59:09 nobanner-session-40816 systemd-logind[164]: New session 442 of user ubuntu.
+Nov  6 18:59:09 nobanner-session-40816 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov  6 18:59:10 nobanner-session-40816 sshd[1564]: Received disconnect from 10.0.3.1 port 33260:11: 
+Nov  6 18:59:10 nobanner-session-40816 sshd[1564]: Disconnected from user ubuntu 10.0.3.1 port 33260
+Nov  6 18:59:10 nobanner-session-40816 sshd[1547]: pam_unix(sshd:session): session closed for user ubuntu
+Nov  6 18:59:10 nobanner-session-40816 systemd-logind[164]: Session 442 logged out. Waiting for processes to exit.
+Nov  6 18:59:10 nobanner-session-40816 systemd-logind[164]: Removed session 442.

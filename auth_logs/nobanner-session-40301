@@ -1,0 +1,29 @@
+Nov  6 02:16:53 nobanner-session-40301 systemd-logind[164]: New seat seat0.
+Nov  6 02:16:56 nobanner-session-40301 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 02:16:56 nobanner-session-40301 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 02:17:01 nobanner-session-40301 CRON[377]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  6 02:17:01 nobanner-session-40301 CRON[377]: pam_unix(cron:session): session closed for user root
+Nov  6 02:17:05 nobanner-session-40301 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 02:17:05 nobanner-session-40301 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 02:17:05 nobanner-session-40301 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 02:17:25 nobanner-session-40301 useradd[751]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 02:17:25 nobanner-session-40301 usermod[759]: change user 'sshd' password
+Nov  6 02:17:25 nobanner-session-40301 chage[766]: changed password expiry for sshd
+Nov  6 02:17:27 nobanner-session-40301 sshd[1201]: Server listening on 0.0.0.0 port 22.
+Nov  6 02:17:27 nobanner-session-40301 sshd[1201]: Server listening on :: port 22.
+Nov  6 02:17:29 nobanner-session-40301 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 02:17:29 nobanner-session-40301 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 02:17:29 nobanner-session-40301 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 02:17:37 nobanner-session-40301 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 02:19:47 nobanner-session-40301 useradd[1542]: new group: name=ftptest, GID=1001
+Nov  6 02:19:47 nobanner-session-40301 useradd[1542]: new user: name=ftptest, UID=1001, GID=1001, home=/home/ftptest, shell=/bin/bash, from=none
+Nov  6 02:19:47 nobanner-session-40301 usermod[1551]: change user 'ftptest' password
+Nov  6 02:19:47 nobanner-session-40301 sshd[1558]: Accepted password for ftptest from 10.0.3.1 port 43424 ssh2
+Nov  6 02:19:47 nobanner-session-40301 sshd[1558]: pam_unix(sshd:session): session opened for user ftptest by (uid=0)
+Nov  6 02:19:47 nobanner-session-40301 systemd-logind[164]: New session 404 of user ftptest.
+Nov  6 02:19:47 nobanner-session-40301 systemd: pam_unix(systemd-user:session): session opened for user ftptest by (uid=0)
+Nov  6 02:19:48 nobanner-session-40301 sshd[1575]: Received disconnect from 10.0.3.1 port 43424:11: 
+Nov  6 02:19:48 nobanner-session-40301 sshd[1575]: Disconnected from user ftptest 10.0.3.1 port 43424
+Nov  6 02:19:48 nobanner-session-40301 sshd[1558]: pam_unix(sshd:session): session closed for user ftptest
+Nov  6 02:19:48 nobanner-session-40301 systemd-logind[164]: Session 404 logged out. Waiting for processes to exit.
+Nov  6 02:19:48 nobanner-session-40301 systemd-logind[164]: Removed session 404.

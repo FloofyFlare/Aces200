@@ -1,0 +1,29 @@
+Nov  6 14:16:54 banner-session-40629 systemd-logind[165]: New seat seat0.
+Nov  6 14:16:57 banner-session-40629 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 14:16:57 banner-session-40629 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:17:02 banner-session-40629 CRON[377]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  6 14:17:02 banner-session-40629 CRON[377]: pam_unix(cron:session): session closed for user root
+Nov  6 14:17:06 banner-session-40629 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:17:06 banner-session-40629 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 14:17:06 banner-session-40629 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:17:26 banner-session-40629 useradd[751]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 14:17:26 banner-session-40629 usermod[759]: change user 'sshd' password
+Nov  6 14:17:26 banner-session-40629 chage[766]: changed password expiry for sshd
+Nov  6 14:17:28 banner-session-40629 sshd[1201]: Server listening on 0.0.0.0 port 22.
+Nov  6 14:17:28 banner-session-40629 sshd[1201]: Server listening on :: port 22.
+Nov  6 14:17:30 banner-session-40629 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:17:30 banner-session-40629 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 14:17:30 banner-session-40629 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:17:39 banner-session-40629 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:20:11 banner-session-40629 useradd[1548]: new group: name=blank, GID=1001
+Nov  6 14:20:11 banner-session-40629 useradd[1548]: new user: name=blank, UID=1001, GID=1001, home=/home/blank, shell=/bin/bash, from=none
+Nov  6 14:20:12 banner-session-40629 usermod[1557]: change user 'blank' password
+Nov  6 14:20:12 banner-session-40629 sshd[1564]: Accepted password for blank from 10.0.3.1 port 43586 ssh2
+Nov  6 14:20:12 banner-session-40629 sshd[1564]: pam_unix(sshd:session): session opened for user blank by (uid=0)
+Nov  6 14:20:12 banner-session-40629 systemd-logind[165]: New session 957 of user blank.
+Nov  6 14:20:12 banner-session-40629 systemd: pam_unix(systemd-user:session): session opened for user blank by (uid=0)
+Nov  6 14:20:13 banner-session-40629 sshd[1581]: Received disconnect from 10.0.3.1 port 43586:11: 
+Nov  6 14:20:13 banner-session-40629 sshd[1581]: Disconnected from user blank 10.0.3.1 port 43586
+Nov  6 14:20:13 banner-session-40629 sshd[1564]: pam_unix(sshd:session): session closed for user blank
+Nov  6 14:20:13 banner-session-40629 systemd-logind[165]: Session 957 logged out. Waiting for processes to exit.
+Nov  6 14:20:13 banner-session-40629 systemd-logind[165]: Removed session 957.

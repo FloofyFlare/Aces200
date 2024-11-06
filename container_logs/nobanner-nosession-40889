@@ -1,0 +1,7 @@
+Container Name: nobanner-nosession-40889
+Container IP = 10.0.3.169
+External IP = 128.8.238.141
+NEWCONFIGMANAGER run
+Adding NAT rules
+MITM setup
+Starting MITM listening

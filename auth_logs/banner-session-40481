@@ -1,0 +1,29 @@
+Nov  6 10:16:49 banner-session-40481 systemd-logind[164]: New seat seat0.
+Nov  6 10:16:53 banner-session-40481 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 10:16:53 banner-session-40481 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:17:01 banner-session-40481 CRON[423]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  6 10:17:01 banner-session-40481 CRON[423]: pam_unix(cron:session): session closed for user root
+Nov  6 10:17:03 banner-session-40481 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:17:03 banner-session-40481 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 10:17:03 banner-session-40481 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:17:22 banner-session-40481 useradd[751]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 10:17:22 banner-session-40481 usermod[759]: change user 'sshd' password
+Nov  6 10:17:22 banner-session-40481 chage[766]: changed password expiry for sshd
+Nov  6 10:17:25 banner-session-40481 sshd[1201]: Server listening on 0.0.0.0 port 22.
+Nov  6 10:17:25 banner-session-40481 sshd[1201]: Server listening on :: port 22.
+Nov  6 10:17:27 banner-session-40481 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:17:27 banner-session-40481 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 10:17:27 banner-session-40481 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:17:36 banner-session-40481 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:21:32 banner-session-40481 useradd[1548]: new group: name=guest, GID=1001
+Nov  6 10:21:32 banner-session-40481 useradd[1548]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov  6 10:21:32 banner-session-40481 usermod[1557]: change user 'guest' password
+Nov  6 10:21:32 banner-session-40481 sshd[1564]: Accepted password for guest from 10.0.3.1 port 46714 ssh2
+Nov  6 10:21:32 banner-session-40481 sshd[1564]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov  6 10:21:32 banner-session-40481 systemd-logind[164]: New session 695 of user guest.
+Nov  6 10:21:32 banner-session-40481 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov  6 10:21:34 banner-session-40481 sshd[1581]: Received disconnect from 10.0.3.1 port 46714:11: 
+Nov  6 10:21:34 banner-session-40481 sshd[1581]: Disconnected from user guest 10.0.3.1 port 46714
+Nov  6 10:21:34 banner-session-40481 sshd[1564]: pam_unix(sshd:session): session closed for user guest
+Nov  6 10:21:34 banner-session-40481 systemd-logind[164]: Session 695 logged out. Waiting for processes to exit.
+Nov  6 10:21:34 banner-session-40481 systemd-logind[164]: Removed session 695.

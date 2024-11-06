@@ -39,14 +39,13 @@ do
     echo "$line" | awk '{print $1, $2}' | xargs -I {} date -d "{}" +%s > /home/student/"$container_name"_start_time.txt
     sudo iptables --insert INPUT -d 10.0.3.1 -p tcp --dport "$MITM_port" --jump DROP
     attacker_ip=$(echo $line | cut -d" " -f8)
-     # echo "Attacker IP= $attacker_ip"
+    echo "Attacker IP= $attacker_ip" >> /home/student/container_logs/"$container_name"
 
     sudo iptables --insert INPUT -s "$attacker_ip" -d 10.0.3.1 -p tcp --dport "$MITM_port" --jump ACCEPT
     echo "$attacker_ip" > /home/student/"$container_name"_attacker_ip.txt
     date +%s > /home/student/"$container_name"_last_active.txt
-    echo FIRST CONNECTION: $(cat /home/student/"$container_name"_last_active.txt)
+    echo FIRST CONNECTION: $(cat /home/student/"$container_name"_last_active.txt) >> /home/student/container_logs/"$container_name"
 
-    # valid_line=0
     break
   fi
 done
@@ -60,14 +59,16 @@ current_time=0
 
 while [[ -f /home/student/"$container_name"_last_active.txt ]]
 do
-  # echo "CURRENT TIME: $current_time"
+  timeout --foreground 1 tail -n 0 -F "$mitm_log_path" | while read -r line
+  do
     date +%s > /home/student/"$container_name"_last_active.txt # Rewrite time of the last command
     if cat "$mitm_log_path" | grep -q "Attacker closed";
       then
-        # echo "RECYCLING SINCE ATTACKER ENDED SESSION"
+        echo "RECYCLING SINCE SESSION ENDED" >> /home/student/container_logs/"$container_name"
         rm /home/student/"$container_name"_last_active.txt
         break
     fi
+  done
 
   current_time=$(date +%s)
   # echo "CURRENT TIME = $current_time"
@@ -76,8 +77,7 @@ do
     last_active=$(cat /home/student/"$container_name"_last_active.txt)
     if [[ $(($current_time - $last_active)) -ge 120 ]]
       then
-      # valid_line=1
-      echo "RECYCLING SINCE TIME IDLE EXCEEDED 2 MINUTES"
+      echo "RECYCLING SINCE TIME IDLE EXCEEDED 2 MINUTES" >> /home/student/container_logs/"$container_name"
       rm /home/student/"$container_name"_last_active.txt
       break
     fi
@@ -85,7 +85,7 @@ do
 
   if [[ $(($start_time + 300)) -le $current_time ]]
   then
-      echo "RECYCLING SINCE TIME EXCEEDED 5 MIN"
+      echo "RECYCLING SINCE TIME EXCEEDED 5 MIN" >> /home/student/container_logs/"$container_name"
       rm /home/student/"$container_name"_last_active.txt
       break
   fi
@@ -95,6 +95,8 @@ done
 sudo iptables --delete INPUT -d 10.0.3.1 -p tcp --dport "$MITM_port" --jump DROP
 sudo iptables --delete INPUT -s "$attacker_ip" -d 10.0.3.1 -p tcp --dport "$MITM_port" --jump ACCEPT
 
+echo "Removing NAT rules" >> /home/student/container_logs/"$container_name"
+
 echo Start time: "$start_time" > /home/student/times/"$container_name"
 echo End time: $(date +%s) >> /home/student/times/"$container_name"
 echo External IP: : "$external_ip" >> /home/student/times/"$container_name"
@@ -102,4 +104,4 @@ echo External IP: : "$external_ip" >> /home/student/times/"$container_name"
 rm /home/student/"$container_name"_start_time.txt
 rm /home/student/"$container_name"_attacker_ip.txt
 # rm "$container_name"_last_active.txt
-/home/student/destroy_container.sh "$container_name" "$external_ip" 
+sudo /home/student/destroy_container.sh "$container_name" "$external_ip" 

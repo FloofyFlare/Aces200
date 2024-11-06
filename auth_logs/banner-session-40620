@@ -1,0 +1,27 @@
+Nov  6 13:56:46 banner-session-40620 systemd-logind[164]: New seat seat0.
+Nov  6 13:56:49 banner-session-40620 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 13:56:49 banner-session-40620 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 13:56:58 banner-session-40620 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 13:56:58 banner-session-40620 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 13:56:58 banner-session-40620 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 13:57:10 banner-session-40620 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 13:57:10 banner-session-40620 usermod[756]: change user 'sshd' password
+Nov  6 13:57:10 banner-session-40620 chage[763]: changed password expiry for sshd
+Nov  6 13:57:13 banner-session-40620 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 13:57:13 banner-session-40620 sshd[1198]: Server listening on :: port 22.
+Nov  6 13:57:15 banner-session-40620 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 13:57:15 banner-session-40620 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 13:57:15 banner-session-40620 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 13:57:24 banner-session-40620 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:02:35 banner-session-40620 useradd[1546]: new group: name=crypto, GID=1001
+Nov  6 14:02:35 banner-session-40620 useradd[1546]: new user: name=crypto, UID=1001, GID=1001, home=/home/crypto, shell=/bin/bash, from=none
+Nov  6 14:02:35 banner-session-40620 usermod[1555]: change user 'crypto' password
+Nov  6 14:02:35 banner-session-40620 sshd[1562]: Accepted password for crypto from 10.0.3.1 port 52202 ssh2
+Nov  6 14:02:35 banner-session-40620 sshd[1562]: pam_unix(sshd:session): session opened for user crypto by (uid=0)
+Nov  6 14:02:35 banner-session-40620 systemd-logind[164]: New session 939 of user crypto.
+Nov  6 14:02:35 banner-session-40620 systemd: pam_unix(systemd-user:session): session opened for user crypto by (uid=0)
+Nov  6 14:02:36 banner-session-40620 sshd[1579]: Received disconnect from 10.0.3.1 port 52202:11: 
+Nov  6 14:02:36 banner-session-40620 sshd[1579]: Disconnected from user crypto 10.0.3.1 port 52202
+Nov  6 14:02:36 banner-session-40620 sshd[1562]: pam_unix(sshd:session): session closed for user crypto
+Nov  6 14:02:36 banner-session-40620 systemd-logind[164]: Session 939 logged out. Waiting for processes to exit.
+Nov  6 14:02:36 banner-session-40620 systemd-logind[164]: Removed session 939.

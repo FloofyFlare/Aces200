@@ -1,0 +1,25 @@
+Nov  6 14:41:53 nobanner-session-40649 systemd-logind[166]: New seat seat0.
+Nov  6 14:41:56 nobanner-session-40649 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 14:41:56 nobanner-session-40649 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:42:05 nobanner-session-40649 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:42:05 nobanner-session-40649 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 14:42:05 nobanner-session-40649 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:42:30 nobanner-session-40649 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 14:42:30 nobanner-session-40649 usermod[756]: change user 'sshd' password
+Nov  6 14:42:30 nobanner-session-40649 chage[763]: changed password expiry for sshd
+Nov  6 14:42:33 nobanner-session-40649 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 14:42:33 nobanner-session-40649 sshd[1198]: Server listening on :: port 22.
+Nov  6 14:42:35 nobanner-session-40649 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:42:35 nobanner-session-40649 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 14:42:35 nobanner-session-40649 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 14:42:45 nobanner-session-40649 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 14:43:40 nobanner-session-40649 useradd[1539]: new group: name=test, GID=1001
+Nov  6 14:43:40 nobanner-session-40649 useradd[1539]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/bash, from=none
+Nov  6 14:43:40 nobanner-session-40649 usermod[1548]: change user 'test' password
+Nov  6 14:43:40 nobanner-session-40649 sshd[1555]: Accepted password for test from 10.0.3.1 port 35820 ssh2
+Nov  6 14:43:40 nobanner-session-40649 sshd[1555]: pam_unix(sshd:session): session opened for user test by (uid=0)
+Nov  6 14:43:40 nobanner-session-40649 systemd-logind[166]: New session 989 of user test.
+Nov  6 14:43:40 nobanner-session-40649 systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Nov  6 14:43:46 nobanner-session-40649 sshd[1555]: pam_unix(sshd:session): session closed for user test
+Nov  6 14:43:46 nobanner-session-40649 systemd-logind[166]: Session 989 logged out. Waiting for processes to exit.
+Nov  6 14:43:46 nobanner-session-40649 systemd-logind[166]: Removed session 989.

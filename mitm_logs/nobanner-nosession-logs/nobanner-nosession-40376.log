@@ -1,0 +1,38 @@
+(node:2515510) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-40376',
+  containerIp: '10.0.3.114',
+  mitmPort: 40376,
+  autoAccessFixed: 1
+}
+2024-11-06 01:30:52.605 - [Info] MITM Version: 2
+2024-11-06 01:30:52.607 - [Info] Auto Access Enabled: true
+2024-11-06 01:30:52.608 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 01:30:52.621 - [Info] SSH man-in-the-middle server for 10.0.3.114 listening on 10.0.3.1:40376
+2024-11-06 01:32:47.287 - [Debug] [Connection] Attacker connected: 1.94.10.144 | Client Identification: SSH-2.0-Go
+2024-11-06 01:32:47.609 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 01:32:47.869 - [Debug] [Connection] Attacker connected: 1.94.10.144 | Client Identification: SSH-2.0-Go
+2024-11-06 01:32:48.106 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 01:32:48.279 - [Debug] [Connection] Attacker connected: 1.94.10.144 | Client Identification: SSH-2.0-Go
+2024-11-06 01:32:48.492 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 01:32:48.606 - [Debug] [Connection] Attacker connected: 1.94.10.144 | Client Identification: SSH-2.0-Go
+2024-11-06 01:32:48.811 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 01:32:48.928 - [Debug] [Connection] Attacker connected: 1.94.10.144 | Client Identification: SSH-2.0-Go
+2024-11-06 01:32:49.142 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 01:32:49.173 - [Debug] [Connection] Attacker connected: 1.94.10.144 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

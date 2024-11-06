@@ -1,0 +1,27 @@
+Nov  6 02:20:16 banner-session-40302 systemd-logind[165]: New seat seat0.
+Nov  6 02:20:19 banner-session-40302 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 02:20:19 banner-session-40302 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 02:20:28 banner-session-40302 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 02:20:28 banner-session-40302 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 02:20:28 banner-session-40302 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 02:20:45 banner-session-40302 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 02:20:45 banner-session-40302 usermod[756]: change user 'sshd' password
+Nov  6 02:20:45 banner-session-40302 chage[763]: changed password expiry for sshd
+Nov  6 02:20:48 banner-session-40302 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 02:20:48 banner-session-40302 sshd[1198]: Server listening on :: port 22.
+Nov  6 02:20:49 banner-session-40302 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 02:20:50 banner-session-40302 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 02:20:50 banner-session-40302 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 02:20:57 banner-session-40302 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 02:21:12 banner-session-40302 useradd[1545]: new group: name=buenosnachos, GID=1001
+Nov  6 02:21:12 banner-session-40302 useradd[1545]: new user: name=buenosnachos, UID=1001, GID=1001, home=/home/buenosnachos, shell=/bin/bash, from=none
+Nov  6 02:21:12 banner-session-40302 usermod[1554]: change user 'buenosnachos' password
+Nov  6 02:21:12 banner-session-40302 sshd[1561]: Accepted password for buenosnachos from 10.0.3.1 port 43652 ssh2
+Nov  6 02:21:12 banner-session-40302 sshd[1561]: pam_unix(sshd:session): session opened for user buenosnachos by (uid=0)
+Nov  6 02:21:12 banner-session-40302 systemd-logind[165]: New session 406 of user buenosnachos.
+Nov  6 02:21:12 banner-session-40302 systemd: pam_unix(systemd-user:session): session opened for user buenosnachos by (uid=0)
+Nov  6 02:22:56 banner-session-40302 sshd[1578]: Received disconnect from 10.0.3.1 port 43652:11: 
+Nov  6 02:22:56 banner-session-40302 sshd[1578]: Disconnected from user buenosnachos 10.0.3.1 port 43652
+Nov  6 02:22:56 banner-session-40302 sshd[1561]: pam_unix(sshd:session): session closed for user buenosnachos
+Nov  6 02:22:56 banner-session-40302 systemd-logind[165]: Session 406 logged out. Waiting for processes to exit.
+Nov  6 02:22:56 banner-session-40302 systemd-logind[165]: Removed session 406.

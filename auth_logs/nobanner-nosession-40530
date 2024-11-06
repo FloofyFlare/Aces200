@@ -1,0 +1,27 @@
+Nov  6 11:29:01 nobanner-nosession-40530 systemd-logind[164]: New seat seat0.
+Nov  6 11:29:04 nobanner-nosession-40530 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 11:29:04 nobanner-nosession-40530 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:29:12 nobanner-nosession-40530 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:29:12 nobanner-nosession-40530 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 11:29:12 nobanner-nosession-40530 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:29:31 nobanner-nosession-40530 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 11:29:31 nobanner-nosession-40530 usermod[756]: change user 'sshd' password
+Nov  6 11:29:31 nobanner-nosession-40530 chage[763]: changed password expiry for sshd
+Nov  6 11:29:33 nobanner-nosession-40530 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 11:29:33 nobanner-nosession-40530 sshd[1198]: Server listening on :: port 22.
+Nov  6 11:29:35 nobanner-nosession-40530 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:29:35 nobanner-nosession-40530 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 11:29:35 nobanner-nosession-40530 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:29:44 nobanner-nosession-40530 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:30:56 nobanner-nosession-40530 useradd[1536]: new group: name=jojo, GID=1001
+Nov  6 11:30:56 nobanner-nosession-40530 useradd[1536]: new user: name=jojo, UID=1001, GID=1001, home=/home/jojo, shell=/bin/bash, from=none
+Nov  6 11:30:56 nobanner-nosession-40530 usermod[1545]: change user 'jojo' password
+Nov  6 11:30:56 nobanner-nosession-40530 sshd[1552]: Accepted password for jojo from 10.0.3.1 port 56638 ssh2
+Nov  6 11:30:56 nobanner-nosession-40530 sshd[1552]: pam_unix(sshd:session): session opened for user jojo by (uid=0)
+Nov  6 11:30:57 nobanner-nosession-40530 systemd-logind[164]: New session 787 of user jojo.
+Nov  6 11:30:57 nobanner-nosession-40530 systemd: pam_unix(systemd-user:session): session opened for user jojo by (uid=0)
+Nov  6 11:30:57 nobanner-nosession-40530 sshd[1569]: Received disconnect from 10.0.3.1 port 56638:11: 
+Nov  6 11:30:57 nobanner-nosession-40530 sshd[1569]: Disconnected from user jojo 10.0.3.1 port 56638
+Nov  6 11:30:57 nobanner-nosession-40530 sshd[1552]: pam_unix(sshd:session): session closed for user jojo
+Nov  6 11:30:57 nobanner-nosession-40530 systemd-logind[164]: Session 787 logged out. Waiting for processes to exit.
+Nov  6 11:30:57 nobanner-nosession-40530 systemd-logind[164]: Removed session 787.

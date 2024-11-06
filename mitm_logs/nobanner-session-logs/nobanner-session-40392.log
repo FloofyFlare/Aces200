@@ -1,0 +1,37 @@
+(node:2564076) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-40392',
+  containerIp: '10.0.3.248',
+  mitmPort: 40392,
+  autoAccessFixed: 1
+}
+2024-11-06 02:02:49.660 - [Info] MITM Version: 2
+2024-11-06 02:02:49.662 - [Info] Auto Access Enabled: true
+2024-11-06 02:02:49.662 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 02:02:49.672 - [Info] SSH man-in-the-middle server for 10.0.3.248 listening on 10.0.3.1:40392
+2024-11-06 02:03:16.376 - [Debug] [Connection] Attacker connected: 183.93.198.164 | Client Identification: SSH-2.0-OpenSSH_7.4
+2024-11-06 02:03:18.953 - [Debug] [Auth] Attacker 183.93.198.164 trying to authenticate with 'password'
+2024-11-06 02:03:18.954 - [Debug] [Auto Access] Attacker: 183.93.198.164, Threshold: 1, Attempts: 1
+2024-11-06 02:03:18.955 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-06 02:03:18.955 - [Debug] [Auto Access] Adding the following credentials: 'operator:default'
+2024-11-06 02:03:19.057 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-06 02:03:19.058 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-06 02:03:19.060 - [Debug] [Auth] Attacker: 183.93.198.164 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-06 02:03:20.132 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 02:03:20.391 - [Debug] [Connection] Attacker connected: 51.154.34.214 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

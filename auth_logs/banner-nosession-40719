@@ -1,0 +1,27 @@
+Nov  6 16:28:16 banner-nosession-40719 systemd-logind[164]: New seat seat0.
+Nov  6 16:28:20 banner-nosession-40719 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 16:28:20 banner-nosession-40719 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:28:28 banner-nosession-40719 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:28:28 banner-nosession-40719 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 16:28:28 banner-nosession-40719 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:28:44 banner-nosession-40719 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 16:28:44 banner-nosession-40719 usermod[756]: change user 'sshd' password
+Nov  6 16:28:45 banner-nosession-40719 chage[763]: changed password expiry for sshd
+Nov  6 16:28:48 banner-nosession-40719 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 16:28:48 banner-nosession-40719 sshd[1198]: Server listening on :: port 22.
+Nov  6 16:28:49 banner-nosession-40719 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:28:50 banner-nosession-40719 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 16:28:50 banner-nosession-40719 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 16:29:00 banner-nosession-40719 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 16:34:04 banner-nosession-40719 useradd[1543]: new group: name=minablockchain, GID=1001
+Nov  6 16:34:04 banner-nosession-40719 useradd[1543]: new user: name=minablockchain, UID=1001, GID=1001, home=/home/minablockchain, shell=/bin/bash, from=none
+Nov  6 16:34:04 banner-nosession-40719 usermod[1552]: change user 'minablockchain' password
+Nov  6 16:34:04 banner-nosession-40719 sshd[1559]: Accepted password for minablockchain from 10.0.3.1 port 38326 ssh2
+Nov  6 16:34:04 banner-nosession-40719 sshd[1559]: pam_unix(sshd:session): session opened for user minablockchain by (uid=0)
+Nov  6 16:34:04 banner-nosession-40719 systemd-logind[164]: New session 1114 of user minablockchain.
+Nov  6 16:34:04 banner-nosession-40719 systemd: pam_unix(systemd-user:session): session opened for user minablockchain by (uid=0)
+Nov  6 16:34:05 banner-nosession-40719 sshd[1576]: Received disconnect from 10.0.3.1 port 38326:11: 
+Nov  6 16:34:05 banner-nosession-40719 sshd[1576]: Disconnected from user minablockchain 10.0.3.1 port 38326
+Nov  6 16:34:05 banner-nosession-40719 sshd[1559]: pam_unix(sshd:session): session closed for user minablockchain
+Nov  6 16:34:05 banner-nosession-40719 systemd-logind[164]: Session 1114 logged out. Waiting for processes to exit.
+Nov  6 16:34:05 banner-nosession-40719 systemd-logind[164]: Removed session 1114.

@@ -1,0 +1,27 @@
+Nov  6 20:28:22 nobanner-nosession-40870 systemd-logind[164]: New seat seat0.
+Nov  6 20:28:25 nobanner-nosession-40870 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 20:28:25 nobanner-nosession-40870 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:28:34 nobanner-nosession-40870 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:28:34 nobanner-nosession-40870 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 20:28:34 nobanner-nosession-40870 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:29:12 nobanner-nosession-40870 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 20:29:12 nobanner-nosession-40870 usermod[756]: change user 'sshd' password
+Nov  6 20:29:12 nobanner-nosession-40870 chage[763]: changed password expiry for sshd
+Nov  6 20:29:15 nobanner-nosession-40870 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 20:29:15 nobanner-nosession-40870 sshd[1198]: Server listening on :: port 22.
+Nov  6 20:29:18 nobanner-nosession-40870 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:29:18 nobanner-nosession-40870 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 20:29:18 nobanner-nosession-40870 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:29:28 nobanner-nosession-40870 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:37:15 nobanner-nosession-40870 useradd[1537]: new group: name=debian, GID=1001
+Nov  6 20:37:15 nobanner-nosession-40870 useradd[1537]: new user: name=debian, UID=1001, GID=1001, home=/home/debian, shell=/bin/bash, from=none
+Nov  6 20:37:15 nobanner-nosession-40870 usermod[1546]: change user 'debian' password
+Nov  6 20:37:15 nobanner-nosession-40870 sshd[1553]: Accepted password for debian from 10.0.3.1 port 46980 ssh2
+Nov  6 20:37:15 nobanner-nosession-40870 sshd[1553]: pam_unix(sshd:session): session opened for user debian by (uid=0)
+Nov  6 20:37:15 nobanner-nosession-40870 systemd-logind[164]: New session 1394 of user debian.
+Nov  6 20:37:15 nobanner-nosession-40870 systemd: pam_unix(systemd-user:session): session opened for user debian by (uid=0)
+Nov  6 20:37:17 nobanner-nosession-40870 sshd[1570]: Received disconnect from 10.0.3.1 port 46980:11: 
+Nov  6 20:37:17 nobanner-nosession-40870 sshd[1570]: Disconnected from user debian 10.0.3.1 port 46980
+Nov  6 20:37:17 nobanner-nosession-40870 sshd[1553]: pam_unix(sshd:session): session closed for user debian
+Nov  6 20:37:17 nobanner-nosession-40870 systemd-logind[164]: Session 1394 logged out. Waiting for processes to exit.
+Nov  6 20:37:17 nobanner-nosession-40870 systemd-logind[164]: Removed session 1394.

@@ -1,0 +1,27 @@
+Nov  6 08:22:00 nobanner-session-40419 systemd-logind[164]: New seat seat0.
+Nov  6 08:22:04 nobanner-session-40419 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 08:22:04 nobanner-session-40419 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:22:12 nobanner-session-40419 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:22:12 nobanner-session-40419 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 08:22:12 nobanner-session-40419 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:22:28 nobanner-session-40419 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 08:22:29 nobanner-session-40419 usermod[765]: change user 'sshd' password
+Nov  6 08:22:29 nobanner-session-40419 chage[772]: changed password expiry for sshd
+Nov  6 08:22:32 nobanner-session-40419 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 08:22:32 nobanner-session-40419 sshd[1207]: Server listening on :: port 22.
+Nov  6 08:22:34 nobanner-session-40419 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:22:34 nobanner-session-40419 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 08:22:34 nobanner-session-40419 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 08:22:43 nobanner-session-40419 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 08:22:58 nobanner-session-40419 useradd[1553]: new group: name=fa, GID=1001
+Nov  6 08:22:58 nobanner-session-40419 useradd[1553]: new user: name=fa, UID=1001, GID=1001, home=/home/fa, shell=/bin/bash, from=none
+Nov  6 08:22:58 nobanner-session-40419 usermod[1562]: change user 'fa' password
+Nov  6 08:22:59 nobanner-session-40419 sshd[1569]: Accepted password for fa from 10.0.3.1 port 33492 ssh2
+Nov  6 08:22:59 nobanner-session-40419 sshd[1569]: pam_unix(sshd:session): session opened for user fa by (uid=0)
+Nov  6 08:22:59 nobanner-session-40419 systemd-logind[164]: New session 590 of user fa.
+Nov  6 08:22:59 nobanner-session-40419 systemd: pam_unix(systemd-user:session): session opened for user fa by (uid=0)
+Nov  6 08:23:03 nobanner-session-40419 sshd[1586]: Received disconnect from 10.0.3.1 port 33492:11: 
+Nov  6 08:23:03 nobanner-session-40419 sshd[1586]: Disconnected from user fa 10.0.3.1 port 33492
+Nov  6 08:23:03 nobanner-session-40419 sshd[1569]: pam_unix(sshd:session): session closed for user fa
+Nov  6 08:23:03 nobanner-session-40419 systemd-logind[164]: Session 590 logged out. Waiting for processes to exit.
+Nov  6 08:23:03 nobanner-session-40419 systemd-logind[164]: Removed session 590.

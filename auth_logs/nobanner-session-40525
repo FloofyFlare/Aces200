@@ -1,0 +1,25 @@
+Nov  6 11:22:28 nobanner-session-40525 systemd-logind[164]: New seat seat0.
+Nov  6 11:22:32 nobanner-session-40525 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 11:22:32 nobanner-session-40525 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:22:40 nobanner-session-40525 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:22:40 nobanner-session-40525 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 11:22:40 nobanner-session-40525 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:22:58 nobanner-session-40525 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 11:22:58 nobanner-session-40525 usermod[756]: change user 'sshd' password
+Nov  6 11:22:58 nobanner-session-40525 chage[763]: changed password expiry for sshd
+Nov  6 11:23:01 nobanner-session-40525 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 11:23:01 nobanner-session-40525 sshd[1198]: Server listening on :: port 22.
+Nov  6 11:23:03 nobanner-session-40525 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:23:03 nobanner-session-40525 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 11:23:03 nobanner-session-40525 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:23:12 nobanner-session-40525 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:23:36 nobanner-session-40525 useradd[1539]: new group: name=xi, GID=1001
+Nov  6 11:23:36 nobanner-session-40525 useradd[1539]: new user: name=xi, UID=1001, GID=1001, home=/home/xi, shell=/bin/bash, from=none
+Nov  6 11:23:37 nobanner-session-40525 usermod[1548]: change user 'xi' password
+Nov  6 11:23:37 nobanner-session-40525 sshd[1555]: Accepted password for xi from 10.0.3.1 port 57992 ssh2
+Nov  6 11:23:37 nobanner-session-40525 sshd[1555]: pam_unix(sshd:session): session opened for user xi by (uid=0)
+Nov  6 11:23:37 nobanner-session-40525 systemd-logind[164]: New session 776 of user xi.
+Nov  6 11:23:37 nobanner-session-40525 systemd: pam_unix(systemd-user:session): session opened for user xi by (uid=0)
+Nov  6 11:23:43 nobanner-session-40525 sshd[1555]: pam_unix(sshd:session): session closed for user xi
+Nov  6 11:23:43 nobanner-session-40525 systemd-logind[164]: Session 776 logged out. Waiting for processes to exit.
+Nov  6 11:23:43 nobanner-session-40525 systemd-logind[164]: Removed session 776.

@@ -1,0 +1,27 @@
+Nov  6 10:28:20 nobanner-nosession-40488 systemd-logind[164]: New seat seat0.
+Nov  6 10:28:23 nobanner-nosession-40488 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 10:28:23 nobanner-nosession-40488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:28:32 nobanner-nosession-40488 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:28:32 nobanner-nosession-40488 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 10:28:32 nobanner-nosession-40488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:28:46 nobanner-nosession-40488 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 10:28:46 nobanner-nosession-40488 usermod[765]: change user 'sshd' password
+Nov  6 10:28:46 nobanner-nosession-40488 chage[772]: changed password expiry for sshd
+Nov  6 10:28:49 nobanner-nosession-40488 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 10:28:49 nobanner-nosession-40488 sshd[1207]: Server listening on :: port 22.
+Nov  6 10:28:51 nobanner-nosession-40488 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:28:51 nobanner-nosession-40488 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 10:28:51 nobanner-nosession-40488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:28:59 nobanner-nosession-40488 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:30:00 nobanner-nosession-40488 useradd[1550]: new group: name=ap, GID=1001
+Nov  6 10:30:00 nobanner-nosession-40488 useradd[1550]: new user: name=ap, UID=1001, GID=1001, home=/home/ap, shell=/bin/bash, from=none
+Nov  6 10:30:01 nobanner-nosession-40488 usermod[1559]: change user 'ap' password
+Nov  6 10:30:01 nobanner-nosession-40488 sshd[1566]: Accepted password for ap from 10.0.3.1 port 50900 ssh2
+Nov  6 10:30:01 nobanner-nosession-40488 sshd[1566]: pam_unix(sshd:session): session opened for user ap by (uid=0)
+Nov  6 10:30:01 nobanner-nosession-40488 systemd-logind[164]: New session 707 of user ap.
+Nov  6 10:30:01 nobanner-nosession-40488 systemd: pam_unix(systemd-user:session): session opened for user ap by (uid=0)
+Nov  6 10:30:05 nobanner-nosession-40488 sshd[1583]: Received disconnect from 10.0.3.1 port 50900:11: 
+Nov  6 10:30:05 nobanner-nosession-40488 sshd[1583]: Disconnected from user ap 10.0.3.1 port 50900
+Nov  6 10:30:05 nobanner-nosession-40488 sshd[1566]: pam_unix(sshd:session): session closed for user ap
+Nov  6 10:30:05 nobanner-nosession-40488 systemd-logind[164]: Session 707 logged out. Waiting for processes to exit.
+Nov  6 10:30:05 nobanner-nosession-40488 systemd-logind[164]: Removed session 707.

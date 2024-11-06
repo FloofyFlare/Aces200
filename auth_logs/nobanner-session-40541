@@ -1,0 +1,25 @@
+Nov  6 11:44:14 nobanner-session-40541 systemd-logind[165]: New seat seat0.
+Nov  6 11:44:17 nobanner-session-40541 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 11:44:17 nobanner-session-40541 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:44:26 nobanner-session-40541 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:44:26 nobanner-session-40541 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 11:44:26 nobanner-session-40541 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:44:44 nobanner-session-40541 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 11:44:44 nobanner-session-40541 usermod[756]: change user 'sshd' password
+Nov  6 11:44:44 nobanner-session-40541 chage[763]: changed password expiry for sshd
+Nov  6 11:44:46 nobanner-session-40541 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 11:44:46 nobanner-session-40541 sshd[1198]: Server listening on :: port 22.
+Nov  6 11:44:48 nobanner-session-40541 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:44:48 nobanner-session-40541 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 11:44:48 nobanner-session-40541 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:44:56 nobanner-session-40541 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:45:19 nobanner-session-40541 useradd[1539]: new group: name=deploy, GID=1001
+Nov  6 11:45:19 nobanner-session-40541 useradd[1539]: new user: name=deploy, UID=1001, GID=1001, home=/home/deploy, shell=/bin/bash, from=none
+Nov  6 11:45:19 nobanner-session-40541 usermod[1548]: change user 'deploy' password
+Nov  6 11:45:20 nobanner-session-40541 sshd[1555]: Accepted password for deploy from 10.0.3.1 port 43600 ssh2
+Nov  6 11:45:20 nobanner-session-40541 sshd[1555]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+Nov  6 11:45:20 nobanner-session-40541 systemd-logind[165]: New session 805 of user deploy.
+Nov  6 11:45:20 nobanner-session-40541 systemd: pam_unix(systemd-user:session): session opened for user deploy by (uid=0)
+Nov  6 11:45:25 nobanner-session-40541 sshd[1555]: pam_unix(sshd:session): session closed for user deploy
+Nov  6 11:45:25 nobanner-session-40541 systemd-logind[165]: Session 805 logged out. Waiting for processes to exit.
+Nov  6 11:45:25 nobanner-session-40541 systemd-logind[165]: Removed session 805.

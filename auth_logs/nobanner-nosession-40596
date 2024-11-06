@@ -1,0 +1,25 @@
+Nov  6 13:03:48 nobanner-nosession-40596 systemd-logind[164]: New seat seat0.
+Nov  6 13:03:51 nobanner-nosession-40596 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 13:03:51 nobanner-nosession-40596 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 13:03:59 nobanner-nosession-40596 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 13:03:59 nobanner-nosession-40596 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 13:03:59 nobanner-nosession-40596 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 13:04:16 nobanner-nosession-40596 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 13:04:17 nobanner-nosession-40596 usermod[756]: change user 'sshd' password
+Nov  6 13:04:17 nobanner-nosession-40596 chage[763]: changed password expiry for sshd
+Nov  6 13:04:19 nobanner-nosession-40596 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 13:04:19 nobanner-nosession-40596 sshd[1198]: Server listening on :: port 22.
+Nov  6 13:04:20 nobanner-nosession-40596 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 13:04:21 nobanner-nosession-40596 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 13:04:21 nobanner-nosession-40596 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 13:04:38 nobanner-nosession-40596 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 13:05:38 nobanner-nosession-40596 useradd[1536]: new group: name=qr, GID=1001
+Nov  6 13:05:38 nobanner-nosession-40596 useradd[1536]: new user: name=qr, UID=1001, GID=1001, home=/home/qr, shell=/bin/bash, from=none
+Nov  6 13:05:38 nobanner-nosession-40596 usermod[1545]: change user 'qr' password
+Nov  6 13:05:38 nobanner-nosession-40596 sshd[1552]: Accepted password for qr from 10.0.3.1 port 60822 ssh2
+Nov  6 13:05:38 nobanner-nosession-40596 sshd[1552]: pam_unix(sshd:session): session opened for user qr by (uid=0)
+Nov  6 13:05:38 nobanner-nosession-40596 systemd-logind[164]: New session 901 of user qr.
+Nov  6 13:05:39 nobanner-nosession-40596 systemd: pam_unix(systemd-user:session): session opened for user qr by (uid=0)
+Nov  6 13:05:44 nobanner-nosession-40596 sshd[1552]: pam_unix(sshd:session): session closed for user qr
+Nov  6 13:05:44 nobanner-nosession-40596 systemd-logind[164]: Session 901 logged out. Waiting for processes to exit.
+Nov  6 13:05:44 nobanner-nosession-40596 systemd-logind[164]: Removed session 901.

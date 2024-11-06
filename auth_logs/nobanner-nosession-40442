@@ -1,0 +1,29 @@
+Nov  6 09:12:43 nobanner-nosession-40442 systemd-logind[164]: New seat seat0.
+Nov  6 09:12:47 nobanner-nosession-40442 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 09:12:47 nobanner-nosession-40442 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:12:55 nobanner-nosession-40442 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:12:55 nobanner-nosession-40442 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 09:12:55 nobanner-nosession-40442 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:13:16 nobanner-nosession-40442 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 09:13:16 nobanner-nosession-40442 usermod[765]: change user 'sshd' password
+Nov  6 09:13:16 nobanner-nosession-40442 chage[772]: changed password expiry for sshd
+Nov  6 09:13:19 nobanner-nosession-40442 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 09:13:19 nobanner-nosession-40442 sshd[1207]: Server listening on :: port 22.
+Nov  6 09:13:21 nobanner-nosession-40442 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:13:21 nobanner-nosession-40442 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 09:13:21 nobanner-nosession-40442 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:13:32 nobanner-nosession-40442 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:17:01 nobanner-nosession-40442 CRON[1550]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  6 09:17:01 nobanner-nosession-40442 CRON[1550]: pam_unix(cron:session): session closed for user root
+Nov  6 09:18:28 nobanner-nosession-40442 useradd[1554]: new group: name=gwei, GID=1001
+Nov  6 09:18:28 nobanner-nosession-40442 useradd[1554]: new user: name=gwei, UID=1001, GID=1001, home=/home/gwei, shell=/bin/bash, from=none
+Nov  6 09:18:29 nobanner-nosession-40442 usermod[1563]: change user 'gwei' password
+Nov  6 09:18:29 nobanner-nosession-40442 sshd[1570]: Accepted password for gwei from 10.0.3.1 port 57428 ssh2
+Nov  6 09:18:29 nobanner-nosession-40442 sshd[1570]: pam_unix(sshd:session): session opened for user gwei by (uid=0)
+Nov  6 09:18:29 nobanner-nosession-40442 systemd-logind[164]: New session 631 of user gwei.
+Nov  6 09:18:29 nobanner-nosession-40442 systemd: pam_unix(systemd-user:session): session opened for user gwei by (uid=0)
+Nov  6 09:18:30 nobanner-nosession-40442 sshd[1587]: Received disconnect from 10.0.3.1 port 57428:11: 
+Nov  6 09:18:30 nobanner-nosession-40442 sshd[1587]: Disconnected from user gwei 10.0.3.1 port 57428
+Nov  6 09:18:30 nobanner-nosession-40442 sshd[1570]: pam_unix(sshd:session): session closed for user gwei
+Nov  6 09:18:30 nobanner-nosession-40442 systemd-logind[164]: Session 631 logged out. Waiting for processes to exit.
+Nov  6 09:18:30 nobanner-nosession-40442 systemd-logind[164]: Removed session 631.

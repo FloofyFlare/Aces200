@@ -1,0 +1,25 @@
+Nov  6 10:22:30 banner-session-40484 systemd-logind[164]: New seat seat0.
+Nov  6 10:22:34 banner-session-40484 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 10:22:34 banner-session-40484 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:22:42 banner-session-40484 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:22:43 banner-session-40484 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 10:22:43 banner-session-40484 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:23:06 banner-session-40484 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 10:23:06 banner-session-40484 usermod[765]: change user 'sshd' password
+Nov  6 10:23:06 banner-session-40484 chage[772]: changed password expiry for sshd
+Nov  6 10:23:09 banner-session-40484 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 10:23:09 banner-session-40484 sshd[1207]: Server listening on :: port 22.
+Nov  6 10:23:13 banner-session-40484 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:23:13 banner-session-40484 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 10:23:13 banner-session-40484 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 10:23:22 banner-session-40484 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 10:23:44 banner-session-40484 useradd[1559]: new group: name=ey, GID=1001
+Nov  6 10:23:44 banner-session-40484 useradd[1559]: new user: name=ey, UID=1001, GID=1001, home=/home/ey, shell=/bin/bash, from=none
+Nov  6 10:23:44 banner-session-40484 usermod[1568]: change user 'ey' password
+Nov  6 10:23:45 banner-session-40484 sshd[1575]: Accepted password for ey from 10.0.3.1 port 53376 ssh2
+Nov  6 10:23:45 banner-session-40484 sshd[1575]: pam_unix(sshd:session): session opened for user ey by (uid=0)
+Nov  6 10:23:45 banner-session-40484 systemd-logind[164]: New session 699 of user ey.
+Nov  6 10:23:45 banner-session-40484 systemd: pam_unix(systemd-user:session): session opened for user ey by (uid=0)
+Nov  6 10:23:50 banner-session-40484 sshd[1575]: pam_unix(sshd:session): session closed for user ey
+Nov  6 10:23:50 banner-session-40484 systemd-logind[164]: Session 699 logged out. Waiting for processes to exit.
+Nov  6 10:23:51 banner-session-40484 systemd-logind[164]: Removed session 699.

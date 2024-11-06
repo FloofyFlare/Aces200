@@ -1,0 +1,27 @@
+Nov  6 11:36:38 banner-session-40536 systemd-logind[164]: New seat seat0.
+Nov  6 11:36:42 banner-session-40536 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 11:36:42 banner-session-40536 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:36:50 banner-session-40536 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:36:50 banner-session-40536 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 11:36:50 banner-session-40536 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:37:04 banner-session-40536 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 11:37:04 banner-session-40536 usermod[756]: change user 'sshd' password
+Nov  6 11:37:04 banner-session-40536 chage[763]: changed password expiry for sshd
+Nov  6 11:37:07 banner-session-40536 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 11:37:07 banner-session-40536 sshd[1198]: Server listening on :: port 22.
+Nov  6 11:37:08 banner-session-40536 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:37:09 banner-session-40536 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 11:37:09 banner-session-40536 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:37:15 banner-session-40536 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:37:26 banner-session-40536 useradd[1545]: new group: name=btc1, GID=1001
+Nov  6 11:37:26 banner-session-40536 useradd[1545]: new user: name=btc1, UID=1001, GID=1001, home=/home/btc1, shell=/bin/bash, from=none
+Nov  6 11:37:26 banner-session-40536 usermod[1554]: change user 'btc1' password
+Nov  6 11:37:26 banner-session-40536 sshd[1561]: Accepted password for btc1 from 10.0.3.1 port 37030 ssh2
+Nov  6 11:37:26 banner-session-40536 sshd[1561]: pam_unix(sshd:session): session opened for user btc1 by (uid=0)
+Nov  6 11:37:27 banner-session-40536 systemd-logind[164]: New session 797 of user btc1.
+Nov  6 11:37:27 banner-session-40536 systemd: pam_unix(systemd-user:session): session opened for user btc1 by (uid=0)
+Nov  6 11:37:27 banner-session-40536 sshd[1578]: Received disconnect from 10.0.3.1 port 37030:11: 
+Nov  6 11:37:27 banner-session-40536 sshd[1578]: Disconnected from user btc1 10.0.3.1 port 37030
+Nov  6 11:37:27 banner-session-40536 sshd[1561]: pam_unix(sshd:session): session closed for user btc1
+Nov  6 11:37:27 banner-session-40536 systemd-logind[164]: Session 797 logged out. Waiting for processes to exit.
+Nov  6 11:37:27 banner-session-40536 systemd-logind[164]: Removed session 797.

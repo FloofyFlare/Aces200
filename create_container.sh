@@ -42,7 +42,8 @@ fi
 id=$(( $(tail -1 "/home/student/id.txt") + 1 ))
 echo "$id" >> /home/student/id.txt
 container_name="${container_name}${id}"
-echo "Container Name: $container_name"
+echo "Container Name: $container_name" > /home/student/container_logs/"$container_name"
+echo View Log file at /home/student/container_logs/"$container_name"
 
 # Creating the LXC container with container_type
 sudo lxc-create -n "$container_name" -t download -- -d ubuntu -r focal -a amd64
@@ -63,8 +64,8 @@ while true; do
 done
 
 external_ip="$1" # External IP address that will route to the new container
-echo "Container IP = $container_ip"
-echo "External IP = $external_ip"
+echo "Container IP = $container_ip" >> /home/student/container_logs/"$container_name"
+echo "External IP = $external_ip" >> /home/student/container_logs/"$container_name"
 
 
 sudo lxc-attach -n "$container_name" -- bash -c "sudo apt-get update && sudo apt-get install openssh-server -y" 
@@ -86,22 +87,24 @@ then
     /home/student/NEWCONFIGMANAGER 4 $container_name
 fi
 
-echo "NEWCONFIGMANAGER run"
+echo "NEWCONFIGMANAGER run" >> /home/student/container_logs/"$container_name"
 
 
 # ==== SETTING UP NAT RULES ====
 sudo ip addr add "$external_ip"/24 brd + dev eth3
 sudo iptables --table nat --insert PREROUTING --source 0.0.0.0/0 --destination "$external_ip" --jump DNAT --to-destination "$container_ip"
 sudo iptables --table nat --insert POSTROUTING --source "$container_ip" --destination 0.0.0.0/0 --jump SNAT --to-source "$external_ip"
-echo "NAT setup" 
+echo "NAT setup"
+
+echo "Adding NAT rules" >> /home/student/container_logs/"$container_name"
 
 # ==== SETTING UP MITM ====
 MITM_port=$id # using port equal to the container id
 sudo iptables --table nat --insert PREROUTING --source 0.0.0.0/0 --destination "$external_ip" --protocol tcp --dport 22 --jump DNAT --to-destination 10.0.3.1:"$MITM_port"
 sudo sysctl -w net.ipv4.conf.all.route_localnet=1
 
-echo "MITM setup"
-# sudo npm install -g forever
+echo "MITM setup" >> /home/student/container_logs/"$container_name"
+
 log_path=""
 if [[ "$random_number" -eq 1 ]]
 then
@@ -118,15 +121,12 @@ then
 fi
 
 sudo forever -l /home/student/mitm_logs/"$log_path"/"$container_name".log start -a /home/student/MITM/mitm.js -n "$container_name" -i "$container_ip" -p "$MITM_port" --mitm-ip 10.0.3.1 --auto-access --auto-access-fixed 1 --debug
-# date > test.txt
 
+echo "Starting MITM listening" >> /home/student/container_logs/"$container_name"
 #
 #
 #
 # ==== MONITORING TO CHECK FOR SSH CONNECTION  ====
 /home/student/monitor.sh "$random_number" "$container_name" "$external_ip" & 
-#echo $!
-#monitor_pid=$!
-#echo "$monitor_pid" > "./monitoring_${id}"
 
 exit 0

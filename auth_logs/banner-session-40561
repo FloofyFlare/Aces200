@@ -1,0 +1,27 @@
+Nov  6 12:17:36 banner-session-40561 systemd-logind[165]: New seat seat0.
+Nov  6 12:17:39 banner-session-40561 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 12:17:39 banner-session-40561 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 12:17:48 banner-session-40561 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 12:17:48 banner-session-40561 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 12:17:48 banner-session-40561 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 12:18:04 banner-session-40561 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 12:18:04 banner-session-40561 usermod[756]: change user 'sshd' password
+Nov  6 12:18:04 banner-session-40561 chage[763]: changed password expiry for sshd
+Nov  6 12:18:06 banner-session-40561 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 12:18:06 banner-session-40561 sshd[1198]: Server listening on :: port 22.
+Nov  6 12:18:09 banner-session-40561 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 12:18:09 banner-session-40561 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 12:18:09 banner-session-40561 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 12:18:18 banner-session-40561 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 12:19:35 banner-session-40561 useradd[1545]: new group: name=jfadmin, GID=1001
+Nov  6 12:19:35 banner-session-40561 useradd[1545]: new user: name=jfadmin, UID=1001, GID=1001, home=/home/jfadmin, shell=/bin/bash, from=none
+Nov  6 12:19:35 banner-session-40561 usermod[1554]: change user 'jfadmin' password
+Nov  6 12:19:35 banner-session-40561 sshd[1561]: Accepted password for jfadmin from 10.0.3.1 port 36800 ssh2
+Nov  6 12:19:35 banner-session-40561 sshd[1561]: pam_unix(sshd:session): session opened for user jfadmin by (uid=0)
+Nov  6 12:19:36 banner-session-40561 systemd-logind[165]: New session 844 of user jfadmin.
+Nov  6 12:19:36 banner-session-40561 systemd: pam_unix(systemd-user:session): session opened for user jfadmin by (uid=0)
+Nov  6 12:19:38 banner-session-40561 sshd[1578]: Received disconnect from 10.0.3.1 port 36800:11: 
+Nov  6 12:19:38 banner-session-40561 sshd[1578]: Disconnected from user jfadmin 10.0.3.1 port 36800
+Nov  6 12:19:38 banner-session-40561 sshd[1561]: pam_unix(sshd:session): session closed for user jfadmin
+Nov  6 12:19:38 banner-session-40561 systemd-logind[165]: Session 844 logged out. Waiting for processes to exit.
+Nov  6 12:19:38 banner-session-40561 systemd-logind[165]: Removed session 844.

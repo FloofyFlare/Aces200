@@ -1,0 +1,27 @@
+Nov  5 23:32:43 banner-session-40270 systemd-logind[164]: New seat seat0.
+Nov  5 23:32:47 banner-session-40270 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  5 23:32:47 banner-session-40270 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  5 23:32:56 banner-session-40270 sudo: pam_unix(sudo:session): session closed for user root
+Nov  5 23:32:56 banner-session-40270 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  5 23:32:56 banner-session-40270 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  5 23:33:11 banner-session-40270 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  5 23:33:11 banner-session-40270 usermod[756]: change user 'sshd' password
+Nov  5 23:33:11 banner-session-40270 chage[763]: changed password expiry for sshd
+Nov  5 23:33:14 banner-session-40270 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  5 23:33:14 banner-session-40270 sshd[1198]: Server listening on :: port 22.
+Nov  5 23:33:17 banner-session-40270 sudo: pam_unix(sudo:session): session closed for user root
+Nov  5 23:33:17 banner-session-40270 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  5 23:33:17 banner-session-40270 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  5 23:33:26 banner-session-40270 sudo: pam_unix(sudo:session): session closed for user root
+Nov  5 23:39:33 banner-session-40270 useradd[1546]: new group: name=install, GID=1001
+Nov  5 23:39:33 banner-session-40270 useradd[1546]: new user: name=install, UID=1001, GID=1001, home=/home/install, shell=/bin/bash, from=none
+Nov  5 23:39:33 banner-session-40270 usermod[1555]: change user 'install' password
+Nov  5 23:39:33 banner-session-40270 sshd[1562]: Accepted password for install from 10.0.3.1 port 52212 ssh2
+Nov  5 23:39:33 banner-session-40270 sshd[1562]: pam_unix(sshd:session): session opened for user install by (uid=0)
+Nov  5 23:39:33 banner-session-40270 systemd-logind[164]: New session 348 of user install.
+Nov  5 23:39:34 banner-session-40270 systemd: pam_unix(systemd-user:session): session opened for user install by (uid=0)
+Nov  5 23:39:35 banner-session-40270 sshd[1579]: Received disconnect from 10.0.3.1 port 52212:11: 
+Nov  5 23:39:35 banner-session-40270 sshd[1579]: Disconnected from user install 10.0.3.1 port 52212
+Nov  5 23:39:35 banner-session-40270 sshd[1562]: pam_unix(sshd:session): session closed for user install
+Nov  5 23:39:35 banner-session-40270 systemd-logind[164]: Session 348 logged out. Waiting for processes to exit.
+Nov  5 23:39:35 banner-session-40270 systemd-logind[164]: Removed session 348.

@@ -1,0 +1,27 @@
+Nov  6 19:01:14 nobanner-session-40819 systemd-logind[164]: New seat seat0.
+Nov  6 19:01:17 nobanner-session-40819 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 19:01:17 nobanner-session-40819 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:01:26 nobanner-session-40819 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:01:26 nobanner-session-40819 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 19:01:26 nobanner-session-40819 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:01:45 nobanner-session-40819 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 19:01:46 nobanner-session-40819 usermod[756]: change user 'sshd' password
+Nov  6 19:01:46 nobanner-session-40819 chage[763]: changed password expiry for sshd
+Nov  6 19:01:48 nobanner-session-40819 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 19:01:48 nobanner-session-40819 sshd[1198]: Server listening on :: port 22.
+Nov  6 19:01:50 nobanner-session-40819 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:01:51 nobanner-session-40819 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 19:01:51 nobanner-session-40819 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 19:02:02 nobanner-session-40819 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:02:19 nobanner-session-40819 useradd[1539]: new group: name=config, GID=1001
+Nov  6 19:02:19 nobanner-session-40819 useradd[1539]: new user: name=config, UID=1001, GID=1001, home=/home/config, shell=/bin/bash, from=none
+Nov  6 19:02:20 nobanner-session-40819 usermod[1548]: change user 'config' password
+Nov  6 19:02:20 nobanner-session-40819 sshd[1555]: Accepted password for config from 10.0.3.1 port 47242 ssh2
+Nov  6 19:02:20 nobanner-session-40819 sshd[1555]: pam_unix(sshd:session): session opened for user config by (uid=0)
+Nov  6 19:02:20 nobanner-session-40819 systemd-logind[164]: New session 1294 of user config.
+Nov  6 19:02:20 nobanner-session-40819 systemd: pam_unix(systemd-user:session): session opened for user config by (uid=0)
+Nov  6 19:02:21 nobanner-session-40819 sshd[1572]: Received disconnect from 10.0.3.1 port 47242:11: 
+Nov  6 19:02:21 nobanner-session-40819 sshd[1572]: Disconnected from user config 10.0.3.1 port 47242
+Nov  6 19:02:21 nobanner-session-40819 sshd[1555]: pam_unix(sshd:session): session closed for user config
+Nov  6 19:02:21 nobanner-session-40819 systemd-logind[164]: Session 1294 logged out. Waiting for processes to exit.
+Nov  6 19:02:21 nobanner-session-40819 systemd-logind[164]: Removed session 1294.

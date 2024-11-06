@@ -1,0 +1,25 @@
+Nov  6 11:40:09 nobanner-nosession-40538 systemd-logind[164]: New seat seat0.
+Nov  6 11:40:12 nobanner-nosession-40538 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 11:40:12 nobanner-nosession-40538 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:40:21 nobanner-nosession-40538 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:40:21 nobanner-nosession-40538 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 11:40:21 nobanner-nosession-40538 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:40:39 nobanner-nosession-40538 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 11:40:39 nobanner-nosession-40538 usermod[756]: change user 'sshd' password
+Nov  6 11:40:39 nobanner-nosession-40538 chage[763]: changed password expiry for sshd
+Nov  6 11:40:42 nobanner-nosession-40538 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 11:40:42 nobanner-nosession-40538 sshd[1198]: Server listening on :: port 22.
+Nov  6 11:40:45 nobanner-nosession-40538 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:40:45 nobanner-nosession-40538 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 11:40:45 nobanner-nosession-40538 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:40:57 nobanner-nosession-40538 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:41:57 nobanner-nosession-40538 useradd[1536]: new group: name=v, GID=1001
+Nov  6 11:41:57 nobanner-nosession-40538 useradd[1536]: new user: name=v, UID=1001, GID=1001, home=/home/v, shell=/bin/bash, from=none
+Nov  6 11:41:57 nobanner-nosession-40538 usermod[1545]: change user 'v' password
+Nov  6 11:41:57 nobanner-nosession-40538 sshd[1552]: Accepted password for v from 10.0.3.1 port 42860 ssh2
+Nov  6 11:41:57 nobanner-nosession-40538 sshd[1552]: pam_unix(sshd:session): session opened for user v by (uid=0)
+Nov  6 11:41:57 nobanner-nosession-40538 systemd-logind[164]: New session 799 of user v.
+Nov  6 11:41:57 nobanner-nosession-40538 systemd: pam_unix(systemd-user:session): session opened for user v by (uid=0)
+Nov  6 11:42:03 nobanner-nosession-40538 sshd[1552]: pam_unix(sshd:session): session closed for user v
+Nov  6 11:42:03 nobanner-nosession-40538 systemd-logind[164]: Session 799 logged out. Waiting for processes to exit.
+Nov  6 11:42:03 nobanner-nosession-40538 systemd-logind[164]: Removed session 799.

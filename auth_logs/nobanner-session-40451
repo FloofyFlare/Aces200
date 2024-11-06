@@ -1,0 +1,25 @@
+Nov  6 09:27:01 nobanner-session-40451 systemd-logind[164]: New seat seat0.
+Nov  6 09:27:04 nobanner-session-40451 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 09:27:04 nobanner-session-40451 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:27:14 nobanner-session-40451 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:27:14 nobanner-session-40451 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 09:27:14 nobanner-session-40451 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:27:30 nobanner-session-40451 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 09:27:31 nobanner-session-40451 usermod[765]: change user 'sshd' password
+Nov  6 09:27:31 nobanner-session-40451 chage[772]: changed password expiry for sshd
+Nov  6 09:27:33 nobanner-session-40451 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 09:27:33 nobanner-session-40451 sshd[1207]: Server listening on :: port 22.
+Nov  6 09:27:35 nobanner-session-40451 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:27:35 nobanner-session-40451 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 09:27:35 nobanner-session-40451 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 09:27:45 nobanner-session-40451 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 09:28:55 nobanner-session-40451 useradd[1553]: new group: name=zuser, GID=1001
+Nov  6 09:28:55 nobanner-session-40451 useradd[1553]: new user: name=zuser, UID=1001, GID=1001, home=/home/zuser, shell=/bin/bash, from=none
+Nov  6 09:28:55 nobanner-session-40451 usermod[1562]: change user 'zuser' password
+Nov  6 09:28:55 nobanner-session-40451 sshd[1569]: Accepted password for zuser from 10.0.3.1 port 55552 ssh2
+Nov  6 09:28:55 nobanner-session-40451 sshd[1569]: pam_unix(sshd:session): session opened for user zuser by (uid=0)
+Nov  6 09:28:55 nobanner-session-40451 systemd-logind[164]: New session 646 of user zuser.
+Nov  6 09:28:55 nobanner-session-40451 systemd: pam_unix(systemd-user:session): session opened for user zuser by (uid=0)
+Nov  6 09:29:02 nobanner-session-40451 sshd[1569]: pam_unix(sshd:session): session closed for user zuser
+Nov  6 09:29:02 nobanner-session-40451 systemd-logind[164]: Session 646 logged out. Waiting for processes to exit.
+Nov  6 09:29:02 nobanner-session-40451 systemd-logind[164]: Removed session 646.

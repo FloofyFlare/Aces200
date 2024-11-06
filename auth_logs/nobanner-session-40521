@@ -1,0 +1,27 @@
+Nov  6 11:15:14 nobanner-session-40521 systemd-logind[164]: New seat seat0.
+Nov  6 11:15:18 nobanner-session-40521 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 11:15:18 nobanner-session-40521 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:15:27 nobanner-session-40521 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:15:27 nobanner-session-40521 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 11:15:27 nobanner-session-40521 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:15:42 nobanner-session-40521 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 11:15:42 nobanner-session-40521 usermod[765]: change user 'sshd' password
+Nov  6 11:15:42 nobanner-session-40521 chage[772]: changed password expiry for sshd
+Nov  6 11:15:44 nobanner-session-40521 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov  6 11:15:44 nobanner-session-40521 sshd[1207]: Server listening on :: port 22.
+Nov  6 11:15:46 nobanner-session-40521 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:15:46 nobanner-session-40521 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 11:15:46 nobanner-session-40521 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 11:15:55 nobanner-session-40521 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 11:17:01 nobanner-session-40521 CRON[1553]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  6 11:17:01 nobanner-session-40521 CRON[1553]: pam_unix(cron:session): session closed for user root
+Nov  6 11:17:15 nobanner-session-40521 useradd[1556]: new group: name=adminqq, GID=1001
+Nov  6 11:17:15 nobanner-session-40521 useradd[1556]: new user: name=adminqq, UID=1001, GID=1001, home=/home/adminqq, shell=/bin/bash, from=none
+Nov  6 11:17:16 nobanner-session-40521 usermod[1565]: change user 'adminqq' password
+Nov  6 11:17:16 nobanner-session-40521 sshd[1572]: Accepted password for adminqq from 10.0.3.1 port 50416 ssh2
+Nov  6 11:17:16 nobanner-session-40521 sshd[1572]: pam_unix(sshd:session): session opened for user adminqq by (uid=0)
+Nov  6 11:17:16 nobanner-session-40521 systemd-logind[164]: New session 766 of user adminqq.
+Nov  6 11:17:16 nobanner-session-40521 systemd: pam_unix(systemd-user:session): session opened for user adminqq by (uid=0)
+Nov  6 11:17:20 nobanner-session-40521 sshd[1572]: pam_unix(sshd:session): session closed for user adminqq
+Nov  6 11:17:20 nobanner-session-40521 systemd-logind[164]: Session 766 logged out. Waiting for processes to exit.
+Nov  6 11:17:20 nobanner-session-40521 systemd-logind[164]: Removed session 766.

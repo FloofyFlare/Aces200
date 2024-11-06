@@ -1,0 +1,27 @@
+Nov  6 20:35:08 banner-session-40872 systemd-logind[164]: New seat seat0.
+Nov  6 20:35:12 banner-session-40872 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 20:35:12 banner-session-40872 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:35:20 banner-session-40872 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:35:20 banner-session-40872 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 20:35:20 banner-session-40872 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:35:37 banner-session-40872 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 20:35:37 banner-session-40872 usermod[756]: change user 'sshd' password
+Nov  6 20:35:37 banner-session-40872 chage[763]: changed password expiry for sshd
+Nov  6 20:35:39 banner-session-40872 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 20:35:39 banner-session-40872 sshd[1198]: Server listening on :: port 22.
+Nov  6 20:35:40 banner-session-40872 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:35:40 banner-session-40872 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 20:35:40 banner-session-40872 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:35:49 banner-session-40872 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:38:30 banner-session-40872 useradd[1545]: new group: name=theta-network, GID=1001
+Nov  6 20:38:30 banner-session-40872 useradd[1545]: new user: name=theta-network, UID=1001, GID=1001, home=/home/theta-network, shell=/bin/bash, from=none
+Nov  6 20:38:30 banner-session-40872 usermod[1554]: change user 'theta-network' password
+Nov  6 20:38:30 banner-session-40872 sshd[1561]: Accepted password for theta-network from 10.0.3.1 port 38536 ssh2
+Nov  6 20:38:30 banner-session-40872 sshd[1561]: pam_unix(sshd:session): session opened for user theta-network by (uid=0)
+Nov  6 20:38:30 banner-session-40872 systemd-logind[164]: New session 1396 of user theta-network.
+Nov  6 20:38:30 banner-session-40872 systemd: pam_unix(systemd-user:session): session opened for user theta-network by (uid=0)
+Nov  6 20:38:31 banner-session-40872 sshd[1578]: Received disconnect from 10.0.3.1 port 38536:11: 
+Nov  6 20:38:31 banner-session-40872 sshd[1578]: Disconnected from user theta-network 10.0.3.1 port 38536
+Nov  6 20:38:31 banner-session-40872 sshd[1561]: pam_unix(sshd:session): session closed for user theta-network
+Nov  6 20:38:31 banner-session-40872 systemd-logind[164]: Session 1396 logged out. Waiting for processes to exit.
+Nov  6 20:38:31 banner-session-40872 systemd-logind[164]: Removed session 1396.

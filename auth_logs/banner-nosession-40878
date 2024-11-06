@@ -1,0 +1,27 @@
+Nov  6 20:44:51 banner-nosession-40878 systemd-logind[164]: New seat seat0.
+Nov  6 20:44:55 banner-nosession-40878 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 20:44:55 banner-nosession-40878 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:45:04 banner-nosession-40878 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:45:04 banner-nosession-40878 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 20:45:04 banner-nosession-40878 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:45:25 banner-nosession-40878 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 20:45:25 banner-nosession-40878 usermod[756]: change user 'sshd' password
+Nov  6 20:45:25 banner-nosession-40878 chage[763]: changed password expiry for sshd
+Nov  6 20:45:27 banner-nosession-40878 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 20:45:27 banner-nosession-40878 sshd[1198]: Server listening on :: port 22.
+Nov  6 20:45:31 banner-nosession-40878 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:45:31 banner-nosession-40878 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 20:45:31 banner-nosession-40878 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 20:45:43 banner-nosession-40878 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 20:46:42 banner-nosession-40878 useradd[1542]: new group: name=chz, GID=1001
+Nov  6 20:46:42 banner-nosession-40878 useradd[1542]: new user: name=chz, UID=1001, GID=1001, home=/home/chz, shell=/bin/bash, from=none
+Nov  6 20:46:42 banner-nosession-40878 usermod[1551]: change user 'chz' password
+Nov  6 20:46:42 banner-nosession-40878 sshd[1558]: Accepted password for chz from 10.0.3.1 port 45832 ssh2
+Nov  6 20:46:42 banner-nosession-40878 sshd[1558]: pam_unix(sshd:session): session opened for user chz by (uid=0)
+Nov  6 20:46:42 banner-nosession-40878 systemd-logind[164]: New session 1408 of user chz.
+Nov  6 20:46:42 banner-nosession-40878 systemd: pam_unix(systemd-user:session): session opened for user chz by (uid=0)
+Nov  6 20:46:43 banner-nosession-40878 sshd[1575]: Received disconnect from 10.0.3.1 port 45832:11: 
+Nov  6 20:46:43 banner-nosession-40878 sshd[1575]: Disconnected from user chz 10.0.3.1 port 45832
+Nov  6 20:46:43 banner-nosession-40878 sshd[1558]: pam_unix(sshd:session): session closed for user chz
+Nov  6 20:46:43 banner-nosession-40878 systemd-logind[164]: Session 1408 logged out. Waiting for processes to exit.
+Nov  6 20:46:43 banner-nosession-40878 systemd-logind[164]: Removed session 1408.

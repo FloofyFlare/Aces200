@@ -1,0 +1,27 @@
+Nov  6 18:08:42 nobanner-session-40780 systemd-logind[165]: New seat seat0.
+Nov  6 18:08:46 nobanner-session-40780 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 18:08:46 nobanner-session-40780 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:08:53 nobanner-session-40780 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:08:53 nobanner-session-40780 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 18:08:53 nobanner-session-40780 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:09:03 nobanner-session-40780 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 18:09:04 nobanner-session-40780 usermod[756]: change user 'sshd' password
+Nov  6 18:09:04 nobanner-session-40780 chage[763]: changed password expiry for sshd
+Nov  6 18:09:06 nobanner-session-40780 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 18:09:06 nobanner-session-40780 sshd[1198]: Server listening on :: port 22.
+Nov  6 18:09:09 nobanner-session-40780 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:09:09 nobanner-session-40780 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 18:09:09 nobanner-session-40780 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 18:09:16 nobanner-session-40780 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:10:10 nobanner-session-40780 useradd[1539]: new group: name=gk, GID=1001
+Nov  6 18:10:10 nobanner-session-40780 useradd[1539]: new user: name=gk, UID=1001, GID=1001, home=/home/gk, shell=/bin/bash, from=none
+Nov  6 18:10:10 nobanner-session-40780 usermod[1548]: change user 'gk' password
+Nov  6 18:10:11 nobanner-session-40780 sshd[1555]: Accepted password for gk from 10.0.3.1 port 36538 ssh2
+Nov  6 18:10:11 nobanner-session-40780 sshd[1555]: pam_unix(sshd:session): session opened for user gk by (uid=0)
+Nov  6 18:10:11 nobanner-session-40780 systemd-logind[165]: New session 1223 of user gk.
+Nov  6 18:10:11 nobanner-session-40780 systemd: pam_unix(systemd-user:session): session opened for user gk by (uid=0)
+Nov  6 18:10:12 nobanner-session-40780 sshd[1572]: Received disconnect from 10.0.3.1 port 36538:11: 
+Nov  6 18:10:12 nobanner-session-40780 sshd[1572]: Disconnected from user gk 10.0.3.1 port 36538
+Nov  6 18:10:12 nobanner-session-40780 sshd[1555]: pam_unix(sshd:session): session closed for user gk
+Nov  6 18:10:12 nobanner-session-40780 systemd-logind[165]: Session 1223 logged out. Waiting for processes to exit.
+Nov  6 18:10:12 nobanner-session-40780 systemd-logind[165]: Removed session 1223.
