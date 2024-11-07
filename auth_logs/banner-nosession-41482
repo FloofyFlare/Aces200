@@ -1,0 +1,25 @@
+Nov  7 15:48:56 banner-nosession-41482 systemd-logind[165]: New seat seat0.
+Nov  7 15:49:00 banner-nosession-41482 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 15:49:00 banner-nosession-41482 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 15:49:09 banner-nosession-41482 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 15:49:09 banner-nosession-41482 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 15:49:09 banner-nosession-41482 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 15:49:22 banner-nosession-41482 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 15:49:22 banner-nosession-41482 usermod[756]: change user 'sshd' password
+Nov  7 15:49:22 banner-nosession-41482 chage[763]: changed password expiry for sshd
+Nov  7 15:49:24 banner-nosession-41482 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 15:49:24 banner-nosession-41482 sshd[1198]: Server listening on :: port 22.
+Nov  7 15:49:27 banner-nosession-41482 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 15:49:27 banner-nosession-41482 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 15:49:27 banner-nosession-41482 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 15:49:32 banner-nosession-41482 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 15:50:59 banner-nosession-41482 useradd[1542]: new group: name=sftpuser, GID=1001
+Nov  7 15:50:59 banner-nosession-41482 useradd[1542]: new user: name=sftpuser, UID=1001, GID=1001, home=/home/sftpuser, shell=/bin/bash, from=none
+Nov  7 15:50:59 banner-nosession-41482 usermod[1551]: change user 'sftpuser' password
+Nov  7 15:51:00 banner-nosession-41482 sshd[1558]: Accepted password for sftpuser from 10.0.3.1 port 37746 ssh2
+Nov  7 15:51:00 banner-nosession-41482 sshd[1558]: pam_unix(sshd:session): session opened for user sftpuser by (uid=0)
+Nov  7 15:51:00 banner-nosession-41482 systemd-logind[165]: New session 2445 of user sftpuser.
+Nov  7 15:51:00 banner-nosession-41482 systemd: pam_unix(systemd-user:session): session opened for user sftpuser by (uid=0)
+Nov  7 15:51:05 banner-nosession-41482 sshd[1558]: pam_unix(sshd:session): session closed for user sftpuser
+Nov  7 15:51:05 banner-nosession-41482 systemd-logind[165]: Session 2445 logged out. Waiting for processes to exit.
+Nov  7 15:51:05 banner-nosession-41482 systemd-logind[165]: Removed session 2445.

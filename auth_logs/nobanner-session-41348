@@ -1,0 +1,27 @@
+Nov  7 11:07:59 nobanner-session-41348 systemd-logind[164]: New seat seat0.
+Nov  7 11:08:02 nobanner-session-41348 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 11:08:02 nobanner-session-41348 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:08:10 nobanner-session-41348 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:08:10 nobanner-session-41348 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 11:08:10 nobanner-session-41348 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:08:22 nobanner-session-41348 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 11:08:22 nobanner-session-41348 usermod[756]: change user 'sshd' password
+Nov  7 11:08:23 nobanner-session-41348 chage[763]: changed password expiry for sshd
+Nov  7 11:08:25 nobanner-session-41348 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 11:08:25 nobanner-session-41348 sshd[1198]: Server listening on :: port 22.
+Nov  7 11:08:29 nobanner-session-41348 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:08:29 nobanner-session-41348 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 11:08:29 nobanner-session-41348 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:08:38 nobanner-session-41348 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:11:55 nobanner-session-41348 useradd[1539]: new group: name=debian, GID=1001
+Nov  7 11:11:55 nobanner-session-41348 useradd[1539]: new user: name=debian, UID=1001, GID=1001, home=/home/debian, shell=/bin/bash, from=none
+Nov  7 11:11:55 nobanner-session-41348 usermod[1548]: change user 'debian' password
+Nov  7 11:11:55 nobanner-session-41348 sshd[1555]: Accepted password for debian from 10.0.3.1 port 59198 ssh2
+Nov  7 11:11:55 nobanner-session-41348 sshd[1555]: pam_unix(sshd:session): session opened for user debian by (uid=0)
+Nov  7 11:11:55 nobanner-session-41348 systemd-logind[164]: New session 2251 of user debian.
+Nov  7 11:11:55 nobanner-session-41348 systemd: pam_unix(systemd-user:session): session opened for user debian by (uid=0)
+Nov  7 11:11:57 nobanner-session-41348 sshd[1572]: Received disconnect from 10.0.3.1 port 59198:11: 
+Nov  7 11:11:57 nobanner-session-41348 sshd[1572]: Disconnected from user debian 10.0.3.1 port 59198
+Nov  7 11:11:57 nobanner-session-41348 sshd[1555]: pam_unix(sshd:session): session closed for user debian
+Nov  7 11:11:57 nobanner-session-41348 systemd-logind[164]: Session 2251 logged out. Waiting for processes to exit.
+Nov  7 11:11:57 nobanner-session-41348 systemd-logind[164]: Removed session 2251.

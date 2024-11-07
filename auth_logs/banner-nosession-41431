@@ -1,0 +1,25 @@
+Nov  7 13:42:55 banner-nosession-41431 systemd-logind[165]: New seat seat0.
+Nov  7 13:42:59 banner-nosession-41431 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 13:42:59 banner-nosession-41431 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 13:43:08 banner-nosession-41431 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 13:43:08 banner-nosession-41431 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 13:43:08 banner-nosession-41431 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 13:43:32 banner-nosession-41431 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 13:43:32 banner-nosession-41431 usermod[756]: change user 'sshd' password
+Nov  7 13:43:32 banner-nosession-41431 chage[763]: changed password expiry for sshd
+Nov  7 13:43:34 banner-nosession-41431 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 13:43:34 banner-nosession-41431 sshd[1198]: Server listening on :: port 22.
+Nov  7 13:43:36 banner-nosession-41431 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 13:43:36 banner-nosession-41431 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 13:43:36 banner-nosession-41431 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 13:43:43 banner-nosession-41431 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 13:44:38 banner-nosession-41431 useradd[1542]: new group: name=cr, GID=1001
+Nov  7 13:44:38 banner-nosession-41431 useradd[1542]: new user: name=cr, UID=1001, GID=1001, home=/home/cr, shell=/bin/bash, from=none
+Nov  7 13:44:38 banner-nosession-41431 usermod[1551]: change user 'cr' password
+Nov  7 13:44:38 banner-nosession-41431 sshd[1558]: Accepted password for cr from 10.0.3.1 port 41136 ssh2
+Nov  7 13:44:38 banner-nosession-41431 sshd[1558]: pam_unix(sshd:session): session opened for user cr by (uid=0)
+Nov  7 13:44:38 banner-nosession-41431 systemd-logind[165]: New session 2381 of user cr.
+Nov  7 13:44:38 banner-nosession-41431 systemd: pam_unix(systemd-user:session): session opened for user cr by (uid=0)
+Nov  7 13:44:51 banner-nosession-41431 sshd[1558]: pam_unix(sshd:session): session closed for user cr
+Nov  7 13:44:51 banner-nosession-41431 systemd-logind[165]: Session 2381 logged out. Waiting for processes to exit.
+Nov  7 13:44:51 banner-nosession-41431 systemd-logind[165]: Removed session 2381.

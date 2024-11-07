@@ -1,0 +1,27 @@
+Nov  7 07:33:35 banner-nosession-41213 systemd-logind[164]: New seat seat0.
+Nov  7 07:33:39 banner-nosession-41213 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 07:33:39 banner-nosession-41213 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:33:47 banner-nosession-41213 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:33:47 banner-nosession-41213 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 07:33:47 banner-nosession-41213 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:34:09 banner-nosession-41213 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 07:34:09 banner-nosession-41213 usermod[756]: change user 'sshd' password
+Nov  7 07:34:09 banner-nosession-41213 chage[763]: changed password expiry for sshd
+Nov  7 07:34:11 banner-nosession-41213 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 07:34:11 banner-nosession-41213 sshd[1198]: Server listening on :: port 22.
+Nov  7 07:34:12 banner-nosession-41213 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:34:12 banner-nosession-41213 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 07:34:12 banner-nosession-41213 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:34:20 banner-nosession-41213 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:37:45 banner-nosession-41213 useradd[1542]: new group: name=comp, GID=1001
+Nov  7 07:37:45 banner-nosession-41213 useradd[1542]: new user: name=comp, UID=1001, GID=1001, home=/home/comp, shell=/bin/bash, from=none
+Nov  7 07:37:45 banner-nosession-41213 usermod[1551]: change user 'comp' password
+Nov  7 07:37:45 banner-nosession-41213 sshd[1558]: Accepted password for comp from 10.0.3.1 port 42094 ssh2
+Nov  7 07:37:45 banner-nosession-41213 sshd[1558]: pam_unix(sshd:session): session opened for user comp by (uid=0)
+Nov  7 07:37:45 banner-nosession-41213 systemd-logind[164]: New session 2018 of user comp.
+Nov  7 07:37:45 banner-nosession-41213 systemd: pam_unix(systemd-user:session): session opened for user comp by (uid=0)
+Nov  7 07:37:46 banner-nosession-41213 sshd[1575]: Received disconnect from 10.0.3.1 port 42094:11: 
+Nov  7 07:37:46 banner-nosession-41213 sshd[1575]: Disconnected from user comp 10.0.3.1 port 42094
+Nov  7 07:37:46 banner-nosession-41213 sshd[1558]: pam_unix(sshd:session): session closed for user comp
+Nov  7 07:37:46 banner-nosession-41213 systemd-logind[164]: Session 2018 logged out. Waiting for processes to exit.
+Nov  7 07:37:46 banner-nosession-41213 systemd-logind[164]: Removed session 2018.

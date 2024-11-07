@@ -1,0 +1,25 @@
+Nov  7 10:04:39 nobanner-session-41300 systemd-logind[164]: New seat seat0.
+Nov  7 10:04:42 nobanner-session-41300 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 10:04:42 nobanner-session-41300 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:04:50 nobanner-session-41300 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:04:50 nobanner-session-41300 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 10:04:50 nobanner-session-41300 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:05:05 nobanner-session-41300 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 10:05:05 nobanner-session-41300 usermod[756]: change user 'sshd' password
+Nov  7 10:05:05 nobanner-session-41300 chage[763]: changed password expiry for sshd
+Nov  7 10:05:08 nobanner-session-41300 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 10:05:08 nobanner-session-41300 sshd[1198]: Server listening on :: port 22.
+Nov  7 10:05:11 nobanner-session-41300 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:05:11 nobanner-session-41300 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 10:05:11 nobanner-session-41300 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:05:22 nobanner-session-41300 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:06:05 nobanner-session-41300 useradd[1539]: new group: name=dl, GID=1001
+Nov  7 10:06:05 nobanner-session-41300 useradd[1539]: new user: name=dl, UID=1001, GID=1001, home=/home/dl, shell=/bin/bash, from=none
+Nov  7 10:06:06 nobanner-session-41300 usermod[1548]: change user 'dl' password
+Nov  7 10:06:06 nobanner-session-41300 sshd[1555]: Accepted password for dl from 10.0.3.1 port 56934 ssh2
+Nov  7 10:06:06 nobanner-session-41300 sshd[1555]: pam_unix(sshd:session): session opened for user dl by (uid=0)
+Nov  7 10:06:06 nobanner-session-41300 systemd-logind[164]: New session 2167 of user dl.
+Nov  7 10:06:06 nobanner-session-41300 systemd: pam_unix(systemd-user:session): session opened for user dl by (uid=0)
+Nov  7 10:06:12 nobanner-session-41300 sshd[1555]: pam_unix(sshd:session): session closed for user dl
+Nov  7 10:06:12 nobanner-session-41300 systemd-logind[164]: Session 2167 logged out. Waiting for processes to exit.
+Nov  7 10:06:12 nobanner-session-41300 systemd-logind[164]: Removed session 2167.

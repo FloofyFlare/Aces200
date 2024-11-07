@@ -1,0 +1,27 @@
+Nov  6 21:31:26 banner-nosession-40900 systemd-logind[164]: New seat seat0.
+Nov  6 21:31:32 banner-nosession-40900 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 21:31:32 banner-nosession-40900 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 21:31:41 banner-nosession-40900 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 21:31:41 banner-nosession-40900 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 21:31:41 banner-nosession-40900 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 21:32:07 banner-nosession-40900 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 21:32:07 banner-nosession-40900 usermod[756]: change user 'sshd' password
+Nov  6 21:32:07 banner-nosession-40900 chage[763]: changed password expiry for sshd
+Nov  6 21:32:10 banner-nosession-40900 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 21:32:10 banner-nosession-40900 sshd[1198]: Server listening on :: port 22.
+Nov  6 21:32:15 banner-nosession-40900 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 21:32:15 banner-nosession-40900 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 21:32:15 banner-nosession-40900 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 21:32:25 banner-nosession-40900 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 21:37:15 banner-nosession-40900 useradd[1543]: new group: name=icp, GID=1001
+Nov  6 21:37:15 banner-nosession-40900 useradd[1543]: new user: name=icp, UID=1001, GID=1001, home=/home/icp, shell=/bin/bash, from=none
+Nov  6 21:37:15 banner-nosession-40900 usermod[1552]: change user 'icp' password
+Nov  6 21:37:15 banner-nosession-40900 sshd[1559]: Accepted password for icp from 10.0.3.1 port 41338 ssh2
+Nov  6 21:37:15 banner-nosession-40900 sshd[1559]: pam_unix(sshd:session): session opened for user icp by (uid=0)
+Nov  6 21:37:15 banner-nosession-40900 systemd-logind[164]: New session 1457 of user icp.
+Nov  6 21:37:15 banner-nosession-40900 systemd: pam_unix(systemd-user:session): session opened for user icp by (uid=0)
+Nov  6 21:37:16 banner-nosession-40900 sshd[1576]: Received disconnect from 10.0.3.1 port 41338:11: 
+Nov  6 21:37:16 banner-nosession-40900 sshd[1576]: Disconnected from user icp 10.0.3.1 port 41338
+Nov  6 21:37:16 banner-nosession-40900 sshd[1559]: pam_unix(sshd:session): session closed for user icp
+Nov  6 21:37:16 banner-nosession-40900 systemd-logind[164]: Session 1457 logged out. Waiting for processes to exit.
+Nov  6 21:37:16 banner-nosession-40900 systemd-logind[164]: Removed session 1457.

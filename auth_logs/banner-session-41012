@@ -1,0 +1,27 @@
+Nov  7 01:37:49 banner-session-41012 systemd-logind[164]: New seat seat0.
+Nov  7 01:37:52 banner-session-41012 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 01:37:52 banner-session-41012 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 01:38:00 banner-session-41012 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 01:38:00 banner-session-41012 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 01:38:00 banner-session-41012 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 01:38:10 banner-session-41012 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 01:38:10 banner-session-41012 usermod[756]: change user 'sshd' password
+Nov  7 01:38:10 banner-session-41012 chage[763]: changed password expiry for sshd
+Nov  7 01:38:12 banner-session-41012 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 01:38:12 banner-session-41012 sshd[1198]: Server listening on :: port 22.
+Nov  7 01:38:14 banner-session-41012 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 01:38:14 banner-session-41012 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 01:38:14 banner-session-41012 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 01:38:23 banner-session-41012 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 01:43:42 banner-session-41012 useradd[1546]: new group: name=chz, GID=1001
+Nov  7 01:43:42 banner-session-41012 useradd[1546]: new user: name=chz, UID=1001, GID=1001, home=/home/chz, shell=/bin/bash, from=none
+Nov  7 01:43:42 banner-session-41012 usermod[1555]: change user 'chz' password
+Nov  7 01:43:42 banner-session-41012 sshd[1562]: Accepted password for chz from 10.0.3.1 port 51700 ssh2
+Nov  7 01:43:42 banner-session-41012 sshd[1562]: pam_unix(sshd:session): session opened for user chz by (uid=0)
+Nov  7 01:43:42 banner-session-41012 systemd-logind[164]: New session 1663 of user chz.
+Nov  7 01:43:42 banner-session-41012 systemd: pam_unix(systemd-user:session): session opened for user chz by (uid=0)
+Nov  7 01:43:43 banner-session-41012 sshd[1579]: Received disconnect from 10.0.3.1 port 51700:11: 
+Nov  7 01:43:43 banner-session-41012 sshd[1579]: Disconnected from user chz 10.0.3.1 port 51700
+Nov  7 01:43:43 banner-session-41012 sshd[1562]: pam_unix(sshd:session): session closed for user chz
+Nov  7 01:43:43 banner-session-41012 systemd-logind[164]: Session 1663 logged out. Waiting for processes to exit.
+Nov  7 01:43:43 banner-session-41012 systemd-logind[164]: Removed session 1663.

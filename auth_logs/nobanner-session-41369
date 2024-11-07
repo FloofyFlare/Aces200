@@ -1,0 +1,24 @@
+Nov  7 11:43:05 nobanner-session-41369 systemd-logind[164]: New seat seat0.
+Nov  7 11:43:09 nobanner-session-41369 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 11:43:09 nobanner-session-41369 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:43:17 nobanner-session-41369 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:43:17 nobanner-session-41369 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 11:43:17 nobanner-session-41369 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:43:32 nobanner-session-41369 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 11:43:33 nobanner-session-41369 usermod[756]: change user 'sshd' password
+Nov  7 11:43:33 nobanner-session-41369 chage[763]: changed password expiry for sshd
+Nov  7 11:43:35 nobanner-session-41369 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 11:43:35 nobanner-session-41369 sshd[1198]: Server listening on :: port 22.
+Nov  7 11:43:39 nobanner-session-41369 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:43:39 nobanner-session-41369 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 11:43:39 nobanner-session-41369 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:43:47 nobanner-session-41369 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:45:08 nobanner-session-41369 useradd[1539]: failed adding user 'ubuntu', data deleted
+Nov  7 11:45:09 nobanner-session-41369 usermod[1540]: change user 'ubuntu' password
+Nov  7 11:45:09 nobanner-session-41369 sshd[1547]: Accepted password for ubuntu from 10.0.3.1 port 46378 ssh2
+Nov  7 11:45:09 nobanner-session-41369 sshd[1547]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov  7 11:45:09 nobanner-session-41369 systemd-logind[164]: New session 442 of user ubuntu.
+Nov  7 11:45:09 nobanner-session-41369 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov  7 11:45:14 nobanner-session-41369 sshd[1547]: pam_unix(sshd:session): session closed for user ubuntu
+Nov  7 11:45:14 nobanner-session-41369 systemd-logind[164]: Session 442 logged out. Waiting for processes to exit.
+Nov  7 11:45:14 nobanner-session-41369 systemd-logind[164]: Removed session 442.

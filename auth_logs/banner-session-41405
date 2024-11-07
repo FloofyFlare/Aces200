@@ -1,0 +1,27 @@
+Nov  7 12:47:49 banner-session-41405 systemd-logind[165]: New seat seat0.
+Nov  7 12:47:53 banner-session-41405 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 12:47:53 banner-session-41405 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:48:01 banner-session-41405 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:48:01 banner-session-41405 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 12:48:01 banner-session-41405 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:48:17 banner-session-41405 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 12:48:17 banner-session-41405 usermod[756]: change user 'sshd' password
+Nov  7 12:48:17 banner-session-41405 chage[763]: changed password expiry for sshd
+Nov  7 12:48:19 banner-session-41405 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 12:48:19 banner-session-41405 sshd[1198]: Server listening on :: port 22.
+Nov  7 12:48:21 banner-session-41405 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:48:21 banner-session-41405 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 12:48:21 banner-session-41405 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:48:29 banner-session-41405 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:48:47 banner-session-41405 useradd[1545]: new group: name=ltk, GID=1001
+Nov  7 12:48:47 banner-session-41405 useradd[1545]: new user: name=ltk, UID=1001, GID=1001, home=/home/ltk, shell=/bin/bash, from=none
+Nov  7 12:48:47 banner-session-41405 usermod[1554]: change user 'ltk' password
+Nov  7 12:48:47 banner-session-41405 sshd[1561]: Accepted password for ltk from 10.0.3.1 port 60634 ssh2
+Nov  7 12:48:47 banner-session-41405 sshd[1561]: pam_unix(sshd:session): session opened for user ltk by (uid=0)
+Nov  7 12:48:47 banner-session-41405 systemd-logind[165]: New session 2348 of user ltk.
+Nov  7 12:48:47 banner-session-41405 systemd: pam_unix(systemd-user:session): session opened for user ltk by (uid=0)
+Nov  7 12:48:49 banner-session-41405 sshd[1578]: Received disconnect from 10.0.3.1 port 60634:11: 
+Nov  7 12:48:49 banner-session-41405 sshd[1578]: Disconnected from user ltk 10.0.3.1 port 60634
+Nov  7 12:48:49 banner-session-41405 sshd[1561]: pam_unix(sshd:session): session closed for user ltk
+Nov  7 12:48:49 banner-session-41405 systemd-logind[165]: Session 2348 logged out. Waiting for processes to exit.
+Nov  7 12:48:49 banner-session-41405 systemd-logind[165]: Removed session 2348.

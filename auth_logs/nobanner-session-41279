@@ -1,0 +1,25 @@
+Nov  7 09:30:52 nobanner-session-41279 systemd-logind[164]: New seat seat0.
+Nov  7 09:30:55 nobanner-session-41279 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 09:30:55 nobanner-session-41279 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:31:04 nobanner-session-41279 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:31:04 nobanner-session-41279 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 09:31:04 nobanner-session-41279 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:31:19 nobanner-session-41279 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 09:31:19 nobanner-session-41279 usermod[756]: change user 'sshd' password
+Nov  7 09:31:19 nobanner-session-41279 chage[763]: changed password expiry for sshd
+Nov  7 09:31:22 nobanner-session-41279 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 09:31:22 nobanner-session-41279 sshd[1198]: Server listening on :: port 22.
+Nov  7 09:31:24 nobanner-session-41279 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:31:25 nobanner-session-41279 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 09:31:25 nobanner-session-41279 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:31:33 nobanner-session-41279 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:32:25 nobanner-session-41279 useradd[1539]: new group: name=web, GID=1001
+Nov  7 09:32:25 nobanner-session-41279 useradd[1539]: new user: name=web, UID=1001, GID=1001, home=/home/web, shell=/bin/bash, from=none
+Nov  7 09:32:25 nobanner-session-41279 usermod[1548]: change user 'web' password
+Nov  7 09:32:25 nobanner-session-41279 sshd[1555]: Accepted password for web from 10.0.3.1 port 41886 ssh2
+Nov  7 09:32:25 nobanner-session-41279 sshd[1555]: pam_unix(sshd:session): session opened for user web by (uid=0)
+Nov  7 09:32:25 nobanner-session-41279 systemd-logind[164]: New session 2128 of user web.
+Nov  7 09:32:25 nobanner-session-41279 systemd: pam_unix(systemd-user:session): session opened for user web by (uid=0)
+Nov  7 09:32:26 nobanner-session-41279 sshd[1555]: pam_unix(sshd:session): session closed for user web
+Nov  7 09:32:26 nobanner-session-41279 systemd-logind[164]: Session 2128 logged out. Waiting for processes to exit.
+Nov  7 09:32:26 nobanner-session-41279 systemd-logind[164]: Removed session 2128.

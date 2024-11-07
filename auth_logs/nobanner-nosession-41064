@@ -1,0 +1,27 @@
+Nov  7 03:11:14 nobanner-nosession-41064 systemd-logind[164]: New seat seat0.
+Nov  7 03:11:20 nobanner-nosession-41064 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 03:11:20 nobanner-nosession-41064 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 03:11:31 nobanner-nosession-41064 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 03:11:31 nobanner-nosession-41064 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 03:11:31 nobanner-nosession-41064 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 03:12:01 nobanner-nosession-41064 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 03:12:01 nobanner-nosession-41064 usermod[756]: change user 'sshd' password
+Nov  7 03:12:01 nobanner-nosession-41064 chage[763]: changed password expiry for sshd
+Nov  7 03:12:03 nobanner-nosession-41064 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 03:12:03 nobanner-nosession-41064 sshd[1198]: Server listening on :: port 22.
+Nov  7 03:12:06 nobanner-nosession-41064 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 03:12:06 nobanner-nosession-41064 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 03:12:06 nobanner-nosession-41064 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 03:12:16 nobanner-nosession-41064 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 03:12:58 nobanner-nosession-41064 useradd[1536]: new group: name=dspace, GID=1001
+Nov  7 03:12:58 nobanner-nosession-41064 useradd[1536]: new user: name=dspace, UID=1001, GID=1001, home=/home/dspace, shell=/bin/bash, from=none
+Nov  7 03:12:58 nobanner-nosession-41064 usermod[1545]: change user 'dspace' password
+Nov  7 03:12:58 nobanner-nosession-41064 sshd[1552]: Accepted password for dspace from 10.0.3.1 port 35062 ssh2
+Nov  7 03:12:58 nobanner-nosession-41064 sshd[1552]: pam_unix(sshd:session): session opened for user dspace by (uid=0)
+Nov  7 03:12:58 nobanner-nosession-41064 systemd-logind[164]: New session 1744 of user dspace.
+Nov  7 03:12:58 nobanner-nosession-41064 systemd: pam_unix(systemd-user:session): session opened for user dspace by (uid=0)
+Nov  7 03:13:00 nobanner-nosession-41064 sshd[1569]: Received disconnect from 10.0.3.1 port 35062:11: 
+Nov  7 03:13:00 nobanner-nosession-41064 sshd[1569]: Disconnected from user dspace 10.0.3.1 port 35062
+Nov  7 03:13:00 nobanner-nosession-41064 sshd[1552]: pam_unix(sshd:session): session closed for user dspace
+Nov  7 03:13:00 nobanner-nosession-41064 systemd-logind[164]: Session 1744 logged out. Waiting for processes to exit.
+Nov  7 03:13:00 nobanner-nosession-41064 systemd-logind[164]: Removed session 1744.

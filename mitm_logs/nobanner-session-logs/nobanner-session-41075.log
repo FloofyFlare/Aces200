@@ -1,0 +1,29 @@
+(node:393086) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-41075',
+  containerIp: '10.0.3.234',
+  mitmPort: 41075,
+  autoAccessFixed: 1
+}
+2024-11-06 22:29:58.874 - [Info] MITM Version: 2
+2024-11-06 22:29:58.877 - [Info] Auto Access Enabled: true
+2024-11-06 22:29:58.877 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 22:29:58.889 - [Info] SSH man-in-the-middle server for 10.0.3.234 listening on 10.0.3.1:41075
+2024-11-06 22:30:14.724 - [Debug] [Connection] Attacker connected: 167.94.146.58 | Client Identification: SSH-2.0-Go
+2024-11-06 22:30:30.428 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

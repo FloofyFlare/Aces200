@@ -1,0 +1,27 @@
+Nov  6 23:40:09 nobanner-session-40961 systemd-logind[165]: New seat seat0.
+Nov  6 23:40:13 nobanner-session-40961 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 23:40:13 nobanner-session-40961 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:40:22 nobanner-session-40961 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:40:22 nobanner-session-40961 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 23:40:22 nobanner-session-40961 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:40:39 nobanner-session-40961 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 23:40:39 nobanner-session-40961 usermod[756]: change user 'sshd' password
+Nov  6 23:40:39 nobanner-session-40961 chage[763]: changed password expiry for sshd
+Nov  6 23:40:41 nobanner-session-40961 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 23:40:41 nobanner-session-40961 sshd[1198]: Server listening on :: port 22.
+Nov  6 23:40:43 nobanner-session-40961 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:40:43 nobanner-session-40961 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 23:40:43 nobanner-session-40961 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:40:50 nobanner-session-40961 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:43:36 nobanner-session-40961 useradd[1539]: new group: name=crv, GID=1001
+Nov  6 23:43:36 nobanner-session-40961 useradd[1539]: new user: name=crv, UID=1001, GID=1001, home=/home/crv, shell=/bin/bash, from=none
+Nov  6 23:43:36 nobanner-session-40961 usermod[1548]: change user 'crv' password
+Nov  6 23:43:36 nobanner-session-40961 sshd[1555]: Accepted password for crv from 10.0.3.1 port 48142 ssh2
+Nov  6 23:43:36 nobanner-session-40961 sshd[1555]: pam_unix(sshd:session): session opened for user crv by (uid=0)
+Nov  6 23:43:36 nobanner-session-40961 systemd-logind[165]: New session 1560 of user crv.
+Nov  6 23:43:36 nobanner-session-40961 systemd: pam_unix(systemd-user:session): session opened for user crv by (uid=0)
+Nov  6 23:43:37 nobanner-session-40961 sshd[1572]: Received disconnect from 10.0.3.1 port 48142:11: 
+Nov  6 23:43:37 nobanner-session-40961 sshd[1572]: Disconnected from user crv 10.0.3.1 port 48142
+Nov  6 23:43:37 nobanner-session-40961 sshd[1555]: pam_unix(sshd:session): session closed for user crv
+Nov  6 23:43:37 nobanner-session-40961 systemd-logind[165]: Session 1560 logged out. Waiting for processes to exit.
+Nov  6 23:43:37 nobanner-session-40961 systemd-logind[165]: Removed session 1560.

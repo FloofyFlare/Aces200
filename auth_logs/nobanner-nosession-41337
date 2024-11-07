@@ -1,0 +1,25 @@
+Nov  7 10:49:41 nobanner-nosession-41337 systemd-logind[164]: New seat seat0.
+Nov  7 10:49:44 nobanner-nosession-41337 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 10:49:44 nobanner-nosession-41337 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:49:52 nobanner-nosession-41337 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:49:52 nobanner-nosession-41337 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 10:49:52 nobanner-nosession-41337 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:50:02 nobanner-nosession-41337 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 10:50:02 nobanner-nosession-41337 usermod[756]: change user 'sshd' password
+Nov  7 10:50:02 nobanner-nosession-41337 chage[763]: changed password expiry for sshd
+Nov  7 10:50:05 nobanner-nosession-41337 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 10:50:05 nobanner-nosession-41337 sshd[1198]: Server listening on :: port 22.
+Nov  7 10:50:08 nobanner-nosession-41337 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:50:08 nobanner-nosession-41337 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 10:50:08 nobanner-nosession-41337 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:50:14 nobanner-nosession-41337 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:50:56 nobanner-nosession-41337 useradd[1536]: new group: name=wb, GID=1001
+Nov  7 10:50:56 nobanner-nosession-41337 useradd[1536]: new user: name=wb, UID=1001, GID=1001, home=/home/wb, shell=/bin/bash, from=none
+Nov  7 10:50:56 nobanner-nosession-41337 usermod[1545]: change user 'wb' password
+Nov  7 10:50:56 nobanner-nosession-41337 sshd[1552]: Accepted password for wb from 10.0.3.1 port 58236 ssh2
+Nov  7 10:50:56 nobanner-nosession-41337 sshd[1552]: pam_unix(sshd:session): session opened for user wb by (uid=0)
+Nov  7 10:50:56 nobanner-nosession-41337 systemd-logind[164]: New session 2229 of user wb.
+Nov  7 10:50:56 nobanner-nosession-41337 systemd: pam_unix(systemd-user:session): session opened for user wb by (uid=0)
+Nov  7 10:51:03 nobanner-nosession-41337 sshd[1552]: pam_unix(sshd:session): session closed for user wb
+Nov  7 10:51:03 nobanner-nosession-41337 systemd-logind[164]: Session 2229 logged out. Waiting for processes to exit.
+Nov  7 10:51:03 nobanner-nosession-41337 systemd-logind[164]: Removed session 2229.

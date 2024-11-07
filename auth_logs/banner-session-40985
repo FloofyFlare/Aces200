@@ -1,0 +1,27 @@
+Nov  7 00:28:20 banner-session-40985 systemd-logind[164]: New seat seat0.
+Nov  7 00:28:23 banner-session-40985 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 00:28:23 banner-session-40985 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 00:28:33 banner-session-40985 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 00:28:33 banner-session-40985 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 00:28:33 banner-session-40985 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 00:28:53 banner-session-40985 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 00:28:53 banner-session-40985 usermod[756]: change user 'sshd' password
+Nov  7 00:28:54 banner-session-40985 chage[763]: changed password expiry for sshd
+Nov  7 00:28:56 banner-session-40985 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 00:28:56 banner-session-40985 sshd[1198]: Server listening on :: port 22.
+Nov  7 00:28:58 banner-session-40985 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 00:28:58 banner-session-40985 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 00:28:58 banner-session-40985 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 00:29:06 banner-session-40985 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 00:34:11 banner-session-40985 useradd[1546]: new group: name=hbar, GID=1001
+Nov  7 00:34:11 banner-session-40985 useradd[1546]: new user: name=hbar, UID=1001, GID=1001, home=/home/hbar, shell=/bin/bash, from=none
+Nov  7 00:34:11 banner-session-40985 usermod[1555]: change user 'hbar' password
+Nov  7 00:34:11 banner-session-40985 sshd[1562]: Accepted password for hbar from 10.0.3.1 port 57902 ssh2
+Nov  7 00:34:11 banner-session-40985 sshd[1562]: pam_unix(sshd:session): session opened for user hbar by (uid=0)
+Nov  7 00:34:11 banner-session-40985 systemd-logind[164]: New session 1607 of user hbar.
+Nov  7 00:34:11 banner-session-40985 systemd: pam_unix(systemd-user:session): session opened for user hbar by (uid=0)
+Nov  7 00:34:12 banner-session-40985 sshd[1579]: Received disconnect from 10.0.3.1 port 57902:11: 
+Nov  7 00:34:12 banner-session-40985 sshd[1579]: Disconnected from user hbar 10.0.3.1 port 57902
+Nov  7 00:34:12 banner-session-40985 sshd[1562]: pam_unix(sshd:session): session closed for user hbar
+Nov  7 00:34:12 banner-session-40985 systemd-logind[164]: Session 1607 logged out. Waiting for processes to exit.
+Nov  7 00:34:12 banner-session-40985 systemd-logind[164]: Removed session 1607.

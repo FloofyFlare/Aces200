@@ -1,0 +1,25 @@
+Nov  7 11:57:41 banner-session-41379 systemd-logind[164]: New seat seat0.
+Nov  7 11:57:44 banner-session-41379 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 11:57:44 banner-session-41379 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:57:54 banner-session-41379 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:57:54 banner-session-41379 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 11:57:54 banner-session-41379 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:58:09 banner-session-41379 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 11:58:09 banner-session-41379 usermod[756]: change user 'sshd' password
+Nov  7 11:58:10 banner-session-41379 chage[763]: changed password expiry for sshd
+Nov  7 11:58:12 banner-session-41379 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 11:58:12 banner-session-41379 sshd[1198]: Server listening on :: port 22.
+Nov  7 11:58:14 banner-session-41379 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:58:14 banner-session-41379 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 11:58:14 banner-session-41379 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:58:20 banner-session-41379 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:59:39 banner-session-41379 useradd[1545]: new group: name=ogtest, GID=1001
+Nov  7 11:59:39 banner-session-41379 useradd[1545]: new user: name=ogtest, UID=1001, GID=1001, home=/home/ogtest, shell=/bin/bash, from=none
+Nov  7 11:59:39 banner-session-41379 usermod[1554]: change user 'ogtest' password
+Nov  7 11:59:40 banner-session-41379 sshd[1561]: Accepted password for ogtest from 10.0.3.1 port 59434 ssh2
+Nov  7 11:59:40 banner-session-41379 sshd[1561]: pam_unix(sshd:session): session opened for user ogtest by (uid=0)
+Nov  7 11:59:40 banner-session-41379 systemd-logind[164]: New session 2302 of user ogtest.
+Nov  7 11:59:40 banner-session-41379 systemd: pam_unix(systemd-user:session): session opened for user ogtest by (uid=0)
+Nov  7 11:59:45 banner-session-41379 sshd[1561]: pam_unix(sshd:session): session closed for user ogtest
+Nov  7 11:59:45 banner-session-41379 systemd-logind[164]: Session 2302 logged out. Waiting for processes to exit.
+Nov  7 11:59:45 banner-session-41379 systemd-logind[164]: Removed session 2302.

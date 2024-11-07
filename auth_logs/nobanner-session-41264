@@ -1,0 +1,27 @@
+Nov  7 08:46:53 nobanner-session-41264 systemd-logind[165]: New seat seat0.
+Nov  7 08:46:56 nobanner-session-41264 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 08:46:56 nobanner-session-41264 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:47:04 nobanner-session-41264 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:47:04 nobanner-session-41264 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 08:47:04 nobanner-session-41264 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:47:21 nobanner-session-41264 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 08:47:21 nobanner-session-41264 usermod[756]: change user 'sshd' password
+Nov  7 08:47:21 nobanner-session-41264 chage[763]: changed password expiry for sshd
+Nov  7 08:47:24 nobanner-session-41264 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 08:47:24 nobanner-session-41264 sshd[1198]: Server listening on :: port 22.
+Nov  7 08:47:27 nobanner-session-41264 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:47:27 nobanner-session-41264 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 08:47:27 nobanner-session-41264 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:47:38 nobanner-session-41264 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:03:30 nobanner-session-41264 useradd[1541]: new group: name=ec2-user, GID=1001
+Nov  7 09:03:30 nobanner-session-41264 useradd[1541]: new user: name=ec2-user, UID=1001, GID=1001, home=/home/ec2-user, shell=/bin/bash, from=none
+Nov  7 09:03:30 nobanner-session-41264 usermod[1550]: change user 'ec2-user' password
+Nov  7 09:03:30 nobanner-session-41264 sshd[1557]: Accepted password for ec2-user from 10.0.3.1 port 57144 ssh2
+Nov  7 09:03:30 nobanner-session-41264 sshd[1557]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Nov  7 09:03:30 nobanner-session-41264 systemd-logind[165]: New session 2109 of user ec2-user.
+Nov  7 09:03:30 nobanner-session-41264 systemd: pam_unix(systemd-user:session): session opened for user ec2-user by (uid=0)
+Nov  7 09:03:32 nobanner-session-41264 sshd[1574]: Received disconnect from 10.0.3.1 port 57144:11: 
+Nov  7 09:03:32 nobanner-session-41264 sshd[1574]: Disconnected from user ec2-user 10.0.3.1 port 57144
+Nov  7 09:03:32 nobanner-session-41264 sshd[1557]: pam_unix(sshd:session): session closed for user ec2-user
+Nov  7 09:03:32 nobanner-session-41264 systemd-logind[165]: Session 2109 logged out. Waiting for processes to exit.
+Nov  7 09:03:32 nobanner-session-41264 systemd-logind[165]: Removed session 2109.

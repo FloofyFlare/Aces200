@@ -1,0 +1,36 @@
+(node:117123) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-40984',
+  containerIp: '10.0.3.177',
+  mitmPort: 40984,
+  autoAccessFixed: 1
+}
+2024-11-06 19:28:45.787 - [Info] MITM Version: 2
+2024-11-06 19:28:45.789 - [Info] Auto Access Enabled: true
+2024-11-06 19:28:45.790 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 19:28:45.804 - [Info] SSH man-in-the-middle server for 10.0.3.177 listening on 10.0.3.1:40984
+2024-11-06 19:32:15.863 - [Debug] [Connection] Attacker connected: 220.172.203.43 | Client Identification: SSH-2.0-OpenSSH_7.4
+2024-11-06 19:32:18.292 - [Debug] [Auth] Attacker 220.172.203.43 trying to authenticate with 'password'
+2024-11-06 19:32:18.293 - [Debug] [Auto Access] Attacker: 220.172.203.43, Threshold: 1, Attempts: 1
+2024-11-06 19:32:18.294 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-06 19:32:18.294 - [Debug] [Auto Access] Adding the following credentials: 'fax:fax'
+2024-11-06 19:32:18.388 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-06 19:32:18.390 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-06 19:32:18.394 - [Debug] [Auth] Attacker: 220.172.203.43 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-06 19:32:19.411 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

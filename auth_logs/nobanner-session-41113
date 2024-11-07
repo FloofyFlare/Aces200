@@ -1,0 +1,27 @@
+Nov  7 04:47:31 nobanner-session-41113 systemd-logind[165]: New seat seat0.
+Nov  7 04:47:36 nobanner-session-41113 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 04:47:36 nobanner-session-41113 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:47:44 nobanner-session-41113 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:47:44 nobanner-session-41113 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 04:47:44 nobanner-session-41113 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:48:04 nobanner-session-41113 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 04:48:04 nobanner-session-41113 usermod[756]: change user 'sshd' password
+Nov  7 04:48:04 nobanner-session-41113 chage[763]: changed password expiry for sshd
+Nov  7 04:48:06 nobanner-session-41113 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 04:48:06 nobanner-session-41113 sshd[1198]: Server listening on :: port 22.
+Nov  7 04:48:08 nobanner-session-41113 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:48:08 nobanner-session-41113 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 04:48:08 nobanner-session-41113 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:48:15 nobanner-session-41113 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:53:22 nobanner-session-41113 useradd[1540]: new group: name=trx, GID=1001
+Nov  7 04:53:22 nobanner-session-41113 useradd[1540]: new user: name=trx, UID=1001, GID=1001, home=/home/trx, shell=/bin/bash, from=none
+Nov  7 04:53:22 nobanner-session-41113 usermod[1549]: change user 'trx' password
+Nov  7 04:53:22 nobanner-session-41113 sshd[1556]: Accepted password for trx from 10.0.3.1 port 38158 ssh2
+Nov  7 04:53:22 nobanner-session-41113 sshd[1556]: pam_unix(sshd:session): session opened for user trx by (uid=0)
+Nov  7 04:53:22 nobanner-session-41113 systemd-logind[165]: New session 1831 of user trx.
+Nov  7 04:53:22 nobanner-session-41113 systemd: pam_unix(systemd-user:session): session opened for user trx by (uid=0)
+Nov  7 04:53:23 nobanner-session-41113 sshd[1573]: Received disconnect from 10.0.3.1 port 38158:11: 
+Nov  7 04:53:23 nobanner-session-41113 sshd[1573]: Disconnected from user trx 10.0.3.1 port 38158
+Nov  7 04:53:23 nobanner-session-41113 sshd[1556]: pam_unix(sshd:session): session closed for user trx
+Nov  7 04:53:23 nobanner-session-41113 systemd-logind[165]: Session 1831 logged out. Waiting for processes to exit.
+Nov  7 04:53:23 nobanner-session-41113 systemd-logind[165]: Removed session 1831.

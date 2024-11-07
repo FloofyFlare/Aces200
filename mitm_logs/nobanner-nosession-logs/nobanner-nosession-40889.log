@@ -24,3 +24,20 @@ Started with the following options:
 2024-11-06 16:04:46.125 - [Info] Auto Access Enabled: true
 2024-11-06 16:04:46.125 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-11-06 16:04:46.136 - [Info] SSH man-in-the-middle server for 10.0.3.169 listening on 10.0.3.1:40889
+2024-11-06 16:11:06.802 - [Debug] [Connection] Attacker connected: 116.94.0.159 | Client Identification: SSH-2.0-OpenSSH_7.4
+2024-11-06 16:11:09.573 - [Debug] [Auth] Attacker 116.94.0.159 trying to authenticate with 'password'
+2024-11-06 16:11:09.574 - [Debug] [Auto Access] Attacker: 116.94.0.159, Threshold: 1, Attempts: 1
+2024-11-06 16:11:09.574 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-06 16:11:09.575 - [Debug] [Auto Access] Adding the following credentials: 'root:sipwise'
+2024-11-06 16:11:09.739 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-06 16:11:09.741 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-06 16:11:09.741 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.169
+2024-11-06 16:11:11.964 - [Debug] [LXC] Authentication Failed
+2024-11-06 16:11:11.964 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-06 16:11:11.965 - [Debug] [Auth] Attacker: 116.94.0.159 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-06 16:11:11.966 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-06 16:11:11.966 - [Debug] [Auth] Attacker: 116.94.0.159 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-06 16:11:11.970 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-06 16:11:11.971 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-06 16:11:13.076 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

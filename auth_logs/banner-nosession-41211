@@ -1,0 +1,25 @@
+Nov  7 07:31:54 banner-nosession-41211 systemd-logind[164]: New seat seat0.
+Nov  7 07:31:57 banner-nosession-41211 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 07:31:57 banner-nosession-41211 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:32:06 banner-nosession-41211 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:32:06 banner-nosession-41211 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 07:32:06 banner-nosession-41211 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:32:22 banner-nosession-41211 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 07:32:22 banner-nosession-41211 usermod[695]: change user 'sshd' password
+Nov  7 07:32:22 banner-nosession-41211 chage[702]: changed password expiry for sshd
+Nov  7 07:32:25 banner-nosession-41211 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 07:32:25 banner-nosession-41211 sshd[1137]: Server listening on :: port 22.
+Nov  7 07:32:26 banner-nosession-41211 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:32:27 banner-nosession-41211 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 07:32:27 banner-nosession-41211 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:32:35 banner-nosession-41211 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:33:02 banner-nosession-41211 useradd[1481]: new group: name=server, GID=1001
+Nov  7 07:33:02 banner-nosession-41211 useradd[1481]: new user: name=server, UID=1001, GID=1001, home=/home/server, shell=/bin/bash, from=none
+Nov  7 07:33:02 banner-nosession-41211 usermod[1490]: change user 'server' password
+Nov  7 07:33:02 banner-nosession-41211 sshd[1497]: Accepted password for server from 10.0.3.1 port 35076 ssh2
+Nov  7 07:33:02 banner-nosession-41211 sshd[1497]: pam_unix(sshd:session): session opened for user server by (uid=0)
+Nov  7 07:33:02 banner-nosession-41211 systemd-logind[164]: New session 2016 of user server.
+Nov  7 07:33:02 banner-nosession-41211 systemd: pam_unix(systemd-user:session): session opened for user server by (uid=0)
+Nov  7 07:33:09 banner-nosession-41211 sshd[1497]: pam_unix(sshd:session): session closed for user server
+Nov  7 07:33:09 banner-nosession-41211 systemd-logind[164]: Session 2016 logged out. Waiting for processes to exit.
+Nov  7 07:33:09 banner-nosession-41211 systemd-logind[164]: Removed session 2016.

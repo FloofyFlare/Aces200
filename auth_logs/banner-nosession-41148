@@ -1,0 +1,25 @@
+Nov  7 05:45:19 banner-nosession-41148 systemd-logind[166]: New seat seat0.
+Nov  7 05:45:22 banner-nosession-41148 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 05:45:22 banner-nosession-41148 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:45:31 banner-nosession-41148 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:45:31 banner-nosession-41148 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 05:45:31 banner-nosession-41148 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:45:47 banner-nosession-41148 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 05:45:47 banner-nosession-41148 usermod[695]: change user 'sshd' password
+Nov  7 05:45:47 banner-nosession-41148 chage[702]: changed password expiry for sshd
+Nov  7 05:45:50 banner-nosession-41148 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 05:45:50 banner-nosession-41148 sshd[1137]: Server listening on :: port 22.
+Nov  7 05:45:52 banner-nosession-41148 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:45:52 banner-nosession-41148 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 05:45:52 banner-nosession-41148 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:45:59 banner-nosession-41148 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:46:40 banner-nosession-41148 useradd[1481]: new group: name=sl, GID=1001
+Nov  7 05:46:40 banner-nosession-41148 useradd[1481]: new user: name=sl, UID=1001, GID=1001, home=/home/sl, shell=/bin/bash, from=none
+Nov  7 05:46:40 banner-nosession-41148 usermod[1490]: change user 'sl' password
+Nov  7 05:46:40 banner-nosession-41148 sshd[1497]: Accepted password for sl from 10.0.3.1 port 60188 ssh2
+Nov  7 05:46:40 banner-nosession-41148 sshd[1497]: pam_unix(sshd:session): session opened for user sl by (uid=0)
+Nov  7 05:46:40 banner-nosession-41148 systemd-logind[166]: New session 1895 of user sl.
+Nov  7 05:46:40 banner-nosession-41148 systemd: pam_unix(systemd-user:session): session opened for user sl by (uid=0)
+Nov  7 05:46:43 banner-nosession-41148 sshd[1497]: pam_unix(sshd:session): session closed for user sl
+Nov  7 05:46:43 banner-nosession-41148 systemd-logind[166]: Session 1895 logged out. Waiting for processes to exit.
+Nov  7 05:46:43 banner-nosession-41148 systemd-logind[166]: Removed session 1895.

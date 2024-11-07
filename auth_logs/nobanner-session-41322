@@ -1,0 +1,25 @@
+Nov  7 10:29:47 nobanner-session-41322 systemd-logind[164]: New seat seat0.
+Nov  7 10:29:50 nobanner-session-41322 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 10:29:50 nobanner-session-41322 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:29:59 nobanner-session-41322 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:29:59 nobanner-session-41322 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 10:29:59 nobanner-session-41322 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:30:13 nobanner-session-41322 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 10:30:13 nobanner-session-41322 usermod[756]: change user 'sshd' password
+Nov  7 10:30:14 nobanner-session-41322 chage[763]: changed password expiry for sshd
+Nov  7 10:30:15 nobanner-session-41322 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 10:30:15 nobanner-session-41322 sshd[1198]: Server listening on :: port 22.
+Nov  7 10:30:17 nobanner-session-41322 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:30:17 nobanner-session-41322 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 10:30:17 nobanner-session-41322 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:30:25 nobanner-session-41322 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:30:58 nobanner-session-41322 useradd[1539]: new group: name=debian, GID=1001
+Nov  7 10:30:58 nobanner-session-41322 useradd[1539]: new user: name=debian, UID=1001, GID=1001, home=/home/debian, shell=/bin/bash, from=none
+Nov  7 10:30:58 nobanner-session-41322 usermod[1548]: change user 'debian' password
+Nov  7 10:30:58 nobanner-session-41322 sshd[1555]: Accepted password for debian from 10.0.3.1 port 34218 ssh2
+Nov  7 10:30:58 nobanner-session-41322 sshd[1555]: pam_unix(sshd:session): session opened for user debian by (uid=0)
+Nov  7 10:30:58 nobanner-session-41322 systemd-logind[164]: New session 2206 of user debian.
+Nov  7 10:30:59 nobanner-session-41322 systemd: pam_unix(systemd-user:session): session opened for user debian by (uid=0)
+Nov  7 10:31:04 nobanner-session-41322 sshd[1555]: pam_unix(sshd:session): session closed for user debian
+Nov  7 10:31:04 nobanner-session-41322 systemd-logind[164]: Session 2206 logged out. Waiting for processes to exit.
+Nov  7 10:31:04 nobanner-session-41322 systemd-logind[164]: Removed session 2206.

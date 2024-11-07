@@ -1,0 +1,25 @@
+Nov  7 16:01:37 banner-session-41488 systemd-logind[164]: New seat seat0.
+Nov  7 16:01:41 banner-session-41488 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 16:01:41 banner-session-41488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 16:01:49 banner-session-41488 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 16:01:49 banner-session-41488 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 16:01:49 banner-session-41488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 16:01:58 banner-session-41488 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 16:01:58 banner-session-41488 usermod[756]: change user 'sshd' password
+Nov  7 16:01:58 banner-session-41488 chage[763]: changed password expiry for sshd
+Nov  7 16:02:00 banner-session-41488 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 16:02:00 banner-session-41488 sshd[1198]: Server listening on :: port 22.
+Nov  7 16:02:02 banner-session-41488 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 16:02:02 banner-session-41488 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 16:02:02 banner-session-41488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 16:02:09 banner-session-41488 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 16:03:39 banner-session-41488 useradd[1545]: new group: name=administrador, GID=1001
+Nov  7 16:03:39 banner-session-41488 useradd[1545]: new user: name=administrador, UID=1001, GID=1001, home=/home/administrador, shell=/bin/bash, from=none
+Nov  7 16:03:39 banner-session-41488 usermod[1554]: change user 'administrador' password
+Nov  7 16:03:39 banner-session-41488 sshd[1561]: Accepted password for administrador from 10.0.3.1 port 46366 ssh2
+Nov  7 16:03:39 banner-session-41488 sshd[1561]: pam_unix(sshd:session): session opened for user administrador by (uid=0)
+Nov  7 16:03:39 banner-session-41488 systemd-logind[164]: New session 2459 of user administrador.
+Nov  7 16:03:39 banner-session-41488 systemd: pam_unix(systemd-user:session): session opened for user administrador by (uid=0)
+Nov  7 16:03:45 banner-session-41488 sshd[1561]: pam_unix(sshd:session): session closed for user administrador
+Nov  7 16:03:45 banner-session-41488 systemd-logind[164]: Session 2459 logged out. Waiting for processes to exit.
+Nov  7 16:03:45 banner-session-41488 systemd-logind[164]: Removed session 2459.

@@ -1,0 +1,27 @@
+Nov  7 05:55:08 nobanner-nosession-41157 systemd-logind[164]: New seat seat0.
+Nov  7 05:55:12 nobanner-nosession-41157 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 05:55:12 nobanner-nosession-41157 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:55:21 nobanner-nosession-41157 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:55:21 nobanner-nosession-41157 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 05:55:21 nobanner-nosession-41157 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:55:43 nobanner-nosession-41157 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 05:55:44 nobanner-nosession-41157 usermod[695]: change user 'sshd' password
+Nov  7 05:55:44 nobanner-nosession-41157 chage[702]: changed password expiry for sshd
+Nov  7 05:55:46 nobanner-nosession-41157 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 05:55:46 nobanner-nosession-41157 sshd[1137]: Server listening on :: port 22.
+Nov  7 05:55:48 nobanner-nosession-41157 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:55:48 nobanner-nosession-41157 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 05:55:48 nobanner-nosession-41157 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:55:56 nobanner-nosession-41157 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:56:34 nobanner-nosession-41157 useradd[1475]: new group: name=yg, GID=1001
+Nov  7 05:56:34 nobanner-nosession-41157 useradd[1475]: new user: name=yg, UID=1001, GID=1001, home=/home/yg, shell=/bin/bash, from=none
+Nov  7 05:56:34 nobanner-nosession-41157 usermod[1484]: change user 'yg' password
+Nov  7 05:56:34 nobanner-nosession-41157 sshd[1491]: Accepted password for yg from 10.0.3.1 port 56784 ssh2
+Nov  7 05:56:34 nobanner-nosession-41157 sshd[1491]: pam_unix(sshd:session): session opened for user yg by (uid=0)
+Nov  7 05:56:34 nobanner-nosession-41157 systemd-logind[164]: New session 1911 of user yg.
+Nov  7 05:56:34 nobanner-nosession-41157 systemd: pam_unix(systemd-user:session): session opened for user yg by (uid=0)
+Nov  7 05:56:37 nobanner-nosession-41157 sshd[1508]: Received disconnect from 10.0.3.1 port 56784:11: 
+Nov  7 05:56:37 nobanner-nosession-41157 sshd[1508]: Disconnected from user yg 10.0.3.1 port 56784
+Nov  7 05:56:37 nobanner-nosession-41157 sshd[1491]: pam_unix(sshd:session): session closed for user yg
+Nov  7 05:56:37 nobanner-nosession-41157 systemd-logind[164]: Session 1911 logged out. Waiting for processes to exit.
+Nov  7 05:56:37 nobanner-nosession-41157 systemd-logind[164]: Removed session 1911.

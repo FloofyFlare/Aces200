@@ -1,0 +1,27 @@
+Nov  7 06:04:27 nobanner-nosession-41165 systemd-logind[164]: New seat seat0.
+Nov  7 06:04:30 nobanner-nosession-41165 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 06:04:30 nobanner-nosession-41165 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:04:39 nobanner-nosession-41165 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:04:39 nobanner-nosession-41165 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 06:04:39 nobanner-nosession-41165 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:04:52 nobanner-nosession-41165 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 06:04:52 nobanner-nosession-41165 usermod[695]: change user 'sshd' password
+Nov  7 06:04:52 nobanner-nosession-41165 chage[702]: changed password expiry for sshd
+Nov  7 06:04:54 nobanner-nosession-41165 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 06:04:54 nobanner-nosession-41165 sshd[1137]: Server listening on :: port 22.
+Nov  7 06:04:56 nobanner-nosession-41165 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:04:56 nobanner-nosession-41165 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 06:04:56 nobanner-nosession-41165 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:05:03 nobanner-nosession-41165 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:05:57 nobanner-nosession-41165 useradd[1475]: new group: name=kt, GID=1001
+Nov  7 06:05:57 nobanner-nosession-41165 useradd[1475]: new user: name=kt, UID=1001, GID=1001, home=/home/kt, shell=/bin/bash, from=none
+Nov  7 06:05:57 nobanner-nosession-41165 usermod[1484]: change user 'kt' password
+Nov  7 06:05:57 nobanner-nosession-41165 sshd[1491]: Accepted password for kt from 10.0.3.1 port 57028 ssh2
+Nov  7 06:05:57 nobanner-nosession-41165 sshd[1491]: pam_unix(sshd:session): session opened for user kt by (uid=0)
+Nov  7 06:05:57 nobanner-nosession-41165 systemd-logind[164]: New session 1929 of user kt.
+Nov  7 06:05:57 nobanner-nosession-41165 systemd: pam_unix(systemd-user:session): session opened for user kt by (uid=0)
+Nov  7 06:06:00 nobanner-nosession-41165 sshd[1508]: Received disconnect from 10.0.3.1 port 57028:11: 
+Nov  7 06:06:00 nobanner-nosession-41165 sshd[1508]: Disconnected from user kt 10.0.3.1 port 57028
+Nov  7 06:06:00 nobanner-nosession-41165 sshd[1491]: pam_unix(sshd:session): session closed for user kt
+Nov  7 06:06:00 nobanner-nosession-41165 systemd-logind[164]: Session 1929 logged out. Waiting for processes to exit.
+Nov  7 06:06:00 nobanner-nosession-41165 systemd-logind[164]: Removed session 1929.

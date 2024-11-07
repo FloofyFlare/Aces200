@@ -1,0 +1,27 @@
+Nov  7 05:58:50 banner-session-41160 systemd-logind[164]: New seat seat0.
+Nov  7 05:58:54 banner-session-41160 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 05:58:54 banner-session-41160 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:59:03 banner-session-41160 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:59:03 banner-session-41160 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 05:59:03 banner-session-41160 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:59:18 banner-session-41160 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 05:59:18 banner-session-41160 usermod[695]: change user 'sshd' password
+Nov  7 05:59:18 banner-session-41160 chage[702]: changed password expiry for sshd
+Nov  7 05:59:20 banner-session-41160 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 05:59:20 banner-session-41160 sshd[1137]: Server listening on :: port 22.
+Nov  7 05:59:22 banner-session-41160 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:59:22 banner-session-41160 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 05:59:22 banner-session-41160 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:59:31 banner-session-41160 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:00:12 banner-session-41160 useradd[1484]: new group: name=ng, GID=1001
+Nov  7 06:00:12 banner-session-41160 useradd[1484]: new user: name=ng, UID=1001, GID=1001, home=/home/ng, shell=/bin/bash, from=none
+Nov  7 06:00:12 banner-session-41160 usermod[1493]: change user 'ng' password
+Nov  7 06:00:13 banner-session-41160 sshd[1500]: Accepted password for ng from 10.0.3.1 port 52946 ssh2
+Nov  7 06:00:13 banner-session-41160 sshd[1500]: pam_unix(sshd:session): session opened for user ng by (uid=0)
+Nov  7 06:00:13 banner-session-41160 systemd-logind[164]: New session 1919 of user ng.
+Nov  7 06:00:13 banner-session-41160 systemd: pam_unix(systemd-user:session): session opened for user ng by (uid=0)
+Nov  7 06:00:15 banner-session-41160 sshd[1517]: Received disconnect from 10.0.3.1 port 52946:11: 
+Nov  7 06:00:15 banner-session-41160 sshd[1517]: Disconnected from user ng 10.0.3.1 port 52946
+Nov  7 06:00:15 banner-session-41160 sshd[1500]: pam_unix(sshd:session): session closed for user ng
+Nov  7 06:00:15 banner-session-41160 systemd-logind[164]: Session 1919 logged out. Waiting for processes to exit.
+Nov  7 06:00:15 banner-session-41160 systemd-logind[164]: Removed session 1919.

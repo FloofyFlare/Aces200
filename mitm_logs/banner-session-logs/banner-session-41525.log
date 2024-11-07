@@ -1,0 +1,38 @@
+(node:1727353) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-41525',
+  containerIp: '10.0.3.221',
+  mitmPort: 41525,
+  autoAccessFixed: 1
+}
+2024-11-07 12:14:43.373 - [Info] MITM Version: 2
+2024-11-07 12:14:43.375 - [Info] Auto Access Enabled: true
+2024-11-07 12:14:43.376 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 12:14:43.396 - [Info] SSH man-in-the-middle server for 10.0.3.221 listening on 10.0.3.1:41525
+2024-11-07 12:14:49.361 - [Debug] [Connection] Attacker connected: 8.154.32.31 | Client Identification: SSH-2.0-Go
+2024-11-07 12:14:51.144 - [Debug] [Auth] Attacker 8.154.32.31 trying to authenticate with 'none'
+2024-11-07 12:14:51.144 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:14:52.085 - [Debug] [Auth] Attacker 8.154.32.31 trying to authenticate with 'password'
+2024-11-07 12:14:52.086 - [Debug] [Auto Access] Attacker: 8.154.32.31, Threshold: 1, Attempts: 1
+2024-11-07 12:14:52.087 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-07 12:14:52.087 - [Debug] [Auto Access] Adding the following credentials: '1:1'
+2024-11-07 12:14:52.164 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-07 12:14:52.165 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 12:14:52.167 - [Debug] [Auth] Attacker: 8.154.32.31 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 12:14:52.627 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

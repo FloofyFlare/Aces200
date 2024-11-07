@@ -1,0 +1,27 @@
+Nov  6 22:59:53 nobanner-nosession-40942 systemd-logind[164]: New seat seat0.
+Nov  6 22:59:56 nobanner-nosession-40942 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 22:59:56 nobanner-nosession-40942 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:00:05 nobanner-nosession-40942 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:00:05 nobanner-nosession-40942 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 23:00:05 nobanner-nosession-40942 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:00:31 nobanner-nosession-40942 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 23:00:31 nobanner-nosession-40942 usermod[756]: change user 'sshd' password
+Nov  6 23:00:31 nobanner-nosession-40942 chage[763]: changed password expiry for sshd
+Nov  6 23:00:34 nobanner-nosession-40942 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 23:00:34 nobanner-nosession-40942 sshd[1198]: Server listening on :: port 22.
+Nov  6 23:00:36 nobanner-nosession-40942 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:00:36 nobanner-nosession-40942 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 23:00:36 nobanner-nosession-40942 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:00:43 nobanner-nosession-40942 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:05:40 nobanner-nosession-40942 useradd[1537]: new group: name=dai, GID=1001
+Nov  6 23:05:40 nobanner-nosession-40942 useradd[1537]: new user: name=dai, UID=1001, GID=1001, home=/home/dai, shell=/bin/bash, from=none
+Nov  6 23:05:41 nobanner-nosession-40942 usermod[1546]: change user 'dai' password
+Nov  6 23:05:41 nobanner-nosession-40942 sshd[1553]: Accepted password for dai from 10.0.3.1 port 46696 ssh2
+Nov  6 23:05:41 nobanner-nosession-40942 sshd[1553]: pam_unix(sshd:session): session opened for user dai by (uid=0)
+Nov  6 23:05:41 nobanner-nosession-40942 systemd-logind[164]: New session 1527 of user dai.
+Nov  6 23:05:41 nobanner-nosession-40942 systemd: pam_unix(systemd-user:session): session opened for user dai by (uid=0)
+Nov  6 23:05:42 nobanner-nosession-40942 sshd[1570]: Received disconnect from 10.0.3.1 port 46696:11: 
+Nov  6 23:05:42 nobanner-nosession-40942 sshd[1570]: Disconnected from user dai 10.0.3.1 port 46696
+Nov  6 23:05:42 nobanner-nosession-40942 sshd[1553]: pam_unix(sshd:session): session closed for user dai
+Nov  6 23:05:42 nobanner-nosession-40942 systemd-logind[164]: Session 1527 logged out. Waiting for processes to exit.
+Nov  6 23:05:42 nobanner-nosession-40942 systemd-logind[164]: Removed session 1527.

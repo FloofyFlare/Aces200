@@ -1,0 +1,27 @@
+Nov  6 23:09:07 banner-nosession-40946 systemd-logind[164]: New seat seat0.
+Nov  6 23:09:14 banner-nosession-40946 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 23:09:14 banner-nosession-40946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:09:22 banner-nosession-40946 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:09:22 banner-nosession-40946 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 23:09:22 banner-nosession-40946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:09:48 banner-nosession-40946 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 23:09:48 banner-nosession-40946 usermod[756]: change user 'sshd' password
+Nov  6 23:09:48 banner-nosession-40946 chage[763]: changed password expiry for sshd
+Nov  6 23:09:50 banner-nosession-40946 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 23:09:50 banner-nosession-40946 sshd[1198]: Server listening on :: port 22.
+Nov  6 23:09:55 banner-nosession-40946 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:09:55 banner-nosession-40946 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 23:09:55 banner-nosession-40946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:10:03 banner-nosession-40946 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:12:00 banner-nosession-40946 useradd[1542]: new group: name=knc, GID=1001
+Nov  6 23:12:00 banner-nosession-40946 useradd[1542]: new user: name=knc, UID=1001, GID=1001, home=/home/knc, shell=/bin/bash, from=none
+Nov  6 23:12:00 banner-nosession-40946 usermod[1551]: change user 'knc' password
+Nov  6 23:12:00 banner-nosession-40946 sshd[1558]: Accepted password for knc from 10.0.3.1 port 58152 ssh2
+Nov  6 23:12:00 banner-nosession-40946 sshd[1558]: pam_unix(sshd:session): session opened for user knc by (uid=0)
+Nov  6 23:12:00 banner-nosession-40946 systemd-logind[164]: New session 1533 of user knc.
+Nov  6 23:12:00 banner-nosession-40946 systemd: pam_unix(systemd-user:session): session opened for user knc by (uid=0)
+Nov  6 23:12:01 banner-nosession-40946 sshd[1575]: Received disconnect from 10.0.3.1 port 58152:11: 
+Nov  6 23:12:01 banner-nosession-40946 sshd[1575]: Disconnected from user knc 10.0.3.1 port 58152
+Nov  6 23:12:01 banner-nosession-40946 sshd[1558]: pam_unix(sshd:session): session closed for user knc
+Nov  6 23:12:01 banner-nosession-40946 systemd-logind[164]: Session 1533 logged out. Waiting for processes to exit.
+Nov  6 23:12:01 banner-nosession-40946 systemd-logind[164]: Removed session 1533.

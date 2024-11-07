@@ -1,0 +1,27 @@
+Nov  7 08:39:50 nobanner-nosession-41256 systemd-logind[165]: New seat seat0.
+Nov  7 08:39:53 nobanner-nosession-41256 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 08:39:53 nobanner-nosession-41256 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:40:01 nobanner-nosession-41256 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:40:01 nobanner-nosession-41256 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 08:40:01 nobanner-nosession-41256 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:40:14 nobanner-nosession-41256 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 08:40:14 nobanner-nosession-41256 usermod[756]: change user 'sshd' password
+Nov  7 08:40:14 nobanner-nosession-41256 chage[763]: changed password expiry for sshd
+Nov  7 08:40:17 nobanner-nosession-41256 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 08:40:17 nobanner-nosession-41256 sshd[1198]: Server listening on :: port 22.
+Nov  7 08:40:18 nobanner-nosession-41256 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:40:19 nobanner-nosession-41256 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 08:40:19 nobanner-nosession-41256 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:40:26 nobanner-nosession-41256 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:40:34 nobanner-nosession-41256 useradd[1536]: new group: name=shyunchen123, GID=1001
+Nov  7 08:40:34 nobanner-nosession-41256 useradd[1536]: new user: name=shyunchen123, UID=1001, GID=1001, home=/home/shyunchen123, shell=/bin/bash, from=none
+Nov  7 08:40:34 nobanner-nosession-41256 usermod[1545]: change user 'shyunchen123' password
+Nov  7 08:40:34 nobanner-nosession-41256 sshd[1552]: Accepted password for shyunchen123 from 10.0.3.1 port 57716 ssh2
+Nov  7 08:40:34 nobanner-nosession-41256 sshd[1552]: pam_unix(sshd:session): session opened for user shyunchen123 by (uid=0)
+Nov  7 08:40:34 nobanner-nosession-41256 systemd-logind[165]: New session 2087 of user shyunchen123.
+Nov  7 08:40:35 nobanner-nosession-41256 systemd: pam_unix(systemd-user:session): session opened for user shyunchen123 by (uid=0)
+Nov  7 08:40:36 nobanner-nosession-41256 sshd[1569]: Received disconnect from 10.0.3.1 port 57716:11: 
+Nov  7 08:40:36 nobanner-nosession-41256 sshd[1569]: Disconnected from user shyunchen123 10.0.3.1 port 57716
+Nov  7 08:40:36 nobanner-nosession-41256 sshd[1552]: pam_unix(sshd:session): session closed for user shyunchen123
+Nov  7 08:40:36 nobanner-nosession-41256 systemd-logind[165]: Session 2087 logged out. Waiting for processes to exit.
+Nov  7 08:40:36 nobanner-nosession-41256 systemd-logind[165]: Removed session 2087.

@@ -1,0 +1,27 @@
+Nov  7 09:51:39 banner-nosession-41289 systemd-logind[164]: New seat seat0.
+Nov  7 09:51:42 banner-nosession-41289 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 09:51:42 banner-nosession-41289 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:51:52 banner-nosession-41289 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:51:52 banner-nosession-41289 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 09:51:52 banner-nosession-41289 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:52:15 banner-nosession-41289 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 09:52:15 banner-nosession-41289 usermod[756]: change user 'sshd' password
+Nov  7 09:52:15 banner-nosession-41289 chage[763]: changed password expiry for sshd
+Nov  7 09:52:18 banner-nosession-41289 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 09:52:18 banner-nosession-41289 sshd[1198]: Server listening on :: port 22.
+Nov  7 09:52:21 banner-nosession-41289 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:52:21 banner-nosession-41289 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 09:52:21 banner-nosession-41289 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:52:29 banner-nosession-41289 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:52:40 banner-nosession-41289 useradd[1542]: new group: name=solr, GID=1001
+Nov  7 09:52:40 banner-nosession-41289 useradd[1542]: new user: name=solr, UID=1001, GID=1001, home=/home/solr, shell=/bin/bash, from=none
+Nov  7 09:52:41 banner-nosession-41289 usermod[1551]: change user 'solr' password
+Nov  7 09:52:41 banner-nosession-41289 sshd[1558]: Accepted password for solr from 10.0.3.1 port 34668 ssh2
+Nov  7 09:52:41 banner-nosession-41289 sshd[1558]: pam_unix(sshd:session): session opened for user solr by (uid=0)
+Nov  7 09:52:41 banner-nosession-41289 systemd-logind[164]: New session 2142 of user solr.
+Nov  7 09:52:41 banner-nosession-41289 systemd: pam_unix(systemd-user:session): session opened for user solr by (uid=0)
+Nov  7 09:52:45 banner-nosession-41289 sshd[1575]: Received disconnect from 10.0.3.1 port 34668:11: 
+Nov  7 09:52:45 banner-nosession-41289 sshd[1575]: Disconnected from user solr 10.0.3.1 port 34668
+Nov  7 09:52:45 banner-nosession-41289 sshd[1558]: pam_unix(sshd:session): session closed for user solr
+Nov  7 09:52:45 banner-nosession-41289 systemd-logind[164]: Session 2142 logged out. Waiting for processes to exit.
+Nov  7 09:52:45 banner-nosession-41289 systemd-logind[164]: Removed session 2142.

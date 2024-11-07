@@ -1,0 +1,27 @@
+Nov  7 06:13:03 banner-nosession-41172 systemd-logind[164]: New seat seat0.
+Nov  7 06:13:07 banner-nosession-41172 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 06:13:07 banner-nosession-41172 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:13:16 banner-nosession-41172 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:13:16 banner-nosession-41172 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 06:13:16 banner-nosession-41172 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:13:32 banner-nosession-41172 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 06:13:32 banner-nosession-41172 usermod[695]: change user 'sshd' password
+Nov  7 06:13:32 banner-nosession-41172 chage[702]: changed password expiry for sshd
+Nov  7 06:13:35 banner-nosession-41172 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 06:13:35 banner-nosession-41172 sshd[1137]: Server listening on :: port 22.
+Nov  7 06:13:36 banner-nosession-41172 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:13:36 banner-nosession-41172 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 06:13:36 banner-nosession-41172 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:13:44 banner-nosession-41172 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:15:34 banner-nosession-41172 useradd[1481]: new group: name=hbar, GID=1001
+Nov  7 06:15:34 banner-nosession-41172 useradd[1481]: new user: name=hbar, UID=1001, GID=1001, home=/home/hbar, shell=/bin/bash, from=none
+Nov  7 06:15:34 banner-nosession-41172 usermod[1490]: change user 'hbar' password
+Nov  7 06:15:34 banner-nosession-41172 sshd[1497]: Accepted password for hbar from 10.0.3.1 port 58110 ssh2
+Nov  7 06:15:34 banner-nosession-41172 sshd[1497]: pam_unix(sshd:session): session opened for user hbar by (uid=0)
+Nov  7 06:15:34 banner-nosession-41172 systemd-logind[164]: New session 1939 of user hbar.
+Nov  7 06:15:34 banner-nosession-41172 systemd: pam_unix(systemd-user:session): session opened for user hbar by (uid=0)
+Nov  7 06:15:35 banner-nosession-41172 sshd[1514]: Received disconnect from 10.0.3.1 port 58110:11: 
+Nov  7 06:15:35 banner-nosession-41172 sshd[1514]: Disconnected from user hbar 10.0.3.1 port 58110
+Nov  7 06:15:35 banner-nosession-41172 sshd[1497]: pam_unix(sshd:session): session closed for user hbar
+Nov  7 06:15:35 banner-nosession-41172 systemd-logind[164]: Session 1939 logged out. Waiting for processes to exit.
+Nov  7 06:15:35 banner-nosession-41172 systemd-logind[164]: Removed session 1939.

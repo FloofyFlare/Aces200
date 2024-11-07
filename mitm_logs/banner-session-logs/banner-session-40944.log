@@ -1,0 +1,31 @@
+(node:4187465) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-40944',
+  containerIp: '10.0.3.35',
+  mitmPort: 40944,
+  autoAccessFixed: 1
+}
+2024-11-06 18:06:46.816 - [Info] MITM Version: 2
+2024-11-06 18:06:46.819 - [Info] Auto Access Enabled: true
+2024-11-06 18:06:46.819 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 18:06:46.832 - [Info] SSH man-in-the-middle server for 10.0.3.35 listening on 10.0.3.1:40944
+2024-11-06 18:07:09.760 - [Debug] [Connection] Attacker connected: 79.110.62.21 | Client Identification: SSH-2.0-Go
+2024-11-06 18:07:10.497 - [Debug] [Auth] Attacker 79.110.62.21 trying to authenticate with 'none'
+2024-11-06 18:07:10.497 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-06 18:07:19.764 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

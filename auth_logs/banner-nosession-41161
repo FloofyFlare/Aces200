@@ -1,0 +1,27 @@
+Nov  7 05:59:57 banner-nosession-41161 systemd-logind[164]: New seat seat0.
+Nov  7 06:00:00 banner-nosession-41161 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 06:00:00 banner-nosession-41161 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:00:09 banner-nosession-41161 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:00:09 banner-nosession-41161 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 06:00:09 banner-nosession-41161 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:00:33 banner-nosession-41161 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 06:00:33 banner-nosession-41161 usermod[695]: change user 'sshd' password
+Nov  7 06:00:33 banner-nosession-41161 chage[702]: changed password expiry for sshd
+Nov  7 06:00:35 banner-nosession-41161 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 06:00:35 banner-nosession-41161 sshd[1137]: Server listening on :: port 22.
+Nov  7 06:00:37 banner-nosession-41161 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:00:37 banner-nosession-41161 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 06:00:37 banner-nosession-41161 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 06:00:45 banner-nosession-41161 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 06:02:20 banner-nosession-41161 useradd[1481]: new group: name=admin, GID=1001
+Nov  7 06:02:20 banner-nosession-41161 useradd[1481]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov  7 06:02:20 banner-nosession-41161 usermod[1490]: change user 'admin' password
+Nov  7 06:02:20 banner-nosession-41161 sshd[1497]: Accepted password for admin from 10.0.3.1 port 34238 ssh2
+Nov  7 06:02:20 banner-nosession-41161 sshd[1497]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov  7 06:02:20 banner-nosession-41161 systemd-logind[164]: New session 1923 of user admin.
+Nov  7 06:02:20 banner-nosession-41161 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov  7 06:02:22 banner-nosession-41161 sshd[1514]: Received disconnect from 10.0.3.1 port 34238:11: 
+Nov  7 06:02:22 banner-nosession-41161 sshd[1514]: Disconnected from user admin 10.0.3.1 port 34238
+Nov  7 06:02:22 banner-nosession-41161 sshd[1497]: pam_unix(sshd:session): session closed for user admin
+Nov  7 06:02:22 banner-nosession-41161 systemd-logind[164]: Session 1923 logged out. Waiting for processes to exit.
+Nov  7 06:02:22 banner-nosession-41161 systemd-logind[164]: Removed session 1923.

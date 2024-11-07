@@ -1,0 +1,27 @@
+Nov  7 02:47:25 nobanner-session-41046 systemd-logind[165]: New seat seat0.
+Nov  7 02:47:32 nobanner-session-41046 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 02:47:32 nobanner-session-41046 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 02:47:40 nobanner-session-41046 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 02:47:40 nobanner-session-41046 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 02:47:40 nobanner-session-41046 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 02:48:06 nobanner-session-41046 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 02:48:06 nobanner-session-41046 usermod[756]: change user 'sshd' password
+Nov  7 02:48:06 nobanner-session-41046 chage[763]: changed password expiry for sshd
+Nov  7 02:48:09 nobanner-session-41046 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 02:48:09 nobanner-session-41046 sshd[1198]: Server listening on :: port 22.
+Nov  7 02:48:11 nobanner-session-41046 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 02:48:11 nobanner-session-41046 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 02:48:11 nobanner-session-41046 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 02:48:20 nobanner-session-41046 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 02:48:42 nobanner-session-41046 useradd[1539]: new group: name=dg, GID=1001
+Nov  7 02:48:42 nobanner-session-41046 useradd[1539]: new user: name=dg, UID=1001, GID=1001, home=/home/dg, shell=/bin/bash, from=none
+Nov  7 02:48:42 nobanner-session-41046 usermod[1548]: change user 'dg' password
+Nov  7 02:48:42 nobanner-session-41046 sshd[1555]: Accepted password for dg from 10.0.3.1 port 56830 ssh2
+Nov  7 02:48:42 nobanner-session-41046 sshd[1555]: pam_unix(sshd:session): session opened for user dg by (uid=0)
+Nov  7 02:48:42 nobanner-session-41046 systemd-logind[165]: New session 1719 of user dg.
+Nov  7 02:48:42 nobanner-session-41046 systemd: pam_unix(systemd-user:session): session opened for user dg by (uid=0)
+Nov  7 02:48:46 nobanner-session-41046 sshd[1572]: Received disconnect from 10.0.3.1 port 56830:11: 
+Nov  7 02:48:46 nobanner-session-41046 sshd[1572]: Disconnected from user dg 10.0.3.1 port 56830
+Nov  7 02:48:46 nobanner-session-41046 sshd[1555]: pam_unix(sshd:session): session closed for user dg
+Nov  7 02:48:46 nobanner-session-41046 systemd-logind[165]: Session 1719 logged out. Waiting for processes to exit.
+Nov  7 02:48:46 nobanner-session-41046 systemd-logind[165]: Removed session 1719.

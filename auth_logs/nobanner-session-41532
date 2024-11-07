@@ -1,0 +1,27 @@
+Nov  7 17:25:13 nobanner-session-41532 systemd-logind[164]: New seat seat0.
+Nov  7 17:25:16 nobanner-session-41532 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 17:25:16 nobanner-session-41532 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:25:25 nobanner-session-41532 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:25:25 nobanner-session-41532 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 17:25:25 nobanner-session-41532 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:25:44 nobanner-session-41532 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 17:25:45 nobanner-session-41532 usermod[756]: change user 'sshd' password
+Nov  7 17:25:45 nobanner-session-41532 chage[763]: changed password expiry for sshd
+Nov  7 17:25:47 nobanner-session-41532 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 17:25:47 nobanner-session-41532 sshd[1198]: Server listening on :: port 22.
+Nov  7 17:25:51 nobanner-session-41532 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:25:51 nobanner-session-41532 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 17:25:51 nobanner-session-41532 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:26:00 nobanner-session-41532 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:30:41 nobanner-session-41532 useradd[1540]: new group: name=user, GID=1001
+Nov  7 17:30:41 nobanner-session-41532 useradd[1540]: new user: name=user, UID=1001, GID=1001, home=/home/user, shell=/bin/bash, from=none
+Nov  7 17:30:41 nobanner-session-41532 usermod[1549]: change user 'user' password
+Nov  7 17:30:41 nobanner-session-41532 sshd[1556]: Accepted password for user from 10.0.3.1 port 40722 ssh2
+Nov  7 17:30:41 nobanner-session-41532 sshd[1556]: pam_unix(sshd:session): session opened for user user by (uid=0)
+Nov  7 17:30:41 nobanner-session-41532 systemd-logind[164]: New session 2512 of user user.
+Nov  7 17:30:41 nobanner-session-41532 systemd: pam_unix(systemd-user:session): session opened for user user by (uid=0)
+Nov  7 17:30:43 nobanner-session-41532 sshd[1573]: Received disconnect from 10.0.3.1 port 40722:11: 
+Nov  7 17:30:43 nobanner-session-41532 sshd[1573]: Disconnected from user user 10.0.3.1 port 40722
+Nov  7 17:30:43 nobanner-session-41532 sshd[1556]: pam_unix(sshd:session): session closed for user user
+Nov  7 17:30:43 nobanner-session-41532 systemd-logind[164]: Session 2512 logged out. Waiting for processes to exit.
+Nov  7 17:30:43 nobanner-session-41532 systemd-logind[164]: Removed session 2512.

@@ -1,0 +1,27 @@
+Nov  7 10:21:42 nobanner-session-41314 systemd-logind[164]: New seat seat0.
+Nov  7 10:21:46 nobanner-session-41314 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 10:21:46 nobanner-session-41314 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:21:54 nobanner-session-41314 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:21:54 nobanner-session-41314 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 10:21:54 nobanner-session-41314 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:22:06 nobanner-session-41314 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 10:22:07 nobanner-session-41314 usermod[756]: change user 'sshd' password
+Nov  7 10:22:07 nobanner-session-41314 chage[763]: changed password expiry for sshd
+Nov  7 10:22:09 nobanner-session-41314 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 10:22:09 nobanner-session-41314 sshd[1198]: Server listening on :: port 22.
+Nov  7 10:22:11 nobanner-session-41314 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:22:11 nobanner-session-41314 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 10:22:11 nobanner-session-41314 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:22:18 nobanner-session-41314 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:22:26 nobanner-session-41314 useradd[1539]: new group: name=nameserver, GID=1001
+Nov  7 10:22:26 nobanner-session-41314 useradd[1539]: new user: name=nameserver, UID=1001, GID=1001, home=/home/nameserver, shell=/bin/bash, from=none
+Nov  7 10:22:26 nobanner-session-41314 usermod[1548]: change user 'nameserver' password
+Nov  7 10:22:26 nobanner-session-41314 sshd[1555]: Accepted password for nameserver from 10.0.3.1 port 57560 ssh2
+Nov  7 10:22:26 nobanner-session-41314 sshd[1555]: pam_unix(sshd:session): session opened for user nameserver by (uid=0)
+Nov  7 10:22:26 nobanner-session-41314 systemd-logind[164]: New session 2192 of user nameserver.
+Nov  7 10:22:26 nobanner-session-41314 systemd: pam_unix(systemd-user:session): session opened for user nameserver by (uid=0)
+Nov  7 10:22:27 nobanner-session-41314 sshd[1572]: Received disconnect from 10.0.3.1 port 57560:11: 
+Nov  7 10:22:27 nobanner-session-41314 sshd[1572]: Disconnected from user nameserver 10.0.3.1 port 57560
+Nov  7 10:22:27 nobanner-session-41314 sshd[1555]: pam_unix(sshd:session): session closed for user nameserver
+Nov  7 10:22:27 nobanner-session-41314 systemd-logind[164]: Session 2192 logged out. Waiting for processes to exit.
+Nov  7 10:22:27 nobanner-session-41314 systemd-logind[164]: Removed session 2192.

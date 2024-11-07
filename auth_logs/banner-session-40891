@@ -1,0 +1,27 @@
+Nov  6 21:08:10 banner-session-40891 systemd-logind[164]: New seat seat0.
+Nov  6 21:08:14 banner-session-40891 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 21:08:14 banner-session-40891 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 21:08:24 banner-session-40891 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 21:08:24 banner-session-40891 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 21:08:24 banner-session-40891 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 21:08:42 banner-session-40891 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 21:08:43 banner-session-40891 usermod[756]: change user 'sshd' password
+Nov  6 21:08:43 banner-session-40891 chage[763]: changed password expiry for sshd
+Nov  6 21:08:46 banner-session-40891 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 21:08:46 banner-session-40891 sshd[1198]: Server listening on :: port 22.
+Nov  6 21:08:48 banner-session-40891 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 21:08:48 banner-session-40891 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 21:08:48 banner-session-40891 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 21:08:55 banner-session-40891 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 21:11:59 banner-session-40891 useradd[1545]: new group: name=amp, GID=1001
+Nov  6 21:11:59 banner-session-40891 useradd[1545]: new user: name=amp, UID=1001, GID=1001, home=/home/amp, shell=/bin/bash, from=none
+Nov  6 21:11:59 banner-session-40891 usermod[1554]: change user 'amp' password
+Nov  6 21:12:00 banner-session-40891 sshd[1561]: Accepted password for amp from 10.0.3.1 port 58340 ssh2
+Nov  6 21:12:00 banner-session-40891 sshd[1561]: pam_unix(sshd:session): session opened for user amp by (uid=0)
+Nov  6 21:12:00 banner-session-40891 systemd-logind[164]: New session 1432 of user amp.
+Nov  6 21:12:00 banner-session-40891 systemd: pam_unix(systemd-user:session): session opened for user amp by (uid=0)
+Nov  6 21:12:01 banner-session-40891 sshd[1578]: Received disconnect from 10.0.3.1 port 58340:11: 
+Nov  6 21:12:01 banner-session-40891 sshd[1578]: Disconnected from user amp 10.0.3.1 port 58340
+Nov  6 21:12:01 banner-session-40891 sshd[1561]: pam_unix(sshd:session): session closed for user amp
+Nov  6 21:12:01 banner-session-40891 systemd-logind[164]: Session 1432 logged out. Waiting for processes to exit.
+Nov  6 21:12:01 banner-session-40891 systemd-logind[164]: Removed session 1432.

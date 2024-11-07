@@ -1,0 +1,27 @@
+Nov  6 23:31:24 nobanner-session-40957 systemd-logind[164]: New seat seat0.
+Nov  6 23:31:28 nobanner-session-40957 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 23:31:28 nobanner-session-40957 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:31:35 nobanner-session-40957 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:31:35 nobanner-session-40957 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 23:31:35 nobanner-session-40957 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:31:58 nobanner-session-40957 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 23:31:58 nobanner-session-40957 usermod[756]: change user 'sshd' password
+Nov  6 23:31:58 nobanner-session-40957 chage[763]: changed password expiry for sshd
+Nov  6 23:32:01 nobanner-session-40957 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 23:32:01 nobanner-session-40957 sshd[1198]: Server listening on :: port 22.
+Nov  6 23:32:04 nobanner-session-40957 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:32:04 nobanner-session-40957 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 23:32:04 nobanner-session-40957 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 23:32:12 nobanner-session-40957 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 23:37:16 nobanner-session-40957 useradd[1540]: new group: name=dcr, GID=1001
+Nov  6 23:37:16 nobanner-session-40957 useradd[1540]: new user: name=dcr, UID=1001, GID=1001, home=/home/dcr, shell=/bin/bash, from=none
+Nov  6 23:37:16 nobanner-session-40957 usermod[1549]: change user 'dcr' password
+Nov  6 23:37:17 nobanner-session-40957 sshd[1556]: Accepted password for dcr from 10.0.3.1 port 44530 ssh2
+Nov  6 23:37:17 nobanner-session-40957 sshd[1556]: pam_unix(sshd:session): session opened for user dcr by (uid=0)
+Nov  6 23:37:17 nobanner-session-40957 systemd-logind[164]: New session 1554 of user dcr.
+Nov  6 23:37:17 nobanner-session-40957 systemd: pam_unix(systemd-user:session): session opened for user dcr by (uid=0)
+Nov  6 23:37:17 nobanner-session-40957 sshd[1573]: Received disconnect from 10.0.3.1 port 44530:11: 
+Nov  6 23:37:17 nobanner-session-40957 sshd[1573]: Disconnected from user dcr 10.0.3.1 port 44530
+Nov  6 23:37:17 nobanner-session-40957 sshd[1556]: pam_unix(sshd:session): session closed for user dcr
+Nov  6 23:37:17 nobanner-session-40957 systemd-logind[164]: Session 1554 logged out. Waiting for processes to exit.
+Nov  6 23:37:17 nobanner-session-40957 systemd-logind[164]: Removed session 1554.

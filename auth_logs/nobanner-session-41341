@@ -1,0 +1,25 @@
+Nov  7 10:56:33 nobanner-session-41341 systemd-logind[164]: New seat seat0.
+Nov  7 10:56:36 nobanner-session-41341 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 10:56:36 nobanner-session-41341 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:56:44 nobanner-session-41341 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:56:44 nobanner-session-41341 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 10:56:44 nobanner-session-41341 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:57:00 nobanner-session-41341 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 10:57:00 nobanner-session-41341 usermod[756]: change user 'sshd' password
+Nov  7 10:57:00 nobanner-session-41341 chage[763]: changed password expiry for sshd
+Nov  7 10:57:02 nobanner-session-41341 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 10:57:02 nobanner-session-41341 sshd[1198]: Server listening on :: port 22.
+Nov  7 10:57:04 nobanner-session-41341 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:57:04 nobanner-session-41341 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 10:57:04 nobanner-session-41341 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:57:12 nobanner-session-41341 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:58:08 nobanner-session-41341 useradd[1539]: new group: name=jt, GID=1001
+Nov  7 10:58:08 nobanner-session-41341 useradd[1539]: new user: name=jt, UID=1001, GID=1001, home=/home/jt, shell=/bin/bash, from=none
+Nov  7 10:58:08 nobanner-session-41341 usermod[1548]: change user 'jt' password
+Nov  7 10:58:08 nobanner-session-41341 sshd[1555]: Accepted password for jt from 10.0.3.1 port 42300 ssh2
+Nov  7 10:58:08 nobanner-session-41341 sshd[1555]: pam_unix(sshd:session): session opened for user jt by (uid=0)
+Nov  7 10:58:08 nobanner-session-41341 systemd-logind[164]: New session 2237 of user jt.
+Nov  7 10:58:08 nobanner-session-41341 systemd: pam_unix(systemd-user:session): session opened for user jt by (uid=0)
+Nov  7 10:58:12 nobanner-session-41341 sshd[1555]: pam_unix(sshd:session): session closed for user jt
+Nov  7 10:58:12 nobanner-session-41341 systemd-logind[164]: Session 2237 logged out. Waiting for processes to exit.
+Nov  7 10:58:12 nobanner-session-41341 systemd-logind[164]: Removed session 2237.

@@ -1,0 +1,27 @@
+Nov  7 08:02:09 nobanner-nosession-41225 systemd-logind[164]: New seat seat0.
+Nov  7 08:02:13 nobanner-nosession-41225 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 08:02:13 nobanner-nosession-41225 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:02:22 nobanner-nosession-41225 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:02:22 nobanner-nosession-41225 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 08:02:22 nobanner-nosession-41225 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:02:32 nobanner-nosession-41225 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 08:02:32 nobanner-nosession-41225 usermod[756]: change user 'sshd' password
+Nov  7 08:02:32 nobanner-nosession-41225 chage[763]: changed password expiry for sshd
+Nov  7 08:02:34 nobanner-nosession-41225 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 08:02:34 nobanner-nosession-41225 sshd[1198]: Server listening on :: port 22.
+Nov  7 08:02:35 nobanner-nosession-41225 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:02:36 nobanner-nosession-41225 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 08:02:36 nobanner-nosession-41225 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:02:44 nobanner-nosession-41225 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:02:49 nobanner-nosession-41225 useradd[1536]: new group: name=guest, GID=1001
+Nov  7 08:02:49 nobanner-nosession-41225 useradd[1536]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov  7 08:02:50 nobanner-nosession-41225 usermod[1545]: change user 'guest' password
+Nov  7 08:02:50 nobanner-nosession-41225 sshd[1552]: Accepted password for guest from 10.0.3.1 port 56252 ssh2
+Nov  7 08:02:50 nobanner-nosession-41225 sshd[1552]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov  7 08:02:50 nobanner-nosession-41225 systemd-logind[164]: New session 2036 of user guest.
+Nov  7 08:02:50 nobanner-nosession-41225 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov  7 08:02:51 nobanner-nosession-41225 sshd[1569]: Received disconnect from 10.0.3.1 port 56252:11: 
+Nov  7 08:02:51 nobanner-nosession-41225 sshd[1569]: Disconnected from user guest 10.0.3.1 port 56252
+Nov  7 08:02:51 nobanner-nosession-41225 sshd[1552]: pam_unix(sshd:session): session closed for user guest
+Nov  7 08:02:51 nobanner-nosession-41225 systemd-logind[164]: Session 2036 logged out. Waiting for processes to exit.
+Nov  7 08:02:51 nobanner-nosession-41225 systemd-logind[164]: Removed session 2036.

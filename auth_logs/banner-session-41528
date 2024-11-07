@@ -1,0 +1,21 @@
+Nov  7 17:17:52 banner-session-41528 systemd-logind[165]: New seat seat0.
+Nov  7 17:17:56 banner-session-41528 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 17:17:56 banner-session-41528 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:18:04 banner-session-41528 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:18:04 banner-session-41528 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 17:18:04 banner-session-41528 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:18:15 banner-session-41528 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 17:18:15 banner-session-41528 usermod[756]: change user 'sshd' password
+Nov  7 17:18:15 banner-session-41528 chage[763]: changed password expiry for sshd
+Nov  7 17:18:18 banner-session-41528 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 17:18:18 banner-session-41528 sshd[1198]: Server listening on :: port 22.
+Nov  7 17:18:20 banner-session-41528 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:18:20 banner-session-41528 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 17:18:20 banner-session-41528 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:18:28 banner-session-41528 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:19:07 banner-session-41528 useradd[1545]: failed adding user 'root', data deleted
+Nov  7 17:19:07 banner-session-41528 usermod[1546]: change user 'root' password
+Nov  7 17:19:07 banner-session-41528 sshd[1553]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov  7 17:19:09 banner-session-41528 sshd[1553]: Failed password for root from 10.0.3.1 port 56438 ssh2
+Nov  7 17:19:09 banner-session-41528 sshd[1553]: Received disconnect from 10.0.3.1 port 56438:11:  [preauth]
+Nov  7 17:19:09 banner-session-41528 sshd[1553]: Disconnected from authenticating user root 10.0.3.1 port 56438 [preauth]

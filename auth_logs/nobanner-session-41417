@@ -1,0 +1,33 @@
+Nov  7 13:21:53 nobanner-session-41417 systemd-logind[164]: New seat seat0.
+Nov  7 13:21:56 nobanner-session-41417 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 13:21:56 nobanner-session-41417 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 13:22:05 nobanner-session-41417 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 13:22:05 nobanner-session-41417 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 13:22:05 nobanner-session-41417 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 13:22:13 nobanner-session-41417 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 13:22:13 nobanner-session-41417 usermod[756]: change user 'sshd' password
+Nov  7 13:22:13 nobanner-session-41417 chage[763]: changed password expiry for sshd
+Nov  7 13:22:15 nobanner-session-41417 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 13:22:15 nobanner-session-41417 sshd[1198]: Server listening on :: port 22.
+Nov  7 13:22:17 nobanner-session-41417 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 13:22:17 nobanner-session-41417 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 13:22:17 nobanner-session-41417 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 13:22:23 nobanner-session-41417 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 13:23:20 nobanner-session-41417 useradd[1539]: new group: name=nao, GID=1001
+Nov  7 13:23:20 nobanner-session-41417 useradd[1539]: new user: name=nao, UID=1001, GID=1001, home=/home/nao, shell=/bin/bash, from=none
+Nov  7 13:23:20 nobanner-session-41417 usermod[1548]: change user 'nao' password
+Nov  7 13:23:20 nobanner-session-41417 sshd[1555]: Accepted password for nao from 10.0.3.1 port 54756 ssh2
+Nov  7 13:23:20 nobanner-session-41417 sshd[1555]: pam_unix(sshd:session): session opened for user nao by (uid=0)
+Nov  7 13:23:20 nobanner-session-41417 systemd-logind[164]: New session 2368 of user nao.
+Nov  7 13:23:20 nobanner-session-41417 systemd: pam_unix(systemd-user:session): session opened for user nao by (uid=0)
+Nov  7 13:23:20 nobanner-session-41417 sshd[1572]: Received disconnect from 10.0.3.1 port 54756:11: 
+Nov  7 13:23:20 nobanner-session-41417 sshd[1572]: Disconnected from user nao 10.0.3.1 port 54756
+Nov  7 13:23:20 nobanner-session-41417 sshd[1555]: pam_unix(sshd:session): session closed for user nao
+Nov  7 13:23:20 nobanner-session-41417 systemd-logind[164]: Session 2368 logged out. Waiting for processes to exit.
+Nov  7 13:23:20 nobanner-session-41417 systemd-logind[164]: Removed session 2368.
+Nov  7 13:23:21 nobanner-session-41417 sshd[1573]: Accepted password for nao from 10.0.3.1 port 54760 ssh2
+Nov  7 13:23:21 nobanner-session-41417 sshd[1573]: pam_unix(sshd:session): session opened for user nao by (uid=0)
+Nov  7 13:23:21 nobanner-session-41417 systemd-logind[164]: New session 2370 of user nao.
+Nov  7 13:23:21 nobanner-session-41417 sshd[1573]: pam_unix(sshd:session): session closed for user nao
+Nov  7 13:23:21 nobanner-session-41417 systemd-logind[164]: Session 2370 logged out. Waiting for processes to exit.
+Nov  7 13:23:21 nobanner-session-41417 systemd-logind[164]: Removed session 2370.

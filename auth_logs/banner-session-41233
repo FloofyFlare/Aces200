@@ -1,0 +1,23 @@
+Nov  7 08:16:09 banner-session-41233 systemd-logind[164]: New seat seat0.
+Nov  7 08:16:12 banner-session-41233 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 08:16:12 banner-session-41233 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:16:21 banner-session-41233 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:16:21 banner-session-41233 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 08:16:21 banner-session-41233 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:16:33 banner-session-41233 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 08:16:33 banner-session-41233 usermod[756]: change user 'sshd' password
+Nov  7 08:16:33 banner-session-41233 chage[763]: changed password expiry for sshd
+Nov  7 08:16:35 banner-session-41233 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 08:16:35 banner-session-41233 sshd[1198]: Server listening on :: port 22.
+Nov  7 08:16:37 banner-session-41233 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:16:37 banner-session-41233 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 08:16:37 banner-session-41233 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 08:16:45 banner-session-41233 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 08:17:01 banner-session-41233 CRON[1545]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  7 08:17:01 banner-session-41233 CRON[1545]: pam_unix(cron:session): session closed for user root
+Nov  7 08:18:55 banner-session-41233 useradd[1548]: failed adding user 'root', data deleted
+Nov  7 08:18:55 banner-session-41233 usermod[1549]: change user 'root' password
+Nov  7 08:18:55 banner-session-41233 sshd[1556]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov  7 08:18:58 banner-session-41233 sshd[1556]: Failed password for root from 10.0.3.1 port 51586 ssh2
+Nov  7 08:18:58 banner-session-41233 sshd[1556]: Received disconnect from 10.0.3.1 port 51586:11:  [preauth]
+Nov  7 08:18:58 banner-session-41233 sshd[1556]: Disconnected from authenticating user root 10.0.3.1 port 51586 [preauth]

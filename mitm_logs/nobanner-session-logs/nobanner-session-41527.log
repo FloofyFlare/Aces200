@@ -1,0 +1,75 @@
+(node:1732745) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-41527',
+  containerIp: '10.0.3.214',
+  mitmPort: 41527,
+  autoAccessFixed: 1
+}
+2024-11-07 12:17:23.520 - [Info] MITM Version: 2
+2024-11-07 12:17:23.522 - [Info] Auto Access Enabled: true
+2024-11-07 12:17:23.523 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 12:17:23.534 - [Info] SSH man-in-the-middle server for 10.0.3.214 listening on 10.0.3.1:41527
+2024-11-07 12:17:26.571 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-07 12:17:26.681 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-07 12:17:27.227 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-07 12:17:27.227 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:17:27.395 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-07 12:17:27.397 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-07 12:17:27.397 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:17:27.457 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-07 12:17:27.458 - [Debug] [Auto Access] Attacker: 178.215.238.131, Threshold: 1, Attempts: 1
+2024-11-07 12:17:27.458 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-07 12:17:27.459 - [Debug] [Auto Access] Adding the following credentials: 'ubnt:pi'
+2024-11-07 12:17:27.880 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-07 12:17:27.883 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-07 12:17:27.884 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.214
+2024-11-07 12:17:27.893 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-07 12:17:27.894 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 12:17:27.895 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 12:17:27.956 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-07 12:17:28.148 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 12:17:28.220 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-07 12:17:28.268 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-07 12:17:28.285 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-07 12:17:28.285 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:17:28.398 - [Debug] [EXEC] Noninteractive mode attacker command: whoami
+2024-11-07 12:17:28.634 - [Debug] [Connection] Attacker closed connection
+2024-11-07 12:17:28.642 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-07 12:17:28.643 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-07 12:17:28.761 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-07 12:17:28.761 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 12:17:28.762 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 12:17:28.764 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-07 12:17:28.824 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-07 12:17:28.824 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:17:28.854 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-07 12:17:28.854 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:17:28.976 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 12:17:29.047 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-07 12:17:29.047 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 12:17:29.048 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 12:17:29.079 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-07 12:17:29.080 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-07 12:17:29.080 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.214
+2024-11-07 12:17:29.081 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-07 12:17:29.170 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-07 12:17:29.267 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 12:17:29.340 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-07 12:17:29.340 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:17:29.363 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

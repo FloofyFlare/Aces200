@@ -1,0 +1,29 @@
+Nov  7 09:14:17 banner-session-41274 systemd-logind[165]: New seat seat0.
+Nov  7 09:14:21 banner-session-41274 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 09:14:21 banner-session-41274 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:14:30 banner-session-41274 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:14:30 banner-session-41274 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 09:14:30 banner-session-41274 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:14:45 banner-session-41274 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 09:14:45 banner-session-41274 usermod[756]: change user 'sshd' password
+Nov  7 09:14:45 banner-session-41274 chage[763]: changed password expiry for sshd
+Nov  7 09:14:48 banner-session-41274 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 09:14:48 banner-session-41274 sshd[1198]: Server listening on :: port 22.
+Nov  7 09:14:49 banner-session-41274 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:14:50 banner-session-41274 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 09:14:50 banner-session-41274 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 09:14:56 banner-session-41274 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 09:17:01 banner-session-41274 CRON[1545]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  7 09:17:01 banner-session-41274 CRON[1545]: pam_unix(cron:session): session closed for user root
+Nov  7 09:28:57 banner-session-41274 useradd[1549]: failed adding user 'games', data deleted
+Nov  7 09:28:57 banner-session-41274 usermod[1550]: change user 'games' password
+Nov  7 09:28:57 banner-session-41274 sshd[1557]: Accepted password for games from 10.0.3.1 port 38346 ssh2
+Nov  7 09:28:57 banner-session-41274 sshd[1557]: pam_unix(sshd:session): session opened for user games by (uid=0)
+Nov  7 09:28:57 banner-session-41274 systemd-logind[165]: New session 2120 of user games.
+Nov  7 09:28:57 banner-session-41274 systemd: pam_unix(systemd-user:session): session opened for user games by (uid=0)
+Nov  7 09:29:05 banner-session-41274 nologin: Attempted login by games (UID: 5) on UNKNOWN
+Nov  7 09:29:05 banner-session-41274 sshd[1574]: Received disconnect from 10.0.3.1 port 38346:11: 
+Nov  7 09:29:05 banner-session-41274 sshd[1574]: Disconnected from user games 10.0.3.1 port 38346
+Nov  7 09:29:05 banner-session-41274 sshd[1557]: pam_unix(sshd:session): session closed for user games
+Nov  7 09:29:06 banner-session-41274 systemd-logind[165]: Session 2120 logged out. Waiting for processes to exit.
+Nov  7 09:29:06 banner-session-41274 systemd-logind[165]: Removed session 2120.

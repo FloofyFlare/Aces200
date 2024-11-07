@@ -1,0 +1,27 @@
+Nov  7 03:50:34 banner-session-41086 systemd-logind[164]: New seat seat0.
+Nov  7 03:50:37 banner-session-41086 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 03:50:37 banner-session-41086 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 03:50:45 banner-session-41086 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 03:50:45 banner-session-41086 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 03:50:45 banner-session-41086 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 03:50:53 banner-session-41086 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 03:50:53 banner-session-41086 usermod[756]: change user 'sshd' password
+Nov  7 03:50:53 banner-session-41086 chage[763]: changed password expiry for sshd
+Nov  7 03:50:55 banner-session-41086 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 03:50:55 banner-session-41086 sshd[1198]: Server listening on :: port 22.
+Nov  7 03:50:56 banner-session-41086 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 03:50:56 banner-session-41086 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 03:50:56 banner-session-41086 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 03:51:04 banner-session-41086 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 03:56:27 banner-session-41086 useradd[1546]: new group: name=eth, GID=1001
+Nov  7 03:56:27 banner-session-41086 useradd[1546]: new user: name=eth, UID=1001, GID=1001, home=/home/eth, shell=/bin/bash, from=none
+Nov  7 03:56:27 banner-session-41086 usermod[1555]: change user 'eth' password
+Nov  7 03:56:28 banner-session-41086 sshd[1562]: Accepted password for eth from 10.0.3.1 port 48824 ssh2
+Nov  7 03:56:28 banner-session-41086 sshd[1562]: pam_unix(sshd:session): session opened for user eth by (uid=0)
+Nov  7 03:56:28 banner-session-41086 systemd-logind[164]: New session 1784 of user eth.
+Nov  7 03:56:28 banner-session-41086 systemd: pam_unix(systemd-user:session): session opened for user eth by (uid=0)
+Nov  7 03:56:28 banner-session-41086 sshd[1579]: Received disconnect from 10.0.3.1 port 48824:11: 
+Nov  7 03:56:28 banner-session-41086 sshd[1579]: Disconnected from user eth 10.0.3.1 port 48824
+Nov  7 03:56:28 banner-session-41086 sshd[1562]: pam_unix(sshd:session): session closed for user eth
+Nov  7 03:56:28 banner-session-41086 systemd-logind[164]: Session 1784 logged out. Waiting for processes to exit.
+Nov  7 03:56:28 banner-session-41086 systemd-logind[164]: Removed session 1784.

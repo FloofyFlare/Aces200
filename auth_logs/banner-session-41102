@@ -1,0 +1,27 @@
+Nov  7 04:26:30 banner-session-41102 systemd-logind[164]: New seat seat0.
+Nov  7 04:26:33 banner-session-41102 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 04:26:33 banner-session-41102 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:26:41 banner-session-41102 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:26:41 banner-session-41102 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 04:26:41 banner-session-41102 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:26:59 banner-session-41102 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 04:26:59 banner-session-41102 usermod[756]: change user 'sshd' password
+Nov  7 04:26:59 banner-session-41102 chage[763]: changed password expiry for sshd
+Nov  7 04:27:02 banner-session-41102 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 04:27:02 banner-session-41102 sshd[1198]: Server listening on :: port 22.
+Nov  7 04:27:03 banner-session-41102 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:27:03 banner-session-41102 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 04:27:03 banner-session-41102 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:27:10 banner-session-41102 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:28:04 banner-session-41102 useradd[1545]: new group: name=ada, GID=1001
+Nov  7 04:28:04 banner-session-41102 useradd[1545]: new user: name=ada, UID=1001, GID=1001, home=/home/ada, shell=/bin/bash, from=none
+Nov  7 04:28:04 banner-session-41102 usermod[1554]: change user 'ada' password
+Nov  7 04:28:04 banner-session-41102 sshd[1561]: Accepted password for ada from 10.0.3.1 port 40410 ssh2
+Nov  7 04:28:05 banner-session-41102 sshd[1561]: pam_unix(sshd:session): session opened for user ada by (uid=0)
+Nov  7 04:28:05 banner-session-41102 systemd-logind[164]: New session 1811 of user ada.
+Nov  7 04:28:05 banner-session-41102 systemd: pam_unix(systemd-user:session): session opened for user ada by (uid=0)
+Nov  7 04:28:05 banner-session-41102 sshd[1578]: Received disconnect from 10.0.3.1 port 40410:11: 
+Nov  7 04:28:05 banner-session-41102 sshd[1578]: Disconnected from user ada 10.0.3.1 port 40410
+Nov  7 04:28:05 banner-session-41102 sshd[1561]: pam_unix(sshd:session): session closed for user ada
+Nov  7 04:28:05 banner-session-41102 systemd-logind[164]: Session 1811 logged out. Waiting for processes to exit.
+Nov  7 04:28:05 banner-session-41102 systemd-logind[164]: Removed session 1811.

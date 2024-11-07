@@ -1,0 +1,57 @@
+(node:631279) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-41157',
+  containerIp: '10.0.3.183',
+  mitmPort: 41157,
+  autoAccessFixed: 1
+}
+2024-11-07 00:55:58.374 - [Info] MITM Version: 2
+2024-11-07 00:55:58.395 - [Info] Auto Access Enabled: true
+2024-11-07 00:55:58.398 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 00:55:58.430 - [Info] SSH man-in-the-middle server for 10.0.3.183 listening on 10.0.3.1:41157
+2024-11-07 00:56:33.186 - [Debug] [Connection] Attacker connected: 193.70.85.215 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-07 00:56:34.068 - [Debug] [Auth] Attacker 193.70.85.215 trying to authenticate with 'password'
+2024-11-07 00:56:34.070 - [Debug] [Auto Access] Attacker: 193.70.85.215, Threshold: 1, Attempts: 1
+2024-11-07 00:56:34.070 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-07 00:56:34.070 - [Debug] [Auto Access] Adding the following credentials: 'yg:123'
+2024-11-07 00:56:34.509 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-07 00:56:34.512 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-07 00:56:34.512 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.183
+2024-11-07 00:56:34.617 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-07 00:56:34.957 - [Debug] [EXEC] Noninteractive mode attacker command: cd ~; chattr -ia .ssh; lockr -ia .ssh
+2024-11-07 00:56:35.574 - [Debug] [Connection] Attacker connected: 193.70.85.215 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-07 00:56:36.118 - [Debug] [Auth] Attacker 193.70.85.215 trying to authenticate with 'password'
+2024-11-07 00:56:36.119 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 00:56:36.120 - [Debug] [Auth] Attacker: 193.70.85.215 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 00:56:36.287 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 00:56:36.374 - [Debug] [Connection] Attacker connected: 193.70.85.215 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-07 00:56:36.538 - [Debug] [Connection] Attacker connected: 195.178.110.89 | Client Identification: SSH-2.0-Go
+2024-11-07 00:56:36.935 - [Debug] [Auth] Attacker 193.70.85.215 trying to authenticate with 'password'
+2024-11-07 00:56:36.936 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 00:56:36.937 - [Debug] [Auth] Attacker: 193.70.85.215 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 00:56:37.107 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 00:56:37.108 - [Debug] [Auth] Attacker 195.178.110.89 trying to authenticate with 'none'
+2024-11-07 00:56:37.108 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 00:56:37.276 - [Debug] [Connection] Attacker closed connection
+2024-11-07 00:56:37.285 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-07 00:56:37.293 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-07 00:56:37.324 - [Debug] [Auth] Attacker 195.178.110.89 trying to authenticate with 'password'
+2024-11-07 00:56:37.325 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 00:56:37.327 - [Debug] [Auth] Attacker: 195.178.110.89 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 00:56:37.541 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

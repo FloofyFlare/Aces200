@@ -1,0 +1,25 @@
+Nov  7 17:25:17 banner-session-41533 systemd-logind[164]: New seat seat0.
+Nov  7 17:25:20 banner-session-41533 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 17:25:20 banner-session-41533 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:25:28 banner-session-41533 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:25:28 banner-session-41533 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 17:25:28 banner-session-41533 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:25:58 banner-session-41533 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 17:25:58 banner-session-41533 usermod[756]: change user 'sshd' password
+Nov  7 17:25:58 banner-session-41533 chage[763]: changed password expiry for sshd
+Nov  7 17:26:01 banner-session-41533 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 17:26:01 banner-session-41533 sshd[1198]: Server listening on :: port 22.
+Nov  7 17:26:02 banner-session-41533 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:26:02 banner-session-41533 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 17:26:02 banner-session-41533 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:26:08 banner-session-41533 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:26:26 banner-session-41533 useradd[1545]: new group: name=azt, GID=1001
+Nov  7 17:26:26 banner-session-41533 useradd[1545]: new user: name=azt, UID=1001, GID=1001, home=/home/azt, shell=/bin/bash, from=none
+Nov  7 17:26:27 banner-session-41533 usermod[1554]: change user 'azt' password
+Nov  7 17:26:27 banner-session-41533 sshd[1561]: Accepted password for azt from 10.0.3.1 port 58360 ssh2
+Nov  7 17:26:27 banner-session-41533 sshd[1561]: pam_unix(sshd:session): session opened for user azt by (uid=0)
+Nov  7 17:26:27 banner-session-41533 systemd-logind[164]: New session 2510 of user azt.
+Nov  7 17:26:27 banner-session-41533 systemd: pam_unix(systemd-user:session): session opened for user azt by (uid=0)
+Nov  7 17:26:35 banner-session-41533 sshd[1561]: pam_unix(sshd:session): session closed for user azt
+Nov  7 17:26:35 banner-session-41533 systemd-logind[164]: Session 2510 logged out. Waiting for processes to exit.
+Nov  7 17:26:35 banner-session-41533 systemd-logind[164]: Removed session 2510.

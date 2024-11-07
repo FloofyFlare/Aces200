@@ -1,0 +1,33 @@
+Nov  7 10:31:30 banner-session-41323 systemd-logind[164]: New seat seat0.
+Nov  7 10:31:34 banner-session-41323 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 10:31:34 banner-session-41323 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:31:42 banner-session-41323 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:31:42 banner-session-41323 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 10:31:42 banner-session-41323 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:31:53 banner-session-41323 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 10:31:53 banner-session-41323 usermod[756]: change user 'sshd' password
+Nov  7 10:31:53 banner-session-41323 chage[763]: changed password expiry for sshd
+Nov  7 10:31:56 banner-session-41323 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 10:31:56 banner-session-41323 sshd[1198]: Server listening on :: port 22.
+Nov  7 10:31:57 banner-session-41323 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:31:57 banner-session-41323 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 10:31:57 banner-session-41323 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:32:06 banner-session-41323 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:32:45 banner-session-41323 useradd[1545]: new group: name=amax, GID=1001
+Nov  7 10:32:45 banner-session-41323 useradd[1545]: new user: name=amax, UID=1001, GID=1001, home=/home/amax, shell=/bin/bash, from=none
+Nov  7 10:32:46 banner-session-41323 usermod[1554]: change user 'amax' password
+Nov  7 10:32:46 banner-session-41323 sshd[1561]: Accepted password for amax from 10.0.3.1 port 52190 ssh2
+Nov  7 10:32:46 banner-session-41323 sshd[1561]: pam_unix(sshd:session): session opened for user amax by (uid=0)
+Nov  7 10:32:46 banner-session-41323 systemd-logind[164]: New session 2208 of user amax.
+Nov  7 10:32:46 banner-session-41323 systemd: pam_unix(systemd-user:session): session opened for user amax by (uid=0)
+Nov  7 10:32:46 banner-session-41323 sshd[1578]: Received disconnect from 10.0.3.1 port 52190:11: 
+Nov  7 10:32:46 banner-session-41323 sshd[1578]: Disconnected from user amax 10.0.3.1 port 52190
+Nov  7 10:32:46 banner-session-41323 sshd[1561]: pam_unix(sshd:session): session closed for user amax
+Nov  7 10:32:46 banner-session-41323 systemd-logind[164]: Session 2208 logged out. Waiting for processes to exit.
+Nov  7 10:32:46 banner-session-41323 systemd-logind[164]: Removed session 2208.
+Nov  7 10:32:48 banner-session-41323 sshd[1579]: Accepted password for amax from 10.0.3.1 port 52200 ssh2
+Nov  7 10:32:48 banner-session-41323 sshd[1579]: pam_unix(sshd:session): session opened for user amax by (uid=0)
+Nov  7 10:32:48 banner-session-41323 systemd-logind[164]: New session 2210 of user amax.
+Nov  7 10:32:48 banner-session-41323 sshd[1579]: pam_unix(sshd:session): session closed for user amax
+Nov  7 10:32:48 banner-session-41323 systemd-logind[164]: Session 2210 logged out. Waiting for processes to exit.
+Nov  7 10:32:48 banner-session-41323 systemd-logind[164]: Removed session 2210.

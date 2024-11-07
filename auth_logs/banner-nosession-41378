@@ -1,0 +1,25 @@
+Nov  7 11:55:13 banner-nosession-41378 systemd-logind[165]: New seat seat0.
+Nov  7 11:55:16 banner-nosession-41378 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 11:55:16 banner-nosession-41378 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:55:24 banner-nosession-41378 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:55:24 banner-nosession-41378 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 11:55:24 banner-nosession-41378 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:55:35 banner-nosession-41378 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 11:55:35 banner-nosession-41378 usermod[756]: change user 'sshd' password
+Nov  7 11:55:35 banner-nosession-41378 chage[763]: changed password expiry for sshd
+Nov  7 11:55:37 banner-nosession-41378 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 11:55:37 banner-nosession-41378 sshd[1198]: Server listening on :: port 22.
+Nov  7 11:55:39 banner-nosession-41378 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:55:39 banner-nosession-41378 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 11:55:39 banner-nosession-41378 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:55:46 banner-nosession-41378 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:57:09 banner-nosession-41378 useradd[1542]: new group: name=minecraft, GID=1001
+Nov  7 11:57:09 banner-nosession-41378 useradd[1542]: new user: name=minecraft, UID=1001, GID=1001, home=/home/minecraft, shell=/bin/bash, from=none
+Nov  7 11:57:09 banner-nosession-41378 usermod[1551]: change user 'minecraft' password
+Nov  7 11:57:10 banner-nosession-41378 sshd[1558]: Accepted password for minecraft from 10.0.3.1 port 35676 ssh2
+Nov  7 11:57:10 banner-nosession-41378 sshd[1558]: pam_unix(sshd:session): session opened for user minecraft by (uid=0)
+Nov  7 11:57:10 banner-nosession-41378 systemd-logind[165]: New session 2300 of user minecraft.
+Nov  7 11:57:10 banner-nosession-41378 systemd: pam_unix(systemd-user:session): session opened for user minecraft by (uid=0)
+Nov  7 11:57:15 banner-nosession-41378 sshd[1558]: pam_unix(sshd:session): session closed for user minecraft
+Nov  7 11:57:15 banner-nosession-41378 systemd-logind[165]: Session 2300 logged out. Waiting for processes to exit.
+Nov  7 11:57:15 banner-nosession-41378 systemd-logind[165]: Removed session 2300.

@@ -1,0 +1,25 @@
+Nov  7 12:05:08 nobanner-session-41383 systemd-logind[164]: New seat seat0.
+Nov  7 12:05:11 nobanner-session-41383 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 12:05:11 nobanner-session-41383 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:05:20 nobanner-session-41383 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:05:20 nobanner-session-41383 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 12:05:20 nobanner-session-41383 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:05:36 nobanner-session-41383 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 12:05:37 nobanner-session-41383 usermod[756]: change user 'sshd' password
+Nov  7 12:05:37 nobanner-session-41383 chage[763]: changed password expiry for sshd
+Nov  7 12:05:39 nobanner-session-41383 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 12:05:39 nobanner-session-41383 sshd[1198]: Server listening on :: port 22.
+Nov  7 12:05:42 nobanner-session-41383 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:05:42 nobanner-session-41383 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 12:05:42 nobanner-session-41383 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:05:56 nobanner-session-41383 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:07:01 nobanner-session-41383 useradd[1539]: new group: name=nagios, GID=1001
+Nov  7 12:07:01 nobanner-session-41383 useradd[1539]: new user: name=nagios, UID=1001, GID=1001, home=/home/nagios, shell=/bin/bash, from=none
+Nov  7 12:07:01 nobanner-session-41383 usermod[1548]: change user 'nagios' password
+Nov  7 12:07:01 nobanner-session-41383 sshd[1555]: Accepted password for nagios from 10.0.3.1 port 59774 ssh2
+Nov  7 12:07:01 nobanner-session-41383 sshd[1555]: pam_unix(sshd:session): session opened for user nagios by (uid=0)
+Nov  7 12:07:01 nobanner-session-41383 systemd-logind[164]: New session 2310 of user nagios.
+Nov  7 12:07:01 nobanner-session-41383 systemd: pam_unix(systemd-user:session): session opened for user nagios by (uid=0)
+Nov  7 12:07:06 nobanner-session-41383 sshd[1555]: pam_unix(sshd:session): session closed for user nagios
+Nov  7 12:07:06 nobanner-session-41383 systemd-logind[164]: Session 2310 logged out. Waiting for processes to exit.
+Nov  7 12:07:06 nobanner-session-41383 systemd-logind[164]: Removed session 2310.

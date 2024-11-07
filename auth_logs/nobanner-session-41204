@@ -1,0 +1,25 @@
+Nov  7 07:18:29 nobanner-session-41204 systemd-logind[164]: New seat seat0.
+Nov  7 07:18:32 nobanner-session-41204 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 07:18:32 nobanner-session-41204 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:18:41 nobanner-session-41204 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:18:41 nobanner-session-41204 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 07:18:41 nobanner-session-41204 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:18:55 nobanner-session-41204 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 07:18:55 nobanner-session-41204 usermod[756]: change user 'sshd' password
+Nov  7 07:18:55 nobanner-session-41204 chage[763]: changed password expiry for sshd
+Nov  7 07:18:58 nobanner-session-41204 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 07:18:58 nobanner-session-41204 sshd[1198]: Server listening on :: port 22.
+Nov  7 07:19:01 nobanner-session-41204 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:19:01 nobanner-session-41204 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 07:19:01 nobanner-session-41204 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 07:19:08 nobanner-session-41204 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 07:20:14 nobanner-session-41204 useradd[1539]: new group: name=pp1, GID=1001
+Nov  7 07:20:14 nobanner-session-41204 useradd[1539]: new user: name=pp1, UID=1001, GID=1001, home=/home/pp1, shell=/bin/bash, from=none
+Nov  7 07:20:14 nobanner-session-41204 usermod[1548]: change user 'pp1' password
+Nov  7 07:20:14 nobanner-session-41204 sshd[1555]: Accepted password for pp1 from 10.0.3.1 port 48770 ssh2
+Nov  7 07:20:14 nobanner-session-41204 sshd[1555]: pam_unix(sshd:session): session opened for user pp1 by (uid=0)
+Nov  7 07:20:14 nobanner-session-41204 systemd-logind[164]: New session 2004 of user pp1.
+Nov  7 07:20:14 nobanner-session-41204 systemd: pam_unix(systemd-user:session): session opened for user pp1 by (uid=0)
+Nov  7 07:20:20 nobanner-session-41204 sshd[1555]: pam_unix(sshd:session): session closed for user pp1
+Nov  7 07:20:20 nobanner-session-41204 systemd-logind[164]: Session 2004 logged out. Waiting for processes to exit.
+Nov  7 07:20:20 nobanner-session-41204 systemd-logind[164]: Removed session 2004.

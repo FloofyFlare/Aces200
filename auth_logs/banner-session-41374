@@ -1,0 +1,25 @@
+Nov  7 11:50:31 banner-session-41374 systemd-logind[165]: New seat seat0.
+Nov  7 11:50:34 banner-session-41374 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 11:50:34 banner-session-41374 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:50:42 banner-session-41374 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:50:42 banner-session-41374 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 11:50:42 banner-session-41374 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:50:59 banner-session-41374 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 11:51:00 banner-session-41374 usermod[756]: change user 'sshd' password
+Nov  7 11:51:00 banner-session-41374 chage[763]: changed password expiry for sshd
+Nov  7 11:51:03 banner-session-41374 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 11:51:03 banner-session-41374 sshd[1198]: Server listening on :: port 22.
+Nov  7 11:51:05 banner-session-41374 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:51:05 banner-session-41374 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 11:51:05 banner-session-41374 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:51:19 banner-session-41374 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:52:24 banner-session-41374 useradd[1545]: new group: name=radmin, GID=1001
+Nov  7 11:52:24 banner-session-41374 useradd[1545]: new user: name=radmin, UID=1001, GID=1001, home=/home/radmin, shell=/bin/bash, from=none
+Nov  7 11:52:25 banner-session-41374 usermod[1554]: change user 'radmin' password
+Nov  7 11:52:25 banner-session-41374 sshd[1561]: Accepted password for radmin from 10.0.3.1 port 37446 ssh2
+Nov  7 11:52:25 banner-session-41374 sshd[1561]: pam_unix(sshd:session): session opened for user radmin by (uid=0)
+Nov  7 11:52:25 banner-session-41374 systemd-logind[165]: New session 2298 of user radmin.
+Nov  7 11:52:25 banner-session-41374 systemd: pam_unix(systemd-user:session): session opened for user radmin by (uid=0)
+Nov  7 11:52:30 banner-session-41374 sshd[1561]: pam_unix(sshd:session): session closed for user radmin
+Nov  7 11:52:30 banner-session-41374 systemd-logind[165]: Session 2298 logged out. Waiting for processes to exit.
+Nov  7 11:52:30 banner-session-41374 systemd-logind[165]: Removed session 2298.

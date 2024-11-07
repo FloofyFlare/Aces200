@@ -1,0 +1,27 @@
+Nov  7 10:00:59 nobanner-nosession-41296 systemd-logind[164]: New seat seat0.
+Nov  7 10:01:03 nobanner-nosession-41296 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 10:01:03 nobanner-nosession-41296 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:01:11 nobanner-nosession-41296 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:01:11 nobanner-nosession-41296 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 10:01:11 nobanner-nosession-41296 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:01:24 nobanner-nosession-41296 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 10:01:24 nobanner-nosession-41296 usermod[756]: change user 'sshd' password
+Nov  7 10:01:24 nobanner-nosession-41296 chage[763]: changed password expiry for sshd
+Nov  7 10:01:27 nobanner-nosession-41296 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 10:01:27 nobanner-nosession-41296 sshd[1198]: Server listening on :: port 22.
+Nov  7 10:01:28 nobanner-nosession-41296 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:01:29 nobanner-nosession-41296 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 10:01:29 nobanner-nosession-41296 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 10:01:36 nobanner-nosession-41296 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:02:25 nobanner-nosession-41296 useradd[1536]: new group: name=supervisor, GID=1001
+Nov  7 10:02:25 nobanner-nosession-41296 useradd[1536]: new user: name=supervisor, UID=1001, GID=1001, home=/home/supervisor, shell=/bin/bash, from=none
+Nov  7 10:02:26 nobanner-nosession-41296 usermod[1545]: change user 'supervisor' password
+Nov  7 10:02:26 nobanner-nosession-41296 sshd[1552]: Accepted password for supervisor from 10.0.3.1 port 55998 ssh2
+Nov  7 10:02:26 nobanner-nosession-41296 sshd[1552]: pam_unix(sshd:session): session opened for user supervisor by (uid=0)
+Nov  7 10:02:26 nobanner-nosession-41296 systemd-logind[164]: New session 2161 of user supervisor.
+Nov  7 10:02:26 nobanner-nosession-41296 systemd: pam_unix(systemd-user:session): session opened for user supervisor by (uid=0)
+Nov  7 10:02:27 nobanner-nosession-41296 sshd[1569]: Received disconnect from 10.0.3.1 port 55998:11: 
+Nov  7 10:02:27 nobanner-nosession-41296 sshd[1569]: Disconnected from user supervisor 10.0.3.1 port 55998
+Nov  7 10:02:27 nobanner-nosession-41296 sshd[1552]: pam_unix(sshd:session): session closed for user supervisor
+Nov  7 10:02:27 nobanner-nosession-41296 systemd-logind[164]: Session 2161 logged out. Waiting for processes to exit.
+Nov  7 10:02:27 nobanner-nosession-41296 systemd-logind[164]: Removed session 2161.

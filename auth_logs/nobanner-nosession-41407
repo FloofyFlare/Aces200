@@ -1,0 +1,27 @@
+Nov  7 12:52:44 nobanner-nosession-41407 systemd-logind[164]: New seat seat0.
+Nov  7 12:52:47 nobanner-nosession-41407 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 12:52:47 nobanner-nosession-41407 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:52:55 nobanner-nosession-41407 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:52:55 nobanner-nosession-41407 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 12:52:55 nobanner-nosession-41407 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:53:06 nobanner-nosession-41407 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 12:53:06 nobanner-nosession-41407 usermod[756]: change user 'sshd' password
+Nov  7 12:53:06 nobanner-nosession-41407 chage[763]: changed password expiry for sshd
+Nov  7 12:53:08 nobanner-nosession-41407 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 12:53:08 nobanner-nosession-41407 sshd[1198]: Server listening on :: port 22.
+Nov  7 12:53:09 nobanner-nosession-41407 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:53:09 nobanner-nosession-41407 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 12:53:09 nobanner-nosession-41407 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 12:53:17 nobanner-nosession-41407 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 12:57:08 nobanner-nosession-41407 useradd[1536]: new group: name=webmaster, GID=1001
+Nov  7 12:57:08 nobanner-nosession-41407 useradd[1536]: new user: name=webmaster, UID=1001, GID=1001, home=/home/webmaster, shell=/bin/bash, from=none
+Nov  7 12:57:08 nobanner-nosession-41407 usermod[1545]: change user 'webmaster' password
+Nov  7 12:57:08 nobanner-nosession-41407 sshd[1552]: Accepted password for webmaster from 10.0.3.1 port 35680 ssh2
+Nov  7 12:57:08 nobanner-nosession-41407 sshd[1552]: pam_unix(sshd:session): session opened for user webmaster by (uid=0)
+Nov  7 12:57:08 nobanner-nosession-41407 systemd-logind[164]: New session 2350 of user webmaster.
+Nov  7 12:57:08 nobanner-nosession-41407 systemd: pam_unix(systemd-user:session): session opened for user webmaster by (uid=0)
+Nov  7 12:57:10 nobanner-nosession-41407 sshd[1569]: Received disconnect from 10.0.3.1 port 35680:11: 
+Nov  7 12:57:10 nobanner-nosession-41407 sshd[1569]: Disconnected from user webmaster 10.0.3.1 port 35680
+Nov  7 12:57:10 nobanner-nosession-41407 sshd[1552]: pam_unix(sshd:session): session closed for user webmaster
+Nov  7 12:57:10 nobanner-nosession-41407 systemd-logind[164]: Session 2350 logged out. Waiting for processes to exit.
+Nov  7 12:57:10 nobanner-nosession-41407 systemd-logind[164]: Removed session 2350.

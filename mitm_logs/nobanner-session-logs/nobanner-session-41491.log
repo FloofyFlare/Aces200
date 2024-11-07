@@ -1,0 +1,53 @@
+(node:1622498) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-41491',
+  containerIp: '10.0.3.59',
+  mitmPort: 41491,
+  autoAccessFixed: 1
+}
+2024-11-07 11:05:52.667 - [Info] MITM Version: 2
+2024-11-07 11:05:52.669 - [Info] Auto Access Enabled: true
+2024-11-07 11:05:52.670 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 11:05:52.695 - [Info] SSH man-in-the-middle server for 10.0.3.59 listening on 10.0.3.1:41491
+2024-11-07 11:09:25.524 - [Debug] [Connection] Attacker connected: 140.246.3.84 | Client Identification: SSH-2.0-makiko
+2024-11-07 11:09:27.164 - [Debug] [Auth] Attacker 140.246.3.84 trying to authenticate with 'password'
+2024-11-07 11:09:27.165 - [Debug] [Auto Access] Attacker: 140.246.3.84, Threshold: 1, Attempts: 1
+2024-11-07 11:09:27.165 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-07 11:09:27.166 - [Debug] [Auto Access] Adding the following credentials: 'root:123456'
+2024-11-07 11:09:27.413 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-07 11:09:27.415 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-07 11:09:27.416 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.59
+2024-11-07 11:09:29.613 - [Debug] [LXC] Authentication Failed
+2024-11-07 11:09:29.614 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-07 11:09:29.615 - [Debug] [Auth] Attacker: 140.246.3.84 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 11:09:29.617 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-07 11:09:29.617 - [Debug] [Auth] Attacker: 140.246.3.84 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-07 11:09:29.628 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-07 11:09:29.628 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-07 11:09:30.162 - [Debug] [Auth] Attacker 140.246.3.84 trying to authenticate with 'password'
+2024-11-07 11:09:30.162 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 11:09:30.163 - [Debug] [Auth] Attacker: 140.246.3.84 has so far made 3 attempts. Remaining: 3 attempts
+2024-11-07 11:09:31.201 - [Debug] [Auth] Attacker 140.246.3.84 trying to authenticate with 'password'
+2024-11-07 11:09:31.202 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 11:09:31.203 - [Debug] [Auth] Attacker: 140.246.3.84 has so far made 4 attempts. Remaining: 2 attempts
+2024-11-07 11:09:31.735 - [Debug] [Auth] Attacker 140.246.3.84 trying to authenticate with 'password'
+2024-11-07 11:09:31.736 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 11:09:31.737 - [Debug] [Auth] Attacker: 140.246.3.84 has so far made 5 attempts. Remaining: 1 attempts
+2024-11-07 11:09:32.326 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 11:09:32.823 - [Debug] [Connection] Attacker connected: 140.246.3.84 | Client Identification: SSH-2.0-makiko
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

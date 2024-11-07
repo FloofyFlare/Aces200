@@ -1,0 +1,27 @@
+Nov  7 05:23:29 banner-session-41132 systemd-logind[164]: New seat seat0.
+Nov  7 05:23:32 banner-session-41132 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 05:23:32 banner-session-41132 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:23:40 banner-session-41132 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:23:40 banner-session-41132 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 05:23:40 banner-session-41132 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:23:52 banner-session-41132 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 05:23:52 banner-session-41132 usermod[695]: change user 'sshd' password
+Nov  7 05:23:52 banner-session-41132 chage[702]: changed password expiry for sshd
+Nov  7 05:23:54 banner-session-41132 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 05:23:54 banner-session-41132 sshd[1137]: Server listening on :: port 22.
+Nov  7 05:23:56 banner-session-41132 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:23:57 banner-session-41132 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 05:23:57 banner-session-41132 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:24:05 banner-session-41132 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:25:01 banner-session-41132 useradd[1484]: new group: name=bch, GID=1001
+Nov  7 05:25:01 banner-session-41132 useradd[1484]: new user: name=bch, UID=1001, GID=1001, home=/home/bch, shell=/bin/bash, from=none
+Nov  7 05:25:01 banner-session-41132 usermod[1493]: change user 'bch' password
+Nov  7 05:25:01 banner-session-41132 sshd[1500]: Accepted password for bch from 10.0.3.1 port 47432 ssh2
+Nov  7 05:25:01 banner-session-41132 sshd[1500]: pam_unix(sshd:session): session opened for user bch by (uid=0)
+Nov  7 05:25:01 banner-session-41132 systemd-logind[164]: New session 1867 of user bch.
+Nov  7 05:25:01 banner-session-41132 systemd: pam_unix(systemd-user:session): session opened for user bch by (uid=0)
+Nov  7 05:25:02 banner-session-41132 sshd[1517]: Received disconnect from 10.0.3.1 port 47432:11: 
+Nov  7 05:25:02 banner-session-41132 sshd[1517]: Disconnected from user bch 10.0.3.1 port 47432
+Nov  7 05:25:02 banner-session-41132 sshd[1500]: pam_unix(sshd:session): session closed for user bch
+Nov  7 05:25:02 banner-session-41132 systemd-logind[164]: Session 1867 logged out. Waiting for processes to exit.
+Nov  7 05:25:02 banner-session-41132 systemd-logind[164]: Removed session 1867.

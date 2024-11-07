@@ -1,0 +1,27 @@
+Nov  6 22:57:55 nobanner-session-40940 systemd-logind[164]: New seat seat0.
+Nov  6 22:57:59 nobanner-session-40940 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  6 22:57:59 nobanner-session-40940 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 22:58:08 nobanner-session-40940 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 22:58:08 nobanner-session-40940 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  6 22:58:08 nobanner-session-40940 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 22:58:26 nobanner-session-40940 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  6 22:58:26 nobanner-session-40940 usermod[756]: change user 'sshd' password
+Nov  6 22:58:26 nobanner-session-40940 chage[763]: changed password expiry for sshd
+Nov  6 22:58:29 nobanner-session-40940 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  6 22:58:29 nobanner-session-40940 sshd[1198]: Server listening on :: port 22.
+Nov  6 22:58:31 nobanner-session-40940 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 22:58:31 nobanner-session-40940 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  6 22:58:31 nobanner-session-40940 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  6 22:58:40 nobanner-session-40940 sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 22:58:55 nobanner-session-40940 useradd[1539]: new group: name=Test, GID=1001
+Nov  6 22:58:55 nobanner-session-40940 useradd[1539]: new user: name=Test, UID=1001, GID=1001, home=/home/Test, shell=/bin/bash, from=none
+Nov  6 22:58:56 nobanner-session-40940 usermod[1548]: change user 'Test' password
+Nov  6 22:58:56 nobanner-session-40940 sshd[1555]: Accepted password for Test from 10.0.3.1 port 40108 ssh2
+Nov  6 22:58:56 nobanner-session-40940 sshd[1555]: pam_unix(sshd:session): session opened for user Test by (uid=0)
+Nov  6 22:58:56 nobanner-session-40940 systemd-logind[164]: New session 1521 of user Test.
+Nov  6 22:58:56 nobanner-session-40940 systemd: pam_unix(systemd-user:session): session opened for user Test by (uid=0)
+Nov  6 22:58:58 nobanner-session-40940 sshd[1572]: Received disconnect from 10.0.3.1 port 40108:11: 
+Nov  6 22:58:58 nobanner-session-40940 sshd[1572]: Disconnected from user Test 10.0.3.1 port 40108
+Nov  6 22:58:58 nobanner-session-40940 sshd[1555]: pam_unix(sshd:session): session closed for user Test
+Nov  6 22:58:58 nobanner-session-40940 systemd-logind[164]: Session 1521 logged out. Waiting for processes to exit.
+Nov  6 22:58:58 nobanner-session-40940 systemd-logind[164]: Removed session 1521.

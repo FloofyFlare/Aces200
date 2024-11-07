@@ -1,0 +1,39 @@
+(node:269925) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-41032',
+  containerIp: '10.0.3.151',
+  mitmPort: 41032,
+  autoAccessFixed: 1
+}
+2024-11-06 21:19:00.448 - [Info] MITM Version: 2
+2024-11-06 21:19:00.450 - [Info] Auto Access Enabled: true
+2024-11-06 21:19:00.451 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 21:19:00.468 - [Info] SSH man-in-the-middle server for 10.0.3.151 listening on 10.0.3.1:41032
+2024-11-06 21:20:22.109 - [Debug] [Connection] Attacker connected: 223.0.30.61 | Client Identification: SSH-2.0-Go
+2024-11-06 21:20:23.912 - [Debug] [Auth] Attacker 223.0.30.61 trying to authenticate with 'none'
+2024-11-06 21:20:23.912 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-06 21:20:24.532 - [Debug] [Auth] Attacker 223.0.30.61 trying to authenticate with 'password'
+2024-11-06 21:20:24.533 - [Debug] [Auto Access] Attacker: 223.0.30.61, Threshold: 1, Attempts: 1
+2024-11-06 21:20:24.533 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-06 21:20:24.534 - [Debug] [Auto Access] Adding the following credentials: 'root:---fuck_you----'
+2024-11-06 21:20:24.711 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-06 21:20:24.713 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-06 21:20:24.714 - [Debug] [Auth] Attacker: 223.0.30.61 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-06 21:20:25.331 - [Debug] [Connection] Attacker closed the connection
+2024-11-06 21:20:25.622 - [Debug] [Connection] Attacker connected: 223.0.30.61 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

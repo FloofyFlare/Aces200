@@ -1,0 +1,27 @@
+Nov  7 04:58:48 nobanner-nosession-41118 systemd-logind[164]: New seat seat0.
+Nov  7 04:58:52 nobanner-nosession-41118 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 04:58:52 nobanner-nosession-41118 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:59:00 nobanner-nosession-41118 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:59:00 nobanner-nosession-41118 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 04:59:00 nobanner-nosession-41118 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:59:15 nobanner-nosession-41118 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 04:59:15 nobanner-nosession-41118 usermod[695]: change user 'sshd' password
+Nov  7 04:59:15 nobanner-nosession-41118 chage[702]: changed password expiry for sshd
+Nov  7 04:59:17 nobanner-nosession-41118 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 04:59:17 nobanner-nosession-41118 sshd[1137]: Server listening on :: port 22.
+Nov  7 04:59:19 nobanner-nosession-41118 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:59:19 nobanner-nosession-41118 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 04:59:19 nobanner-nosession-41118 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 04:59:28 nobanner-nosession-41118 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 04:59:41 nobanner-nosession-41118 useradd[1475]: new group: name=shib, GID=1001
+Nov  7 04:59:41 nobanner-nosession-41118 useradd[1475]: new user: name=shib, UID=1001, GID=1001, home=/home/shib, shell=/bin/bash, from=none
+Nov  7 04:59:41 nobanner-nosession-41118 usermod[1484]: change user 'shib' password
+Nov  7 04:59:41 nobanner-nosession-41118 sshd[1491]: Accepted password for shib from 10.0.3.1 port 45350 ssh2
+Nov  7 04:59:41 nobanner-nosession-41118 sshd[1491]: pam_unix(sshd:session): session opened for user shib by (uid=0)
+Nov  7 04:59:41 nobanner-nosession-41118 systemd-logind[164]: New session 1837 of user shib.
+Nov  7 04:59:41 nobanner-nosession-41118 systemd: pam_unix(systemd-user:session): session opened for user shib by (uid=0)
+Nov  7 04:59:42 nobanner-nosession-41118 sshd[1508]: Received disconnect from 10.0.3.1 port 45350:11: 
+Nov  7 04:59:42 nobanner-nosession-41118 sshd[1508]: Disconnected from user shib 10.0.3.1 port 45350
+Nov  7 04:59:42 nobanner-nosession-41118 sshd[1491]: pam_unix(sshd:session): session closed for user shib
+Nov  7 04:59:42 nobanner-nosession-41118 systemd-logind[164]: Session 1837 logged out. Waiting for processes to exit.
+Nov  7 04:59:42 nobanner-nosession-41118 systemd-logind[164]: Removed session 1837.

@@ -1,0 +1,27 @@
+Nov  7 00:00:24 banner-session-40971 systemd-logind[164]: New seat seat0.
+Nov  7 00:00:27 banner-session-40971 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 00:00:27 banner-session-40971 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 00:00:36 banner-session-40971 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 00:00:36 banner-session-40971 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 00:00:36 banner-session-40971 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 00:00:50 banner-session-40971 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 00:00:51 banner-session-40971 usermod[756]: change user 'sshd' password
+Nov  7 00:00:51 banner-session-40971 chage[763]: changed password expiry for sshd
+Nov  7 00:00:53 banner-session-40971 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 00:00:53 banner-session-40971 sshd[1198]: Server listening on :: port 22.
+Nov  7 00:00:55 banner-session-40971 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 00:00:55 banner-session-40971 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 00:00:55 banner-session-40971 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 00:01:04 banner-session-40971 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 00:02:34 banner-session-40971 useradd[1545]: new group: name=trx, GID=1001
+Nov  7 00:02:34 banner-session-40971 useradd[1545]: new user: name=trx, UID=1001, GID=1001, home=/home/trx, shell=/bin/bash, from=none
+Nov  7 00:02:34 banner-session-40971 usermod[1554]: change user 'trx' password
+Nov  7 00:02:34 banner-session-40971 sshd[1561]: Accepted password for trx from 10.0.3.1 port 60766 ssh2
+Nov  7 00:02:34 banner-session-40971 sshd[1561]: pam_unix(sshd:session): session opened for user trx by (uid=0)
+Nov  7 00:02:34 banner-session-40971 systemd-logind[164]: New session 1580 of user trx.
+Nov  7 00:02:35 banner-session-40971 systemd: pam_unix(systemd-user:session): session opened for user trx by (uid=0)
+Nov  7 00:02:35 banner-session-40971 sshd[1578]: Received disconnect from 10.0.3.1 port 60766:11: 
+Nov  7 00:02:35 banner-session-40971 sshd[1578]: Disconnected from user trx 10.0.3.1 port 60766
+Nov  7 00:02:35 banner-session-40971 sshd[1561]: pam_unix(sshd:session): session closed for user trx
+Nov  7 00:02:35 banner-session-40971 systemd-logind[164]: Session 1580 logged out. Waiting for processes to exit.
+Nov  7 00:02:35 banner-session-40971 systemd-logind[164]: Removed session 1580.

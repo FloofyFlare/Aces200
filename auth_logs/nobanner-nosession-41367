@@ -1,0 +1,25 @@
+Nov  7 11:40:43 nobanner-nosession-41367 systemd-logind[164]: New seat seat0.
+Nov  7 11:40:47 nobanner-nosession-41367 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 11:40:47 nobanner-nosession-41367 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:40:55 nobanner-nosession-41367 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:40:55 nobanner-nosession-41367 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 11:40:55 nobanner-nosession-41367 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:41:06 nobanner-nosession-41367 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 11:41:06 nobanner-nosession-41367 usermod[756]: change user 'sshd' password
+Nov  7 11:41:06 nobanner-nosession-41367 chage[763]: changed password expiry for sshd
+Nov  7 11:41:09 nobanner-nosession-41367 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 11:41:09 nobanner-nosession-41367 sshd[1198]: Server listening on :: port 22.
+Nov  7 11:41:11 nobanner-nosession-41367 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:41:11 nobanner-nosession-41367 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 11:41:11 nobanner-nosession-41367 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 11:41:23 nobanner-nosession-41367 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 11:42:35 nobanner-nosession-41367 useradd[1536]: new group: name=teamspeak2, GID=1001
+Nov  7 11:42:35 nobanner-nosession-41367 useradd[1536]: new user: name=teamspeak2, UID=1001, GID=1001, home=/home/teamspeak2, shell=/bin/bash, from=none
+Nov  7 11:42:36 nobanner-nosession-41367 usermod[1545]: change user 'teamspeak2' password
+Nov  7 11:42:36 nobanner-nosession-41367 sshd[1552]: Accepted password for teamspeak2 from 10.0.3.1 port 43358 ssh2
+Nov  7 11:42:36 nobanner-nosession-41367 sshd[1552]: pam_unix(sshd:session): session opened for user teamspeak2 by (uid=0)
+Nov  7 11:42:36 nobanner-nosession-41367 systemd-logind[164]: New session 2284 of user teamspeak2.
+Nov  7 11:42:36 nobanner-nosession-41367 systemd: pam_unix(systemd-user:session): session opened for user teamspeak2 by (uid=0)
+Nov  7 11:42:41 nobanner-nosession-41367 sshd[1552]: pam_unix(sshd:session): session closed for user teamspeak2
+Nov  7 11:42:41 nobanner-nosession-41367 systemd-logind[164]: Session 2284 logged out. Waiting for processes to exit.
+Nov  7 11:42:41 nobanner-nosession-41367 systemd-logind[164]: Removed session 2284.

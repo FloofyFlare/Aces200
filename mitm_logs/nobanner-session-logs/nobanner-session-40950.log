@@ -1,0 +1,31 @@
+(node:11147) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-40950',
+  containerIp: '10.0.3.232',
+  mitmPort: 40950,
+  autoAccessFixed: 1
+}
+2024-11-06 18:17:24.326 - [Info] MITM Version: 2
+2024-11-06 18:17:24.341 - [Info] Auto Access Enabled: true
+2024-11-06 18:17:24.342 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-06 18:17:24.354 - [Info] SSH man-in-the-middle server for 10.0.3.232 listening on 10.0.3.1:40950
+2024-11-06 18:24:16.378 - [Debug] [Connection] Attacker connected: 101.37.85.27 | Client Identification: SSH-2.0-libssh_0.7.4
+2024-11-06 18:24:43.663 - [Debug] [Connection] Attacker connected: 101.37.85.27 | Client Identification: SSH-2.0-libssh_0.7.4
+2024-11-06 18:25:04.699 - [Debug] [Connection] Attacker connected: 101.37.85.27 | Client Identification: SSH-2.0-libssh_0.7.4
+2024-11-06 18:25:17.247 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

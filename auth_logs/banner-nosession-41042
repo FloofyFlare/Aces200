@@ -1,0 +1,27 @@
+Nov  7 02:37:50 banner-nosession-41042 systemd-logind[164]: New seat seat0.
+Nov  7 02:37:53 banner-nosession-41042 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 02:37:53 banner-nosession-41042 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 02:38:02 banner-nosession-41042 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 02:38:02 banner-nosession-41042 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 02:38:02 banner-nosession-41042 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 02:38:14 banner-nosession-41042 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 02:38:15 banner-nosession-41042 usermod[756]: change user 'sshd' password
+Nov  7 02:38:15 banner-nosession-41042 chage[763]: changed password expiry for sshd
+Nov  7 02:38:17 banner-nosession-41042 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 02:38:17 banner-nosession-41042 sshd[1198]: Server listening on :: port 22.
+Nov  7 02:38:19 banner-nosession-41042 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 02:38:19 banner-nosession-41042 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 02:38:19 banner-nosession-41042 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 02:38:25 banner-nosession-41042 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 02:39:19 banner-nosession-41042 useradd[1542]: new group: name=Blank, GID=1001
+Nov  7 02:39:19 banner-nosession-41042 useradd[1542]: new user: name=Blank, UID=1001, GID=1001, home=/home/Blank, shell=/bin/bash, from=none
+Nov  7 02:39:20 banner-nosession-41042 usermod[1551]: change user 'Blank' password
+Nov  7 02:39:20 banner-nosession-41042 sshd[1558]: Accepted password for Blank from 10.0.3.1 port 55642 ssh2
+Nov  7 02:39:20 banner-nosession-41042 sshd[1558]: pam_unix(sshd:session): session opened for user Blank by (uid=0)
+Nov  7 02:39:20 banner-nosession-41042 systemd-logind[164]: New session 1709 of user Blank.
+Nov  7 02:39:20 banner-nosession-41042 systemd: pam_unix(systemd-user:session): session opened for user Blank by (uid=0)
+Nov  7 02:39:22 banner-nosession-41042 sshd[1575]: Received disconnect from 10.0.3.1 port 55642:11: 
+Nov  7 02:39:22 banner-nosession-41042 sshd[1575]: Disconnected from user Blank 10.0.3.1 port 55642
+Nov  7 02:39:22 banner-nosession-41042 sshd[1558]: pam_unix(sshd:session): session closed for user Blank
+Nov  7 02:39:22 banner-nosession-41042 systemd-logind[164]: Session 1709 logged out. Waiting for processes to exit.
+Nov  7 02:39:22 banner-nosession-41042 systemd-logind[164]: Removed session 1709.

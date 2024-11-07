@@ -1,0 +1,27 @@
+Nov  7 05:33:43 nobanner-session-41140 systemd-logind[166]: New seat seat0.
+Nov  7 05:33:46 nobanner-session-41140 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 05:33:46 nobanner-session-41140 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:33:54 nobanner-session-41140 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:33:54 nobanner-session-41140 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 05:33:54 nobanner-session-41140 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:34:06 nobanner-session-41140 useradd[687]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 05:34:06 nobanner-session-41140 usermod[695]: change user 'sshd' password
+Nov  7 05:34:06 nobanner-session-41140 chage[702]: changed password expiry for sshd
+Nov  7 05:34:09 nobanner-session-41140 sshd[1137]: Server listening on 0.0.0.0 port 22.
+Nov  7 05:34:09 nobanner-session-41140 sshd[1137]: Server listening on :: port 22.
+Nov  7 05:34:11 nobanner-session-41140 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:34:11 nobanner-session-41140 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 05:34:11 nobanner-session-41140 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 05:34:19 nobanner-session-41140 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 05:34:39 nobanner-session-41140 useradd[1478]: new group: name=zauser, GID=1001
+Nov  7 05:34:39 nobanner-session-41140 useradd[1478]: new user: name=zauser, UID=1001, GID=1001, home=/home/zauser, shell=/bin/bash, from=none
+Nov  7 05:34:40 nobanner-session-41140 usermod[1487]: change user 'zauser' password
+Nov  7 05:34:40 nobanner-session-41140 sshd[1494]: Accepted password for zauser from 10.0.3.1 port 56934 ssh2
+Nov  7 05:34:40 nobanner-session-41140 sshd[1494]: pam_unix(sshd:session): session opened for user zauser by (uid=0)
+Nov  7 05:34:40 nobanner-session-41140 systemd-logind[166]: New session 1881 of user zauser.
+Nov  7 05:34:40 nobanner-session-41140 systemd: pam_unix(systemd-user:session): session opened for user zauser by (uid=0)
+Nov  7 05:35:43 nobanner-session-41140 sshd[1511]: Received disconnect from 10.0.3.1 port 56934:11: 
+Nov  7 05:35:43 nobanner-session-41140 sshd[1511]: Disconnected from user zauser 10.0.3.1 port 56934
+Nov  7 05:35:43 nobanner-session-41140 sshd[1494]: pam_unix(sshd:session): session closed for user zauser
+Nov  7 05:35:43 nobanner-session-41140 systemd-logind[166]: Session 1881 logged out. Waiting for processes to exit.
+Nov  7 05:35:43 nobanner-session-41140 systemd-logind[166]: Removed session 1881.
