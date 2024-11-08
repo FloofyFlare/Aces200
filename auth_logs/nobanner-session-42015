@@ -1,0 +1,25 @@
+Nov  8 08:03:18 nobanner-session-42015 systemd-logind[165]: New seat seat0.
+Nov  8 08:03:21 nobanner-session-42015 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 08:03:21 nobanner-session-42015 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 08:03:29 nobanner-session-42015 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 08:03:29 nobanner-session-42015 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 08:03:29 nobanner-session-42015 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 08:03:40 nobanner-session-42015 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 08:03:40 nobanner-session-42015 usermod[756]: change user 'sshd' password
+Nov  8 08:03:40 nobanner-session-42015 chage[763]: changed password expiry for sshd
+Nov  8 08:03:42 nobanner-session-42015 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 08:03:42 nobanner-session-42015 sshd[1198]: Server listening on :: port 22.
+Nov  8 08:03:43 nobanner-session-42015 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 08:03:43 nobanner-session-42015 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 08:03:43 nobanner-session-42015 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 08:03:48 nobanner-session-42015 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 08:04:08 nobanner-session-42015 useradd[1539]: new group: name=zhwahpg, GID=1001
+Nov  8 08:04:08 nobanner-session-42015 useradd[1539]: new user: name=zhwahpg, UID=1001, GID=1001, home=/home/zhwahpg, shell=/bin/bash, from=none
+Nov  8 08:04:08 nobanner-session-42015 usermod[1548]: change user 'zhwahpg' password
+Nov  8 08:04:08 nobanner-session-42015 sshd[1555]: Accepted password for zhwahpg from 10.0.3.1 port 55442 ssh2
+Nov  8 08:04:08 nobanner-session-42015 sshd[1555]: pam_unix(sshd:session): session opened for user zhwahpg by (uid=0)
+Nov  8 08:04:08 nobanner-session-42015 systemd-logind[165]: New session 2953 of user zhwahpg.
+Nov  8 08:04:08 nobanner-session-42015 systemd: pam_unix(systemd-user:session): session opened for user zhwahpg by (uid=0)
+Nov  8 08:04:14 nobanner-session-42015 sshd[1555]: pam_unix(sshd:session): session closed for user zhwahpg
+Nov  8 08:04:14 nobanner-session-42015 systemd-logind[165]: Session 2953 logged out. Waiting for processes to exit.
+Nov  8 08:04:14 nobanner-session-42015 systemd-logind[165]: Removed session 2953.

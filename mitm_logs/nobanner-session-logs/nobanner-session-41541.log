@@ -24,3 +24,6 @@ Started with the following options:
 2024-11-07 12:42:34.814 - [Info] Auto Access Enabled: true
 2024-11-07 12:42:34.814 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-11-07 12:42:34.825 - [Info] SSH man-in-the-middle server for 10.0.3.209 listening on 10.0.3.1:41541
+2024-11-07 12:48:33.170 - [Debug] [Connection] Attacker connected: 121.188.242.103 | Client Identification: SSH-2.0-SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2024-11-07 12:48:33.550 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,27 @@
+Nov  7 18:40:08 nobanner-nosession-41582 systemd-logind[164]: New seat seat0.
+Nov  7 18:40:11 nobanner-nosession-41582 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 18:40:11 nobanner-nosession-41582 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 18:40:20 nobanner-nosession-41582 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 18:40:20 nobanner-nosession-41582 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 18:40:20 nobanner-nosession-41582 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 18:40:39 nobanner-nosession-41582 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 18:40:39 nobanner-nosession-41582 usermod[756]: change user 'sshd' password
+Nov  7 18:40:39 nobanner-nosession-41582 chage[763]: changed password expiry for sshd
+Nov  7 18:40:41 nobanner-nosession-41582 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 18:40:41 nobanner-nosession-41582 sshd[1198]: Server listening on :: port 22.
+Nov  7 18:40:43 nobanner-nosession-41582 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 18:40:43 nobanner-nosession-41582 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 18:40:43 nobanner-nosession-41582 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 18:40:50 nobanner-nosession-41582 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 18:42:47 nobanner-nosession-41582 useradd[1536]: new group: name=storm, GID=1001
+Nov  7 18:42:47 nobanner-nosession-41582 useradd[1536]: new user: name=storm, UID=1001, GID=1001, home=/home/storm, shell=/bin/bash, from=none
+Nov  7 18:42:47 nobanner-nosession-41582 usermod[1545]: change user 'storm' password
+Nov  7 18:42:47 nobanner-nosession-41582 sshd[1552]: Accepted password for storm from 10.0.3.1 port 58768 ssh2
+Nov  7 18:42:47 nobanner-nosession-41582 sshd[1552]: pam_unix(sshd:session): session opened for user storm by (uid=0)
+Nov  7 18:42:47 nobanner-nosession-41582 systemd-logind[164]: New session 2561 of user storm.
+Nov  7 18:42:47 nobanner-nosession-41582 systemd: pam_unix(systemd-user:session): session opened for user storm by (uid=0)
+Nov  7 18:42:47 nobanner-nosession-41582 sshd[1569]: Received disconnect from 10.0.3.1 port 58768:11: 
+Nov  7 18:42:47 nobanner-nosession-41582 sshd[1569]: Disconnected from user storm 10.0.3.1 port 58768
+Nov  7 18:42:47 nobanner-nosession-41582 sshd[1552]: pam_unix(sshd:session): session closed for user storm
+Nov  7 18:42:47 nobanner-nosession-41582 systemd-logind[164]: Session 2561 logged out. Waiting for processes to exit.
+Nov  7 18:42:47 nobanner-nosession-41582 systemd-logind[164]: Removed session 2561.

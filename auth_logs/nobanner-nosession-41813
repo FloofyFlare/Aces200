@@ -1,0 +1,33 @@
+Nov  8 01:54:35 nobanner-nosession-41813 systemd-logind[164]: New seat seat0.
+Nov  8 01:54:39 nobanner-nosession-41813 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 01:54:39 nobanner-nosession-41813 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:54:46 nobanner-nosession-41813 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:54:46 nobanner-nosession-41813 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 01:54:46 nobanner-nosession-41813 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:54:56 nobanner-nosession-41813 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 01:54:56 nobanner-nosession-41813 usermod[756]: change user 'sshd' password
+Nov  8 01:54:56 nobanner-nosession-41813 chage[763]: changed password expiry for sshd
+Nov  8 01:54:58 nobanner-nosession-41813 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 01:54:58 nobanner-nosession-41813 sshd[1198]: Server listening on :: port 22.
+Nov  8 01:55:01 nobanner-nosession-41813 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:55:01 nobanner-nosession-41813 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 01:55:01 nobanner-nosession-41813 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:55:09 nobanner-nosession-41813 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:55:58 nobanner-nosession-41813 useradd[1536]: new group: name=sonar, GID=1001
+Nov  8 01:55:58 nobanner-nosession-41813 useradd[1536]: new user: name=sonar, UID=1001, GID=1001, home=/home/sonar, shell=/bin/bash, from=none
+Nov  8 01:55:58 nobanner-nosession-41813 usermod[1545]: change user 'sonar' password
+Nov  8 01:55:58 nobanner-nosession-41813 sshd[1552]: Accepted password for sonar from 10.0.3.1 port 54084 ssh2
+Nov  8 01:55:58 nobanner-nosession-41813 sshd[1552]: pam_unix(sshd:session): session opened for user sonar by (uid=0)
+Nov  8 01:55:58 nobanner-nosession-41813 systemd-logind[164]: New session 2785 of user sonar.
+Nov  8 01:55:58 nobanner-nosession-41813 systemd: pam_unix(systemd-user:session): session opened for user sonar by (uid=0)
+Nov  8 01:55:59 nobanner-nosession-41813 sshd[1569]: Received disconnect from 10.0.3.1 port 54084:11: 
+Nov  8 01:55:59 nobanner-nosession-41813 sshd[1569]: Disconnected from user sonar 10.0.3.1 port 54084
+Nov  8 01:55:59 nobanner-nosession-41813 sshd[1552]: pam_unix(sshd:session): session closed for user sonar
+Nov  8 01:55:59 nobanner-nosession-41813 systemd-logind[164]: Session 2785 logged out. Waiting for processes to exit.
+Nov  8 01:55:59 nobanner-nosession-41813 systemd-logind[164]: Removed session 2785.
+Nov  8 01:56:00 nobanner-nosession-41813 sshd[1570]: Accepted password for sonar from 10.0.3.1 port 54090 ssh2
+Nov  8 01:56:00 nobanner-nosession-41813 sshd[1570]: pam_unix(sshd:session): session opened for user sonar by (uid=0)
+Nov  8 01:56:00 nobanner-nosession-41813 systemd-logind[164]: New session 2787 of user sonar.
+Nov  8 01:56:00 nobanner-nosession-41813 sshd[1570]: pam_unix(sshd:session): session closed for user sonar
+Nov  8 01:56:00 nobanner-nosession-41813 systemd-logind[164]: Session 2787 logged out. Waiting for processes to exit.
+Nov  8 01:56:00 nobanner-nosession-41813 systemd-logind[164]: Removed session 2787.

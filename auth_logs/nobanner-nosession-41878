@@ -1,0 +1,29 @@
+Nov  8 04:16:13 nobanner-nosession-41878 systemd-logind[164]: New seat seat0.
+Nov  8 04:16:17 nobanner-nosession-41878 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 04:16:17 nobanner-nosession-41878 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 04:16:25 nobanner-nosession-41878 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 04:16:25 nobanner-nosession-41878 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 04:16:25 nobanner-nosession-41878 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 04:16:35 nobanner-nosession-41878 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 04:16:35 nobanner-nosession-41878 usermod[756]: change user 'sshd' password
+Nov  8 04:16:35 nobanner-nosession-41878 chage[763]: changed password expiry for sshd
+Nov  8 04:16:37 nobanner-nosession-41878 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 04:16:37 nobanner-nosession-41878 sshd[1198]: Server listening on :: port 22.
+Nov  8 04:16:39 nobanner-nosession-41878 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 04:16:39 nobanner-nosession-41878 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 04:16:39 nobanner-nosession-41878 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 04:16:44 nobanner-nosession-41878 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 04:17:01 nobanner-nosession-41878 CRON[1536]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  8 04:17:01 nobanner-nosession-41878 CRON[1536]: pam_unix(cron:session): session closed for user root
+Nov  8 04:17:13 nobanner-nosession-41878 useradd[1539]: new group: name=ONTUSER, GID=1001
+Nov  8 04:17:13 nobanner-nosession-41878 useradd[1539]: new user: name=ONTUSER, UID=1001, GID=1001, home=/home/ONTUSER, shell=/bin/bash, from=none
+Nov  8 04:17:13 nobanner-nosession-41878 usermod[1548]: change user 'ONTUSER' password
+Nov  8 04:17:13 nobanner-nosession-41878 sshd[1555]: Accepted password for ONTUSER from 10.0.3.1 port 47806 ssh2
+Nov  8 04:17:13 nobanner-nosession-41878 sshd[1555]: pam_unix(sshd:session): session opened for user ONTUSER by (uid=0)
+Nov  8 04:17:13 nobanner-nosession-41878 systemd-logind[164]: New session 2851 of user ONTUSER.
+Nov  8 04:17:13 nobanner-nosession-41878 systemd: pam_unix(systemd-user:session): session opened for user ONTUSER by (uid=0)
+Nov  8 04:17:14 nobanner-nosession-41878 sshd[1572]: Received disconnect from 10.0.3.1 port 47806:11: 
+Nov  8 04:17:14 nobanner-nosession-41878 sshd[1572]: Disconnected from user ONTUSER 10.0.3.1 port 47806
+Nov  8 04:17:14 nobanner-nosession-41878 sshd[1555]: pam_unix(sshd:session): session closed for user ONTUSER
+Nov  8 04:17:14 nobanner-nosession-41878 systemd-logind[164]: Session 2851 logged out. Waiting for processes to exit.
+Nov  8 04:17:14 nobanner-nosession-41878 systemd-logind[164]: Removed session 2851.

@@ -1,0 +1,27 @@
+Nov  7 19:36:58 nobanner-nosession-41611 systemd-logind[164]: New seat seat0.
+Nov  7 19:37:02 nobanner-nosession-41611 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 19:37:02 nobanner-nosession-41611 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:37:11 nobanner-nosession-41611 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:37:11 nobanner-nosession-41611 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 19:37:11 nobanner-nosession-41611 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:37:22 nobanner-nosession-41611 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 19:37:22 nobanner-nosession-41611 usermod[756]: change user 'sshd' password
+Nov  7 19:37:22 nobanner-nosession-41611 chage[763]: changed password expiry for sshd
+Nov  7 19:37:24 nobanner-nosession-41611 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 19:37:24 nobanner-nosession-41611 sshd[1198]: Server listening on :: port 22.
+Nov  7 19:37:26 nobanner-nosession-41611 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:37:26 nobanner-nosession-41611 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 19:37:26 nobanner-nosession-41611 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:37:32 nobanner-nosession-41611 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:37:39 nobanner-nosession-41611 useradd[1536]: new group: name=jito-validator, GID=1001
+Nov  7 19:37:39 nobanner-nosession-41611 useradd[1536]: new user: name=jito-validator, UID=1001, GID=1001, home=/home/jito-validator, shell=/bin/bash, from=none
+Nov  7 19:37:39 nobanner-nosession-41611 usermod[1545]: change user 'jito-validator' password
+Nov  7 19:37:39 nobanner-nosession-41611 sshd[1552]: Accepted password for jito-validator from 10.0.3.1 port 49288 ssh2
+Nov  7 19:37:39 nobanner-nosession-41611 sshd[1552]: pam_unix(sshd:session): session opened for user jito-validator by (uid=0)
+Nov  7 19:37:39 nobanner-nosession-41611 systemd-logind[164]: New session 2604 of user jito-validator.
+Nov  7 19:37:39 nobanner-nosession-41611 systemd: pam_unix(systemd-user:session): session opened for user jito-validator by (uid=0)
+Nov  7 19:37:41 nobanner-nosession-41611 sshd[1569]: Received disconnect from 10.0.3.1 port 49288:11: 
+Nov  7 19:37:41 nobanner-nosession-41611 sshd[1569]: Disconnected from user jito-validator 10.0.3.1 port 49288
+Nov  7 19:37:41 nobanner-nosession-41611 sshd[1552]: pam_unix(sshd:session): session closed for user jito-validator
+Nov  7 19:37:41 nobanner-nosession-41611 systemd-logind[164]: Session 2604 logged out. Waiting for processes to exit.
+Nov  7 19:37:41 nobanner-nosession-41611 systemd-logind[164]: Removed session 2604.

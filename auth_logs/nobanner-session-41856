@@ -1,0 +1,25 @@
+Nov  8 03:17:54 nobanner-session-41856 systemd-logind[165]: New seat seat0.
+Nov  8 03:17:57 nobanner-session-41856 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 03:17:57 nobanner-session-41856 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 03:18:06 nobanner-session-41856 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 03:18:06 nobanner-session-41856 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 03:18:06 nobanner-session-41856 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 03:18:21 nobanner-session-41856 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 03:18:21 nobanner-session-41856 usermod[756]: change user 'sshd' password
+Nov  8 03:18:21 nobanner-session-41856 chage[763]: changed password expiry for sshd
+Nov  8 03:18:24 nobanner-session-41856 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 03:18:24 nobanner-session-41856 sshd[1198]: Server listening on :: port 22.
+Nov  8 03:18:25 nobanner-session-41856 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 03:18:25 nobanner-session-41856 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 03:18:25 nobanner-session-41856 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 03:18:32 nobanner-session-41856 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 03:20:25 nobanner-session-41856 useradd[1539]: new group: name=akbarp, GID=1001
+Nov  8 03:20:25 nobanner-session-41856 useradd[1539]: new user: name=akbarp, UID=1001, GID=1001, home=/home/akbarp, shell=/bin/bash, from=none
+Nov  8 03:20:25 nobanner-session-41856 usermod[1548]: change user 'akbarp' password
+Nov  8 03:20:25 nobanner-session-41856 sshd[1555]: Accepted password for akbarp from 10.0.3.1 port 55318 ssh2
+Nov  8 03:20:25 nobanner-session-41856 sshd[1555]: pam_unix(sshd:session): session opened for user akbarp by (uid=0)
+Nov  8 03:20:25 nobanner-session-41856 systemd-logind[165]: New session 2830 of user akbarp.
+Nov  8 03:20:25 nobanner-session-41856 systemd: pam_unix(systemd-user:session): session opened for user akbarp by (uid=0)
+Nov  8 03:20:31 nobanner-session-41856 sshd[1555]: pam_unix(sshd:session): session closed for user akbarp
+Nov  8 03:20:31 nobanner-session-41856 systemd-logind[165]: Session 2830 logged out. Waiting for processes to exit.
+Nov  8 03:20:31 nobanner-session-41856 systemd-logind[165]: Removed session 2830.

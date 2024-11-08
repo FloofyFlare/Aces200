@@ -1,0 +1,27 @@
+Nov  8 08:38:30 banner-session-42040 systemd-logind[165]: New seat seat0.
+Nov  8 08:38:33 banner-session-42040 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 08:38:33 banner-session-42040 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 08:38:42 banner-session-42040 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 08:38:42 banner-session-42040 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 08:38:42 banner-session-42040 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 08:38:52 banner-session-42040 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 08:38:53 banner-session-42040 usermod[756]: change user 'sshd' password
+Nov  8 08:38:53 banner-session-42040 chage[763]: changed password expiry for sshd
+Nov  8 08:38:55 banner-session-42040 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 08:38:55 banner-session-42040 sshd[1198]: Server listening on :: port 22.
+Nov  8 08:38:58 banner-session-42040 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 08:38:58 banner-session-42040 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 08:38:58 banner-session-42040 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 08:39:06 banner-session-42040 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 08:40:08 banner-session-42040 useradd[1545]: new group: name=guanrj, GID=1001
+Nov  8 08:40:08 banner-session-42040 useradd[1545]: new user: name=guanrj, UID=1001, GID=1001, home=/home/guanrj, shell=/bin/bash, from=none
+Nov  8 08:40:08 banner-session-42040 usermod[1554]: change user 'guanrj' password
+Nov  8 08:40:08 banner-session-42040 sshd[1561]: Accepted password for guanrj from 10.0.3.1 port 49564 ssh2
+Nov  8 08:40:08 banner-session-42040 sshd[1561]: pam_unix(sshd:session): session opened for user guanrj by (uid=0)
+Nov  8 08:40:08 banner-session-42040 systemd-logind[165]: New session 2982 of user guanrj.
+Nov  8 08:40:08 banner-session-42040 systemd: pam_unix(systemd-user:session): session opened for user guanrj by (uid=0)
+Nov  8 08:40:11 banner-session-42040 sshd[1578]: Received disconnect from 10.0.3.1 port 49564:11: 
+Nov  8 08:40:11 banner-session-42040 sshd[1578]: Disconnected from user guanrj 10.0.3.1 port 49564
+Nov  8 08:40:11 banner-session-42040 sshd[1561]: pam_unix(sshd:session): session closed for user guanrj
+Nov  8 08:40:11 banner-session-42040 systemd-logind[165]: Session 2982 logged out. Waiting for processes to exit.
+Nov  8 08:40:11 banner-session-42040 systemd-logind[165]: Removed session 2982.

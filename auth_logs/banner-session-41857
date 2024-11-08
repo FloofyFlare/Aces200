@@ -1,0 +1,25 @@
+Nov  8 03:20:57 banner-session-41857 systemd-logind[164]: New seat seat0.
+Nov  8 03:21:00 banner-session-41857 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 03:21:00 banner-session-41857 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 03:21:08 banner-session-41857 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 03:21:08 banner-session-41857 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 03:21:08 banner-session-41857 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 03:21:19 banner-session-41857 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 03:21:19 banner-session-41857 usermod[756]: change user 'sshd' password
+Nov  8 03:21:20 banner-session-41857 chage[763]: changed password expiry for sshd
+Nov  8 03:21:22 banner-session-41857 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 03:21:22 banner-session-41857 sshd[1198]: Server listening on :: port 22.
+Nov  8 03:21:25 banner-session-41857 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 03:21:25 banner-session-41857 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 03:21:25 banner-session-41857 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 03:21:33 banner-session-41857 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 03:22:16 banner-session-41857 useradd[1545]: new group: name=lidongwei, GID=1001
+Nov  8 03:22:16 banner-session-41857 useradd[1545]: new user: name=lidongwei, UID=1001, GID=1001, home=/home/lidongwei, shell=/bin/bash, from=none
+Nov  8 03:22:16 banner-session-41857 usermod[1554]: change user 'lidongwei' password
+Nov  8 03:22:16 banner-session-41857 sshd[1561]: Accepted password for lidongwei from 10.0.3.1 port 49006 ssh2
+Nov  8 03:22:16 banner-session-41857 sshd[1561]: pam_unix(sshd:session): session opened for user lidongwei by (uid=0)
+Nov  8 03:22:16 banner-session-41857 systemd-logind[164]: New session 2832 of user lidongwei.
+Nov  8 03:22:16 banner-session-41857 systemd: pam_unix(systemd-user:session): session opened for user lidongwei by (uid=0)
+Nov  8 03:22:27 banner-session-41857 sshd[1561]: pam_unix(sshd:session): session closed for user lidongwei
+Nov  8 03:22:27 banner-session-41857 systemd-logind[164]: Session 2832 logged out. Waiting for processes to exit.
+Nov  8 03:22:27 banner-session-41857 systemd-logind[164]: Removed session 2832.

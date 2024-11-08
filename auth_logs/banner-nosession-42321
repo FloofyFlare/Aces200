@@ -1,0 +1,25 @@
+Nov  8 17:00:35 banner-nosession-42321 systemd-logind[165]: New seat seat0.
+Nov  8 17:00:39 banner-nosession-42321 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 17:00:39 banner-nosession-42321 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 17:00:46 banner-nosession-42321 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 17:00:46 banner-nosession-42321 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 17:00:46 banner-nosession-42321 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 17:00:57 banner-nosession-42321 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 17:00:57 banner-nosession-42321 usermod[756]: change user 'sshd' password
+Nov  8 17:00:57 banner-nosession-42321 chage[763]: changed password expiry for sshd
+Nov  8 17:00:59 banner-nosession-42321 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 17:00:59 banner-nosession-42321 sshd[1198]: Server listening on :: port 22.
+Nov  8 17:01:01 banner-nosession-42321 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 17:01:01 banner-nosession-42321 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 17:01:01 banner-nosession-42321 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 17:01:09 banner-nosession-42321 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 17:02:31 banner-nosession-42321 useradd[1542]: new group: name=bidget, GID=1001
+Nov  8 17:02:31 banner-nosession-42321 useradd[1542]: new user: name=bidget, UID=1001, GID=1001, home=/home/bidget, shell=/bin/bash, from=none
+Nov  8 17:02:31 banner-nosession-42321 usermod[1551]: change user 'bidget' password
+Nov  8 17:02:31 banner-nosession-42321 sshd[1558]: Accepted password for bidget from 10.0.3.1 port 37804 ssh2
+Nov  8 17:02:31 banner-nosession-42321 sshd[1558]: pam_unix(sshd:session): session opened for user bidget by (uid=0)
+Nov  8 17:02:31 banner-nosession-42321 systemd-logind[165]: New session 3315 of user bidget.
+Nov  8 17:02:31 banner-nosession-42321 systemd: pam_unix(systemd-user:session): session opened for user bidget by (uid=0)
+Nov  8 17:02:37 banner-nosession-42321 sshd[1558]: pam_unix(sshd:session): session closed for user bidget
+Nov  8 17:02:37 banner-nosession-42321 systemd-logind[165]: Session 3315 logged out. Waiting for processes to exit.
+Nov  8 17:02:37 banner-nosession-42321 systemd-logind[165]: Removed session 3315.

@@ -1,0 +1,27 @@
+Nov  8 01:28:11 nobanner-nosession-41804 systemd-logind[164]: New seat seat0.
+Nov  8 01:28:15 nobanner-nosession-41804 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 01:28:15 nobanner-nosession-41804 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:28:23 nobanner-nosession-41804 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:28:23 nobanner-nosession-41804 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 01:28:23 nobanner-nosession-41804 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:28:35 nobanner-nosession-41804 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 01:28:36 nobanner-nosession-41804 usermod[756]: change user 'sshd' password
+Nov  8 01:28:36 nobanner-nosession-41804 chage[763]: changed password expiry for sshd
+Nov  8 01:28:38 nobanner-nosession-41804 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 01:28:38 nobanner-nosession-41804 sshd[1198]: Server listening on :: port 22.
+Nov  8 01:28:40 nobanner-nosession-41804 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:28:40 nobanner-nosession-41804 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 01:28:40 nobanner-nosession-41804 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:28:48 nobanner-nosession-41804 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:32:08 nobanner-nosession-41804 useradd[1536]: new group: name=test, GID=1001
+Nov  8 01:32:08 nobanner-nosession-41804 useradd[1536]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/bash, from=none
+Nov  8 01:32:08 nobanner-nosession-41804 usermod[1545]: change user 'test' password
+Nov  8 01:32:09 nobanner-nosession-41804 sshd[1552]: Accepted password for test from 10.0.3.1 port 41216 ssh2
+Nov  8 01:32:09 nobanner-nosession-41804 sshd[1552]: pam_unix(sshd:session): session opened for user test by (uid=0)
+Nov  8 01:32:09 nobanner-nosession-41804 systemd-logind[164]: New session 2772 of user test.
+Nov  8 01:32:09 nobanner-nosession-41804 systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Nov  8 01:32:09 nobanner-nosession-41804 sshd[1569]: Received disconnect from 10.0.3.1 port 41216:11: 
+Nov  8 01:32:09 nobanner-nosession-41804 sshd[1569]: Disconnected from user test 10.0.3.1 port 41216
+Nov  8 01:32:09 nobanner-nosession-41804 sshd[1552]: pam_unix(sshd:session): session closed for user test
+Nov  8 01:32:09 nobanner-nosession-41804 systemd-logind[164]: Session 2772 logged out. Waiting for processes to exit.
+Nov  8 01:32:09 nobanner-nosession-41804 systemd-logind[164]: Removed session 2772.

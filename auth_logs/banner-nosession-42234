@@ -1,0 +1,35 @@
+Nov  8 14:10:48 banner-nosession-42234 systemd-logind[164]: New seat seat0.
+Nov  8 14:10:52 banner-nosession-42234 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 14:10:52 banner-nosession-42234 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 14:11:00 banner-nosession-42234 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 14:11:00 banner-nosession-42234 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 14:11:00 banner-nosession-42234 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 14:11:15 banner-nosession-42234 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 14:11:15 banner-nosession-42234 usermod[756]: change user 'sshd' password
+Nov  8 14:11:15 banner-nosession-42234 chage[763]: changed password expiry for sshd
+Nov  8 14:11:18 banner-nosession-42234 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 14:11:18 banner-nosession-42234 sshd[1198]: Server listening on :: port 22.
+Nov  8 14:11:20 banner-nosession-42234 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 14:11:20 banner-nosession-42234 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 14:11:20 banner-nosession-42234 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 14:11:29 banner-nosession-42234 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 14:11:52 banner-nosession-42234 sshd[1542]: Invalid user kee from 46.101.170.174 port 45496
+Nov  8 14:11:52 banner-nosession-42234 sshd[1542]: pam_unix(sshd:auth): check pass; user unknown
+Nov  8 14:11:52 banner-nosession-42234 sshd[1542]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=46.101.170.174 
+Nov  8 14:11:54 banner-nosession-42234 sshd[1542]: Failed password for invalid user kee from 46.101.170.174 port 45496 ssh2
+Nov  8 14:11:55 banner-nosession-42234 sshd[1542]: Received disconnect from 46.101.170.174 port 45496:11: Bye Bye [preauth]
+Nov  8 14:11:55 banner-nosession-42234 sshd[1542]: Disconnected from invalid user kee 46.101.170.174 port 45496 [preauth]
+Nov  8 14:17:01 banner-nosession-42234 CRON[1545]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  8 14:17:01 banner-nosession-42234 CRON[1545]: pam_unix(cron:session): session closed for user root
+Nov  8 14:17:20 banner-nosession-42234 useradd[1548]: new group: name=test, GID=1001
+Nov  8 14:17:20 banner-nosession-42234 useradd[1548]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/bash, from=none
+Nov  8 14:17:21 banner-nosession-42234 usermod[1557]: change user 'test' password
+Nov  8 14:17:21 banner-nosession-42234 sshd[1564]: Accepted password for test from 10.0.3.1 port 46662 ssh2
+Nov  8 14:17:21 banner-nosession-42234 sshd[1564]: pam_unix(sshd:session): session opened for user test by (uid=0)
+Nov  8 14:17:21 banner-nosession-42234 systemd-logind[164]: New session 3184 of user test.
+Nov  8 14:17:21 banner-nosession-42234 systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Nov  8 14:17:23 banner-nosession-42234 sshd[1581]: Received disconnect from 10.0.3.1 port 46662:11: 
+Nov  8 14:17:23 banner-nosession-42234 sshd[1581]: Disconnected from user test 10.0.3.1 port 46662
+Nov  8 14:17:23 banner-nosession-42234 sshd[1564]: pam_unix(sshd:session): session closed for user test
+Nov  8 14:17:23 banner-nosession-42234 systemd-logind[164]: Session 3184 logged out. Waiting for processes to exit.
+Nov  8 14:17:23 banner-nosession-42234 systemd-logind[164]: Removed session 3184.

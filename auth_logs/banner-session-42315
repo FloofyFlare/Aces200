@@ -1,0 +1,25 @@
+Nov  8 16:52:38 banner-session-42315 systemd-logind[165]: New seat seat0.
+Nov  8 16:52:41 banner-session-42315 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 16:52:41 banner-session-42315 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 16:52:50 banner-session-42315 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 16:52:50 banner-session-42315 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 16:52:50 banner-session-42315 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 16:52:59 banner-session-42315 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 16:53:00 banner-session-42315 usermod[756]: change user 'sshd' password
+Nov  8 16:53:00 banner-session-42315 chage[763]: changed password expiry for sshd
+Nov  8 16:53:02 banner-session-42315 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 16:53:02 banner-session-42315 sshd[1198]: Server listening on :: port 22.
+Nov  8 16:53:04 banner-session-42315 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 16:53:04 banner-session-42315 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 16:53:04 banner-session-42315 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 16:53:12 banner-session-42315 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 16:54:23 banner-session-42315 useradd[1545]: new group: name=caus, GID=1001
+Nov  8 16:54:23 banner-session-42315 useradd[1545]: new user: name=caus, UID=1001, GID=1001, home=/home/caus, shell=/bin/bash, from=none
+Nov  8 16:54:24 banner-session-42315 usermod[1554]: change user 'caus' password
+Nov  8 16:54:24 banner-session-42315 sshd[1561]: Accepted password for caus from 10.0.3.1 port 35894 ssh2
+Nov  8 16:54:24 banner-session-42315 sshd[1561]: pam_unix(sshd:session): session opened for user caus by (uid=0)
+Nov  8 16:54:24 banner-session-42315 systemd-logind[165]: New session 3305 of user caus.
+Nov  8 16:54:24 banner-session-42315 systemd: pam_unix(systemd-user:session): session opened for user caus by (uid=0)
+Nov  8 16:54:30 banner-session-42315 sshd[1561]: pam_unix(sshd:session): session closed for user caus
+Nov  8 16:54:30 banner-session-42315 systemd-logind[165]: Session 3305 logged out. Waiting for processes to exit.
+Nov  8 16:54:30 banner-session-42315 systemd-logind[165]: Removed session 3305.

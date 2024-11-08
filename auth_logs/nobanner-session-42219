@@ -1,0 +1,25 @@
+Nov  8 13:41:42 nobanner-session-42219 systemd-logind[164]: New seat seat0.
+Nov  8 13:41:45 nobanner-session-42219 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 13:41:45 nobanner-session-42219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:41:53 nobanner-session-42219 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:41:53 nobanner-session-42219 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 13:41:53 nobanner-session-42219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:42:02 nobanner-session-42219 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 13:42:03 nobanner-session-42219 usermod[756]: change user 'sshd' password
+Nov  8 13:42:03 nobanner-session-42219 chage[763]: changed password expiry for sshd
+Nov  8 13:42:05 nobanner-session-42219 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 13:42:05 nobanner-session-42219 sshd[1198]: Server listening on :: port 22.
+Nov  8 13:42:06 nobanner-session-42219 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:42:06 nobanner-session-42219 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 13:42:06 nobanner-session-42219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:42:17 nobanner-session-42219 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:43:07 nobanner-session-42219 useradd[1539]: new group: name=barb, GID=1001
+Nov  8 13:43:07 nobanner-session-42219 useradd[1539]: new user: name=barb, UID=1001, GID=1001, home=/home/barb, shell=/bin/bash, from=none
+Nov  8 13:43:08 nobanner-session-42219 usermod[1548]: change user 'barb' password
+Nov  8 13:43:08 nobanner-session-42219 sshd[1555]: Accepted password for barb from 10.0.3.1 port 52692 ssh2
+Nov  8 13:43:08 nobanner-session-42219 sshd[1555]: pam_unix(sshd:session): session opened for user barb by (uid=0)
+Nov  8 13:43:08 nobanner-session-42219 systemd-logind[164]: New session 3151 of user barb.
+Nov  8 13:43:08 nobanner-session-42219 systemd: pam_unix(systemd-user:session): session opened for user barb by (uid=0)
+Nov  8 13:43:14 nobanner-session-42219 sshd[1555]: pam_unix(sshd:session): session closed for user barb
+Nov  8 13:43:14 nobanner-session-42219 systemd-logind[164]: Session 3151 logged out. Waiting for processes to exit.
+Nov  8 13:43:14 nobanner-session-42219 systemd-logind[164]: Removed session 3151.

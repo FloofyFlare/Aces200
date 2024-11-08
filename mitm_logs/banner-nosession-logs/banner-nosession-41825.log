@@ -1,0 +1,36 @@
+(node:2628151) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-nosession-41825',
+  containerIp: '10.0.3.76',
+  mitmPort: 41825,
+  autoAccessFixed: 1
+}
+2024-11-07 21:32:43.123 - [Info] MITM Version: 2
+2024-11-07 21:32:43.125 - [Info] Auto Access Enabled: true
+2024-11-07 21:32:43.126 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 21:32:43.138 - [Info] SSH man-in-the-middle server for 10.0.3.76 listening on 10.0.3.1:41825
+2024-11-07 21:39:13.680 - [Debug] [Connection] Attacker connected: 54.176.82.40 | Client Identification: SSH-2.0-paramiko_3.4.0
+2024-11-07 21:39:13.827 - [Debug] [Connection] Client error on ssh server
+2024-11-07 21:39:13.830 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 21:39:14.180 - [Debug] [Connection] Attacker connected: 54.176.82.40 | Client Identification: SSH-2.0-paramiko_3.4.0
+2024-11-07 21:39:14.843 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 21:39:15.019 - [Debug] [Connection] Attacker connected: 54.176.82.40 | Client Identification: SSH-2.0-paramiko_3.4.0
+2024-11-07 21:39:15.398 - [Debug] [Connection] Client error on ssh server
+2024-11-07 21:39:15.399 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 21:39:15.592 - [Debug] [Connection] Attacker connected: 54.176.82.40 | Client Identification: SSH-2.0-paramiko_3.4.0
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

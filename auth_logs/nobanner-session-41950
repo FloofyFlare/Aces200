@@ -1,0 +1,25 @@
+Nov  8 06:08:02 nobanner-session-41950 systemd-logind[164]: New seat seat0.
+Nov  8 06:08:06 nobanner-session-41950 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 06:08:06 nobanner-session-41950 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:08:14 nobanner-session-41950 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:08:14 nobanner-session-41950 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 06:08:14 nobanner-session-41950 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:08:33 nobanner-session-41950 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 06:08:33 nobanner-session-41950 usermod[756]: change user 'sshd' password
+Nov  8 06:08:33 nobanner-session-41950 chage[763]: changed password expiry for sshd
+Nov  8 06:08:35 nobanner-session-41950 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 06:08:35 nobanner-session-41950 sshd[1198]: Server listening on :: port 22.
+Nov  8 06:08:36 nobanner-session-41950 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:08:36 nobanner-session-41950 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 06:08:36 nobanner-session-41950 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:08:45 nobanner-session-41950 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:09:49 nobanner-session-41950 useradd[1539]: new group: name=yoshikatsu, GID=1001
+Nov  8 06:09:49 nobanner-session-41950 useradd[1539]: new user: name=yoshikatsu, UID=1001, GID=1001, home=/home/yoshikatsu, shell=/bin/bash, from=none
+Nov  8 06:09:50 nobanner-session-41950 usermod[1548]: change user 'yoshikatsu' password
+Nov  8 06:09:50 nobanner-session-41950 sshd[1555]: Accepted password for yoshikatsu from 10.0.3.1 port 34950 ssh2
+Nov  8 06:09:50 nobanner-session-41950 sshd[1555]: pam_unix(sshd:session): session opened for user yoshikatsu by (uid=0)
+Nov  8 06:09:50 nobanner-session-41950 systemd-logind[164]: New session 2895 of user yoshikatsu.
+Nov  8 06:09:50 nobanner-session-41950 systemd: pam_unix(systemd-user:session): session opened for user yoshikatsu by (uid=0)
+Nov  8 06:09:56 nobanner-session-41950 sshd[1555]: pam_unix(sshd:session): session closed for user yoshikatsu
+Nov  8 06:09:56 nobanner-session-41950 systemd-logind[164]: Session 2895 logged out. Waiting for processes to exit.
+Nov  8 06:09:56 nobanner-session-41950 systemd-logind[164]: Removed session 2895.

@@ -1,0 +1,25 @@
+Nov  7 20:52:32 nobanner-session-41638 systemd-logind[164]: New seat seat0.
+Nov  7 20:52:35 nobanner-session-41638 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 20:52:35 nobanner-session-41638 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 20:52:43 nobanner-session-41638 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 20:52:43 nobanner-session-41638 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 20:52:43 nobanner-session-41638 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 20:52:53 nobanner-session-41638 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 20:52:53 nobanner-session-41638 usermod[756]: change user 'sshd' password
+Nov  7 20:52:53 nobanner-session-41638 chage[763]: changed password expiry for sshd
+Nov  7 20:52:55 nobanner-session-41638 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 20:52:55 nobanner-session-41638 sshd[1198]: Server listening on :: port 22.
+Nov  7 20:52:56 nobanner-session-41638 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 20:52:56 nobanner-session-41638 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 20:52:56 nobanner-session-41638 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 20:53:05 nobanner-session-41638 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 20:53:58 nobanner-session-41638 useradd[1539]: new group: name=webshop, GID=1001
+Nov  7 20:53:58 nobanner-session-41638 useradd[1539]: new user: name=webshop, UID=1001, GID=1001, home=/home/webshop, shell=/bin/bash, from=none
+Nov  7 20:53:59 nobanner-session-41638 usermod[1548]: change user 'webshop' password
+Nov  7 20:53:59 nobanner-session-41638 sshd[1555]: Accepted password for webshop from 10.0.3.1 port 41140 ssh2
+Nov  7 20:53:59 nobanner-session-41638 sshd[1555]: pam_unix(sshd:session): session opened for user webshop by (uid=0)
+Nov  7 20:53:59 nobanner-session-41638 systemd-logind[164]: New session 2637 of user webshop.
+Nov  7 20:53:59 nobanner-session-41638 systemd: pam_unix(systemd-user:session): session opened for user webshop by (uid=0)
+Nov  7 20:54:04 nobanner-session-41638 sshd[1555]: pam_unix(sshd:session): session closed for user webshop
+Nov  7 20:54:04 nobanner-session-41638 systemd-logind[164]: Session 2637 logged out. Waiting for processes to exit.
+Nov  7 20:54:04 nobanner-session-41638 systemd-logind[164]: Removed session 2637.

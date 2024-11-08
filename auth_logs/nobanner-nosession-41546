@@ -1,0 +1,27 @@
+Nov  7 17:52:42 nobanner-nosession-41546 systemd-logind[164]: New seat seat0.
+Nov  7 17:52:45 nobanner-nosession-41546 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 17:52:45 nobanner-nosession-41546 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:52:53 nobanner-nosession-41546 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:52:53 nobanner-nosession-41546 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 17:52:53 nobanner-nosession-41546 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:53:05 nobanner-nosession-41546 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 17:53:06 nobanner-nosession-41546 usermod[756]: change user 'sshd' password
+Nov  7 17:53:06 nobanner-nosession-41546 chage[763]: changed password expiry for sshd
+Nov  7 17:53:08 nobanner-nosession-41546 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 17:53:08 nobanner-nosession-41546 sshd[1198]: Server listening on :: port 22.
+Nov  7 17:53:10 nobanner-nosession-41546 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:53:10 nobanner-nosession-41546 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 17:53:10 nobanner-nosession-41546 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:53:24 nobanner-nosession-41546 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:53:28 nobanner-nosession-41546 useradd[1536]: new group: name=controlinterno, GID=1001
+Nov  7 17:53:28 nobanner-nosession-41546 useradd[1536]: new user: name=controlinterno, UID=1001, GID=1001, home=/home/controlinterno, shell=/bin/bash, from=none
+Nov  7 17:53:28 nobanner-nosession-41546 usermod[1545]: change user 'controlinterno' password
+Nov  7 17:53:28 nobanner-nosession-41546 sshd[1552]: Accepted password for controlinterno from 10.0.3.1 port 41550 ssh2
+Nov  7 17:53:28 nobanner-nosession-41546 sshd[1552]: pam_unix(sshd:session): session opened for user controlinterno by (uid=0)
+Nov  7 17:53:28 nobanner-nosession-41546 systemd-logind[164]: New session 2528 of user controlinterno.
+Nov  7 17:53:29 nobanner-nosession-41546 systemd: pam_unix(systemd-user:session): session opened for user controlinterno by (uid=0)
+Nov  7 17:53:32 nobanner-nosession-41546 sshd[1569]: Received disconnect from 10.0.3.1 port 41550:11: 
+Nov  7 17:53:32 nobanner-nosession-41546 sshd[1569]: Disconnected from user controlinterno 10.0.3.1 port 41550
+Nov  7 17:53:32 nobanner-nosession-41546 sshd[1552]: pam_unix(sshd:session): session closed for user controlinterno
+Nov  7 17:53:32 nobanner-nosession-41546 systemd-logind[164]: Session 2528 logged out. Waiting for processes to exit.
+Nov  7 17:53:32 nobanner-nosession-41546 systemd-logind[164]: Removed session 2528.

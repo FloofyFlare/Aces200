@@ -1,0 +1,25 @@
+Nov  7 19:13:56 banner-nosession-41594 systemd-logind[165]: New seat seat0.
+Nov  7 19:13:59 banner-nosession-41594 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 19:13:59 banner-nosession-41594 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:14:07 banner-nosession-41594 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:14:07 banner-nosession-41594 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 19:14:07 banner-nosession-41594 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:14:16 banner-nosession-41594 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 19:14:16 banner-nosession-41594 usermod[756]: change user 'sshd' password
+Nov  7 19:14:16 banner-nosession-41594 chage[763]: changed password expiry for sshd
+Nov  7 19:14:18 banner-nosession-41594 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 19:14:18 banner-nosession-41594 sshd[1198]: Server listening on :: port 22.
+Nov  7 19:14:21 banner-nosession-41594 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:14:21 banner-nosession-41594 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 19:14:21 banner-nosession-41594 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:14:28 banner-nosession-41594 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:15:13 banner-nosession-41594 useradd[1542]: new group: name=advit, GID=1001
+Nov  7 19:15:13 banner-nosession-41594 useradd[1542]: new user: name=advit, UID=1001, GID=1001, home=/home/advit, shell=/bin/bash, from=none
+Nov  7 19:15:13 banner-nosession-41594 usermod[1551]: change user 'advit' password
+Nov  7 19:15:13 banner-nosession-41594 sshd[1558]: Accepted password for advit from 10.0.3.1 port 60186 ssh2
+Nov  7 19:15:13 banner-nosession-41594 sshd[1558]: pam_unix(sshd:session): session opened for user advit by (uid=0)
+Nov  7 19:15:13 banner-nosession-41594 systemd-logind[165]: New session 2581 of user advit.
+Nov  7 19:15:14 banner-nosession-41594 systemd: pam_unix(systemd-user:session): session opened for user advit by (uid=0)
+Nov  7 19:15:21 banner-nosession-41594 sshd[1558]: pam_unix(sshd:session): session closed for user advit
+Nov  7 19:15:21 banner-nosession-41594 systemd-logind[165]: Session 2581 logged out. Waiting for processes to exit.
+Nov  7 19:15:21 banner-nosession-41594 systemd-logind[165]: Removed session 2581.

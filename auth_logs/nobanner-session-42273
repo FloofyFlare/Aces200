@@ -1,0 +1,27 @@
+Nov  8 15:25:04 nobanner-session-42273 systemd-logind[164]: New seat seat0.
+Nov  8 15:25:07 nobanner-session-42273 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 15:25:07 nobanner-session-42273 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:25:15 nobanner-session-42273 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:25:15 nobanner-session-42273 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 15:25:15 nobanner-session-42273 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:25:29 nobanner-session-42273 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 15:25:29 nobanner-session-42273 usermod[756]: change user 'sshd' password
+Nov  8 15:25:30 nobanner-session-42273 chage[763]: changed password expiry for sshd
+Nov  8 15:25:32 nobanner-session-42273 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 15:25:32 nobanner-session-42273 sshd[1198]: Server listening on :: port 22.
+Nov  8 15:25:33 nobanner-session-42273 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:25:33 nobanner-session-42273 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 15:25:33 nobanner-session-42273 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:25:41 nobanner-session-42273 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:25:46 nobanner-session-42273 useradd[1539]: new group: name=niaoyun, GID=1001
+Nov  8 15:25:46 nobanner-session-42273 useradd[1539]: new user: name=niaoyun, UID=1001, GID=1001, home=/home/niaoyun, shell=/bin/bash, from=none
+Nov  8 15:25:46 nobanner-session-42273 usermod[1548]: change user 'niaoyun' password
+Nov  8 15:25:46 nobanner-session-42273 sshd[1555]: Accepted password for niaoyun from 10.0.3.1 port 38110 ssh2
+Nov  8 15:25:46 nobanner-session-42273 sshd[1555]: pam_unix(sshd:session): session opened for user niaoyun by (uid=0)
+Nov  8 15:25:46 nobanner-session-42273 systemd-logind[164]: New session 3243 of user niaoyun.
+Nov  8 15:25:46 nobanner-session-42273 systemd: pam_unix(systemd-user:session): session opened for user niaoyun by (uid=0)
+Nov  8 15:25:48 nobanner-session-42273 sshd[1572]: Received disconnect from 10.0.3.1 port 38110:11: 
+Nov  8 15:25:48 nobanner-session-42273 sshd[1572]: Disconnected from user niaoyun 10.0.3.1 port 38110
+Nov  8 15:25:48 nobanner-session-42273 sshd[1555]: pam_unix(sshd:session): session closed for user niaoyun
+Nov  8 15:25:48 nobanner-session-42273 systemd-logind[164]: Session 3243 logged out. Waiting for processes to exit.
+Nov  8 15:25:48 nobanner-session-42273 systemd-logind[164]: Removed session 3243.

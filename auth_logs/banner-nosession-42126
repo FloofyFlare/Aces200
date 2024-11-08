@@ -1,0 +1,25 @@
+Nov  8 11:22:43 banner-nosession-42126 systemd-logind[165]: New seat seat0.
+Nov  8 11:22:47 banner-nosession-42126 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 11:22:47 banner-nosession-42126 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:22:56 banner-nosession-42126 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:22:56 banner-nosession-42126 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 11:22:56 banner-nosession-42126 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:23:09 banner-nosession-42126 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 11:23:09 banner-nosession-42126 usermod[756]: change user 'sshd' password
+Nov  8 11:23:09 banner-nosession-42126 chage[763]: changed password expiry for sshd
+Nov  8 11:23:11 banner-nosession-42126 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 11:23:11 banner-nosession-42126 sshd[1198]: Server listening on :: port 22.
+Nov  8 11:23:14 banner-nosession-42126 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:23:14 banner-nosession-42126 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 11:23:14 banner-nosession-42126 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:23:23 banner-nosession-42126 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:24:51 banner-nosession-42126 useradd[1542]: new group: name=sunggwang, GID=1001
+Nov  8 11:24:51 banner-nosession-42126 useradd[1542]: new user: name=sunggwang, UID=1001, GID=1001, home=/home/sunggwang, shell=/bin/bash, from=none
+Nov  8 11:24:51 banner-nosession-42126 usermod[1551]: change user 'sunggwang' password
+Nov  8 11:24:52 banner-nosession-42126 sshd[1558]: Accepted password for sunggwang from 10.0.3.1 port 43610 ssh2
+Nov  8 11:24:52 banner-nosession-42126 sshd[1558]: pam_unix(sshd:session): session opened for user sunggwang by (uid=0)
+Nov  8 11:24:52 banner-nosession-42126 systemd-logind[165]: New session 3076 of user sunggwang.
+Nov  8 11:24:52 banner-nosession-42126 systemd: pam_unix(systemd-user:session): session opened for user sunggwang by (uid=0)
+Nov  8 11:24:57 banner-nosession-42126 sshd[1558]: pam_unix(sshd:session): session closed for user sunggwang
+Nov  8 11:24:57 banner-nosession-42126 systemd-logind[165]: Session 3076 logged out. Waiting for processes to exit.
+Nov  8 11:24:57 banner-nosession-42126 systemd-logind[165]: Removed session 3076.

@@ -1,0 +1,25 @@
+Nov  8 10:45:25 banner-session-42102 systemd-logind[165]: New seat seat0.
+Nov  8 10:45:28 banner-session-42102 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 10:45:28 banner-session-42102 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 10:45:36 banner-session-42102 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 10:45:36 banner-session-42102 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 10:45:36 banner-session-42102 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 10:45:46 banner-session-42102 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 10:45:47 banner-session-42102 usermod[756]: change user 'sshd' password
+Nov  8 10:45:47 banner-session-42102 chage[763]: changed password expiry for sshd
+Nov  8 10:45:49 banner-session-42102 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 10:45:49 banner-session-42102 sshd[1198]: Server listening on :: port 22.
+Nov  8 10:45:50 banner-session-42102 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 10:45:50 banner-session-42102 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 10:45:50 banner-session-42102 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 10:45:57 banner-session-42102 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 10:46:53 banner-session-42102 useradd[1545]: new group: name=jalves, GID=1001
+Nov  8 10:46:53 banner-session-42102 useradd[1545]: new user: name=jalves, UID=1001, GID=1001, home=/home/jalves, shell=/bin/bash, from=none
+Nov  8 10:46:54 banner-session-42102 usermod[1554]: change user 'jalves' password
+Nov  8 10:46:54 banner-session-42102 sshd[1561]: Accepted password for jalves from 10.0.3.1 port 58710 ssh2
+Nov  8 10:46:54 banner-session-42102 sshd[1561]: pam_unix(sshd:session): session opened for user jalves by (uid=0)
+Nov  8 10:46:54 banner-session-42102 systemd-logind[165]: New session 3057 of user jalves.
+Nov  8 10:46:54 banner-session-42102 systemd: pam_unix(systemd-user:session): session opened for user jalves by (uid=0)
+Nov  8 10:46:59 banner-session-42102 sshd[1561]: pam_unix(sshd:session): session closed for user jalves
+Nov  8 10:46:59 banner-session-42102 systemd-logind[165]: Session 3057 logged out. Waiting for processes to exit.
+Nov  8 10:46:59 banner-session-42102 systemd-logind[165]: Removed session 3057.

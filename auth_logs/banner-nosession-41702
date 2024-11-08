@@ -1,0 +1,27 @@
+Nov  7 22:53:53 banner-nosession-41702 systemd-logind[165]: New seat seat0.
+Nov  7 22:53:57 banner-nosession-41702 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 22:53:57 banner-nosession-41702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 22:54:05 banner-nosession-41702 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 22:54:05 banner-nosession-41702 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 22:54:05 banner-nosession-41702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 22:54:32 banner-nosession-41702 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 22:54:32 banner-nosession-41702 usermod[756]: change user 'sshd' password
+Nov  7 22:54:32 banner-nosession-41702 chage[763]: changed password expiry for sshd
+Nov  7 22:54:34 banner-nosession-41702 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 22:54:34 banner-nosession-41702 sshd[1198]: Server listening on :: port 22.
+Nov  7 22:54:36 banner-nosession-41702 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 22:54:36 banner-nosession-41702 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 22:54:36 banner-nosession-41702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 22:54:45 banner-nosession-41702 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 22:54:53 banner-nosession-41702 useradd[1542]: new group: name=xbox, GID=1001
+Nov  7 22:54:53 banner-nosession-41702 useradd[1542]: new user: name=xbox, UID=1001, GID=1001, home=/home/xbox, shell=/bin/bash, from=none
+Nov  7 22:54:54 banner-nosession-41702 usermod[1551]: change user 'xbox' password
+Nov  7 22:54:54 banner-nosession-41702 sshd[1558]: Accepted password for xbox from 10.0.3.1 port 57310 ssh2
+Nov  7 22:54:54 banner-nosession-41702 sshd[1558]: pam_unix(sshd:session): session opened for user xbox by (uid=0)
+Nov  7 22:54:54 banner-nosession-41702 systemd-logind[165]: New session 2703 of user xbox.
+Nov  7 22:54:54 banner-nosession-41702 systemd: pam_unix(systemd-user:session): session opened for user xbox by (uid=0)
+Nov  7 22:55:25 banner-nosession-41702 sshd[1575]: Received disconnect from 10.0.3.1 port 57310:11: 
+Nov  7 22:55:25 banner-nosession-41702 sshd[1575]: Disconnected from user xbox 10.0.3.1 port 57310
+Nov  7 22:55:25 banner-nosession-41702 sshd[1558]: pam_unix(sshd:session): session closed for user xbox
+Nov  7 22:55:25 banner-nosession-41702 systemd-logind[165]: Session 2703 logged out. Waiting for processes to exit.
+Nov  7 22:55:25 banner-nosession-41702 systemd-logind[165]: Removed session 2703.

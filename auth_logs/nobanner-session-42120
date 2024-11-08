@@ -1,0 +1,21 @@
+Nov  8 11:13:44 nobanner-session-42120 systemd-logind[164]: New seat seat0.
+Nov  8 11:13:47 nobanner-session-42120 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 11:13:47 nobanner-session-42120 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:13:57 nobanner-session-42120 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:13:57 nobanner-session-42120 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 11:13:57 nobanner-session-42120 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:14:13 nobanner-session-42120 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 11:14:13 nobanner-session-42120 usermod[756]: change user 'sshd' password
+Nov  8 11:14:13 nobanner-session-42120 chage[763]: changed password expiry for sshd
+Nov  8 11:14:15 nobanner-session-42120 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 11:14:15 nobanner-session-42120 sshd[1198]: Server listening on :: port 22.
+Nov  8 11:14:17 nobanner-session-42120 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:14:17 nobanner-session-42120 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 11:14:17 nobanner-session-42120 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:14:34 nobanner-session-42120 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:15:36 nobanner-session-42120 useradd[1539]: failed adding user 'root', data deleted
+Nov  8 11:15:36 nobanner-session-42120 usermod[1540]: change user 'root' password
+Nov  8 11:15:36 nobanner-session-42120 sshd[1547]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov  8 11:15:38 nobanner-session-42120 sshd[1547]: Failed password for root from 10.0.3.1 port 53724 ssh2
+Nov  8 11:15:39 nobanner-session-42120 sshd[1547]: Received disconnect from 10.0.3.1 port 53724:11:  [preauth]
+Nov  8 11:15:39 nobanner-session-42120 sshd[1547]: Disconnected from authenticating user root 10.0.3.1 port 53724 [preauth]

@@ -1,0 +1,25 @@
+Nov  8 15:10:45 nobanner-nosession-42254 systemd-logind[164]: New seat seat0.
+Nov  8 15:10:49 nobanner-nosession-42254 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 15:10:49 nobanner-nosession-42254 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:10:56 nobanner-nosession-42254 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:10:56 nobanner-nosession-42254 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 15:10:56 nobanner-nosession-42254 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:11:05 nobanner-nosession-42254 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 15:11:06 nobanner-nosession-42254 usermod[756]: change user 'sshd' password
+Nov  8 15:11:06 nobanner-nosession-42254 chage[763]: changed password expiry for sshd
+Nov  8 15:11:08 nobanner-nosession-42254 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 15:11:08 nobanner-nosession-42254 sshd[1198]: Server listening on :: port 22.
+Nov  8 15:11:11 nobanner-nosession-42254 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:11:11 nobanner-nosession-42254 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 15:11:11 nobanner-nosession-42254 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:11:17 nobanner-nosession-42254 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:11:51 nobanner-nosession-42254 useradd[1536]: new group: name=deda, GID=1001
+Nov  8 15:11:51 nobanner-nosession-42254 useradd[1536]: new user: name=deda, UID=1001, GID=1001, home=/home/deda, shell=/bin/bash, from=none
+Nov  8 15:11:51 nobanner-nosession-42254 usermod[1545]: change user 'deda' password
+Nov  8 15:11:52 nobanner-nosession-42254 sshd[1552]: Accepted password for deda from 10.0.3.1 port 51934 ssh2
+Nov  8 15:11:52 nobanner-nosession-42254 sshd[1552]: pam_unix(sshd:session): session opened for user deda by (uid=0)
+Nov  8 15:11:52 nobanner-nosession-42254 systemd-logind[164]: New session 3208 of user deda.
+Nov  8 15:11:52 nobanner-nosession-42254 systemd: pam_unix(systemd-user:session): session opened for user deda by (uid=0)
+Nov  8 15:11:58 nobanner-nosession-42254 sshd[1552]: pam_unix(sshd:session): session closed for user deda
+Nov  8 15:11:58 nobanner-nosession-42254 systemd-logind[164]: Session 3208 logged out. Waiting for processes to exit.
+Nov  8 15:11:58 nobanner-nosession-42254 systemd-logind[164]: Removed session 3208.

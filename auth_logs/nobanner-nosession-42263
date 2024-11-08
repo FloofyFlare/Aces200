@@ -1,0 +1,27 @@
+Nov  8 15:17:28 nobanner-nosession-42263 systemd-logind[164]: New seat seat0.
+Nov  8 15:17:32 nobanner-nosession-42263 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 15:17:32 nobanner-nosession-42263 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:17:41 nobanner-nosession-42263 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:17:41 nobanner-nosession-42263 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 15:17:41 nobanner-nosession-42263 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:17:55 nobanner-nosession-42263 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 15:17:55 nobanner-nosession-42263 usermod[756]: change user 'sshd' password
+Nov  8 15:17:56 nobanner-nosession-42263 chage[763]: changed password expiry for sshd
+Nov  8 15:17:58 nobanner-nosession-42263 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 15:17:58 nobanner-nosession-42263 sshd[1198]: Server listening on :: port 22.
+Nov  8 15:18:00 nobanner-nosession-42263 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:18:00 nobanner-nosession-42263 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 15:18:00 nobanner-nosession-42263 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:18:12 nobanner-nosession-42263 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:18:16 nobanner-nosession-42263 useradd[1536]: new group: name=www, GID=1001
+Nov  8 15:18:16 nobanner-nosession-42263 useradd[1536]: new user: name=www, UID=1001, GID=1001, home=/home/www, shell=/bin/bash, from=none
+Nov  8 15:18:17 nobanner-nosession-42263 usermod[1545]: change user 'www' password
+Nov  8 15:18:17 nobanner-nosession-42263 sshd[1552]: Accepted password for www from 10.0.3.1 port 57410 ssh2
+Nov  8 15:18:17 nobanner-nosession-42263 sshd[1552]: pam_unix(sshd:session): session opened for user www by (uid=0)
+Nov  8 15:18:17 nobanner-nosession-42263 systemd-logind[164]: New session 3225 of user www.
+Nov  8 15:18:18 nobanner-nosession-42263 systemd: pam_unix(systemd-user:session): session opened for user www by (uid=0)
+Nov  8 15:18:19 nobanner-nosession-42263 sshd[1569]: Received disconnect from 10.0.3.1 port 57410:11: 
+Nov  8 15:18:19 nobanner-nosession-42263 sshd[1569]: Disconnected from user www 10.0.3.1 port 57410
+Nov  8 15:18:19 nobanner-nosession-42263 sshd[1552]: pam_unix(sshd:session): session closed for user www
+Nov  8 15:18:19 nobanner-nosession-42263 systemd-logind[164]: Session 3225 logged out. Waiting for processes to exit.
+Nov  8 15:18:19 nobanner-nosession-42263 systemd-logind[164]: Removed session 3225.

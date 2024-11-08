@@ -1,0 +1,25 @@
+Nov  8 11:25:20 banner-session-42127 systemd-logind[164]: New seat seat0.
+Nov  8 11:25:24 banner-session-42127 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 11:25:24 banner-session-42127 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:25:32 banner-session-42127 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:25:33 banner-session-42127 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 11:25:33 banner-session-42127 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:25:42 banner-session-42127 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 11:25:42 banner-session-42127 usermod[756]: change user 'sshd' password
+Nov  8 11:25:42 banner-session-42127 chage[763]: changed password expiry for sshd
+Nov  8 11:25:44 banner-session-42127 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 11:25:44 banner-session-42127 sshd[1198]: Server listening on :: port 22.
+Nov  8 11:25:46 banner-session-42127 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:25:46 banner-session-42127 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 11:25:46 banner-session-42127 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 11:25:54 banner-session-42127 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 11:26:11 banner-session-42127 useradd[1545]: new group: name=harzlina, GID=1001
+Nov  8 11:26:11 banner-session-42127 useradd[1545]: new user: name=harzlina, UID=1001, GID=1001, home=/home/harzlina, shell=/bin/bash, from=none
+Nov  8 11:26:11 banner-session-42127 usermod[1554]: change user 'harzlina' password
+Nov  8 11:26:11 banner-session-42127 sshd[1561]: Accepted password for harzlina from 10.0.3.1 port 41204 ssh2
+Nov  8 11:26:11 banner-session-42127 sshd[1561]: pam_unix(sshd:session): session opened for user harzlina by (uid=0)
+Nov  8 11:26:11 banner-session-42127 systemd-logind[164]: New session 3079 of user harzlina.
+Nov  8 11:26:11 banner-session-42127 systemd: pam_unix(systemd-user:session): session opened for user harzlina by (uid=0)
+Nov  8 11:26:17 banner-session-42127 sshd[1561]: pam_unix(sshd:session): session closed for user harzlina
+Nov  8 11:26:17 banner-session-42127 systemd-logind[164]: Session 3079 logged out. Waiting for processes to exit.
+Nov  8 11:26:17 banner-session-42127 systemd-logind[164]: Removed session 3079.

@@ -1,0 +1,34 @@
+(node:2528979) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-nosession-41796',
+  containerIp: '10.0.3.210',
+  mitmPort: 41796,
+  autoAccessFixed: 1
+}
+2024-11-07 20:16:10.160 - [Info] MITM Version: 2
+2024-11-07 20:16:10.162 - [Info] Auto Access Enabled: true
+2024-11-07 20:16:10.163 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 20:16:10.174 - [Info] SSH man-in-the-middle server for 10.0.3.210 listening on 10.0.3.1:41796
+2024-11-07 20:19:11.467 - [Debug] [Connection] Attacker connected: 119.1.156.50 | Client Identification: SSH-2.0-libssh_0.7.4
+2024-11-07 20:19:15.589 - [Debug] [Connection] Client error on ssh server
+2024-11-07 20:19:42.768 - [Debug] [Connection] Attacker connected: 119.1.156.50 | Client Identification: SSH-2.0-libssh_0.7.4
+2024-11-07 20:20:13.488 - [Debug] [Connection] Attacker connected: 119.1.156.50 | Client Identification: SSH-2.0-libssh_0.7.4
+2024-11-07 20:20:44.272 - [Debug] [Connection] Attacker connected: 119.1.156.50 | Client Identification: SSH-2.0-libssh_0.7.4
+2024-11-07 20:20:47.512 - [Debug] [Connection] Client error on ssh server
+2024-11-07 20:21:15.179 - [Debug] [Connection] Attacker connected: 119.1.156.50 | Client Identification: SSH-2.0-libssh_0.7.4
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

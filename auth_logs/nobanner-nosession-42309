@@ -1,0 +1,25 @@
+Nov  8 16:41:59 nobanner-nosession-42309 systemd-logind[164]: New seat seat0.
+Nov  8 16:42:02 nobanner-nosession-42309 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 16:42:02 nobanner-nosession-42309 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 16:42:11 nobanner-nosession-42309 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 16:42:11 nobanner-nosession-42309 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 16:42:11 nobanner-nosession-42309 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 16:42:21 nobanner-nosession-42309 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 16:42:21 nobanner-nosession-42309 usermod[756]: change user 'sshd' password
+Nov  8 16:42:21 nobanner-nosession-42309 chage[763]: changed password expiry for sshd
+Nov  8 16:42:23 nobanner-nosession-42309 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 16:42:23 nobanner-nosession-42309 sshd[1198]: Server listening on :: port 22.
+Nov  8 16:42:26 nobanner-nosession-42309 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 16:42:26 nobanner-nosession-42309 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 16:42:26 nobanner-nosession-42309 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 16:42:34 nobanner-nosession-42309 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 16:46:31 nobanner-nosession-42309 useradd[1536]: new group: name=lamour, GID=1001
+Nov  8 16:46:31 nobanner-nosession-42309 useradd[1536]: new user: name=lamour, UID=1001, GID=1001, home=/home/lamour, shell=/bin/bash, from=none
+Nov  8 16:46:31 nobanner-nosession-42309 usermod[1545]: change user 'lamour' password
+Nov  8 16:46:31 nobanner-nosession-42309 sshd[1552]: Accepted password for lamour from 10.0.3.1 port 53504 ssh2
+Nov  8 16:46:31 nobanner-nosession-42309 sshd[1552]: pam_unix(sshd:session): session opened for user lamour by (uid=0)
+Nov  8 16:46:31 nobanner-nosession-42309 systemd-logind[164]: New session 3295 of user lamour.
+Nov  8 16:46:32 nobanner-nosession-42309 systemd: pam_unix(systemd-user:session): session opened for user lamour by (uid=0)
+Nov  8 16:46:38 nobanner-nosession-42309 sshd[1552]: pam_unix(sshd:session): session closed for user lamour
+Nov  8 16:46:38 nobanner-nosession-42309 systemd-logind[164]: Session 3295 logged out. Waiting for processes to exit.
+Nov  8 16:46:38 nobanner-nosession-42309 systemd-logind[164]: Removed session 3295.

@@ -1,0 +1,25 @@
+Nov  8 07:46:20 banner-nosession-42004 systemd-logind[164]: New seat seat0.
+Nov  8 07:46:23 banner-nosession-42004 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 07:46:23 banner-nosession-42004 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:46:31 banner-nosession-42004 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:46:31 banner-nosession-42004 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 07:46:31 banner-nosession-42004 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:46:52 banner-nosession-42004 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 07:46:52 banner-nosession-42004 usermod[756]: change user 'sshd' password
+Nov  8 07:46:52 banner-nosession-42004 chage[763]: changed password expiry for sshd
+Nov  8 07:46:54 banner-nosession-42004 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 07:46:54 banner-nosession-42004 sshd[1198]: Server listening on :: port 22.
+Nov  8 07:46:55 banner-nosession-42004 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:46:55 banner-nosession-42004 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 07:46:55 banner-nosession-42004 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:47:04 banner-nosession-42004 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:47:22 banner-nosession-42004 useradd[1542]: new group: name=jeizisu, GID=1001
+Nov  8 07:47:22 banner-nosession-42004 useradd[1542]: new user: name=jeizisu, UID=1001, GID=1001, home=/home/jeizisu, shell=/bin/bash, from=none
+Nov  8 07:47:22 banner-nosession-42004 usermod[1551]: change user 'jeizisu' password
+Nov  8 07:47:22 banner-nosession-42004 sshd[1558]: Accepted password for jeizisu from 10.0.3.1 port 51242 ssh2
+Nov  8 07:47:22 banner-nosession-42004 sshd[1558]: pam_unix(sshd:session): session opened for user jeizisu by (uid=0)
+Nov  8 07:47:23 banner-nosession-42004 systemd-logind[164]: New session 2943 of user jeizisu.
+Nov  8 07:47:23 banner-nosession-42004 systemd: pam_unix(systemd-user:session): session opened for user jeizisu by (uid=0)
+Nov  8 07:47:29 banner-nosession-42004 sshd[1558]: pam_unix(sshd:session): session closed for user jeizisu
+Nov  8 07:47:29 banner-nosession-42004 systemd-logind[164]: Session 2943 logged out. Waiting for processes to exit.
+Nov  8 07:47:29 banner-nosession-42004 systemd-logind[164]: Removed session 2943.

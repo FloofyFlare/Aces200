@@ -1,0 +1,25 @@
+Nov  8 07:25:45 banner-session-41992 systemd-logind[164]: New seat seat0.
+Nov  8 07:25:48 banner-session-41992 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 07:25:48 banner-session-41992 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:25:56 banner-session-41992 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:25:56 banner-session-41992 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 07:25:56 banner-session-41992 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:26:06 banner-session-41992 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 07:26:07 banner-session-41992 usermod[756]: change user 'sshd' password
+Nov  8 07:26:07 banner-session-41992 chage[763]: changed password expiry for sshd
+Nov  8 07:26:09 banner-session-41992 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 07:26:09 banner-session-41992 sshd[1198]: Server listening on :: port 22.
+Nov  8 07:26:11 banner-session-41992 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:26:11 banner-session-41992 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 07:26:11 banner-session-41992 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:26:19 banner-session-41992 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:31:09 banner-session-41992 useradd[1546]: new group: name=carha, GID=1001
+Nov  8 07:31:09 banner-session-41992 useradd[1546]: new user: name=carha, UID=1001, GID=1001, home=/home/carha, shell=/bin/bash, from=none
+Nov  8 07:31:09 banner-session-41992 usermod[1555]: change user 'carha' password
+Nov  8 07:31:09 banner-session-41992 sshd[1562]: Accepted password for carha from 10.0.3.1 port 46582 ssh2
+Nov  8 07:31:09 banner-session-41992 sshd[1562]: pam_unix(sshd:session): session opened for user carha by (uid=0)
+Nov  8 07:31:09 banner-session-41992 systemd-logind[164]: New session 2929 of user carha.
+Nov  8 07:31:09 banner-session-41992 systemd: pam_unix(systemd-user:session): session opened for user carha by (uid=0)
+Nov  8 07:31:17 banner-session-41992 sshd[1562]: pam_unix(sshd:session): session closed for user carha
+Nov  8 07:31:17 banner-session-41992 systemd-logind[164]: Session 2929 logged out. Waiting for processes to exit.
+Nov  8 07:31:17 banner-session-41992 systemd-logind[164]: Removed session 2929.

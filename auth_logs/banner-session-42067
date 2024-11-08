@@ -1,0 +1,29 @@
+Nov  8 09:13:15 banner-session-42067 systemd-logind[165]: New seat seat0.
+Nov  8 09:13:19 banner-session-42067 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 09:13:19 banner-session-42067 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 09:13:27 banner-session-42067 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 09:13:27 banner-session-42067 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 09:13:27 banner-session-42067 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 09:13:52 banner-session-42067 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 09:13:53 banner-session-42067 usermod[756]: change user 'sshd' password
+Nov  8 09:13:53 banner-session-42067 chage[763]: changed password expiry for sshd
+Nov  8 09:13:55 banner-session-42067 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 09:13:55 banner-session-42067 sshd[1198]: Server listening on :: port 22.
+Nov  8 09:13:57 banner-session-42067 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 09:13:57 banner-session-42067 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 09:13:57 banner-session-42067 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 09:14:06 banner-session-42067 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 09:17:01 banner-session-42067 CRON[1545]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  8 09:17:01 banner-session-42067 CRON[1545]: pam_unix(cron:session): session closed for user root
+Nov  8 09:23:40 banner-session-42067 useradd[1549]: new group: name=User, GID=1001
+Nov  8 09:23:40 banner-session-42067 useradd[1549]: new user: name=User, UID=1001, GID=1001, home=/home/User, shell=/bin/bash, from=none
+Nov  8 09:23:41 banner-session-42067 usermod[1558]: change user 'User' password
+Nov  8 09:23:41 banner-session-42067 sshd[1565]: Accepted password for User from 10.0.3.1 port 41228 ssh2
+Nov  8 09:23:41 banner-session-42067 sshd[1565]: pam_unix(sshd:session): session opened for user User by (uid=0)
+Nov  8 09:23:41 banner-session-42067 systemd-logind[165]: New session 3010 of user User.
+Nov  8 09:23:41 banner-session-42067 systemd: pam_unix(systemd-user:session): session opened for user User by (uid=0)
+Nov  8 09:23:47 banner-session-42067 sshd[1582]: Received disconnect from 10.0.3.1 port 41228:11: 
+Nov  8 09:23:47 banner-session-42067 sshd[1582]: Disconnected from user User 10.0.3.1 port 41228
+Nov  8 09:23:47 banner-session-42067 sshd[1565]: pam_unix(sshd:session): session closed for user User
+Nov  8 09:23:47 banner-session-42067 systemd-logind[165]: Session 3010 logged out. Waiting for processes to exit.
+Nov  8 09:23:47 banner-session-42067 systemd-logind[165]: Removed session 3010.

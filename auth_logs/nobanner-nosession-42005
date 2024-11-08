@@ -1,0 +1,27 @@
+Nov  8 07:47:53 nobanner-nosession-42005 systemd-logind[164]: New seat seat0.
+Nov  8 07:47:56 nobanner-nosession-42005 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 07:47:56 nobanner-nosession-42005 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:48:04 nobanner-nosession-42005 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:48:04 nobanner-nosession-42005 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 07:48:04 nobanner-nosession-42005 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:48:15 nobanner-nosession-42005 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 07:48:15 nobanner-nosession-42005 usermod[756]: change user 'sshd' password
+Nov  8 07:48:15 nobanner-nosession-42005 chage[763]: changed password expiry for sshd
+Nov  8 07:48:17 nobanner-nosession-42005 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 07:48:17 nobanner-nosession-42005 sshd[1198]: Server listening on :: port 22.
+Nov  8 07:48:18 nobanner-nosession-42005 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:48:19 nobanner-nosession-42005 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 07:48:19 nobanner-nosession-42005 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 07:48:33 nobanner-nosession-42005 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 07:51:00 nobanner-nosession-42005 useradd[1536]: new group: name=sylviev, GID=1001
+Nov  8 07:51:00 nobanner-nosession-42005 useradd[1536]: new user: name=sylviev, UID=1001, GID=1001, home=/home/sylviev, shell=/bin/bash, from=none
+Nov  8 07:51:00 nobanner-nosession-42005 usermod[1545]: change user 'sylviev' password
+Nov  8 07:51:00 nobanner-nosession-42005 sshd[1552]: Accepted password for sylviev from 10.0.3.1 port 59384 ssh2
+Nov  8 07:51:00 nobanner-nosession-42005 sshd[1552]: pam_unix(sshd:session): session opened for user sylviev by (uid=0)
+Nov  8 07:51:00 nobanner-nosession-42005 systemd-logind[164]: New session 2947 of user sylviev.
+Nov  8 07:51:00 nobanner-nosession-42005 systemd: pam_unix(systemd-user:session): session opened for user sylviev by (uid=0)
+Nov  8 07:51:04 nobanner-nosession-42005 sshd[1569]: Received disconnect from 10.0.3.1 port 59384:11: 
+Nov  8 07:51:04 nobanner-nosession-42005 sshd[1569]: Disconnected from user sylviev 10.0.3.1 port 59384
+Nov  8 07:51:04 nobanner-nosession-42005 sshd[1552]: pam_unix(sshd:session): session closed for user sylviev
+Nov  8 07:51:04 nobanner-nosession-42005 systemd-logind[164]: Session 2947 logged out. Waiting for processes to exit.
+Nov  8 07:51:04 nobanner-nosession-42005 systemd-logind[164]: Removed session 2947.

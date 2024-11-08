@@ -1,0 +1,27 @@
+Nov  8 06:31:20 nobanner-nosession-41958 systemd-logind[164]: New seat seat0.
+Nov  8 06:31:23 nobanner-nosession-41958 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 06:31:23 nobanner-nosession-41958 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:31:33 nobanner-nosession-41958 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:31:33 nobanner-nosession-41958 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 06:31:33 nobanner-nosession-41958 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:31:49 nobanner-nosession-41958 useradd[692]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 06:31:49 nobanner-nosession-41958 usermod[700]: change user 'sshd' password
+Nov  8 06:31:49 nobanner-nosession-41958 chage[707]: changed password expiry for sshd
+Nov  8 06:31:51 nobanner-nosession-41958 sshd[1142]: Server listening on 0.0.0.0 port 22.
+Nov  8 06:31:51 nobanner-nosession-41958 sshd[1142]: Server listening on :: port 22.
+Nov  8 06:31:53 nobanner-nosession-41958 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:31:53 nobanner-nosession-41958 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 06:31:53 nobanner-nosession-41958 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:32:02 nobanner-nosession-41958 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:34:29 nobanner-nosession-41958 useradd[1510]: new group: name=support, GID=1001
+Nov  8 06:34:29 nobanner-nosession-41958 useradd[1510]: new user: name=support, UID=1001, GID=1001, home=/home/support, shell=/bin/bash, from=none
+Nov  8 06:34:29 nobanner-nosession-41958 usermod[1519]: change user 'support' password
+Nov  8 06:34:29 nobanner-nosession-41958 sshd[1526]: Accepted password for support from 10.0.3.1 port 60162 ssh2
+Nov  8 06:34:29 nobanner-nosession-41958 sshd[1526]: pam_unix(sshd:session): session opened for user support by (uid=0)
+Nov  8 06:34:29 nobanner-nosession-41958 systemd-logind[164]: New session 2910 of user support.
+Nov  8 06:34:29 nobanner-nosession-41958 systemd: pam_unix(systemd-user:session): session opened for user support by (uid=0)
+Nov  8 06:34:30 nobanner-nosession-41958 sshd[1543]: Received disconnect from 10.0.3.1 port 60162:11: 
+Nov  8 06:34:30 nobanner-nosession-41958 sshd[1543]: Disconnected from user support 10.0.3.1 port 60162
+Nov  8 06:34:30 nobanner-nosession-41958 sshd[1526]: pam_unix(sshd:session): session closed for user support
+Nov  8 06:34:30 nobanner-nosession-41958 systemd-logind[164]: Session 2910 logged out. Waiting for processes to exit.
+Nov  8 06:34:30 nobanner-nosession-41958 systemd-logind[164]: Removed session 2910.

@@ -1,0 +1,29 @@
+Nov  8 00:15:19 banner-nosession-41768 systemd-logind[165]: New seat seat0.
+Nov  8 00:15:22 banner-nosession-41768 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 00:15:22 banner-nosession-41768 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 00:15:30 banner-nosession-41768 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 00:15:30 banner-nosession-41768 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 00:15:30 banner-nosession-41768 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 00:15:42 banner-nosession-41768 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 00:15:42 banner-nosession-41768 usermod[756]: change user 'sshd' password
+Nov  8 00:15:42 banner-nosession-41768 chage[763]: changed password expiry for sshd
+Nov  8 00:15:45 banner-nosession-41768 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 00:15:45 banner-nosession-41768 sshd[1198]: Server listening on :: port 22.
+Nov  8 00:15:48 banner-nosession-41768 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 00:15:48 banner-nosession-41768 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 00:15:48 banner-nosession-41768 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 00:15:55 banner-nosession-41768 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 00:17:01 banner-nosession-41768 CRON[1542]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  8 00:17:01 banner-nosession-41768 CRON[1542]: pam_unix(cron:session): session closed for user root
+Nov  8 00:19:41 banner-nosession-41768 useradd[1545]: new group: name=support, GID=1001
+Nov  8 00:19:41 banner-nosession-41768 useradd[1545]: new user: name=support, UID=1001, GID=1001, home=/home/support, shell=/bin/bash, from=none
+Nov  8 00:19:41 banner-nosession-41768 usermod[1554]: change user 'support' password
+Nov  8 00:19:41 banner-nosession-41768 sshd[1561]: Accepted password for support from 10.0.3.1 port 36532 ssh2
+Nov  8 00:19:41 banner-nosession-41768 sshd[1561]: pam_unix(sshd:session): session opened for user support by (uid=0)
+Nov  8 00:19:41 banner-nosession-41768 systemd-logind[165]: New session 2735 of user support.
+Nov  8 00:19:41 banner-nosession-41768 systemd: pam_unix(systemd-user:session): session opened for user support by (uid=0)
+Nov  8 00:20:42 banner-nosession-41768 sshd[1578]: Received disconnect from 10.0.3.1 port 36532:11: 
+Nov  8 00:20:42 banner-nosession-41768 sshd[1578]: Disconnected from user support 10.0.3.1 port 36532
+Nov  8 00:20:42 banner-nosession-41768 sshd[1561]: pam_unix(sshd:session): session closed for user support
+Nov  8 00:20:42 banner-nosession-41768 systemd-logind[165]: Session 2735 logged out. Waiting for processes to exit.
+Nov  8 00:20:42 banner-nosession-41768 systemd-logind[165]: Removed session 2735.

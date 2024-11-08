@@ -1,0 +1,25 @@
+Nov  8 09:38:43 nobanner-session-42082 systemd-logind[165]: New seat seat0.
+Nov  8 09:38:46 nobanner-session-42082 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 09:38:46 nobanner-session-42082 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 09:38:54 nobanner-session-42082 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 09:38:54 nobanner-session-42082 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 09:38:54 nobanner-session-42082 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 09:39:04 nobanner-session-42082 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 09:39:04 nobanner-session-42082 usermod[756]: change user 'sshd' password
+Nov  8 09:39:05 nobanner-session-42082 chage[763]: changed password expiry for sshd
+Nov  8 09:39:07 nobanner-session-42082 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 09:39:07 nobanner-session-42082 sshd[1198]: Server listening on :: port 22.
+Nov  8 09:39:09 nobanner-session-42082 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 09:39:09 nobanner-session-42082 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 09:39:09 nobanner-session-42082 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 09:39:17 nobanner-session-42082 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 09:40:16 nobanner-session-42082 useradd[1539]: new group: name=tony, GID=1001
+Nov  8 09:40:16 nobanner-session-42082 useradd[1539]: new user: name=tony, UID=1001, GID=1001, home=/home/tony, shell=/bin/bash, from=none
+Nov  8 09:40:17 nobanner-session-42082 usermod[1548]: change user 'tony' password
+Nov  8 09:40:17 nobanner-session-42082 sshd[1555]: Accepted password for tony from 10.0.3.1 port 54312 ssh2
+Nov  8 09:40:17 nobanner-session-42082 sshd[1555]: pam_unix(sshd:session): session opened for user tony by (uid=0)
+Nov  8 09:40:17 nobanner-session-42082 systemd-logind[165]: New session 3028 of user tony.
+Nov  8 09:40:17 nobanner-session-42082 systemd: pam_unix(systemd-user:session): session opened for user tony by (uid=0)
+Nov  8 09:40:21 nobanner-session-42082 sshd[1555]: pam_unix(sshd:session): session closed for user tony
+Nov  8 09:40:21 nobanner-session-42082 systemd-logind[165]: Session 3028 logged out. Waiting for processes to exit.
+Nov  8 09:40:21 nobanner-session-42082 systemd-logind[165]: Removed session 3028.

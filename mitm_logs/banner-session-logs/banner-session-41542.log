@@ -24,3 +24,14 @@ Started with the following options:
 2024-11-07 12:42:45.251 - [Info] Auto Access Enabled: true
 2024-11-07 12:42:45.252 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-11-07 12:42:45.264 - [Info] SSH man-in-the-middle server for 10.0.3.57 listening on 10.0.3.1:41542
+2024-11-07 12:46:37.233 - [Debug] [Connection] Attacker connected: 50.74.187.172 | Client Identification: SSH-2.0-OpenSSH_9.8
+2024-11-07 12:46:39.419 - [Debug] [Auth] Attacker 50.74.187.172 trying to authenticate with 'none'
+2024-11-07 12:46:39.419 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 12:46:39.523 - [Debug] [Auth] Attacker 50.74.187.172 trying to authenticate with 'publickey'
+2024-11-07 12:46:39.525 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2024-11-07 12:46:39.527 - [Debug] [Auth] Attacker: 50.74.187.172 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 12:46:39.554 - [Debug] [Auth] Attacker 50.74.187.172 trying to authenticate with 'publickey'
+2024-11-07 12:46:39.554 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2024-11-07 12:46:39.555 - [Debug] [Auth] Attacker: 50.74.187.172 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-07 12:46:42.747 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

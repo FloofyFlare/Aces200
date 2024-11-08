@@ -1,0 +1,25 @@
+Nov  8 13:23:31 banner-nosession-42208 systemd-logind[164]: New seat seat0.
+Nov  8 13:23:34 banner-nosession-42208 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 13:23:34 banner-nosession-42208 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:23:44 banner-nosession-42208 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:23:44 banner-nosession-42208 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 13:23:44 banner-nosession-42208 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:24:01 banner-nosession-42208 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 13:24:01 banner-nosession-42208 usermod[756]: change user 'sshd' password
+Nov  8 13:24:01 banner-nosession-42208 chage[763]: changed password expiry for sshd
+Nov  8 13:24:04 banner-nosession-42208 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 13:24:04 banner-nosession-42208 sshd[1198]: Server listening on :: port 22.
+Nov  8 13:24:06 banner-nosession-42208 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:24:06 banner-nosession-42208 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 13:24:06 banner-nosession-42208 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:24:16 banner-nosession-42208 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:25:06 banner-nosession-42208 useradd[1542]: new group: name=cida, GID=1001
+Nov  8 13:25:06 banner-nosession-42208 useradd[1542]: new user: name=cida, UID=1001, GID=1001, home=/home/cida, shell=/bin/bash, from=none
+Nov  8 13:25:07 banner-nosession-42208 usermod[1551]: change user 'cida' password
+Nov  8 13:25:07 banner-nosession-42208 sshd[1558]: Accepted password for cida from 10.0.3.1 port 41896 ssh2
+Nov  8 13:25:07 banner-nosession-42208 sshd[1558]: pam_unix(sshd:session): session opened for user cida by (uid=0)
+Nov  8 13:25:07 banner-nosession-42208 systemd-logind[164]: New session 3135 of user cida.
+Nov  8 13:25:07 banner-nosession-42208 systemd: pam_unix(systemd-user:session): session opened for user cida by (uid=0)
+Nov  8 13:25:10 banner-nosession-42208 sshd[1558]: pam_unix(sshd:session): session closed for user cida
+Nov  8 13:25:10 banner-nosession-42208 systemd-logind[164]: Session 3135 logged out. Waiting for processes to exit.
+Nov  8 13:25:10 banner-nosession-42208 systemd-logind[164]: Removed session 3135.

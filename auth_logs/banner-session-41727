@@ -1,0 +1,27 @@
+Nov  7 23:24:39 banner-session-41727 systemd-logind[164]: New seat seat0.
+Nov  7 23:24:43 banner-session-41727 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 23:24:43 banner-session-41727 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:24:51 banner-session-41727 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:24:51 banner-session-41727 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 23:24:51 banner-session-41727 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:25:06 banner-session-41727 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 23:25:07 banner-session-41727 usermod[756]: change user 'sshd' password
+Nov  7 23:25:07 banner-session-41727 chage[763]: changed password expiry for sshd
+Nov  7 23:25:10 banner-session-41727 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 23:25:10 banner-session-41727 sshd[1198]: Server listening on :: port 22.
+Nov  7 23:25:12 banner-session-41727 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:25:12 banner-session-41727 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 23:25:12 banner-session-41727 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:25:22 banner-session-41727 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:27:38 banner-session-41727 useradd[1545]: new group: name=xxx, GID=1001
+Nov  7 23:27:38 banner-session-41727 useradd[1545]: new user: name=xxx, UID=1001, GID=1001, home=/home/xxx, shell=/bin/bash, from=none
+Nov  7 23:27:39 banner-session-41727 usermod[1554]: change user 'xxx' password
+Nov  7 23:27:39 banner-session-41727 sshd[1561]: Accepted password for xxx from 10.0.3.1 port 54726 ssh2
+Nov  7 23:27:39 banner-session-41727 sshd[1561]: pam_unix(sshd:session): session opened for user xxx by (uid=0)
+Nov  7 23:27:39 banner-session-41727 systemd-logind[164]: New session 2718 of user xxx.
+Nov  7 23:27:39 banner-session-41727 systemd: pam_unix(systemd-user:session): session opened for user xxx by (uid=0)
+Nov  7 23:27:41 banner-session-41727 sshd[1578]: Received disconnect from 10.0.3.1 port 54726:11: 
+Nov  7 23:27:41 banner-session-41727 sshd[1578]: Disconnected from user xxx 10.0.3.1 port 54726
+Nov  7 23:27:41 banner-session-41727 sshd[1561]: pam_unix(sshd:session): session closed for user xxx
+Nov  7 23:27:41 banner-session-41727 systemd-logind[164]: Session 2718 logged out. Waiting for processes to exit.
+Nov  7 23:27:41 banner-session-41727 systemd-logind[164]: Removed session 2718.

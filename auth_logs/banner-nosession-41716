@@ -1,0 +1,29 @@
+Nov  7 23:10:48 banner-nosession-41716 systemd-logind[164]: New seat seat0.
+Nov  7 23:10:52 banner-nosession-41716 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 23:10:52 banner-nosession-41716 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:11:00 banner-nosession-41716 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:11:00 banner-nosession-41716 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 23:11:00 banner-nosession-41716 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:11:21 banner-nosession-41716 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 23:11:21 banner-nosession-41716 usermod[756]: change user 'sshd' password
+Nov  7 23:11:21 banner-nosession-41716 chage[763]: changed password expiry for sshd
+Nov  7 23:11:23 banner-nosession-41716 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 23:11:23 banner-nosession-41716 sshd[1198]: Server listening on :: port 22.
+Nov  7 23:11:25 banner-nosession-41716 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:11:25 banner-nosession-41716 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 23:11:25 banner-nosession-41716 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:11:32 banner-nosession-41716 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:16:40 banner-nosession-41716 useradd[1543]: new group: name=telnet, GID=1001
+Nov  7 23:16:40 banner-nosession-41716 useradd[1543]: new user: name=telnet, UID=1001, GID=1001, home=/home/telnet, shell=/bin/bash, from=none
+Nov  7 23:16:40 banner-nosession-41716 usermod[1552]: change user 'telnet' password
+Nov  7 23:16:40 banner-nosession-41716 sshd[1559]: Accepted password for telnet from 10.0.3.1 port 59586 ssh2
+Nov  7 23:16:40 banner-nosession-41716 sshd[1559]: pam_unix(sshd:session): session opened for user telnet by (uid=0)
+Nov  7 23:16:40 banner-nosession-41716 systemd-logind[164]: New session 2713 of user telnet.
+Nov  7 23:16:40 banner-nosession-41716 systemd: pam_unix(systemd-user:session): session opened for user telnet by (uid=0)
+Nov  7 23:16:41 banner-nosession-41716 sshd[1576]: Received disconnect from 10.0.3.1 port 59586:11: 
+Nov  7 23:16:41 banner-nosession-41716 sshd[1576]: Disconnected from user telnet 10.0.3.1 port 59586
+Nov  7 23:16:41 banner-nosession-41716 sshd[1559]: pam_unix(sshd:session): session closed for user telnet
+Nov  7 23:16:41 banner-nosession-41716 systemd-logind[164]: Session 2713 logged out. Waiting for processes to exit.
+Nov  7 23:16:41 banner-nosession-41716 systemd-logind[164]: Removed session 2713.
+Nov  7 23:17:01 banner-nosession-41716 CRON[1578]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  7 23:17:01 banner-nosession-41716 CRON[1578]: pam_unix(cron:session): session closed for user root

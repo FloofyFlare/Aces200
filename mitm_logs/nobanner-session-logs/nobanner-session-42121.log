@@ -1,0 +1,35 @@
+(node:3499062) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-42121',
+  containerIp: '10.0.3.245',
+  mitmPort: 42121,
+  autoAccessFixed: 1
+}
+2024-11-08 06:14:52.244 - [Info] MITM Version: 2
+2024-11-08 06:14:52.246 - [Info] Auto Access Enabled: true
+2024-11-08 06:14:52.247 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-08 06:14:52.258 - [Info] SSH man-in-the-middle server for 10.0.3.245 listening on 10.0.3.1:42121
+2024-11-08 06:17:42.308 - [Debug] [Connection] Attacker connected: 185.115.100.144 | Client Identification: SSH-2.0-OpenSSH_7.4
+2024-11-08 06:17:44.173 - [Debug] [Auth] Attacker 185.115.100.144 trying to authenticate with 'password'
+2024-11-08 06:17:44.174 - [Debug] [Auto Access] Attacker: 185.115.100.144, Threshold: 1, Attempts: 1
+2024-11-08 06:17:44.174 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-08 06:17:44.174 - [Debug] [Auto Access] Adding the following credentials: 'operator:qwer1234'
+2024-11-08 06:17:44.286 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-08 06:17:44.288 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 06:17:44.289 - [Debug] [Auth] Attacker: 185.115.100.144 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

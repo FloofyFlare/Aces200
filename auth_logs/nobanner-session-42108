@@ -1,0 +1,27 @@
+Nov  8 10:55:35 nobanner-session-42108 systemd-logind[165]: New seat seat0.
+Nov  8 10:55:38 nobanner-session-42108 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 10:55:38 nobanner-session-42108 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 10:55:46 nobanner-session-42108 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 10:55:46 nobanner-session-42108 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 10:55:46 nobanner-session-42108 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 10:55:59 nobanner-session-42108 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 10:55:59 nobanner-session-42108 usermod[756]: change user 'sshd' password
+Nov  8 10:55:59 nobanner-session-42108 chage[763]: changed password expiry for sshd
+Nov  8 10:56:01 nobanner-session-42108 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 10:56:01 nobanner-session-42108 sshd[1198]: Server listening on :: port 22.
+Nov  8 10:56:03 nobanner-session-42108 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 10:56:03 nobanner-session-42108 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 10:56:03 nobanner-session-42108 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 10:56:09 nobanner-session-42108 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 10:59:38 nobanner-session-42108 useradd[1539]: new group: name=ubnt, GID=1001
+Nov  8 10:59:38 nobanner-session-42108 useradd[1539]: new user: name=ubnt, UID=1001, GID=1001, home=/home/ubnt, shell=/bin/bash, from=none
+Nov  8 10:59:39 nobanner-session-42108 usermod[1548]: change user 'ubnt' password
+Nov  8 10:59:39 nobanner-session-42108 sshd[1555]: Accepted password for ubnt from 10.0.3.1 port 51386 ssh2
+Nov  8 10:59:39 nobanner-session-42108 sshd[1555]: pam_unix(sshd:session): session opened for user ubnt by (uid=0)
+Nov  8 10:59:39 nobanner-session-42108 systemd-logind[165]: New session 3063 of user ubnt.
+Nov  8 10:59:39 nobanner-session-42108 systemd: pam_unix(systemd-user:session): session opened for user ubnt by (uid=0)
+Nov  8 10:59:40 nobanner-session-42108 sshd[1572]: Received disconnect from 10.0.3.1 port 51386:11: 
+Nov  8 10:59:40 nobanner-session-42108 sshd[1572]: Disconnected from user ubnt 10.0.3.1 port 51386
+Nov  8 10:59:40 nobanner-session-42108 sshd[1555]: pam_unix(sshd:session): session closed for user ubnt
+Nov  8 10:59:40 nobanner-session-42108 systemd-logind[165]: Session 3063 logged out. Waiting for processes to exit.
+Nov  8 10:59:40 nobanner-session-42108 systemd-logind[165]: Removed session 3063.

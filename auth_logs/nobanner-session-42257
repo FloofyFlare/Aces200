@@ -1,0 +1,27 @@
+Nov  8 15:12:22 nobanner-session-42257 systemd-logind[164]: New seat seat0.
+Nov  8 15:12:27 nobanner-session-42257 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 15:12:27 nobanner-session-42257 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:12:35 nobanner-session-42257 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:12:35 nobanner-session-42257 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 15:12:35 nobanner-session-42257 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:13:01 nobanner-session-42257 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 15:13:01 nobanner-session-42257 usermod[756]: change user 'sshd' password
+Nov  8 15:13:01 nobanner-session-42257 chage[763]: changed password expiry for sshd
+Nov  8 15:13:03 nobanner-session-42257 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 15:13:03 nobanner-session-42257 sshd[1198]: Server listening on :: port 22.
+Nov  8 15:13:05 nobanner-session-42257 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:13:05 nobanner-session-42257 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 15:13:05 nobanner-session-42257 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 15:13:12 nobanner-session-42257 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 15:13:32 nobanner-session-42257 useradd[1539]: new group: name=whipper, GID=1001
+Nov  8 15:13:32 nobanner-session-42257 useradd[1539]: new user: name=whipper, UID=1001, GID=1001, home=/home/whipper, shell=/bin/bash, from=none
+Nov  8 15:13:32 nobanner-session-42257 usermod[1548]: change user 'whipper' password
+Nov  8 15:13:32 nobanner-session-42257 sshd[1555]: Accepted password for whipper from 10.0.3.1 port 39798 ssh2
+Nov  8 15:13:32 nobanner-session-42257 sshd[1555]: pam_unix(sshd:session): session opened for user whipper by (uid=0)
+Nov  8 15:13:32 nobanner-session-42257 systemd-logind[164]: New session 3214 of user whipper.
+Nov  8 15:13:32 nobanner-session-42257 systemd: pam_unix(systemd-user:session): session opened for user whipper by (uid=0)
+Nov  8 15:13:35 nobanner-session-42257 sshd[1572]: Received disconnect from 10.0.3.1 port 39798:11: 
+Nov  8 15:13:35 nobanner-session-42257 sshd[1572]: Disconnected from user whipper 10.0.3.1 port 39798
+Nov  8 15:13:35 nobanner-session-42257 sshd[1555]: pam_unix(sshd:session): session closed for user whipper
+Nov  8 15:13:35 nobanner-session-42257 systemd-logind[164]: Session 3214 logged out. Waiting for processes to exit.
+Nov  8 15:13:35 nobanner-session-42257 systemd-logind[164]: Removed session 3214.

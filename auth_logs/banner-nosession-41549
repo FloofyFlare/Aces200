@@ -1,0 +1,25 @@
+Nov  7 17:55:46 banner-nosession-41549 systemd-logind[165]: New seat seat0.
+Nov  7 17:55:50 banner-nosession-41549 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 17:55:50 banner-nosession-41549 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:55:58 banner-nosession-41549 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:55:58 banner-nosession-41549 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 17:55:58 banner-nosession-41549 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:56:17 banner-nosession-41549 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 17:56:17 banner-nosession-41549 usermod[756]: change user 'sshd' password
+Nov  7 17:56:17 banner-nosession-41549 chage[763]: changed password expiry for sshd
+Nov  7 17:56:20 banner-nosession-41549 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 17:56:20 banner-nosession-41549 sshd[1198]: Server listening on :: port 22.
+Nov  7 17:56:22 banner-nosession-41549 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:56:22 banner-nosession-41549 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 17:56:22 banner-nosession-41549 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 17:56:31 banner-nosession-41549 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 17:56:47 banner-nosession-41549 useradd[1542]: new group: name=sdtd_server, GID=1001
+Nov  7 17:56:47 banner-nosession-41549 useradd[1542]: new user: name=sdtd_server, UID=1001, GID=1001, home=/home/sdtd_server, shell=/bin/bash, from=none
+Nov  7 17:56:48 banner-nosession-41549 usermod[1551]: change user 'sdtd_server' password
+Nov  7 17:56:48 banner-nosession-41549 sshd[1558]: Accepted password for sdtd_server from 10.0.3.1 port 45688 ssh2
+Nov  7 17:56:48 banner-nosession-41549 sshd[1558]: pam_unix(sshd:session): session opened for user sdtd_server by (uid=0)
+Nov  7 17:56:48 banner-nosession-41549 systemd-logind[165]: New session 2532 of user sdtd_server.
+Nov  7 17:56:48 banner-nosession-41549 systemd: pam_unix(systemd-user:session): session opened for user sdtd_server by (uid=0)
+Nov  7 17:56:54 banner-nosession-41549 sshd[1558]: pam_unix(sshd:session): session closed for user sdtd_server
+Nov  7 17:56:54 banner-nosession-41549 systemd-logind[165]: Session 2532 logged out. Waiting for processes to exit.
+Nov  7 17:56:54 banner-nosession-41549 systemd-logind[165]: Removed session 2532.

@@ -1,0 +1,27 @@
+Nov  7 23:03:41 nobanner-session-41710 systemd-logind[164]: New seat seat0.
+Nov  7 23:03:45 nobanner-session-41710 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 23:03:45 nobanner-session-41710 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:03:52 nobanner-session-41710 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:03:52 nobanner-session-41710 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 23:03:52 nobanner-session-41710 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:04:05 nobanner-session-41710 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 23:04:06 nobanner-session-41710 usermod[756]: change user 'sshd' password
+Nov  7 23:04:06 nobanner-session-41710 chage[763]: changed password expiry for sshd
+Nov  7 23:04:09 nobanner-session-41710 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 23:04:09 nobanner-session-41710 sshd[1198]: Server listening on :: port 22.
+Nov  7 23:04:10 nobanner-session-41710 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:04:10 nobanner-session-41710 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 23:04:10 nobanner-session-41710 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 23:04:19 nobanner-session-41710 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 23:05:44 nobanner-session-41710 useradd[1539]: new group: name=ubnt, GID=1001
+Nov  7 23:05:44 nobanner-session-41710 useradd[1539]: new user: name=ubnt, UID=1001, GID=1001, home=/home/ubnt, shell=/bin/bash, from=none
+Nov  7 23:05:44 nobanner-session-41710 usermod[1548]: change user 'ubnt' password
+Nov  7 23:05:44 nobanner-session-41710 sshd[1555]: Accepted password for ubnt from 10.0.3.1 port 45796 ssh2
+Nov  7 23:05:44 nobanner-session-41710 sshd[1555]: pam_unix(sshd:session): session opened for user ubnt by (uid=0)
+Nov  7 23:05:44 nobanner-session-41710 systemd-logind[164]: New session 2709 of user ubnt.
+Nov  7 23:05:44 nobanner-session-41710 systemd: pam_unix(systemd-user:session): session opened for user ubnt by (uid=0)
+Nov  7 23:05:45 nobanner-session-41710 sshd[1572]: Received disconnect from 10.0.3.1 port 45796:11: 
+Nov  7 23:05:45 nobanner-session-41710 sshd[1572]: Disconnected from user ubnt 10.0.3.1 port 45796
+Nov  7 23:05:45 nobanner-session-41710 sshd[1555]: pam_unix(sshd:session): session closed for user ubnt
+Nov  7 23:05:45 nobanner-session-41710 systemd-logind[164]: Session 2709 logged out. Waiting for processes to exit.
+Nov  7 23:05:45 nobanner-session-41710 systemd-logind[164]: Removed session 2709.

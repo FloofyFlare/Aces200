@@ -1,0 +1,103 @@
+(node:2857438) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-41904',
+  containerIp: '10.0.3.179',
+  mitmPort: 41904,
+  autoAccessFixed: 1
+}
+2024-11-07 23:48:25.075 - [Info] MITM Version: 2
+2024-11-07 23:48:25.077 - [Info] Auto Access Enabled: true
+2024-11-07 23:48:25.078 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 23:48:25.090 - [Info] SSH man-in-the-middle server for 10.0.3.179 listening on 10.0.3.1:41904
+2024-11-07 23:48:40.251 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:40.261 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:40.262 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:40.270 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:40.272 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:40.273 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:40.274 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:40.278 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:41.896 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.897 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:41.905 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.905 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:41.906 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.906 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:41.908 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.908 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:41.910 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.910 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:41.920 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.920 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:41.930 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.930 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:41.935 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'none'
+2024-11-07 23:48:41.935 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-07 23:48:42.353 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.354 - [Debug] [Auto Access] Attacker: 37.44.238.68, Threshold: 1, Attempts: 1
+2024-11-07 23:48:42.355 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-07 23:48:42.355 - [Debug] [Auto Access] Adding the following credentials: 'ftpuser:admin'
+2024-11-07 23:48:42.759 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-07 23:48:42.761 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-07 23:48:42.762 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.179
+2024-11-07 23:48:42.767 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.768 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 23:48:42.769 - [Debug] [Auth] Attacker: 37.44.238.68 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 23:48:42.769 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.770 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 23:48:42.771 - [Debug] [Auth] Attacker: 37.44.238.68 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 23:48:42.771 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.772 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 23:48:42.772 - [Debug] [Auth] Attacker: 37.44.238.68 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 23:48:42.772 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.773 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 23:48:42.773 - [Debug] [Auth] Attacker: 37.44.238.68 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 23:48:42.773 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.774 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2024-11-07 23:48:42.775 - [Debug] [Auth] Attacker: 37.44.238.68 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 23:48:42.775 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.776 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-07 23:48:42.776 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.179
+2024-11-07 23:48:42.777 - [Debug] [Auth] Attacker 37.44.238.68 trying to authenticate with 'password'
+2024-11-07 23:48:42.777 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-07 23:48:42.778 - [Debug] [Auth] Attacker: 37.44.238.68 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 23:48:42.830 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-07 23:48:42.834 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-07 23:48:43.217 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 23:48:43.220 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 23:48:43.228 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 23:48:43.233 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 23:48:43.238 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 23:48:43.244 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 23:48:43.699 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:43.721 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:43.728 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:43.739 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:43.748 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:43.755 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:43.768 - [Debug] [EXEC] Noninteractive mode attacker command: whoami
+2024-11-07 23:48:43.790 - [Debug] [EXEC] Noninteractive mode attacker command: whoami
+2024-11-07 23:48:43.811 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:43.821 - [Debug] [Connection] Attacker connected: 37.44.238.68 | Client Identification: SSH-2.0-Go
+2024-11-07 23:48:44.238 - [Debug] [Connection] Attacker closed connection
+2024-11-07 23:48:44.252 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-07 23:48:44.253 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-07 23:48:44.276 - [Debug] [Connection] Attacker closed connection
+2024-11-07 23:48:44.287 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-07 23:48:44.289 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

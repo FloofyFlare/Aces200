@@ -1,0 +1,27 @@
+Nov  7 19:32:57 nobanner-nosession-41607 systemd-logind[165]: New seat seat0.
+Nov  7 19:33:00 nobanner-nosession-41607 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  7 19:33:00 nobanner-nosession-41607 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:33:08 nobanner-nosession-41607 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:33:08 nobanner-nosession-41607 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  7 19:33:08 nobanner-nosession-41607 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:33:22 nobanner-nosession-41607 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 19:33:22 nobanner-nosession-41607 usermod[756]: change user 'sshd' password
+Nov  7 19:33:22 nobanner-nosession-41607 chage[763]: changed password expiry for sshd
+Nov  7 19:33:25 nobanner-nosession-41607 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  7 19:33:25 nobanner-nosession-41607 sshd[1198]: Server listening on :: port 22.
+Nov  7 19:33:26 nobanner-nosession-41607 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:33:26 nobanner-nosession-41607 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  7 19:33:26 nobanner-nosession-41607 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  7 19:33:34 nobanner-nosession-41607 sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 19:34:07 nobanner-nosession-41607 useradd[1536]: new group: name=nft, GID=1001
+Nov  7 19:34:07 nobanner-nosession-41607 useradd[1536]: new user: name=nft, UID=1001, GID=1001, home=/home/nft, shell=/bin/bash, from=none
+Nov  7 19:34:08 nobanner-nosession-41607 usermod[1545]: change user 'nft' password
+Nov  7 19:34:08 nobanner-nosession-41607 sshd[1552]: Accepted password for nft from 10.0.3.1 port 48086 ssh2
+Nov  7 19:34:08 nobanner-nosession-41607 sshd[1552]: pam_unix(sshd:session): session opened for user nft by (uid=0)
+Nov  7 19:34:08 nobanner-nosession-41607 systemd-logind[165]: New session 2596 of user nft.
+Nov  7 19:34:08 nobanner-nosession-41607 systemd: pam_unix(systemd-user:session): session opened for user nft by (uid=0)
+Nov  7 19:34:11 nobanner-nosession-41607 sshd[1569]: Received disconnect from 10.0.3.1 port 48086:11: 
+Nov  7 19:34:11 nobanner-nosession-41607 sshd[1569]: Disconnected from user nft 10.0.3.1 port 48086
+Nov  7 19:34:11 nobanner-nosession-41607 sshd[1552]: pam_unix(sshd:session): session closed for user nft
+Nov  7 19:34:11 nobanner-nosession-41607 systemd-logind[165]: Session 2596 logged out. Waiting for processes to exit.
+Nov  7 19:34:11 nobanner-nosession-41607 systemd-logind[165]: Removed session 2596.

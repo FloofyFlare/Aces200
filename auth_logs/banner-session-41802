@@ -1,0 +1,25 @@
+Nov  8 01:25:12 banner-session-41802 systemd-logind[164]: New seat seat0.
+Nov  8 01:25:15 banner-session-41802 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 01:25:15 banner-session-41802 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:25:24 banner-session-41802 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:25:24 banner-session-41802 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 01:25:24 banner-session-41802 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:25:33 banner-session-41802 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 01:25:33 banner-session-41802 usermod[756]: change user 'sshd' password
+Nov  8 01:25:33 banner-session-41802 chage[763]: changed password expiry for sshd
+Nov  8 01:25:36 banner-session-41802 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 01:25:36 banner-session-41802 sshd[1198]: Server listening on :: port 22.
+Nov  8 01:25:38 banner-session-41802 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:25:38 banner-session-41802 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 01:25:38 banner-session-41802 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 01:25:49 banner-session-41802 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 01:26:35 banner-session-41802 useradd[1545]: new group: name=chelly, GID=1001
+Nov  8 01:26:35 banner-session-41802 useradd[1545]: new user: name=chelly, UID=1001, GID=1001, home=/home/chelly, shell=/bin/bash, from=none
+Nov  8 01:26:35 banner-session-41802 usermod[1554]: change user 'chelly' password
+Nov  8 01:26:35 banner-session-41802 sshd[1561]: Accepted password for chelly from 10.0.3.1 port 45918 ssh2
+Nov  8 01:26:35 banner-session-41802 sshd[1561]: pam_unix(sshd:session): session opened for user chelly by (uid=0)
+Nov  8 01:26:35 banner-session-41802 systemd-logind[164]: New session 2768 of user chelly.
+Nov  8 01:26:35 banner-session-41802 systemd: pam_unix(systemd-user:session): session opened for user chelly by (uid=0)
+Nov  8 01:26:41 banner-session-41802 sshd[1561]: pam_unix(sshd:session): session closed for user chelly
+Nov  8 01:26:41 banner-session-41802 systemd-logind[164]: Session 2768 logged out. Waiting for processes to exit.
+Nov  8 01:26:41 banner-session-41802 systemd-logind[164]: Removed session 2768.

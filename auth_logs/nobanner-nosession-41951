@@ -1,0 +1,25 @@
+Nov  8 06:10:23 nobanner-nosession-41951 systemd-logind[164]: New seat seat0.
+Nov  8 06:10:26 nobanner-nosession-41951 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 06:10:26 nobanner-nosession-41951 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:10:34 nobanner-nosession-41951 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:10:34 nobanner-nosession-41951 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 06:10:34 nobanner-nosession-41951 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:10:46 nobanner-nosession-41951 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 06:10:46 nobanner-nosession-41951 usermod[756]: change user 'sshd' password
+Nov  8 06:10:46 nobanner-nosession-41951 chage[763]: changed password expiry for sshd
+Nov  8 06:10:48 nobanner-nosession-41951 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 06:10:48 nobanner-nosession-41951 sshd[1198]: Server listening on :: port 22.
+Nov  8 06:10:51 nobanner-nosession-41951 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:10:51 nobanner-nosession-41951 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 06:10:51 nobanner-nosession-41951 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 06:10:59 nobanner-nosession-41951 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 06:11:03 nobanner-nosession-41951 useradd[1536]: new group: name=own, GID=1001
+Nov  8 06:11:03 nobanner-nosession-41951 useradd[1536]: new user: name=own, UID=1001, GID=1001, home=/home/own, shell=/bin/bash, from=none
+Nov  8 06:11:04 nobanner-nosession-41951 usermod[1545]: change user 'own' password
+Nov  8 06:11:04 nobanner-nosession-41951 sshd[1552]: Accepted password for own from 10.0.3.1 port 33684 ssh2
+Nov  8 06:11:04 nobanner-nosession-41951 sshd[1552]: pam_unix(sshd:session): session opened for user own by (uid=0)
+Nov  8 06:11:04 nobanner-nosession-41951 systemd-logind[164]: New session 2899 of user own.
+Nov  8 06:11:04 nobanner-nosession-41951 systemd: pam_unix(systemd-user:session): session opened for user own by (uid=0)
+Nov  8 06:11:10 nobanner-nosession-41951 sshd[1552]: pam_unix(sshd:session): session closed for user own
+Nov  8 06:11:10 nobanner-nosession-41951 systemd-logind[164]: Session 2899 logged out. Waiting for processes to exit.
+Nov  8 06:11:10 nobanner-nosession-41951 systemd-logind[164]: Removed session 2899.

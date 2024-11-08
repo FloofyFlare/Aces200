@@ -1,0 +1,27 @@
+Nov  8 13:55:52 banner-session-42225 systemd-logind[164]: New seat seat0.
+Nov  8 13:55:56 banner-session-42225 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 13:55:56 banner-session-42225 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:56:04 banner-session-42225 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:56:04 banner-session-42225 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 13:56:04 banner-session-42225 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:56:15 banner-session-42225 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 13:56:15 banner-session-42225 usermod[756]: change user 'sshd' password
+Nov  8 13:56:15 banner-session-42225 chage[763]: changed password expiry for sshd
+Nov  8 13:56:17 banner-session-42225 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 13:56:17 banner-session-42225 sshd[1198]: Server listening on :: port 22.
+Nov  8 13:56:19 banner-session-42225 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 13:56:19 banner-session-42225 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 13:56:19 banner-session-42225 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 13:56:32 banner-session-42225 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 14:06:18 banner-session-42225 useradd[1546]: new group: name=test, GID=1001
+Nov  8 14:06:18 banner-session-42225 useradd[1546]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/bash, from=none
+Nov  8 14:06:18 banner-session-42225 usermod[1555]: change user 'test' password
+Nov  8 14:06:18 banner-session-42225 sshd[1562]: Accepted password for test from 10.0.3.1 port 44146 ssh2
+Nov  8 14:06:18 banner-session-42225 sshd[1562]: pam_unix(sshd:session): session opened for user test by (uid=0)
+Nov  8 14:06:18 banner-session-42225 systemd-logind[164]: New session 3169 of user test.
+Nov  8 14:06:18 banner-session-42225 systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Nov  8 14:06:20 banner-session-42225 sshd[1579]: Received disconnect from 10.0.3.1 port 44146:11: 
+Nov  8 14:06:20 banner-session-42225 sshd[1579]: Disconnected from user test 10.0.3.1 port 44146
+Nov  8 14:06:20 banner-session-42225 sshd[1562]: pam_unix(sshd:session): session closed for user test
+Nov  8 14:06:20 banner-session-42225 systemd-logind[164]: Session 3169 logged out. Waiting for processes to exit.
+Nov  8 14:06:20 banner-session-42225 systemd-logind[164]: Removed session 3169.

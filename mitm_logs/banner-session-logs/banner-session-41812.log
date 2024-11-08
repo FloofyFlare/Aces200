@@ -1,0 +1,60 @@
+(node:2581205) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-41812',
+  containerIp: '10.0.3.112',
+  mitmPort: 41812,
+  autoAccessFixed: 1
+}
+2024-11-07 20:52:15.457 - [Info] MITM Version: 2
+2024-11-07 20:52:15.459 - [Info] Auto Access Enabled: true
+2024-11-07 20:52:15.460 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-07 20:52:15.479 - [Info] SSH man-in-the-middle server for 10.0.3.112 listening on 10.0.3.1:41812
+2024-11-07 20:57:30.374 - [Debug] [Connection] Attacker connected: 90.144.71.52 | Client Identification: SSH-2.0-libssh2_1.11.0
+2024-11-07 20:57:31.350 - [Debug] [Auth] Attacker 90.144.71.52 trying to authenticate with 'password'
+2024-11-07 20:57:31.351 - [Debug] [Auto Access] Attacker: 90.144.71.52, Threshold: 1, Attempts: 1
+2024-11-07 20:57:31.351 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-07 20:57:31.351 - [Debug] [Auto Access] Adding the following credentials: 'root:root'
+2024-11-07 20:57:31.489 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-07 20:57:31.492 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-07 20:57:31.492 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.112
+2024-11-07 20:57:35.681 - [Debug] [LXC] Authentication Failed
+2024-11-07 20:57:35.682 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-07 20:57:35.683 - [Debug] [Auth] Attacker: 90.144.71.52 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-07 20:57:35.683 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-07 20:57:35.683 - [Debug] [Auth] Attacker: 90.144.71.52 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-07 20:57:35.691 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-07 20:57:35.693 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-07 20:57:35.953 - [Debug] [Auth] Attacker 90.144.71.52 trying to authenticate with 'password'
+2024-11-07 20:57:35.954 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 20:57:35.954 - [Debug] [Auth] Attacker: 90.144.71.52 has so far made 3 attempts. Remaining: 3 attempts
+2024-11-07 20:57:36.205 - [Debug] [Auth] Attacker 90.144.71.52 trying to authenticate with 'password'
+2024-11-07 20:57:36.206 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 20:57:36.212 - [Debug] [Auth] Attacker: 90.144.71.52 has so far made 4 attempts. Remaining: 2 attempts
+2024-11-07 20:57:36.467 - [Debug] [Auth] Attacker 90.144.71.52 trying to authenticate with 'password'
+2024-11-07 20:57:36.467 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 20:57:36.468 - [Debug] [Auth] Attacker: 90.144.71.52 has so far made 5 attempts. Remaining: 1 attempts
+2024-11-07 20:57:36.725 - [Debug] [Auth] Attacker 90.144.71.52 trying to authenticate with 'password'
+2024-11-07 20:57:36.725 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 20:57:36.726 - [Debug] [Auth] Attacker: 90.144.71.52 has so far made 6 attempts. Remaining: 0 attempts
+2024-11-07 20:57:36.726 - [Debug] [Connection] Max Login Attempts Reached - Closing connection on attacker
+2024-11-07 20:57:36.727 - [Debug] [Connection] Attacker closed the connection
+2024-11-07 20:57:36.935 - [Debug] [Connection] Attacker connected: 90.144.71.52 | Client Identification: SSH-2.0-libssh2_1.11.0
+2024-11-07 20:57:37.941 - [Debug] [Auth] Attacker 90.144.71.52 trying to authenticate with 'password'
+2024-11-07 20:57:37.942 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-07 20:57:37.943 - [Debug] [Auth] Attacker: 90.144.71.52 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
