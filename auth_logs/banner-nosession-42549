@@ -1,0 +1,27 @@
+Nov  9 00:20:36 banner-nosession-42549 systemd-logind[164]: New seat seat0.
+Nov  9 00:20:40 banner-nosession-42549 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 00:20:40 banner-nosession-42549 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 00:20:48 banner-nosession-42549 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 00:20:48 banner-nosession-42549 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 00:20:48 banner-nosession-42549 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 00:21:00 banner-nosession-42549 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 00:21:00 banner-nosession-42549 usermod[756]: change user 'sshd' password
+Nov  9 00:21:01 banner-nosession-42549 chage[763]: changed password expiry for sshd
+Nov  9 00:21:03 banner-nosession-42549 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 00:21:03 banner-nosession-42549 sshd[1198]: Server listening on :: port 22.
+Nov  9 00:21:05 banner-nosession-42549 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 00:21:05 banner-nosession-42549 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 00:21:05 banner-nosession-42549 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 00:21:12 banner-nosession-42549 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 00:21:18 banner-nosession-42549 useradd[1542]: new group: name=web, GID=1001
+Nov  9 00:21:18 banner-nosession-42549 useradd[1542]: new user: name=web, UID=1001, GID=1001, home=/home/web, shell=/bin/bash, from=none
+Nov  9 00:21:18 banner-nosession-42549 usermod[1551]: change user 'web' password
+Nov  9 00:21:18 banner-nosession-42549 sshd[1558]: Accepted password for web from 10.0.3.1 port 50478 ssh2
+Nov  9 00:21:18 banner-nosession-42549 sshd[1558]: pam_unix(sshd:session): session opened for user web by (uid=0)
+Nov  9 00:21:18 banner-nosession-42549 systemd-logind[164]: New session 3582 of user web.
+Nov  9 00:21:18 banner-nosession-42549 systemd: pam_unix(systemd-user:session): session opened for user web by (uid=0)
+Nov  9 00:22:18 banner-nosession-42549 sshd[1575]: Received disconnect from 10.0.3.1 port 50478:11: 
+Nov  9 00:22:18 banner-nosession-42549 sshd[1575]: Disconnected from user web 10.0.3.1 port 50478
+Nov  9 00:22:18 banner-nosession-42549 sshd[1558]: pam_unix(sshd:session): session closed for user web
+Nov  9 00:22:18 banner-nosession-42549 systemd-logind[164]: Session 3582 logged out. Waiting for processes to exit.
+Nov  9 00:22:18 banner-nosession-42549 systemd-logind[164]: Removed session 3582.

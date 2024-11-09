@@ -1,0 +1,29 @@
+Nov  9 10:16:24 nobanner-nosession-42860 systemd-logind[165]: New seat seat0.
+Nov  9 10:16:28 nobanner-nosession-42860 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 10:16:28 nobanner-nosession-42860 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 10:16:37 nobanner-nosession-42860 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 10:16:37 nobanner-nosession-42860 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 10:16:37 nobanner-nosession-42860 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 10:16:52 nobanner-nosession-42860 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 10:16:52 nobanner-nosession-42860 usermod[756]: change user 'sshd' password
+Nov  9 10:16:52 nobanner-nosession-42860 chage[763]: changed password expiry for sshd
+Nov  9 10:16:54 nobanner-nosession-42860 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 10:16:54 nobanner-nosession-42860 sshd[1198]: Server listening on :: port 22.
+Nov  9 10:16:56 nobanner-nosession-42860 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 10:16:56 nobanner-nosession-42860 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 10:16:56 nobanner-nosession-42860 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 10:17:01 nobanner-nosession-42860 CRON[1419]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  9 10:17:01 nobanner-nosession-42860 CRON[1419]: pam_unix(cron:session): session closed for user root
+Nov  9 10:17:06 nobanner-nosession-42860 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 10:17:25 nobanner-nosession-42860 useradd[1539]: new group: name=admin, GID=1001
+Nov  9 10:17:25 nobanner-nosession-42860 useradd[1539]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov  9 10:17:25 nobanner-nosession-42860 usermod[1548]: change user 'admin' password
+Nov  9 10:17:25 nobanner-nosession-42860 sshd[1555]: Accepted password for admin from 10.0.3.1 port 44354 ssh2
+Nov  9 10:17:25 nobanner-nosession-42860 sshd[1555]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov  9 10:17:25 nobanner-nosession-42860 systemd-logind[165]: New session 3886 of user admin.
+Nov  9 10:17:25 nobanner-nosession-42860 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov  9 10:17:28 nobanner-nosession-42860 sshd[1572]: Received disconnect from 10.0.3.1 port 44354:11: 
+Nov  9 10:17:28 nobanner-nosession-42860 sshd[1572]: Disconnected from user admin 10.0.3.1 port 44354
+Nov  9 10:17:28 nobanner-nosession-42860 sshd[1555]: pam_unix(sshd:session): session closed for user admin
+Nov  9 10:17:28 nobanner-nosession-42860 systemd-logind[165]: Session 3886 logged out. Waiting for processes to exit.
+Nov  9 10:17:28 nobanner-nosession-42860 systemd-logind[165]: Removed session 3886.

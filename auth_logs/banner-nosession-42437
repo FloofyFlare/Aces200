@@ -1,0 +1,25 @@
+Nov  8 20:51:53 banner-nosession-42437 systemd-logind[164]: New seat seat0.
+Nov  8 20:51:57 banner-nosession-42437 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 20:51:57 banner-nosession-42437 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 20:52:05 banner-nosession-42437 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 20:52:05 banner-nosession-42437 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 20:52:05 banner-nosession-42437 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 20:52:18 banner-nosession-42437 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 20:52:18 banner-nosession-42437 usermod[756]: change user 'sshd' password
+Nov  8 20:52:18 banner-nosession-42437 chage[763]: changed password expiry for sshd
+Nov  8 20:52:20 banner-nosession-42437 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 20:52:20 banner-nosession-42437 sshd[1198]: Server listening on :: port 22.
+Nov  8 20:52:22 banner-nosession-42437 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 20:52:22 banner-nosession-42437 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 20:52:22 banner-nosession-42437 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 20:52:30 banner-nosession-42437 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:03:37 banner-nosession-42437 useradd[1543]: new group: name=plex, GID=1001
+Nov  8 21:03:37 banner-nosession-42437 useradd[1543]: new user: name=plex, UID=1001, GID=1001, home=/home/plex, shell=/bin/bash, from=none
+Nov  8 21:03:37 banner-nosession-42437 usermod[1552]: change user 'plex' password
+Nov  8 21:03:37 banner-nosession-42437 sshd[1559]: Accepted password for plex from 10.0.3.1 port 58496 ssh2
+Nov  8 21:03:37 banner-nosession-42437 sshd[1559]: pam_unix(sshd:session): session opened for user plex by (uid=0)
+Nov  8 21:03:37 banner-nosession-42437 systemd-logind[164]: New session 3458 of user plex.
+Nov  8 21:03:37 banner-nosession-42437 systemd: pam_unix(systemd-user:session): session opened for user plex by (uid=0)
+Nov  8 21:03:43 banner-nosession-42437 sshd[1559]: pam_unix(sshd:session): session closed for user plex
+Nov  8 21:03:43 banner-nosession-42437 systemd-logind[164]: Session 3458 logged out. Waiting for processes to exit.
+Nov  8 21:03:43 banner-nosession-42437 systemd-logind[164]: Removed session 3458.

@@ -1,0 +1,25 @@
+Nov  8 21:25:58 nobanner-session-42456 systemd-logind[164]: New seat seat0.
+Nov  8 21:26:02 nobanner-session-42456 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 21:26:02 nobanner-session-42456 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:26:10 nobanner-session-42456 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:26:10 nobanner-session-42456 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 21:26:10 nobanner-session-42456 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:26:20 nobanner-session-42456 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 21:26:20 nobanner-session-42456 usermod[756]: change user 'sshd' password
+Nov  8 21:26:20 nobanner-session-42456 chage[763]: changed password expiry for sshd
+Nov  8 21:26:22 nobanner-session-42456 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 21:26:22 nobanner-session-42456 sshd[1198]: Server listening on :: port 22.
+Nov  8 21:26:24 nobanner-session-42456 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:26:24 nobanner-session-42456 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 21:26:24 nobanner-session-42456 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:26:33 nobanner-session-42456 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:26:39 nobanner-session-42456 useradd[1539]: new group: name=jak, GID=1001
+Nov  8 21:26:39 nobanner-session-42456 useradd[1539]: new user: name=jak, UID=1001, GID=1001, home=/home/jak, shell=/bin/bash, from=none
+Nov  8 21:26:40 nobanner-session-42456 usermod[1548]: change user 'jak' password
+Nov  8 21:26:40 nobanner-session-42456 sshd[1555]: Accepted password for jak from 10.0.3.1 port 57750 ssh2
+Nov  8 21:26:40 nobanner-session-42456 sshd[1555]: pam_unix(sshd:session): session opened for user jak by (uid=0)
+Nov  8 21:26:40 nobanner-session-42456 systemd-logind[164]: New session 3476 of user jak.
+Nov  8 21:26:40 nobanner-session-42456 systemd: pam_unix(systemd-user:session): session opened for user jak by (uid=0)
+Nov  8 21:26:46 nobanner-session-42456 sshd[1555]: pam_unix(sshd:session): session closed for user jak
+Nov  8 21:26:46 nobanner-session-42456 systemd-logind[164]: Session 3476 logged out. Waiting for processes to exit.
+Nov  8 21:26:46 nobanner-session-42456 systemd-logind[164]: Removed session 3476.

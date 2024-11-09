@@ -1,0 +1,27 @@
+Nov  9 05:34:48 nobanner-nosession-42713 systemd-logind[164]: New seat seat0.
+Nov  9 05:34:51 nobanner-nosession-42713 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 05:34:51 nobanner-nosession-42713 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 05:35:00 nobanner-nosession-42713 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 05:35:00 nobanner-nosession-42713 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 05:35:00 nobanner-nosession-42713 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 05:35:20 nobanner-nosession-42713 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 05:35:21 nobanner-nosession-42713 usermod[756]: change user 'sshd' password
+Nov  9 05:35:21 nobanner-nosession-42713 chage[763]: changed password expiry for sshd
+Nov  9 05:35:23 nobanner-nosession-42713 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 05:35:23 nobanner-nosession-42713 sshd[1198]: Server listening on :: port 22.
+Nov  9 05:35:24 nobanner-nosession-42713 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 05:35:24 nobanner-nosession-42713 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 05:35:24 nobanner-nosession-42713 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 05:35:33 nobanner-nosession-42713 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 05:37:13 nobanner-nosession-42713 useradd[1536]: new group: name=samurai, GID=1001
+Nov  9 05:37:13 nobanner-nosession-42713 useradd[1536]: new user: name=samurai, UID=1001, GID=1001, home=/home/samurai, shell=/bin/bash, from=none
+Nov  9 05:37:13 nobanner-nosession-42713 usermod[1545]: change user 'samurai' password
+Nov  9 05:37:14 nobanner-nosession-42713 sshd[1552]: Accepted password for samurai from 10.0.3.1 port 57008 ssh2
+Nov  9 05:37:14 nobanner-nosession-42713 sshd[1552]: pam_unix(sshd:session): session opened for user samurai by (uid=0)
+Nov  9 05:37:14 nobanner-nosession-42713 systemd-logind[164]: New session 3713 of user samurai.
+Nov  9 05:37:14 nobanner-nosession-42713 systemd: pam_unix(systemd-user:session): session opened for user samurai by (uid=0)
+Nov  9 05:37:15 nobanner-nosession-42713 sshd[1569]: Received disconnect from 10.0.3.1 port 57008:11: 
+Nov  9 05:37:15 nobanner-nosession-42713 sshd[1569]: Disconnected from user samurai 10.0.3.1 port 57008
+Nov  9 05:37:15 nobanner-nosession-42713 sshd[1552]: pam_unix(sshd:session): session closed for user samurai
+Nov  9 05:37:15 nobanner-nosession-42713 systemd-logind[164]: Session 3713 logged out. Waiting for processes to exit.
+Nov  9 05:37:15 nobanner-nosession-42713 systemd-logind[164]: Removed session 3713.

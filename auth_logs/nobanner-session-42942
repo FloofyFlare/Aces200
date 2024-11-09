@@ -1,0 +1,25 @@
+Nov  9 12:37:31 nobanner-session-42942 systemd-logind[164]: New seat seat0.
+Nov  9 12:37:34 nobanner-session-42942 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 12:37:34 nobanner-session-42942 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:37:42 nobanner-session-42942 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:37:42 nobanner-session-42942 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 12:37:42 nobanner-session-42942 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:37:53 nobanner-session-42942 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 12:37:53 nobanner-session-42942 usermod[756]: change user 'sshd' password
+Nov  9 12:37:53 nobanner-session-42942 chage[763]: changed password expiry for sshd
+Nov  9 12:37:55 nobanner-session-42942 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 12:37:55 nobanner-session-42942 sshd[1198]: Server listening on :: port 22.
+Nov  9 12:37:58 nobanner-session-42942 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:37:58 nobanner-session-42942 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 12:37:58 nobanner-session-42942 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:38:05 nobanner-session-42942 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:38:35 nobanner-session-42942 useradd[1539]: new group: name=simec, GID=1001
+Nov  9 12:38:35 nobanner-session-42942 useradd[1539]: new user: name=simec, UID=1001, GID=1001, home=/home/simec, shell=/bin/bash, from=none
+Nov  9 12:38:35 nobanner-session-42942 usermod[1548]: change user 'simec' password
+Nov  9 12:38:35 nobanner-session-42942 sshd[1555]: Accepted password for simec from 10.0.3.1 port 36014 ssh2
+Nov  9 12:38:35 nobanner-session-42942 sshd[1555]: pam_unix(sshd:session): session opened for user simec by (uid=0)
+Nov  9 12:38:35 nobanner-session-42942 systemd-logind[164]: New session 3972 of user simec.
+Nov  9 12:38:35 nobanner-session-42942 systemd: pam_unix(systemd-user:session): session opened for user simec by (uid=0)
+Nov  9 12:38:41 nobanner-session-42942 sshd[1555]: pam_unix(sshd:session): session closed for user simec
+Nov  9 12:38:41 nobanner-session-42942 systemd-logind[164]: Session 3972 logged out. Waiting for processes to exit.
+Nov  9 12:38:41 nobanner-session-42942 systemd-logind[164]: Removed session 3972.

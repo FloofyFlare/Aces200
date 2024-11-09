@@ -1,0 +1,33 @@
+Nov  8 22:14:53 banner-session-42481 systemd-logind[164]: New seat seat0.
+Nov  8 22:14:56 banner-session-42481 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 22:14:56 banner-session-42481 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:15:05 banner-session-42481 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:15:05 banner-session-42481 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 22:15:05 banner-session-42481 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:15:18 banner-session-42481 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 22:15:18 banner-session-42481 usermod[756]: change user 'sshd' password
+Nov  8 22:15:18 banner-session-42481 chage[763]: changed password expiry for sshd
+Nov  8 22:15:20 banner-session-42481 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 22:15:20 banner-session-42481 sshd[1198]: Server listening on :: port 22.
+Nov  8 22:15:21 banner-session-42481 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:15:21 banner-session-42481 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 22:15:21 banner-session-42481 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:15:28 banner-session-42481 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:16:58 banner-session-42481 useradd[1545]: new group: name=transportapi, GID=1001
+Nov  8 22:16:58 banner-session-42481 useradd[1545]: new user: name=transportapi, UID=1001, GID=1001, home=/home/transportapi, shell=/bin/bash, from=none
+Nov  8 22:16:58 banner-session-42481 usermod[1554]: change user 'transportapi' password
+Nov  8 22:16:58 banner-session-42481 sshd[1561]: Accepted password for transportapi from 10.0.3.1 port 35652 ssh2
+Nov  8 22:16:58 banner-session-42481 sshd[1561]: pam_unix(sshd:session): session opened for user transportapi by (uid=0)
+Nov  8 22:16:58 banner-session-42481 systemd-logind[164]: New session 3505 of user transportapi.
+Nov  8 22:16:58 banner-session-42481 systemd: pam_unix(systemd-user:session): session opened for user transportapi by (uid=0)
+Nov  8 22:16:59 banner-session-42481 sshd[1578]: Received disconnect from 10.0.3.1 port 35652:11: 
+Nov  8 22:16:59 banner-session-42481 sshd[1578]: Disconnected from user transportapi 10.0.3.1 port 35652
+Nov  8 22:16:59 banner-session-42481 sshd[1561]: pam_unix(sshd:session): session closed for user transportapi
+Nov  8 22:16:59 banner-session-42481 systemd-logind[164]: Session 3505 logged out. Waiting for processes to exit.
+Nov  8 22:16:59 banner-session-42481 systemd-logind[164]: Removed session 3505.
+Nov  8 22:17:00 banner-session-42481 sshd[1579]: Accepted password for transportapi from 10.0.3.1 port 35668 ssh2
+Nov  8 22:17:00 banner-session-42481 sshd[1579]: pam_unix(sshd:session): session opened for user transportapi by (uid=0)
+Nov  8 22:17:00 banner-session-42481 systemd-logind[164]: New session 3507 of user transportapi.
+Nov  8 22:17:00 banner-session-42481 sshd[1579]: pam_unix(sshd:session): session closed for user transportapi
+Nov  8 22:17:00 banner-session-42481 systemd-logind[164]: Session 3507 logged out. Waiting for processes to exit.
+Nov  8 22:17:00 banner-session-42481 systemd-logind[164]: Removed session 3507.

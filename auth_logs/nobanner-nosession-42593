@@ -1,0 +1,33 @@
+Nov  9 01:34:55 nobanner-nosession-42593 systemd-logind[166]: New seat seat0.
+Nov  9 01:34:58 nobanner-nosession-42593 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 01:34:58 nobanner-nosession-42593 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 01:35:07 nobanner-nosession-42593 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 01:35:07 nobanner-nosession-42593 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 01:35:07 nobanner-nosession-42593 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 01:35:20 nobanner-nosession-42593 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 01:35:21 nobanner-nosession-42593 usermod[756]: change user 'sshd' password
+Nov  9 01:35:21 nobanner-nosession-42593 chage[763]: changed password expiry for sshd
+Nov  9 01:35:23 nobanner-nosession-42593 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 01:35:23 nobanner-nosession-42593 sshd[1198]: Server listening on :: port 22.
+Nov  9 01:35:24 nobanner-nosession-42593 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 01:35:25 nobanner-nosession-42593 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 01:35:25 nobanner-nosession-42593 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 01:35:34 nobanner-nosession-42593 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 01:36:31 nobanner-nosession-42593 useradd[1536]: new group: name=fhf, GID=1001
+Nov  9 01:36:31 nobanner-nosession-42593 useradd[1536]: new user: name=fhf, UID=1001, GID=1001, home=/home/fhf, shell=/bin/bash, from=none
+Nov  9 01:36:31 nobanner-nosession-42593 usermod[1545]: change user 'fhf' password
+Nov  9 01:36:31 nobanner-nosession-42593 sshd[1552]: Accepted password for fhf from 10.0.3.1 port 54962 ssh2
+Nov  9 01:36:31 nobanner-nosession-42593 sshd[1552]: pam_unix(sshd:session): session opened for user fhf by (uid=0)
+Nov  9 01:36:31 nobanner-nosession-42593 systemd-logind[166]: New session 3607 of user fhf.
+Nov  9 01:36:31 nobanner-nosession-42593 systemd: pam_unix(systemd-user:session): session opened for user fhf by (uid=0)
+Nov  9 01:36:32 nobanner-nosession-42593 sshd[1569]: Received disconnect from 10.0.3.1 port 54962:11: 
+Nov  9 01:36:32 nobanner-nosession-42593 sshd[1569]: Disconnected from user fhf 10.0.3.1 port 54962
+Nov  9 01:36:32 nobanner-nosession-42593 sshd[1552]: pam_unix(sshd:session): session closed for user fhf
+Nov  9 01:36:32 nobanner-nosession-42593 systemd-logind[166]: Session 3607 logged out. Waiting for processes to exit.
+Nov  9 01:36:32 nobanner-nosession-42593 systemd-logind[166]: Removed session 3607.
+Nov  9 01:36:33 nobanner-nosession-42593 sshd[1570]: Accepted password for fhf from 10.0.3.1 port 54976 ssh2
+Nov  9 01:36:33 nobanner-nosession-42593 sshd[1570]: pam_unix(sshd:session): session opened for user fhf by (uid=0)
+Nov  9 01:36:33 nobanner-nosession-42593 systemd-logind[166]: New session 3609 of user fhf.
+Nov  9 01:36:33 nobanner-nosession-42593 sshd[1570]: pam_unix(sshd:session): session closed for user fhf
+Nov  9 01:36:33 nobanner-nosession-42593 systemd-logind[166]: Session 3609 logged out. Waiting for processes to exit.
+Nov  9 01:36:33 nobanner-nosession-42593 systemd-logind[166]: Removed session 3609.

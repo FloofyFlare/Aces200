@@ -24,3 +24,16 @@ Started with the following options:
 2024-11-08 12:45:05.837 - [Info] Auto Access Enabled: true
 2024-11-08 12:45:05.838 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-11-08 12:45:05.851 - [Info] SSH man-in-the-middle server for 10.0.3.84 listening on 10.0.3.1:42343
+2024-11-08 12:54:44.611 - [Debug] [Connection] Attacker connected: 117.175.160.29 | Client Identification: SSH-2.0-OpenSSH_7.4
+2024-11-08 12:54:47.492 - [Debug] [Auth] Attacker 117.175.160.29 trying to authenticate with 'password'
+2024-11-08 12:54:47.493 - [Debug] [Auto Access] Attacker: 117.175.160.29, Threshold: 1, Attempts: 1
+2024-11-08 12:54:47.493 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-08 12:54:47.494 - [Debug] [Auto Access] Adding the following credentials: 'username:support'
+2024-11-08 12:54:47.759 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-08 12:54:47.761 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-08 12:54:47.762 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.84
+2024-11-08 12:54:47.830 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-08 12:54:50.257 - [Debug] [Connection] Attacker closed connection
+2024-11-08 12:54:50.266 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-08 12:54:50.266 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

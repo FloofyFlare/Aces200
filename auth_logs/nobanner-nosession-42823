@@ -1,0 +1,26 @@
+Nov  9 08:38:48 nobanner-nosession-42823 systemd-logind[164]: New seat seat0.
+Nov  9 08:38:51 nobanner-nosession-42823 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 08:38:51 nobanner-nosession-42823 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 08:38:59 nobanner-nosession-42823 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 08:38:59 nobanner-nosession-42823 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 08:38:59 nobanner-nosession-42823 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 08:39:11 nobanner-nosession-42823 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 08:39:11 nobanner-nosession-42823 usermod[756]: change user 'sshd' password
+Nov  9 08:39:11 nobanner-nosession-42823 chage[763]: changed password expiry for sshd
+Nov  9 08:39:14 nobanner-nosession-42823 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 08:39:14 nobanner-nosession-42823 sshd[1198]: Server listening on :: port 22.
+Nov  9 08:39:15 nobanner-nosession-42823 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 08:39:16 nobanner-nosession-42823 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 08:39:16 nobanner-nosession-42823 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 08:39:23 nobanner-nosession-42823 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 08:42:30 nobanner-nosession-42823 useradd[1536]: failed adding user 'ubuntu', data deleted
+Nov  9 08:42:30 nobanner-nosession-42823 usermod[1537]: change user 'ubuntu' password
+Nov  9 08:42:30 nobanner-nosession-42823 sshd[1544]: Accepted password for ubuntu from 10.0.3.1 port 49952 ssh2
+Nov  9 08:42:30 nobanner-nosession-42823 sshd[1544]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov  9 08:42:30 nobanner-nosession-42823 systemd-logind[164]: New session 297 of user ubuntu.
+Nov  9 08:42:30 nobanner-nosession-42823 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov  9 08:42:30 nobanner-nosession-42823 sshd[1561]: Received disconnect from 10.0.3.1 port 49952:11: 
+Nov  9 08:42:30 nobanner-nosession-42823 sshd[1561]: Disconnected from user ubuntu 10.0.3.1 port 49952
+Nov  9 08:42:30 nobanner-nosession-42823 sshd[1544]: pam_unix(sshd:session): session closed for user ubuntu
+Nov  9 08:42:30 nobanner-nosession-42823 systemd-logind[164]: Session 297 logged out. Waiting for processes to exit.
+Nov  9 08:42:30 nobanner-nosession-42823 systemd-logind[164]: Removed session 297.

@@ -1,0 +1,33 @@
+Nov  9 12:43:24 nobanner-nosession-42946 systemd-logind[164]: New seat seat0.
+Nov  9 12:43:27 nobanner-nosession-42946 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 12:43:27 nobanner-nosession-42946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:43:36 nobanner-nosession-42946 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:43:36 nobanner-nosession-42946 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 12:43:36 nobanner-nosession-42946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:43:51 nobanner-nosession-42946 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 12:43:51 nobanner-nosession-42946 usermod[756]: change user 'sshd' password
+Nov  9 12:43:51 nobanner-nosession-42946 chage[763]: changed password expiry for sshd
+Nov  9 12:43:53 nobanner-nosession-42946 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 12:43:53 nobanner-nosession-42946 sshd[1198]: Server listening on :: port 22.
+Nov  9 12:43:56 nobanner-nosession-42946 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:43:56 nobanner-nosession-42946 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 12:43:56 nobanner-nosession-42946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:44:11 nobanner-nosession-42946 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:44:26 nobanner-nosession-42946 useradd[1536]: new group: name=t, GID=1001
+Nov  9 12:44:26 nobanner-nosession-42946 useradd[1536]: new user: name=t, UID=1001, GID=1001, home=/home/t, shell=/bin/bash, from=none
+Nov  9 12:44:27 nobanner-nosession-42946 usermod[1545]: change user 't' password
+Nov  9 12:44:27 nobanner-nosession-42946 sshd[1552]: Accepted password for t from 10.0.3.1 port 33630 ssh2
+Nov  9 12:44:27 nobanner-nosession-42946 sshd[1552]: pam_unix(sshd:session): session opened for user t by (uid=0)
+Nov  9 12:44:27 nobanner-nosession-42946 systemd-logind[164]: New session 3980 of user t.
+Nov  9 12:44:27 nobanner-nosession-42946 systemd: pam_unix(systemd-user:session): session opened for user t by (uid=0)
+Nov  9 12:44:27 nobanner-nosession-42946 sshd[1569]: Received disconnect from 10.0.3.1 port 33630:11: 
+Nov  9 12:44:27 nobanner-nosession-42946 sshd[1569]: Disconnected from user t 10.0.3.1 port 33630
+Nov  9 12:44:27 nobanner-nosession-42946 sshd[1552]: pam_unix(sshd:session): session closed for user t
+Nov  9 12:44:27 nobanner-nosession-42946 systemd-logind[164]: Session 3980 logged out. Waiting for processes to exit.
+Nov  9 12:44:27 nobanner-nosession-42946 systemd-logind[164]: Removed session 3980.
+Nov  9 12:44:28 nobanner-nosession-42946 sshd[1570]: Accepted password for t from 10.0.3.1 port 57438 ssh2
+Nov  9 12:44:28 nobanner-nosession-42946 sshd[1570]: pam_unix(sshd:session): session opened for user t by (uid=0)
+Nov  9 12:44:28 nobanner-nosession-42946 systemd-logind[164]: New session 3982 of user t.
+Nov  9 12:44:29 nobanner-nosession-42946 sshd[1570]: pam_unix(sshd:session): session closed for user t
+Nov  9 12:44:29 nobanner-nosession-42946 systemd-logind[164]: Session 3982 logged out. Waiting for processes to exit.
+Nov  9 12:44:29 nobanner-nosession-42946 systemd-logind[164]: Removed session 3982.

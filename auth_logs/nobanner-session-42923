@@ -1,0 +1,27 @@
+Nov  9 11:47:56 nobanner-session-42923 systemd-logind[165]: New seat seat0.
+Nov  9 11:47:59 nobanner-session-42923 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 11:47:59 nobanner-session-42923 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:48:07 nobanner-session-42923 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:48:07 nobanner-session-42923 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 11:48:07 nobanner-session-42923 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:48:18 nobanner-session-42923 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 11:48:18 nobanner-session-42923 usermod[756]: change user 'sshd' password
+Nov  9 11:48:18 nobanner-session-42923 chage[763]: changed password expiry for sshd
+Nov  9 11:48:21 nobanner-session-42923 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 11:48:21 nobanner-session-42923 sshd[1198]: Server listening on :: port 22.
+Nov  9 11:48:24 nobanner-session-42923 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:48:24 nobanner-session-42923 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 11:48:24 nobanner-session-42923 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:48:30 nobanner-session-42923 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:48:47 nobanner-session-42923 useradd[1539]: new group: name=ubnt, GID=1001
+Nov  9 11:48:47 nobanner-session-42923 useradd[1539]: new user: name=ubnt, UID=1001, GID=1001, home=/home/ubnt, shell=/bin/bash, from=none
+Nov  9 11:48:48 nobanner-session-42923 usermod[1548]: change user 'ubnt' password
+Nov  9 11:48:48 nobanner-session-42923 sshd[1555]: Accepted password for ubnt from 10.0.3.1 port 50254 ssh2
+Nov  9 11:48:48 nobanner-session-42923 sshd[1555]: pam_unix(sshd:session): session opened for user ubnt by (uid=0)
+Nov  9 11:48:48 nobanner-session-42923 systemd-logind[165]: New session 3938 of user ubnt.
+Nov  9 11:48:48 nobanner-session-42923 systemd: pam_unix(systemd-user:session): session opened for user ubnt by (uid=0)
+Nov  9 11:48:49 nobanner-session-42923 sshd[1572]: Received disconnect from 10.0.3.1 port 50254:11: 
+Nov  9 11:48:49 nobanner-session-42923 sshd[1572]: Disconnected from user ubnt 10.0.3.1 port 50254
+Nov  9 11:48:49 nobanner-session-42923 sshd[1555]: pam_unix(sshd:session): session closed for user ubnt
+Nov  9 11:48:49 nobanner-session-42923 systemd-logind[165]: Session 3938 logged out. Waiting for processes to exit.
+Nov  9 11:48:49 nobanner-session-42923 systemd-logind[165]: Removed session 3938.

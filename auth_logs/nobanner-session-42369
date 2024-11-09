@@ -1,0 +1,25 @@
+Nov  8 19:06:00 nobanner-session-42369 systemd-logind[164]: New seat seat0.
+Nov  8 19:06:04 nobanner-session-42369 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 19:06:04 nobanner-session-42369 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:06:14 nobanner-session-42369 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:06:14 nobanner-session-42369 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 19:06:14 nobanner-session-42369 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:06:32 nobanner-session-42369 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 19:06:32 nobanner-session-42369 usermod[756]: change user 'sshd' password
+Nov  8 19:06:32 nobanner-session-42369 chage[763]: changed password expiry for sshd
+Nov  8 19:06:35 nobanner-session-42369 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 19:06:35 nobanner-session-42369 sshd[1198]: Server listening on :: port 22.
+Nov  8 19:06:36 nobanner-session-42369 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:06:36 nobanner-session-42369 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 19:06:36 nobanner-session-42369 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:06:44 nobanner-session-42369 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:07:49 nobanner-session-42369 useradd[1539]: new group: name=soumen, GID=1001
+Nov  8 19:07:49 nobanner-session-42369 useradd[1539]: new user: name=soumen, UID=1001, GID=1001, home=/home/soumen, shell=/bin/bash, from=none
+Nov  8 19:07:50 nobanner-session-42369 usermod[1548]: change user 'soumen' password
+Nov  8 19:07:50 nobanner-session-42369 sshd[1555]: Accepted password for soumen from 10.0.3.1 port 41796 ssh2
+Nov  8 19:07:50 nobanner-session-42369 sshd[1555]: pam_unix(sshd:session): session opened for user soumen by (uid=0)
+Nov  8 19:07:50 nobanner-session-42369 systemd-logind[164]: New session 3386 of user soumen.
+Nov  8 19:07:50 nobanner-session-42369 systemd: pam_unix(systemd-user:session): session opened for user soumen by (uid=0)
+Nov  8 19:07:56 nobanner-session-42369 sshd[1555]: pam_unix(sshd:session): session closed for user soumen
+Nov  8 19:07:56 nobanner-session-42369 systemd-logind[164]: Session 3386 logged out. Waiting for processes to exit.
+Nov  8 19:07:56 nobanner-session-42369 systemd-logind[164]: Removed session 3386.

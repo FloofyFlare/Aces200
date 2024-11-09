@@ -1,0 +1,27 @@
+Nov  9 12:05:26 nobanner-nosession-42931 systemd-logind[166]: New seat seat0.
+Nov  9 12:05:30 nobanner-nosession-42931 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 12:05:30 nobanner-nosession-42931 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:05:38 nobanner-nosession-42931 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:05:38 nobanner-nosession-42931 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 12:05:38 nobanner-nosession-42931 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:05:53 nobanner-nosession-42931 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 12:05:53 nobanner-nosession-42931 usermod[756]: change user 'sshd' password
+Nov  9 12:05:53 nobanner-nosession-42931 chage[763]: changed password expiry for sshd
+Nov  9 12:05:55 nobanner-nosession-42931 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 12:05:55 nobanner-nosession-42931 sshd[1198]: Server listening on :: port 22.
+Nov  9 12:05:57 nobanner-nosession-42931 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:05:58 nobanner-nosession-42931 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 12:05:58 nobanner-nosession-42931 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:06:04 nobanner-nosession-42931 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:06:41 nobanner-nosession-42931 useradd[1536]: new group: name=blank, GID=1001
+Nov  9 12:06:41 nobanner-nosession-42931 useradd[1536]: new user: name=blank, UID=1001, GID=1001, home=/home/blank, shell=/bin/bash, from=none
+Nov  9 12:06:41 nobanner-nosession-42931 usermod[1545]: change user 'blank' password
+Nov  9 12:06:41 nobanner-nosession-42931 sshd[1552]: Accepted password for blank from 10.0.3.1 port 48098 ssh2
+Nov  9 12:06:41 nobanner-nosession-42931 sshd[1552]: pam_unix(sshd:session): session opened for user blank by (uid=0)
+Nov  9 12:06:41 nobanner-nosession-42931 systemd-logind[166]: New session 3950 of user blank.
+Nov  9 12:06:41 nobanner-nosession-42931 systemd: pam_unix(systemd-user:session): session opened for user blank by (uid=0)
+Nov  9 12:06:44 nobanner-nosession-42931 sshd[1569]: Received disconnect from 10.0.3.1 port 48098:11: 
+Nov  9 12:06:44 nobanner-nosession-42931 sshd[1569]: Disconnected from user blank 10.0.3.1 port 48098
+Nov  9 12:06:44 nobanner-nosession-42931 sshd[1552]: pam_unix(sshd:session): session closed for user blank
+Nov  9 12:06:44 nobanner-nosession-42931 systemd-logind[166]: Session 3950 logged out. Waiting for processes to exit.
+Nov  9 12:06:44 nobanner-nosession-42931 systemd-logind[166]: Removed session 3950.

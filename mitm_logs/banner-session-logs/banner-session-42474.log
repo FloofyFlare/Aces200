@@ -1,0 +1,132 @@
+(node:357926) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-42474',
+  containerIp: '10.0.3.77',
+  mitmPort: 42474,
+  autoAccessFixed: 1
+}
+2024-11-08 17:00:05.775 - [Info] MITM Version: 2
+2024-11-08 17:00:05.777 - [Info] Auto Access Enabled: true
+2024-11-08 17:00:05.784 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-08 17:00:05.804 - [Info] SSH man-in-the-middle server for 10.0.3.77 listening on 10.0.3.1:42474
+2024-11-08 17:00:58.727 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:58.737 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:58.738 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:58.738 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:58.739 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:58.739 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:58.743 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:58.795 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:59.287 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.288 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.295 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.295 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.297 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.297 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.303 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.303 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.304 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.304 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.309 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.309 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.344 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.344 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.359 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:00:59.359 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:00:59.503 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.504 - [Debug] [Auto Access] Attacker: 178.215.238.131, Threshold: 1, Attempts: 1
+2024-11-08 17:00:59.504 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-08 17:00:59.504 - [Debug] [Auto Access] Adding the following credentials: 'root:admin'
+2024-11-08 17:00:59.609 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-08 17:00:59.612 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-08 17:00:59.612 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.77
+2024-11-08 17:00:59.617 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.617 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:00:59.618 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:00:59.618 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.619 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:00:59.619 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:00:59.619 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.620 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:00:59.620 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:00:59.620 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.621 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:00:59.621 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:00:59.621 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.622 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:00:59.622 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:00:59.622 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.622 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:00:59.623 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:00:59.623 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:00:59.623 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:00:59.624 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:00:59.835 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:00:59.839 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:00:59.840 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:00:59.841 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:00:59.842 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:00:59.843 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:00:59.852 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:00:59.919 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:59.927 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:59.928 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:59.930 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:59.931 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:59.941 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:00:59.944 - [Debug] [Connection] Attacker connected: 178.215.238.131 | Client Identification: SSH-2.0-Go
+2024-11-08 17:01:00.516 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:01:00.516 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:01:00.535 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:01:00.536 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:01:00.561 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:01:00.562 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:01:00.565 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:01:00.567 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:01:00.579 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:01:00.579 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:01:00.581 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:01:00.581 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:01:00.586 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'none'
+2024-11-08 17:01:00.586 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 17:01:00.785 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:01:00.786 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:01:00.787 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:01:00.798 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:01:00.799 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:01:00.799 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:01:00.800 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:01:00.801 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:01:00.802 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:01:00.804 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:01:00.805 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:01:00.805 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:01:00.832 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:01:00.833 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:01:00.834 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:01:00.834 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:01:00.834 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:01:00.835 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:01:00.845 - [Debug] [Auth] Attacker 178.215.238.131 trying to authenticate with 'password'
+2024-11-08 17:01:00.846 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-08 17:01:00.847 - [Debug] [Auth] Attacker: 178.215.238.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 17:01:01.012 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:01:01.022 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:01:01.034 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 17:01:01.038 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

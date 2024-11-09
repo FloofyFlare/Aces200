@@ -1,0 +1,33 @@
+Nov  8 19:43:38 nobanner-nosession-42392 systemd-logind[165]: New seat seat0.
+Nov  8 19:43:42 nobanner-nosession-42392 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 19:43:42 nobanner-nosession-42392 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:43:51 nobanner-nosession-42392 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:43:51 nobanner-nosession-42392 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 19:43:51 nobanner-nosession-42392 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:44:10 nobanner-nosession-42392 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 19:44:10 nobanner-nosession-42392 usermod[756]: change user 'sshd' password
+Nov  8 19:44:10 nobanner-nosession-42392 chage[763]: changed password expiry for sshd
+Nov  8 19:44:13 nobanner-nosession-42392 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 19:44:13 nobanner-nosession-42392 sshd[1198]: Server listening on :: port 22.
+Nov  8 19:44:15 nobanner-nosession-42392 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:44:15 nobanner-nosession-42392 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 19:44:15 nobanner-nosession-42392 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:44:30 nobanner-nosession-42392 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:46:08 nobanner-nosession-42392 useradd[1536]: new group: name=terraria, GID=1001
+Nov  8 19:46:08 nobanner-nosession-42392 useradd[1536]: new user: name=terraria, UID=1001, GID=1001, home=/home/terraria, shell=/bin/bash, from=none
+Nov  8 19:46:08 nobanner-nosession-42392 usermod[1545]: change user 'terraria' password
+Nov  8 19:46:08 nobanner-nosession-42392 sshd[1552]: Accepted password for terraria from 10.0.3.1 port 53638 ssh2
+Nov  8 19:46:08 nobanner-nosession-42392 sshd[1552]: pam_unix(sshd:session): session opened for user terraria by (uid=0)
+Nov  8 19:46:08 nobanner-nosession-42392 systemd-logind[165]: New session 3414 of user terraria.
+Nov  8 19:46:08 nobanner-nosession-42392 systemd: pam_unix(systemd-user:session): session opened for user terraria by (uid=0)
+Nov  8 19:46:09 nobanner-nosession-42392 sshd[1569]: Received disconnect from 10.0.3.1 port 53638:11: 
+Nov  8 19:46:09 nobanner-nosession-42392 sshd[1569]: Disconnected from user terraria 10.0.3.1 port 53638
+Nov  8 19:46:09 nobanner-nosession-42392 sshd[1552]: pam_unix(sshd:session): session closed for user terraria
+Nov  8 19:46:09 nobanner-nosession-42392 systemd-logind[165]: Session 3414 logged out. Waiting for processes to exit.
+Nov  8 19:46:09 nobanner-nosession-42392 systemd-logind[165]: Removed session 3414.
+Nov  8 19:46:10 nobanner-nosession-42392 sshd[1570]: Accepted password for terraria from 10.0.3.1 port 53644 ssh2
+Nov  8 19:46:10 nobanner-nosession-42392 sshd[1570]: pam_unix(sshd:session): session opened for user terraria by (uid=0)
+Nov  8 19:46:10 nobanner-nosession-42392 systemd-logind[165]: New session 3416 of user terraria.
+Nov  8 19:46:10 nobanner-nosession-42392 sshd[1570]: pam_unix(sshd:session): session closed for user terraria
+Nov  8 19:46:10 nobanner-nosession-42392 systemd-logind[165]: Session 3416 logged out. Waiting for processes to exit.
+Nov  8 19:46:10 nobanner-nosession-42392 systemd-logind[165]: Removed session 3416.

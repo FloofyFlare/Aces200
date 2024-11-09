@@ -1,0 +1,25 @@
+Nov  9 09:23:08 banner-nosession-42839 systemd-logind[164]: New seat seat0.
+Nov  9 09:23:12 banner-nosession-42839 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 09:23:12 banner-nosession-42839 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 09:23:20 banner-nosession-42839 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 09:23:20 banner-nosession-42839 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 09:23:20 banner-nosession-42839 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 09:23:30 banner-nosession-42839 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 09:23:30 banner-nosession-42839 usermod[756]: change user 'sshd' password
+Nov  9 09:23:30 banner-nosession-42839 chage[763]: changed password expiry for sshd
+Nov  9 09:23:33 banner-nosession-42839 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 09:23:33 banner-nosession-42839 sshd[1198]: Server listening on :: port 22.
+Nov  9 09:23:35 banner-nosession-42839 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 09:23:35 banner-nosession-42839 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 09:23:35 banner-nosession-42839 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 09:23:44 banner-nosession-42839 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 09:24:29 banner-nosession-42839 useradd[1542]: new group: name=hwangjc, GID=1001
+Nov  9 09:24:29 banner-nosession-42839 useradd[1542]: new user: name=hwangjc, UID=1001, GID=1001, home=/home/hwangjc, shell=/bin/bash, from=none
+Nov  9 09:24:29 banner-nosession-42839 usermod[1551]: change user 'hwangjc' password
+Nov  9 09:24:29 banner-nosession-42839 sshd[1558]: Accepted password for hwangjc from 10.0.3.1 port 32986 ssh2
+Nov  9 09:24:29 banner-nosession-42839 sshd[1558]: pam_unix(sshd:session): session opened for user hwangjc by (uid=0)
+Nov  9 09:24:30 banner-nosession-42839 systemd-logind[164]: New session 3856 of user hwangjc.
+Nov  9 09:24:30 banner-nosession-42839 systemd: pam_unix(systemd-user:session): session opened for user hwangjc by (uid=0)
+Nov  9 09:24:36 banner-nosession-42839 sshd[1558]: pam_unix(sshd:session): session closed for user hwangjc
+Nov  9 09:24:36 banner-nosession-42839 systemd-logind[164]: Session 3856 logged out. Waiting for processes to exit.
+Nov  9 09:24:36 banner-nosession-42839 systemd-logind[164]: Removed session 3856.

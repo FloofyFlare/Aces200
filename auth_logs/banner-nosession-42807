@@ -1,0 +1,27 @@
+Nov  9 07:52:29 banner-nosession-42807 systemd-logind[164]: New seat seat0.
+Nov  9 07:52:33 banner-nosession-42807 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 07:52:33 banner-nosession-42807 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:52:41 banner-nosession-42807 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:52:41 banner-nosession-42807 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 07:52:41 banner-nosession-42807 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:53:01 banner-nosession-42807 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 07:53:01 banner-nosession-42807 usermod[756]: change user 'sshd' password
+Nov  9 07:53:01 banner-nosession-42807 chage[763]: changed password expiry for sshd
+Nov  9 07:53:03 banner-nosession-42807 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 07:53:03 banner-nosession-42807 sshd[1198]: Server listening on :: port 22.
+Nov  9 07:53:05 banner-nosession-42807 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:53:05 banner-nosession-42807 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 07:53:05 banner-nosession-42807 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:53:14 banner-nosession-42807 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:57:24 banner-nosession-42807 useradd[1542]: new group: name=service, GID=1001
+Nov  9 07:57:24 banner-nosession-42807 useradd[1542]: new user: name=service, UID=1001, GID=1001, home=/home/service, shell=/bin/bash, from=none
+Nov  9 07:57:24 banner-nosession-42807 usermod[1551]: change user 'service' password
+Nov  9 07:57:24 banner-nosession-42807 sshd[1558]: Accepted password for service from 10.0.3.1 port 32958 ssh2
+Nov  9 07:57:24 banner-nosession-42807 sshd[1558]: pam_unix(sshd:session): session opened for user service by (uid=0)
+Nov  9 07:57:24 banner-nosession-42807 systemd-logind[164]: New session 3801 of user service.
+Nov  9 07:57:24 banner-nosession-42807 systemd: pam_unix(systemd-user:session): session opened for user service by (uid=0)
+Nov  9 07:57:26 banner-nosession-42807 sshd[1575]: Received disconnect from 10.0.3.1 port 32958:11: 
+Nov  9 07:57:26 banner-nosession-42807 sshd[1575]: Disconnected from user service 10.0.3.1 port 32958
+Nov  9 07:57:26 banner-nosession-42807 sshd[1558]: pam_unix(sshd:session): session closed for user service
+Nov  9 07:57:26 banner-nosession-42807 systemd-logind[164]: Session 3801 logged out. Waiting for processes to exit.
+Nov  9 07:57:26 banner-nosession-42807 systemd-logind[164]: Removed session 3801.

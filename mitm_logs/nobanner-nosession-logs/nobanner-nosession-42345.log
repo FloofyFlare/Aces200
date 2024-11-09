@@ -24,3 +24,22 @@ Started with the following options:
 2024-11-08 12:48:06.034 - [Info] Auto Access Enabled: true
 2024-11-08 12:48:06.035 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-11-08 12:48:06.054 - [Info] SSH man-in-the-middle server for 10.0.3.249 listening on 10.0.3.1:42345
+2024-11-08 12:57:25.197 - [Debug] [Connection] Attacker connected: 58.214.249.122 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-08 12:57:26.484 - [Debug] [Auth] Attacker 58.214.249.122 trying to authenticate with 'password'
+2024-11-08 12:57:26.486 - [Debug] [Auto Access] Attacker: 58.214.249.122, Threshold: 1, Attempts: 1
+2024-11-08 12:57:26.486 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-08 12:57:26.487 - [Debug] [Auto Access] Adding the following credentials: 'mohamadshah:123456'
+2024-11-08 12:57:26.726 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-08 12:57:26.729 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-08 12:57:26.729 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.249
+2024-11-08 12:57:26.804 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-08 12:57:27.719 - [Debug] [EXEC] Noninteractive mode attacker command: cd ~; chattr -ia .ssh; lockr -ia .ssh
+2024-11-08 12:57:37.083 - [Debug] [Connection] Attacker connected: 58.214.249.122 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-08 12:57:38.917 - [Debug] [Auth] Attacker 58.214.249.122 trying to authenticate with 'password'
+2024-11-08 12:57:38.918 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-08 12:57:38.919 - [Debug] [Auth] Attacker: 58.214.249.122 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-08 12:57:39.342 - [Debug] [Connection] Attacker closed the connection
+2024-11-08 12:57:39.758 - [Debug] [Connection] Attacker closed connection
+2024-11-08 12:57:39.765 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-08 12:57:39.768 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

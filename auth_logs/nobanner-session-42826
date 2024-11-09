@@ -1,0 +1,27 @@
+Nov  9 08:47:59 nobanner-session-42826 systemd-logind[164]: New seat seat0.
+Nov  9 08:48:03 nobanner-session-42826 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 08:48:03 nobanner-session-42826 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 08:48:11 nobanner-session-42826 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 08:48:11 nobanner-session-42826 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 08:48:12 nobanner-session-42826 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 08:48:21 nobanner-session-42826 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 08:48:21 nobanner-session-42826 usermod[756]: change user 'sshd' password
+Nov  9 08:48:21 nobanner-session-42826 chage[763]: changed password expiry for sshd
+Nov  9 08:48:23 nobanner-session-42826 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 08:48:23 nobanner-session-42826 sshd[1198]: Server listening on :: port 22.
+Nov  9 08:48:26 nobanner-session-42826 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 08:48:26 nobanner-session-42826 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 08:48:26 nobanner-session-42826 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 08:48:34 nobanner-session-42826 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 08:49:12 nobanner-session-42826 useradd[1539]: new group: name=sales, GID=1001
+Nov  9 08:49:12 nobanner-session-42826 useradd[1539]: new user: name=sales, UID=1001, GID=1001, home=/home/sales, shell=/bin/bash, from=none
+Nov  9 08:49:12 nobanner-session-42826 usermod[1548]: change user 'sales' password
+Nov  9 08:49:12 nobanner-session-42826 sshd[1555]: Accepted password for sales from 10.0.3.1 port 33126 ssh2
+Nov  9 08:49:12 nobanner-session-42826 sshd[1555]: pam_unix(sshd:session): session opened for user sales by (uid=0)
+Nov  9 08:49:12 nobanner-session-42826 systemd-logind[164]: New session 3827 of user sales.
+Nov  9 08:49:12 nobanner-session-42826 systemd: pam_unix(systemd-user:session): session opened for user sales by (uid=0)
+Nov  9 08:49:15 nobanner-session-42826 sshd[1572]: Received disconnect from 10.0.3.1 port 33126:11: 
+Nov  9 08:49:15 nobanner-session-42826 sshd[1572]: Disconnected from user sales 10.0.3.1 port 33126
+Nov  9 08:49:15 nobanner-session-42826 sshd[1555]: pam_unix(sshd:session): session closed for user sales
+Nov  9 08:49:15 nobanner-session-42826 systemd-logind[164]: Session 3827 logged out. Waiting for processes to exit.
+Nov  9 08:49:15 nobanner-session-42826 systemd-logind[164]: Removed session 3827.

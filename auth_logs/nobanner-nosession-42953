@@ -1,0 +1,25 @@
+Nov  9 12:50:21 nobanner-nosession-42953 systemd-logind[165]: New seat seat0.
+Nov  9 12:50:25 nobanner-nosession-42953 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 12:50:25 nobanner-nosession-42953 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:50:34 nobanner-nosession-42953 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:50:34 nobanner-nosession-42953 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 12:50:34 nobanner-nosession-42953 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:50:56 nobanner-nosession-42953 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 12:50:56 nobanner-nosession-42953 usermod[756]: change user 'sshd' password
+Nov  9 12:50:56 nobanner-nosession-42953 chage[763]: changed password expiry for sshd
+Nov  9 12:50:58 nobanner-nosession-42953 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 12:50:58 nobanner-nosession-42953 sshd[1198]: Server listening on :: port 22.
+Nov  9 12:51:00 nobanner-nosession-42953 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:51:00 nobanner-nosession-42953 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 12:51:00 nobanner-nosession-42953 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 12:51:06 nobanner-nosession-42953 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 12:52:14 nobanner-nosession-42953 useradd[1536]: new group: name=muratsefa, GID=1001
+Nov  9 12:52:14 nobanner-nosession-42953 useradd[1536]: new user: name=muratsefa, UID=1001, GID=1001, home=/home/muratsefa, shell=/bin/bash, from=none
+Nov  9 12:52:14 nobanner-nosession-42953 usermod[1545]: change user 'muratsefa' password
+Nov  9 12:52:14 nobanner-nosession-42953 sshd[1552]: Accepted password for muratsefa from 10.0.3.1 port 49002 ssh2
+Nov  9 12:52:14 nobanner-nosession-42953 sshd[1552]: pam_unix(sshd:session): session opened for user muratsefa by (uid=0)
+Nov  9 12:52:14 nobanner-nosession-42953 systemd-logind[165]: New session 3995 of user muratsefa.
+Nov  9 12:52:14 nobanner-nosession-42953 systemd: pam_unix(systemd-user:session): session opened for user muratsefa by (uid=0)
+Nov  9 12:52:21 nobanner-nosession-42953 sshd[1552]: pam_unix(sshd:session): session closed for user muratsefa
+Nov  9 12:52:21 nobanner-nosession-42953 systemd-logind[165]: Session 3995 logged out. Waiting for processes to exit.
+Nov  9 12:52:21 nobanner-nosession-42953 systemd-logind[165]: Removed session 3995.

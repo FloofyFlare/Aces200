@@ -1,0 +1,25 @@
+Nov  8 22:08:49 nobanner-nosession-42478 systemd-logind[164]: New seat seat0.
+Nov  8 22:08:52 nobanner-nosession-42478 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 22:08:52 nobanner-nosession-42478 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:08:59 nobanner-nosession-42478 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:08:59 nobanner-nosession-42478 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 22:08:59 nobanner-nosession-42478 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:09:11 nobanner-nosession-42478 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 22:09:11 nobanner-nosession-42478 usermod[756]: change user 'sshd' password
+Nov  8 22:09:11 nobanner-nosession-42478 chage[763]: changed password expiry for sshd
+Nov  8 22:09:14 nobanner-nosession-42478 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 22:09:14 nobanner-nosession-42478 sshd[1198]: Server listening on :: port 22.
+Nov  8 22:09:16 nobanner-nosession-42478 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:09:16 nobanner-nosession-42478 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 22:09:16 nobanner-nosession-42478 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:09:24 nobanner-nosession-42478 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:10:08 nobanner-nosession-42478 useradd[1536]: new group: name=modelcasting, GID=1001
+Nov  8 22:10:08 nobanner-nosession-42478 useradd[1536]: new user: name=modelcasting, UID=1001, GID=1001, home=/home/modelcasting, shell=/bin/bash, from=none
+Nov  8 22:10:08 nobanner-nosession-42478 usermod[1545]: change user 'modelcasting' password
+Nov  8 22:10:09 nobanner-nosession-42478 sshd[1552]: Accepted password for modelcasting from 10.0.3.1 port 56700 ssh2
+Nov  8 22:10:09 nobanner-nosession-42478 sshd[1552]: pam_unix(sshd:session): session opened for user modelcasting by (uid=0)
+Nov  8 22:10:09 nobanner-nosession-42478 systemd-logind[164]: New session 3498 of user modelcasting.
+Nov  8 22:10:09 nobanner-nosession-42478 systemd: pam_unix(systemd-user:session): session opened for user modelcasting by (uid=0)
+Nov  8 22:10:15 nobanner-nosession-42478 sshd[1552]: pam_unix(sshd:session): session closed for user modelcasting
+Nov  8 22:10:15 nobanner-nosession-42478 systemd-logind[164]: Session 3498 logged out. Waiting for processes to exit.
+Nov  8 22:10:15 nobanner-nosession-42478 systemd-logind[164]: Removed session 3498.

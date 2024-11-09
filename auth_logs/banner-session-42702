@@ -1,0 +1,25 @@
+Nov  9 05:21:46 banner-session-42702 systemd-logind[164]: New seat seat0.
+Nov  9 05:21:49 banner-session-42702 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 05:21:49 banner-session-42702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 05:21:57 banner-session-42702 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 05:21:57 banner-session-42702 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 05:21:57 banner-session-42702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 05:22:10 banner-session-42702 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 05:22:10 banner-session-42702 usermod[756]: change user 'sshd' password
+Nov  9 05:22:10 banner-session-42702 chage[763]: changed password expiry for sshd
+Nov  9 05:22:13 banner-session-42702 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 05:22:13 banner-session-42702 sshd[1198]: Server listening on :: port 22.
+Nov  9 05:22:15 banner-session-42702 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 05:22:15 banner-session-42702 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 05:22:15 banner-session-42702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 05:22:22 banner-session-42702 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 05:22:27 banner-session-42702 useradd[1545]: new group: name=wpress, GID=1001
+Nov  9 05:22:27 banner-session-42702 useradd[1545]: new user: name=wpress, UID=1001, GID=1001, home=/home/wpress, shell=/bin/bash, from=none
+Nov  9 05:22:28 banner-session-42702 usermod[1554]: change user 'wpress' password
+Nov  9 05:22:28 banner-session-42702 sshd[1561]: Accepted password for wpress from 10.0.3.1 port 59242 ssh2
+Nov  9 05:22:28 banner-session-42702 sshd[1561]: pam_unix(sshd:session): session opened for user wpress by (uid=0)
+Nov  9 05:22:28 banner-session-42702 systemd-logind[164]: New session 3707 of user wpress.
+Nov  9 05:22:28 banner-session-42702 systemd: pam_unix(systemd-user:session): session opened for user wpress by (uid=0)
+Nov  9 05:22:34 banner-session-42702 sshd[1561]: pam_unix(sshd:session): session closed for user wpress
+Nov  9 05:22:34 banner-session-42702 systemd-logind[164]: Session 3707 logged out. Waiting for processes to exit.
+Nov  9 05:22:34 banner-session-42702 systemd-logind[164]: Removed session 3707.

@@ -1,0 +1,27 @@
+Nov  8 21:48:58 banner-nosession-42466 systemd-logind[164]: New seat seat0.
+Nov  8 21:49:02 banner-nosession-42466 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 21:49:02 banner-nosession-42466 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:49:10 banner-nosession-42466 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:49:10 banner-nosession-42466 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 21:49:10 banner-nosession-42466 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:49:21 banner-nosession-42466 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 21:49:21 banner-nosession-42466 usermod[756]: change user 'sshd' password
+Nov  8 21:49:21 banner-nosession-42466 chage[763]: changed password expiry for sshd
+Nov  8 21:49:23 banner-nosession-42466 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 21:49:23 banner-nosession-42466 sshd[1198]: Server listening on :: port 22.
+Nov  8 21:49:25 banner-nosession-42466 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:49:25 banner-nosession-42466 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 21:49:25 banner-nosession-42466 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:49:33 banner-nosession-42466 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:52:50 banner-nosession-42466 useradd[1542]: new group: name=word, GID=1001
+Nov  8 21:52:50 banner-nosession-42466 useradd[1542]: new user: name=word, UID=1001, GID=1001, home=/home/word, shell=/bin/bash, from=none
+Nov  8 21:52:50 banner-nosession-42466 usermod[1551]: change user 'word' password
+Nov  8 21:52:50 banner-nosession-42466 sshd[1558]: Accepted password for word from 10.0.3.1 port 44328 ssh2
+Nov  8 21:52:50 banner-nosession-42466 sshd[1558]: pam_unix(sshd:session): session opened for user word by (uid=0)
+Nov  8 21:52:50 banner-nosession-42466 systemd-logind[164]: New session 3486 of user word.
+Nov  8 21:52:50 banner-nosession-42466 systemd: pam_unix(systemd-user:session): session opened for user word by (uid=0)
+Nov  8 21:52:51 banner-nosession-42466 sshd[1575]: Received disconnect from 10.0.3.1 port 44328:11: 
+Nov  8 21:52:51 banner-nosession-42466 sshd[1575]: Disconnected from user word 10.0.3.1 port 44328
+Nov  8 21:52:51 banner-nosession-42466 sshd[1558]: pam_unix(sshd:session): session closed for user word
+Nov  8 21:52:51 banner-nosession-42466 systemd-logind[164]: Session 3486 logged out. Waiting for processes to exit.
+Nov  8 21:52:51 banner-nosession-42466 systemd-logind[164]: Removed session 3486.

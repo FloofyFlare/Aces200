@@ -1,0 +1,27 @@
+Nov  9 07:28:21 banner-nosession-42791 systemd-logind[164]: New seat seat0.
+Nov  9 07:28:25 banner-nosession-42791 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 07:28:25 banner-nosession-42791 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:28:32 banner-nosession-42791 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:28:32 banner-nosession-42791 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 07:28:32 banner-nosession-42791 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:29:01 banner-nosession-42791 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 07:29:01 banner-nosession-42791 usermod[756]: change user 'sshd' password
+Nov  9 07:29:02 banner-nosession-42791 chage[763]: changed password expiry for sshd
+Nov  9 07:29:04 banner-nosession-42791 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 07:29:04 banner-nosession-42791 sshd[1198]: Server listening on :: port 22.
+Nov  9 07:29:06 banner-nosession-42791 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:29:06 banner-nosession-42791 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 07:29:06 banner-nosession-42791 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:29:14 banner-nosession-42791 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:32:17 banner-nosession-42791 useradd[1542]: failed adding user 'games', data deleted
+Nov  9 07:32:17 banner-nosession-42791 usermod[1543]: change user 'games' password
+Nov  9 07:32:17 banner-nosession-42791 sshd[1550]: Accepted password for games from 10.0.3.1 port 33424 ssh2
+Nov  9 07:32:17 banner-nosession-42791 sshd[1550]: pam_unix(sshd:session): session opened for user games by (uid=0)
+Nov  9 07:32:17 banner-nosession-42791 systemd-logind[164]: New session 3773 of user games.
+Nov  9 07:32:18 banner-nosession-42791 systemd: pam_unix(systemd-user:session): session opened for user games by (uid=0)
+Nov  9 07:32:21 banner-nosession-42791 nologin: Attempted login by games (UID: 5) on UNKNOWN
+Nov  9 07:32:21 banner-nosession-42791 sshd[1567]: Received disconnect from 10.0.3.1 port 33424:11: 
+Nov  9 07:32:21 banner-nosession-42791 sshd[1567]: Disconnected from user games 10.0.3.1 port 33424
+Nov  9 07:32:21 banner-nosession-42791 sshd[1550]: pam_unix(sshd:session): session closed for user games
+Nov  9 07:32:21 banner-nosession-42791 systemd-logind[164]: Session 3773 logged out. Waiting for processes to exit.
+Nov  9 07:32:21 banner-nosession-42791 systemd-logind[164]: Removed session 3773.

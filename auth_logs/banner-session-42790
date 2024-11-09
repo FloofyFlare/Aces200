@@ -1,0 +1,26 @@
+Nov  9 07:28:15 banner-session-42790 systemd-logind[164]: New seat seat0.
+Nov  9 07:28:18 banner-session-42790 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 07:28:18 banner-session-42790 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:28:26 banner-session-42790 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:28:26 banner-session-42790 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 07:28:26 banner-session-42790 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:29:00 banner-session-42790 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 07:29:01 banner-session-42790 usermod[756]: change user 'sshd' password
+Nov  9 07:29:01 banner-session-42790 chage[763]: changed password expiry for sshd
+Nov  9 07:29:04 banner-session-42790 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 07:29:04 banner-session-42790 sshd[1198]: Server listening on :: port 22.
+Nov  9 07:29:05 banner-session-42790 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:29:05 banner-session-42790 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 07:29:05 banner-session-42790 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:29:14 banner-session-42790 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:29:37 banner-session-42790 useradd[1545]: failed adding user 'nobody', data deleted
+Nov  9 07:29:37 banner-session-42790 usermod[1546]: change user 'nobody' password
+Nov  9 07:29:37 banner-session-42790 sshd[1553]: Accepted password for nobody from 10.0.3.1 port 39234 ssh2
+Nov  9 07:29:37 banner-session-42790 sshd[1553]: pam_unix(sshd:session): session opened for user nobody by (uid=0)
+Nov  9 07:29:37 banner-session-42790 systemd-logind[164]: New session 3771 of user nobody.
+Nov  9 07:29:37 banner-session-42790 systemd: pam_unix(systemd-user:session): session opened for user nobody by (uid=0)
+Nov  9 07:29:39 banner-session-42790 sshd[1570]: Received disconnect from 10.0.3.1 port 39234:11: 
+Nov  9 07:29:39 banner-session-42790 sshd[1570]: Disconnected from user nobody 10.0.3.1 port 39234
+Nov  9 07:29:39 banner-session-42790 sshd[1553]: pam_unix(sshd:session): session closed for user nobody
+Nov  9 07:29:39 banner-session-42790 systemd-logind[164]: Session 3771 logged out. Waiting for processes to exit.
+Nov  9 07:29:39 banner-session-42790 systemd-logind[164]: Removed session 3771.

@@ -1,0 +1,27 @@
+Nov  8 20:19:42 banner-session-42421 systemd-logind[164]: New seat seat0.
+Nov  8 20:19:46 banner-session-42421 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 20:19:46 banner-session-42421 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 20:19:54 banner-session-42421 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 20:19:54 banner-session-42421 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 20:19:54 banner-session-42421 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 20:20:13 banner-session-42421 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 20:20:13 banner-session-42421 usermod[756]: change user 'sshd' password
+Nov  8 20:20:14 banner-session-42421 chage[763]: changed password expiry for sshd
+Nov  8 20:20:16 banner-session-42421 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 20:20:16 banner-session-42421 sshd[1198]: Server listening on :: port 22.
+Nov  8 20:20:18 banner-session-42421 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 20:20:18 banner-session-42421 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 20:20:18 banner-session-42421 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 20:20:24 banner-session-42421 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 20:21:55 banner-session-42421 useradd[1545]: new group: name=support, GID=1001
+Nov  8 20:21:55 banner-session-42421 useradd[1545]: new user: name=support, UID=1001, GID=1001, home=/home/support, shell=/bin/bash, from=none
+Nov  8 20:21:55 banner-session-42421 usermod[1554]: change user 'support' password
+Nov  8 20:21:55 banner-session-42421 sshd[1561]: Accepted password for support from 10.0.3.1 port 52920 ssh2
+Nov  8 20:21:55 banner-session-42421 sshd[1561]: pam_unix(sshd:session): session opened for user support by (uid=0)
+Nov  8 20:21:55 banner-session-42421 systemd-logind[164]: New session 3439 of user support.
+Nov  8 20:21:55 banner-session-42421 systemd: pam_unix(systemd-user:session): session opened for user support by (uid=0)
+Nov  8 20:21:57 banner-session-42421 sshd[1578]: Received disconnect from 10.0.3.1 port 52920:11: 
+Nov  8 20:21:57 banner-session-42421 sshd[1578]: Disconnected from user support 10.0.3.1 port 52920
+Nov  8 20:21:57 banner-session-42421 sshd[1561]: pam_unix(sshd:session): session closed for user support
+Nov  8 20:21:57 banner-session-42421 systemd-logind[164]: Session 3439 logged out. Waiting for processes to exit.
+Nov  8 20:21:57 banner-session-42421 systemd-logind[164]: Removed session 3439.

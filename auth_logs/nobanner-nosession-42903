@@ -1,0 +1,27 @@
+Nov  9 11:19:04 nobanner-nosession-42903 systemd-logind[165]: New seat seat0.
+Nov  9 11:19:07 nobanner-nosession-42903 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 11:19:07 nobanner-nosession-42903 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:19:17 nobanner-nosession-42903 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:19:17 nobanner-nosession-42903 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 11:19:17 nobanner-nosession-42903 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:19:32 nobanner-nosession-42903 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 11:19:33 nobanner-nosession-42903 usermod[756]: change user 'sshd' password
+Nov  9 11:19:33 nobanner-nosession-42903 chage[763]: changed password expiry for sshd
+Nov  9 11:19:36 nobanner-nosession-42903 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 11:19:36 nobanner-nosession-42903 sshd[1198]: Server listening on :: port 22.
+Nov  9 11:19:38 nobanner-nosession-42903 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:19:38 nobanner-nosession-42903 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 11:19:38 nobanner-nosession-42903 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:19:46 nobanner-nosession-42903 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:21:23 nobanner-nosession-42903 useradd[1536]: new group: name=oracle, GID=1001
+Nov  9 11:21:23 nobanner-nosession-42903 useradd[1536]: new user: name=oracle, UID=1001, GID=1001, home=/home/oracle, shell=/bin/bash, from=none
+Nov  9 11:21:24 nobanner-nosession-42903 usermod[1545]: change user 'oracle' password
+Nov  9 11:21:24 nobanner-nosession-42903 sshd[1552]: Accepted password for oracle from 10.0.3.1 port 44494 ssh2
+Nov  9 11:21:24 nobanner-nosession-42903 sshd[1552]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Nov  9 11:21:24 nobanner-nosession-42903 systemd-logind[165]: New session 3915 of user oracle.
+Nov  9 11:21:24 nobanner-nosession-42903 systemd: pam_unix(systemd-user:session): session opened for user oracle by (uid=0)
+Nov  9 11:21:24 nobanner-nosession-42903 sshd[1569]: Received disconnect from 10.0.3.1 port 44494:11: 
+Nov  9 11:21:24 nobanner-nosession-42903 sshd[1569]: Disconnected from user oracle 10.0.3.1 port 44494
+Nov  9 11:21:24 nobanner-nosession-42903 sshd[1552]: pam_unix(sshd:session): session closed for user oracle
+Nov  9 11:21:24 nobanner-nosession-42903 systemd-logind[165]: Session 3915 logged out. Waiting for processes to exit.
+Nov  9 11:21:24 nobanner-nosession-42903 systemd-logind[165]: Removed session 3915.

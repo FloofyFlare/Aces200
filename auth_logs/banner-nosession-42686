@@ -1,0 +1,27 @@
+Nov  9 04:58:47 banner-nosession-42686 systemd-logind[164]: New seat seat0.
+Nov  9 04:58:54 banner-nosession-42686 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 04:58:54 banner-nosession-42686 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 04:59:02 banner-nosession-42686 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 04:59:02 banner-nosession-42686 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 04:59:02 banner-nosession-42686 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 04:59:27 banner-nosession-42686 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 04:59:27 banner-nosession-42686 usermod[756]: change user 'sshd' password
+Nov  9 04:59:27 banner-nosession-42686 chage[763]: changed password expiry for sshd
+Nov  9 04:59:29 banner-nosession-42686 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 04:59:29 banner-nosession-42686 sshd[1198]: Server listening on :: port 22.
+Nov  9 04:59:33 banner-nosession-42686 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 04:59:33 banner-nosession-42686 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 04:59:33 banner-nosession-42686 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 04:59:47 banner-nosession-42686 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 05:00:15 banner-nosession-42686 useradd[1542]: new group: name=khumo, GID=1001
+Nov  9 05:00:15 banner-nosession-42686 useradd[1542]: new user: name=khumo, UID=1001, GID=1001, home=/home/khumo, shell=/bin/bash, from=none
+Nov  9 05:00:16 banner-nosession-42686 usermod[1551]: change user 'khumo' password
+Nov  9 05:00:16 banner-nosession-42686 sshd[1558]: Accepted password for khumo from 10.0.3.1 port 51786 ssh2
+Nov  9 05:00:16 banner-nosession-42686 sshd[1558]: pam_unix(sshd:session): session opened for user khumo by (uid=0)
+Nov  9 05:00:16 banner-nosession-42686 systemd-logind[164]: New session 3694 of user khumo.
+Nov  9 05:00:16 banner-nosession-42686 systemd: pam_unix(systemd-user:session): session opened for user khumo by (uid=0)
+Nov  9 05:00:17 banner-nosession-42686 sshd[1575]: Received disconnect from 10.0.3.1 port 51786:11: 
+Nov  9 05:00:17 banner-nosession-42686 sshd[1575]: Disconnected from user khumo 10.0.3.1 port 51786
+Nov  9 05:00:17 banner-nosession-42686 sshd[1558]: pam_unix(sshd:session): session closed for user khumo
+Nov  9 05:00:17 banner-nosession-42686 systemd-logind[164]: Session 3694 logged out. Waiting for processes to exit.
+Nov  9 05:00:17 banner-nosession-42686 systemd-logind[164]: Removed session 3694.

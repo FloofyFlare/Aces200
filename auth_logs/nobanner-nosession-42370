@@ -1,0 +1,25 @@
+Nov  8 19:08:21 nobanner-nosession-42370 systemd-logind[164]: New seat seat0.
+Nov  8 19:08:25 nobanner-nosession-42370 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 19:08:25 nobanner-nosession-42370 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:08:33 nobanner-nosession-42370 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:08:33 nobanner-nosession-42370 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 19:08:33 nobanner-nosession-42370 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:08:44 nobanner-nosession-42370 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 19:08:44 nobanner-nosession-42370 usermod[756]: change user 'sshd' password
+Nov  8 19:08:44 nobanner-nosession-42370 chage[763]: changed password expiry for sshd
+Nov  8 19:08:46 nobanner-nosession-42370 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 19:08:46 nobanner-nosession-42370 sshd[1198]: Server listening on :: port 22.
+Nov  8 19:08:48 nobanner-nosession-42370 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:08:49 nobanner-nosession-42370 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 19:08:49 nobanner-nosession-42370 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 19:08:56 nobanner-nosession-42370 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 19:09:20 nobanner-nosession-42370 useradd[1536]: new group: name=agagoli, GID=1001
+Nov  8 19:09:20 nobanner-nosession-42370 useradd[1536]: new user: name=agagoli, UID=1001, GID=1001, home=/home/agagoli, shell=/bin/bash, from=none
+Nov  8 19:09:20 nobanner-nosession-42370 usermod[1545]: change user 'agagoli' password
+Nov  8 19:09:20 nobanner-nosession-42370 sshd[1552]: Accepted password for agagoli from 10.0.3.1 port 40186 ssh2
+Nov  8 19:09:20 nobanner-nosession-42370 sshd[1552]: pam_unix(sshd:session): session opened for user agagoli by (uid=0)
+Nov  8 19:09:20 nobanner-nosession-42370 systemd-logind[164]: New session 3388 of user agagoli.
+Nov  8 19:09:20 nobanner-nosession-42370 systemd: pam_unix(systemd-user:session): session opened for user agagoli by (uid=0)
+Nov  8 19:09:26 nobanner-nosession-42370 sshd[1552]: pam_unix(sshd:session): session closed for user agagoli
+Nov  8 19:09:26 nobanner-nosession-42370 systemd-logind[164]: Session 3388 logged out. Waiting for processes to exit.
+Nov  8 19:09:26 nobanner-nosession-42370 systemd-logind[164]: Removed session 3388.

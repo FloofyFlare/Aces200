@@ -1,0 +1,25 @@
+Nov  9 07:45:31 banner-session-42801 systemd-logind[164]: New seat seat0.
+Nov  9 07:45:35 banner-session-42801 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 07:45:35 banner-session-42801 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:45:44 banner-session-42801 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:45:44 banner-session-42801 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 07:45:44 banner-session-42801 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:46:04 banner-session-42801 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 07:46:04 banner-session-42801 usermod[756]: change user 'sshd' password
+Nov  9 07:46:05 banner-session-42801 chage[763]: changed password expiry for sshd
+Nov  9 07:46:07 banner-session-42801 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 07:46:07 banner-session-42801 sshd[1198]: Server listening on :: port 22.
+Nov  9 07:46:09 banner-session-42801 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:46:09 banner-session-42801 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 07:46:09 banner-session-42801 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 07:46:18 banner-session-42801 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 07:46:23 banner-session-42801 useradd[1545]: new group: name=chenhongyan, GID=1001
+Nov  9 07:46:23 banner-session-42801 useradd[1545]: new user: name=chenhongyan, UID=1001, GID=1001, home=/home/chenhongyan, shell=/bin/bash, from=none
+Nov  9 07:46:24 banner-session-42801 usermod[1554]: change user 'chenhongyan' password
+Nov  9 07:46:24 banner-session-42801 sshd[1561]: Accepted password for chenhongyan from 10.0.3.1 port 57842 ssh2
+Nov  9 07:46:24 banner-session-42801 sshd[1561]: pam_unix(sshd:session): session opened for user chenhongyan by (uid=0)
+Nov  9 07:46:24 banner-session-42801 systemd-logind[164]: New session 3789 of user chenhongyan.
+Nov  9 07:46:24 banner-session-42801 systemd: pam_unix(systemd-user:session): session opened for user chenhongyan by (uid=0)
+Nov  9 07:46:30 banner-session-42801 sshd[1561]: pam_unix(sshd:session): session closed for user chenhongyan
+Nov  9 07:46:30 banner-session-42801 systemd-logind[164]: Session 3789 logged out. Waiting for processes to exit.
+Nov  9 07:46:30 banner-session-42801 systemd-logind[164]: Removed session 3789.

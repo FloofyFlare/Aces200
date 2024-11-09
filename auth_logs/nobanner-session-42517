@@ -1,0 +1,29 @@
+Nov  8 23:15:11 nobanner-session-42517 systemd-logind[165]: New seat seat0.
+Nov  8 23:15:14 nobanner-session-42517 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 23:15:14 nobanner-session-42517 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 23:15:22 nobanner-session-42517 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 23:15:22 nobanner-session-42517 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 23:15:22 nobanner-session-42517 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 23:15:37 nobanner-session-42517 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 23:15:37 nobanner-session-42517 usermod[756]: change user 'sshd' password
+Nov  8 23:15:38 nobanner-session-42517 chage[763]: changed password expiry for sshd
+Nov  8 23:15:40 nobanner-session-42517 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 23:15:40 nobanner-session-42517 sshd[1198]: Server listening on :: port 22.
+Nov  8 23:15:42 nobanner-session-42517 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 23:15:42 nobanner-session-42517 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 23:15:42 nobanner-session-42517 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 23:15:51 nobanner-session-42517 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 23:17:01 nobanner-session-42517 CRON[1539]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  8 23:17:01 nobanner-session-42517 CRON[1539]: pam_unix(cron:session): session closed for user root
+Nov  8 23:19:13 nobanner-session-42517 useradd[1542]: new group: name=wordpress, GID=1001
+Nov  8 23:19:13 nobanner-session-42517 useradd[1542]: new user: name=wordpress, UID=1001, GID=1001, home=/home/wordpress, shell=/bin/bash, from=none
+Nov  8 23:19:13 nobanner-session-42517 usermod[1551]: change user 'wordpress' password
+Nov  8 23:19:13 nobanner-session-42517 sshd[1558]: Accepted password for wordpress from 10.0.3.1 port 51098 ssh2
+Nov  8 23:19:13 nobanner-session-42517 sshd[1558]: pam_unix(sshd:session): session opened for user wordpress by (uid=0)
+Nov  8 23:19:14 nobanner-session-42517 systemd-logind[165]: New session 3545 of user wordpress.
+Nov  8 23:19:14 nobanner-session-42517 systemd: pam_unix(systemd-user:session): session opened for user wordpress by (uid=0)
+Nov  8 23:19:14 nobanner-session-42517 sshd[1575]: Received disconnect from 10.0.3.1 port 51098:11: 
+Nov  8 23:19:14 nobanner-session-42517 sshd[1575]: Disconnected from user wordpress 10.0.3.1 port 51098
+Nov  8 23:19:14 nobanner-session-42517 sshd[1558]: pam_unix(sshd:session): session closed for user wordpress
+Nov  8 23:19:14 nobanner-session-42517 systemd-logind[165]: Session 3545 logged out. Waiting for processes to exit.
+Nov  8 23:19:14 nobanner-session-42517 systemd-logind[165]: Removed session 3545.

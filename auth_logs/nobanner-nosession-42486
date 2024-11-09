@@ -1,0 +1,25 @@
+Nov  8 22:26:21 nobanner-nosession-42486 systemd-logind[164]: New seat seat0.
+Nov  8 22:26:24 nobanner-nosession-42486 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 22:26:24 nobanner-nosession-42486 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:26:32 nobanner-nosession-42486 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:26:32 nobanner-nosession-42486 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 22:26:32 nobanner-nosession-42486 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:26:44 nobanner-nosession-42486 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 22:26:44 nobanner-nosession-42486 usermod[756]: change user 'sshd' password
+Nov  8 22:26:45 nobanner-nosession-42486 chage[763]: changed password expiry for sshd
+Nov  8 22:26:47 nobanner-nosession-42486 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 22:26:47 nobanner-nosession-42486 sshd[1198]: Server listening on :: port 22.
+Nov  8 22:26:49 nobanner-nosession-42486 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:26:49 nobanner-nosession-42486 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 22:26:49 nobanner-nosession-42486 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 22:26:57 nobanner-nosession-42486 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 22:27:01 nobanner-nosession-42486 useradd[1536]: new group: name=DANIELGARCIA, GID=1001
+Nov  8 22:27:01 nobanner-nosession-42486 useradd[1536]: new user: name=DANIELGARCIA, UID=1001, GID=1001, home=/home/DANIELGARCIA, shell=/bin/bash, from=none
+Nov  8 22:27:01 nobanner-nosession-42486 usermod[1545]: change user 'DANIELGARCIA' password
+Nov  8 22:27:01 nobanner-nosession-42486 sshd[1552]: Accepted password for DANIELGARCIA from 10.0.3.1 port 43674 ssh2
+Nov  8 22:27:01 nobanner-nosession-42486 sshd[1552]: pam_unix(sshd:session): session opened for user DANIELGARCIA by (uid=0)
+Nov  8 22:27:01 nobanner-nosession-42486 systemd-logind[164]: New session 3514 of user DANIELGARCIA.
+Nov  8 22:27:01 nobanner-nosession-42486 systemd: pam_unix(systemd-user:session): session opened for user DANIELGARCIA by (uid=0)
+Nov  8 22:27:07 nobanner-nosession-42486 sshd[1552]: pam_unix(sshd:session): session closed for user DANIELGARCIA
+Nov  8 22:27:07 nobanner-nosession-42486 systemd-logind[164]: Session 3514 logged out. Waiting for processes to exit.
+Nov  8 22:27:07 nobanner-nosession-42486 systemd-logind[164]: Removed session 3514.

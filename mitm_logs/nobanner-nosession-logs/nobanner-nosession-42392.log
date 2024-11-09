@@ -1,0 +1,46 @@
+(node:121372) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-42392',
+  containerIp: '10.0.3.38',
+  mitmPort: 42392,
+  autoAccessFixed: 1
+}
+2024-11-08 14:44:32.513 - [Info] MITM Version: 2
+2024-11-08 14:44:32.521 - [Info] Auto Access Enabled: true
+2024-11-08 14:44:32.521 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-08 14:44:32.550 - [Info] SSH man-in-the-middle server for 10.0.3.38 listening on 10.0.3.1:42392
+2024-11-08 14:46:06.589 - [Debug] [Connection] Attacker connected: 47.239.10.211 | Client Identification: SSH-2.0-libssh2_1.11.0
+2024-11-08 14:46:08.075 - [Debug] [Auth] Attacker 47.239.10.211 trying to authenticate with 'password'
+2024-11-08 14:46:08.077 - [Debug] [Auto Access] Attacker: 47.239.10.211, Threshold: 1, Attempts: 1
+2024-11-08 14:46:08.077 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-08 14:46:08.077 - [Debug] [Auto Access] Adding the following credentials: 'terraria:terraria'
+2024-11-08 14:46:08.603 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-08 14:46:08.606 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-08 14:46:08.606 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.38
+2024-11-08 14:46:08.709 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-08 14:46:09.225 - [Debug] [Connection] Attacker closed connection
+2024-11-08 14:46:09.238 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-08 14:46:09.263 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-08 14:46:09.403 - [Debug] [Connection] Attacker connected: 87.120.113.231 | Client Identification: SSH-2.0-Go
+2024-11-08 14:46:09.992 - [Debug] [Auth] Attacker 87.120.113.231 trying to authenticate with 'none'
+2024-11-08 14:46:09.993 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-08 14:46:10.226 - [Debug] [Auth] Attacker 87.120.113.231 trying to authenticate with 'password'
+2024-11-08 14:46:10.227 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-08 14:46:10.227 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.38
+2024-11-08 14:46:10.314 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

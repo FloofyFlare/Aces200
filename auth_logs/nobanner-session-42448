@@ -1,0 +1,21 @@
+Nov  8 21:15:09 nobanner-session-42448 systemd-logind[164]: New seat seat0.
+Nov  8 21:15:13 nobanner-session-42448 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 21:15:13 nobanner-session-42448 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:15:21 nobanner-session-42448 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:15:21 nobanner-session-42448 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 21:15:21 nobanner-session-42448 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:15:33 nobanner-session-42448 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 21:15:33 nobanner-session-42448 usermod[756]: change user 'sshd' password
+Nov  8 21:15:33 nobanner-session-42448 chage[763]: changed password expiry for sshd
+Nov  8 21:15:35 nobanner-session-42448 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 21:15:35 nobanner-session-42448 sshd[1198]: Server listening on :: port 22.
+Nov  8 21:15:37 nobanner-session-42448 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:15:37 nobanner-session-42448 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 21:15:37 nobanner-session-42448 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:15:45 nobanner-session-42448 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:16:17 nobanner-session-42448 useradd[1539]: failed adding user 'root', data deleted
+Nov  8 21:16:17 nobanner-session-42448 usermod[1540]: change user 'root' password
+Nov  8 21:16:17 nobanner-session-42448 sshd[1547]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov  8 21:16:19 nobanner-session-42448 sshd[1547]: Failed password for root from 10.0.3.1 port 38088 ssh2
+Nov  8 21:16:20 nobanner-session-42448 sshd[1547]: Received disconnect from 10.0.3.1 port 38088:11:  [preauth]
+Nov  8 21:16:20 nobanner-session-42448 sshd[1547]: Disconnected from authenticating user root 10.0.3.1 port 38088 [preauth]

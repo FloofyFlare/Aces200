@@ -1,0 +1,27 @@
+Nov  9 01:40:40 nobanner-session-42595 systemd-logind[164]: New seat seat0.
+Nov  9 01:40:44 nobanner-session-42595 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 01:40:44 nobanner-session-42595 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 01:40:52 nobanner-session-42595 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 01:40:52 nobanner-session-42595 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 01:40:52 nobanner-session-42595 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 01:41:07 nobanner-session-42595 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 01:41:07 nobanner-session-42595 usermod[756]: change user 'sshd' password
+Nov  9 01:41:07 nobanner-session-42595 chage[763]: changed password expiry for sshd
+Nov  9 01:41:10 nobanner-session-42595 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 01:41:10 nobanner-session-42595 sshd[1198]: Server listening on :: port 22.
+Nov  9 01:41:11 nobanner-session-42595 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 01:41:11 nobanner-session-42595 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 01:41:11 nobanner-session-42595 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 01:41:19 nobanner-session-42595 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 01:46:08 nobanner-session-42595 useradd[1540]: new group: name=supervisor, GID=1001
+Nov  9 01:46:08 nobanner-session-42595 useradd[1540]: new user: name=supervisor, UID=1001, GID=1001, home=/home/supervisor, shell=/bin/bash, from=none
+Nov  9 01:46:08 nobanner-session-42595 usermod[1549]: change user 'supervisor' password
+Nov  9 01:46:08 nobanner-session-42595 sshd[1556]: Accepted password for supervisor from 10.0.3.1 port 57260 ssh2
+Nov  9 01:46:08 nobanner-session-42595 sshd[1556]: pam_unix(sshd:session): session opened for user supervisor by (uid=0)
+Nov  9 01:46:08 nobanner-session-42595 systemd-logind[164]: New session 3612 of user supervisor.
+Nov  9 01:46:09 nobanner-session-42595 systemd: pam_unix(systemd-user:session): session opened for user supervisor by (uid=0)
+Nov  9 01:46:09 nobanner-session-42595 sshd[1573]: Received disconnect from 10.0.3.1 port 57260:11: 
+Nov  9 01:46:09 nobanner-session-42595 sshd[1573]: Disconnected from user supervisor 10.0.3.1 port 57260
+Nov  9 01:46:09 nobanner-session-42595 sshd[1556]: pam_unix(sshd:session): session closed for user supervisor
+Nov  9 01:46:09 nobanner-session-42595 systemd-logind[164]: Session 3612 logged out. Waiting for processes to exit.
+Nov  9 01:46:09 nobanner-session-42595 systemd-logind[164]: Removed session 3612.

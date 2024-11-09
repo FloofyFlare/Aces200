@@ -1,0 +1,26 @@
+Nov  9 11:27:42 banner-nosession-42912 systemd-logind[164]: New seat seat0.
+Nov  9 11:27:46 banner-nosession-42912 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 11:27:46 banner-nosession-42912 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:27:54 banner-nosession-42912 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:27:54 banner-nosession-42912 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 11:27:54 banner-nosession-42912 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:28:09 banner-nosession-42912 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 11:28:09 banner-nosession-42912 usermod[756]: change user 'sshd' password
+Nov  9 11:28:09 banner-nosession-42912 chage[763]: changed password expiry for sshd
+Nov  9 11:28:11 banner-nosession-42912 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 11:28:11 banner-nosession-42912 sshd[1198]: Server listening on :: port 22.
+Nov  9 11:28:13 banner-nosession-42912 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:28:13 banner-nosession-42912 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 11:28:13 banner-nosession-42912 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 11:28:22 banner-nosession-42912 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 11:28:53 banner-nosession-42912 useradd[1542]: failed adding user 'sshd', data deleted
+Nov  9 11:28:53 banner-nosession-42912 usermod[1543]: change user 'sshd' password
+Nov  9 11:28:53 banner-nosession-42912 sshd[1550]: Accepted password for sshd from 10.0.3.1 port 46698 ssh2
+Nov  9 11:28:53 banner-nosession-42912 sshd[1550]: pam_unix(sshd:session): session opened for user sshd by (uid=0)
+Nov  9 11:28:53 banner-nosession-42912 systemd-logind[164]: New session 3922 of user sshd.
+Nov  9 11:28:53 banner-nosession-42912 systemd: pam_unix(systemd-user:session): session opened for user sshd by (uid=0)
+Nov  9 11:28:55 banner-nosession-42912 sshd[1567]: Received disconnect from 10.0.3.1 port 46698:11: 
+Nov  9 11:28:55 banner-nosession-42912 sshd[1567]: Disconnected from user sshd 10.0.3.1 port 46698
+Nov  9 11:28:55 banner-nosession-42912 sshd[1550]: pam_unix(sshd:session): session closed for user sshd
+Nov  9 11:28:55 banner-nosession-42912 systemd-logind[164]: Session 3922 logged out. Waiting for processes to exit.
+Nov  9 11:28:55 banner-nosession-42912 systemd-logind[164]: Removed session 3922.

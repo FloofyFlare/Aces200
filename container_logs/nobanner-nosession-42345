@@ -5,3 +5,11 @@ NEWCONFIGMANAGER run
 Adding NAT rules
 MITM setup
 Starting MITM listening
+Attacker IP= 58.214.249.122
+FIRST CONNECTION: 1731088645
+RECYCLING SINCE SESSION ENDED
+Removing NAT rules
+Removing MITM process
+Deleting all NAT rules
+Stopping and destroying the container
+Creating a new container for 128.8.238.101

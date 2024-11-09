@@ -1,0 +1,29 @@
+Nov  9 13:07:01 nobanner-nosession-42963 systemd-logind[164]: New seat seat0.
+Nov  9 13:07:04 nobanner-nosession-42963 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 13:07:04 nobanner-nosession-42963 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:07:13 nobanner-nosession-42963 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:07:13 nobanner-nosession-42963 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 13:07:13 nobanner-nosession-42963 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:07:23 nobanner-nosession-42963 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 13:07:24 nobanner-nosession-42963 usermod[756]: change user 'sshd' password
+Nov  9 13:07:24 nobanner-nosession-42963 chage[763]: changed password expiry for sshd
+Nov  9 13:07:27 nobanner-nosession-42963 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 13:07:27 nobanner-nosession-42963 sshd[1198]: Server listening on :: port 22.
+Nov  9 13:07:29 nobanner-nosession-42963 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:07:29 nobanner-nosession-42963 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 13:07:29 nobanner-nosession-42963 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:07:36 nobanner-nosession-42963 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:17:01 nobanner-nosession-42963 CRON[1537]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  9 13:17:01 nobanner-nosession-42963 CRON[1537]: pam_unix(cron:session): session closed for user root
+Nov  9 13:17:04 nobanner-nosession-42963 useradd[1540]: new group: name=kike, GID=1001
+Nov  9 13:17:04 nobanner-nosession-42963 useradd[1540]: new user: name=kike, UID=1001, GID=1001, home=/home/kike, shell=/bin/bash, from=none
+Nov  9 13:17:04 nobanner-nosession-42963 usermod[1549]: change user 'kike' password
+Nov  9 13:17:05 nobanner-nosession-42963 sshd[1556]: Accepted password for kike from 10.0.3.1 port 49518 ssh2
+Nov  9 13:17:05 nobanner-nosession-42963 sshd[1556]: pam_unix(sshd:session): session opened for user kike by (uid=0)
+Nov  9 13:17:05 nobanner-nosession-42963 systemd-logind[164]: New session 4014 of user kike.
+Nov  9 13:17:05 nobanner-nosession-42963 systemd: pam_unix(systemd-user:session): session opened for user kike by (uid=0)
+Nov  9 13:17:09 nobanner-nosession-42963 sshd[1573]: Received disconnect from 10.0.3.1 port 49518:11: 
+Nov  9 13:17:09 nobanner-nosession-42963 sshd[1573]: Disconnected from user kike 10.0.3.1 port 49518
+Nov  9 13:17:09 nobanner-nosession-42963 sshd[1556]: pam_unix(sshd:session): session closed for user kike
+Nov  9 13:17:09 nobanner-nosession-42963 systemd-logind[164]: Session 4014 logged out. Waiting for processes to exit.
+Nov  9 13:17:09 nobanner-nosession-42963 systemd-logind[164]: Removed session 4014.

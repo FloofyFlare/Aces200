@@ -1,0 +1,25 @@
+Nov  8 21:55:05 banner-session-42470 systemd-logind[164]: New seat seat0.
+Nov  8 21:55:11 banner-session-42470 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  8 21:55:11 banner-session-42470 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:55:19 banner-session-42470 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:55:19 banner-session-42470 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  8 21:55:19 banner-session-42470 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:55:47 banner-session-42470 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  8 21:55:47 banner-session-42470 usermod[756]: change user 'sshd' password
+Nov  8 21:55:47 banner-session-42470 chage[763]: changed password expiry for sshd
+Nov  8 21:55:50 banner-session-42470 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  8 21:55:50 banner-session-42470 sshd[1198]: Server listening on :: port 22.
+Nov  8 21:55:52 banner-session-42470 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:55:52 banner-session-42470 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  8 21:55:52 banner-session-42470 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  8 21:55:59 banner-session-42470 sudo: pam_unix(sudo:session): session closed for user root
+Nov  8 21:56:04 banner-session-42470 useradd[1545]: new group: name=dimartino, GID=1001
+Nov  8 21:56:04 banner-session-42470 useradd[1545]: new user: name=dimartino, UID=1001, GID=1001, home=/home/dimartino, shell=/bin/bash, from=none
+Nov  8 21:56:04 banner-session-42470 usermod[1554]: change user 'dimartino' password
+Nov  8 21:56:04 banner-session-42470 sshd[1561]: Accepted password for dimartino from 10.0.3.1 port 51714 ssh2
+Nov  8 21:56:04 banner-session-42470 sshd[1561]: pam_unix(sshd:session): session opened for user dimartino by (uid=0)
+Nov  8 21:56:04 banner-session-42470 systemd-logind[164]: New session 3488 of user dimartino.
+Nov  8 21:56:04 banner-session-42470 systemd: pam_unix(systemd-user:session): session opened for user dimartino by (uid=0)
+Nov  8 21:56:10 banner-session-42470 sshd[1561]: pam_unix(sshd:session): session closed for user dimartino
+Nov  8 21:56:10 banner-session-42470 systemd-logind[164]: Session 3488 logged out. Waiting for processes to exit.
+Nov  8 21:56:10 banner-session-42470 systemd-logind[164]: Removed session 3488.
