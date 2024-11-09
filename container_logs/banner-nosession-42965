@@ -9,3 +9,7 @@ Attacker IP= 60.221.58.77
 FIRST CONNECTION: 1731158405
 RECYCLING SINCE SESSION ENDED
 Removing NAT rules
+Removing MITM process
+Deleting all NAT rules
+Stopping and destroying the container
+Creating a new container for 128.8.238.141
