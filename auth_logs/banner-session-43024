@@ -1,0 +1,27 @@
+Nov 10 21:19:20 banner-session-43024 systemd-logind[165]: New seat seat0.
+Nov 10 21:19:23 banner-session-43024 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 10 21:19:23 banner-session-43024 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:19:32 banner-session-43024 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:19:32 banner-session-43024 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 10 21:19:32 banner-session-43024 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:19:42 banner-session-43024 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 10 21:19:42 banner-session-43024 usermod[765]: change user 'sshd' password
+Nov 10 21:19:42 banner-session-43024 chage[772]: changed password expiry for sshd
+Nov 10 21:19:44 banner-session-43024 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov 10 21:19:44 banner-session-43024 sshd[1207]: Server listening on :: port 22.
+Nov 10 21:19:46 banner-session-43024 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:19:46 banner-session-43024 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 10 21:19:46 banner-session-43024 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:19:54 banner-session-43024 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:22:37 banner-session-43024 useradd[1559]: new group: name=telecomadmin, GID=1001
+Nov 10 21:22:37 banner-session-43024 useradd[1559]: new user: name=telecomadmin, UID=1001, GID=1001, home=/home/telecomadmin, shell=/bin/bash, from=none
+Nov 10 21:22:38 banner-session-43024 usermod[1568]: change user 'telecomadmin' password
+Nov 10 21:22:38 banner-session-43024 sshd[1575]: Accepted password for telecomadmin from 10.0.3.1 port 40992 ssh2
+Nov 10 21:22:38 banner-session-43024 sshd[1575]: pam_unix(sshd:session): session opened for user telecomadmin by (uid=0)
+Nov 10 21:22:38 banner-session-43024 systemd-logind[165]: New session 4157 of user telecomadmin.
+Nov 10 21:22:38 banner-session-43024 systemd: pam_unix(systemd-user:session): session opened for user telecomadmin by (uid=0)
+Nov 10 21:22:39 banner-session-43024 sshd[1592]: Received disconnect from 10.0.3.1 port 40992:11: 
+Nov 10 21:22:39 banner-session-43024 sshd[1592]: Disconnected from user telecomadmin 10.0.3.1 port 40992
+Nov 10 21:22:39 banner-session-43024 sshd[1575]: pam_unix(sshd:session): session closed for user telecomadmin
+Nov 10 21:22:39 banner-session-43024 systemd-logind[165]: Session 4157 logged out. Waiting for processes to exit.
+Nov 10 21:22:39 banner-session-43024 systemd-logind[165]: Removed session 4157.

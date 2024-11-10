@@ -1,0 +1,27 @@
+Nov 10 21:36:53 banner-session-43031 systemd-logind[164]: New seat seat0.
+Nov 10 21:36:56 banner-session-43031 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 10 21:36:56 banner-session-43031 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:37:05 banner-session-43031 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:37:05 banner-session-43031 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 10 21:37:05 banner-session-43031 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:37:15 banner-session-43031 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 10 21:37:15 banner-session-43031 usermod[765]: change user 'sshd' password
+Nov 10 21:37:16 banner-session-43031 chage[772]: changed password expiry for sshd
+Nov 10 21:37:18 banner-session-43031 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov 10 21:37:18 banner-session-43031 sshd[1207]: Server listening on :: port 22.
+Nov 10 21:37:20 banner-session-43031 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:37:20 banner-session-43031 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 10 21:37:20 banner-session-43031 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:37:28 banner-session-43031 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:40:57 banner-session-43031 useradd[1559]: new group: name=supervisor, GID=1001
+Nov 10 21:40:57 banner-session-43031 useradd[1559]: new user: name=supervisor, UID=1001, GID=1001, home=/home/supervisor, shell=/bin/bash, from=none
+Nov 10 21:40:57 banner-session-43031 usermod[1568]: change user 'supervisor' password
+Nov 10 21:40:57 banner-session-43031 sshd[1575]: Accepted password for supervisor from 10.0.3.1 port 60552 ssh2
+Nov 10 21:40:57 banner-session-43031 sshd[1575]: pam_unix(sshd:session): session opened for user supervisor by (uid=0)
+Nov 10 21:40:57 banner-session-43031 systemd-logind[164]: New session 4167 of user supervisor.
+Nov 10 21:40:57 banner-session-43031 systemd: pam_unix(systemd-user:session): session opened for user supervisor by (uid=0)
+Nov 10 21:40:59 banner-session-43031 sshd[1592]: Received disconnect from 10.0.3.1 port 60552:11: 
+Nov 10 21:40:59 banner-session-43031 sshd[1592]: Disconnected from user supervisor 10.0.3.1 port 60552
+Nov 10 21:40:59 banner-session-43031 sshd[1575]: pam_unix(sshd:session): session closed for user supervisor
+Nov 10 21:40:59 banner-session-43031 systemd-logind[164]: Session 4167 logged out. Waiting for processes to exit.
+Nov 10 21:40:59 banner-session-43031 systemd-logind[164]: Removed session 4167.

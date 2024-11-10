@@ -1,0 +1,25 @@
+Nov 10 21:39:52 nobanner-session-43033 systemd-logind[165]: New seat seat0.
+Nov 10 21:39:56 nobanner-session-43033 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 10 21:39:56 nobanner-session-43033 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:40:03 nobanner-session-43033 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:40:03 nobanner-session-43033 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 10 21:40:03 nobanner-session-43033 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:40:14 nobanner-session-43033 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 10 21:40:14 nobanner-session-43033 usermod[765]: change user 'sshd' password
+Nov 10 21:40:15 nobanner-session-43033 chage[772]: changed password expiry for sshd
+Nov 10 21:40:17 nobanner-session-43033 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov 10 21:40:17 nobanner-session-43033 sshd[1207]: Server listening on :: port 22.
+Nov 10 21:40:19 nobanner-session-43033 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:40:19 nobanner-session-43033 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 10 21:40:19 nobanner-session-43033 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 10 21:40:26 nobanner-session-43033 sudo: pam_unix(sudo:session): session closed for user root
+Nov 10 21:41:19 nobanner-session-43033 useradd[1553]: new group: name=tesoro, GID=1001
+Nov 10 21:41:19 nobanner-session-43033 useradd[1553]: new user: name=tesoro, UID=1001, GID=1001, home=/home/tesoro, shell=/bin/bash, from=none
+Nov 10 21:41:20 nobanner-session-43033 usermod[1562]: change user 'tesoro' password
+Nov 10 21:41:20 nobanner-session-43033 sshd[1569]: Accepted password for tesoro from 10.0.3.1 port 57584 ssh2
+Nov 10 21:41:20 nobanner-session-43033 sshd[1569]: pam_unix(sshd:session): session opened for user tesoro by (uid=0)
+Nov 10 21:41:20 nobanner-session-43033 systemd-logind[165]: New session 4169 of user tesoro.
+Nov 10 21:41:20 nobanner-session-43033 systemd: pam_unix(systemd-user:session): session opened for user tesoro by (uid=0)
+Nov 10 21:41:26 nobanner-session-43033 sshd[1569]: pam_unix(sshd:session): session closed for user tesoro
+Nov 10 21:41:26 nobanner-session-43033 systemd-logind[165]: Session 4169 logged out. Waiting for processes to exit.
+Nov 10 21:41:26 nobanner-session-43033 systemd-logind[165]: Removed session 4169.
