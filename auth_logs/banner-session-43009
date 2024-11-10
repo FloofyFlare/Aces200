@@ -1,0 +1,33 @@
+Nov  9 15:53:39 banner-session-43009 systemd-logind[166]: New seat seat0.
+Nov  9 15:53:42 banner-session-43009 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 15:53:42 banner-session-43009 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:53:50 banner-session-43009 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:53:50 banner-session-43009 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 15:53:50 banner-session-43009 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:54:01 banner-session-43009 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 15:54:01 banner-session-43009 usermod[756]: change user 'sshd' password
+Nov  9 15:54:01 banner-session-43009 chage[763]: changed password expiry for sshd
+Nov  9 15:54:04 banner-session-43009 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 15:54:04 banner-session-43009 sshd[1198]: Server listening on :: port 22.
+Nov  9 15:54:05 banner-session-43009 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:54:06 banner-session-43009 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 15:54:06 banner-session-43009 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:54:13 banner-session-43009 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:58:09 banner-session-43009 useradd[1545]: new group: name=richard, GID=1001
+Nov  9 15:58:09 banner-session-43009 useradd[1545]: new user: name=richard, UID=1001, GID=1001, home=/home/richard, shell=/bin/bash, from=none
+Nov  9 15:58:09 banner-session-43009 usermod[1554]: change user 'richard' password
+Nov  9 15:58:09 banner-session-43009 sshd[1561]: Accepted password for richard from 10.0.3.1 port 52694 ssh2
+Nov  9 15:58:09 banner-session-43009 sshd[1561]: pam_unix(sshd:session): session opened for user richard by (uid=0)
+Nov  9 15:58:09 banner-session-43009 systemd-logind[166]: New session 4090 of user richard.
+Nov  9 15:58:09 banner-session-43009 systemd: pam_unix(systemd-user:session): session opened for user richard by (uid=0)
+Nov  9 15:58:10 banner-session-43009 sshd[1578]: Received disconnect from 10.0.3.1 port 52694:11: 
+Nov  9 15:58:10 banner-session-43009 sshd[1578]: Disconnected from user richard 10.0.3.1 port 52694
+Nov  9 15:58:10 banner-session-43009 sshd[1561]: pam_unix(sshd:session): session closed for user richard
+Nov  9 15:58:10 banner-session-43009 systemd-logind[166]: Session 4090 logged out. Waiting for processes to exit.
+Nov  9 15:58:10 banner-session-43009 systemd-logind[166]: Removed session 4090.
+Nov  9 15:58:11 banner-session-43009 sshd[1579]: Accepted password for richard from 10.0.3.1 port 52700 ssh2
+Nov  9 15:58:11 banner-session-43009 sshd[1579]: pam_unix(sshd:session): session opened for user richard by (uid=0)
+Nov  9 15:58:11 banner-session-43009 systemd-logind[166]: New session 4092 of user richard.
+Nov  9 15:58:11 banner-session-43009 sshd[1579]: pam_unix(sshd:session): session closed for user richard
+Nov  9 15:58:11 banner-session-43009 systemd-logind[166]: Session 4092 logged out. Waiting for processes to exit.
+Nov  9 15:58:11 banner-session-43009 systemd-logind[166]: Removed session 4092.

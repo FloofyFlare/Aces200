@@ -1,12 +1,12 @@
-Container Name: banner-nosession-42970
-Container IP = 10.0.3.197
+Container Name: nobanner-session-42975
+Container IP = 10.0.3.110
 External IP = 128.8.238.141
 NEWCONFIGMANAGER run
 Adding NAT rules
 MITM setup
 Starting MITM listening
-Attacker IP= 60.31.249.131
-FIRST CONNECTION: 1731159332
+Attacker IP= 180.214.239.164
+FIRST CONNECTION: 1731159855
 RECYCLING SINCE SESSION ENDED
 Removing NAT rules
 Removing MITM process

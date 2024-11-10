@@ -1,0 +1,33 @@
+Nov  9 15:41:49 nobanner-session-43006 systemd-logind[164]: New seat seat0.
+Nov  9 15:41:52 nobanner-session-43006 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 15:41:52 nobanner-session-43006 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:42:01 nobanner-session-43006 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:42:01 nobanner-session-43006 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 15:42:01 nobanner-session-43006 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:42:10 nobanner-session-43006 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 15:42:11 nobanner-session-43006 usermod[756]: change user 'sshd' password
+Nov  9 15:42:11 nobanner-session-43006 chage[763]: changed password expiry for sshd
+Nov  9 15:42:13 nobanner-session-43006 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 15:42:13 nobanner-session-43006 sshd[1198]: Server listening on :: port 22.
+Nov  9 15:42:15 nobanner-session-43006 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:42:15 nobanner-session-43006 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 15:42:15 nobanner-session-43006 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:42:24 nobanner-session-43006 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:42:54 nobanner-session-43006 useradd[1539]: new group: name=lian, GID=1001
+Nov  9 15:42:54 nobanner-session-43006 useradd[1539]: new user: name=lian, UID=1001, GID=1001, home=/home/lian, shell=/bin/bash, from=none
+Nov  9 15:42:54 nobanner-session-43006 usermod[1548]: change user 'lian' password
+Nov  9 15:42:54 nobanner-session-43006 sshd[1555]: Accepted password for lian from 10.0.3.1 port 57932 ssh2
+Nov  9 15:42:54 nobanner-session-43006 sshd[1555]: pam_unix(sshd:session): session opened for user lian by (uid=0)
+Nov  9 15:42:55 nobanner-session-43006 systemd-logind[164]: New session 4083 of user lian.
+Nov  9 15:42:55 nobanner-session-43006 systemd: pam_unix(systemd-user:session): session opened for user lian by (uid=0)
+Nov  9 15:42:55 nobanner-session-43006 sshd[1572]: Received disconnect from 10.0.3.1 port 57932:11: 
+Nov  9 15:42:55 nobanner-session-43006 sshd[1572]: Disconnected from user lian 10.0.3.1 port 57932
+Nov  9 15:42:55 nobanner-session-43006 sshd[1555]: pam_unix(sshd:session): session closed for user lian
+Nov  9 15:42:55 nobanner-session-43006 systemd-logind[164]: Session 4083 logged out. Waiting for processes to exit.
+Nov  9 15:42:55 nobanner-session-43006 systemd-logind[164]: Removed session 4083.
+Nov  9 15:42:56 nobanner-session-43006 sshd[1573]: Accepted password for lian from 10.0.3.1 port 57942 ssh2
+Nov  9 15:42:56 nobanner-session-43006 sshd[1573]: pam_unix(sshd:session): session opened for user lian by (uid=0)
+Nov  9 15:42:56 nobanner-session-43006 systemd-logind[164]: New session 4085 of user lian.
+Nov  9 15:42:56 nobanner-session-43006 sshd[1573]: pam_unix(sshd:session): session closed for user lian
+Nov  9 15:42:56 nobanner-session-43006 systemd-logind[164]: Session 4085 logged out. Waiting for processes to exit.
+Nov  9 15:42:56 nobanner-session-43006 systemd-logind[164]: Removed session 4085.

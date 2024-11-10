@@ -1,0 +1,40 @@
+Nov  9 13:31:03 banner-nosession-42971 systemd-logind[164]: New seat seat0.
+Nov  9 13:31:06 banner-nosession-42971 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 13:31:06 banner-nosession-42971 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:31:14 banner-nosession-42971 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:31:14 banner-nosession-42971 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 13:31:14 banner-nosession-42971 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:31:29 banner-nosession-42971 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 13:31:29 banner-nosession-42971 usermod[756]: change user 'sshd' password
+Nov  9 13:31:29 banner-nosession-42971 chage[763]: changed password expiry for sshd
+Nov  9 13:31:31 banner-nosession-42971 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 13:31:31 banner-nosession-42971 sshd[1198]: Server listening on :: port 22.
+Nov  9 13:31:33 banner-nosession-42971 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:31:33 banner-nosession-42971 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 13:31:33 banner-nosession-42971 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:31:41 banner-nosession-42971 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:42:54 banner-nosession-42971 useradd[1543]: new group: name=esuser, GID=1001
+Nov  9 13:42:55 banner-nosession-42971 useradd[1543]: new user: name=esuser, UID=1001, GID=1001, home=/home/esuser, shell=/bin/bash, from=none
+Nov  9 13:42:55 banner-nosession-42971 usermod[1552]: change user 'esuser' password
+Nov  9 13:42:55 banner-nosession-42971 sshd[1559]: Accepted password for esuser from 10.0.3.1 port 47228 ssh2
+Nov  9 13:42:55 banner-nosession-42971 sshd[1559]: pam_unix(sshd:session): session opened for user esuser by (uid=0)
+Nov  9 13:42:55 banner-nosession-42971 systemd-logind[164]: New session 4034 of user esuser.
+Nov  9 13:42:55 banner-nosession-42971 systemd: pam_unix(systemd-user:session): session opened for user esuser by (uid=0)
+Nov  9 13:43:00 banner-nosession-42971 sshd[1576]: Received disconnect from 10.0.3.1 port 47228:11: 
+Nov  9 13:43:00 banner-nosession-42971 sshd[1576]: Disconnected from user esuser 10.0.3.1 port 47228
+Nov  9 13:43:00 banner-nosession-42971 sshd[1559]: pam_unix(sshd:session): session closed for user esuser
+Nov  9 13:43:00 banner-nosession-42971 systemd-logind[164]: Session 4034 logged out. Waiting for processes to exit.
+Nov  9 13:43:00 banner-nosession-42971 systemd-logind[164]: Removed session 4034.
+Nov  9 13:55:39 banner-nosession-42971 sshd[1584]: Accepted password for esuser from 10.0.3.1 port 37968 ssh2
+Nov  9 13:55:39 banner-nosession-42971 sshd[1584]: pam_unix(sshd:session): session opened for user esuser by (uid=0)
+Nov  9 13:55:39 banner-nosession-42971 systemd-logind[164]: New session 4040 of user esuser.
+Nov  9 13:55:39 banner-nosession-42971 systemd: pam_unix(systemd-user:session): session opened for user esuser by (uid=0)
+Nov  9 13:55:42 banner-nosession-42971 sshd[1601]: Received disconnect from 10.0.3.1 port 37968:11: 
+Nov  9 13:55:42 banner-nosession-42971 sshd[1601]: Disconnected from user esuser 10.0.3.1 port 37968
+Nov  9 13:55:42 banner-nosession-42971 sshd[1584]: pam_unix(sshd:session): session closed for user esuser
+Nov  9 13:55:42 banner-nosession-42971 systemd-logind[164]: Session 4040 logged out. Waiting for processes to exit.
+Nov  9 13:55:42 banner-nosession-42971 systemd-logind[164]: Removed session 4040.
+Nov  9 14:17:01 banner-nosession-42971 CRON[1609]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  9 14:17:01 banner-nosession-42971 CRON[1609]: pam_unix(cron:session): session closed for user root
+Nov  9 15:17:01 banner-nosession-42971 CRON[1615]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  9 15:17:01 banner-nosession-42971 CRON[1615]: pam_unix(cron:session): session closed for user root

@@ -1,0 +1,29 @@
+Nov  9 15:15:44 nobanner-session-43002 systemd-logind[164]: New seat seat0.
+Nov  9 15:15:47 nobanner-session-43002 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 15:15:47 nobanner-session-43002 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:15:55 nobanner-session-43002 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:15:55 nobanner-session-43002 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 15:15:55 nobanner-session-43002 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:16:06 nobanner-session-43002 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 15:16:06 nobanner-session-43002 usermod[756]: change user 'sshd' password
+Nov  9 15:16:06 nobanner-session-43002 chage[763]: changed password expiry for sshd
+Nov  9 15:16:09 nobanner-session-43002 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 15:16:09 nobanner-session-43002 sshd[1198]: Server listening on :: port 22.
+Nov  9 15:16:11 nobanner-session-43002 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:16:11 nobanner-session-43002 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 15:16:11 nobanner-session-43002 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 15:16:19 nobanner-session-43002 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 15:17:01 nobanner-session-43002 CRON[1539]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov  9 15:17:01 nobanner-session-43002 CRON[1539]: pam_unix(cron:session): session closed for user root
+Nov  9 15:22:13 nobanner-session-43002 useradd[1543]: new group: name=gabriel, GID=1001
+Nov  9 15:22:13 nobanner-session-43002 useradd[1543]: new user: name=gabriel, UID=1001, GID=1001, home=/home/gabriel, shell=/bin/bash, from=none
+Nov  9 15:22:13 nobanner-session-43002 usermod[1552]: change user 'gabriel' password
+Nov  9 15:22:13 nobanner-session-43002 sshd[1559]: Accepted password for gabriel from 10.0.3.1 port 43122 ssh2
+Nov  9 15:22:13 nobanner-session-43002 sshd[1559]: pam_unix(sshd:session): session opened for user gabriel by (uid=0)
+Nov  9 15:22:13 nobanner-session-43002 systemd-logind[164]: New session 4075 of user gabriel.
+Nov  9 15:22:13 nobanner-session-43002 systemd: pam_unix(systemd-user:session): session opened for user gabriel by (uid=0)
+Nov  9 15:22:15 nobanner-session-43002 sshd[1576]: Received disconnect from 10.0.3.1 port 43122:11: 
+Nov  9 15:22:15 nobanner-session-43002 sshd[1576]: Disconnected from user gabriel 10.0.3.1 port 43122
+Nov  9 15:22:15 nobanner-session-43002 sshd[1559]: pam_unix(sshd:session): session closed for user gabriel
+Nov  9 15:22:15 nobanner-session-43002 systemd-logind[164]: Session 4075 logged out. Waiting for processes to exit.
+Nov  9 15:22:15 nobanner-session-43002 systemd-logind[164]: Removed session 4075.

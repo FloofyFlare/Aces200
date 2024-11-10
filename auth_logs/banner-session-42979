@@ -1,0 +1,27 @@
+Nov  9 13:58:02 banner-session-42979 systemd-logind[165]: New seat seat0.
+Nov  9 13:58:05 banner-session-42979 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov  9 13:58:05 banner-session-42979 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:58:15 banner-session-42979 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:58:15 banner-session-42979 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov  9 13:58:15 banner-session-42979 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:58:24 banner-session-42979 useradd[748]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  9 13:58:24 banner-session-42979 usermod[756]: change user 'sshd' password
+Nov  9 13:58:24 banner-session-42979 chage[763]: changed password expiry for sshd
+Nov  9 13:58:26 banner-session-42979 sshd[1198]: Server listening on 0.0.0.0 port 22.
+Nov  9 13:58:26 banner-session-42979 sshd[1198]: Server listening on :: port 22.
+Nov  9 13:58:27 banner-session-42979 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:58:27 banner-session-42979 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov  9 13:58:27 banner-session-42979 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov  9 13:58:35 banner-session-42979 sudo: pam_unix(sudo:session): session closed for user root
+Nov  9 13:59:18 banner-session-42979 useradd[1545]: new group: name=marketing, GID=1001
+Nov  9 13:59:18 banner-session-42979 useradd[1545]: new user: name=marketing, UID=1001, GID=1001, home=/home/marketing, shell=/bin/bash, from=none
+Nov  9 13:59:18 banner-session-42979 usermod[1554]: change user 'marketing' password
+Nov  9 13:59:18 banner-session-42979 sshd[1561]: Accepted password for marketing from 10.0.3.1 port 37064 ssh2
+Nov  9 13:59:18 banner-session-42979 sshd[1561]: pam_unix(sshd:session): session opened for user marketing by (uid=0)
+Nov  9 13:59:18 banner-session-42979 systemd-logind[165]: New session 4044 of user marketing.
+Nov  9 13:59:18 banner-session-42979 systemd: pam_unix(systemd-user:session): session opened for user marketing by (uid=0)
+Nov  9 13:59:19 banner-session-42979 sshd[1578]: Received disconnect from 10.0.3.1 port 37064:11: 
+Nov  9 13:59:19 banner-session-42979 sshd[1578]: Disconnected from user marketing 10.0.3.1 port 37064
+Nov  9 13:59:19 banner-session-42979 sshd[1561]: pam_unix(sshd:session): session closed for user marketing
+Nov  9 13:59:19 banner-session-42979 systemd-logind[165]: Session 4044 logged out. Waiting for processes to exit.
+Nov  9 13:59:19 banner-session-42979 systemd-logind[165]: Removed session 4044.
