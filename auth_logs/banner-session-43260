@@ -1,0 +1,27 @@
+Nov 12 03:36:53 banner-session-43260 systemd-logind[164]: New seat seat0.
+Nov 12 03:36:57 banner-session-43260 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 03:36:57 banner-session-43260 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 03:37:05 banner-session-43260 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 03:37:05 banner-session-43260 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 03:37:05 banner-session-43260 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 03:37:18 banner-session-43260 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 03:37:19 banner-session-43260 usermod[764]: change user 'sshd' password
+Nov 12 03:37:19 banner-session-43260 chage[771]: changed password expiry for sshd
+Nov 12 03:37:21 banner-session-43260 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 03:37:21 banner-session-43260 sshd[1206]: Server listening on :: port 22.
+Nov 12 03:37:24 banner-session-43260 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 03:37:24 banner-session-43260 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 03:37:24 banner-session-43260 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 03:37:38 banner-session-43260 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 03:47:46 banner-session-43260 useradd[1558]: new group: name=default, GID=1001
+Nov 12 03:47:46 banner-session-43260 useradd[1558]: new user: name=default, UID=1001, GID=1001, home=/home/default, shell=/bin/bash, from=none
+Nov 12 03:47:46 banner-session-43260 usermod[1567]: change user 'default' password
+Nov 12 03:47:47 banner-session-43260 sshd[1574]: Accepted password for default from 10.0.3.1 port 39286 ssh2
+Nov 12 03:47:47 banner-session-43260 sshd[1574]: pam_unix(sshd:session): session opened for user default by (uid=0)
+Nov 12 03:47:47 banner-session-43260 systemd-logind[164]: New session 158 of user default.
+Nov 12 03:47:47 banner-session-43260 systemd: pam_unix(systemd-user:session): session opened for user default by (uid=0)
+Nov 12 03:47:49 banner-session-43260 sshd[1591]: Received disconnect from 10.0.3.1 port 39286:11: 
+Nov 12 03:47:49 banner-session-43260 sshd[1591]: Disconnected from user default 10.0.3.1 port 39286
+Nov 12 03:47:49 banner-session-43260 sshd[1574]: pam_unix(sshd:session): session closed for user default
+Nov 12 03:47:49 banner-session-43260 systemd-logind[164]: Session 158 logged out. Waiting for processes to exit.
+Nov 12 03:47:49 banner-session-43260 systemd-logind[164]: Removed session 158.

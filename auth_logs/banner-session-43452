@@ -1,0 +1,29 @@
+Nov 12 09:08:43 banner-session-43452 systemd-logind[164]: New seat seat0.
+Nov 12 09:08:46 banner-session-43452 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 09:08:46 banner-session-43452 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 09:08:54 banner-session-43452 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 09:08:54 banner-session-43452 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 09:08:54 banner-session-43452 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 09:09:05 banner-session-43452 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 09:09:05 banner-session-43452 usermod[764]: change user 'sshd' password
+Nov 12 09:09:05 banner-session-43452 chage[771]: changed password expiry for sshd
+Nov 12 09:09:08 banner-session-43452 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 09:09:08 banner-session-43452 sshd[1206]: Server listening on :: port 22.
+Nov 12 09:09:10 banner-session-43452 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 09:09:10 banner-session-43452 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 09:09:10 banner-session-43452 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 09:09:18 banner-session-43452 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 09:17:01 banner-session-43452 CRON[1558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 12 09:17:01 banner-session-43452 CRON[1558]: pam_unix(cron:session): session closed for user root
+Nov 12 09:19:16 banner-session-43452 useradd[1561]: new group: name=ubnt, GID=1001
+Nov 12 09:19:16 banner-session-43452 useradd[1561]: new user: name=ubnt, UID=1001, GID=1001, home=/home/ubnt, shell=/bin/bash, from=none
+Nov 12 09:19:16 banner-session-43452 usermod[1570]: change user 'ubnt' password
+Nov 12 09:19:16 banner-session-43452 sshd[1577]: Accepted password for ubnt from 10.0.3.1 port 50798 ssh2
+Nov 12 09:19:16 banner-session-43452 sshd[1577]: pam_unix(sshd:session): session opened for user ubnt by (uid=0)
+Nov 12 09:19:16 banner-session-43452 systemd-logind[164]: New session 281 of user ubnt.
+Nov 12 09:19:16 banner-session-43452 systemd: pam_unix(systemd-user:session): session opened for user ubnt by (uid=0)
+Nov 12 09:19:18 banner-session-43452 sshd[1594]: Received disconnect from 10.0.3.1 port 50798:11: 
+Nov 12 09:19:18 banner-session-43452 sshd[1594]: Disconnected from user ubnt 10.0.3.1 port 50798
+Nov 12 09:19:18 banner-session-43452 sshd[1577]: pam_unix(sshd:session): session closed for user ubnt
+Nov 12 09:19:18 banner-session-43452 systemd-logind[164]: Session 281 logged out. Waiting for processes to exit.
+Nov 12 09:19:18 banner-session-43452 systemd-logind[164]: Removed session 281.

@@ -1,0 +1,27 @@
+Nov 12 01:11:14 banner-nosession-43185 systemd-logind[166]: New seat seat0.
+Nov 12 01:11:17 banner-nosession-43185 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 01:11:17 banner-nosession-43185 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 01:11:25 banner-nosession-43185 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 01:11:25 banner-nosession-43185 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 01:11:25 banner-nosession-43185 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 01:11:36 banner-nosession-43185 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 01:11:36 banner-nosession-43185 usermod[764]: change user 'sshd' password
+Nov 12 01:11:36 banner-nosession-43185 chage[771]: changed password expiry for sshd
+Nov 12 01:11:38 banner-nosession-43185 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 01:11:38 banner-nosession-43185 sshd[1206]: Server listening on :: port 22.
+Nov 12 01:11:40 banner-nosession-43185 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 01:11:40 banner-nosession-43185 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 01:11:40 banner-nosession-43185 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 01:11:46 banner-nosession-43185 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 01:11:53 banner-nosession-43185 useradd[1554]: new group: name=gpadmin, GID=1001
+Nov 12 01:11:53 banner-nosession-43185 useradd[1554]: new user: name=gpadmin, UID=1001, GID=1001, home=/home/gpadmin, shell=/bin/bash, from=none
+Nov 12 01:11:53 banner-nosession-43185 usermod[1563]: change user 'gpadmin' password
+Nov 12 01:11:53 banner-nosession-43185 sshd[1570]: Accepted password for gpadmin from 10.0.3.1 port 57474 ssh2
+Nov 12 01:11:53 banner-nosession-43185 sshd[1570]: pam_unix(sshd:session): session opened for user gpadmin by (uid=0)
+Nov 12 01:11:53 banner-nosession-43185 systemd-logind[166]: New session 97 of user gpadmin.
+Nov 12 01:11:53 banner-nosession-43185 systemd: pam_unix(systemd-user:session): session opened for user gpadmin by (uid=0)
+Nov 12 01:11:55 banner-nosession-43185 sshd[1587]: Received disconnect from 10.0.3.1 port 57474:11: 
+Nov 12 01:11:55 banner-nosession-43185 sshd[1587]: Disconnected from user gpadmin 10.0.3.1 port 57474
+Nov 12 01:11:55 banner-nosession-43185 sshd[1570]: pam_unix(sshd:session): session closed for user gpadmin
+Nov 12 01:11:55 banner-nosession-43185 systemd-logind[166]: Session 97 logged out. Waiting for processes to exit.
+Nov 12 01:11:55 banner-nosession-43185 systemd-logind[166]: Removed session 97.

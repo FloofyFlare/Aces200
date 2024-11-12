@@ -1,0 +1,27 @@
+Nov 11 21:53:24 nobanner-nosession-43059 systemd-logind[164]: New seat seat0.
+Nov 11 21:53:27 nobanner-nosession-43059 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 21:53:27 nobanner-nosession-43059 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 21:53:36 nobanner-nosession-43059 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 21:53:36 nobanner-nosession-43059 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 21:53:36 nobanner-nosession-43059 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 21:53:51 nobanner-nosession-43059 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 21:53:51 nobanner-nosession-43059 usermod[764]: change user 'sshd' password
+Nov 11 21:53:51 nobanner-nosession-43059 chage[771]: changed password expiry for sshd
+Nov 11 21:53:53 nobanner-nosession-43059 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 11 21:53:53 nobanner-nosession-43059 sshd[1206]: Server listening on :: port 22.
+Nov 11 21:53:56 nobanner-nosession-43059 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 21:53:56 nobanner-nosession-43059 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 21:53:56 nobanner-nosession-43059 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 21:54:04 nobanner-nosession-43059 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 21:54:11 nobanner-nosession-43059 useradd[1548]: new group: name=centos, GID=1001
+Nov 11 21:54:11 nobanner-nosession-43059 useradd[1548]: new user: name=centos, UID=1001, GID=1001, home=/home/centos, shell=/bin/bash, from=none
+Nov 11 21:54:11 nobanner-nosession-43059 usermod[1557]: change user 'centos' password
+Nov 11 21:54:11 nobanner-nosession-43059 sshd[1564]: Accepted password for centos from 10.0.3.1 port 35570 ssh2
+Nov 11 21:54:11 nobanner-nosession-43059 sshd[1564]: pam_unix(sshd:session): session opened for user centos by (uid=0)
+Nov 11 21:54:11 nobanner-nosession-43059 systemd-logind[164]: New session 2 of user centos.
+Nov 11 21:54:12 nobanner-nosession-43059 systemd: pam_unix(systemd-user:session): session opened for user centos by (uid=0)
+Nov 11 21:54:13 nobanner-nosession-43059 sshd[1581]: Received disconnect from 10.0.3.1 port 35570:11: 
+Nov 11 21:54:13 nobanner-nosession-43059 sshd[1581]: Disconnected from user centos 10.0.3.1 port 35570
+Nov 11 21:54:13 nobanner-nosession-43059 sshd[1564]: pam_unix(sshd:session): session closed for user centos
+Nov 11 21:54:13 nobanner-nosession-43059 systemd-logind[164]: Session 2 logged out. Waiting for processes to exit.
+Nov 11 21:54:13 nobanner-nosession-43059 systemd-logind[164]: Removed session 2.

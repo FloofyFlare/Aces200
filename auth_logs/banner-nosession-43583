@@ -1,0 +1,35 @@
+Nov 12 13:33:59 banner-nosession-43583 systemd-logind[164]: New seat seat0.
+Nov 12 13:34:06 banner-nosession-43583 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 13:34:06 banner-nosession-43583 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 13:34:14 banner-nosession-43583 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 13:34:14 banner-nosession-43583 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 13:34:14 banner-nosession-43583 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 13:34:43 banner-nosession-43583 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 13:34:43 banner-nosession-43583 usermod[764]: change user 'sshd' password
+Nov 12 13:34:43 banner-nosession-43583 chage[771]: changed password expiry for sshd
+Nov 12 13:34:45 banner-nosession-43583 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 13:34:45 banner-nosession-43583 sshd[1206]: Server listening on :: port 22.
+Nov 12 13:34:49 banner-nosession-43583 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 13:34:49 banner-nosession-43583 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 13:34:49 banner-nosession-43583 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 13:35:00 banner-nosession-43583 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 13:36:48 banner-nosession-43583 useradd[1554]: new group: name=pi, GID=1001
+Nov 12 13:36:48 banner-nosession-43583 useradd[1554]: new user: name=pi, UID=1001, GID=1001, home=/home/pi, shell=/bin/bash, from=none
+Nov 12 13:36:48 banner-nosession-43583 usermod[1563]: change user 'pi' password
+Nov 12 13:36:48 banner-nosession-43583 sshd[1570]: Accepted password for pi from 10.0.3.1 port 48998 ssh2
+Nov 12 13:36:48 banner-nosession-43583 sshd[1571]: Accepted password for pi from 10.0.3.1 port 49014 ssh2
+Nov 12 13:36:48 banner-nosession-43583 sshd[1570]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Nov 12 13:36:48 banner-nosession-43583 sshd[1571]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Nov 12 13:36:48 banner-nosession-43583 systemd-logind[164]: New session 382 of user pi.
+Nov 12 13:36:48 banner-nosession-43583 systemd-logind[164]: New session 383 of user pi.
+Nov 12 13:36:48 banner-nosession-43583 systemd: pam_unix(systemd-user:session): session opened for user pi by (uid=0)
+Nov 12 13:37:10 banner-nosession-43583 sshd[1599]: Received disconnect from 10.0.3.1 port 49014:11: 
+Nov 12 13:37:10 banner-nosession-43583 sshd[1599]: Disconnected from user pi 10.0.3.1 port 49014
+Nov 12 13:37:10 banner-nosession-43583 sshd[1571]: pam_unix(sshd:session): session closed for user pi
+Nov 12 13:37:10 banner-nosession-43583 sshd[1595]: Received disconnect from 10.0.3.1 port 48998:11: 
+Nov 12 13:37:10 banner-nosession-43583 sshd[1595]: Disconnected from user pi 10.0.3.1 port 48998
+Nov 12 13:37:10 banner-nosession-43583 systemd-logind[164]: Session 383 logged out. Waiting for processes to exit.
+Nov 12 13:37:10 banner-nosession-43583 sshd[1570]: pam_unix(sshd:session): session closed for user pi
+Nov 12 13:37:10 banner-nosession-43583 systemd-logind[164]: Removed session 383.
+Nov 12 13:37:10 banner-nosession-43583 systemd-logind[164]: Session 382 logged out. Waiting for processes to exit.
+Nov 12 13:37:10 banner-nosession-43583 systemd-logind[164]: Removed session 382.

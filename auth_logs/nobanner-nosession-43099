@@ -1,0 +1,27 @@
+Nov 11 22:54:14 nobanner-nosession-43099 systemd-logind[164]: New seat seat0.
+Nov 11 22:54:17 nobanner-nosession-43099 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 22:54:17 nobanner-nosession-43099 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:54:25 nobanner-nosession-43099 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:54:25 nobanner-nosession-43099 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 22:54:25 nobanner-nosession-43099 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:54:36 nobanner-nosession-43099 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 22:54:36 nobanner-nosession-43099 usermod[764]: change user 'sshd' password
+Nov 11 22:54:36 nobanner-nosession-43099 chage[771]: changed password expiry for sshd
+Nov 11 22:54:38 nobanner-nosession-43099 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 11 22:54:38 nobanner-nosession-43099 sshd[1206]: Server listening on :: port 22.
+Nov 11 22:54:40 nobanner-nosession-43099 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:54:40 nobanner-nosession-43099 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 22:54:40 nobanner-nosession-43099 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:54:48 nobanner-nosession-43099 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:54:57 nobanner-nosession-43099 useradd[1548]: new group: name=kali, GID=1001
+Nov 11 22:54:57 nobanner-nosession-43099 useradd[1548]: new user: name=kali, UID=1001, GID=1001, home=/home/kali, shell=/bin/bash, from=none
+Nov 11 22:54:57 nobanner-nosession-43099 usermod[1557]: change user 'kali' password
+Nov 11 22:54:57 nobanner-nosession-43099 sshd[1564]: Accepted password for kali from 10.0.3.1 port 58158 ssh2
+Nov 11 22:54:57 nobanner-nosession-43099 sshd[1564]: pam_unix(sshd:session): session opened for user kali by (uid=0)
+Nov 11 22:54:57 nobanner-nosession-43099 systemd-logind[164]: New session 40 of user kali.
+Nov 11 22:54:57 nobanner-nosession-43099 systemd: pam_unix(systemd-user:session): session opened for user kali by (uid=0)
+Nov 11 22:55:06 nobanner-nosession-43099 sshd[1581]: Received disconnect from 10.0.3.1 port 58158:11: 
+Nov 11 22:55:06 nobanner-nosession-43099 sshd[1581]: Disconnected from user kali 10.0.3.1 port 58158
+Nov 11 22:55:06 nobanner-nosession-43099 sshd[1564]: pam_unix(sshd:session): session closed for user kali
+Nov 11 22:55:06 nobanner-nosession-43099 systemd-logind[164]: Session 40 logged out. Waiting for processes to exit.
+Nov 11 22:55:06 nobanner-nosession-43099 systemd-logind[164]: Removed session 40.

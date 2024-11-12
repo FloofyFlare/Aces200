@@ -1,0 +1,29 @@
+Nov 12 07:16:46 banner-session-43407 systemd-logind[164]: New seat seat0.
+Nov 12 07:16:49 banner-session-43407 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 07:16:49 banner-session-43407 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:16:58 banner-session-43407 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:16:58 banner-session-43407 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 07:16:58 banner-session-43407 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:17:01 banner-session-43407 CRON[429]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 12 07:17:01 banner-session-43407 CRON[429]: pam_unix(cron:session): session closed for user root
+Nov 12 07:17:12 banner-session-43407 useradd[759]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 07:17:12 banner-session-43407 usermod[767]: change user 'sshd' password
+Nov 12 07:17:12 banner-session-43407 chage[774]: changed password expiry for sshd
+Nov 12 07:17:14 banner-session-43407 sshd[1209]: Server listening on 0.0.0.0 port 22.
+Nov 12 07:17:14 banner-session-43407 sshd[1209]: Server listening on :: port 22.
+Nov 12 07:17:16 banner-session-43407 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:17:16 banner-session-43407 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 07:17:16 banner-session-43407 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:17:25 banner-session-43407 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:18:07 banner-session-43407 useradd[1560]: failed adding user 'games', data deleted
+Nov 12 07:18:08 banner-session-43407 usermod[1561]: change user 'games' password
+Nov 12 07:18:08 banner-session-43407 sshd[1568]: Accepted password for games from 10.0.3.1 port 40820 ssh2
+Nov 12 07:18:08 banner-session-43407 sshd[1568]: pam_unix(sshd:session): session opened for user games by (uid=0)
+Nov 12 07:18:08 banner-session-43407 systemd-logind[164]: New session 240 of user games.
+Nov 12 07:18:08 banner-session-43407 systemd: pam_unix(systemd-user:session): session opened for user games by (uid=0)
+Nov 12 07:18:09 banner-session-43407 nologin: Attempted login by games (UID: 5) on UNKNOWN
+Nov 12 07:18:09 banner-session-43407 sshd[1585]: Received disconnect from 10.0.3.1 port 40820:11: 
+Nov 12 07:18:09 banner-session-43407 sshd[1585]: Disconnected from user games 10.0.3.1 port 40820
+Nov 12 07:18:09 banner-session-43407 sshd[1568]: pam_unix(sshd:session): session closed for user games
+Nov 12 07:18:09 banner-session-43407 systemd-logind[164]: Session 240 logged out. Waiting for processes to exit.
+Nov 12 07:18:09 banner-session-43407 systemd-logind[164]: Removed session 240.

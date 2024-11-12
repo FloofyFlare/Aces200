@@ -1,0 +1,29 @@
+Nov 12 02:08:28 banner-session-43219 systemd-logind[164]: New seat seat0.
+Nov 12 02:08:31 banner-session-43219 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 02:08:31 banner-session-43219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 02:08:39 banner-session-43219 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 02:08:39 banner-session-43219 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 02:08:39 banner-session-43219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 02:08:58 banner-session-43219 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 02:08:59 banner-session-43219 usermod[764]: change user 'sshd' password
+Nov 12 02:08:59 banner-session-43219 chage[771]: changed password expiry for sshd
+Nov 12 02:09:01 banner-session-43219 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 02:09:01 banner-session-43219 sshd[1206]: Server listening on :: port 22.
+Nov 12 02:09:03 banner-session-43219 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 02:09:03 banner-session-43219 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 02:09:03 banner-session-43219 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 02:09:13 banner-session-43219 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 02:17:01 banner-session-43219 CRON[1558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 12 02:17:01 banner-session-43219 CRON[1558]: pam_unix(cron:session): session closed for user root
+Nov 12 02:18:54 banner-session-43219 useradd[1561]: new group: name=centos, GID=1001
+Nov 12 02:18:54 banner-session-43219 useradd[1561]: new user: name=centos, UID=1001, GID=1001, home=/home/centos, shell=/bin/bash, from=none
+Nov 12 02:18:55 banner-session-43219 usermod[1570]: change user 'centos' password
+Nov 12 02:18:55 banner-session-43219 sshd[1577]: Accepted password for centos from 10.0.3.1 port 52332 ssh2
+Nov 12 02:18:55 banner-session-43219 sshd[1577]: pam_unix(sshd:session): session opened for user centos by (uid=0)
+Nov 12 02:18:55 banner-session-43219 systemd-logind[164]: New session 131 of user centos.
+Nov 12 02:18:55 banner-session-43219 systemd: pam_unix(systemd-user:session): session opened for user centos by (uid=0)
+Nov 12 02:18:56 banner-session-43219 sshd[1594]: Received disconnect from 10.0.3.1 port 52332:11: 
+Nov 12 02:18:56 banner-session-43219 sshd[1594]: Disconnected from user centos 10.0.3.1 port 52332
+Nov 12 02:18:56 banner-session-43219 sshd[1577]: pam_unix(sshd:session): session closed for user centos
+Nov 12 02:18:56 banner-session-43219 systemd-logind[164]: Session 131 logged out. Waiting for processes to exit.
+Nov 12 02:18:56 banner-session-43219 systemd-logind[164]: Removed session 131.

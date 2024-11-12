@@ -1,0 +1,27 @@
+Nov 11 01:50:58 banner-nosession-43046 systemd-logind[165]: New seat seat0.
+Nov 11 01:51:02 banner-nosession-43046 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 01:51:02 banner-nosession-43046 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:51:09 banner-nosession-43046 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:51:09 banner-nosession-43046 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 01:51:09 banner-nosession-43046 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:51:19 banner-nosession-43046 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 01:51:19 banner-nosession-43046 usermod[765]: change user 'sshd' password
+Nov 11 01:51:19 banner-nosession-43046 chage[772]: changed password expiry for sshd
+Nov 11 01:51:21 banner-nosession-43046 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov 11 01:51:21 banner-nosession-43046 sshd[1207]: Server listening on :: port 22.
+Nov 11 01:51:22 banner-nosession-43046 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:51:23 banner-nosession-43046 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 01:51:23 banner-nosession-43046 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:51:30 banner-nosession-43046 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:51:37 banner-nosession-43046 useradd[1556]: new group: name=offg, GID=1001
+Nov 11 01:51:37 banner-nosession-43046 useradd[1556]: new user: name=offg, UID=1001, GID=1001, home=/home/offg, shell=/bin/bash, from=none
+Nov 11 01:51:37 banner-nosession-43046 usermod[1565]: change user 'offg' password
+Nov 11 01:51:37 banner-nosession-43046 sshd[1572]: Accepted password for offg from 10.0.3.1 port 42322 ssh2
+Nov 11 01:51:37 banner-nosession-43046 sshd[1572]: pam_unix(sshd:session): session opened for user offg by (uid=0)
+Nov 11 01:51:37 banner-nosession-43046 systemd-logind[165]: New session 21 of user offg.
+Nov 11 01:51:37 banner-nosession-43046 systemd: pam_unix(systemd-user:session): session opened for user offg by (uid=0)
+Nov 11 01:51:39 banner-nosession-43046 sshd[1589]: Received disconnect from 10.0.3.1 port 42322:11: 
+Nov 11 01:51:39 banner-nosession-43046 sshd[1589]: Disconnected from user offg 10.0.3.1 port 42322
+Nov 11 01:51:39 banner-nosession-43046 sshd[1572]: pam_unix(sshd:session): session closed for user offg
+Nov 11 01:51:39 banner-nosession-43046 systemd-logind[165]: Session 21 logged out. Waiting for processes to exit.
+Nov 11 01:51:39 banner-nosession-43046 systemd-logind[165]: Removed session 21.

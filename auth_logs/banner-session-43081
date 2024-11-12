@@ -1,0 +1,25 @@
+Nov 11 22:28:55 banner-session-43081 systemd-logind[164]: New seat seat0.
+Nov 11 22:28:58 banner-session-43081 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 22:28:58 banner-session-43081 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:29:06 banner-session-43081 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:29:06 banner-session-43081 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 22:29:06 banner-session-43081 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:29:20 banner-session-43081 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 22:29:20 banner-session-43081 usermod[764]: change user 'sshd' password
+Nov 11 22:29:20 banner-session-43081 chage[771]: changed password expiry for sshd
+Nov 11 22:29:22 banner-session-43081 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 11 22:29:22 banner-session-43081 sshd[1206]: Server listening on :: port 22.
+Nov 11 22:29:23 banner-session-43081 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:29:23 banner-session-43081 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 22:29:23 banner-session-43081 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:29:29 banner-session-43081 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:30:12 banner-session-43081 useradd[1557]: new group: name=deamon_root, GID=1001
+Nov 11 22:30:12 banner-session-43081 useradd[1557]: new user: name=deamon_root, UID=1001, GID=1001, home=/home/deamon_root, shell=/bin/bash, from=none
+Nov 11 22:30:12 banner-session-43081 usermod[1566]: change user 'deamon_root' password
+Nov 11 22:30:12 banner-session-43081 sshd[1573]: Accepted password for deamon_root from 10.0.3.1 port 41328 ssh2
+Nov 11 22:30:12 banner-session-43081 sshd[1573]: pam_unix(sshd:session): session opened for user deamon_root by (uid=0)
+Nov 11 22:30:13 banner-session-43081 systemd-logind[164]: New session 20 of user deamon_root.
+Nov 11 22:30:13 banner-session-43081 systemd: pam_unix(systemd-user:session): session opened for user deamon_root by (uid=0)
+Nov 11 22:30:18 banner-session-43081 sshd[1573]: pam_unix(sshd:session): session closed for user deamon_root
+Nov 11 22:30:18 banner-session-43081 systemd-logind[164]: Session 20 logged out. Waiting for processes to exit.
+Nov 11 22:30:18 banner-session-43081 systemd-logind[164]: Removed session 20.

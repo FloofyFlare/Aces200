@@ -1,0 +1,27 @@
+Nov 12 03:37:06 nobanner-nosession-43261 systemd-logind[165]: New seat seat0.
+Nov 12 03:37:10 nobanner-nosession-43261 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 03:37:10 nobanner-nosession-43261 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 03:37:19 nobanner-nosession-43261 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 03:37:19 nobanner-nosession-43261 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 03:37:19 nobanner-nosession-43261 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 03:37:42 nobanner-nosession-43261 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 03:37:42 nobanner-nosession-43261 usermod[764]: change user 'sshd' password
+Nov 12 03:37:42 nobanner-nosession-43261 chage[771]: changed password expiry for sshd
+Nov 12 03:37:44 nobanner-nosession-43261 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 03:37:44 nobanner-nosession-43261 sshd[1206]: Server listening on :: port 22.
+Nov 12 03:37:46 nobanner-nosession-43261 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 03:37:46 nobanner-nosession-43261 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 03:37:46 nobanner-nosession-43261 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 03:37:53 nobanner-nosession-43261 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 03:38:35 nobanner-nosession-43261 useradd[1548]: new group: name=admin, GID=1001
+Nov 12 03:38:35 nobanner-nosession-43261 useradd[1548]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov 12 03:38:35 nobanner-nosession-43261 usermod[1557]: change user 'admin' password
+Nov 12 03:38:35 nobanner-nosession-43261 sshd[1564]: Accepted password for admin from 10.0.3.1 port 36870 ssh2
+Nov 12 03:38:35 nobanner-nosession-43261 sshd[1564]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov 12 03:38:35 nobanner-nosession-43261 systemd-logind[165]: New session 154 of user admin.
+Nov 12 03:38:35 nobanner-nosession-43261 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov 12 03:38:36 nobanner-nosession-43261 sshd[1581]: Received disconnect from 10.0.3.1 port 36870:11: 
+Nov 12 03:38:36 nobanner-nosession-43261 sshd[1581]: Disconnected from user admin 10.0.3.1 port 36870
+Nov 12 03:38:36 nobanner-nosession-43261 sshd[1564]: pam_unix(sshd:session): session closed for user admin
+Nov 12 03:38:36 nobanner-nosession-43261 systemd-logind[165]: Session 154 logged out. Waiting for processes to exit.
+Nov 12 03:38:36 nobanner-nosession-43261 systemd-logind[165]: Removed session 154.

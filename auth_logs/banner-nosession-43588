@@ -1,0 +1,27 @@
+Nov 12 13:40:20 banner-nosession-43588 systemd-logind[164]: New seat seat0.
+Nov 12 13:40:23 banner-nosession-43588 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 13:40:23 banner-nosession-43588 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 13:40:31 banner-nosession-43588 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 13:40:31 banner-nosession-43588 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 13:40:31 banner-nosession-43588 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 13:40:41 banner-nosession-43588 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 13:40:41 banner-nosession-43588 usermod[764]: change user 'sshd' password
+Nov 12 13:40:41 banner-nosession-43588 chage[771]: changed password expiry for sshd
+Nov 12 13:40:44 banner-nosession-43588 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 13:40:44 banner-nosession-43588 sshd[1206]: Server listening on :: port 22.
+Nov 12 13:40:46 banner-nosession-43588 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 13:40:46 banner-nosession-43588 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 13:40:46 banner-nosession-43588 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 13:40:54 banner-nosession-43588 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 13:44:19 banner-nosession-43588 useradd[1554]: new group: name=supervisor, GID=1001
+Nov 12 13:44:19 banner-nosession-43588 useradd[1554]: new user: name=supervisor, UID=1001, GID=1001, home=/home/supervisor, shell=/bin/bash, from=none
+Nov 12 13:44:19 banner-nosession-43588 usermod[1563]: change user 'supervisor' password
+Nov 12 13:44:19 banner-nosession-43588 sshd[1570]: Accepted password for supervisor from 10.0.3.1 port 34146 ssh2
+Nov 12 13:44:20 banner-nosession-43588 sshd[1570]: pam_unix(sshd:session): session opened for user supervisor by (uid=0)
+Nov 12 13:44:20 banner-nosession-43588 systemd-logind[164]: New session 387 of user supervisor.
+Nov 12 13:44:20 banner-nosession-43588 systemd: pam_unix(systemd-user:session): session opened for user supervisor by (uid=0)
+Nov 12 13:44:22 banner-nosession-43588 sshd[1587]: Received disconnect from 10.0.3.1 port 34146:11: 
+Nov 12 13:44:22 banner-nosession-43588 sshd[1587]: Disconnected from user supervisor 10.0.3.1 port 34146
+Nov 12 13:44:22 banner-nosession-43588 sshd[1570]: pam_unix(sshd:session): session closed for user supervisor
+Nov 12 13:44:22 banner-nosession-43588 systemd-logind[164]: Session 387 logged out. Waiting for processes to exit.
+Nov 12 13:44:22 banner-nosession-43588 systemd-logind[164]: Removed session 387.

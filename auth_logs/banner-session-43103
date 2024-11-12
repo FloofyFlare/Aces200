@@ -1,0 +1,27 @@
+Nov 11 22:58:21 banner-session-43103 systemd-logind[164]: New seat seat0.
+Nov 11 22:58:25 banner-session-43103 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 22:58:25 banner-session-43103 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:58:32 banner-session-43103 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:58:32 banner-session-43103 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 22:58:32 banner-session-43103 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:58:42 banner-session-43103 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 22:58:42 banner-session-43103 usermod[764]: change user 'sshd' password
+Nov 11 22:58:42 banner-session-43103 chage[771]: changed password expiry for sshd
+Nov 11 22:58:44 banner-session-43103 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 11 22:58:44 banner-session-43103 sshd[1206]: Server listening on :: port 22.
+Nov 11 22:58:46 banner-session-43103 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:58:46 banner-session-43103 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 22:58:46 banner-session-43103 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:58:53 banner-session-43103 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:59:14 banner-session-43103 useradd[1557]: new group: name=vagrant, GID=1001
+Nov 11 22:59:14 banner-session-43103 useradd[1557]: new user: name=vagrant, UID=1001, GID=1001, home=/home/vagrant, shell=/bin/bash, from=none
+Nov 11 22:59:14 banner-session-43103 usermod[1566]: change user 'vagrant' password
+Nov 11 22:59:14 banner-session-43103 sshd[1573]: Accepted password for vagrant from 10.0.3.1 port 55096 ssh2
+Nov 11 22:59:14 banner-session-43103 sshd[1573]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Nov 11 22:59:14 banner-session-43103 systemd-logind[164]: New session 43 of user vagrant.
+Nov 11 22:59:14 banner-session-43103 systemd: pam_unix(systemd-user:session): session opened for user vagrant by (uid=0)
+Nov 11 22:59:23 banner-session-43103 sshd[1590]: Received disconnect from 10.0.3.1 port 55096:11: 
+Nov 11 22:59:23 banner-session-43103 sshd[1590]: Disconnected from user vagrant 10.0.3.1 port 55096
+Nov 11 22:59:23 banner-session-43103 sshd[1573]: pam_unix(sshd:session): session closed for user vagrant
+Nov 11 22:59:23 banner-session-43103 systemd-logind[164]: Session 43 logged out. Waiting for processes to exit.
+Nov 11 22:59:23 banner-session-43103 systemd-logind[164]: Removed session 43.

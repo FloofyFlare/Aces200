@@ -1,0 +1,25 @@
+Nov 12 07:29:16 banner-nosession-43415 systemd-logind[164]: New seat seat0.
+Nov 12 07:29:19 banner-nosession-43415 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 07:29:19 banner-nosession-43415 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:29:27 banner-nosession-43415 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:29:27 banner-nosession-43415 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 07:29:27 banner-nosession-43415 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:29:48 banner-nosession-43415 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 07:29:48 banner-nosession-43415 usermod[764]: change user 'sshd' password
+Nov 12 07:29:48 banner-nosession-43415 chage[771]: changed password expiry for sshd
+Nov 12 07:29:50 banner-nosession-43415 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 07:29:50 banner-nosession-43415 sshd[1206]: Server listening on :: port 22.
+Nov 12 07:29:53 banner-nosession-43415 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:29:53 banner-nosession-43415 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 07:29:53 banner-nosession-43415 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:30:02 banner-nosession-43415 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:34:43 banner-nosession-43415 useradd[1555]: new group: name=student, GID=1001
+Nov 12 07:34:44 banner-nosession-43415 useradd[1555]: new user: name=student, UID=1001, GID=1001, home=/home/student, shell=/bin/bash, from=none
+Nov 12 07:34:45 banner-nosession-43415 usermod[1564]: change user 'student' password
+Nov 12 07:34:46 banner-nosession-43415 sshd[1571]: Accepted password for student from 10.0.3.1 port 43630 ssh2
+Nov 12 07:34:46 banner-nosession-43415 sshd[1571]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Nov 12 07:34:46 banner-nosession-43415 systemd-logind[164]: New session 246 of user student.
+Nov 12 07:34:46 banner-nosession-43415 systemd: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Nov 12 07:34:48 banner-nosession-43415 sshd[1571]: pam_unix(sshd:session): session closed for user student
+Nov 12 07:34:48 banner-nosession-43415 systemd-logind[164]: Session 246 logged out. Waiting for processes to exit.
+Nov 12 07:34:48 banner-nosession-43415 systemd-logind[164]: Removed session 246.

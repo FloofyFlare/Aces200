@@ -1,0 +1,29 @@
+Nov 12 07:06:45 banner-session-43402 systemd-logind[164]: New seat seat0.
+Nov 12 07:06:50 banner-session-43402 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 07:06:50 banner-session-43402 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:06:58 banner-session-43402 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:06:58 banner-session-43402 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 07:06:58 banner-session-43402 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:07:26 banner-session-43402 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 07:07:26 banner-session-43402 usermod[764]: change user 'sshd' password
+Nov 12 07:07:26 banner-session-43402 chage[771]: changed password expiry for sshd
+Nov 12 07:07:29 banner-session-43402 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 07:07:29 banner-session-43402 sshd[1206]: Server listening on :: port 22.
+Nov 12 07:07:32 banner-session-43402 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:07:32 banner-session-43402 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 07:07:32 banner-session-43402 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 07:07:41 banner-session-43402 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 07:17:01 banner-session-43402 CRON[1558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 12 07:17:02 banner-session-43402 CRON[1558]: pam_unix(cron:session): session closed for user root
+Nov 12 07:23:39 banner-session-43402 useradd[1563]: new group: name=debian, GID=1001
+Nov 12 07:23:39 banner-session-43402 useradd[1563]: new user: name=debian, UID=1001, GID=1001, home=/home/debian, shell=/bin/bash, from=none
+Nov 12 07:23:39 banner-session-43402 usermod[1572]: change user 'debian' password
+Nov 12 07:23:39 banner-session-43402 sshd[1579]: Accepted password for debian from 10.0.3.1 port 37826 ssh2
+Nov 12 07:23:39 banner-session-43402 sshd[1579]: pam_unix(sshd:session): session opened for user debian by (uid=0)
+Nov 12 07:23:40 banner-session-43402 systemd-logind[164]: New session 244 of user debian.
+Nov 12 07:23:40 banner-session-43402 systemd: pam_unix(systemd-user:session): session opened for user debian by (uid=0)
+Nov 12 07:23:41 banner-session-43402 sshd[1596]: Received disconnect from 10.0.3.1 port 37826:11: 
+Nov 12 07:23:41 banner-session-43402 sshd[1596]: Disconnected from user debian 10.0.3.1 port 37826
+Nov 12 07:23:41 banner-session-43402 sshd[1579]: pam_unix(sshd:session): session closed for user debian
+Nov 12 07:23:41 banner-session-43402 systemd-logind[164]: Session 244 logged out. Waiting for processes to exit.
+Nov 12 07:23:41 banner-session-43402 systemd-logind[164]: Removed session 244.

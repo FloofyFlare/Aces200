@@ -1,0 +1,27 @@
+Nov 11 01:47:49 banner-nosession-43044 systemd-logind[164]: New seat seat0.
+Nov 11 01:47:52 banner-nosession-43044 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 01:47:52 banner-nosession-43044 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:48:00 banner-nosession-43044 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:48:00 banner-nosession-43044 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 01:48:00 banner-nosession-43044 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:48:13 banner-nosession-43044 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 01:48:13 banner-nosession-43044 usermod[765]: change user 'sshd' password
+Nov 11 01:48:14 banner-nosession-43044 chage[772]: changed password expiry for sshd
+Nov 11 01:48:16 banner-nosession-43044 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov 11 01:48:16 banner-nosession-43044 sshd[1207]: Server listening on :: port 22.
+Nov 11 01:48:18 banner-nosession-43044 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:48:18 banner-nosession-43044 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 01:48:18 banner-nosession-43044 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:48:24 banner-nosession-43044 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:49:09 banner-nosession-43044 useradd[1556]: new group: name=livy, GID=1001
+Nov 11 01:49:09 banner-nosession-43044 useradd[1556]: new user: name=livy, UID=1001, GID=1001, home=/home/livy, shell=/bin/bash, from=none
+Nov 11 01:49:09 banner-nosession-43044 usermod[1565]: change user 'livy' password
+Nov 11 01:49:09 banner-nosession-43044 sshd[1572]: Accepted password for livy from 10.0.3.1 port 60988 ssh2
+Nov 11 01:49:09 banner-nosession-43044 sshd[1572]: pam_unix(sshd:session): session opened for user livy by (uid=0)
+Nov 11 01:49:09 banner-nosession-43044 systemd-logind[164]: New session 17 of user livy.
+Nov 11 01:49:09 banner-nosession-43044 systemd: pam_unix(systemd-user:session): session opened for user livy by (uid=0)
+Nov 11 01:49:10 banner-nosession-43044 sshd[1589]: Received disconnect from 10.0.3.1 port 60988:11: 
+Nov 11 01:49:10 banner-nosession-43044 sshd[1589]: Disconnected from user livy 10.0.3.1 port 60988
+Nov 11 01:49:11 banner-nosession-43044 sshd[1572]: pam_unix(sshd:session): session closed for user livy
+Nov 11 01:49:11 banner-nosession-43044 systemd-logind[164]: Session 17 logged out. Waiting for processes to exit.
+Nov 11 01:49:11 banner-nosession-43044 systemd-logind[164]: Removed session 17.

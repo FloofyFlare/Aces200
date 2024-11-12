@@ -1,0 +1,25 @@
+Nov 11 01:52:08 banner-session-43048 systemd-logind[164]: New seat seat0.
+Nov 11 01:52:12 banner-session-43048 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 01:52:12 banner-session-43048 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:52:21 banner-session-43048 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:52:21 banner-session-43048 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 01:52:21 banner-session-43048 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:52:40 banner-session-43048 useradd[757]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 01:52:40 banner-session-43048 usermod[765]: change user 'sshd' password
+Nov 11 01:52:41 banner-session-43048 chage[772]: changed password expiry for sshd
+Nov 11 01:52:43 banner-session-43048 sshd[1207]: Server listening on 0.0.0.0 port 22.
+Nov 11 01:52:43 banner-session-43048 sshd[1207]: Server listening on :: port 22.
+Nov 11 01:52:44 banner-session-43048 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:52:44 banner-session-43048 sudo:     root : TTY=pts/5 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 01:52:44 banner-session-43048 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 01:52:51 banner-session-43048 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 01:53:47 banner-session-43048 useradd[1559]: new group: name=pcavagnero, GID=1001
+Nov 11 01:53:47 banner-session-43048 useradd[1559]: new user: name=pcavagnero, UID=1001, GID=1001, home=/home/pcavagnero, shell=/bin/bash, from=none
+Nov 11 01:53:48 banner-session-43048 usermod[1568]: change user 'pcavagnero' password
+Nov 11 01:53:48 banner-session-43048 sshd[1575]: Accepted password for pcavagnero from 10.0.3.1 port 51988 ssh2
+Nov 11 01:53:48 banner-session-43048 sshd[1575]: pam_unix(sshd:session): session opened for user pcavagnero by (uid=0)
+Nov 11 01:53:48 banner-session-43048 systemd-logind[164]: New session 23 of user pcavagnero.
+Nov 11 01:53:48 banner-session-43048 systemd: pam_unix(systemd-user:session): session opened for user pcavagnero by (uid=0)
+Nov 11 01:53:57 banner-session-43048 sshd[1575]: pam_unix(sshd:session): session closed for user pcavagnero
+Nov 11 01:53:57 banner-session-43048 systemd-logind[164]: Session 23 logged out. Waiting for processes to exit.
+Nov 11 01:53:57 banner-session-43048 systemd-logind[164]: Removed session 23.

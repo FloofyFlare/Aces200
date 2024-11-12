@@ -1,0 +1,27 @@
+Nov 11 22:48:44 nobanner-session-43093 systemd-logind[164]: New seat seat0.
+Nov 11 22:48:47 nobanner-session-43093 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 22:48:47 nobanner-session-43093 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:48:55 nobanner-session-43093 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:48:55 nobanner-session-43093 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 22:48:55 nobanner-session-43093 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:49:06 nobanner-session-43093 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 22:49:06 nobanner-session-43093 usermod[764]: change user 'sshd' password
+Nov 11 22:49:07 nobanner-session-43093 chage[771]: changed password expiry for sshd
+Nov 11 22:49:09 nobanner-session-43093 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 11 22:49:09 nobanner-session-43093 sshd[1206]: Server listening on :: port 22.
+Nov 11 22:49:11 nobanner-session-43093 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:49:11 nobanner-session-43093 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 22:49:11 nobanner-session-43093 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:49:19 nobanner-session-43093 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:49:21 nobanner-session-43093 useradd[1551]: new group: name=postgres, GID=1001
+Nov 11 22:49:21 nobanner-session-43093 useradd[1551]: new user: name=postgres, UID=1001, GID=1001, home=/home/postgres, shell=/bin/bash, from=none
+Nov 11 22:49:21 nobanner-session-43093 usermod[1560]: change user 'postgres' password
+Nov 11 22:49:22 nobanner-session-43093 sshd[1567]: Accepted password for postgres from 10.0.3.1 port 53528 ssh2
+Nov 11 22:49:22 nobanner-session-43093 sshd[1567]: pam_unix(sshd:session): session opened for user postgres by (uid=0)
+Nov 11 22:49:22 nobanner-session-43093 systemd-logind[164]: New session 31 of user postgres.
+Nov 11 22:49:22 nobanner-session-43093 systemd: pam_unix(systemd-user:session): session opened for user postgres by (uid=0)
+Nov 11 22:49:24 nobanner-session-43093 sshd[1584]: Received disconnect from 10.0.3.1 port 53528:11: 
+Nov 11 22:49:24 nobanner-session-43093 sshd[1584]: Disconnected from user postgres 10.0.3.1 port 53528
+Nov 11 22:49:24 nobanner-session-43093 sshd[1567]: pam_unix(sshd:session): session closed for user postgres
+Nov 11 22:49:24 nobanner-session-43093 systemd-logind[164]: Session 31 logged out. Waiting for processes to exit.
+Nov 11 22:49:24 nobanner-session-43093 systemd-logind[164]: Removed session 31.

@@ -1,0 +1,27 @@
+Nov 12 00:51:23 banner-session-43177 systemd-logind[164]: New seat seat0.
+Nov 12 00:51:26 banner-session-43177 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 00:51:26 banner-session-43177 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 00:51:35 banner-session-43177 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 00:51:35 banner-session-43177 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 00:51:35 banner-session-43177 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 00:51:46 banner-session-43177 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 00:51:46 banner-session-43177 usermod[764]: change user 'sshd' password
+Nov 12 00:51:46 banner-session-43177 chage[771]: changed password expiry for sshd
+Nov 12 00:51:49 banner-session-43177 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 00:51:49 banner-session-43177 sshd[1206]: Server listening on :: port 22.
+Nov 12 00:51:52 banner-session-43177 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 00:51:52 banner-session-43177 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 00:51:52 banner-session-43177 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 00:51:58 banner-session-43177 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 00:56:13 banner-session-43177 useradd[1557]: new group: name=Ab123456, GID=1001
+Nov 12 00:56:13 banner-session-43177 useradd[1557]: new user: name=Ab123456, UID=1001, GID=1001, home=/home/Ab123456, shell=/bin/bash, from=none
+Nov 12 00:56:13 banner-session-43177 usermod[1566]: change user 'Ab123456' password
+Nov 12 00:56:13 banner-session-43177 sshd[1573]: Accepted password for Ab123456 from 10.0.3.1 port 46926 ssh2
+Nov 12 00:56:13 banner-session-43177 sshd[1573]: pam_unix(sshd:session): session opened for user Ab123456 by (uid=0)
+Nov 12 00:56:13 banner-session-43177 systemd-logind[164]: New session 85 of user Ab123456.
+Nov 12 00:56:13 banner-session-43177 systemd: pam_unix(systemd-user:session): session opened for user Ab123456 by (uid=0)
+Nov 12 00:56:16 banner-session-43177 sshd[1590]: Received disconnect from 10.0.3.1 port 46926:11: 
+Nov 12 00:56:16 banner-session-43177 sshd[1590]: Disconnected from user Ab123456 10.0.3.1 port 46926
+Nov 12 00:56:16 banner-session-43177 sshd[1573]: pam_unix(sshd:session): session closed for user Ab123456
+Nov 12 00:56:16 banner-session-43177 systemd-logind[164]: Session 85 logged out. Waiting for processes to exit.
+Nov 12 00:56:16 banner-session-43177 systemd-logind[164]: Removed session 85.

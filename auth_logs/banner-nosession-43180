@@ -1,0 +1,27 @@
+Nov 12 01:05:00 banner-nosession-43180 systemd-logind[164]: New seat seat0.
+Nov 12 01:05:03 banner-nosession-43180 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 01:05:03 banner-nosession-43180 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 01:05:11 banner-nosession-43180 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 01:05:11 banner-nosession-43180 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 01:05:11 banner-nosession-43180 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 01:05:30 banner-nosession-43180 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 01:05:30 banner-nosession-43180 usermod[764]: change user 'sshd' password
+Nov 12 01:05:30 banner-nosession-43180 chage[771]: changed password expiry for sshd
+Nov 12 01:05:33 banner-nosession-43180 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 01:05:33 banner-nosession-43180 sshd[1206]: Server listening on :: port 22.
+Nov 12 01:05:35 banner-nosession-43180 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 01:05:35 banner-nosession-43180 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 01:05:35 banner-nosession-43180 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 01:05:49 banner-nosession-43180 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 01:12:58 banner-nosession-43180 useradd[1555]: new group: name=unknown, GID=1001
+Nov 12 01:12:58 banner-nosession-43180 useradd[1555]: new user: name=unknown, UID=1001, GID=1001, home=/home/unknown, shell=/bin/bash, from=none
+Nov 12 01:12:59 banner-nosession-43180 usermod[1564]: change user 'unknown' password
+Nov 12 01:12:59 banner-nosession-43180 sshd[1571]: Accepted password for unknown from 10.0.3.1 port 37702 ssh2
+Nov 12 01:12:59 banner-nosession-43180 sshd[1571]: pam_unix(sshd:session): session opened for user unknown by (uid=0)
+Nov 12 01:12:59 banner-nosession-43180 systemd-logind[164]: New session 99 of user unknown.
+Nov 12 01:12:59 banner-nosession-43180 systemd: pam_unix(systemd-user:session): session opened for user unknown by (uid=0)
+Nov 12 01:13:00 banner-nosession-43180 sshd[1588]: Received disconnect from 10.0.3.1 port 37702:11: 
+Nov 12 01:13:00 banner-nosession-43180 sshd[1588]: Disconnected from user unknown 10.0.3.1 port 37702
+Nov 12 01:13:00 banner-nosession-43180 sshd[1571]: pam_unix(sshd:session): session closed for user unknown
+Nov 12 01:13:00 banner-nosession-43180 systemd-logind[164]: Session 99 logged out. Waiting for processes to exit.
+Nov 12 01:13:00 banner-nosession-43180 systemd-logind[164]: Removed session 99.

@@ -1,0 +1,78 @@
+(node:37803) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-nosession-43050',
+  containerIp: '10.0.3.198',
+  mitmPort: 43050,
+  autoAccessFixed: 1
+}
+2024-11-10 20:58:12.628 - [Info] MITM Version: 2
+2024-11-10 20:58:12.630 - [Info] Auto Access Enabled: true
+2024-11-10 20:58:12.630 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-10 20:58:12.640 - [Info] SSH man-in-the-middle server for 10.0.3.198 listening on 10.0.3.1:43050
+2024-11-10 21:00:26.758 - [Debug] [Connection] Attacker connected: 66.66.116.251 | Client Identification: SSH-2.0-libssh2_1.11.0
+2024-11-10 21:00:27.626 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:27.627 - [Debug] [Auto Access] Attacker: 66.66.116.251, Threshold: 1, Attempts: 1
+2024-11-10 21:00:27.627 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-10 21:00:27.627 - [Debug] [Auto Access] Adding the following credentials: 'root:root'
+2024-11-10 21:00:27.742 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-10 21:00:27.744 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-10 21:00:27.744 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.198
+2024-11-10 21:00:31.567 - [Debug] [LXC] Authentication Failed
+2024-11-10 21:00:31.567 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-10 21:00:31.568 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-10 21:00:31.568 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-10 21:00:31.569 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-10 21:00:31.578 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-10 21:00:31.580 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-10 21:00:31.664 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:31.665 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:31.666 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 3 attempts. Remaining: 3 attempts
+2024-11-10 21:00:31.766 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:31.767 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:31.767 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 4 attempts. Remaining: 2 attempts
+2024-11-10 21:00:31.908 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:31.909 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:31.909 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 5 attempts. Remaining: 1 attempts
+2024-11-10 21:00:32.005 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:32.005 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:32.006 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 6 attempts. Remaining: 0 attempts
+2024-11-10 21:00:32.006 - [Debug] [Connection] Max Login Attempts Reached - Closing connection on attacker
+2024-11-10 21:00:32.006 - [Debug] [Connection] Attacker closed the connection
+2024-11-10 21:00:32.115 - [Debug] [Connection] Attacker connected: 66.66.116.251 | Client Identification: SSH-2.0-libssh2_1.11.0
+2024-11-10 21:00:32.517 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:32.517 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:32.518 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-10 21:00:32.658 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:32.658 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:32.659 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-10 21:00:32.759 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:32.760 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:32.760 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 3 attempts. Remaining: 3 attempts
+2024-11-10 21:00:32.855 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:32.856 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:32.857 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 4 attempts. Remaining: 2 attempts
+2024-11-10 21:00:32.995 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:32.995 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:32.996 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 5 attempts. Remaining: 1 attempts
+2024-11-10 21:00:33.089 - [Debug] [Auth] Attacker 66.66.116.251 trying to authenticate with 'password'
+2024-11-10 21:00:33.089 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-10 21:00:33.090 - [Debug] [Auth] Attacker: 66.66.116.251 has so far made 6 attempts. Remaining: 0 attempts
+2024-11-10 21:00:33.090 - [Debug] [Connection] Max Login Attempts Reached - Closing connection on attacker
+2024-11-10 21:00:33.090 - [Debug] [Connection] Attacker closed the connection
+2024-11-10 21:00:33.192 - [Debug] [Connection] Attacker connected: 66.66.116.251 | Client Identification: SSH-2.0-libssh2_1.11.0
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

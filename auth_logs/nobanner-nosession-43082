@@ -1,0 +1,25 @@
+Nov 11 22:30:42 nobanner-nosession-43082 systemd-logind[164]: New seat seat0.
+Nov 11 22:30:46 nobanner-nosession-43082 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 11 22:30:46 nobanner-nosession-43082 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:30:54 nobanner-nosession-43082 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:30:54 nobanner-nosession-43082 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 11 22:30:54 nobanner-nosession-43082 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:31:04 nobanner-nosession-43082 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 11 22:31:04 nobanner-nosession-43082 usermod[764]: change user 'sshd' password
+Nov 11 22:31:04 nobanner-nosession-43082 chage[771]: changed password expiry for sshd
+Nov 11 22:31:07 nobanner-nosession-43082 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 11 22:31:07 nobanner-nosession-43082 sshd[1206]: Server listening on :: port 22.
+Nov 11 22:31:09 nobanner-nosession-43082 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:31:09 nobanner-nosession-43082 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 11 22:31:09 nobanner-nosession-43082 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 22:31:17 nobanner-nosession-43082 sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:32:04 nobanner-nosession-43082 useradd[1548]: new group: name=stefano, GID=1001
+Nov 11 22:32:04 nobanner-nosession-43082 useradd[1548]: new user: name=stefano, UID=1001, GID=1001, home=/home/stefano, shell=/bin/bash, from=none
+Nov 11 22:32:04 nobanner-nosession-43082 usermod[1557]: change user 'stefano' password
+Nov 11 22:32:04 nobanner-nosession-43082 sshd[1564]: Accepted password for stefano from 10.0.3.1 port 55958 ssh2
+Nov 11 22:32:04 nobanner-nosession-43082 sshd[1564]: pam_unix(sshd:session): session opened for user stefano by (uid=0)
+Nov 11 22:32:05 nobanner-nosession-43082 systemd-logind[164]: New session 22 of user stefano.
+Nov 11 22:32:05 nobanner-nosession-43082 systemd: pam_unix(systemd-user:session): session opened for user stefano by (uid=0)
+Nov 11 22:32:10 nobanner-nosession-43082 sshd[1564]: pam_unix(sshd:session): session closed for user stefano
+Nov 11 22:32:10 nobanner-nosession-43082 systemd-logind[164]: Session 22 logged out. Waiting for processes to exit.
+Nov 11 22:32:10 nobanner-nosession-43082 systemd-logind[164]: Removed session 22.
