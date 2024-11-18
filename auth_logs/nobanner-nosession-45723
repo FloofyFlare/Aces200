@@ -1,0 +1,25 @@
+Nov 16 06:43:31 nobanner-nosession-45723 systemd-logind[165]: New seat seat0.
+Nov 16 06:43:35 nobanner-nosession-45723 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 06:43:35 nobanner-nosession-45723 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 06:43:43 nobanner-nosession-45723 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 06:43:43 nobanner-nosession-45723 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 06:43:43 nobanner-nosession-45723 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 06:43:51 nobanner-nosession-45723 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 06:43:51 nobanner-nosession-45723 usermod[764]: change user 'sshd' password
+Nov 16 06:43:51 nobanner-nosession-45723 chage[771]: changed password expiry for sshd
+Nov 16 06:43:53 nobanner-nosession-45723 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 06:43:53 nobanner-nosession-45723 sshd[1206]: Server listening on :: port 22.
+Nov 16 06:43:56 nobanner-nosession-45723 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 06:43:56 nobanner-nosession-45723 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 06:43:56 nobanner-nosession-45723 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 06:44:05 nobanner-nosession-45723 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 06:44:24 nobanner-nosession-45723 useradd[1548]: new group: name=emqx, GID=1001
+Nov 16 06:44:24 nobanner-nosession-45723 useradd[1548]: new user: name=emqx, UID=1001, GID=1001, home=/home/emqx, shell=/bin/bash, from=none
+Nov 16 06:44:24 nobanner-nosession-45723 usermod[1557]: change user 'emqx' password
+Nov 16 06:44:24 nobanner-nosession-45723 sshd[1564]: Accepted password for emqx from 10.0.3.1 port 40164 ssh2
+Nov 16 06:44:24 nobanner-nosession-45723 sshd[1564]: pam_unix(sshd:session): session opened for user emqx by (uid=0)
+Nov 16 06:44:24 nobanner-nosession-45723 systemd-logind[165]: New session 1547 of user emqx.
+Nov 16 06:44:24 nobanner-nosession-45723 systemd: pam_unix(systemd-user:session): session opened for user emqx by (uid=0)
+Nov 16 06:44:31 nobanner-nosession-45723 sshd[1564]: pam_unix(sshd:session): session closed for user emqx
+Nov 16 06:44:31 nobanner-nosession-45723 systemd-logind[165]: Session 1547 logged out. Waiting for processes to exit.
+Nov 16 06:44:31 nobanner-nosession-45723 systemd-logind[165]: Removed session 1547.

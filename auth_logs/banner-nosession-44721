@@ -1,0 +1,27 @@
+Nov 13 23:52:39 banner-nosession-44721 systemd-logind[165]: New seat seat0.
+Nov 13 23:52:42 banner-nosession-44721 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 23:52:42 banner-nosession-44721 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 23:52:51 banner-nosession-44721 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 23:52:51 banner-nosession-44721 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 23:52:51 banner-nosession-44721 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 23:53:34 banner-nosession-44721 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 23:53:34 banner-nosession-44721 usermod[764]: change user 'sshd' password
+Nov 13 23:53:34 banner-nosession-44721 chage[771]: changed password expiry for sshd
+Nov 13 23:53:36 banner-nosession-44721 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 23:53:36 banner-nosession-44721 sshd[1206]: Server listening on :: port 22.
+Nov 13 23:53:38 banner-nosession-44721 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 23:53:38 banner-nosession-44721 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 23:53:38 banner-nosession-44721 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 23:53:49 banner-nosession-44721 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 23:56:33 banner-nosession-44721 useradd[1559]: new group: name=teste, GID=1001
+Nov 13 23:56:33 banner-nosession-44721 useradd[1559]: new user: name=teste, UID=1001, GID=1001, home=/home/teste, shell=/bin/bash, from=none
+Nov 13 23:56:34 banner-nosession-44721 usermod[1568]: change user 'teste' password
+Nov 13 23:56:34 banner-nosession-44721 sshd[1575]: Accepted password for teste from 10.0.3.1 port 46262 ssh2
+Nov 13 23:56:34 banner-nosession-44721 sshd[1575]: pam_unix(sshd:session): session opened for user teste by (uid=0)
+Nov 13 23:56:34 banner-nosession-44721 systemd-logind[165]: New session 975 of user teste.
+Nov 13 23:56:34 banner-nosession-44721 systemd: pam_unix(systemd-user:session): session opened for user teste by (uid=0)
+Nov 13 23:56:35 banner-nosession-44721 sshd[1592]: Received disconnect from 10.0.3.1 port 46262:11: 
+Nov 13 23:56:35 banner-nosession-44721 sshd[1592]: Disconnected from user teste 10.0.3.1 port 46262
+Nov 13 23:56:35 banner-nosession-44721 sshd[1575]: pam_unix(sshd:session): session closed for user teste
+Nov 13 23:56:35 banner-nosession-44721 systemd-logind[165]: Session 975 logged out. Waiting for processes to exit.
+Nov 13 23:56:35 banner-nosession-44721 systemd-logind[165]: Removed session 975.

@@ -1,0 +1,27 @@
+Nov 13 13:58:44 nobanner-session-44339 systemd-logind[164]: New seat seat0.
+Nov 13 13:58:48 nobanner-session-44339 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 13:58:48 nobanner-session-44339 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 13:58:57 nobanner-session-44339 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 13:58:57 nobanner-session-44339 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 13:58:57 nobanner-session-44339 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 13:59:24 nobanner-session-44339 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 13:59:25 nobanner-session-44339 usermod[764]: change user 'sshd' password
+Nov 13 13:59:25 nobanner-session-44339 chage[771]: changed password expiry for sshd
+Nov 13 13:59:28 nobanner-session-44339 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 13:59:28 nobanner-session-44339 sshd[1206]: Server listening on :: port 22.
+Nov 13 13:59:29 nobanner-session-44339 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 13:59:30 nobanner-session-44339 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 13:59:30 nobanner-session-44339 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 13:59:38 nobanner-session-44339 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 13:59:55 nobanner-session-44339 useradd[1551]: new group: name=kafka, GID=1001
+Nov 13 13:59:55 nobanner-session-44339 useradd[1551]: new user: name=kafka, UID=1001, GID=1001, home=/home/kafka, shell=/bin/bash, from=none
+Nov 13 13:59:55 nobanner-session-44339 usermod[1560]: change user 'kafka' password
+Nov 13 13:59:55 nobanner-session-44339 sshd[1567]: Accepted password for kafka from 10.0.3.1 port 37780 ssh2
+Nov 13 13:59:55 nobanner-session-44339 sshd[1567]: pam_unix(sshd:session): session opened for user kafka by (uid=0)
+Nov 13 13:59:55 nobanner-session-44339 systemd-logind[164]: New session 772 of user kafka.
+Nov 13 13:59:56 nobanner-session-44339 systemd: pam_unix(systemd-user:session): session opened for user kafka by (uid=0)
+Nov 13 13:59:58 nobanner-session-44339 sshd[1584]: Received disconnect from 10.0.3.1 port 37780:11: 
+Nov 13 13:59:58 nobanner-session-44339 sshd[1584]: Disconnected from user kafka 10.0.3.1 port 37780
+Nov 13 13:59:58 nobanner-session-44339 sshd[1567]: pam_unix(sshd:session): session closed for user kafka
+Nov 13 13:59:58 nobanner-session-44339 systemd-logind[164]: Session 772 logged out. Waiting for processes to exit.
+Nov 13 13:59:58 nobanner-session-44339 systemd-logind[164]: Removed session 772.

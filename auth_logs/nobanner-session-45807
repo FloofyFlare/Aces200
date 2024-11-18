@@ -1,0 +1,33 @@
+Nov 16 21:15:43 nobanner-session-45807 systemd-logind[164]: New seat seat0.
+Nov 16 21:15:47 nobanner-session-45807 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 21:15:47 nobanner-session-45807 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 21:15:55 nobanner-session-45807 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 21:15:55 nobanner-session-45807 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 21:15:55 nobanner-session-45807 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 21:16:06 nobanner-session-45807 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 21:16:07 nobanner-session-45807 usermod[764]: change user 'sshd' password
+Nov 16 21:16:07 nobanner-session-45807 chage[771]: changed password expiry for sshd
+Nov 16 21:16:09 nobanner-session-45807 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 21:16:09 nobanner-session-45807 sshd[1206]: Server listening on :: port 22.
+Nov 16 21:16:12 nobanner-session-45807 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 21:16:12 nobanner-session-45807 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 21:16:12 nobanner-session-45807 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 21:16:19 nobanner-session-45807 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 21:17:01 nobanner-session-45807 CRON[1551]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 16 21:17:01 nobanner-session-45807 CRON[1551]: pam_unix(cron:session): session closed for user root
+Nov 16 22:17:01 nobanner-session-45807 CRON[1561]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 16 22:17:01 nobanner-session-45807 CRON[1561]: pam_unix(cron:session): session closed for user root
+Nov 16 23:17:01 nobanner-session-45807 CRON[1567]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 16 23:17:01 nobanner-session-45807 CRON[1567]: pam_unix(cron:session): session closed for user root
+Nov 16 23:38:50 nobanner-session-45807 useradd[1572]: new group: name=vtiger, GID=1001
+Nov 16 23:38:50 nobanner-session-45807 useradd[1572]: new user: name=vtiger, UID=1001, GID=1001, home=/home/vtiger, shell=/bin/bash, from=none
+Nov 16 23:38:50 nobanner-session-45807 usermod[1581]: change user 'vtiger' password
+Nov 16 23:38:50 nobanner-session-45807 sshd[1588]: Accepted password for vtiger from 10.0.3.1 port 54730 ssh2
+Nov 16 23:38:50 nobanner-session-45807 sshd[1588]: pam_unix(sshd:session): session opened for user vtiger by (uid=0)
+Nov 16 23:38:50 nobanner-session-45807 systemd-logind[164]: New session 1641 of user vtiger.
+Nov 16 23:38:50 nobanner-session-45807 systemd: pam_unix(systemd-user:session): session opened for user vtiger by (uid=0)
+Nov 16 23:38:51 nobanner-session-45807 sshd[1605]: Received disconnect from 10.0.3.1 port 54730:11: 
+Nov 16 23:38:51 nobanner-session-45807 sshd[1605]: Disconnected from user vtiger 10.0.3.1 port 54730
+Nov 16 23:38:51 nobanner-session-45807 sshd[1588]: pam_unix(sshd:session): session closed for user vtiger
+Nov 16 23:38:51 nobanner-session-45807 systemd-logind[164]: Session 1641 logged out. Waiting for processes to exit.
+Nov 16 23:38:51 nobanner-session-45807 systemd-logind[164]: Removed session 1641.

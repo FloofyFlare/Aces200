@@ -1,0 +1,16 @@
+Nov 14 15:10:02 banner-nosession-45330 systemd-logind[165]: New seat seat0.
+Nov 14 15:10:05 banner-nosession-45330 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 15:10:05 banner-nosession-45330 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 15:10:13 banner-nosession-45330 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 15:10:13 banner-nosession-45330 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 15:10:13 banner-nosession-45330 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 15:10:29 banner-nosession-45330 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 15:10:29 banner-nosession-45330 usermod[764]: change user 'sshd' password
+Nov 14 15:10:29 banner-nosession-45330 chage[771]: changed password expiry for sshd
+Nov 14 15:10:32 banner-nosession-45330 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 15:10:32 banner-nosession-45330 sshd[1206]: Server listening on :: port 22.
+Nov 14 15:10:35 banner-nosession-45330 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 15:10:35 banner-nosession-45330 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 15:10:35 banner-nosession-45330 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 15:10:44 banner-nosession-45330 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 15:13:57 banner-nosession-45330 useradd[1559]: failed adding user 'operator', data deleted

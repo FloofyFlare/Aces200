@@ -1,0 +1,27 @@
+Nov 12 20:07:57 banner-session-43806 systemd-logind[164]: New seat seat0.
+Nov 12 20:08:01 banner-session-43806 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 20:08:01 banner-session-43806 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 20:08:09 banner-session-43806 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 20:08:09 banner-session-43806 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 20:08:09 banner-session-43806 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 20:08:23 banner-session-43806 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 20:08:23 banner-session-43806 usermod[764]: change user 'sshd' password
+Nov 12 20:08:24 banner-session-43806 chage[771]: changed password expiry for sshd
+Nov 12 20:08:27 banner-session-43806 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 20:08:27 banner-session-43806 sshd[1206]: Server listening on :: port 22.
+Nov 12 20:08:32 banner-session-43806 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 20:08:32 banner-session-43806 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 20:08:32 banner-session-43806 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 20:08:51 banner-session-43806 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 20:13:00 banner-session-43806 useradd[1558]: new group: name=debian, GID=1001
+Nov 12 20:13:00 banner-session-43806 useradd[1558]: new user: name=debian, UID=1001, GID=1001, home=/home/debian, shell=/bin/bash, from=none
+Nov 12 20:13:00 banner-session-43806 usermod[1567]: change user 'debian' password
+Nov 12 20:13:00 banner-session-43806 sshd[1574]: Accepted password for debian from 10.0.3.1 port 56834 ssh2
+Nov 12 20:13:00 banner-session-43806 sshd[1574]: pam_unix(sshd:session): session opened for user debian by (uid=0)
+Nov 12 20:13:00 banner-session-43806 systemd-logind[164]: New session 471 of user debian.
+Nov 12 20:13:00 banner-session-43806 systemd: pam_unix(systemd-user:session): session opened for user debian by (uid=0)
+Nov 12 20:14:02 banner-session-43806 sshd[1591]: Received disconnect from 10.0.3.1 port 56834:11: 
+Nov 12 20:14:02 banner-session-43806 sshd[1591]: Disconnected from user debian 10.0.3.1 port 56834
+Nov 12 20:14:02 banner-session-43806 sshd[1574]: pam_unix(sshd:session): session closed for user debian
+Nov 12 20:14:02 banner-session-43806 systemd-logind[164]: Session 471 logged out. Waiting for processes to exit.
+Nov 12 20:14:02 banner-session-43806 systemd-logind[164]: Removed session 471.

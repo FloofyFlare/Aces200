@@ -1,0 +1,29 @@
+Nov 14 20:10:32 nobanner-session-45504 systemd-logind[164]: New seat seat0.
+Nov 14 20:10:36 nobanner-session-45504 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 20:10:36 nobanner-session-45504 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 20:10:44 nobanner-session-45504 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 20:10:44 nobanner-session-45504 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 20:10:44 nobanner-session-45504 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 20:10:58 nobanner-session-45504 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 20:10:59 nobanner-session-45504 usermod[764]: change user 'sshd' password
+Nov 14 20:10:59 nobanner-session-45504 chage[771]: changed password expiry for sshd
+Nov 14 20:11:02 nobanner-session-45504 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 20:11:02 nobanner-session-45504 sshd[1206]: Server listening on :: port 22.
+Nov 14 20:11:05 nobanner-session-45504 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 20:11:05 nobanner-session-45504 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 20:11:05 nobanner-session-45504 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 20:11:13 nobanner-session-45504 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 20:11:17 nobanner-session-45504 sshd[1551]: Invalid user jenkins from 112.163.119.199 port 56410
+Nov 14 20:11:17 nobanner-session-45504 sshd[1551]: pam_unix(sshd:auth): check pass; user unknown
+Nov 14 20:11:17 nobanner-session-45504 sshd[1551]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.163.119.199 
+Nov 14 20:11:19 nobanner-session-45504 sshd[1551]: Failed password for invalid user jenkins from 112.163.119.199 port 56410 ssh2
+Nov 14 20:11:20 nobanner-session-45504 sshd[1551]: Connection closed by invalid user jenkins 112.163.119.199 port 56410 [preauth]
+Nov 14 20:11:27 nobanner-session-45504 useradd[1553]: failed adding user 'ubuntu', data deleted
+Nov 14 20:11:27 nobanner-session-45504 usermod[1554]: change user 'ubuntu' password
+Nov 14 20:11:28 nobanner-session-45504 sshd[1561]: Accepted password for ubuntu from 10.0.3.1 port 35060 ssh2
+Nov 14 20:11:28 nobanner-session-45504 sshd[1561]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov 14 20:11:28 nobanner-session-45504 systemd-logind[164]: New session 1358 of user ubuntu.
+Nov 14 20:11:28 nobanner-session-45504 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov 14 20:11:29 nobanner-session-45504 sshd[1561]: pam_unix(sshd:session): session closed for user ubuntu
+Nov 14 20:11:29 nobanner-session-45504 systemd-logind[164]: Session 1358 logged out. Waiting for processes to exit.
+Nov 14 20:11:29 nobanner-session-45504 systemd-logind[164]: Removed session 1358.

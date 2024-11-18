@@ -1,0 +1,35 @@
+(node:1798276) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-43881',
+  containerIp: '10.0.3.91',
+  mitmPort: 43881,
+  autoAccessFixed: 1
+}
+2024-11-12 18:07:27.844 - [Info] MITM Version: 2
+2024-11-12 18:07:27.856 - [Info] Auto Access Enabled: true
+2024-11-12 18:07:27.857 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-12 18:07:27.888 - [Info] SSH man-in-the-middle server for 10.0.3.91 listening on 10.0.3.1:43881
+2024-11-12 18:16:51.334 - [Debug] [Connection] Attacker connected: 139.19.117.131 | Client Identification: SSH-2.0-Go
+2024-11-12 18:16:51.966 - [Debug] [Auth] Attacker 139.19.117.131 trying to authenticate with 'publickey'
+2024-11-12 18:16:51.969 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2024-11-12 18:16:51.973 - [Debug] [Auth] Attacker: 139.19.117.131 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-12 18:16:52.213 - [Debug] [Auth] Attacker 139.19.117.131 trying to authenticate with 'publickey'
+2024-11-12 18:16:52.214 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2024-11-12 18:16:52.215 - [Debug] [Auth] Attacker: 139.19.117.131 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-12 18:17:01.329 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

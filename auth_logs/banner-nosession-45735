@@ -1,0 +1,19 @@
+Nov 16 11:10:04 banner-nosession-45735 systemd-logind[165]: New seat seat0.
+Nov 16 11:10:07 banner-nosession-45735 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 11:10:07 banner-nosession-45735 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 11:10:15 banner-nosession-45735 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 11:10:15 banner-nosession-45735 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 11:10:15 banner-nosession-45735 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 11:10:24 banner-nosession-45735 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 11:10:24 banner-nosession-45735 usermod[764]: change user 'sshd' password
+Nov 16 11:10:24 banner-nosession-45735 chage[771]: changed password expiry for sshd
+Nov 16 11:10:26 banner-nosession-45735 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 11:10:26 banner-nosession-45735 sshd[1206]: Server listening on :: port 22.
+Nov 16 11:10:28 banner-nosession-45735 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 11:10:28 banner-nosession-45735 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 11:10:28 banner-nosession-45735 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 11:10:37 banner-nosession-45735 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 11:13:47 banner-nosession-45735 useradd[1559]: failed adding user 'root', data deleted
+Nov 16 11:13:48 banner-nosession-45735 usermod[1560]: change user 'root' password
+Nov 16 11:13:48 banner-nosession-45735 sshd[1567]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 16 11:13:50 banner-nosession-45735 sshd[1567]: Failed password for root from 10.0.3.1 port 60950 ssh2

@@ -1,0 +1,27 @@
+Nov 13 15:35:16 banner-nosession-44408 systemd-logind[164]: New seat seat0.
+Nov 13 15:35:20 banner-nosession-44408 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 15:35:20 banner-nosession-44408 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 15:35:27 banner-nosession-44408 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 15:35:27 banner-nosession-44408 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 15:35:27 banner-nosession-44408 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 15:35:39 banner-nosession-44408 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 15:35:40 banner-nosession-44408 usermod[764]: change user 'sshd' password
+Nov 13 15:35:40 banner-nosession-44408 chage[771]: changed password expiry for sshd
+Nov 13 15:35:41 banner-nosession-44408 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 15:35:41 banner-nosession-44408 sshd[1206]: Server listening on :: port 22.
+Nov 13 15:35:45 banner-nosession-44408 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 15:35:45 banner-nosession-44408 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 15:35:45 banner-nosession-44408 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 15:35:54 banner-nosession-44408 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 15:40:07 banner-nosession-44408 useradd[1559]: new group: name=default, GID=1001
+Nov 13 15:40:07 banner-nosession-44408 useradd[1559]: new user: name=default, UID=1001, GID=1001, home=/home/default, shell=/bin/bash, from=none
+Nov 13 15:40:07 banner-nosession-44408 usermod[1568]: change user 'default' password
+Nov 13 15:40:07 banner-nosession-44408 sshd[1575]: Accepted password for default from 10.0.3.1 port 48898 ssh2
+Nov 13 15:40:07 banner-nosession-44408 sshd[1575]: pam_unix(sshd:session): session opened for user default by (uid=0)
+Nov 13 15:40:07 banner-nosession-44408 systemd-logind[164]: New session 804 of user default.
+Nov 13 15:40:07 banner-nosession-44408 systemd: pam_unix(systemd-user:session): session opened for user default by (uid=0)
+Nov 13 15:41:09 banner-nosession-44408 sshd[1592]: Received disconnect from 10.0.3.1 port 48898:11: 
+Nov 13 15:41:09 banner-nosession-44408 sshd[1592]: Disconnected from user default 10.0.3.1 port 48898
+Nov 13 15:41:09 banner-nosession-44408 sshd[1575]: pam_unix(sshd:session): session closed for user default
+Nov 13 15:41:09 banner-nosession-44408 systemd-logind[164]: Session 804 logged out. Waiting for processes to exit.
+Nov 13 15:41:09 banner-nosession-44408 systemd-logind[164]: Removed session 804.

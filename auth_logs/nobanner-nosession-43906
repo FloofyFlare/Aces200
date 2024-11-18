@@ -1,0 +1,29 @@
+Nov 13 00:16:38 nobanner-nosession-43906 systemd-logind[165]: New seat seat0.
+Nov 13 00:16:41 nobanner-nosession-43906 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 00:16:41 nobanner-nosession-43906 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:16:49 nobanner-nosession-43906 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:16:49 nobanner-nosession-43906 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 00:16:49 nobanner-nosession-43906 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:17:00 nobanner-nosession-43906 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 00:17:00 nobanner-nosession-43906 usermod[764]: change user 'sshd' password
+Nov 13 00:17:00 nobanner-nosession-43906 chage[771]: changed password expiry for sshd
+Nov 13 00:17:01 nobanner-nosession-43906 CRON[784]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 13 00:17:01 nobanner-nosession-43906 CRON[784]: pam_unix(cron:session): session closed for user root
+Nov 13 00:17:03 nobanner-nosession-43906 sshd[1209]: Server listening on 0.0.0.0 port 22.
+Nov 13 00:17:03 nobanner-nosession-43906 sshd[1209]: Server listening on :: port 22.
+Nov 13 00:17:05 nobanner-nosession-43906 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:17:05 nobanner-nosession-43906 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 00:17:05 nobanner-nosession-43906 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:17:12 nobanner-nosession-43906 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:17:19 nobanner-nosession-43906 useradd[1551]: new group: name=plexserver, GID=1001
+Nov 13 00:17:19 nobanner-nosession-43906 useradd[1551]: new user: name=plexserver, UID=1001, GID=1001, home=/home/plexserver, shell=/bin/bash, from=none
+Nov 13 00:17:19 nobanner-nosession-43906 usermod[1560]: change user 'plexserver' password
+Nov 13 00:17:19 nobanner-nosession-43906 sshd[1567]: Accepted password for plexserver from 10.0.3.1 port 57914 ssh2
+Nov 13 00:17:19 nobanner-nosession-43906 sshd[1567]: pam_unix(sshd:session): session opened for user plexserver by (uid=0)
+Nov 13 00:17:19 nobanner-nosession-43906 systemd-logind[165]: New session 535 of user plexserver.
+Nov 13 00:17:19 nobanner-nosession-43906 systemd: pam_unix(systemd-user:session): session opened for user plexserver by (uid=0)
+Nov 13 00:17:21 nobanner-nosession-43906 sshd[1584]: Received disconnect from 10.0.3.1 port 57914:11: 
+Nov 13 00:17:21 nobanner-nosession-43906 sshd[1584]: Disconnected from user plexserver 10.0.3.1 port 57914
+Nov 13 00:17:21 nobanner-nosession-43906 sshd[1567]: pam_unix(sshd:session): session closed for user plexserver
+Nov 13 00:17:21 nobanner-nosession-43906 systemd-logind[165]: Session 535 logged out. Waiting for processes to exit.
+Nov 13 00:17:21 nobanner-nosession-43906 systemd-logind[165]: Removed session 535.

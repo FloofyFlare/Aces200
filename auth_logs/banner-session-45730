@@ -1,0 +1,21 @@
+Nov 16 09:37:26 banner-session-45730 systemd-logind[164]: New seat seat0.
+Nov 16 09:37:30 banner-session-45730 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 09:37:30 banner-session-45730 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 09:37:38 banner-session-45730 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 09:37:38 banner-session-45730 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 09:37:38 banner-session-45730 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 09:37:52 banner-session-45730 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 09:37:53 banner-session-45730 usermod[764]: change user 'sshd' password
+Nov 16 09:37:53 banner-session-45730 chage[771]: changed password expiry for sshd
+Nov 16 09:37:55 banner-session-45730 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 09:37:55 banner-session-45730 sshd[1206]: Server listening on :: port 22.
+Nov 16 09:37:57 banner-session-45730 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 09:37:57 banner-session-45730 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 09:37:57 banner-session-45730 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 09:38:07 banner-session-45730 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 09:38:46 banner-session-45730 useradd[1557]: failed adding user 'root', data deleted
+Nov 16 09:38:46 banner-session-45730 usermod[1558]: change user 'root' password
+Nov 16 09:38:46 banner-session-45730 sshd[1565]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 16 09:38:48 banner-session-45730 sshd[1565]: Failed password for root from 10.0.3.1 port 40000 ssh2
+Nov 16 09:38:49 banner-session-45730 sshd[1565]: Received disconnect from 10.0.3.1 port 40000:11:  [preauth]
+Nov 16 09:38:49 banner-session-45730 sshd[1565]: Disconnected from authenticating user root 10.0.3.1 port 40000 [preauth]

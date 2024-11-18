@@ -1,0 +1,27 @@
+Nov 14 10:36:01 banner-session-45128 systemd-logind[165]: New seat seat0.
+Nov 14 10:36:05 banner-session-45128 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 10:36:05 banner-session-45128 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 10:36:13 banner-session-45128 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 10:36:13 banner-session-45128 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 10:36:13 banner-session-45128 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 10:36:33 banner-session-45128 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 10:36:33 banner-session-45128 usermod[764]: change user 'sshd' password
+Nov 14 10:36:33 banner-session-45128 chage[771]: changed password expiry for sshd
+Nov 14 10:36:36 banner-session-45128 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 10:36:36 banner-session-45128 sshd[1206]: Server listening on :: port 22.
+Nov 14 10:36:38 banner-session-45128 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 10:36:38 banner-session-45128 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 10:36:38 banner-session-45128 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 10:36:46 banner-session-45128 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 10:44:23 banner-session-45128 useradd[1558]: new group: name=admin, GID=1001
+Nov 14 10:44:23 banner-session-45128 useradd[1558]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov 14 10:44:24 banner-session-45128 usermod[1567]: change user 'admin' password
+Nov 14 10:44:24 banner-session-45128 sshd[1574]: Accepted password for admin from 10.0.3.1 port 40892 ssh2
+Nov 14 10:44:24 banner-session-45128 sshd[1574]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov 14 10:44:24 banner-session-45128 systemd-logind[165]: New session 1163 of user admin.
+Nov 14 10:44:24 banner-session-45128 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov 14 10:45:25 banner-session-45128 sshd[1591]: Received disconnect from 10.0.3.1 port 40892:11: 
+Nov 14 10:45:25 banner-session-45128 sshd[1591]: Disconnected from user admin 10.0.3.1 port 40892
+Nov 14 10:45:25 banner-session-45128 sshd[1574]: pam_unix(sshd:session): session closed for user admin
+Nov 14 10:45:25 banner-session-45128 systemd-logind[165]: Session 1163 logged out. Waiting for processes to exit.
+Nov 14 10:45:25 banner-session-45128 systemd-logind[165]: Removed session 1163.

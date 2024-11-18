@@ -1,0 +1,28 @@
+(node:3405453) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-nosession-45556',
+  containerIp: '10.0.3.120',
+  mitmPort: 45556,
+  autoAccessFixed: 1
+}
+2024-11-15 00:16:24.683 - [Info] MITM Version: 2
+2024-11-15 00:16:24.685 - [Info] Auto Access Enabled: true
+2024-11-15 00:16:24.686 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-15 00:16:24.711 - [Info] SSH man-in-the-middle server for 10.0.3.120 listening on 10.0.3.1:45556
+2024-11-15 00:22:02.401 - [Debug] [Connection] Attacker connected: 117.91.186.55 | Client Identification: SSH-2.0-libssh_0.9.6
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

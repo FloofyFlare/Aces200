@@ -1,0 +1,27 @@
+Nov 14 05:58:28 banner-session-44945 systemd-logind[165]: New seat seat0.
+Nov 14 05:58:31 banner-session-44945 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 05:58:31 banner-session-44945 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 05:58:40 banner-session-44945 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 05:58:40 banner-session-44945 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 05:58:40 banner-session-44945 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 05:58:55 banner-session-44945 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 05:58:56 banner-session-44945 usermod[764]: change user 'sshd' password
+Nov 14 05:58:56 banner-session-44945 chage[771]: changed password expiry for sshd
+Nov 14 05:58:58 banner-session-44945 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 05:58:58 banner-session-44945 sshd[1206]: Server listening on :: port 22.
+Nov 14 05:58:59 banner-session-44945 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 05:58:59 banner-session-44945 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 05:58:59 banner-session-44945 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 05:59:08 banner-session-44945 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 06:01:42 banner-session-44945 useradd[1557]: new group: name=supervisor, GID=1001
+Nov 14 06:01:42 banner-session-44945 useradd[1557]: new user: name=supervisor, UID=1001, GID=1001, home=/home/supervisor, shell=/bin/bash, from=none
+Nov 14 06:01:42 banner-session-44945 usermod[1566]: change user 'supervisor' password
+Nov 14 06:01:42 banner-session-44945 sshd[1573]: Accepted password for supervisor from 10.0.3.1 port 50916 ssh2
+Nov 14 06:01:42 banner-session-44945 sshd[1573]: pam_unix(sshd:session): session opened for user supervisor by (uid=0)
+Nov 14 06:01:42 banner-session-44945 systemd-logind[165]: New session 1080 of user supervisor.
+Nov 14 06:01:42 banner-session-44945 systemd: pam_unix(systemd-user:session): session opened for user supervisor by (uid=0)
+Nov 14 06:01:43 banner-session-44945 sshd[1590]: Received disconnect from 10.0.3.1 port 50916:11: 
+Nov 14 06:01:43 banner-session-44945 sshd[1590]: Disconnected from user supervisor 10.0.3.1 port 50916
+Nov 14 06:01:43 banner-session-44945 sshd[1573]: pam_unix(sshd:session): session closed for user supervisor
+Nov 14 06:01:44 banner-session-44945 systemd-logind[165]: Session 1080 logged out. Waiting for processes to exit.
+Nov 14 06:01:44 banner-session-44945 systemd-logind[165]: Removed session 1080.

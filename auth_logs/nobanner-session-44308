@@ -1,0 +1,27 @@
+Nov 13 12:42:31 nobanner-session-44308 systemd-logind[164]: New seat seat0.
+Nov 13 12:42:34 nobanner-session-44308 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 12:42:34 nobanner-session-44308 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 12:42:42 nobanner-session-44308 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 12:42:42 nobanner-session-44308 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 12:42:42 nobanner-session-44308 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 12:42:51 nobanner-session-44308 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 12:42:51 nobanner-session-44308 usermod[764]: change user 'sshd' password
+Nov 13 12:42:52 nobanner-session-44308 chage[771]: changed password expiry for sshd
+Nov 13 12:42:54 nobanner-session-44308 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 12:42:54 nobanner-session-44308 sshd[1206]: Server listening on :: port 22.
+Nov 13 12:42:55 nobanner-session-44308 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 12:42:55 nobanner-session-44308 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 12:42:55 nobanner-session-44308 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 12:43:03 nobanner-session-44308 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 12:49:36 nobanner-session-44308 useradd[1552]: new group: name=Default, GID=1001
+Nov 13 12:49:36 nobanner-session-44308 useradd[1552]: new user: name=Default, UID=1001, GID=1001, home=/home/Default, shell=/bin/bash, from=none
+Nov 13 12:49:37 nobanner-session-44308 usermod[1561]: change user 'Default' password
+Nov 13 12:49:37 nobanner-session-44308 sshd[1568]: Accepted password for Default from 10.0.3.1 port 43372 ssh2
+Nov 13 12:49:37 nobanner-session-44308 sshd[1568]: pam_unix(sshd:session): session opened for user Default by (uid=0)
+Nov 13 12:49:37 nobanner-session-44308 systemd-logind[164]: New session 748 of user Default.
+Nov 13 12:49:37 nobanner-session-44308 systemd: pam_unix(systemd-user:session): session opened for user Default by (uid=0)
+Nov 13 12:49:38 nobanner-session-44308 sshd[1585]: Received disconnect from 10.0.3.1 port 43372:11: 
+Nov 13 12:49:38 nobanner-session-44308 sshd[1585]: Disconnected from user Default 10.0.3.1 port 43372
+Nov 13 12:49:38 nobanner-session-44308 sshd[1568]: pam_unix(sshd:session): session closed for user Default
+Nov 13 12:49:38 nobanner-session-44308 systemd-logind[164]: Session 748 logged out. Waiting for processes to exit.
+Nov 13 12:49:38 nobanner-session-44308 systemd-logind[164]: Removed session 748.

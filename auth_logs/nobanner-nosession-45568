@@ -1,0 +1,29 @@
+Nov 15 09:09:34 nobanner-nosession-45568 systemd-logind[165]: New seat seat0.
+Nov 15 09:09:37 nobanner-nosession-45568 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 15 09:09:37 nobanner-nosession-45568 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 09:09:45 nobanner-nosession-45568 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 09:09:45 nobanner-nosession-45568 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 15 09:09:45 nobanner-nosession-45568 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 09:09:54 nobanner-nosession-45568 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 15 09:09:54 nobanner-nosession-45568 usermod[764]: change user 'sshd' password
+Nov 15 09:09:54 nobanner-nosession-45568 chage[771]: changed password expiry for sshd
+Nov 15 09:09:55 nobanner-nosession-45568 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 15 09:09:55 nobanner-nosession-45568 sshd[1206]: Server listening on :: port 22.
+Nov 15 09:09:58 nobanner-nosession-45568 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 09:09:58 nobanner-nosession-45568 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 15 09:09:58 nobanner-nosession-45568 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 09:10:05 nobanner-nosession-45568 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 09:17:01 nobanner-nosession-45568 CRON[1549]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 15 09:17:01 nobanner-nosession-45568 CRON[1549]: pam_unix(cron:session): session closed for user root
+Nov 15 09:42:36 nobanner-nosession-45568 useradd[1556]: new group: name=gdalampiras, GID=1001
+Nov 15 09:42:36 nobanner-nosession-45568 useradd[1556]: new user: name=gdalampiras, UID=1001, GID=1001, home=/home/gdalampiras, shell=/bin/bash, from=none
+Nov 15 09:42:36 nobanner-nosession-45568 usermod[1565]: change user 'gdalampiras' password
+Nov 15 09:42:36 nobanner-nosession-45568 sshd[1572]: Accepted password for gdalampiras from 10.0.3.1 port 57352 ssh2
+Nov 15 09:42:36 nobanner-nosession-45568 sshd[1572]: pam_unix(sshd:session): session opened for user gdalampiras by (uid=0)
+Nov 15 09:42:37 nobanner-nosession-45568 systemd-logind[165]: New session 1448 of user gdalampiras.
+Nov 15 09:42:37 nobanner-nosession-45568 systemd: pam_unix(systemd-user:session): session opened for user gdalampiras by (uid=0)
+Nov 15 09:42:40 nobanner-nosession-45568 sshd[1589]: Received disconnect from 10.0.3.1 port 57352:11: 
+Nov 15 09:42:40 nobanner-nosession-45568 sshd[1589]: Disconnected from user gdalampiras 10.0.3.1 port 57352
+Nov 15 09:42:40 nobanner-nosession-45568 sshd[1572]: pam_unix(sshd:session): session closed for user gdalampiras
+Nov 15 09:42:40 nobanner-nosession-45568 systemd-logind[165]: Session 1448 logged out. Waiting for processes to exit.
+Nov 15 09:42:40 nobanner-nosession-45568 systemd-logind[165]: Removed session 1448.

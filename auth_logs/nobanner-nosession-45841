@@ -1,0 +1,26 @@
+Nov 17 06:22:05 nobanner-nosession-45841 systemd-logind[164]: New seat seat0.
+Nov 17 06:22:09 nobanner-nosession-45841 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 17 06:22:09 nobanner-nosession-45841 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 06:22:17 nobanner-nosession-45841 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 06:22:17 nobanner-nosession-45841 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 17 06:22:17 nobanner-nosession-45841 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 06:22:27 nobanner-nosession-45841 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 17 06:22:27 nobanner-nosession-45841 usermod[764]: change user 'sshd' password
+Nov 17 06:22:27 nobanner-nosession-45841 chage[771]: changed password expiry for sshd
+Nov 17 06:22:29 nobanner-nosession-45841 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 17 06:22:29 nobanner-nosession-45841 sshd[1206]: Server listening on :: port 22.
+Nov 17 06:22:30 nobanner-nosession-45841 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 06:22:30 nobanner-nosession-45841 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 17 06:22:30 nobanner-nosession-45841 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 06:22:39 nobanner-nosession-45841 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 06:25:01 nobanner-nosession-45841 CRON[1548]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 06:25:01 nobanner-nosession-45841 CRON[1548]: pam_unix(cron:session): session closed for user root
+Nov 17 06:25:48 nobanner-nosession-45841 useradd[1595]: failed adding user 'ubuntu', data deleted
+Nov 17 06:25:48 nobanner-nosession-45841 usermod[1596]: change user 'ubuntu' password
+Nov 17 06:25:48 nobanner-nosession-45841 sshd[1603]: Accepted password for ubuntu from 10.0.3.1 port 49886 ssh2
+Nov 17 06:25:48 nobanner-nosession-45841 sshd[1603]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov 17 06:25:48 nobanner-nosession-45841 systemd-logind[164]: New session 1694 of user ubuntu.
+Nov 17 06:25:49 nobanner-nosession-45841 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov 17 06:25:54 nobanner-nosession-45841 sshd[1603]: pam_unix(sshd:session): session closed for user ubuntu
+Nov 17 06:25:55 nobanner-nosession-45841 systemd-logind[164]: Session 1694 logged out. Waiting for processes to exit.
+Nov 17 06:25:55 nobanner-nosession-45841 systemd-logind[164]: Removed session 1694.

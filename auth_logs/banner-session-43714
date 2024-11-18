@@ -1,0 +1,29 @@
+Nov 12 17:06:31 banner-session-43714 systemd-logind[165]: New seat seat0.
+Nov 12 17:06:35 banner-session-43714 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 17:06:35 banner-session-43714 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 17:06:43 banner-session-43714 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 17:06:44 banner-session-43714 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 17:06:44 banner-session-43714 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 17:07:05 banner-session-43714 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 17:07:05 banner-session-43714 usermod[764]: change user 'sshd' password
+Nov 12 17:07:05 banner-session-43714 chage[771]: changed password expiry for sshd
+Nov 12 17:07:08 banner-session-43714 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 17:07:08 banner-session-43714 sshd[1206]: Server listening on :: port 22.
+Nov 12 17:07:11 banner-session-43714 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 17:07:11 banner-session-43714 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 17:07:11 banner-session-43714 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 17:07:20 banner-session-43714 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 17:17:01 banner-session-43714 CRON[1558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 12 17:17:01 banner-session-43714 CRON[1558]: pam_unix(cron:session): session closed for user root
+Nov 12 17:22:36 banner-session-43714 useradd[1563]: new group: name=supervisor, GID=1001
+Nov 12 17:22:36 banner-session-43714 useradd[1563]: new user: name=supervisor, UID=1001, GID=1001, home=/home/supervisor, shell=/bin/bash, from=none
+Nov 12 17:22:36 banner-session-43714 usermod[1572]: change user 'supervisor' password
+Nov 12 17:22:36 banner-session-43714 sshd[1579]: Accepted password for supervisor from 10.0.3.1 port 40138 ssh2
+Nov 12 17:22:36 banner-session-43714 sshd[1579]: pam_unix(sshd:session): session opened for user supervisor by (uid=0)
+Nov 12 17:22:36 banner-session-43714 systemd-logind[165]: New session 439 of user supervisor.
+Nov 12 17:22:36 banner-session-43714 systemd: pam_unix(systemd-user:session): session opened for user supervisor by (uid=0)
+Nov 12 17:23:37 banner-session-43714 sshd[1596]: Received disconnect from 10.0.3.1 port 40138:11: 
+Nov 12 17:23:37 banner-session-43714 sshd[1596]: Disconnected from user supervisor 10.0.3.1 port 40138
+Nov 12 17:23:37 banner-session-43714 sshd[1579]: pam_unix(sshd:session): session closed for user supervisor
+Nov 12 17:23:38 banner-session-43714 systemd-logind[165]: Session 439 logged out. Waiting for processes to exit.
+Nov 12 17:23:38 banner-session-43714 systemd-logind[165]: Removed session 439.

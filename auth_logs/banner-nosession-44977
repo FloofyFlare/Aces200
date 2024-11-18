@@ -1,0 +1,29 @@
+Nov 14 07:13:07 banner-nosession-44977 systemd-logind[166]: New seat seat0.
+Nov 14 07:13:10 banner-nosession-44977 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 07:13:10 banner-nosession-44977 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 07:13:18 banner-nosession-44977 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 07:13:18 banner-nosession-44977 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 07:13:18 banner-nosession-44977 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 07:13:30 banner-nosession-44977 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 07:13:30 banner-nosession-44977 usermod[764]: change user 'sshd' password
+Nov 14 07:13:30 banner-nosession-44977 chage[771]: changed password expiry for sshd
+Nov 14 07:13:32 banner-nosession-44977 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 07:13:32 banner-nosession-44977 sshd[1206]: Server listening on :: port 22.
+Nov 14 07:13:35 banner-nosession-44977 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 07:13:35 banner-nosession-44977 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 07:13:35 banner-nosession-44977 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 07:13:43 banner-nosession-44977 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 07:17:01 banner-nosession-44977 CRON[1559]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 14 07:17:01 banner-nosession-44977 CRON[1559]: pam_unix(cron:session): session closed for user root
+Nov 14 07:18:11 banner-nosession-44977 useradd[1563]: new group: name=guest, GID=1001
+Nov 14 07:18:11 banner-nosession-44977 useradd[1563]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov 14 07:18:11 banner-nosession-44977 usermod[1572]: change user 'guest' password
+Nov 14 07:18:12 banner-nosession-44977 sshd[1579]: Accepted password for guest from 10.0.3.1 port 36274 ssh2
+Nov 14 07:18:12 banner-nosession-44977 sshd[1579]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov 14 07:18:12 banner-nosession-44977 systemd-logind[166]: New session 1094 of user guest.
+Nov 14 07:18:12 banner-nosession-44977 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov 14 07:18:13 banner-nosession-44977 sshd[1596]: Received disconnect from 10.0.3.1 port 36274:11: 
+Nov 14 07:18:13 banner-nosession-44977 sshd[1596]: Disconnected from user guest 10.0.3.1 port 36274
+Nov 14 07:18:13 banner-nosession-44977 sshd[1579]: pam_unix(sshd:session): session closed for user guest
+Nov 14 07:18:13 banner-nosession-44977 systemd-logind[166]: Session 1094 logged out. Waiting for processes to exit.
+Nov 14 07:18:13 banner-nosession-44977 systemd-logind[166]: Removed session 1094.

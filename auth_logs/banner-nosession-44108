@@ -1,0 +1,29 @@
+Nov 13 08:11:52 banner-nosession-44108 systemd-logind[165]: New seat seat0.
+Nov 13 08:11:55 banner-nosession-44108 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 08:11:55 banner-nosession-44108 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 08:12:04 banner-nosession-44108 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 08:12:04 banner-nosession-44108 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 08:12:04 banner-nosession-44108 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 08:12:20 banner-nosession-44108 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 08:12:20 banner-nosession-44108 usermod[764]: change user 'sshd' password
+Nov 13 08:12:20 banner-nosession-44108 chage[771]: changed password expiry for sshd
+Nov 13 08:12:23 banner-nosession-44108 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 08:12:23 banner-nosession-44108 sshd[1206]: Server listening on :: port 22.
+Nov 13 08:12:26 banner-nosession-44108 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 08:12:26 banner-nosession-44108 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 08:12:26 banner-nosession-44108 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 08:12:35 banner-nosession-44108 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 08:16:59 banner-nosession-44108 useradd[1560]: new group: name=sales, GID=1001
+Nov 13 08:16:59 banner-nosession-44108 useradd[1560]: new user: name=sales, UID=1001, GID=1001, home=/home/sales, shell=/bin/bash, from=none
+Nov 13 08:16:59 banner-nosession-44108 usermod[1569]: change user 'sales' password
+Nov 13 08:16:59 banner-nosession-44108 sshd[1576]: Accepted password for sales from 10.0.3.1 port 40216 ssh2
+Nov 13 08:16:59 banner-nosession-44108 sshd[1576]: pam_unix(sshd:session): session opened for user sales by (uid=0)
+Nov 13 08:16:59 banner-nosession-44108 systemd-logind[165]: New session 675 of user sales.
+Nov 13 08:16:59 banner-nosession-44108 systemd: pam_unix(systemd-user:session): session opened for user sales by (uid=0)
+Nov 13 08:17:00 banner-nosession-44108 sshd[1593]: Received disconnect from 10.0.3.1 port 40216:11: 
+Nov 13 08:17:00 banner-nosession-44108 sshd[1593]: Disconnected from user sales 10.0.3.1 port 40216
+Nov 13 08:17:00 banner-nosession-44108 sshd[1576]: pam_unix(sshd:session): session closed for user sales
+Nov 13 08:17:00 banner-nosession-44108 systemd-logind[165]: Session 675 logged out. Waiting for processes to exit.
+Nov 13 08:17:00 banner-nosession-44108 systemd-logind[165]: Removed session 675.
+Nov 13 08:17:01 banner-nosession-44108 CRON[1594]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 13 08:17:01 banner-nosession-44108 CRON[1594]: pam_unix(cron:session): session closed for user root

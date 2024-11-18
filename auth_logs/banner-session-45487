@@ -1,0 +1,25 @@
+Nov 14 19:22:40 banner-session-45487 systemd-logind[164]: New seat seat0.
+Nov 14 19:22:43 banner-session-45487 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 19:22:43 banner-session-45487 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:22:51 banner-session-45487 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:22:51 banner-session-45487 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 19:22:51 banner-session-45487 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:23:10 banner-session-45487 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 19:23:10 banner-session-45487 usermod[764]: change user 'sshd' password
+Nov 14 19:23:10 banner-session-45487 chage[771]: changed password expiry for sshd
+Nov 14 19:23:13 banner-session-45487 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 19:23:13 banner-session-45487 sshd[1206]: Server listening on :: port 22.
+Nov 14 19:23:15 banner-session-45487 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:23:15 banner-session-45487 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 19:23:15 banner-session-45487 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:23:27 banner-session-45487 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:24:17 banner-session-45487 useradd[1557]: new group: name=juliomartinez, GID=1001
+Nov 14 19:24:17 banner-session-45487 useradd[1557]: new user: name=juliomartinez, UID=1001, GID=1001, home=/home/juliomartinez, shell=/bin/bash, from=none
+Nov 14 19:24:17 banner-session-45487 usermod[1566]: change user 'juliomartinez' password
+Nov 14 19:24:17 banner-session-45487 sshd[1573]: Accepted password for juliomartinez from 10.0.3.1 port 39904 ssh2
+Nov 14 19:24:17 banner-session-45487 sshd[1573]: pam_unix(sshd:session): session opened for user juliomartinez by (uid=0)
+Nov 14 19:24:17 banner-session-45487 systemd-logind[164]: New session 1330 of user juliomartinez.
+Nov 14 19:24:17 banner-session-45487 systemd: pam_unix(systemd-user:session): session opened for user juliomartinez by (uid=0)
+Nov 14 19:24:23 banner-session-45487 sshd[1573]: pam_unix(sshd:session): session closed for user juliomartinez
+Nov 14 19:24:23 banner-session-45487 systemd-logind[164]: Session 1330 logged out. Waiting for processes to exit.
+Nov 14 19:24:23 banner-session-45487 systemd-logind[164]: Removed session 1330.

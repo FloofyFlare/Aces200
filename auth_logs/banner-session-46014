@@ -1,0 +1,25 @@
+Nov 18 14:36:48 banner-session-46014 systemd-logind[164]: New seat seat0.
+Nov 18 14:36:52 banner-session-46014 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 14:36:52 banner-session-46014 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 14:36:56 banner-session-46014 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 14:36:56 banner-session-46014 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 14:36:56 banner-session-46014 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 14:37:03 banner-session-46014 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 14:37:03 banner-session-46014 usermod[764]: change user 'sshd' password
+Nov 18 14:37:03 banner-session-46014 chage[771]: changed password expiry for sshd
+Nov 18 14:37:05 banner-session-46014 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 14:37:05 banner-session-46014 sshd[1206]: Server listening on :: port 22.
+Nov 18 14:37:06 banner-session-46014 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 14:37:06 banner-session-46014 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 14:37:06 banner-session-46014 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 14:37:10 banner-session-46014 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 14:38:19 banner-session-46014 useradd[1557]: new group: name=kf2server, GID=1001
+Nov 18 14:38:19 banner-session-46014 useradd[1557]: new user: name=kf2server, UID=1001, GID=1001, home=/home/kf2server, shell=/bin/bash, from=none
+Nov 18 14:38:19 banner-session-46014 usermod[1566]: change user 'kf2server' password
+Nov 18 14:38:19 banner-session-46014 sshd[1573]: Accepted password for kf2server from 10.0.3.1 port 52262 ssh2
+Nov 18 14:38:19 banner-session-46014 sshd[1573]: pam_unix(sshd:session): session opened for user kf2server by (uid=0)
+Nov 18 14:38:19 banner-session-46014 systemd-logind[164]: New session 1906 of user kf2server.
+Nov 18 14:38:19 banner-session-46014 systemd: pam_unix(systemd-user:session): session opened for user kf2server by (uid=0)
+Nov 18 14:38:25 banner-session-46014 sshd[1573]: pam_unix(sshd:session): session closed for user kf2server
+Nov 18 14:38:25 banner-session-46014 systemd-logind[164]: Session 1906 logged out. Waiting for processes to exit.
+Nov 18 14:38:25 banner-session-46014 systemd-logind[164]: Removed session 1906.

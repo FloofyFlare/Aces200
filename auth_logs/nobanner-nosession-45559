@@ -1,0 +1,27 @@
+Nov 15 06:35:42 nobanner-nosession-45559 systemd-logind[164]: New seat seat0.
+Nov 15 06:35:45 nobanner-nosession-45559 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 15 06:35:45 nobanner-nosession-45559 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 06:35:53 nobanner-nosession-45559 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 06:35:53 nobanner-nosession-45559 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 15 06:35:53 nobanner-nosession-45559 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 06:36:05 nobanner-nosession-45559 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 15 06:36:05 nobanner-nosession-45559 usermod[764]: change user 'sshd' password
+Nov 15 06:36:05 nobanner-nosession-45559 chage[771]: changed password expiry for sshd
+Nov 15 06:36:08 nobanner-nosession-45559 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 15 06:36:08 nobanner-nosession-45559 sshd[1206]: Server listening on :: port 22.
+Nov 15 06:36:11 nobanner-nosession-45559 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 06:36:11 nobanner-nosession-45559 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 15 06:36:11 nobanner-nosession-45559 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 06:36:18 nobanner-nosession-45559 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 06:38:05 nobanner-nosession-45559 useradd[1548]: new group: name=chengguangchen, GID=1001
+Nov 15 06:38:05 nobanner-nosession-45559 useradd[1548]: new user: name=chengguangchen, UID=1001, GID=1001, home=/home/chengguangchen, shell=/bin/bash, from=none
+Nov 15 06:38:06 nobanner-nosession-45559 usermod[1557]: change user 'chengguangchen' password
+Nov 15 06:38:06 nobanner-nosession-45559 sshd[1564]: Accepted password for chengguangchen from 10.0.3.1 port 47286 ssh2
+Nov 15 06:38:06 nobanner-nosession-45559 sshd[1564]: pam_unix(sshd:session): session opened for user chengguangchen by (uid=0)
+Nov 15 06:38:06 nobanner-nosession-45559 systemd-logind[164]: New session 1432 of user chengguangchen.
+Nov 15 06:38:06 nobanner-nosession-45559 systemd: pam_unix(systemd-user:session): session opened for user chengguangchen by (uid=0)
+Nov 15 06:38:07 nobanner-nosession-45559 sshd[1581]: Received disconnect from 10.0.3.1 port 47286:11: 
+Nov 15 06:38:07 nobanner-nosession-45559 sshd[1581]: Disconnected from user chengguangchen 10.0.3.1 port 47286
+Nov 15 06:38:07 nobanner-nosession-45559 sshd[1564]: pam_unix(sshd:session): session closed for user chengguangchen
+Nov 15 06:38:07 nobanner-nosession-45559 systemd-logind[164]: Session 1432 logged out. Waiting for processes to exit.
+Nov 15 06:38:07 nobanner-nosession-45559 systemd-logind[164]: Removed session 1432.

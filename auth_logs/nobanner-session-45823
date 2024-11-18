@@ -1,0 +1,31 @@
+Nov 17 02:50:12 nobanner-session-45823 systemd-logind[164]: New seat seat0.
+Nov 17 02:50:16 nobanner-session-45823 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 17 02:50:16 nobanner-session-45823 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 02:50:24 nobanner-session-45823 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 02:50:24 nobanner-session-45823 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 17 02:50:24 nobanner-session-45823 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 02:50:35 nobanner-session-45823 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 17 02:50:35 nobanner-session-45823 usermod[764]: change user 'sshd' password
+Nov 17 02:50:35 nobanner-session-45823 chage[771]: changed password expiry for sshd
+Nov 17 02:50:38 nobanner-session-45823 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 17 02:50:38 nobanner-session-45823 sshd[1206]: Server listening on :: port 22.
+Nov 17 02:50:40 nobanner-session-45823 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 02:50:40 nobanner-session-45823 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 17 02:50:40 nobanner-session-45823 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 02:50:49 nobanner-session-45823 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 03:10:01 nobanner-session-45823 CRON[1553]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 03:10:01 nobanner-session-45823 CRON[1553]: pam_unix(cron:session): session closed for user root
+Nov 17 03:17:01 nobanner-session-45823 CRON[1556]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 03:17:01 nobanner-session-45823 CRON[1556]: pam_unix(cron:session): session closed for user root
+Nov 17 03:20:44 nobanner-session-45823 useradd[1560]: new group: name=admin, GID=1001
+Nov 17 03:20:44 nobanner-session-45823 useradd[1560]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov 17 03:20:44 nobanner-session-45823 usermod[1569]: change user 'admin' password
+Nov 17 03:20:45 nobanner-session-45823 sshd[1576]: Accepted password for admin from 10.0.3.1 port 49130 ssh2
+Nov 17 03:20:45 nobanner-session-45823 sshd[1576]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov 17 03:20:45 nobanner-session-45823 systemd-logind[164]: New session 1665 of user admin.
+Nov 17 03:20:45 nobanner-session-45823 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov 17 03:20:45 nobanner-session-45823 sshd[1593]: Received disconnect from 10.0.3.1 port 49130:11: 
+Nov 17 03:20:45 nobanner-session-45823 sshd[1593]: Disconnected from user admin 10.0.3.1 port 49130
+Nov 17 03:20:45 nobanner-session-45823 sshd[1576]: pam_unix(sshd:session): session closed for user admin
+Nov 17 03:20:45 nobanner-session-45823 systemd-logind[164]: Session 1665 logged out. Waiting for processes to exit.
+Nov 17 03:20:45 nobanner-session-45823 systemd-logind[164]: Removed session 1665.

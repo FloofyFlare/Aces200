@@ -1,0 +1,29 @@
+Nov 14 13:09:22 banner-nosession-45238 systemd-logind[164]: New seat seat0.
+Nov 14 13:09:25 banner-nosession-45238 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 13:09:25 banner-nosession-45238 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:09:34 banner-nosession-45238 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:09:34 banner-nosession-45238 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 13:09:34 banner-nosession-45238 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:09:53 banner-nosession-45238 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 13:09:53 banner-nosession-45238 usermod[764]: change user 'sshd' password
+Nov 14 13:09:53 banner-nosession-45238 chage[771]: changed password expiry for sshd
+Nov 14 13:09:56 banner-nosession-45238 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 13:09:56 banner-nosession-45238 sshd[1206]: Server listening on :: port 22.
+Nov 14 13:09:58 banner-nosession-45238 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:09:58 banner-nosession-45238 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 13:09:58 banner-nosession-45238 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:10:09 banner-nosession-45238 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:16:56 banner-nosession-45238 useradd[1560]: new group: name=guest, GID=1001
+Nov 14 13:16:56 banner-nosession-45238 useradd[1560]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov 14 13:16:56 banner-nosession-45238 usermod[1569]: change user 'guest' password
+Nov 14 13:16:56 banner-nosession-45238 sshd[1576]: Accepted password for guest from 10.0.3.1 port 56648 ssh2
+Nov 14 13:16:56 banner-nosession-45238 sshd[1576]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov 14 13:16:56 banner-nosession-45238 systemd-logind[164]: New session 1202 of user guest.
+Nov 14 13:16:56 banner-nosession-45238 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov 14 13:17:01 banner-nosession-45238 CRON[1594]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 14 13:17:01 banner-nosession-45238 CRON[1594]: pam_unix(cron:session): session closed for user root
+Nov 14 13:17:03 banner-nosession-45238 sshd[1593]: Received disconnect from 10.0.3.1 port 56648:11: 
+Nov 14 13:17:03 banner-nosession-45238 sshd[1593]: Disconnected from user guest 10.0.3.1 port 56648
+Nov 14 13:17:03 banner-nosession-45238 sshd[1576]: pam_unix(sshd:session): session closed for user guest
+Nov 14 13:17:03 banner-nosession-45238 systemd-logind[164]: Session 1202 logged out. Waiting for processes to exit.
+Nov 14 13:17:03 banner-nosession-45238 systemd-logind[164]: Removed session 1202.

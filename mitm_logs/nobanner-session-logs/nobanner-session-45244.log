@@ -1,0 +1,36 @@
+(node:2049777) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-45244',
+  containerIp: '10.0.3.108',
+  mitmPort: 45244,
+  autoAccessFixed: 1
+}
+2024-11-14 08:18:04.935 - [Info] MITM Version: 2
+2024-11-14 08:18:04.938 - [Info] Auto Access Enabled: true
+2024-11-14 08:18:04.938 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-14 08:18:04.950 - [Info] SSH man-in-the-middle server for 10.0.3.108 listening on 10.0.3.1:45244
+2024-11-14 08:18:21.401 - [Debug] [Connection] Attacker connected: 121.186.155.211 | Client Identification: SSH-2.0-OpenSSH_7.4
+2024-11-14 08:18:24.110 - [Debug] [Auth] Attacker 121.186.155.211 trying to authenticate with 'password'
+2024-11-14 08:18:24.111 - [Debug] [Auto Access] Attacker: 121.186.155.211, Threshold: 1, Attempts: 1
+2024-11-14 08:18:24.111 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-14 08:18:24.112 - [Debug] [Auto Access] Adding the following credentials: 'operator:8888'
+2024-11-14 08:18:24.201 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-14 08:18:24.203 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-14 08:18:24.204 - [Debug] [Auth] Attacker: 121.186.155.211 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 08:18:25.402 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

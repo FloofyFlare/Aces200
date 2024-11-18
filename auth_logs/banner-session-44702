@@ -1,0 +1,27 @@
+Nov 13 23:24:55 banner-session-44702 systemd-logind[166]: New seat seat0.
+Nov 13 23:24:59 banner-session-44702 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 23:24:59 banner-session-44702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 23:25:08 banner-session-44702 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 23:25:08 banner-session-44702 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 23:25:08 banner-session-44702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 23:25:20 banner-session-44702 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 23:25:21 banner-session-44702 usermod[764]: change user 'sshd' password
+Nov 13 23:25:21 banner-session-44702 chage[771]: changed password expiry for sshd
+Nov 13 23:25:23 banner-session-44702 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 23:25:23 banner-session-44702 sshd[1206]: Server listening on :: port 22.
+Nov 13 23:25:25 banner-session-44702 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 23:25:26 banner-session-44702 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 23:25:26 banner-session-44702 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 23:25:36 banner-session-44702 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 23:26:30 banner-session-44702 useradd[1557]: new group: name=Operator, GID=1001
+Nov 13 23:26:30 banner-session-44702 useradd[1557]: new user: name=Operator, UID=1001, GID=1001, home=/home/Operator, shell=/bin/bash, from=none
+Nov 13 23:26:31 banner-session-44702 usermod[1566]: change user 'Operator' password
+Nov 13 23:26:31 banner-session-44702 sshd[1573]: Accepted password for Operator from 10.0.3.1 port 52512 ssh2
+Nov 13 23:26:31 banner-session-44702 sshd[1573]: pam_unix(sshd:session): session opened for user Operator by (uid=0)
+Nov 13 23:26:31 banner-session-44702 systemd-logind[166]: New session 967 of user Operator.
+Nov 13 23:26:31 banner-session-44702 systemd: pam_unix(systemd-user:session): session opened for user Operator by (uid=0)
+Nov 13 23:26:32 banner-session-44702 sshd[1590]: Received disconnect from 10.0.3.1 port 52512:11: 
+Nov 13 23:26:32 banner-session-44702 sshd[1590]: Disconnected from user Operator 10.0.3.1 port 52512
+Nov 13 23:26:32 banner-session-44702 sshd[1573]: pam_unix(sshd:session): session closed for user Operator
+Nov 13 23:26:32 banner-session-44702 systemd-logind[166]: Session 967 logged out. Waiting for processes to exit.
+Nov 13 23:26:32 banner-session-44702 systemd-logind[166]: Removed session 967.

@@ -1,0 +1,27 @@
+Nov 13 20:17:47 nobanner-session-44583 systemd-logind[164]: New seat seat0.
+Nov 13 20:17:53 nobanner-session-44583 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 20:17:53 nobanner-session-44583 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 20:18:02 nobanner-session-44583 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 20:18:02 nobanner-session-44583 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 20:18:02 nobanner-session-44583 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 20:18:23 nobanner-session-44583 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 20:18:23 nobanner-session-44583 usermod[764]: change user 'sshd' password
+Nov 13 20:18:23 nobanner-session-44583 chage[771]: changed password expiry for sshd
+Nov 13 20:18:25 nobanner-session-44583 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 20:18:25 nobanner-session-44583 sshd[1206]: Server listening on :: port 22.
+Nov 13 20:18:27 nobanner-session-44583 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 20:18:27 nobanner-session-44583 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 20:18:27 nobanner-session-44583 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 20:18:39 nobanner-session-44583 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 20:22:01 nobanner-session-44583 useradd[1551]: new group: name=admin, GID=1001
+Nov 13 20:22:01 nobanner-session-44583 useradd[1551]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov 13 20:22:02 nobanner-session-44583 usermod[1560]: change user 'admin' password
+Nov 13 20:22:02 nobanner-session-44583 sshd[1567]: Accepted password for admin from 10.0.3.1 port 44338 ssh2
+Nov 13 20:22:02 nobanner-session-44583 sshd[1567]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov 13 20:22:02 nobanner-session-44583 systemd-logind[164]: New session 900 of user admin.
+Nov 13 20:22:02 nobanner-session-44583 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov 13 20:22:02 nobanner-session-44583 sshd[1584]: Received disconnect from 10.0.3.1 port 44338:11: 
+Nov 13 20:22:02 nobanner-session-44583 sshd[1584]: Disconnected from user admin 10.0.3.1 port 44338
+Nov 13 20:22:02 nobanner-session-44583 sshd[1567]: pam_unix(sshd:session): session closed for user admin
+Nov 13 20:22:02 nobanner-session-44583 systemd-logind[164]: Session 900 logged out. Waiting for processes to exit.
+Nov 13 20:22:02 nobanner-session-44583 systemd-logind[164]: Removed session 900.

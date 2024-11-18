@@ -1,0 +1,27 @@
+Nov 12 14:33:16 nobanner-session-43619 systemd-logind[164]: New seat seat0.
+Nov 12 14:33:19 nobanner-session-43619 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 14:33:19 nobanner-session-43619 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 14:33:27 nobanner-session-43619 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 14:33:27 nobanner-session-43619 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 14:33:27 nobanner-session-43619 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 14:33:42 nobanner-session-43619 useradd[763]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 14:33:42 nobanner-session-43619 usermod[771]: change user 'sshd' password
+Nov 12 14:33:42 nobanner-session-43619 chage[778]: changed password expiry for sshd
+Nov 12 14:33:44 nobanner-session-43619 sshd[1213]: Server listening on 0.0.0.0 port 22.
+Nov 12 14:33:44 nobanner-session-43619 sshd[1213]: Server listening on :: port 22.
+Nov 12 14:33:46 nobanner-session-43619 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 14:33:46 nobanner-session-43619 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 14:33:46 nobanner-session-43619 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 14:33:55 nobanner-session-43619 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 14:38:50 nobanner-session-43619 useradd[1567]: failed adding user 'games', data deleted
+Nov 12 14:38:50 nobanner-session-43619 usermod[1568]: change user 'games' password
+Nov 12 14:38:50 nobanner-session-43619 sshd[1575]: Accepted password for games from 10.0.3.1 port 39560 ssh2
+Nov 12 14:38:50 nobanner-session-43619 sshd[1575]: pam_unix(sshd:session): session opened for user games by (uid=0)
+Nov 12 14:38:50 nobanner-session-43619 systemd-logind[164]: New session 406 of user games.
+Nov 12 14:38:50 nobanner-session-43619 systemd: pam_unix(systemd-user:session): session opened for user games by (uid=0)
+Nov 12 14:38:52 nobanner-session-43619 nologin: Attempted login by games (UID: 5) on UNKNOWN
+Nov 12 14:38:52 nobanner-session-43619 sshd[1592]: Received disconnect from 10.0.3.1 port 39560:11: 
+Nov 12 14:38:52 nobanner-session-43619 sshd[1592]: Disconnected from user games 10.0.3.1 port 39560
+Nov 12 14:38:52 nobanner-session-43619 sshd[1575]: pam_unix(sshd:session): session closed for user games
+Nov 12 14:38:52 nobanner-session-43619 systemd-logind[164]: Session 406 logged out. Waiting for processes to exit.
+Nov 12 14:38:52 nobanner-session-43619 systemd-logind[164]: Removed session 406.

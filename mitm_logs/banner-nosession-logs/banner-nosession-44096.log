@@ -1,0 +1,58 @@
+(node:2511462) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-nosession-44096',
+  containerIp: '10.0.3.82',
+  mitmPort: 44096,
+  autoAccessFixed: 1
+}
+2024-11-13 02:54:11.303 - [Info] MITM Version: 2
+2024-11-13 02:54:11.305 - [Info] Auto Access Enabled: true
+2024-11-13 02:54:11.306 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-13 02:54:11.318 - [Info] SSH man-in-the-middle server for 10.0.3.82 listening on 10.0.3.1:44096
+2024-11-13 02:58:02.958 - [Debug] [Connection] Attacker connected: 218.92.0.205 | Client Identification: SSH-2.0-PuTTY
+2024-11-13 02:58:05.076 - [Debug] [Auth] Attacker 218.92.0.205 trying to authenticate with 'none'
+2024-11-13 02:58:05.077 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-13 02:58:06.073 - [Debug] [Auth] Attacker 218.92.0.205 trying to authenticate with 'password'
+2024-11-13 02:58:06.074 - [Debug] [Auto Access] Attacker: 218.92.0.205, Threshold: 1, Attempts: 1
+2024-11-13 02:58:06.075 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2024-11-13 02:58:06.076 - [Debug] [Auth] Attacker: 218.92.0.205 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-13 02:58:07.572 - [Debug] [Auth] Attacker 218.92.0.205 trying to authenticate with 'password'
+2024-11-13 02:58:07.573 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-13 02:58:07.573 - [Debug] [Auto Access] Adding the following credentials: 'root:qq147258'
+2024-11-13 02:58:07.765 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-13 02:58:07.767 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-13 02:58:07.767 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.82
+2024-11-13 02:58:11.366 - [Debug] [LXC] Authentication Failed
+2024-11-13 02:58:11.366 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-13 02:58:11.367 - [Debug] [Auth] Attacker: 218.92.0.205 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-13 02:58:11.367 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-13 02:58:11.367 - [Debug] [Auth] Attacker: 218.92.0.205 has so far made 3 attempts. Remaining: 3 attempts
+2024-11-13 02:58:11.371 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-13 02:58:11.373 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-13 02:58:12.878 - [Debug] [Auth] Attacker 218.92.0.205 trying to authenticate with 'password'
+2024-11-13 02:58:12.879 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-13 02:58:12.880 - [Debug] [Auth] Attacker: 218.92.0.205 has so far made 4 attempts. Remaining: 2 attempts
+2024-11-13 02:58:14.349 - [Debug] [Auth] Attacker 218.92.0.205 trying to authenticate with 'password'
+2024-11-13 02:58:14.349 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-13 02:58:14.350 - [Debug] [Auth] Attacker: 218.92.0.205 has so far made 5 attempts. Remaining: 1 attempts
+2024-11-13 02:58:15.845 - [Debug] [Auth] Attacker 218.92.0.205 trying to authenticate with 'password'
+2024-11-13 02:58:15.845 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-13 02:58:15.846 - [Debug] [Auth] Attacker: 218.92.0.205 has so far made 6 attempts. Remaining: 0 attempts
+2024-11-13 02:58:15.846 - [Debug] [Connection] Max Login Attempts Reached - Closing connection on attacker
+2024-11-13 02:58:15.847 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

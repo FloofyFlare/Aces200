@@ -1,0 +1,25 @@
+Nov 17 07:00:23 banner-nosession-45848 systemd-logind[164]: New seat seat0.
+Nov 17 07:00:26 banner-nosession-45848 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 17 07:00:26 banner-nosession-45848 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 07:00:35 banner-nosession-45848 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 07:00:35 banner-nosession-45848 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 17 07:00:35 banner-nosession-45848 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 07:00:51 banner-nosession-45848 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 17 07:00:51 banner-nosession-45848 usermod[764]: change user 'sshd' password
+Nov 17 07:00:51 banner-nosession-45848 chage[771]: changed password expiry for sshd
+Nov 17 07:00:54 banner-nosession-45848 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 17 07:00:54 banner-nosession-45848 sshd[1206]: Server listening on :: port 22.
+Nov 17 07:00:56 banner-nosession-45848 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 07:00:56 banner-nosession-45848 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 17 07:00:56 banner-nosession-45848 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 07:01:05 banner-nosession-45848 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 07:03:49 banner-nosession-45848 useradd[1559]: new group: name=postgres, GID=1001
+Nov 17 07:03:49 banner-nosession-45848 useradd[1559]: new user: name=postgres, UID=1001, GID=1001, home=/home/postgres, shell=/bin/bash, from=none
+Nov 17 07:03:50 banner-nosession-45848 usermod[1568]: change user 'postgres' password
+Nov 17 07:03:50 banner-nosession-45848 sshd[1575]: Accepted password for postgres from 10.0.3.1 port 51392 ssh2
+Nov 17 07:03:50 banner-nosession-45848 sshd[1575]: pam_unix(sshd:session): session opened for user postgres by (uid=0)
+Nov 17 07:03:50 banner-nosession-45848 systemd-logind[164]: New session 1702 of user postgres.
+Nov 17 07:03:50 banner-nosession-45848 systemd: pam_unix(systemd-user:session): session opened for user postgres by (uid=0)
+Nov 17 07:04:00 banner-nosession-45848 sshd[1575]: pam_unix(sshd:session): session closed for user postgres
+Nov 17 07:04:00 banner-nosession-45848 systemd-logind[164]: Session 1702 logged out. Waiting for processes to exit.
+Nov 17 07:04:00 banner-nosession-45848 systemd-logind[164]: Removed session 1702.

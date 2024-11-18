@@ -1,0 +1,27 @@
+Nov 13 00:26:46 banner-session-43915 systemd-logind[164]: New seat seat0.
+Nov 13 00:26:49 banner-session-43915 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 00:26:49 banner-session-43915 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:26:57 banner-session-43915 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:26:57 banner-session-43915 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 00:26:57 banner-session-43915 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:27:08 banner-session-43915 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 00:27:08 banner-session-43915 usermod[764]: change user 'sshd' password
+Nov 13 00:27:08 banner-session-43915 chage[771]: changed password expiry for sshd
+Nov 13 00:27:10 banner-session-43915 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 00:27:10 banner-session-43915 sshd[1206]: Server listening on :: port 22.
+Nov 13 00:27:12 banner-session-43915 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:27:12 banner-session-43915 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 00:27:12 banner-session-43915 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:27:19 banner-session-43915 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:27:25 banner-session-43915 useradd[1557]: new group: name=niaoyun, GID=1001
+Nov 13 00:27:25 banner-session-43915 useradd[1557]: new user: name=niaoyun, UID=1001, GID=1001, home=/home/niaoyun, shell=/bin/bash, from=none
+Nov 13 00:27:26 banner-session-43915 usermod[1566]: change user 'niaoyun' password
+Nov 13 00:27:27 banner-session-43915 sshd[1573]: Accepted password for niaoyun from 10.0.3.1 port 39242 ssh2
+Nov 13 00:27:27 banner-session-43915 sshd[1573]: pam_unix(sshd:session): session opened for user niaoyun by (uid=0)
+Nov 13 00:27:27 banner-session-43915 systemd-logind[164]: New session 549 of user niaoyun.
+Nov 13 00:27:27 banner-session-43915 systemd: pam_unix(systemd-user:session): session opened for user niaoyun by (uid=0)
+Nov 13 00:27:28 banner-session-43915 sshd[1590]: Received disconnect from 10.0.3.1 port 39242:11: 
+Nov 13 00:27:28 banner-session-43915 sshd[1590]: Disconnected from user niaoyun 10.0.3.1 port 39242
+Nov 13 00:27:28 banner-session-43915 sshd[1573]: pam_unix(sshd:session): session closed for user niaoyun
+Nov 13 00:27:28 banner-session-43915 systemd-logind[164]: Session 549 logged out. Waiting for processes to exit.
+Nov 13 00:27:28 banner-session-43915 systemd-logind[164]: Removed session 549.

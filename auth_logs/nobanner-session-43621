@@ -1,0 +1,27 @@
+Nov 12 14:39:52 nobanner-session-43621 systemd-logind[164]: New seat seat0.
+Nov 12 14:39:55 nobanner-session-43621 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 14:39:55 nobanner-session-43621 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 14:40:03 nobanner-session-43621 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 14:40:03 nobanner-session-43621 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 14:40:03 nobanner-session-43621 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 14:40:23 nobanner-session-43621 useradd[763]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 14:40:23 nobanner-session-43621 usermod[771]: change user 'sshd' password
+Nov 12 14:40:23 nobanner-session-43621 chage[778]: changed password expiry for sshd
+Nov 12 14:40:25 nobanner-session-43621 sshd[1214]: Server listening on 0.0.0.0 port 22.
+Nov 12 14:40:25 nobanner-session-43621 sshd[1214]: Server listening on :: port 22.
+Nov 12 14:40:27 nobanner-session-43621 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 14:40:27 nobanner-session-43621 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 14:40:27 nobanner-session-43621 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 14:40:36 nobanner-session-43621 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 14:54:29 nobanner-session-43621 useradd[1569]: new group: name=unknown, GID=1001
+Nov 12 14:54:29 nobanner-session-43621 useradd[1569]: new user: name=unknown, UID=1001, GID=1001, home=/home/unknown, shell=/bin/bash, from=none
+Nov 12 14:54:29 nobanner-session-43621 usermod[1578]: change user 'unknown' password
+Nov 12 14:54:29 nobanner-session-43621 sshd[1585]: Accepted password for unknown from 10.0.3.1 port 52048 ssh2
+Nov 12 14:54:29 nobanner-session-43621 sshd[1585]: pam_unix(sshd:session): session opened for user unknown by (uid=0)
+Nov 12 14:54:30 nobanner-session-43621 systemd-logind[164]: New session 410 of user unknown.
+Nov 12 14:54:30 nobanner-session-43621 systemd: pam_unix(systemd-user:session): session opened for user unknown by (uid=0)
+Nov 12 14:55:32 nobanner-session-43621 sshd[1602]: Received disconnect from 10.0.3.1 port 52048:11: 
+Nov 12 14:55:32 nobanner-session-43621 sshd[1602]: Disconnected from user unknown 10.0.3.1 port 52048
+Nov 12 14:55:32 nobanner-session-43621 sshd[1585]: pam_unix(sshd:session): session closed for user unknown
+Nov 12 14:55:32 nobanner-session-43621 systemd-logind[164]: Session 410 logged out. Waiting for processes to exit.
+Nov 12 14:55:32 nobanner-session-43621 systemd-logind[164]: Removed session 410.

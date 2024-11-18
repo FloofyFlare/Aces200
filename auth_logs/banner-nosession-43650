@@ -1,0 +1,27 @@
+Nov 12 15:28:49 banner-nosession-43650 systemd-logind[164]: New seat seat0.
+Nov 12 15:28:52 banner-nosession-43650 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 15:28:52 banner-nosession-43650 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 15:29:01 banner-nosession-43650 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 15:29:01 banner-nosession-43650 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 15:29:01 banner-nosession-43650 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 15:29:16 banner-nosession-43650 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 15:29:16 banner-nosession-43650 usermod[764]: change user 'sshd' password
+Nov 12 15:29:16 banner-nosession-43650 chage[771]: changed password expiry for sshd
+Nov 12 15:29:18 banner-nosession-43650 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 15:29:18 banner-nosession-43650 sshd[1206]: Server listening on :: port 22.
+Nov 12 15:29:20 banner-nosession-43650 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 15:29:20 banner-nosession-43650 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 15:29:20 banner-nosession-43650 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 15:29:35 banner-nosession-43650 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 15:44:00 banner-nosession-43650 useradd[1560]: new group: name=default, GID=1001
+Nov 12 15:44:00 banner-nosession-43650 useradd[1560]: new user: name=default, UID=1001, GID=1001, home=/home/default, shell=/bin/bash, from=none
+Nov 12 15:44:00 banner-nosession-43650 usermod[1570]: change user 'default' password
+Nov 12 15:44:00 banner-nosession-43650 sshd[1577]: Accepted password for default from 10.0.3.1 port 59526 ssh2
+Nov 12 15:44:00 banner-nosession-43650 sshd[1577]: pam_unix(sshd:session): session opened for user default by (uid=0)
+Nov 12 15:44:00 banner-nosession-43650 systemd-logind[164]: New session 421 of user default.
+Nov 12 15:44:00 banner-nosession-43650 systemd: pam_unix(systemd-user:session): session opened for user default by (uid=0)
+Nov 12 15:45:01 banner-nosession-43650 sshd[1594]: Received disconnect from 10.0.3.1 port 59526:11: 
+Nov 12 15:45:01 banner-nosession-43650 sshd[1594]: Disconnected from user default 10.0.3.1 port 59526
+Nov 12 15:45:01 banner-nosession-43650 sshd[1577]: pam_unix(sshd:session): session closed for user default
+Nov 12 15:45:01 banner-nosession-43650 systemd-logind[164]: Session 421 logged out. Waiting for processes to exit.
+Nov 12 15:45:01 banner-nosession-43650 systemd-logind[164]: Removed session 421.

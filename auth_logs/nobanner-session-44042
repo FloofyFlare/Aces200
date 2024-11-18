@@ -1,0 +1,21 @@
+Nov 13 06:27:47 nobanner-session-44042 systemd-logind[164]: New seat seat0.
+Nov 13 06:27:51 nobanner-session-44042 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 06:27:51 nobanner-session-44042 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:27:58 nobanner-session-44042 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:27:58 nobanner-session-44042 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 06:27:58 nobanner-session-44042 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:28:14 nobanner-session-44042 useradd[700]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 06:28:14 nobanner-session-44042 usermod[708]: change user 'sshd' password
+Nov 13 06:28:15 nobanner-session-44042 chage[715]: changed password expiry for sshd
+Nov 13 06:28:16 nobanner-session-44042 sshd[1150]: Server listening on 0.0.0.0 port 22.
+Nov 13 06:28:16 nobanner-session-44042 sshd[1150]: Server listening on :: port 22.
+Nov 13 06:28:19 nobanner-session-44042 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:28:19 nobanner-session-44042 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 06:28:19 nobanner-session-44042 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:28:26 nobanner-session-44042 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:28:47 nobanner-session-44042 useradd[1495]: failed adding user 'root', data deleted
+Nov 13 06:28:47 nobanner-session-44042 usermod[1496]: change user 'root' password
+Nov 13 06:28:47 nobanner-session-44042 sshd[1503]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 13 06:28:49 nobanner-session-44042 sshd[1503]: Failed password for root from 10.0.3.1 port 40790 ssh2
+Nov 13 06:28:50 nobanner-session-44042 sshd[1503]: Received disconnect from 10.0.3.1 port 40790:11:  [preauth]
+Nov 13 06:28:50 nobanner-session-44042 sshd[1503]: Disconnected from authenticating user root 10.0.3.1 port 40790 [preauth]

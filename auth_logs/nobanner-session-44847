@@ -1,0 +1,27 @@
+Nov 14 03:11:20 nobanner-session-44847 systemd-logind[164]: New seat seat0.
+Nov 14 03:11:24 nobanner-session-44847 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 03:11:24 nobanner-session-44847 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 03:11:32 nobanner-session-44847 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 03:11:32 nobanner-session-44847 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 03:11:32 nobanner-session-44847 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 03:11:52 nobanner-session-44847 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 03:11:52 nobanner-session-44847 usermod[764]: change user 'sshd' password
+Nov 14 03:11:52 nobanner-session-44847 chage[771]: changed password expiry for sshd
+Nov 14 03:11:54 nobanner-session-44847 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 03:11:54 nobanner-session-44847 sshd[1206]: Server listening on :: port 22.
+Nov 14 03:11:56 nobanner-session-44847 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 03:11:56 nobanner-session-44847 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 03:11:56 nobanner-session-44847 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 03:12:04 nobanner-session-44847 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 03:12:48 nobanner-session-44847 useradd[1551]: new group: name=access, GID=1001
+Nov 14 03:12:48 nobanner-session-44847 useradd[1551]: new user: name=access, UID=1001, GID=1001, home=/home/access, shell=/bin/bash, from=none
+Nov 14 03:12:48 nobanner-session-44847 usermod[1560]: change user 'access' password
+Nov 14 03:12:48 nobanner-session-44847 sshd[1567]: Accepted password for access from 10.0.3.1 port 56292 ssh2
+Nov 14 03:12:48 nobanner-session-44847 sshd[1567]: pam_unix(sshd:session): session opened for user access by (uid=0)
+Nov 14 03:12:48 nobanner-session-44847 systemd-logind[164]: New session 1026 of user access.
+Nov 14 03:12:48 nobanner-session-44847 systemd: pam_unix(systemd-user:session): session opened for user access by (uid=0)
+Nov 14 03:12:48 nobanner-session-44847 sshd[1584]: Received disconnect from 10.0.3.1 port 56292:11: 
+Nov 14 03:12:48 nobanner-session-44847 sshd[1584]: Disconnected from user access 10.0.3.1 port 56292
+Nov 14 03:12:48 nobanner-session-44847 sshd[1567]: pam_unix(sshd:session): session closed for user access
+Nov 14 03:12:48 nobanner-session-44847 systemd-logind[164]: Session 1026 logged out. Waiting for processes to exit.
+Nov 14 03:12:48 nobanner-session-44847 systemd-logind[164]: Removed session 1026.

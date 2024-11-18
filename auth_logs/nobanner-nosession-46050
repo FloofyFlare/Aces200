@@ -1,0 +1,21 @@
+Nov 18 20:38:05 nobanner-nosession-46050 systemd-logind[164]: New seat seat0.
+Nov 18 20:38:09 nobanner-nosession-46050 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 20:38:09 nobanner-nosession-46050 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 20:38:14 nobanner-nosession-46050 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 20:38:14 nobanner-nosession-46050 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 20:38:14 nobanner-nosession-46050 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 20:38:27 nobanner-nosession-46050 useradd[694]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 20:38:27 nobanner-nosession-46050 usermod[702]: change user 'sshd' password
+Nov 18 20:38:27 nobanner-nosession-46050 chage[709]: changed password expiry for sshd
+Nov 18 20:38:30 nobanner-nosession-46050 sshd[1144]: Server listening on 0.0.0.0 port 22.
+Nov 18 20:38:30 nobanner-nosession-46050 sshd[1144]: Server listening on :: port 22.
+Nov 18 20:38:34 nobanner-nosession-46050 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 20:38:34 nobanner-nosession-46050 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 20:38:34 nobanner-nosession-46050 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 20:38:41 nobanner-nosession-46050 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 20:39:34 nobanner-nosession-46050 useradd[1486]: failed adding user 'root', data deleted
+Nov 18 20:39:34 nobanner-nosession-46050 usermod[1487]: change user 'root' password
+Nov 18 20:39:34 nobanner-nosession-46050 sshd[1494]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 18 20:39:36 nobanner-nosession-46050 sshd[1494]: Failed password for root from 10.0.3.1 port 50280 ssh2
+Nov 18 20:39:37 nobanner-nosession-46050 sshd[1494]: Received disconnect from 10.0.3.1 port 50280:11:  [preauth]
+Nov 18 20:39:37 nobanner-nosession-46050 sshd[1494]: Disconnected from authenticating user root 10.0.3.1 port 50280 [preauth]

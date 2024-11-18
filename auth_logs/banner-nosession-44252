@@ -1,0 +1,26 @@
+Nov 13 11:18:48 banner-nosession-44252 systemd-logind[164]: New seat seat0.
+Nov 13 11:18:51 banner-nosession-44252 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 11:18:51 banner-nosession-44252 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 11:18:59 banner-nosession-44252 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 11:18:59 banner-nosession-44252 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 11:18:59 banner-nosession-44252 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 11:19:09 banner-nosession-44252 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 11:19:09 banner-nosession-44252 usermod[764]: change user 'sshd' password
+Nov 13 11:19:09 banner-nosession-44252 chage[771]: changed password expiry for sshd
+Nov 13 11:19:11 banner-nosession-44252 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 11:19:11 banner-nosession-44252 sshd[1206]: Server listening on :: port 22.
+Nov 13 11:19:12 banner-nosession-44252 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 11:19:12 banner-nosession-44252 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 11:19:12 banner-nosession-44252 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 11:19:19 banner-nosession-44252 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 11:24:07 banner-nosession-44252 useradd[1560]: failed adding user 'nobody', data deleted
+Nov 13 11:24:07 banner-nosession-44252 usermod[1561]: change user 'nobody' password
+Nov 13 11:24:08 banner-nosession-44252 sshd[1568]: Accepted password for nobody from 10.0.3.1 port 50470 ssh2
+Nov 13 11:24:08 banner-nosession-44252 sshd[1568]: pam_unix(sshd:session): session opened for user nobody by (uid=0)
+Nov 13 11:24:08 banner-nosession-44252 systemd-logind[164]: New session 727 of user nobody.
+Nov 13 11:24:08 banner-nosession-44252 systemd: pam_unix(systemd-user:session): session opened for user nobody by (uid=0)
+Nov 13 11:24:08 banner-nosession-44252 sshd[1585]: Received disconnect from 10.0.3.1 port 50470:11: 
+Nov 13 11:24:08 banner-nosession-44252 sshd[1585]: Disconnected from user nobody 10.0.3.1 port 50470
+Nov 13 11:24:08 banner-nosession-44252 sshd[1568]: pam_unix(sshd:session): session closed for user nobody
+Nov 13 11:24:08 banner-nosession-44252 systemd-logind[164]: Session 727 logged out. Waiting for processes to exit.
+Nov 13 11:24:08 banner-nosession-44252 systemd-logind[164]: Removed session 727.

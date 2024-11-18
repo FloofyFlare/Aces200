@@ -1,0 +1,27 @@
+Nov 13 15:52:33 banner-nosession-44420 systemd-logind[166]: New seat seat0.
+Nov 13 15:52:36 banner-nosession-44420 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 15:52:36 banner-nosession-44420 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 15:52:44 banner-nosession-44420 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 15:52:44 banner-nosession-44420 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 15:52:44 banner-nosession-44420 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 15:53:00 banner-nosession-44420 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 15:53:00 banner-nosession-44420 usermod[764]: change user 'sshd' password
+Nov 13 15:53:00 banner-nosession-44420 chage[771]: changed password expiry for sshd
+Nov 13 15:53:02 banner-nosession-44420 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 15:53:02 banner-nosession-44420 sshd[1206]: Server listening on :: port 22.
+Nov 13 15:53:04 banner-nosession-44420 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 15:53:04 banner-nosession-44420 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 15:53:04 banner-nosession-44420 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 15:53:14 banner-nosession-44420 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 15:54:08 banner-nosession-44420 useradd[1559]: new group: name=misp, GID=1001
+Nov 13 15:54:08 banner-nosession-44420 useradd[1559]: new user: name=misp, UID=1001, GID=1001, home=/home/misp, shell=/bin/bash, from=none
+Nov 13 15:54:08 banner-nosession-44420 usermod[1568]: change user 'misp' password
+Nov 13 15:54:08 banner-nosession-44420 sshd[1575]: Accepted password for misp from 10.0.3.1 port 42606 ssh2
+Nov 13 15:54:08 banner-nosession-44420 sshd[1575]: pam_unix(sshd:session): session opened for user misp by (uid=0)
+Nov 13 15:54:08 banner-nosession-44420 systemd-logind[166]: New session 808 of user misp.
+Nov 13 15:54:08 banner-nosession-44420 systemd: pam_unix(systemd-user:session): session opened for user misp by (uid=0)
+Nov 13 15:55:09 banner-nosession-44420 sshd[1592]: Received disconnect from 10.0.3.1 port 42606:11: 
+Nov 13 15:55:09 banner-nosession-44420 sshd[1592]: Disconnected from user misp 10.0.3.1 port 42606
+Nov 13 15:55:09 banner-nosession-44420 sshd[1575]: pam_unix(sshd:session): session closed for user misp
+Nov 13 15:55:09 banner-nosession-44420 systemd-logind[166]: Session 808 logged out. Waiting for processes to exit.
+Nov 13 15:55:09 banner-nosession-44420 systemd-logind[166]: Removed session 808.

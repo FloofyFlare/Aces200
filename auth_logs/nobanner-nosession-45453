@@ -1,0 +1,25 @@
+Nov 14 18:34:51 nobanner-nosession-45453 systemd-logind[164]: New seat seat0.
+Nov 14 18:34:55 nobanner-nosession-45453 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 18:34:55 nobanner-nosession-45453 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 18:35:03 nobanner-nosession-45453 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 18:35:03 nobanner-nosession-45453 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 18:35:03 nobanner-nosession-45453 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 18:35:15 nobanner-nosession-45453 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 18:35:15 nobanner-nosession-45453 usermod[764]: change user 'sshd' password
+Nov 14 18:35:15 nobanner-nosession-45453 chage[771]: changed password expiry for sshd
+Nov 14 18:35:18 nobanner-nosession-45453 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 18:35:18 nobanner-nosession-45453 sshd[1206]: Server listening on :: port 22.
+Nov 14 18:35:21 nobanner-nosession-45453 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 18:35:21 nobanner-nosession-45453 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 18:35:21 nobanner-nosession-45453 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 18:35:29 nobanner-nosession-45453 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 18:36:12 nobanner-nosession-45453 useradd[1548]: new group: name=meixiu, GID=1001
+Nov 14 18:36:12 nobanner-nosession-45453 useradd[1548]: new user: name=meixiu, UID=1001, GID=1001, home=/home/meixiu, shell=/bin/bash, from=none
+Nov 14 18:36:12 nobanner-nosession-45453 usermod[1557]: change user 'meixiu' password
+Nov 14 18:36:12 nobanner-nosession-45453 sshd[1564]: Accepted password for meixiu from 10.0.3.1 port 45374 ssh2
+Nov 14 18:36:12 nobanner-nosession-45453 sshd[1564]: pam_unix(sshd:session): session opened for user meixiu by (uid=0)
+Nov 14 18:36:12 nobanner-nosession-45453 systemd-logind[164]: New session 1297 of user meixiu.
+Nov 14 18:36:12 nobanner-nosession-45453 systemd: pam_unix(systemd-user:session): session opened for user meixiu by (uid=0)
+Nov 14 18:36:18 nobanner-nosession-45453 sshd[1564]: pam_unix(sshd:session): session closed for user meixiu
+Nov 14 18:36:18 nobanner-nosession-45453 systemd-logind[164]: Session 1297 logged out. Waiting for processes to exit.
+Nov 14 18:36:18 nobanner-nosession-45453 systemd-logind[164]: Removed session 1297.

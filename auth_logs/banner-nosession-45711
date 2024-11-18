@@ -1,0 +1,25 @@
+Nov 16 05:04:40 banner-nosession-45711 systemd-logind[165]: New seat seat0.
+Nov 16 05:04:43 banner-nosession-45711 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 05:04:43 banner-nosession-45711 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 05:04:52 banner-nosession-45711 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 05:04:52 banner-nosession-45711 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 05:04:52 banner-nosession-45711 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 05:05:03 banner-nosession-45711 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 05:05:03 banner-nosession-45711 usermod[764]: change user 'sshd' password
+Nov 16 05:05:03 banner-nosession-45711 chage[771]: changed password expiry for sshd
+Nov 16 05:05:06 banner-nosession-45711 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 05:05:06 banner-nosession-45711 sshd[1206]: Server listening on :: port 22.
+Nov 16 05:05:07 banner-nosession-45711 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 05:05:07 banner-nosession-45711 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 05:05:07 banner-nosession-45711 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 05:05:14 banner-nosession-45711 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 05:05:28 banner-nosession-45711 useradd[1559]: new group: name=httpd, GID=1001
+Nov 16 05:05:28 banner-nosession-45711 useradd[1559]: new user: name=httpd, UID=1001, GID=1001, home=/home/httpd, shell=/bin/bash, from=none
+Nov 16 05:05:28 banner-nosession-45711 usermod[1568]: change user 'httpd' password
+Nov 16 05:05:28 banner-nosession-45711 sshd[1575]: Accepted password for httpd from 10.0.3.1 port 36556 ssh2
+Nov 16 05:05:28 banner-nosession-45711 sshd[1575]: pam_unix(sshd:session): session opened for user httpd by (uid=0)
+Nov 16 05:05:28 banner-nosession-45711 systemd-logind[165]: New session 1539 of user httpd.
+Nov 16 05:05:28 banner-nosession-45711 systemd: pam_unix(systemd-user:session): session opened for user httpd by (uid=0)
+Nov 16 05:05:33 banner-nosession-45711 sshd[1575]: pam_unix(sshd:session): session closed for user httpd
+Nov 16 05:05:33 banner-nosession-45711 systemd-logind[165]: Session 1539 logged out. Waiting for processes to exit.
+Nov 16 05:05:33 banner-nosession-45711 systemd-logind[165]: Removed session 1539.

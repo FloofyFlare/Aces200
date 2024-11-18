@@ -1,0 +1,32 @@
+Nov 13 00:29:05 banner-session-43917 systemd-logind[164]: New seat seat0.
+Nov 13 00:29:08 banner-session-43917 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 00:29:08 banner-session-43917 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:29:16 banner-session-43917 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:29:16 banner-session-43917 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 00:29:16 banner-session-43917 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:29:27 banner-session-43917 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 00:29:28 banner-session-43917 usermod[764]: change user 'sshd' password
+Nov 13 00:29:28 banner-session-43917 chage[771]: changed password expiry for sshd
+Nov 13 00:29:30 banner-session-43917 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 00:29:30 banner-session-43917 sshd[1206]: Server listening on :: port 22.
+Nov 13 00:29:32 banner-session-43917 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:29:32 banner-session-43917 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 00:29:32 banner-session-43917 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:29:39 banner-session-43917 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:29:40 banner-session-43917 sshd[1557]: Invalid user bot from 170.64.161.18 port 60982
+Nov 13 00:29:40 banner-session-43917 sshd[1557]: pam_unix(sshd:auth): check pass; user unknown
+Nov 13 00:29:40 banner-session-43917 sshd[1557]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=170.64.161.18 
+Nov 13 00:29:42 banner-session-43917 sshd[1557]: Failed password for invalid user bot from 170.64.161.18 port 60982 ssh2
+Nov 13 00:29:43 banner-session-43917 sshd[1557]: Connection closed by invalid user bot 170.64.161.18 port 60982 [preauth]
+Nov 13 00:29:45 banner-session-43917 useradd[1559]: new group: name=owncast, GID=1001
+Nov 13 00:29:45 banner-session-43917 useradd[1559]: new user: name=owncast, UID=1001, GID=1001, home=/home/owncast, shell=/bin/bash, from=none
+Nov 13 00:29:45 banner-session-43917 usermod[1568]: change user 'owncast' password
+Nov 13 00:29:45 banner-session-43917 sshd[1575]: Accepted password for owncast from 10.0.3.1 port 52066 ssh2
+Nov 13 00:29:45 banner-session-43917 sshd[1575]: pam_unix(sshd:session): session opened for user owncast by (uid=0)
+Nov 13 00:29:45 banner-session-43917 systemd-logind[164]: New session 551 of user owncast.
+Nov 13 00:29:45 banner-session-43917 systemd: pam_unix(systemd-user:session): session opened for user owncast by (uid=0)
+Nov 13 00:29:47 banner-session-43917 sshd[1592]: Received disconnect from 10.0.3.1 port 52066:11: 
+Nov 13 00:29:47 banner-session-43917 sshd[1592]: Disconnected from user owncast 10.0.3.1 port 52066
+Nov 13 00:29:47 banner-session-43917 sshd[1575]: pam_unix(sshd:session): session closed for user owncast
+Nov 13 00:29:47 banner-session-43917 systemd-logind[164]: Session 551 logged out. Waiting for processes to exit.
+Nov 13 00:29:47 banner-session-43917 systemd-logind[164]: Removed session 551.

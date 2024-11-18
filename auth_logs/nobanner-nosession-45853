@@ -1,0 +1,27 @@
+Nov 17 07:16:44 nobanner-nosession-45853 systemd-logind[164]: New seat seat0.
+Nov 17 07:16:47 nobanner-nosession-45853 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 17 07:16:47 nobanner-nosession-45853 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 07:16:56 nobanner-nosession-45853 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 07:16:56 nobanner-nosession-45853 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 17 07:16:56 nobanner-nosession-45853 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 07:17:01 nobanner-nosession-45853 CRON[487]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 07:17:01 nobanner-nosession-45853 CRON[487]: pam_unix(cron:session): session closed for user root
+Nov 17 07:17:08 nobanner-nosession-45853 useradd[759]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 17 07:17:08 nobanner-nosession-45853 usermod[767]: change user 'sshd' password
+Nov 17 07:17:08 nobanner-nosession-45853 chage[774]: changed password expiry for sshd
+Nov 17 07:17:11 nobanner-nosession-45853 sshd[1209]: Server listening on 0.0.0.0 port 22.
+Nov 17 07:17:11 nobanner-nosession-45853 sshd[1209]: Server listening on :: port 22.
+Nov 17 07:17:13 nobanner-nosession-45853 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 07:17:13 nobanner-nosession-45853 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 17 07:17:13 nobanner-nosession-45853 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 07:17:18 nobanner-nosession-45853 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 08:00:56 nobanner-nosession-45853 useradd[1555]: new group: name=php-server, GID=1001
+Nov 17 08:00:56 nobanner-nosession-45853 useradd[1555]: new user: name=php-server, UID=1001, GID=1001, home=/home/php-server, shell=/bin/bash, from=none
+Nov 17 08:00:56 nobanner-nosession-45853 usermod[1564]: change user 'php-server' password
+Nov 17 08:00:56 nobanner-nosession-45853 sshd[1571]: Accepted password for php-server from 10.0.3.1 port 56438 ssh2
+Nov 17 08:00:56 nobanner-nosession-45853 sshd[1571]: pam_unix(sshd:session): session opened for user php-server by (uid=0)
+Nov 17 08:00:56 nobanner-nosession-45853 systemd-logind[164]: New session 1707 of user php-server.
+Nov 17 08:00:56 nobanner-nosession-45853 systemd: pam_unix(systemd-user:session): session opened for user php-server by (uid=0)
+Nov 17 08:01:06 nobanner-nosession-45853 sshd[1571]: pam_unix(sshd:session): session closed for user php-server
+Nov 17 08:01:06 nobanner-nosession-45853 systemd-logind[164]: Session 1707 logged out. Waiting for processes to exit.
+Nov 17 08:01:06 nobanner-nosession-45853 systemd-logind[164]: Removed session 1707.

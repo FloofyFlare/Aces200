@@ -1,0 +1,27 @@
+Nov 13 20:56:54 nobanner-session-44613 systemd-logind[164]: New seat seat0.
+Nov 13 20:56:57 nobanner-session-44613 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 20:56:57 nobanner-session-44613 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 20:57:05 nobanner-session-44613 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 20:57:05 nobanner-session-44613 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 20:57:05 nobanner-session-44613 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 20:57:18 nobanner-session-44613 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 20:57:18 nobanner-session-44613 usermod[764]: change user 'sshd' password
+Nov 13 20:57:18 nobanner-session-44613 chage[771]: changed password expiry for sshd
+Nov 13 20:57:20 nobanner-session-44613 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 20:57:20 nobanner-session-44613 sshd[1206]: Server listening on :: port 22.
+Nov 13 20:57:22 nobanner-session-44613 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 20:57:22 nobanner-session-44613 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 20:57:22 nobanner-session-44613 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 20:57:28 nobanner-session-44613 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 20:59:44 nobanner-session-44613 useradd[1551]: new group: name=centos, GID=1001
+Nov 13 20:59:44 nobanner-session-44613 useradd[1551]: new user: name=centos, UID=1001, GID=1001, home=/home/centos, shell=/bin/bash, from=none
+Nov 13 20:59:44 nobanner-session-44613 usermod[1560]: change user 'centos' password
+Nov 13 20:59:44 nobanner-session-44613 sshd[1567]: Accepted password for centos from 10.0.3.1 port 49786 ssh2
+Nov 13 20:59:44 nobanner-session-44613 sshd[1567]: pam_unix(sshd:session): session opened for user centos by (uid=0)
+Nov 13 20:59:44 nobanner-session-44613 systemd-logind[164]: New session 912 of user centos.
+Nov 13 20:59:44 nobanner-session-44613 systemd: pam_unix(systemd-user:session): session opened for user centos by (uid=0)
+Nov 13 21:00:45 nobanner-session-44613 sshd[1584]: Received disconnect from 10.0.3.1 port 49786:11: 
+Nov 13 21:00:45 nobanner-session-44613 sshd[1584]: Disconnected from user centos 10.0.3.1 port 49786
+Nov 13 21:00:45 nobanner-session-44613 sshd[1567]: pam_unix(sshd:session): session closed for user centos
+Nov 13 21:00:45 nobanner-session-44613 systemd-logind[164]: Session 912 logged out. Waiting for processes to exit.
+Nov 13 21:00:45 nobanner-session-44613 systemd-logind[164]: Removed session 912.

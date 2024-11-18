@@ -1,0 +1,25 @@
+Nov 16 19:43:06 nobanner-session-45799 systemd-logind[164]: New seat seat0.
+Nov 16 19:43:09 nobanner-session-45799 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 19:43:09 nobanner-session-45799 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 19:43:18 nobanner-session-45799 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 19:43:18 nobanner-session-45799 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 19:43:18 nobanner-session-45799 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 19:43:30 nobanner-session-45799 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 19:43:31 nobanner-session-45799 usermod[764]: change user 'sshd' password
+Nov 16 19:43:31 nobanner-session-45799 chage[771]: changed password expiry for sshd
+Nov 16 19:43:33 nobanner-session-45799 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 19:43:33 nobanner-session-45799 sshd[1206]: Server listening on :: port 22.
+Nov 16 19:43:36 nobanner-session-45799 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 19:43:36 nobanner-session-45799 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 19:43:36 nobanner-session-45799 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 19:43:43 nobanner-session-45799 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 19:43:57 nobanner-session-45799 useradd[1551]: new group: name=odoo, GID=1001
+Nov 16 19:43:57 nobanner-session-45799 useradd[1551]: new user: name=odoo, UID=1001, GID=1001, home=/home/odoo, shell=/bin/bash, from=none
+Nov 16 19:43:58 nobanner-session-45799 usermod[1560]: change user 'odoo' password
+Nov 16 19:43:58 nobanner-session-45799 sshd[1567]: Accepted password for odoo from 10.0.3.1 port 54012 ssh2
+Nov 16 19:43:58 nobanner-session-45799 sshd[1567]: pam_unix(sshd:session): session opened for user odoo by (uid=0)
+Nov 16 19:43:58 nobanner-session-45799 systemd-logind[164]: New session 1624 of user odoo.
+Nov 16 19:43:58 nobanner-session-45799 systemd: pam_unix(systemd-user:session): session opened for user odoo by (uid=0)
+Nov 16 19:44:06 nobanner-session-45799 sshd[1567]: pam_unix(sshd:session): session closed for user odoo
+Nov 16 19:44:06 nobanner-session-45799 systemd-logind[164]: Session 1624 logged out. Waiting for processes to exit.
+Nov 16 19:44:06 nobanner-session-45799 systemd-logind[164]: Removed session 1624.

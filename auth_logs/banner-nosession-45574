@@ -1,0 +1,29 @@
+Nov 15 10:05:47 banner-nosession-45574 systemd-logind[164]: New seat seat0.
+Nov 15 10:05:51 banner-nosession-45574 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 15 10:05:51 banner-nosession-45574 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 10:05:59 banner-nosession-45574 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 10:05:59 banner-nosession-45574 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 15 10:05:59 banner-nosession-45574 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 10:06:09 banner-nosession-45574 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 15 10:06:10 banner-nosession-45574 usermod[764]: change user 'sshd' password
+Nov 15 10:06:10 banner-nosession-45574 chage[771]: changed password expiry for sshd
+Nov 15 10:06:11 banner-nosession-45574 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 15 10:06:11 banner-nosession-45574 sshd[1206]: Server listening on :: port 22.
+Nov 15 10:06:13 banner-nosession-45574 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 10:06:13 banner-nosession-45574 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 15 10:06:13 banner-nosession-45574 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 10:06:20 banner-nosession-45574 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 10:17:01 banner-nosession-45574 CRON[1560]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 15 10:17:01 banner-nosession-45574 CRON[1560]: pam_unix(cron:session): session closed for user root
+Nov 15 11:17:01 banner-nosession-45574 CRON[1567]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 15 11:17:02 banner-nosession-45574 CRON[1567]: pam_unix(cron:session): session closed for user root
+Nov 15 12:09:14 banner-nosession-45574 useradd[1574]: new group: name=xwcxwc, GID=1001
+Nov 15 12:09:14 banner-nosession-45574 useradd[1574]: new user: name=xwcxwc, UID=1001, GID=1001, home=/home/xwcxwc, shell=/bin/bash, from=none
+Nov 15 12:09:14 banner-nosession-45574 usermod[1583]: change user 'xwcxwc' password
+Nov 15 12:09:14 banner-nosession-45574 sshd[1590]: Accepted password for xwcxwc from 10.0.3.1 port 40458 ssh2
+Nov 15 12:09:14 banner-nosession-45574 sshd[1590]: pam_unix(sshd:session): session opened for user xwcxwc by (uid=0)
+Nov 15 12:09:14 banner-nosession-45574 systemd-logind[164]: New session 1461 of user xwcxwc.
+Nov 15 12:09:14 banner-nosession-45574 systemd: pam_unix(systemd-user:session): session opened for user xwcxwc by (uid=0)
+Nov 15 12:09:20 banner-nosession-45574 sshd[1590]: pam_unix(sshd:session): session closed for user xwcxwc
+Nov 15 12:09:20 banner-nosession-45574 systemd-logind[164]: Session 1461 logged out. Waiting for processes to exit.
+Nov 15 12:09:20 banner-nosession-45574 systemd-logind[164]: Removed session 1461.

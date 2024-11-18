@@ -1,0 +1,94 @@
+(node:2418096) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-45361',
+  containerIp: '10.0.3.223',
+  mitmPort: 45361,
+  autoAccessFixed: 1
+}
+2024-11-14 11:05:14.878 - [Info] MITM Version: 2
+2024-11-14 11:05:14.904 - [Info] Auto Access Enabled: true
+2024-11-14 11:05:14.904 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-14 11:05:14.930 - [Info] SSH man-in-the-middle server for 10.0.3.223 listening on 10.0.3.1:45361
+2024-11-14 11:05:15.545 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:15.867 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:15.867 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:15.897 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:15.898 - [Debug] [Auto Access] Attacker: 143.244.167.116, Threshold: 1, Attempts: 1
+2024-11-14 11:05:15.899 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-14 11:05:15.899 - [Debug] [Auto Access] Adding the following credentials: 'admin:123456789'
+2024-11-14 11:05:16.745 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-14 11:05:16.747 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-14 11:05:16.747 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.223
+2024-11-14 11:05:16.893 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-14 11:05:16.927 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:17.038 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:17.038 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:17.072 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:17.073 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-14 11:05:17.074 - [Debug] [Auth] Attacker: 143.244.167.116 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 11:05:17.098 - [Debug] [Connection] Attacker closed the connection
+2024-11-14 11:05:17.115 - [Debug] [EXEC] Noninteractive mode attacker command: uname -a
+2024-11-14 11:05:17.195 - [Debug] [Connection] Attacker closed connection
+2024-11-14 11:05:17.215 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:17.220 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-14 11:05:17.224 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-14 11:05:17.392 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:17.392 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:17.439 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:17.439 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-14 11:05:17.442 - [Debug] [Auth] Attacker: 143.244.167.116 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 11:05:17.491 - [Debug] [Connection] Attacker closed the connection
+2024-11-14 11:05:17.521 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:17.659 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:17.659 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:17.678 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:17.679 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-14 11:05:17.680 - [Debug] [Auth] Attacker: 143.244.167.116 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 11:05:17.700 - [Debug] [Connection] Attacker closed the connection
+2024-11-14 11:05:17.712 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:17.828 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:17.828 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:17.862 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:17.865 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-14 11:05:17.867 - [Debug] [Auth] Attacker: 143.244.167.116 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 11:05:17.890 - [Debug] [Connection] Attacker closed the connection
+2024-11-14 11:05:17.902 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:18.065 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:18.066 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:18.104 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:18.105 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-14 11:05:18.105 - [Debug] [Auth] Attacker: 143.244.167.116 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 11:05:18.130 - [Debug] [Connection] Attacker closed the connection
+2024-11-14 11:05:18.143 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:18.261 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:18.261 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:18.282 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:18.283 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-14 11:05:18.283 - [Debug] [Auth] Attacker: 143.244.167.116 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 11:05:18.309 - [Debug] [Connection] Attacker closed the connection
+2024-11-14 11:05:18.319 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:18.670 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:18.670 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-14 11:05:18.724 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'password'
+2024-11-14 11:05:18.724 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-14 11:05:18.725 - [Debug] [Auth] Attacker: 143.244.167.116 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 11:05:18.755 - [Debug] [Connection] Attacker closed the connection
+2024-11-14 11:05:18.768 - [Debug] [Connection] Attacker connected: 143.244.167.116 | Client Identification: SSH-2.0-Go
+2024-11-14 11:05:18.912 - [Debug] [Auth] Attacker 143.244.167.116 trying to authenticate with 'none'
+2024-11-14 11:05:18.921 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

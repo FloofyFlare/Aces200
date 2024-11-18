@@ -1,0 +1,29 @@
+Nov 16 04:12:03 nobanner-session-45709 systemd-logind[164]: New seat seat0.
+Nov 16 04:12:06 nobanner-session-45709 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 04:12:06 nobanner-session-45709 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 04:12:15 nobanner-session-45709 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 04:12:15 nobanner-session-45709 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 04:12:15 nobanner-session-45709 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 04:12:27 nobanner-session-45709 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 04:12:28 nobanner-session-45709 usermod[764]: change user 'sshd' password
+Nov 16 04:12:28 nobanner-session-45709 chage[771]: changed password expiry for sshd
+Nov 16 04:12:31 nobanner-session-45709 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 04:12:31 nobanner-session-45709 sshd[1206]: Server listening on :: port 22.
+Nov 16 04:12:33 nobanner-session-45709 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 04:12:33 nobanner-session-45709 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 04:12:33 nobanner-session-45709 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 04:12:40 nobanner-session-45709 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 04:17:01 nobanner-session-45709 CRON[1551]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 16 04:17:01 nobanner-session-45709 CRON[1551]: pam_unix(cron:session): session closed for user root
+Nov 16 04:54:05 nobanner-session-45709 useradd[1558]: new group: name=support, GID=1001
+Nov 16 04:54:05 nobanner-session-45709 useradd[1558]: new user: name=support, UID=1001, GID=1001, home=/home/support, shell=/bin/bash, from=none
+Nov 16 04:54:05 nobanner-session-45709 usermod[1567]: change user 'support' password
+Nov 16 04:54:05 nobanner-session-45709 sshd[1574]: Accepted password for support from 10.0.3.1 port 41144 ssh2
+Nov 16 04:54:05 nobanner-session-45709 sshd[1574]: pam_unix(sshd:session): session opened for user support by (uid=0)
+Nov 16 04:54:05 nobanner-session-45709 systemd-logind[164]: New session 1533 of user support.
+Nov 16 04:54:05 nobanner-session-45709 systemd: pam_unix(systemd-user:session): session opened for user support by (uid=0)
+Nov 16 04:54:15 nobanner-session-45709 sshd[1591]: Received disconnect from 10.0.3.1 port 41144:11: 
+Nov 16 04:54:15 nobanner-session-45709 sshd[1591]: Disconnected from user support 10.0.3.1 port 41144
+Nov 16 04:54:15 nobanner-session-45709 sshd[1574]: pam_unix(sshd:session): session closed for user support
+Nov 16 04:54:16 nobanner-session-45709 systemd-logind[164]: Session 1533 logged out. Waiting for processes to exit.
+Nov 16 04:54:16 nobanner-session-45709 systemd-logind[164]: Removed session 1533.

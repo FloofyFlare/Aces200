@@ -1,0 +1,27 @@
+Nov 14 11:40:44 nobanner-nosession-45178 systemd-logind[165]: New seat seat0.
+Nov 14 11:40:47 nobanner-nosession-45178 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 11:40:47 nobanner-nosession-45178 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 11:40:56 nobanner-nosession-45178 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 11:40:56 nobanner-nosession-45178 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 11:40:56 nobanner-nosession-45178 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 11:41:16 nobanner-nosession-45178 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 11:41:17 nobanner-nosession-45178 usermod[764]: change user 'sshd' password
+Nov 14 11:41:17 nobanner-nosession-45178 chage[771]: changed password expiry for sshd
+Nov 14 11:41:19 nobanner-nosession-45178 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 11:41:19 nobanner-nosession-45178 sshd[1206]: Server listening on :: port 22.
+Nov 14 11:41:21 nobanner-nosession-45178 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 11:41:21 nobanner-nosession-45178 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 11:41:21 nobanner-nosession-45178 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 11:41:29 nobanner-nosession-45178 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 11:41:56 nobanner-nosession-45178 useradd[1548]: new group: name=guest, GID=1001
+Nov 14 11:41:56 nobanner-nosession-45178 useradd[1548]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov 14 11:41:57 nobanner-nosession-45178 usermod[1557]: change user 'guest' password
+Nov 14 11:41:57 nobanner-nosession-45178 sshd[1564]: Accepted password for guest from 10.0.3.1 port 46746 ssh2
+Nov 14 11:41:57 nobanner-nosession-45178 sshd[1564]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov 14 11:41:57 nobanner-nosession-45178 systemd-logind[165]: New session 1181 of user guest.
+Nov 14 11:41:57 nobanner-nosession-45178 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov 14 11:41:59 nobanner-nosession-45178 sshd[1581]: Received disconnect from 10.0.3.1 port 46746:11: 
+Nov 14 11:41:59 nobanner-nosession-45178 sshd[1581]: Disconnected from user guest 10.0.3.1 port 46746
+Nov 14 11:41:59 nobanner-nosession-45178 sshd[1564]: pam_unix(sshd:session): session closed for user guest
+Nov 14 11:41:59 nobanner-nosession-45178 systemd-logind[165]: Session 1181 logged out. Waiting for processes to exit.
+Nov 14 11:41:59 nobanner-nosession-45178 systemd-logind[165]: Removed session 1181.

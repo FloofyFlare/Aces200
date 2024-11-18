@@ -1,0 +1,27 @@
+Nov 16 02:05:40 nobanner-session-45688 systemd-logind[165]: New seat seat0.
+Nov 16 02:05:43 nobanner-session-45688 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 02:05:43 nobanner-session-45688 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 02:05:51 nobanner-session-45688 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 02:05:51 nobanner-session-45688 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 02:05:51 nobanner-session-45688 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 02:05:59 nobanner-session-45688 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 02:05:59 nobanner-session-45688 usermod[764]: change user 'sshd' password
+Nov 16 02:05:59 nobanner-session-45688 chage[771]: changed password expiry for sshd
+Nov 16 02:06:01 nobanner-session-45688 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 02:06:01 nobanner-session-45688 sshd[1206]: Server listening on :: port 22.
+Nov 16 02:06:04 nobanner-session-45688 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 02:06:04 nobanner-session-45688 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 02:06:04 nobanner-session-45688 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 02:06:10 nobanner-session-45688 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 02:06:38 nobanner-session-45688 useradd[1551]: new group: name=support, GID=1001
+Nov 16 02:06:38 nobanner-session-45688 useradd[1551]: new user: name=support, UID=1001, GID=1001, home=/home/support, shell=/bin/bash, from=none
+Nov 16 02:06:38 nobanner-session-45688 usermod[1560]: change user 'support' password
+Nov 16 02:06:38 nobanner-session-45688 sshd[1567]: Accepted password for support from 10.0.3.1 port 34836 ssh2
+Nov 16 02:06:38 nobanner-session-45688 sshd[1567]: pam_unix(sshd:session): session opened for user support by (uid=0)
+Nov 16 02:06:38 nobanner-session-45688 systemd-logind[165]: New session 1511 of user support.
+Nov 16 02:06:38 nobanner-session-45688 systemd: pam_unix(systemd-user:session): session opened for user support by (uid=0)
+Nov 16 02:06:49 nobanner-session-45688 sshd[1584]: Received disconnect from 10.0.3.1 port 34836:11: 
+Nov 16 02:06:49 nobanner-session-45688 sshd[1584]: Disconnected from user support 10.0.3.1 port 34836
+Nov 16 02:06:49 nobanner-session-45688 sshd[1567]: pam_unix(sshd:session): session closed for user support
+Nov 16 02:06:49 nobanner-session-45688 systemd-logind[165]: Session 1511 logged out. Waiting for processes to exit.
+Nov 16 02:06:49 nobanner-session-45688 systemd-logind[165]: Removed session 1511.

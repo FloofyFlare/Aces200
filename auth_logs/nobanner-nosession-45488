@@ -1,0 +1,25 @@
+Nov 14 19:24:50 nobanner-nosession-45488 systemd-logind[164]: New seat seat0.
+Nov 14 19:24:53 nobanner-nosession-45488 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 19:24:53 nobanner-nosession-45488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:25:01 nobanner-nosession-45488 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:25:01 nobanner-nosession-45488 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 19:25:01 nobanner-nosession-45488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:25:17 nobanner-nosession-45488 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 19:25:17 nobanner-nosession-45488 usermod[764]: change user 'sshd' password
+Nov 14 19:25:17 nobanner-nosession-45488 chage[771]: changed password expiry for sshd
+Nov 14 19:25:20 nobanner-nosession-45488 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 19:25:20 nobanner-nosession-45488 sshd[1206]: Server listening on :: port 22.
+Nov 14 19:25:22 nobanner-nosession-45488 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:25:22 nobanner-nosession-45488 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 19:25:22 nobanner-nosession-45488 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:25:33 nobanner-nosession-45488 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:26:30 nobanner-nosession-45488 useradd[1548]: new group: name=qiaogx, GID=1001
+Nov 14 19:26:30 nobanner-nosession-45488 useradd[1548]: new user: name=qiaogx, UID=1001, GID=1001, home=/home/qiaogx, shell=/bin/bash, from=none
+Nov 14 19:26:30 nobanner-nosession-45488 usermod[1557]: change user 'qiaogx' password
+Nov 14 19:26:30 nobanner-nosession-45488 sshd[1564]: Accepted password for qiaogx from 10.0.3.1 port 49166 ssh2
+Nov 14 19:26:30 nobanner-nosession-45488 sshd[1564]: pam_unix(sshd:session): session opened for user qiaogx by (uid=0)
+Nov 14 19:26:30 nobanner-nosession-45488 systemd-logind[164]: New session 1332 of user qiaogx.
+Nov 14 19:26:30 nobanner-nosession-45488 systemd: pam_unix(systemd-user:session): session opened for user qiaogx by (uid=0)
+Nov 14 19:26:36 nobanner-nosession-45488 sshd[1564]: pam_unix(sshd:session): session closed for user qiaogx
+Nov 14 19:26:36 nobanner-nosession-45488 systemd-logind[164]: Session 1332 logged out. Waiting for processes to exit.
+Nov 14 19:26:36 nobanner-nosession-45488 systemd-logind[164]: Removed session 1332.

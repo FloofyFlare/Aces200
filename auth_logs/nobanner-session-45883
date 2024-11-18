@@ -1,0 +1,25 @@
+Nov 17 12:23:24 nobanner-session-45883 systemd-logind[165]: New seat seat0.
+Nov 17 12:23:27 nobanner-session-45883 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 17 12:23:27 nobanner-session-45883 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 12:23:35 nobanner-session-45883 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 12:23:35 nobanner-session-45883 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 17 12:23:35 nobanner-session-45883 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 12:23:48 nobanner-session-45883 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 17 12:23:48 nobanner-session-45883 usermod[764]: change user 'sshd' password
+Nov 17 12:23:48 nobanner-session-45883 chage[771]: changed password expiry for sshd
+Nov 17 12:23:50 nobanner-session-45883 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 17 12:23:50 nobanner-session-45883 sshd[1206]: Server listening on :: port 22.
+Nov 17 12:23:52 nobanner-session-45883 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 12:23:52 nobanner-session-45883 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 17 12:23:52 nobanner-session-45883 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 12:23:58 nobanner-session-45883 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 12:25:12 nobanner-session-45883 useradd[1551]: new group: name=fsuser, GID=1001
+Nov 17 12:25:12 nobanner-session-45883 useradd[1551]: new user: name=fsuser, UID=1001, GID=1001, home=/home/fsuser, shell=/bin/bash, from=none
+Nov 17 12:25:12 nobanner-session-45883 usermod[1560]: change user 'fsuser' password
+Nov 17 12:25:12 nobanner-session-45883 sshd[1567]: Accepted password for fsuser from 10.0.3.1 port 40554 ssh2
+Nov 17 12:25:12 nobanner-session-45883 sshd[1567]: pam_unix(sshd:session): session opened for user fsuser by (uid=0)
+Nov 17 12:25:12 nobanner-session-45883 systemd-logind[165]: New session 1756 of user fsuser.
+Nov 17 12:25:12 nobanner-session-45883 systemd: pam_unix(systemd-user:session): session opened for user fsuser by (uid=0)
+Nov 17 12:25:18 nobanner-session-45883 sshd[1567]: pam_unix(sshd:session): session closed for user fsuser
+Nov 17 12:25:18 nobanner-session-45883 systemd-logind[165]: Session 1756 logged out. Waiting for processes to exit.
+Nov 17 12:25:18 nobanner-session-45883 systemd-logind[165]: Removed session 1756.

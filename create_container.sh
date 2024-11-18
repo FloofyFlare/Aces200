@@ -73,18 +73,18 @@ sudo lxc-attach -n "$container_name" -- bash -c "sudo apt-get install -y curl"
 # sudo lxc-attach -n "$container_name" -- bash -c "curl -fsSl https://ollama.com/install.sh | sh" 
 # sudo lxc-attach -n "$container_name" -- bash -c "ollama pull qwen:0.5b-chat-v1.5-q2_K"
 
-if [[ "$random_number" -eq 1 ]]
-then
+if [[ "$random_number" -eq 1 ]]; then
+  echo "Running NEWCONFIGMANAGER 1"
   /home/student/NEWCONFIGMANAGER 1 $container_name
-elif [[ "$random_number" -eq 2 ]]
-then
+elif [[ "$random_number" -eq 2 ]]; then
+  echo "Running NEWCONFIGMANAGER 2"
   /home/student/NEWCONFIGMANAGER 2 $container_name
-elif [[ "$random_number" -eq 3 ]]
-then
-    /home/student/NEWCONFIGMANAGER 3 $container_name
-  elif [[ "$random_number" -eq 4 ]]
-  then
-    /home/student/NEWCONFIGMANAGER 4 $container_name
+elif [[ "$random_number" -eq 3 ]]; then
+  echo "Running NEWCONFIGMANAGER 3"
+  /home/student/NEWCONFIGMANAGER 3 $container_name
+elif [[ "$random_number" -eq 4 ]]; then
+  echo "Running NEWCONFIGMANAGER 4"
+  /home/student/NEWCONFIGMANAGER 4 $container_name
 fi
 
 echo "NEWCONFIGMANAGER run" >> /home/student/container_logs/"$container_name"
@@ -103,7 +103,7 @@ MITM_port=$id # using port equal to the container id
 sudo iptables --table nat --insert PREROUTING --source 0.0.0.0/0 --destination "$external_ip" --protocol tcp --dport 22 --jump DNAT --to-destination 10.0.3.1:"$MITM_port"
 sudo sysctl -w net.ipv4.conf.all.route_localnet=1
 
-echo "MITM setup" >> /home/student/container_logs/"$container_name"
+cho "MITM setup" >> /home/student/container_logs/"$container_name"
 
 log_path=""
 if [[ "$random_number" -eq 1 ]]
@@ -127,6 +127,6 @@ echo "Starting MITM listening" >> /home/student/container_logs/"$container_name"
 #
 #
 # ==== MONITORING TO CHECK FOR SSH CONNECTION  ====
-/home/student/monitor.sh "$random_number" "$container_name" "$external_ip" & 
+sudo /home/student/monitor.sh "$random_number" "$container_name" "$external_ip" & 
 
 exit 0

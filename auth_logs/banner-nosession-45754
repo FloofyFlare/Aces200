@@ -1,0 +1,24 @@
+Nov 16 14:48:01 banner-nosession-45754 systemd-logind[164]: New seat seat0.
+Nov 16 14:48:04 banner-nosession-45754 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 14:48:04 banner-nosession-45754 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 14:48:13 banner-nosession-45754 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 14:48:13 banner-nosession-45754 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 14:48:13 banner-nosession-45754 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 14:48:23 banner-nosession-45754 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 14:48:23 banner-nosession-45754 usermod[764]: change user 'sshd' password
+Nov 16 14:48:23 banner-nosession-45754 chage[771]: changed password expiry for sshd
+Nov 16 14:48:25 banner-nosession-45754 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 14:48:25 banner-nosession-45754 sshd[1206]: Server listening on :: port 22.
+Nov 16 14:48:28 banner-nosession-45754 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 14:48:28 banner-nosession-45754 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 14:48:28 banner-nosession-45754 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 14:48:35 banner-nosession-45754 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 14:50:13 banner-nosession-45754 useradd[1559]: failed adding user 'ubuntu', data deleted
+Nov 16 14:50:13 banner-nosession-45754 usermod[1560]: change user 'ubuntu' password
+Nov 16 14:50:13 banner-nosession-45754 sshd[1567]: Accepted password for ubuntu from 10.0.3.1 port 49130 ssh2
+Nov 16 14:50:13 banner-nosession-45754 sshd[1567]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov 16 14:50:13 banner-nosession-45754 systemd-logind[164]: New session 1577 of user ubuntu.
+Nov 16 14:50:13 banner-nosession-45754 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov 16 14:50:19 banner-nosession-45754 sshd[1567]: pam_unix(sshd:session): session closed for user ubuntu
+Nov 16 14:50:19 banner-nosession-45754 systemd-logind[164]: Session 1577 logged out. Waiting for processes to exit.
+Nov 16 14:50:19 banner-nosession-45754 systemd-logind[164]: Removed session 1577.

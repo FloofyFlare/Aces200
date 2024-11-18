@@ -1,0 +1,23 @@
+Nov 13 11:16:45 nobanner-session-44251 systemd-logind[164]: New seat seat0.
+Nov 13 11:16:49 nobanner-session-44251 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 11:16:49 nobanner-session-44251 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 11:16:56 nobanner-session-44251 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 11:16:56 nobanner-session-44251 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 11:16:56 nobanner-session-44251 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 11:17:01 nobanner-session-44251 CRON[487]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 13 11:17:01 nobanner-session-44251 CRON[487]: pam_unix(cron:session): session closed for user root
+Nov 13 11:17:12 nobanner-session-44251 useradd[759]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 11:17:12 nobanner-session-44251 usermod[767]: change user 'sshd' password
+Nov 13 11:17:12 nobanner-session-44251 chage[774]: changed password expiry for sshd
+Nov 13 11:17:14 nobanner-session-44251 sshd[1209]: Server listening on 0.0.0.0 port 22.
+Nov 13 11:17:14 nobanner-session-44251 sshd[1209]: Server listening on :: port 22.
+Nov 13 11:17:15 nobanner-session-44251 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 11:17:15 nobanner-session-44251 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 11:17:15 nobanner-session-44251 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 11:17:21 nobanner-session-44251 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 11:19:38 nobanner-session-44251 useradd[1554]: failed adding user 'root', data deleted
+Nov 13 11:19:38 nobanner-session-44251 usermod[1555]: change user 'root' password
+Nov 13 11:19:38 nobanner-session-44251 sshd[1562]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 13 11:19:40 nobanner-session-44251 sshd[1562]: Failed password for root from 10.0.3.1 port 34114 ssh2
+Nov 13 11:19:42 nobanner-session-44251 sshd[1562]: Received disconnect from 10.0.3.1 port 34114:11:  [preauth]
+Nov 13 11:19:42 nobanner-session-44251 sshd[1562]: Disconnected from authenticating user root 10.0.3.1 port 34114 [preauth]

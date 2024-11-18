@@ -1,0 +1,27 @@
+Nov 13 00:32:30 banner-session-43920 systemd-logind[165]: New seat seat0.
+Nov 13 00:32:33 banner-session-43920 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 00:32:33 banner-session-43920 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:32:41 banner-session-43920 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:32:41 banner-session-43920 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 00:32:41 banner-session-43920 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:32:50 banner-session-43920 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 00:32:51 banner-session-43920 usermod[764]: change user 'sshd' password
+Nov 13 00:32:51 banner-session-43920 chage[771]: changed password expiry for sshd
+Nov 13 00:32:52 banner-session-43920 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 00:32:52 banner-session-43920 sshd[1206]: Server listening on :: port 22.
+Nov 13 00:32:54 banner-session-43920 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:32:54 banner-session-43920 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 00:32:54 banner-session-43920 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:33:02 banner-session-43920 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:33:08 banner-session-43920 useradd[1557]: new group: name=lenovo, GID=1001
+Nov 13 00:33:08 banner-session-43920 useradd[1557]: new user: name=lenovo, UID=1001, GID=1001, home=/home/lenovo, shell=/bin/bash, from=none
+Nov 13 00:33:08 banner-session-43920 usermod[1566]: change user 'lenovo' password
+Nov 13 00:33:08 banner-session-43920 sshd[1573]: Accepted password for lenovo from 10.0.3.1 port 34574 ssh2
+Nov 13 00:33:08 banner-session-43920 sshd[1573]: pam_unix(sshd:session): session opened for user lenovo by (uid=0)
+Nov 13 00:33:08 banner-session-43920 systemd-logind[165]: New session 557 of user lenovo.
+Nov 13 00:33:08 banner-session-43920 systemd: pam_unix(systemd-user:session): session opened for user lenovo by (uid=0)
+Nov 13 00:33:10 banner-session-43920 sshd[1590]: Received disconnect from 10.0.3.1 port 34574:11: 
+Nov 13 00:33:10 banner-session-43920 sshd[1590]: Disconnected from user lenovo 10.0.3.1 port 34574
+Nov 13 00:33:10 banner-session-43920 sshd[1573]: pam_unix(sshd:session): session closed for user lenovo
+Nov 13 00:33:10 banner-session-43920 systemd-logind[165]: Session 557 logged out. Waiting for processes to exit.
+Nov 13 00:33:10 banner-session-43920 systemd-logind[165]: Removed session 557.

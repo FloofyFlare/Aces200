@@ -1,0 +1,31 @@
+Nov 15 05:24:29 nobanner-nosession-45557 systemd-logind[164]: New seat seat0.
+Nov 15 05:24:33 nobanner-nosession-45557 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 15 05:24:33 nobanner-nosession-45557 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 05:24:41 nobanner-nosession-45557 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 05:24:41 nobanner-nosession-45557 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 15 05:24:41 nobanner-nosession-45557 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 05:24:54 nobanner-nosession-45557 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 15 05:24:54 nobanner-nosession-45557 usermod[764]: change user 'sshd' password
+Nov 15 05:24:54 nobanner-nosession-45557 chage[771]: changed password expiry for sshd
+Nov 15 05:24:56 nobanner-nosession-45557 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 15 05:24:56 nobanner-nosession-45557 sshd[1206]: Server listening on :: port 22.
+Nov 15 05:24:58 nobanner-nosession-45557 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 05:24:58 nobanner-nosession-45557 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 15 05:24:58 nobanner-nosession-45557 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 05:25:05 nobanner-nosession-45557 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 06:17:01 nobanner-nosession-45557 CRON[1552]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 15 06:17:01 nobanner-nosession-45557 CRON[1552]: pam_unix(cron:session): session closed for user root
+Nov 15 06:25:01 nobanner-nosession-45557 CRON[1557]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 15 06:25:01 nobanner-nosession-45557 CRON[1557]: pam_unix(cron:session): session closed for user root
+Nov 15 06:33:57 nobanner-nosession-45557 useradd[1605]: new group: name=admin, GID=1001
+Nov 15 06:33:57 nobanner-nosession-45557 useradd[1605]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov 15 06:33:57 nobanner-nosession-45557 usermod[1614]: change user 'admin' password
+Nov 15 06:33:57 nobanner-nosession-45557 sshd[1621]: Accepted password for admin from 10.0.3.1 port 60146 ssh2
+Nov 15 06:33:57 nobanner-nosession-45557 sshd[1621]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov 15 06:33:57 nobanner-nosession-45557 systemd-logind[164]: New session 1428 of user admin.
+Nov 15 06:33:57 nobanner-nosession-45557 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov 15 06:33:58 nobanner-nosession-45557 sshd[1638]: Received disconnect from 10.0.3.1 port 60146:11: 
+Nov 15 06:33:58 nobanner-nosession-45557 sshd[1638]: Disconnected from user admin 10.0.3.1 port 60146
+Nov 15 06:33:58 nobanner-nosession-45557 sshd[1621]: pam_unix(sshd:session): session closed for user admin
+Nov 15 06:33:58 nobanner-nosession-45557 systemd-logind[164]: Session 1428 logged out. Waiting for processes to exit.
+Nov 15 06:33:58 nobanner-nosession-45557 systemd-logind[164]: Removed session 1428.

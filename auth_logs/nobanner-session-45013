@@ -1,0 +1,27 @@
+Nov 14 08:00:07 nobanner-session-45013 systemd-logind[166]: New seat seat0.
+Nov 14 08:00:11 nobanner-session-45013 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 08:00:11 nobanner-session-45013 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 08:00:19 nobanner-session-45013 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 08:00:19 nobanner-session-45013 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 08:00:19 nobanner-session-45013 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 08:00:40 nobanner-session-45013 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 08:00:40 nobanner-session-45013 usermod[764]: change user 'sshd' password
+Nov 14 08:00:40 nobanner-session-45013 chage[771]: changed password expiry for sshd
+Nov 14 08:00:43 nobanner-session-45013 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 08:00:43 nobanner-session-45013 sshd[1206]: Server listening on :: port 22.
+Nov 14 08:00:44 nobanner-session-45013 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 08:00:44 nobanner-session-45013 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 08:00:44 nobanner-session-45013 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 08:00:59 nobanner-session-45013 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 08:03:15 nobanner-session-45013 useradd[1551]: new group: name=guest, GID=1001
+Nov 14 08:03:15 nobanner-session-45013 useradd[1551]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov 14 08:03:15 nobanner-session-45013 usermod[1560]: change user 'guest' password
+Nov 14 08:03:15 nobanner-session-45013 sshd[1567]: Accepted password for guest from 10.0.3.1 port 54696 ssh2
+Nov 14 08:03:15 nobanner-session-45013 sshd[1567]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov 14 08:03:15 nobanner-session-45013 systemd-logind[166]: New session 1107 of user guest.
+Nov 14 08:03:15 nobanner-session-45013 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov 14 08:04:17 nobanner-session-45013 sshd[1584]: Received disconnect from 10.0.3.1 port 54696:11: 
+Nov 14 08:04:17 nobanner-session-45013 sshd[1584]: Disconnected from user guest 10.0.3.1 port 54696
+Nov 14 08:04:17 nobanner-session-45013 sshd[1567]: pam_unix(sshd:session): session closed for user guest
+Nov 14 08:04:17 nobanner-session-45013 systemd-logind[166]: Session 1107 logged out. Waiting for processes to exit.
+Nov 14 08:04:17 nobanner-session-45013 systemd-logind[166]: Removed session 1107.

@@ -1,0 +1,25 @@
+Nov 18 14:38:47 nobanner-session-46015 systemd-logind[164]: New seat seat0.
+Nov 18 14:38:50 nobanner-session-46015 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 14:38:50 nobanner-session-46015 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 14:38:55 nobanner-session-46015 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 14:38:55 nobanner-session-46015 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 14:38:55 nobanner-session-46015 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 14:39:02 nobanner-session-46015 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 14:39:02 nobanner-session-46015 usermod[764]: change user 'sshd' password
+Nov 18 14:39:02 nobanner-session-46015 chage[771]: changed password expiry for sshd
+Nov 18 14:39:04 nobanner-session-46015 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 14:39:04 nobanner-session-46015 sshd[1206]: Server listening on :: port 22.
+Nov 18 14:39:05 nobanner-session-46015 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 14:39:05 nobanner-session-46015 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 14:39:05 nobanner-session-46015 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 14:39:10 nobanner-session-46015 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 14:41:01 nobanner-session-46015 useradd[1551]: new group: name=newtest, GID=1001
+Nov 18 14:41:01 nobanner-session-46015 useradd[1551]: new user: name=newtest, UID=1001, GID=1001, home=/home/newtest, shell=/bin/bash, from=none
+Nov 18 14:41:02 nobanner-session-46015 usermod[1560]: change user 'newtest' password
+Nov 18 14:41:02 nobanner-session-46015 sshd[1567]: Accepted password for newtest from 10.0.3.1 port 33652 ssh2
+Nov 18 14:41:02 nobanner-session-46015 sshd[1567]: pam_unix(sshd:session): session opened for user newtest by (uid=0)
+Nov 18 14:41:02 nobanner-session-46015 systemd-logind[164]: New session 1908 of user newtest.
+Nov 18 14:41:02 nobanner-session-46015 systemd: pam_unix(systemd-user:session): session opened for user newtest by (uid=0)
+Nov 18 14:41:09 nobanner-session-46015 sshd[1567]: pam_unix(sshd:session): session closed for user newtest
+Nov 18 14:41:09 nobanner-session-46015 systemd-logind[164]: Session 1908 logged out. Waiting for processes to exit.
+Nov 18 14:41:09 nobanner-session-46015 systemd-logind[164]: Removed session 1908.

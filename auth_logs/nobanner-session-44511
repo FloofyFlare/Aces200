@@ -1,0 +1,29 @@
+Nov 13 18:16:03 nobanner-session-44511 systemd-logind[164]: New seat seat0.
+Nov 13 18:16:07 nobanner-session-44511 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 18:16:07 nobanner-session-44511 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 18:16:16 nobanner-session-44511 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 18:16:16 nobanner-session-44511 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 18:16:16 nobanner-session-44511 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 18:16:35 nobanner-session-44511 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 18:16:36 nobanner-session-44511 usermod[764]: change user 'sshd' password
+Nov 13 18:16:36 nobanner-session-44511 chage[771]: changed password expiry for sshd
+Nov 13 18:16:38 nobanner-session-44511 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 18:16:38 nobanner-session-44511 sshd[1206]: Server listening on :: port 22.
+Nov 13 18:16:39 nobanner-session-44511 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 18:16:40 nobanner-session-44511 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 18:16:40 nobanner-session-44511 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 18:16:48 nobanner-session-44511 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 18:17:01 nobanner-session-44511 CRON[1551]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 13 18:17:01 nobanner-session-44511 CRON[1551]: pam_unix(cron:session): session closed for user root
+Nov 13 18:23:57 nobanner-session-44511 useradd[1555]: new group: name=default, GID=1001
+Nov 13 18:23:57 nobanner-session-44511 useradd[1555]: new user: name=default, UID=1001, GID=1001, home=/home/default, shell=/bin/bash, from=none
+Nov 13 18:23:57 nobanner-session-44511 usermod[1564]: change user 'default' password
+Nov 13 18:23:57 nobanner-session-44511 sshd[1571]: Accepted password for default from 10.0.3.1 port 51692 ssh2
+Nov 13 18:23:57 nobanner-session-44511 sshd[1571]: pam_unix(sshd:session): session opened for user default by (uid=0)
+Nov 13 18:23:57 nobanner-session-44511 systemd-logind[164]: New session 856 of user default.
+Nov 13 18:23:57 nobanner-session-44511 systemd: pam_unix(systemd-user:session): session opened for user default by (uid=0)
+Nov 13 18:23:57 nobanner-session-44511 sshd[1588]: Received disconnect from 10.0.3.1 port 51692:11: 
+Nov 13 18:23:57 nobanner-session-44511 sshd[1588]: Disconnected from user default 10.0.3.1 port 51692
+Nov 13 18:23:57 nobanner-session-44511 sshd[1571]: pam_unix(sshd:session): session closed for user default
+Nov 13 18:23:57 nobanner-session-44511 systemd-logind[164]: Session 856 logged out. Waiting for processes to exit.
+Nov 13 18:23:57 nobanner-session-44511 systemd-logind[164]: Removed session 856.

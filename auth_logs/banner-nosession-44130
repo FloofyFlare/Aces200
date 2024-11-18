@@ -1,0 +1,27 @@
+Nov 13 08:41:32 banner-nosession-44130 systemd-logind[165]: New seat seat0.
+Nov 13 08:41:35 banner-nosession-44130 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 08:41:35 banner-nosession-44130 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 08:41:44 banner-nosession-44130 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 08:41:44 banner-nosession-44130 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 08:41:44 banner-nosession-44130 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 08:42:00 banner-nosession-44130 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 08:42:00 banner-nosession-44130 usermod[764]: change user 'sshd' password
+Nov 13 08:42:00 banner-nosession-44130 chage[771]: changed password expiry for sshd
+Nov 13 08:42:02 banner-nosession-44130 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 08:42:02 banner-nosession-44130 sshd[1206]: Server listening on :: port 22.
+Nov 13 08:42:04 banner-nosession-44130 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 08:42:04 banner-nosession-44130 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 08:42:04 banner-nosession-44130 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 08:42:12 banner-nosession-44130 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 08:47:13 banner-nosession-44130 useradd[1560]: new group: name=smmsp, GID=1001
+Nov 13 08:47:13 banner-nosession-44130 useradd[1560]: new user: name=smmsp, UID=1001, GID=1001, home=/home/smmsp, shell=/bin/bash, from=none
+Nov 13 08:47:13 banner-nosession-44130 usermod[1569]: change user 'smmsp' password
+Nov 13 08:47:14 banner-nosession-44130 sshd[1576]: Accepted password for smmsp from 10.0.3.1 port 34522 ssh2
+Nov 13 08:47:14 banner-nosession-44130 sshd[1576]: pam_unix(sshd:session): session opened for user smmsp by (uid=0)
+Nov 13 08:47:14 banner-nosession-44130 systemd-logind[165]: New session 686 of user smmsp.
+Nov 13 08:47:14 banner-nosession-44130 systemd: pam_unix(systemd-user:session): session opened for user smmsp by (uid=0)
+Nov 13 08:47:14 banner-nosession-44130 sshd[1593]: Received disconnect from 10.0.3.1 port 34522:11: 
+Nov 13 08:47:14 banner-nosession-44130 sshd[1593]: Disconnected from user smmsp 10.0.3.1 port 34522
+Nov 13 08:47:14 banner-nosession-44130 sshd[1576]: pam_unix(sshd:session): session closed for user smmsp
+Nov 13 08:47:14 banner-nosession-44130 systemd-logind[165]: Session 686 logged out. Waiting for processes to exit.
+Nov 13 08:47:14 banner-nosession-44130 systemd-logind[165]: Removed session 686.

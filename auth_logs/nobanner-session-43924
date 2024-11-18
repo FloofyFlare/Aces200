@@ -1,0 +1,27 @@
+Nov 13 00:36:50 nobanner-session-43924 systemd-logind[165]: New seat seat0.
+Nov 13 00:36:54 nobanner-session-43924 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 00:36:54 nobanner-session-43924 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:37:01 nobanner-session-43924 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:37:01 nobanner-session-43924 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 00:37:01 nobanner-session-43924 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:37:11 nobanner-session-43924 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 00:37:11 nobanner-session-43924 usermod[764]: change user 'sshd' password
+Nov 13 00:37:11 nobanner-session-43924 chage[771]: changed password expiry for sshd
+Nov 13 00:37:13 nobanner-session-43924 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 00:37:13 nobanner-session-43924 sshd[1206]: Server listening on :: port 22.
+Nov 13 00:37:15 nobanner-session-43924 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:37:15 nobanner-session-43924 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 00:37:15 nobanner-session-43924 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:37:23 nobanner-session-43924 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:37:27 nobanner-session-43924 useradd[1551]: new group: name=hadoop, GID=1001
+Nov 13 00:37:27 nobanner-session-43924 useradd[1551]: new user: name=hadoop, UID=1001, GID=1001, home=/home/hadoop, shell=/bin/bash, from=none
+Nov 13 00:37:27 nobanner-session-43924 usermod[1560]: change user 'hadoop' password
+Nov 13 00:37:28 nobanner-session-43924 sshd[1567]: Accepted password for hadoop from 10.0.3.1 port 34744 ssh2
+Nov 13 00:37:28 nobanner-session-43924 sshd[1567]: pam_unix(sshd:session): session opened for user hadoop by (uid=0)
+Nov 13 00:37:28 nobanner-session-43924 systemd-logind[165]: New session 565 of user hadoop.
+Nov 13 00:37:28 nobanner-session-43924 systemd: pam_unix(systemd-user:session): session opened for user hadoop by (uid=0)
+Nov 13 00:37:30 nobanner-session-43924 sshd[1584]: Received disconnect from 10.0.3.1 port 34744:11: 
+Nov 13 00:37:30 nobanner-session-43924 sshd[1584]: Disconnected from user hadoop 10.0.3.1 port 34744
+Nov 13 00:37:30 nobanner-session-43924 sshd[1567]: pam_unix(sshd:session): session closed for user hadoop
+Nov 13 00:37:30 nobanner-session-43924 systemd-logind[165]: Session 565 logged out. Waiting for processes to exit.
+Nov 13 00:37:30 nobanner-session-43924 systemd-logind[165]: Removed session 565.

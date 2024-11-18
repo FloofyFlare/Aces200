@@ -1,0 +1,25 @@
+Nov 14 19:31:38 banner-session-45493 systemd-logind[164]: New seat seat0.
+Nov 14 19:31:41 banner-session-45493 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 19:31:41 banner-session-45493 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:31:49 banner-session-45493 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:31:49 banner-session-45493 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 19:31:49 banner-session-45493 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:32:06 banner-session-45493 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 19:32:06 banner-session-45493 usermod[764]: change user 'sshd' password
+Nov 14 19:32:06 banner-session-45493 chage[771]: changed password expiry for sshd
+Nov 14 19:32:08 banner-session-45493 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 19:32:08 banner-session-45493 sshd[1206]: Server listening on :: port 22.
+Nov 14 19:32:11 banner-session-45493 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:32:11 banner-session-45493 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 19:32:11 banner-session-45493 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 19:32:20 banner-session-45493 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 19:33:22 banner-session-45493 useradd[1557]: new group: name=baigy23, GID=1001
+Nov 14 19:33:22 banner-session-45493 useradd[1557]: new user: name=baigy23, UID=1001, GID=1001, home=/home/baigy23, shell=/bin/bash, from=none
+Nov 14 19:33:22 banner-session-45493 usermod[1566]: change user 'baigy23' password
+Nov 14 19:33:23 banner-session-45493 sshd[1573]: Accepted password for baigy23 from 10.0.3.1 port 39856 ssh2
+Nov 14 19:33:23 banner-session-45493 sshd[1573]: pam_unix(sshd:session): session opened for user baigy23 by (uid=0)
+Nov 14 19:33:23 banner-session-45493 systemd-logind[164]: New session 1342 of user baigy23.
+Nov 14 19:33:23 banner-session-45493 systemd: pam_unix(systemd-user:session): session opened for user baigy23 by (uid=0)
+Nov 14 19:33:28 banner-session-45493 sshd[1573]: pam_unix(sshd:session): session closed for user baigy23
+Nov 14 19:33:28 banner-session-45493 systemd-logind[164]: Session 1342 logged out. Waiting for processes to exit.
+Nov 14 19:33:28 banner-session-45493 systemd-logind[164]: Removed session 1342.

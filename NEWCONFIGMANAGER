@@ -15,43 +15,48 @@ fi
 option=$1
 container_name=$2
 
-# Display different messages based on the argument
 case $option in
   1)
-		echo "banner and session files added"
+    echo "banner and session files added"
     # Modify the .bashrc file in the container
-    cat ~/banner_copy | sudo lxc-attach -n $container_name  -- bash -c 'cat >> /etc/bash.bashrc'
+    cat ~/banner_copy | sudo lxc-attach -n $container_name -- bash -c 'cat >> /etc/bash.bashrc'
 
-    # Create the startchatbot.sh file
+    # Copy startchatbot.sh to the container
     tar czf - -C ~/ startchatbot.sh | sudo lxc-attach -n $container_name -- tar xzf - -C /usr/
 
-    # Make the chatbothelp script executable
+    # Make the startchatbot script executable
     sudo lxc-attach -n $container_name -- chmod 777 /usr/startchatbot.sh
-    # add the session files to /root/session_files
+
+    # Add the session files to /root/session_files
     tar czf - -C ~/ session_files | sudo lxc-attach -n $container_name -- tar xzf - -C /usr/
     ;;
-  3)
-	  echo "session files added"
 
-		# add the session files to /root/session_files
-    tar czf - -C ~/ session_files | sudo lxc-attach -n $container_name -- tar xzf - -C /usr/
-
-    ;;
   2)
-		echo "banner added"
+    echo "banner added"
     # Modify the .bashrc file in the container
-    cat ~/banner_copy | sudo lxc-attach -n $container_name  -- bash -c 'cat >> /etc/bash.bashrc'
-
-    # Create the startchatbot.sh file
+    cat ~/banner_copy>> ~/host_errors.log | sudo lxc-attach -n $container_name -- bash -c 'cat >> /etc/bash.bashrc'
+    cat ~/banner_copy | sudo lxc-attach -n $container_name -- bash -c 'cat >> /etc/bash.bashrc'
+    # Copy startchatbot.sh to the container
+    tar czf - -C ~/ startchatbot.sh 2>> ~/ host_error.log | sudo lxc-attach -n $container_name -- tar xzf - -C /usr/
     tar czf - -C ~/ startchatbot.sh | sudo lxc-attach -n $container_name -- tar xzf - -C /usr/
 
-    # Make the chatbothelp script executable
+    # Make the startchatbot script executable
     sudo lxc-attach -n $container_name -- chmod 777 /usr/startchatbot.sh
     ;;
+
+  3)
+    echo "session files added"
+    # Add the session files to /root/session_files
+    tar czf - -C ~/ session_files | sudo lxc-attach -n $container_name -- tar xzf - -C /usr/
+    ;;
+
   4)
     echo "Nothing added"
     ;;
+
   *)
     echo "Invalid option. Please choose between 1 and 4."
     ;;
 esac
+
+exit 0

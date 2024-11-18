@@ -1,0 +1,29 @@
+Nov 14 16:13:23 banner-session-45366 systemd-logind[164]: New seat seat0.
+Nov 14 16:13:26 banner-session-45366 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 16:13:26 banner-session-45366 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 16:13:35 banner-session-45366 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 16:13:35 banner-session-45366 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 16:13:35 banner-session-45366 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 16:13:48 banner-session-45366 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 16:13:48 banner-session-45366 usermod[764]: change user 'sshd' password
+Nov 14 16:13:48 banner-session-45366 chage[771]: changed password expiry for sshd
+Nov 14 16:13:51 banner-session-45366 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 16:13:51 banner-session-45366 sshd[1206]: Server listening on :: port 22.
+Nov 14 16:13:53 banner-session-45366 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 16:13:53 banner-session-45366 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 16:13:53 banner-session-45366 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 16:14:02 banner-session-45366 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 16:17:01 banner-session-45366 CRON[1557]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 14 16:17:01 banner-session-45366 CRON[1557]: pam_unix(cron:session): session closed for user root
+Nov 14 16:18:04 banner-session-45366 useradd[1560]: new group: name=ubnt, GID=1001
+Nov 14 16:18:04 banner-session-45366 useradd[1560]: new user: name=ubnt, UID=1001, GID=1001, home=/home/ubnt, shell=/bin/bash, from=none
+Nov 14 16:18:05 banner-session-45366 usermod[1569]: change user 'ubnt' password
+Nov 14 16:18:05 banner-session-45366 sshd[1576]: Accepted password for ubnt from 10.0.3.1 port 35632 ssh2
+Nov 14 16:18:05 banner-session-45366 sshd[1576]: pam_unix(sshd:session): session opened for user ubnt by (uid=0)
+Nov 14 16:18:05 banner-session-45366 systemd-logind[164]: New session 1250 of user ubnt.
+Nov 14 16:18:05 banner-session-45366 systemd: pam_unix(systemd-user:session): session opened for user ubnt by (uid=0)
+Nov 14 16:18:07 banner-session-45366 sshd[1593]: Received disconnect from 10.0.3.1 port 35632:11: 
+Nov 14 16:18:07 banner-session-45366 sshd[1593]: Disconnected from user ubnt 10.0.3.1 port 35632
+Nov 14 16:18:07 banner-session-45366 sshd[1576]: pam_unix(sshd:session): session closed for user ubnt
+Nov 14 16:18:07 banner-session-45366 systemd-logind[164]: Session 1250 logged out. Waiting for processes to exit.
+Nov 14 16:18:07 banner-session-45366 systemd-logind[164]: Removed session 1250.

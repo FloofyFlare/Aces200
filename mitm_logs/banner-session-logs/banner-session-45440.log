@@ -1,0 +1,43 @@
+(node:2681499) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'banner-session-45440',
+  containerIp: '10.0.3.195',
+  mitmPort: 45440,
+  autoAccessFixed: 1
+}
+2024-11-14 13:18:06.775 - [Info] MITM Version: 2
+2024-11-14 13:18:06.777 - [Info] Auto Access Enabled: true
+2024-11-14 13:18:06.777 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-14 13:18:06.793 - [Info] SSH man-in-the-middle server for 10.0.3.195 listening on 10.0.3.1:45440
+2024-11-14 13:19:11.580 - [Debug] [Connection] Attacker connected: 217.182.253.249 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-14 13:19:12.201 - [Debug] [Auth] Attacker 217.182.253.249 trying to authenticate with 'password'
+2024-11-14 13:19:12.203 - [Debug] [Auto Access] Attacker: 217.182.253.249, Threshold: 1, Attempts: 1
+2024-11-14 13:19:12.215 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-14 13:19:12.223 - [Debug] [Auto Access] Adding the following credentials: 'root:testik'
+2024-11-14 13:19:12.454 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-14 13:19:12.456 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-14 13:19:12.456 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.195
+2024-11-14 13:19:16.649 - [Debug] [LXC] Authentication Failed
+2024-11-14 13:19:16.649 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-14 13:19:16.650 - [Debug] [Auth] Attacker: 217.182.253.249 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-14 13:19:16.651 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-14 13:19:16.651 - [Debug] [Auth] Attacker: 217.182.253.249 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-14 13:19:16.658 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-14 13:19:16.661 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-14 13:19:16.886 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

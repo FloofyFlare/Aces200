@@ -1,0 +1,31 @@
+Nov 17 23:02:06 banner-session-45930 systemd-logind[166]: New seat seat0.
+Nov 17 23:02:09 banner-session-45930 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 17 23:02:09 banner-session-45930 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 23:02:17 banner-session-45930 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 23:02:17 banner-session-45930 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 17 23:02:17 banner-session-45930 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 23:02:34 banner-session-45930 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 17 23:02:34 banner-session-45930 usermod[764]: change user 'sshd' password
+Nov 17 23:02:34 banner-session-45930 chage[771]: changed password expiry for sshd
+Nov 17 23:02:37 banner-session-45930 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 17 23:02:37 banner-session-45930 sshd[1206]: Server listening on :: port 22.
+Nov 17 23:02:39 banner-session-45930 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 23:02:39 banner-session-45930 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 17 23:02:39 banner-session-45930 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 23:02:48 banner-session-45930 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 23:17:01 banner-session-45930 CRON[1558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 23:17:01 banner-session-45930 CRON[1558]: pam_unix(cron:session): session closed for user root
+Nov 18 00:17:01 banner-session-45930 CRON[1567]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 00:17:01 banner-session-45930 CRON[1567]: pam_unix(cron:session): session closed for user root
+Nov 18 00:50:21 banner-session-45930 useradd[1574]: new group: name=user, GID=1001
+Nov 18 00:50:21 banner-session-45930 useradd[1574]: new user: name=user, UID=1001, GID=1001, home=/home/user, shell=/bin/bash, from=none
+Nov 18 00:50:21 banner-session-45930 usermod[1583]: change user 'user' password
+Nov 18 00:50:22 banner-session-45930 sshd[1590]: Accepted password for user from 10.0.3.1 port 42920 ssh2
+Nov 18 00:50:22 banner-session-45930 sshd[1590]: pam_unix(sshd:session): session opened for user user by (uid=0)
+Nov 18 00:50:22 banner-session-45930 systemd-logind[166]: New session 1810 of user user.
+Nov 18 00:50:22 banner-session-45930 systemd: pam_unix(systemd-user:session): session opened for user user by (uid=0)
+Nov 18 00:50:25 banner-session-45930 sshd[1607]: Received disconnect from 10.0.3.1 port 42920:11: 
+Nov 18 00:50:25 banner-session-45930 sshd[1607]: Disconnected from user user 10.0.3.1 port 42920
+Nov 18 00:50:25 banner-session-45930 sshd[1590]: pam_unix(sshd:session): session closed for user user
+Nov 18 00:50:25 banner-session-45930 systemd-logind[166]: Session 1810 logged out. Waiting for processes to exit.
+Nov 18 00:50:25 banner-session-45930 systemd-logind[166]: Removed session 1810.

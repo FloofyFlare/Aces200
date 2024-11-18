@@ -1,0 +1,27 @@
+Nov 13 07:45:28 banner-nosession-44091 systemd-logind[164]: New seat seat0.
+Nov 13 07:45:31 banner-nosession-44091 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 07:45:31 banner-nosession-44091 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 07:45:39 banner-nosession-44091 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 07:45:39 banner-nosession-44091 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 07:45:39 banner-nosession-44091 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 07:46:01 banner-nosession-44091 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 07:46:01 banner-nosession-44091 usermod[764]: change user 'sshd' password
+Nov 13 07:46:02 banner-nosession-44091 chage[771]: changed password expiry for sshd
+Nov 13 07:46:04 banner-nosession-44091 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 07:46:04 banner-nosession-44091 sshd[1206]: Server listening on :: port 22.
+Nov 13 07:46:06 banner-nosession-44091 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 07:46:06 banner-nosession-44091 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 07:46:06 banner-nosession-44091 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 07:46:12 banner-nosession-44091 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 07:46:50 banner-nosession-44091 useradd[1559]: new group: name=mysql, GID=1001
+Nov 13 07:46:50 banner-nosession-44091 useradd[1559]: new user: name=mysql, UID=1001, GID=1001, home=/home/mysql, shell=/bin/bash, from=none
+Nov 13 07:46:51 banner-nosession-44091 usermod[1568]: change user 'mysql' password
+Nov 13 07:46:51 banner-nosession-44091 sshd[1575]: Accepted password for mysql from 10.0.3.1 port 52386 ssh2
+Nov 13 07:46:51 banner-nosession-44091 sshd[1575]: pam_unix(sshd:session): session opened for user mysql by (uid=0)
+Nov 13 07:46:51 banner-nosession-44091 systemd-logind[164]: New session 666 of user mysql.
+Nov 13 07:46:51 banner-nosession-44091 systemd: pam_unix(systemd-user:session): session opened for user mysql by (uid=0)
+Nov 13 07:46:53 banner-nosession-44091 sshd[1592]: Received disconnect from 10.0.3.1 port 52386:11: 
+Nov 13 07:46:53 banner-nosession-44091 sshd[1592]: Disconnected from user mysql 10.0.3.1 port 52386
+Nov 13 07:46:53 banner-nosession-44091 sshd[1575]: pam_unix(sshd:session): session closed for user mysql
+Nov 13 07:46:53 banner-nosession-44091 systemd-logind[164]: Session 666 logged out. Waiting for processes to exit.
+Nov 13 07:46:53 banner-nosession-44091 systemd-logind[164]: Removed session 666.

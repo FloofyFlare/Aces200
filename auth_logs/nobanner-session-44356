@@ -1,0 +1,27 @@
+Nov 13 14:18:30 nobanner-session-44356 systemd-logind[166]: New seat seat0.
+Nov 13 14:18:33 nobanner-session-44356 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 14:18:33 nobanner-session-44356 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 14:18:41 nobanner-session-44356 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 14:18:41 nobanner-session-44356 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 14:18:41 nobanner-session-44356 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 14:19:03 nobanner-session-44356 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 14:19:03 nobanner-session-44356 usermod[764]: change user 'sshd' password
+Nov 13 14:19:04 nobanner-session-44356 chage[771]: changed password expiry for sshd
+Nov 13 14:19:06 nobanner-session-44356 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 14:19:06 nobanner-session-44356 sshd[1206]: Server listening on :: port 22.
+Nov 13 14:19:08 nobanner-session-44356 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 14:19:08 nobanner-session-44356 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 14:19:08 nobanner-session-44356 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 14:19:17 nobanner-session-44356 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 14:20:55 nobanner-session-44356 useradd[1551]: new group: name=master, GID=1001
+Nov 13 14:20:55 nobanner-session-44356 useradd[1551]: new user: name=master, UID=1001, GID=1001, home=/home/master, shell=/bin/bash, from=none
+Nov 13 14:20:55 nobanner-session-44356 usermod[1560]: change user 'master' password
+Nov 13 14:20:55 nobanner-session-44356 sshd[1567]: Accepted password for master from 10.0.3.1 port 52342 ssh2
+Nov 13 14:20:55 nobanner-session-44356 sshd[1567]: pam_unix(sshd:session): session opened for user master by (uid=0)
+Nov 13 14:20:55 nobanner-session-44356 systemd-logind[166]: New session 784 of user master.
+Nov 13 14:20:55 nobanner-session-44356 systemd: pam_unix(systemd-user:session): session opened for user master by (uid=0)
+Nov 13 14:20:56 nobanner-session-44356 sshd[1584]: Received disconnect from 10.0.3.1 port 52342:11: 
+Nov 13 14:20:56 nobanner-session-44356 sshd[1584]: Disconnected from user master 10.0.3.1 port 52342
+Nov 13 14:20:56 nobanner-session-44356 sshd[1567]: pam_unix(sshd:session): session closed for user master
+Nov 13 14:20:56 nobanner-session-44356 systemd-logind[166]: Session 784 logged out. Waiting for processes to exit.
+Nov 13 14:20:56 nobanner-session-44356 systemd-logind[166]: Removed session 784.

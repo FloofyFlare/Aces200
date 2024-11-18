@@ -1,0 +1,25 @@
+Nov 14 21:07:21 nobanner-nosession-45530 systemd-logind[164]: New seat seat0.
+Nov 14 21:07:24 nobanner-nosession-45530 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 21:07:24 nobanner-nosession-45530 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 21:07:33 nobanner-nosession-45530 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 21:07:33 nobanner-nosession-45530 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 21:07:33 nobanner-nosession-45530 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 21:07:48 nobanner-nosession-45530 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 21:07:48 nobanner-nosession-45530 usermod[764]: change user 'sshd' password
+Nov 14 21:07:48 nobanner-nosession-45530 chage[771]: changed password expiry for sshd
+Nov 14 21:07:50 nobanner-nosession-45530 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 21:07:50 nobanner-nosession-45530 sshd[1206]: Server listening on :: port 22.
+Nov 14 21:07:52 nobanner-nosession-45530 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 21:07:52 nobanner-nosession-45530 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 21:07:52 nobanner-nosession-45530 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 21:07:59 nobanner-nosession-45530 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 21:09:14 nobanner-nosession-45530 useradd[1548]: new group: name=grade2, GID=1001
+Nov 14 21:09:14 nobanner-nosession-45530 useradd[1548]: new user: name=grade2, UID=1001, GID=1001, home=/home/grade2, shell=/bin/bash, from=none
+Nov 14 21:09:14 nobanner-nosession-45530 usermod[1557]: change user 'grade2' password
+Nov 14 21:09:15 nobanner-nosession-45530 sshd[1564]: Accepted password for grade2 from 10.0.3.1 port 58978 ssh2
+Nov 14 21:09:15 nobanner-nosession-45530 sshd[1564]: pam_unix(sshd:session): session opened for user grade2 by (uid=0)
+Nov 14 21:09:15 nobanner-nosession-45530 systemd-logind[164]: New session 1385 of user grade2.
+Nov 14 21:09:15 nobanner-nosession-45530 systemd: pam_unix(systemd-user:session): session opened for user grade2 by (uid=0)
+Nov 14 21:09:23 nobanner-nosession-45530 sshd[1564]: pam_unix(sshd:session): session closed for user grade2
+Nov 14 21:09:23 nobanner-nosession-45530 systemd-logind[164]: Session 1385 logged out. Waiting for processes to exit.
+Nov 14 21:09:23 nobanner-nosession-45530 systemd-logind[164]: Removed session 1385.

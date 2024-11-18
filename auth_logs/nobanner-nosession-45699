@@ -1,0 +1,25 @@
+Nov 16 02:33:08 nobanner-nosession-45699 systemd-logind[164]: New seat seat0.
+Nov 16 02:33:11 nobanner-nosession-45699 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 02:33:11 nobanner-nosession-45699 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 02:33:19 nobanner-nosession-45699 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 02:33:19 nobanner-nosession-45699 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 02:33:19 nobanner-nosession-45699 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 02:33:40 nobanner-nosession-45699 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 02:33:40 nobanner-nosession-45699 usermod[764]: change user 'sshd' password
+Nov 16 02:33:41 nobanner-nosession-45699 chage[771]: changed password expiry for sshd
+Nov 16 02:33:43 nobanner-nosession-45699 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 02:33:43 nobanner-nosession-45699 sshd[1206]: Server listening on :: port 22.
+Nov 16 02:33:45 nobanner-nosession-45699 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 02:33:45 nobanner-nosession-45699 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 02:33:45 nobanner-nosession-45699 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 02:33:54 nobanner-nosession-45699 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 03:10:01 nobanner-nosession-45699 CRON[1552]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 16 03:10:01 nobanner-nosession-45699 CRON[1552]: pam_unix(cron:session): session closed for user root
+Nov 16 03:17:01 nobanner-nosession-45699 CRON[1555]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 16 03:17:01 nobanner-nosession-45699 CRON[1555]: pam_unix(cron:session): session closed for user root
+Nov 16 03:18:12 nobanner-nosession-45699 useradd[1558]: failed adding user 'root', data deleted
+Nov 16 03:18:12 nobanner-nosession-45699 usermod[1559]: change user 'root' password
+Nov 16 03:18:13 nobanner-nosession-45699 sshd[1566]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 16 03:18:14 nobanner-nosession-45699 sshd[1566]: Failed password for root from 10.0.3.1 port 39786 ssh2
+Nov 16 03:18:16 nobanner-nosession-45699 sshd[1566]: Received disconnect from 10.0.3.1 port 39786:11:  [preauth]
+Nov 16 03:18:16 nobanner-nosession-45699 sshd[1566]: Disconnected from authenticating user root 10.0.3.1 port 39786 [preauth]

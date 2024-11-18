@@ -1,0 +1,27 @@
+Nov 13 21:50:47 nobanner-nosession-44656 systemd-logind[164]: New seat seat0.
+Nov 13 21:50:50 nobanner-nosession-44656 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 21:50:50 nobanner-nosession-44656 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 21:50:59 nobanner-nosession-44656 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 21:50:59 nobanner-nosession-44656 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 21:50:59 nobanner-nosession-44656 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 21:51:17 nobanner-nosession-44656 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 21:51:17 nobanner-nosession-44656 usermod[764]: change user 'sshd' password
+Nov 13 21:51:17 nobanner-nosession-44656 chage[771]: changed password expiry for sshd
+Nov 13 21:51:20 nobanner-nosession-44656 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 21:51:20 nobanner-nosession-44656 sshd[1206]: Server listening on :: port 22.
+Nov 13 21:51:22 nobanner-nosession-44656 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 21:51:22 nobanner-nosession-44656 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 21:51:22 nobanner-nosession-44656 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 21:51:31 nobanner-nosession-44656 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 21:56:14 nobanner-nosession-44656 useradd[1549]: new group: name=testuser, GID=1001
+Nov 13 21:56:14 nobanner-nosession-44656 useradd[1549]: new user: name=testuser, UID=1001, GID=1001, home=/home/testuser, shell=/bin/bash, from=none
+Nov 13 21:56:14 nobanner-nosession-44656 usermod[1558]: change user 'testuser' password
+Nov 13 21:56:14 nobanner-nosession-44656 sshd[1565]: Accepted password for testuser from 10.0.3.1 port 36038 ssh2
+Nov 13 21:56:14 nobanner-nosession-44656 sshd[1565]: pam_unix(sshd:session): session opened for user testuser by (uid=0)
+Nov 13 21:56:14 nobanner-nosession-44656 systemd-logind[164]: New session 933 of user testuser.
+Nov 13 21:56:14 nobanner-nosession-44656 systemd: pam_unix(systemd-user:session): session opened for user testuser by (uid=0)
+Nov 13 21:56:15 nobanner-nosession-44656 sshd[1582]: Received disconnect from 10.0.3.1 port 36038:11: 
+Nov 13 21:56:15 nobanner-nosession-44656 sshd[1582]: Disconnected from user testuser 10.0.3.1 port 36038
+Nov 13 21:56:15 nobanner-nosession-44656 sshd[1565]: pam_unix(sshd:session): session closed for user testuser
+Nov 13 21:56:15 nobanner-nosession-44656 systemd-logind[164]: Session 933 logged out. Waiting for processes to exit.
+Nov 13 21:56:15 nobanner-nosession-44656 systemd-logind[164]: Removed session 933.

@@ -1,0 +1,27 @@
+Nov 16 19:35:51 banner-nosession-45795 systemd-logind[164]: New seat seat0.
+Nov 16 19:35:54 banner-nosession-45795 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 19:35:54 banner-nosession-45795 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 19:36:03 banner-nosession-45795 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 19:36:03 banner-nosession-45795 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 19:36:03 banner-nosession-45795 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 19:36:16 banner-nosession-45795 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 19:36:17 banner-nosession-45795 usermod[764]: change user 'sshd' password
+Nov 16 19:36:17 banner-nosession-45795 chage[771]: changed password expiry for sshd
+Nov 16 19:36:19 banner-nosession-45795 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 19:36:19 banner-nosession-45795 sshd[1206]: Server listening on :: port 22.
+Nov 16 19:36:21 banner-nosession-45795 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 19:36:21 banner-nosession-45795 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 19:36:21 banner-nosession-45795 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 19:36:30 banner-nosession-45795 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 19:37:18 banner-nosession-45795 useradd[1559]: new group: name=ftpuser, GID=1001
+Nov 16 19:37:18 banner-nosession-45795 useradd[1559]: new user: name=ftpuser, UID=1001, GID=1001, home=/home/ftpuser, shell=/bin/bash, from=none
+Nov 16 19:37:18 banner-nosession-45795 usermod[1568]: change user 'ftpuser' password
+Nov 16 19:37:18 banner-nosession-45795 sshd[1575]: Accepted password for ftpuser from 10.0.3.1 port 48270 ssh2
+Nov 16 19:37:18 banner-nosession-45795 sshd[1575]: pam_unix(sshd:session): session opened for user ftpuser by (uid=0)
+Nov 16 19:37:18 banner-nosession-45795 systemd-logind[164]: New session 1620 of user ftpuser.
+Nov 16 19:37:18 banner-nosession-45795 systemd: pam_unix(systemd-user:session): session opened for user ftpuser by (uid=0)
+Nov 16 19:37:22 banner-nosession-45795 sshd[1592]: Received disconnect from 10.0.3.1 port 48270:11: 
+Nov 16 19:37:22 banner-nosession-45795 sshd[1592]: Disconnected from user ftpuser 10.0.3.1 port 48270
+Nov 16 19:37:22 banner-nosession-45795 sshd[1575]: pam_unix(sshd:session): session closed for user ftpuser
+Nov 16 19:37:22 banner-nosession-45795 systemd-logind[164]: Session 1620 logged out. Waiting for processes to exit.
+Nov 16 19:37:22 banner-nosession-45795 systemd-logind[164]: Removed session 1620.

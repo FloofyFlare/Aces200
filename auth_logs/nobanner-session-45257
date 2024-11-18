@@ -1,0 +1,27 @@
+Nov 14 13:35:28 nobanner-session-45257 systemd-logind[165]: New seat seat0.
+Nov 14 13:35:31 nobanner-session-45257 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 13:35:31 nobanner-session-45257 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:35:39 nobanner-session-45257 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:35:39 nobanner-session-45257 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 13:35:39 nobanner-session-45257 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:35:54 nobanner-session-45257 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 13:35:54 nobanner-session-45257 usermod[764]: change user 'sshd' password
+Nov 14 13:35:54 nobanner-session-45257 chage[771]: changed password expiry for sshd
+Nov 14 13:35:56 nobanner-session-45257 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 13:35:56 nobanner-session-45257 sshd[1206]: Server listening on :: port 22.
+Nov 14 13:35:58 nobanner-session-45257 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:35:58 nobanner-session-45257 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 13:35:58 nobanner-session-45257 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:36:09 nobanner-session-45257 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:39:19 nobanner-session-45257 useradd[1551]: new group: name=test, GID=1001
+Nov 14 13:39:19 nobanner-session-45257 useradd[1551]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/bash, from=none
+Nov 14 13:39:19 nobanner-session-45257 usermod[1560]: change user 'test' password
+Nov 14 13:39:19 nobanner-session-45257 sshd[1567]: Accepted password for test from 10.0.3.1 port 43154 ssh2
+Nov 14 13:39:19 nobanner-session-45257 sshd[1567]: pam_unix(sshd:session): session opened for user test by (uid=0)
+Nov 14 13:39:19 nobanner-session-45257 systemd-logind[165]: New session 1207 of user test.
+Nov 14 13:39:19 nobanner-session-45257 systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Nov 14 13:39:21 nobanner-session-45257 sshd[1584]: Received disconnect from 10.0.3.1 port 43154:11: 
+Nov 14 13:39:21 nobanner-session-45257 sshd[1584]: Disconnected from user test 10.0.3.1 port 43154
+Nov 14 13:39:21 nobanner-session-45257 sshd[1567]: pam_unix(sshd:session): session closed for user test
+Nov 14 13:39:21 nobanner-session-45257 systemd-logind[165]: Session 1207 logged out. Waiting for processes to exit.
+Nov 14 13:39:21 nobanner-session-45257 systemd-logind[165]: Removed session 1207.

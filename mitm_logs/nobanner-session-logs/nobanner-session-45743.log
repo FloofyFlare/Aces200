@@ -1,0 +1,53 @@
+(node:1000875) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingLogouts: '/home/student/MITM/logs/logouts',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'nobanner-session-45743',
+  containerIp: '10.0.3.21',
+  mitmPort: 45743,
+  autoAccessFixed: 1
+}
+2024-11-16 07:47:34.100 - [Info] MITM Version: 2
+2024-11-16 07:47:34.102 - [Info] Auto Access Enabled: true
+2024-11-16 07:47:34.103 - [Debug] [Init] Auto Access Theshold Achieved: false
+2024-11-16 07:47:34.124 - [Info] SSH man-in-the-middle server for 10.0.3.21 listening on 10.0.3.1:45743
+2024-11-16 08:12:27.713 - [Debug] [Connection] Attacker connected: 195.178.110.6 | Client Identification: SSH-2.0-Go
+2024-11-16 08:12:28.292 - [Debug] [Auth] Attacker 195.178.110.6 trying to authenticate with 'none'
+2024-11-16 08:12:28.293 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-16 08:12:28.512 - [Debug] [Auth] Attacker 195.178.110.6 trying to authenticate with 'password'
+2024-11-16 08:12:28.513 - [Debug] [Auto Access] Attacker: 195.178.110.6, Threshold: 1, Attempts: 1
+2024-11-16 08:12:28.513 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-16 08:12:28.513 - [Debug] [Auto Access] Adding the following credentials: 'root:123456'
+2024-11-16 08:12:28.692 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-16 08:12:28.694 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-16 08:12:28.694 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.21
+2024-11-16 08:12:31.060 - [Debug] [LXC] Authentication Failed
+2024-11-16 08:12:31.060 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-16 08:12:31.061 - [Debug] [Auth] Attacker: 195.178.110.6 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-16 08:12:31.061 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-16 08:12:31.061 - [Debug] [Auth] Attacker: 195.178.110.6 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-16 08:12:31.067 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-16 08:12:31.068 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-16 08:12:31.280 - [Debug] [Connection] Attacker closed the connection
+2024-11-16 08:12:31.370 - [Debug] [Connection] Attacker connected: 195.178.110.6 | Client Identification: SSH-2.0-Go
+2024-11-16 08:12:31.949 - [Debug] [Auth] Attacker 195.178.110.6 trying to authenticate with 'none'
+2024-11-16 08:12:31.950 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-16 08:12:32.168 - [Debug] [Auth] Attacker 195.178.110.6 trying to authenticate with 'password'
+2024-11-16 08:12:32.169 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-16 08:12:32.169 - [Debug] [Auth] Attacker: 195.178.110.6 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-16 08:12:32.388 - [Debug] [Connection] Attacker closed the connection
+2024-11-16 08:12:32.517 - [Debug] [Connection] Attacker connected: 195.178.110.6 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

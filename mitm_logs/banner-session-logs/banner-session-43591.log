@@ -24,3 +24,22 @@ Started with the following options:
 2024-11-12 08:46:24.815 - [Info] Auto Access Enabled: true
 2024-11-12 08:46:24.816 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-11-12 08:46:24.828 - [Info] SSH man-in-the-middle server for 10.0.3.33 listening on 10.0.3.1:43591
+2024-11-12 08:48:22.042 - [Debug] [Connection] Attacker connected: 159.203.1.142 | Client Identification: SSH-2.0-Go
+2024-11-12 08:48:22.461 - [Debug] [Auth] Attacker 159.203.1.142 trying to authenticate with 'none'
+2024-11-12 08:48:22.461 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2024-11-12 08:48:22.506 - [Debug] [Auth] Attacker 159.203.1.142 trying to authenticate with 'password'
+2024-11-12 08:48:22.510 - [Debug] [Auto Access] Attacker: 159.203.1.142, Threshold: 1, Attempts: 1
+2024-11-12 08:48:22.511 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-12 08:48:22.511 - [Debug] [Auto Access] Adding the following credentials: 'root:crypto@2024!'
+2024-11-12 08:48:22.657 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-12 08:48:22.659 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-12 08:48:22.660 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.33
+2024-11-12 08:48:26.693 - [Debug] [LXC] Authentication Failed
+2024-11-12 08:48:26.693 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-12 08:48:26.695 - [Debug] [Auth] Attacker: 159.203.1.142 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-12 08:48:26.695 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2024-11-12 08:48:26.695 - [Debug] [Auth] Attacker: 159.203.1.142 has so far made 2 attempts. Remaining: 4 attempts
+2024-11-12 08:48:26.698 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-12 08:48:26.700 - [Debug] [LXC] Container's OpenSSH server closed connection
+2024-11-12 08:48:26.738 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,29 @@
+Nov 12 19:06:18 nobanner-session-43766 systemd-logind[165]: New seat seat0.
+Nov 12 19:06:24 nobanner-session-43766 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 12 19:06:24 nobanner-session-43766 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 19:06:33 nobanner-session-43766 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 19:06:33 nobanner-session-43766 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 12 19:06:33 nobanner-session-43766 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 19:07:02 nobanner-session-43766 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 12 19:07:02 nobanner-session-43766 usermod[764]: change user 'sshd' password
+Nov 12 19:07:02 nobanner-session-43766 chage[771]: changed password expiry for sshd
+Nov 12 19:07:04 nobanner-session-43766 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 12 19:07:04 nobanner-session-43766 sshd[1206]: Server listening on :: port 22.
+Nov 12 19:07:06 nobanner-session-43766 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 19:07:06 nobanner-session-43766 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 12 19:07:06 nobanner-session-43766 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 12 19:07:14 nobanner-session-43766 sudo: pam_unix(sudo:session): session closed for user root
+Nov 12 19:15:58 nobanner-session-43766 useradd[1552]: new group: name=ubnt, GID=1001
+Nov 12 19:15:58 nobanner-session-43766 useradd[1552]: new user: name=ubnt, UID=1001, GID=1001, home=/home/ubnt, shell=/bin/bash, from=none
+Nov 12 19:16:00 nobanner-session-43766 usermod[1561]: change user 'ubnt' password
+Nov 12 19:16:00 nobanner-session-43766 sshd[1568]: Accepted password for ubnt from 10.0.3.1 port 41616 ssh2
+Nov 12 19:16:00 nobanner-session-43766 sshd[1568]: pam_unix(sshd:session): session opened for user ubnt by (uid=0)
+Nov 12 19:16:00 nobanner-session-43766 systemd-logind[165]: New session 460 of user ubnt.
+Nov 12 19:16:00 nobanner-session-43766 systemd: pam_unix(systemd-user:session): session opened for user ubnt by (uid=0)
+Nov 12 19:17:01 nobanner-session-43766 CRON[1586]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 12 19:17:01 nobanner-session-43766 CRON[1586]: pam_unix(cron:session): session closed for user root
+Nov 12 19:17:01 nobanner-session-43766 sshd[1585]: Received disconnect from 10.0.3.1 port 41616:11: 
+Nov 12 19:17:01 nobanner-session-43766 sshd[1585]: Disconnected from user ubnt 10.0.3.1 port 41616
+Nov 12 19:17:01 nobanner-session-43766 sshd[1568]: pam_unix(sshd:session): session closed for user ubnt
+Nov 12 19:17:01 nobanner-session-43766 systemd-logind[165]: Session 460 logged out. Waiting for processes to exit.
+Nov 12 19:17:01 nobanner-session-43766 systemd-logind[165]: Removed session 460.

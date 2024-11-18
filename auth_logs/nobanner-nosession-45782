@@ -1,0 +1,24 @@
+Nov 16 18:49:11 nobanner-nosession-45782 systemd-logind[166]: New seat seat0.
+Nov 16 18:49:14 nobanner-nosession-45782 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 16 18:49:14 nobanner-nosession-45782 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 18:49:22 nobanner-nosession-45782 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 18:49:22 nobanner-nosession-45782 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 16 18:49:22 nobanner-nosession-45782 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 18:49:34 nobanner-nosession-45782 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 16 18:49:34 nobanner-nosession-45782 usermod[764]: change user 'sshd' password
+Nov 16 18:49:34 nobanner-nosession-45782 chage[771]: changed password expiry for sshd
+Nov 16 18:49:36 nobanner-nosession-45782 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 16 18:49:36 nobanner-nosession-45782 sshd[1206]: Server listening on :: port 22.
+Nov 16 18:49:39 nobanner-nosession-45782 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 18:49:39 nobanner-nosession-45782 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 16 18:49:39 nobanner-nosession-45782 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 16 18:49:45 nobanner-nosession-45782 sudo: pam_unix(sudo:session): session closed for user root
+Nov 16 18:51:13 nobanner-nosession-45782 useradd[1548]: failed adding user 'ubuntu', data deleted
+Nov 16 18:51:13 nobanner-nosession-45782 usermod[1549]: change user 'ubuntu' password
+Nov 16 18:51:13 nobanner-nosession-45782 sshd[1556]: Accepted password for ubuntu from 10.0.3.1 port 43400 ssh2
+Nov 16 18:51:13 nobanner-nosession-45782 sshd[1556]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov 16 18:51:13 nobanner-nosession-45782 systemd-logind[166]: New session 1611 of user ubuntu.
+Nov 16 18:51:13 nobanner-nosession-45782 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov 16 18:51:21 nobanner-nosession-45782 sshd[1556]: pam_unix(sshd:session): session closed for user ubuntu
+Nov 16 18:51:21 nobanner-nosession-45782 systemd-logind[166]: Session 1611 logged out. Waiting for processes to exit.
+Nov 16 18:51:21 nobanner-nosession-45782 systemd-logind[166]: Removed session 1611.

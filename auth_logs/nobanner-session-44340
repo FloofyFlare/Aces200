@@ -1,0 +1,27 @@
+Nov 13 14:00:23 nobanner-session-44340 systemd-logind[164]: New seat seat0.
+Nov 13 14:00:27 nobanner-session-44340 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 14:00:27 nobanner-session-44340 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 14:00:35 nobanner-session-44340 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 14:00:35 nobanner-session-44340 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 14:00:35 nobanner-session-44340 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 14:00:50 nobanner-session-44340 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 14:00:50 nobanner-session-44340 usermod[764]: change user 'sshd' password
+Nov 13 14:00:50 nobanner-session-44340 chage[771]: changed password expiry for sshd
+Nov 13 14:00:52 nobanner-session-44340 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 14:00:52 nobanner-session-44340 sshd[1206]: Server listening on :: port 22.
+Nov 13 14:00:54 nobanner-session-44340 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 14:00:54 nobanner-session-44340 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 14:00:54 nobanner-session-44340 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 14:01:00 nobanner-session-44340 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 14:01:04 nobanner-session-44340 useradd[1551]: new group: name=web, GID=1001
+Nov 13 14:01:04 nobanner-session-44340 useradd[1551]: new user: name=web, UID=1001, GID=1001, home=/home/web, shell=/bin/bash, from=none
+Nov 13 14:01:04 nobanner-session-44340 usermod[1560]: change user 'web' password
+Nov 13 14:01:04 nobanner-session-44340 sshd[1567]: Accepted password for web from 10.0.3.1 port 56302 ssh2
+Nov 13 14:01:04 nobanner-session-44340 sshd[1567]: pam_unix(sshd:session): session opened for user web by (uid=0)
+Nov 13 14:01:04 nobanner-session-44340 systemd-logind[164]: New session 774 of user web.
+Nov 13 14:01:04 nobanner-session-44340 systemd: pam_unix(systemd-user:session): session opened for user web by (uid=0)
+Nov 13 14:01:06 nobanner-session-44340 sshd[1584]: Received disconnect from 10.0.3.1 port 56302:11: 
+Nov 13 14:01:06 nobanner-session-44340 sshd[1584]: Disconnected from user web 10.0.3.1 port 56302
+Nov 13 14:01:06 nobanner-session-44340 sshd[1567]: pam_unix(sshd:session): session closed for user web
+Nov 13 14:01:06 nobanner-session-44340 systemd-logind[164]: Session 774 logged out. Waiting for processes to exit.
+Nov 13 14:01:06 nobanner-session-44340 systemd-logind[164]: Removed session 774.

@@ -1,0 +1,29 @@
+Nov 13 13:12:17 nobanner-session-44315 systemd-logind[164]: New seat seat0.
+Nov 13 13:12:20 nobanner-session-44315 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 13:12:20 nobanner-session-44315 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 13:12:29 nobanner-session-44315 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 13:12:29 nobanner-session-44315 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 13:12:29 nobanner-session-44315 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 13:12:36 nobanner-session-44315 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 13:12:36 nobanner-session-44315 usermod[764]: change user 'sshd' password
+Nov 13 13:12:36 nobanner-session-44315 chage[771]: changed password expiry for sshd
+Nov 13 13:12:38 nobanner-session-44315 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 13:12:38 nobanner-session-44315 sshd[1206]: Server listening on :: port 22.
+Nov 13 13:12:40 nobanner-session-44315 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 13:12:40 nobanner-session-44315 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 13:12:40 nobanner-session-44315 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 13:12:48 nobanner-session-44315 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 13:17:01 nobanner-session-44315 CRON[1551]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 13 13:17:01 nobanner-session-44315 CRON[1551]: pam_unix(cron:session): session closed for user root
+Nov 13 13:17:35 nobanner-session-44315 useradd[1555]: new group: name=guest, GID=1001
+Nov 13 13:17:35 nobanner-session-44315 useradd[1555]: new user: name=guest, UID=1001, GID=1001, home=/home/guest, shell=/bin/bash, from=none
+Nov 13 13:17:36 nobanner-session-44315 usermod[1564]: change user 'guest' password
+Nov 13 13:17:36 nobanner-session-44315 sshd[1571]: Accepted password for guest from 10.0.3.1 port 51610 ssh2
+Nov 13 13:17:36 nobanner-session-44315 sshd[1571]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Nov 13 13:17:36 nobanner-session-44315 systemd-logind[164]: New session 757 of user guest.
+Nov 13 13:17:36 nobanner-session-44315 systemd: pam_unix(systemd-user:session): session opened for user guest by (uid=0)
+Nov 13 13:18:37 nobanner-session-44315 sshd[1588]: Received disconnect from 10.0.3.1 port 51610:11: 
+Nov 13 13:18:37 nobanner-session-44315 sshd[1588]: Disconnected from user guest 10.0.3.1 port 51610
+Nov 13 13:18:37 nobanner-session-44315 sshd[1571]: pam_unix(sshd:session): session closed for user guest
+Nov 13 13:18:37 nobanner-session-44315 systemd-logind[164]: Session 757 logged out. Waiting for processes to exit.
+Nov 13 13:18:37 nobanner-session-44315 systemd-logind[164]: Removed session 757.

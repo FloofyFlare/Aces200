@@ -1,0 +1,27 @@
+Nov 15 12:39:43 nobanner-session-45577 systemd-logind[165]: New seat seat0.
+Nov 15 12:39:46 nobanner-session-45577 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 15 12:39:46 nobanner-session-45577 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 12:39:54 nobanner-session-45577 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 12:39:54 nobanner-session-45577 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 15 12:39:54 nobanner-session-45577 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 12:40:09 nobanner-session-45577 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 15 12:40:09 nobanner-session-45577 usermod[764]: change user 'sshd' password
+Nov 15 12:40:09 nobanner-session-45577 chage[771]: changed password expiry for sshd
+Nov 15 12:40:11 nobanner-session-45577 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 15 12:40:11 nobanner-session-45577 sshd[1206]: Server listening on :: port 22.
+Nov 15 12:40:13 nobanner-session-45577 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 12:40:13 nobanner-session-45577 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 15 12:40:13 nobanner-session-45577 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 12:40:20 nobanner-session-45577 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 13:14:54 nobanner-session-45577 useradd[1555]: new group: name=mark, GID=1001
+Nov 15 13:14:54 nobanner-session-45577 useradd[1555]: new user: name=mark, UID=1001, GID=1001, home=/home/mark, shell=/bin/bash, from=none
+Nov 15 13:14:54 nobanner-session-45577 usermod[1564]: change user 'mark' password
+Nov 15 13:14:54 nobanner-session-45577 sshd[1571]: Accepted password for mark from 10.0.3.1 port 37628 ssh2
+Nov 15 13:14:54 nobanner-session-45577 sshd[1571]: pam_unix(sshd:session): session opened for user mark by (uid=0)
+Nov 15 13:14:54 nobanner-session-45577 systemd-logind[165]: New session 1468 of user mark.
+Nov 15 13:14:54 nobanner-session-45577 systemd: pam_unix(systemd-user:session): session opened for user mark by (uid=0)
+Nov 15 13:14:57 nobanner-session-45577 sshd[1588]: Received disconnect from 10.0.3.1 port 37628:11: 
+Nov 15 13:14:57 nobanner-session-45577 sshd[1588]: Disconnected from user mark 10.0.3.1 port 37628
+Nov 15 13:14:57 nobanner-session-45577 sshd[1571]: pam_unix(sshd:session): session closed for user mark
+Nov 15 13:14:57 nobanner-session-45577 systemd-logind[165]: Session 1468 logged out. Waiting for processes to exit.
+Nov 15 13:14:57 nobanner-session-45577 systemd-logind[165]: Removed session 1468.

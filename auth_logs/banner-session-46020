@@ -1,0 +1,25 @@
+Nov 18 15:36:56 banner-session-46020 systemd-logind[164]: New seat seat0.
+Nov 18 15:36:59 banner-session-46020 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 15:36:59 banner-session-46020 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 15:37:04 banner-session-46020 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 15:37:04 banner-session-46020 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 15:37:04 banner-session-46020 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 15:37:13 banner-session-46020 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 15:37:14 banner-session-46020 usermod[764]: change user 'sshd' password
+Nov 18 15:37:14 banner-session-46020 chage[771]: changed password expiry for sshd
+Nov 18 15:37:15 banner-session-46020 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 15:37:15 banner-session-46020 sshd[1206]: Server listening on :: port 22.
+Nov 18 15:37:18 banner-session-46020 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 15:37:18 banner-session-46020 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 15:37:18 banner-session-46020 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 15:37:23 banner-session-46020 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 15:38:47 banner-session-46020 useradd[1557]: new group: name=ftpuser, GID=1001
+Nov 18 15:38:47 banner-session-46020 useradd[1557]: new user: name=ftpuser, UID=1001, GID=1001, home=/home/ftpuser, shell=/bin/bash, from=none
+Nov 18 15:38:47 banner-session-46020 usermod[1566]: change user 'ftpuser' password
+Nov 18 15:38:47 banner-session-46020 sshd[1573]: Accepted password for ftpuser from 10.0.3.1 port 59766 ssh2
+Nov 18 15:38:47 banner-session-46020 sshd[1573]: pam_unix(sshd:session): session opened for user ftpuser by (uid=0)
+Nov 18 15:38:47 banner-session-46020 systemd-logind[164]: New session 1917 of user ftpuser.
+Nov 18 15:38:47 banner-session-46020 systemd: pam_unix(systemd-user:session): session opened for user ftpuser by (uid=0)
+Nov 18 15:38:53 banner-session-46020 sshd[1573]: pam_unix(sshd:session): session closed for user ftpuser
+Nov 18 15:38:53 banner-session-46020 systemd-logind[164]: Session 1917 logged out. Waiting for processes to exit.
+Nov 18 15:38:53 banner-session-46020 systemd-logind[164]: Removed session 1917.

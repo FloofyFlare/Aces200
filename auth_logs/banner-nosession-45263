@@ -1,0 +1,21 @@
+Nov 14 13:42:34 banner-nosession-45263 systemd-logind[164]: New seat seat0.
+Nov 14 13:42:37 banner-nosession-45263 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 13:42:37 banner-nosession-45263 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:42:46 banner-nosession-45263 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:42:46 banner-nosession-45263 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 13:42:46 banner-nosession-45263 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:43:02 banner-nosession-45263 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 13:43:02 banner-nosession-45263 usermod[764]: change user 'sshd' password
+Nov 14 13:43:02 banner-nosession-45263 chage[771]: changed password expiry for sshd
+Nov 14 13:43:04 banner-nosession-45263 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 13:43:04 banner-nosession-45263 sshd[1206]: Server listening on :: port 22.
+Nov 14 13:43:06 banner-nosession-45263 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:43:06 banner-nosession-45263 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 13:43:06 banner-nosession-45263 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 13:43:14 banner-nosession-45263 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 13:44:44 banner-nosession-45263 useradd[1559]: failed adding user 'root', data deleted
+Nov 14 13:44:44 banner-nosession-45263 usermod[1560]: change user 'root' password
+Nov 14 13:44:44 banner-nosession-45263 sshd[1567]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 14 13:44:46 banner-nosession-45263 sshd[1567]: Failed password for root from 10.0.3.1 port 50944 ssh2
+Nov 14 13:44:47 banner-nosession-45263 sshd[1567]: Received disconnect from 10.0.3.1 port 50944:11:  [preauth]
+Nov 14 13:44:47 banner-nosession-45263 sshd[1567]: Disconnected from authenticating user root 10.0.3.1 port 50944 [preauth]

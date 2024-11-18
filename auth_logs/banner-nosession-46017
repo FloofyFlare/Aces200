@@ -1,0 +1,25 @@
+Nov 18 15:32:24 banner-nosession-46017 systemd-logind[164]: New seat seat0.
+Nov 18 15:32:27 banner-nosession-46017 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 15:32:27 banner-nosession-46017 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 15:32:31 banner-nosession-46017 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 15:32:31 banner-nosession-46017 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 15:32:31 banner-nosession-46017 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 15:32:39 banner-nosession-46017 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 15:32:39 banner-nosession-46017 usermod[764]: change user 'sshd' password
+Nov 18 15:32:39 banner-nosession-46017 chage[771]: changed password expiry for sshd
+Nov 18 15:32:41 banner-nosession-46017 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 15:32:41 banner-nosession-46017 sshd[1206]: Server listening on :: port 22.
+Nov 18 15:32:42 banner-nosession-46017 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 15:32:42 banner-nosession-46017 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 15:32:42 banner-nosession-46017 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 15:32:48 banner-nosession-46017 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 15:33:22 banner-nosession-46017 useradd[1559]: new group: name=plexuser, GID=1001
+Nov 18 15:33:22 banner-nosession-46017 useradd[1559]: new user: name=plexuser, UID=1001, GID=1001, home=/home/plexuser, shell=/bin/bash, from=none
+Nov 18 15:33:22 banner-nosession-46017 usermod[1568]: change user 'plexuser' password
+Nov 18 15:33:22 banner-nosession-46017 sshd[1575]: Accepted password for plexuser from 10.0.3.1 port 50430 ssh2
+Nov 18 15:33:22 banner-nosession-46017 sshd[1575]: pam_unix(sshd:session): session opened for user plexuser by (uid=0)
+Nov 18 15:33:22 banner-nosession-46017 systemd-logind[164]: New session 1913 of user plexuser.
+Nov 18 15:33:22 banner-nosession-46017 systemd: pam_unix(systemd-user:session): session opened for user plexuser by (uid=0)
+Nov 18 15:33:26 banner-nosession-46017 sshd[1575]: pam_unix(sshd:session): session closed for user plexuser
+Nov 18 15:33:26 banner-nosession-46017 systemd-logind[164]: Session 1913 logged out. Waiting for processes to exit.
+Nov 18 15:33:26 banner-nosession-46017 systemd-logind[164]: Removed session 1913.

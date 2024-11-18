@@ -1,0 +1,25 @@
+Nov 15 02:30:36 nobanner-nosession-45545 systemd-logind[164]: New seat seat0.
+Nov 15 02:30:40 nobanner-nosession-45545 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 15 02:30:40 nobanner-nosession-45545 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 02:30:48 nobanner-nosession-45545 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 02:30:48 nobanner-nosession-45545 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 15 02:30:48 nobanner-nosession-45545 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 02:30:58 nobanner-nosession-45545 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 15 02:30:58 nobanner-nosession-45545 usermod[764]: change user 'sshd' password
+Nov 15 02:30:58 nobanner-nosession-45545 chage[771]: changed password expiry for sshd
+Nov 15 02:31:00 nobanner-nosession-45545 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 15 02:31:00 nobanner-nosession-45545 sshd[1206]: Server listening on :: port 22.
+Nov 15 02:31:02 nobanner-nosession-45545 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 02:31:02 nobanner-nosession-45545 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 15 02:31:02 nobanner-nosession-45545 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 15 02:31:08 nobanner-nosession-45545 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 02:32:31 nobanner-nosession-45545 useradd[1548]: new group: name=qly, GID=1001
+Nov 15 02:32:31 nobanner-nosession-45545 useradd[1548]: new user: name=qly, UID=1001, GID=1001, home=/home/qly, shell=/bin/bash, from=none
+Nov 15 02:32:31 nobanner-nosession-45545 usermod[1557]: change user 'qly' password
+Nov 15 02:32:32 nobanner-nosession-45545 sshd[1564]: Accepted password for qly from 10.0.3.1 port 53138 ssh2
+Nov 15 02:32:32 nobanner-nosession-45545 sshd[1564]: pam_unix(sshd:session): session opened for user qly by (uid=0)
+Nov 15 02:32:32 nobanner-nosession-45545 systemd-logind[164]: New session 1406 of user qly.
+Nov 15 02:32:32 nobanner-nosession-45545 systemd: pam_unix(systemd-user:session): session opened for user qly by (uid=0)
+Nov 15 02:32:35 nobanner-nosession-45545 sshd[1564]: pam_unix(sshd:session): session closed for user qly
+Nov 15 02:32:35 nobanner-nosession-45545 systemd-logind[164]: Session 1406 logged out. Waiting for processes to exit.
+Nov 15 02:32:35 nobanner-nosession-45545 systemd-logind[164]: Removed session 1406.

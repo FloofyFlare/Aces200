@@ -1,0 +1,27 @@
+Nov 13 22:36:06 nobanner-nosession-44681 systemd-logind[164]: New seat seat0.
+Nov 13 22:36:10 nobanner-nosession-44681 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 22:36:10 nobanner-nosession-44681 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 22:36:19 nobanner-nosession-44681 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 22:36:19 nobanner-nosession-44681 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 22:36:19 nobanner-nosession-44681 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 22:36:30 nobanner-nosession-44681 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 22:36:30 nobanner-nosession-44681 usermod[764]: change user 'sshd' password
+Nov 13 22:36:30 nobanner-nosession-44681 chage[771]: changed password expiry for sshd
+Nov 13 22:36:32 nobanner-nosession-44681 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 22:36:32 nobanner-nosession-44681 sshd[1206]: Server listening on :: port 22.
+Nov 13 22:36:34 nobanner-nosession-44681 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 22:36:34 nobanner-nosession-44681 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 22:36:34 nobanner-nosession-44681 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 22:36:43 nobanner-nosession-44681 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 22:46:22 nobanner-nosession-44681 useradd[1549]: new group: name=unknown, GID=1001
+Nov 13 22:46:22 nobanner-nosession-44681 useradd[1549]: new user: name=unknown, UID=1001, GID=1001, home=/home/unknown, shell=/bin/bash, from=none
+Nov 13 22:46:22 nobanner-nosession-44681 usermod[1558]: change user 'unknown' password
+Nov 13 22:46:23 nobanner-nosession-44681 sshd[1565]: Accepted password for unknown from 10.0.3.1 port 52416 ssh2
+Nov 13 22:46:23 nobanner-nosession-44681 sshd[1565]: pam_unix(sshd:session): session opened for user unknown by (uid=0)
+Nov 13 22:46:23 nobanner-nosession-44681 systemd-logind[164]: New session 953 of user unknown.
+Nov 13 22:46:23 nobanner-nosession-44681 systemd: pam_unix(systemd-user:session): session opened for user unknown by (uid=0)
+Nov 13 22:47:25 nobanner-nosession-44681 sshd[1582]: Received disconnect from 10.0.3.1 port 52416:11: 
+Nov 13 22:47:25 nobanner-nosession-44681 sshd[1582]: Disconnected from user unknown 10.0.3.1 port 52416
+Nov 13 22:47:25 nobanner-nosession-44681 sshd[1565]: pam_unix(sshd:session): session closed for user unknown
+Nov 13 22:47:25 nobanner-nosession-44681 systemd-logind[164]: Session 953 logged out. Waiting for processes to exit.
+Nov 13 22:47:25 nobanner-nosession-44681 systemd-logind[164]: Removed session 953.

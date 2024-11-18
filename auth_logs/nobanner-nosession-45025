@@ -1,0 +1,29 @@
+Nov 14 08:15:48 nobanner-nosession-45025 systemd-logind[165]: New seat seat0.
+Nov 14 08:15:51 nobanner-nosession-45025 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 08:15:51 nobanner-nosession-45025 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 08:16:00 nobanner-nosession-45025 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 08:16:00 nobanner-nosession-45025 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 08:16:00 nobanner-nosession-45025 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 08:16:14 nobanner-nosession-45025 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 08:16:15 nobanner-nosession-45025 usermod[764]: change user 'sshd' password
+Nov 14 08:16:15 nobanner-nosession-45025 chage[771]: changed password expiry for sshd
+Nov 14 08:16:17 nobanner-nosession-45025 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 08:16:17 nobanner-nosession-45025 sshd[1206]: Server listening on :: port 22.
+Nov 14 08:16:19 nobanner-nosession-45025 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 08:16:19 nobanner-nosession-45025 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 08:16:19 nobanner-nosession-45025 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 08:16:35 nobanner-nosession-45025 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 08:17:01 nobanner-nosession-45025 CRON[1548]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 14 08:17:01 nobanner-nosession-45025 CRON[1548]: pam_unix(cron:session): session closed for user root
+Nov 14 08:19:33 nobanner-nosession-45025 useradd[1551]: new group: name=unknown, GID=1001
+Nov 14 08:19:33 nobanner-nosession-45025 useradd[1551]: new user: name=unknown, UID=1001, GID=1001, home=/home/unknown, shell=/bin/bash, from=none
+Nov 14 08:19:33 nobanner-nosession-45025 usermod[1560]: change user 'unknown' password
+Nov 14 08:19:33 nobanner-nosession-45025 sshd[1567]: Accepted password for unknown from 10.0.3.1 port 51278 ssh2
+Nov 14 08:19:33 nobanner-nosession-45025 sshd[1567]: pam_unix(sshd:session): session opened for user unknown by (uid=0)
+Nov 14 08:19:33 nobanner-nosession-45025 systemd-logind[165]: New session 1115 of user unknown.
+Nov 14 08:19:33 nobanner-nosession-45025 systemd: pam_unix(systemd-user:session): session opened for user unknown by (uid=0)
+Nov 14 08:20:34 nobanner-nosession-45025 sshd[1584]: Received disconnect from 10.0.3.1 port 51278:11: 
+Nov 14 08:20:34 nobanner-nosession-45025 sshd[1584]: Disconnected from user unknown 10.0.3.1 port 51278
+Nov 14 08:20:34 nobanner-nosession-45025 sshd[1567]: pam_unix(sshd:session): session closed for user unknown
+Nov 14 08:20:34 nobanner-nosession-45025 systemd-logind[165]: Session 1115 logged out. Waiting for processes to exit.
+Nov 14 08:20:34 nobanner-nosession-45025 systemd-logind[165]: Removed session 1115.

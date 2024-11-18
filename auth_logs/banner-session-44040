@@ -1,0 +1,27 @@
+Nov 13 06:25:25 banner-session-44040 systemd-logind[164]: New seat seat0.
+Nov 13 06:25:29 banner-session-44040 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 06:25:29 banner-session-44040 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:25:40 banner-session-44040 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:25:40 banner-session-44040 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 06:25:40 banner-session-44040 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:25:52 banner-session-44040 useradd[700]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 06:25:53 banner-session-44040 usermod[708]: change user 'sshd' password
+Nov 13 06:25:53 banner-session-44040 chage[715]: changed password expiry for sshd
+Nov 13 06:25:55 banner-session-44040 sshd[1150]: Server listening on 0.0.0.0 port 22.
+Nov 13 06:25:55 banner-session-44040 sshd[1150]: Server listening on :: port 22.
+Nov 13 06:25:56 banner-session-44040 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:25:57 banner-session-44040 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 06:25:57 banner-session-44040 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:26:03 banner-session-44040 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:29:32 banner-session-44040 useradd[1501]: new group: name=unknown, GID=1001
+Nov 13 06:29:32 banner-session-44040 useradd[1501]: new user: name=unknown, UID=1001, GID=1001, home=/home/unknown, shell=/bin/bash, from=none
+Nov 13 06:29:33 banner-session-44040 usermod[1510]: change user 'unknown' password
+Nov 13 06:29:33 banner-session-44040 sshd[1517]: Accepted password for unknown from 10.0.3.1 port 41432 ssh2
+Nov 13 06:29:33 banner-session-44040 sshd[1517]: pam_unix(sshd:session): session opened for user unknown by (uid=0)
+Nov 13 06:29:33 banner-session-44040 systemd-logind[164]: New session 647 of user unknown.
+Nov 13 06:29:33 banner-session-44040 systemd: pam_unix(systemd-user:session): session opened for user unknown by (uid=0)
+Nov 13 06:30:34 banner-session-44040 sshd[1534]: Received disconnect from 10.0.3.1 port 41432:11: 
+Nov 13 06:30:34 banner-session-44040 sshd[1534]: Disconnected from user unknown 10.0.3.1 port 41432
+Nov 13 06:30:34 banner-session-44040 sshd[1517]: pam_unix(sshd:session): session closed for user unknown
+Nov 13 06:30:34 banner-session-44040 systemd-logind[164]: Session 647 logged out. Waiting for processes to exit.
+Nov 13 06:30:34 banner-session-44040 systemd-logind[164]: Removed session 647.

@@ -1,0 +1,27 @@
+Nov 14 20:53:09 nobanner-nosession-45524 systemd-logind[164]: New seat seat0.
+Nov 14 20:53:12 nobanner-nosession-45524 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 20:53:12 nobanner-nosession-45524 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 20:53:21 nobanner-nosession-45524 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 20:53:21 nobanner-nosession-45524 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 20:53:21 nobanner-nosession-45524 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 20:53:32 nobanner-nosession-45524 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 20:53:32 nobanner-nosession-45524 usermod[764]: change user 'sshd' password
+Nov 14 20:53:32 nobanner-nosession-45524 chage[771]: changed password expiry for sshd
+Nov 14 20:53:34 nobanner-nosession-45524 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 20:53:34 nobanner-nosession-45524 sshd[1206]: Server listening on :: port 22.
+Nov 14 20:53:37 nobanner-nosession-45524 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 20:53:37 nobanner-nosession-45524 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 20:53:37 nobanner-nosession-45524 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 20:53:43 nobanner-nosession-45524 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 20:58:35 nobanner-nosession-45524 useradd[1549]: new group: name=ubnt, GID=1001
+Nov 14 20:58:35 nobanner-nosession-45524 useradd[1549]: new user: name=ubnt, UID=1001, GID=1001, home=/home/ubnt, shell=/bin/bash, from=none
+Nov 14 20:58:36 nobanner-nosession-45524 usermod[1558]: change user 'ubnt' password
+Nov 14 20:58:36 nobanner-nosession-45524 sshd[1565]: Accepted password for ubnt from 10.0.3.1 port 55362 ssh2
+Nov 14 20:58:36 nobanner-nosession-45524 sshd[1565]: pam_unix(sshd:session): session opened for user ubnt by (uid=0)
+Nov 14 20:58:36 nobanner-nosession-45524 systemd-logind[164]: New session 1379 of user ubnt.
+Nov 14 20:58:36 nobanner-nosession-45524 systemd: pam_unix(systemd-user:session): session opened for user ubnt by (uid=0)
+Nov 14 20:59:37 nobanner-nosession-45524 sshd[1582]: Received disconnect from 10.0.3.1 port 55362:11: 
+Nov 14 20:59:37 nobanner-nosession-45524 sshd[1582]: Disconnected from user ubnt 10.0.3.1 port 55362
+Nov 14 20:59:37 nobanner-nosession-45524 sshd[1565]: pam_unix(sshd:session): session closed for user ubnt
+Nov 14 20:59:37 nobanner-nosession-45524 systemd-logind[164]: Session 1379 logged out. Waiting for processes to exit.
+Nov 14 20:59:37 nobanner-nosession-45524 systemd-logind[164]: Removed session 1379.

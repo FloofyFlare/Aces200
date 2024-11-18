@@ -1,0 +1,29 @@
+Nov 13 17:11:29 nobanner-session-44468 systemd-logind[164]: New seat seat0.
+Nov 13 17:11:33 nobanner-session-44468 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 17:11:33 nobanner-session-44468 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 17:11:40 nobanner-session-44468 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 17:11:40 nobanner-session-44468 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 17:11:40 nobanner-session-44468 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 17:11:52 nobanner-session-44468 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 17:11:52 nobanner-session-44468 usermod[764]: change user 'sshd' password
+Nov 13 17:11:52 nobanner-session-44468 chage[771]: changed password expiry for sshd
+Nov 13 17:11:54 nobanner-session-44468 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 17:11:54 nobanner-session-44468 sshd[1206]: Server listening on :: port 22.
+Nov 13 17:11:57 nobanner-session-44468 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 17:11:57 nobanner-session-44468 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 17:11:57 nobanner-session-44468 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 17:12:04 nobanner-session-44468 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 17:17:01 nobanner-session-44468 CRON[1552]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 13 17:17:01 nobanner-session-44468 CRON[1552]: pam_unix(cron:session): session closed for user root
+Nov 13 17:19:38 nobanner-session-44468 useradd[1555]: new group: name=supervisor, GID=1001
+Nov 13 17:19:38 nobanner-session-44468 useradd[1555]: new user: name=supervisor, UID=1001, GID=1001, home=/home/supervisor, shell=/bin/bash, from=none
+Nov 13 17:19:38 nobanner-session-44468 usermod[1564]: change user 'supervisor' password
+Nov 13 17:19:38 nobanner-session-44468 sshd[1571]: Accepted password for supervisor from 10.0.3.1 port 52000 ssh2
+Nov 13 17:19:38 nobanner-session-44468 sshd[1571]: pam_unix(sshd:session): session opened for user supervisor by (uid=0)
+Nov 13 17:19:38 nobanner-session-44468 systemd-logind[164]: New session 834 of user supervisor.
+Nov 13 17:19:38 nobanner-session-44468 systemd: pam_unix(systemd-user:session): session opened for user supervisor by (uid=0)
+Nov 13 17:20:40 nobanner-session-44468 sshd[1588]: Received disconnect from 10.0.3.1 port 52000:11: 
+Nov 13 17:20:40 nobanner-session-44468 sshd[1588]: Disconnected from user supervisor 10.0.3.1 port 52000
+Nov 13 17:20:40 nobanner-session-44468 sshd[1571]: pam_unix(sshd:session): session closed for user supervisor
+Nov 13 17:20:40 nobanner-session-44468 systemd-logind[164]: Session 834 logged out. Waiting for processes to exit.
+Nov 13 17:20:40 nobanner-session-44468 systemd-logind[164]: Removed session 834.

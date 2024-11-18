@@ -1,0 +1,27 @@
+Nov 18 02:25:51 nobanner-session-45946 systemd-logind[164]: New seat seat0.
+Nov 18 02:25:55 nobanner-session-45946 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 02:25:55 nobanner-session-45946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 02:26:02 nobanner-session-45946 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 02:26:02 nobanner-session-45946 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 02:26:02 nobanner-session-45946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 02:26:14 nobanner-session-45946 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 02:26:14 nobanner-session-45946 usermod[764]: change user 'sshd' password
+Nov 18 02:26:14 nobanner-session-45946 chage[771]: changed password expiry for sshd
+Nov 18 02:26:16 nobanner-session-45946 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 02:26:16 nobanner-session-45946 sshd[1206]: Server listening on :: port 22.
+Nov 18 02:26:19 nobanner-session-45946 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 02:26:19 nobanner-session-45946 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 02:26:19 nobanner-session-45946 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 02:26:27 nobanner-session-45946 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 02:27:15 nobanner-session-45946 useradd[1551]: new group: name=sftp_user, GID=1001
+Nov 18 02:27:15 nobanner-session-45946 useradd[1551]: new user: name=sftp_user, UID=1001, GID=1001, home=/home/sftp_user, shell=/bin/bash, from=none
+Nov 18 02:27:15 nobanner-session-45946 usermod[1560]: change user 'sftp_user' password
+Nov 18 02:27:15 nobanner-session-45946 sshd[1567]: Accepted password for sftp_user from 10.0.3.1 port 38748 ssh2
+Nov 18 02:27:15 nobanner-session-45946 sshd[1567]: pam_unix(sshd:session): session opened for user sftp_user by (uid=0)
+Nov 18 02:27:15 nobanner-session-45946 systemd-logind[164]: New session 1836 of user sftp_user.
+Nov 18 02:27:15 nobanner-session-45946 systemd: pam_unix(systemd-user:session): session opened for user sftp_user by (uid=0)
+Nov 18 02:27:18 nobanner-session-45946 sshd[1584]: Received disconnect from 10.0.3.1 port 38748:11: 
+Nov 18 02:27:18 nobanner-session-45946 sshd[1584]: Disconnected from user sftp_user 10.0.3.1 port 38748
+Nov 18 02:27:18 nobanner-session-45946 sshd[1567]: pam_unix(sshd:session): session closed for user sftp_user
+Nov 18 02:27:18 nobanner-session-45946 systemd-logind[164]: Session 1836 logged out. Waiting for processes to exit.
+Nov 18 02:27:18 nobanner-session-45946 systemd-logind[164]: Removed session 1836.

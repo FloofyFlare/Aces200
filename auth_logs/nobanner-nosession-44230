@@ -1,0 +1,26 @@
+Nov 13 10:46:30 nobanner-nosession-44230 systemd-logind[164]: New seat seat0.
+Nov 13 10:46:34 nobanner-nosession-44230 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 10:46:34 nobanner-nosession-44230 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 10:46:43 nobanner-nosession-44230 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 10:46:43 nobanner-nosession-44230 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 10:46:43 nobanner-nosession-44230 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 10:46:55 nobanner-nosession-44230 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 10:46:56 nobanner-nosession-44230 usermod[764]: change user 'sshd' password
+Nov 13 10:46:57 nobanner-nosession-44230 chage[771]: changed password expiry for sshd
+Nov 13 10:46:59 nobanner-nosession-44230 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 10:46:59 nobanner-nosession-44230 sshd[1206]: Server listening on :: port 22.
+Nov 13 10:47:02 nobanner-nosession-44230 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 10:47:02 nobanner-nosession-44230 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 10:47:02 nobanner-nosession-44230 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 10:47:08 nobanner-nosession-44230 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 10:47:20 nobanner-nosession-44230 useradd[1548]: failed adding user 'nobody', data deleted
+Nov 13 10:47:20 nobanner-nosession-44230 usermod[1549]: change user 'nobody' password
+Nov 13 10:47:21 nobanner-nosession-44230 sshd[1556]: Accepted password for nobody from 10.0.3.1 port 39670 ssh2
+Nov 13 10:47:21 nobanner-nosession-44230 sshd[1556]: pam_unix(sshd:session): session opened for user nobody by (uid=0)
+Nov 13 10:47:21 nobanner-nosession-44230 systemd-logind[164]: New session 718 of user nobody.
+Nov 13 10:47:21 nobanner-nosession-44230 systemd: pam_unix(systemd-user:session): session opened for user nobody by (uid=0)
+Nov 13 10:47:22 nobanner-nosession-44230 sshd[1573]: Received disconnect from 10.0.3.1 port 39670:11: 
+Nov 13 10:47:22 nobanner-nosession-44230 sshd[1573]: Disconnected from user nobody 10.0.3.1 port 39670
+Nov 13 10:47:22 nobanner-nosession-44230 sshd[1556]: pam_unix(sshd:session): session closed for user nobody
+Nov 13 10:47:22 nobanner-nosession-44230 systemd-logind[164]: Session 718 logged out. Waiting for processes to exit.
+Nov 13 10:47:22 nobanner-nosession-44230 systemd-logind[164]: Removed session 718.

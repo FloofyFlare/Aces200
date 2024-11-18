@@ -1,0 +1,29 @@
+Nov 17 09:36:36 nobanner-nosession-45868 systemd-logind[165]: New seat seat0.
+Nov 17 09:36:40 nobanner-nosession-45868 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 17 09:36:40 nobanner-nosession-45868 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 09:36:47 nobanner-nosession-45868 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 09:36:47 nobanner-nosession-45868 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 17 09:36:47 nobanner-nosession-45868 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 09:36:59 nobanner-nosession-45868 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 17 09:36:59 nobanner-nosession-45868 usermod[764]: change user 'sshd' password
+Nov 17 09:36:59 nobanner-nosession-45868 chage[771]: changed password expiry for sshd
+Nov 17 09:37:01 nobanner-nosession-45868 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 17 09:37:01 nobanner-nosession-45868 sshd[1206]: Server listening on :: port 22.
+Nov 17 09:37:04 nobanner-nosession-45868 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 09:37:04 nobanner-nosession-45868 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 17 09:37:04 nobanner-nosession-45868 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 09:37:11 nobanner-nosession-45868 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 10:17:01 nobanner-nosession-45868 CRON[1552]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 10:17:01 nobanner-nosession-45868 CRON[1552]: pam_unix(cron:session): session closed for user root
+Nov 17 10:38:38 nobanner-nosession-45868 useradd[1557]: new group: name=deploy, GID=1001
+Nov 17 10:38:38 nobanner-nosession-45868 useradd[1557]: new user: name=deploy, UID=1001, GID=1001, home=/home/deploy, shell=/bin/bash, from=none
+Nov 17 10:38:38 nobanner-nosession-45868 usermod[1566]: change user 'deploy' password
+Nov 17 10:38:39 nobanner-nosession-45868 sshd[1573]: Accepted password for deploy from 10.0.3.1 port 42664 ssh2
+Nov 17 10:38:39 nobanner-nosession-45868 sshd[1573]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+Nov 17 10:38:39 nobanner-nosession-45868 systemd-logind[165]: New session 1738 of user deploy.
+Nov 17 10:38:39 nobanner-nosession-45868 systemd: pam_unix(systemd-user:session): session opened for user deploy by (uid=0)
+Nov 17 10:38:41 nobanner-nosession-45868 sshd[1590]: Received disconnect from 10.0.3.1 port 42664:11: 
+Nov 17 10:38:41 nobanner-nosession-45868 sshd[1590]: Disconnected from user deploy 10.0.3.1 port 42664
+Nov 17 10:38:41 nobanner-nosession-45868 sshd[1573]: pam_unix(sshd:session): session closed for user deploy
+Nov 17 10:38:41 nobanner-nosession-45868 systemd-logind[165]: Session 1738 logged out. Waiting for processes to exit.
+Nov 17 10:38:41 nobanner-nosession-45868 systemd-logind[165]: Removed session 1738.

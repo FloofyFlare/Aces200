@@ -1,0 +1,27 @@
+Nov 13 22:32:09 nobanner-session-44679 systemd-logind[164]: New seat seat0.
+Nov 13 22:32:13 nobanner-session-44679 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 22:32:13 nobanner-session-44679 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 22:32:25 nobanner-session-44679 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 22:32:25 nobanner-session-44679 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 22:32:25 nobanner-session-44679 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 22:32:45 nobanner-session-44679 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 22:32:45 nobanner-session-44679 usermod[764]: change user 'sshd' password
+Nov 13 22:32:45 nobanner-session-44679 chage[771]: changed password expiry for sshd
+Nov 13 22:32:48 nobanner-session-44679 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 22:32:48 nobanner-session-44679 sshd[1206]: Server listening on :: port 22.
+Nov 13 22:32:51 nobanner-session-44679 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 22:32:51 nobanner-session-44679 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 22:32:51 nobanner-session-44679 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 22:33:01 nobanner-session-44679 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 22:33:04 nobanner-session-44679 useradd[1551]: new group: name=ftuser, GID=1001
+Nov 13 22:33:04 nobanner-session-44679 useradd[1551]: new user: name=ftuser, UID=1001, GID=1001, home=/home/ftuser, shell=/bin/bash, from=none
+Nov 13 22:33:04 nobanner-session-44679 usermod[1560]: change user 'ftuser' password
+Nov 13 22:33:05 nobanner-session-44679 sshd[1567]: Accepted password for ftuser from 10.0.3.1 port 58556 ssh2
+Nov 13 22:33:05 nobanner-session-44679 sshd[1567]: pam_unix(sshd:session): session opened for user ftuser by (uid=0)
+Nov 13 22:33:05 nobanner-session-44679 systemd-logind[164]: New session 951 of user ftuser.
+Nov 13 22:33:05 nobanner-session-44679 systemd: pam_unix(systemd-user:session): session opened for user ftuser by (uid=0)
+Nov 13 22:33:07 nobanner-session-44679 sshd[1584]: Received disconnect from 10.0.3.1 port 58556:11: 
+Nov 13 22:33:07 nobanner-session-44679 sshd[1584]: Disconnected from user ftuser 10.0.3.1 port 58556
+Nov 13 22:33:07 nobanner-session-44679 sshd[1567]: pam_unix(sshd:session): session closed for user ftuser
+Nov 13 22:33:07 nobanner-session-44679 systemd-logind[164]: Session 951 logged out. Waiting for processes to exit.
+Nov 13 22:33:07 nobanner-session-44679 systemd-logind[164]: Removed session 951.

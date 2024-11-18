@@ -1,0 +1,25 @@
+Nov 14 23:50:22 nobanner-session-45539 systemd-logind[164]: New seat seat0.
+Nov 14 23:50:25 nobanner-session-45539 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 14 23:50:25 nobanner-session-45539 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 23:50:34 nobanner-session-45539 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 23:50:34 nobanner-session-45539 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 14 23:50:34 nobanner-session-45539 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 23:50:46 nobanner-session-45539 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 14 23:50:46 nobanner-session-45539 usermod[764]: change user 'sshd' password
+Nov 14 23:50:46 nobanner-session-45539 chage[771]: changed password expiry for sshd
+Nov 14 23:50:49 nobanner-session-45539 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 14 23:50:49 nobanner-session-45539 sshd[1206]: Server listening on :: port 22.
+Nov 14 23:50:51 nobanner-session-45539 sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 23:50:51 nobanner-session-45539 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 14 23:50:51 nobanner-session-45539 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 23:50:59 nobanner-session-45539 sudo: pam_unix(sudo:session): session closed for user root
+Nov 15 00:00:52 nobanner-session-45539 useradd[1553]: new group: name=mamc, GID=1001
+Nov 15 00:00:52 nobanner-session-45539 useradd[1553]: new user: name=mamc, UID=1001, GID=1001, home=/home/mamc, shell=/bin/bash, from=none
+Nov 15 00:00:52 nobanner-session-45539 usermod[1562]: change user 'mamc' password
+Nov 15 00:00:53 nobanner-session-45539 sshd[1569]: Accepted password for mamc from 10.0.3.1 port 43288 ssh2
+Nov 15 00:00:53 nobanner-session-45539 sshd[1569]: pam_unix(sshd:session): session opened for user mamc by (uid=0)
+Nov 15 00:00:53 nobanner-session-45539 systemd-logind[164]: New session 1397 of user mamc.
+Nov 15 00:00:53 nobanner-session-45539 systemd: pam_unix(systemd-user:session): session opened for user mamc by (uid=0)
+Nov 15 00:01:03 nobanner-session-45539 sshd[1569]: pam_unix(sshd:session): session closed for user mamc
+Nov 15 00:01:03 nobanner-session-45539 systemd-logind[164]: Session 1397 logged out. Waiting for processes to exit.
+Nov 15 00:01:03 nobanner-session-45539 systemd-logind[164]: Removed session 1397.

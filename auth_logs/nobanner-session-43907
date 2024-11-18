@@ -1,0 +1,27 @@
+Nov 13 00:17:48 nobanner-session-43907 systemd-logind[164]: New seat seat0.
+Nov 13 00:17:51 nobanner-session-43907 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 00:17:51 nobanner-session-43907 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:18:00 nobanner-session-43907 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:18:00 nobanner-session-43907 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 00:18:00 nobanner-session-43907 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:18:10 nobanner-session-43907 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 00:18:10 nobanner-session-43907 usermod[764]: change user 'sshd' password
+Nov 13 00:18:10 nobanner-session-43907 chage[771]: changed password expiry for sshd
+Nov 13 00:18:12 nobanner-session-43907 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 13 00:18:12 nobanner-session-43907 sshd[1206]: Server listening on :: port 22.
+Nov 13 00:18:13 nobanner-session-43907 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:18:13 nobanner-session-43907 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 00:18:13 nobanner-session-43907 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 00:18:21 nobanner-session-43907 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 00:18:28 nobanner-session-43907 useradd[1551]: new group: name=moodle, GID=1001
+Nov 13 00:18:28 nobanner-session-43907 useradd[1551]: new user: name=moodle, UID=1001, GID=1001, home=/home/moodle, shell=/bin/bash, from=none
+Nov 13 00:18:29 nobanner-session-43907 usermod[1560]: change user 'moodle' password
+Nov 13 00:18:29 nobanner-session-43907 sshd[1567]: Accepted password for moodle from 10.0.3.1 port 55476 ssh2
+Nov 13 00:18:29 nobanner-session-43907 sshd[1567]: pam_unix(sshd:session): session opened for user moodle by (uid=0)
+Nov 13 00:18:29 nobanner-session-43907 systemd-logind[164]: New session 537 of user moodle.
+Nov 13 00:18:29 nobanner-session-43907 systemd: pam_unix(systemd-user:session): session opened for user moodle by (uid=0)
+Nov 13 00:18:31 nobanner-session-43907 sshd[1584]: Received disconnect from 10.0.3.1 port 55476:11: 
+Nov 13 00:18:31 nobanner-session-43907 sshd[1584]: Disconnected from user moodle 10.0.3.1 port 55476
+Nov 13 00:18:31 nobanner-session-43907 sshd[1567]: pam_unix(sshd:session): session closed for user moodle
+Nov 13 00:18:31 nobanner-session-43907 systemd-logind[164]: Session 537 logged out. Waiting for processes to exit.
+Nov 13 00:18:31 nobanner-session-43907 systemd-logind[164]: Removed session 537.

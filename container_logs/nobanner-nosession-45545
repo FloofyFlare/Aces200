@@ -1,0 +1,14 @@
+Container Name: nobanner-nosession-45545
+Container IP = 10.0.3.102
+External IP = 128.8.238.101
+NEWCONFIGMANAGER run
+Adding NAT rules
+Starting MITM listening
+Attacker IP= 83.171.110.159
+FIRST CONNECTION: 1731637951
+RECYCLING SINCE SESSION ENDED
+Removing NAT rules
+Removing MITM process
+Deleting all NAT rules
+Stopping and destroying the container
+Creating a new container for 128.8.238.101

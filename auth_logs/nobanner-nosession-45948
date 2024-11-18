@@ -1,0 +1,27 @@
+Nov 18 02:29:31 nobanner-nosession-45948 systemd-logind[164]: New seat seat0.
+Nov 18 02:29:34 nobanner-nosession-45948 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 02:29:34 nobanner-nosession-45948 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 02:29:43 nobanner-nosession-45948 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 02:29:43 nobanner-nosession-45948 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 02:29:43 nobanner-nosession-45948 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 02:29:53 nobanner-nosession-45948 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 02:29:53 nobanner-nosession-45948 usermod[764]: change user 'sshd' password
+Nov 18 02:29:54 nobanner-nosession-45948 chage[771]: changed password expiry for sshd
+Nov 18 02:29:56 nobanner-nosession-45948 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 02:29:56 nobanner-nosession-45948 sshd[1206]: Server listening on :: port 22.
+Nov 18 02:29:58 nobanner-nosession-45948 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 02:29:58 nobanner-nosession-45948 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 02:29:58 nobanner-nosession-45948 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 02:30:05 nobanner-nosession-45948 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 02:30:57 nobanner-nosession-45948 useradd[1548]: new group: name=admina, GID=1001
+Nov 18 02:30:57 nobanner-nosession-45948 useradd[1548]: new user: name=admina, UID=1001, GID=1001, home=/home/admina, shell=/bin/bash, from=none
+Nov 18 02:30:57 nobanner-nosession-45948 usermod[1557]: change user 'admina' password
+Nov 18 02:30:58 nobanner-nosession-45948 sshd[1564]: Accepted password for admina from 10.0.3.1 port 58160 ssh2
+Nov 18 02:30:58 nobanner-nosession-45948 sshd[1564]: pam_unix(sshd:session): session opened for user admina by (uid=0)
+Nov 18 02:30:58 nobanner-nosession-45948 systemd-logind[164]: New session 1840 of user admina.
+Nov 18 02:30:58 nobanner-nosession-45948 systemd: pam_unix(systemd-user:session): session opened for user admina by (uid=0)
+Nov 18 02:31:00 nobanner-nosession-45948 sshd[1581]: Received disconnect from 10.0.3.1 port 58160:11: 
+Nov 18 02:31:00 nobanner-nosession-45948 sshd[1581]: Disconnected from user admina 10.0.3.1 port 58160
+Nov 18 02:31:00 nobanner-nosession-45948 sshd[1564]: pam_unix(sshd:session): session closed for user admina
+Nov 18 02:31:00 nobanner-nosession-45948 systemd-logind[164]: Session 1840 logged out. Waiting for processes to exit.
+Nov 18 02:31:00 nobanner-nosession-45948 systemd-logind[164]: Removed session 1840.

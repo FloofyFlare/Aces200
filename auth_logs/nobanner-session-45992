@@ -1,0 +1,19 @@
+Nov 18 09:04:55 nobanner-session-45992 systemd-logind[166]: New seat seat0.
+Nov 18 09:04:58 nobanner-session-45992 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 09:04:58 nobanner-session-45992 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 09:05:03 nobanner-session-45992 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 09:05:03 nobanner-session-45992 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 09:05:03 nobanner-session-45992 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 09:05:13 nobanner-session-45992 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 09:05:13 nobanner-session-45992 usermod[764]: change user 'sshd' password
+Nov 18 09:05:13 nobanner-session-45992 chage[771]: changed password expiry for sshd
+Nov 18 09:05:15 nobanner-session-45992 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 09:05:15 nobanner-session-45992 sshd[1206]: Server listening on :: port 22.
+Nov 18 09:05:16 nobanner-session-45992 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 09:05:16 nobanner-session-45992 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 09:05:16 nobanner-session-45992 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 09:05:27 nobanner-session-45992 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 09:17:01 nobanner-session-45992 CRON[1552]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 09:17:01 nobanner-session-45992 CRON[1552]: pam_unix(cron:session): session closed for user root
+Nov 18 10:17:01 nobanner-session-45992 CRON[1559]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 10:17:01 nobanner-session-45992 CRON[1559]: pam_unix(cron:session): session closed for user root

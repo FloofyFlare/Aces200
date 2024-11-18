@@ -1,0 +1,21 @@
+Nov 13 06:26:00 banner-session-44041 systemd-logind[165]: New seat seat0.
+Nov 13 06:26:03 banner-session-44041 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 13 06:26:03 banner-session-44041 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:26:11 banner-session-44041 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:26:11 banner-session-44041 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 13 06:26:11 banner-session-44041 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:26:25 banner-session-44041 useradd[700]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 13 06:26:25 banner-session-44041 usermod[708]: change user 'sshd' password
+Nov 13 06:26:25 banner-session-44041 chage[715]: changed password expiry for sshd
+Nov 13 06:26:27 banner-session-44041 sshd[1150]: Server listening on 0.0.0.0 port 22.
+Nov 13 06:26:27 banner-session-44041 sshd[1150]: Server listening on :: port 22.
+Nov 13 06:26:29 banner-session-44041 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:26:29 banner-session-44041 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 13 06:26:29 banner-session-44041 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 13 06:26:39 banner-session-44041 sudo: pam_unix(sudo:session): session closed for user root
+Nov 13 06:27:19 banner-session-44041 useradd[1501]: failed adding user 'root', data deleted
+Nov 13 06:27:19 banner-session-44041 usermod[1502]: change user 'root' password
+Nov 13 06:27:19 banner-session-44041 sshd[1509]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 13 06:27:21 banner-session-44041 sshd[1509]: Failed password for root from 10.0.3.1 port 54358 ssh2
+Nov 13 06:27:22 banner-session-44041 sshd[1509]: Received disconnect from 10.0.3.1 port 54358:11:  [preauth]
+Nov 13 06:27:22 banner-session-44041 sshd[1509]: Disconnected from authenticating user root 10.0.3.1 port 54358 [preauth]

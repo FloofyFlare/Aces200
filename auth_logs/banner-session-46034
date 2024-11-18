@@ -1,0 +1,29 @@
+Nov 18 17:13:57 banner-session-46034 systemd-logind[164]: New seat seat0.
+Nov 18 17:14:00 banner-session-46034 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 17:14:00 banner-session-46034 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 17:14:05 banner-session-46034 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 17:14:05 banner-session-46034 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 17:14:05 banner-session-46034 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 17:14:15 banner-session-46034 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 17:14:15 banner-session-46034 usermod[764]: change user 'sshd' password
+Nov 18 17:14:15 banner-session-46034 chage[771]: changed password expiry for sshd
+Nov 18 17:14:17 banner-session-46034 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 17:14:17 banner-session-46034 sshd[1206]: Server listening on :: port 22.
+Nov 18 17:14:19 banner-session-46034 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 17:14:19 banner-session-46034 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 17:14:19 banner-session-46034 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 17:14:30 banner-session-46034 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 17:16:51 banner-session-46034 useradd[1557]: new group: name=git, GID=1001
+Nov 18 17:16:51 banner-session-46034 useradd[1557]: new user: name=git, UID=1001, GID=1001, home=/home/git, shell=/bin/bash, from=none
+Nov 18 17:16:51 banner-session-46034 usermod[1566]: change user 'git' password
+Nov 18 17:16:51 banner-session-46034 sshd[1573]: Accepted password for git from 10.0.3.1 port 45558 ssh2
+Nov 18 17:16:51 banner-session-46034 sshd[1573]: pam_unix(sshd:session): session opened for user git by (uid=0)
+Nov 18 17:16:51 banner-session-46034 systemd-logind[164]: New session 1932 of user git.
+Nov 18 17:16:51 banner-session-46034 systemd: pam_unix(systemd-user:session): session opened for user git by (uid=0)
+Nov 18 17:17:01 banner-session-46034 CRON[1594]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 17:17:01 banner-session-46034 CRON[1594]: pam_unix(cron:session): session closed for user root
+Nov 18 17:17:10 banner-session-46034 sshd[1590]: Received disconnect from 10.0.3.1 port 45558:11: 
+Nov 18 17:17:10 banner-session-46034 sshd[1590]: Disconnected from user git 10.0.3.1 port 45558
+Nov 18 17:17:10 banner-session-46034 sshd[1573]: pam_unix(sshd:session): session closed for user git
+Nov 18 17:17:10 banner-session-46034 systemd-logind[164]: Session 1932 logged out. Waiting for processes to exit.
+Nov 18 17:17:10 banner-session-46034 systemd-logind[164]: Removed session 1932.
