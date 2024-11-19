@@ -1,0 +1,27 @@
+Nov 19 13:04:06 banner-session-46145 systemd-logind[164]: New seat seat0.
+Nov 19 13:04:09 banner-session-46145 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 19 13:04:09 banner-session-46145 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 13:04:17 banner-session-46145 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 13:04:17 banner-session-46145 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 19 13:04:17 banner-session-46145 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 13:04:29 banner-session-46145 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 19 13:04:29 banner-session-46145 usermod[764]: change user 'sshd' password
+Nov 19 13:04:29 banner-session-46145 chage[771]: changed password expiry for sshd
+Nov 19 13:04:32 banner-session-46145 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 19 13:04:32 banner-session-46145 sshd[1206]: Server listening on :: port 22.
+Nov 19 13:04:35 banner-session-46145 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 13:04:35 banner-session-46145 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 19 13:04:35 banner-session-46145 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 13:04:41 banner-session-46145 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 13:06:49 banner-session-46145 useradd[1557]: new group: name=moxa, GID=1001
+Nov 19 13:06:49 banner-session-46145 useradd[1557]: new user: name=moxa, UID=1001, GID=1001, home=/home/moxa, shell=/bin/bash, from=none
+Nov 19 13:06:49 banner-session-46145 usermod[1566]: change user 'moxa' password
+Nov 19 13:06:49 banner-session-46145 sshd[1573]: Accepted password for moxa from 10.0.3.1 port 38510 ssh2
+Nov 19 13:06:49 banner-session-46145 sshd[1573]: pam_unix(sshd:session): session opened for user moxa by (uid=0)
+Nov 19 13:06:49 banner-session-46145 systemd-logind[164]: New session 2051 of user moxa.
+Nov 19 13:06:49 banner-session-46145 systemd: pam_unix(systemd-user:session): session opened for user moxa by (uid=0)
+Nov 19 13:06:49 banner-session-46145 sshd[1590]: Received disconnect from 10.0.3.1 port 38510:11: 
+Nov 19 13:06:49 banner-session-46145 sshd[1590]: Disconnected from user moxa 10.0.3.1 port 38510
+Nov 19 13:06:49 banner-session-46145 sshd[1573]: pam_unix(sshd:session): session closed for user moxa
+Nov 19 13:06:49 banner-session-46145 systemd-logind[164]: Session 2051 logged out. Waiting for processes to exit.
+Nov 19 13:06:49 banner-session-46145 systemd-logind[164]: Removed session 2051.

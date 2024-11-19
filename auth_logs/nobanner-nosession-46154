@@ -1,0 +1,23 @@
+Nov 19 14:23:14 nobanner-nosession-46154 systemd-logind[164]: New seat seat0.
+Nov 19 14:23:18 nobanner-nosession-46154 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 19 14:23:18 nobanner-nosession-46154 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 14:23:25 nobanner-nosession-46154 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 14:23:25 nobanner-nosession-46154 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 19 14:23:25 nobanner-nosession-46154 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 14:23:37 nobanner-nosession-46154 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 19 14:23:37 nobanner-nosession-46154 usermod[764]: change user 'sshd' password
+Nov 19 14:23:37 nobanner-nosession-46154 chage[771]: changed password expiry for sshd
+Nov 19 14:23:40 nobanner-nosession-46154 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 19 14:23:40 nobanner-nosession-46154 sshd[1206]: Server listening on :: port 22.
+Nov 19 14:23:43 nobanner-nosession-46154 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 14:23:43 nobanner-nosession-46154 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 19 14:23:43 nobanner-nosession-46154 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 14:23:50 nobanner-nosession-46154 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 15:17:01 nobanner-nosession-46154 CRON[1553]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 15:17:01 nobanner-nosession-46154 CRON[1553]: pam_unix(cron:session): session closed for user root
+Nov 19 15:43:41 nobanner-nosession-46154 useradd[1558]: failed adding user 'root', data deleted
+Nov 19 15:43:41 nobanner-nosession-46154 usermod[1559]: change user 'root' password
+Nov 19 15:43:42 nobanner-nosession-46154 sshd[1566]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 19 15:43:44 nobanner-nosession-46154 sshd[1566]: Failed password for root from 10.0.3.1 port 38640 ssh2
+Nov 19 15:43:46 nobanner-nosession-46154 sshd[1566]: Received disconnect from 10.0.3.1 port 38640:11:  [preauth]
+Nov 19 15:43:46 nobanner-nosession-46154 sshd[1566]: Disconnected from authenticating user root 10.0.3.1 port 38640 [preauth]

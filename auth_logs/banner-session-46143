@@ -1,0 +1,29 @@
+Nov 19 12:03:10 banner-session-46143 systemd-logind[164]: New seat seat0.
+Nov 19 12:03:14 banner-session-46143 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 19 12:03:14 banner-session-46143 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 12:03:22 banner-session-46143 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 12:03:22 banner-session-46143 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 19 12:03:22 banner-session-46143 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 12:03:46 banner-session-46143 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 19 12:03:46 banner-session-46143 usermod[764]: change user 'sshd' password
+Nov 19 12:03:46 banner-session-46143 chage[771]: changed password expiry for sshd
+Nov 19 12:03:49 banner-session-46143 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 19 12:03:49 banner-session-46143 sshd[1206]: Server listening on :: port 22.
+Nov 19 12:03:51 banner-session-46143 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 12:03:51 banner-session-46143 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 19 12:03:51 banner-session-46143 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 12:03:58 banner-session-46143 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 12:17:01 banner-session-46143 CRON[1558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 12:17:01 banner-session-46143 CRON[1558]: pam_unix(cron:session): session closed for user root
+Nov 19 12:50:44 banner-session-46143 useradd[1564]: new group: name=admin, GID=1001
+Nov 19 12:50:44 banner-session-46143 useradd[1564]: new user: name=admin, UID=1001, GID=1001, home=/home/admin, shell=/bin/bash, from=none
+Nov 19 12:50:44 banner-session-46143 usermod[1573]: change user 'admin' password
+Nov 19 12:50:44 banner-session-46143 sshd[1580]: Accepted password for admin from 10.0.3.1 port 46362 ssh2
+Nov 19 12:50:44 banner-session-46143 sshd[1580]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Nov 19 12:50:44 banner-session-46143 systemd-logind[164]: New session 2047 of user admin.
+Nov 19 12:50:44 banner-session-46143 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Nov 19 12:50:45 banner-session-46143 sshd[1597]: Received disconnect from 10.0.3.1 port 46362:11: 
+Nov 19 12:50:45 banner-session-46143 sshd[1597]: Disconnected from user admin 10.0.3.1 port 46362
+Nov 19 12:50:45 banner-session-46143 sshd[1580]: pam_unix(sshd:session): session closed for user admin
+Nov 19 12:50:45 banner-session-46143 systemd-logind[164]: Session 2047 logged out. Waiting for processes to exit.
+Nov 19 12:50:45 banner-session-46143 systemd-logind[164]: Removed session 2047.

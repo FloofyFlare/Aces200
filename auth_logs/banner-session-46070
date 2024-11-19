@@ -1,0 +1,24 @@
+Nov 18 23:47:45 banner-session-46070 systemd-logind[164]: New seat seat0.
+Nov 18 23:47:49 banner-session-46070 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 23:47:49 banner-session-46070 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 23:47:57 banner-session-46070 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 23:47:57 banner-session-46070 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 23:47:57 banner-session-46070 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 23:48:19 banner-session-46070 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 23:48:19 banner-session-46070 usermod[764]: change user 'sshd' password
+Nov 18 23:48:20 banner-session-46070 chage[771]: changed password expiry for sshd
+Nov 18 23:48:23 banner-session-46070 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 23:48:23 banner-session-46070 sshd[1206]: Server listening on :: port 22.
+Nov 18 23:48:25 banner-session-46070 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 23:48:25 banner-session-46070 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 23:48:25 banner-session-46070 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 23:48:37 banner-session-46070 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 23:48:45 banner-session-46070 useradd[1557]: failed adding user 'ubuntu', data deleted
+Nov 18 23:48:45 banner-session-46070 usermod[1558]: change user 'ubuntu' password
+Nov 18 23:48:45 banner-session-46070 sshd[1565]: Accepted password for ubuntu from 10.0.3.1 port 39440 ssh2
+Nov 18 23:48:45 banner-session-46070 sshd[1565]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Nov 18 23:48:45 banner-session-46070 systemd-logind[164]: New session 1958 of user ubuntu.
+Nov 18 23:48:45 banner-session-46070 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Nov 18 23:48:51 banner-session-46070 sshd[1565]: pam_unix(sshd:session): session closed for user ubuntu
+Nov 18 23:48:51 banner-session-46070 systemd-logind[164]: Session 1958 logged out. Waiting for processes to exit.
+Nov 18 23:48:51 banner-session-46070 systemd-logind[164]: Removed session 1958.

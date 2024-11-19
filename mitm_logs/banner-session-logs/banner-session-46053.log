@@ -24,3 +24,27 @@ Started with the following options:
 2024-11-18 15:44:19.775 - [Info] Auto Access Enabled: true
 2024-11-18 15:44:19.775 - [Debug] [Init] Auto Access Theshold Achieved: false
 2024-11-18 15:44:19.798 - [Info] SSH man-in-the-middle server for 10.0.3.63 listening on 10.0.3.1:46053
+2024-11-18 15:45:08.130 - [Debug] [Connection] Attacker connected: 137.184.230.75 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-18 15:45:08.618 - [Debug] [Auth] Attacker 137.184.230.75 trying to authenticate with 'password'
+2024-11-18 15:45:08.619 - [Debug] [Auto Access] Attacker: 137.184.230.75, Threshold: 1, Attempts: 1
+2024-11-18 15:45:08.619 - [Debug] [Auto Access] Compromising the honeypot
+2024-11-18 15:45:08.620 - [Debug] [Auto Access] Adding the following credentials: 'ubuntu:qazxsw'
+2024-11-18 15:45:08.724 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2024-11-18 15:45:08.727 - [Debug] [Auth] Valid credentials - Password Authentication
+2024-11-18 15:45:08.733 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.63
+2024-11-18 15:45:08.861 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2024-11-18 15:45:09.152 - [Debug] [EXEC] Noninteractive mode attacker command: cd ~; chattr -ia .ssh; lockr -ia .ssh
+2024-11-18 15:45:09.671 - [Debug] [Connection] Attacker connected: 137.184.230.75 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-18 15:45:10.140 - [Debug] [Auth] Attacker 137.184.230.75 trying to authenticate with 'password'
+2024-11-18 15:45:10.141 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2024-11-18 15:45:10.142 - [Debug] [Auth] Attacker: 137.184.230.75 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-18 15:45:10.284 - [Debug] [Connection] Attacker closed the connection
+2024-11-18 15:45:10.356 - [Debug] [Connection] Attacker connected: 137.184.230.75 | Client Identification: SSH-2.0-libssh_0.9.6
+2024-11-18 15:45:10.907 - [Debug] [Auth] Attacker 137.184.230.75 trying to authenticate with 'password'
+2024-11-18 15:45:10.908 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2024-11-18 15:45:10.908 - [Debug] [Auth] Attacker: 137.184.230.75 has so far made 1 attempts. Remaining: 5 attempts
+2024-11-18 15:45:11.056 - [Debug] [Connection] Attacker closed the connection
+2024-11-18 15:45:11.200 - [Debug] [Connection] Attacker closed connection
+2024-11-18 15:45:11.208 - [Debug] [LXC] Container's OpenSSH server ended connection
+2024-11-18 15:45:11.209 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

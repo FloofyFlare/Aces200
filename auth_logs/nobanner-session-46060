@@ -1,0 +1,21 @@
+Nov 18 22:58:36 nobanner-session-46060 systemd-logind[165]: New seat seat0.
+Nov 18 22:58:40 nobanner-session-46060 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 22:58:40 nobanner-session-46060 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 22:58:45 nobanner-session-46060 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 22:58:45 nobanner-session-46060 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 22:58:45 nobanner-session-46060 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 22:58:58 nobanner-session-46060 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 22:58:58 nobanner-session-46060 usermod[764]: change user 'sshd' password
+Nov 18 22:58:58 nobanner-session-46060 chage[771]: changed password expiry for sshd
+Nov 18 22:59:01 nobanner-session-46060 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 22:59:01 nobanner-session-46060 sshd[1206]: Server listening on :: port 22.
+Nov 18 22:59:03 nobanner-session-46060 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 22:59:03 nobanner-session-46060 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 22:59:03 nobanner-session-46060 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 22:59:14 nobanner-session-46060 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 23:00:51 nobanner-session-46060 useradd[1551]: failed adding user 'root', data deleted
+Nov 18 23:00:51 nobanner-session-46060 usermod[1552]: change user 'root' password
+Nov 18 23:00:51 nobanner-session-46060 sshd[1559]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 18 23:00:52 nobanner-session-46060 sshd[1559]: Failed password for root from 10.0.3.1 port 35870 ssh2
+Nov 18 23:00:54 nobanner-session-46060 sshd[1559]: Received disconnect from 10.0.3.1 port 35870:11:  [preauth]
+Nov 18 23:00:54 nobanner-session-46060 sshd[1559]: Disconnected from authenticating user root 10.0.3.1 port 35870 [preauth]

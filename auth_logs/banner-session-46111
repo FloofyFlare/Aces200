@@ -1,0 +1,21 @@
+Nov 19 04:26:02 banner-session-46111 systemd-logind[164]: New seat seat0.
+Nov 19 04:26:05 banner-session-46111 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 19 04:26:05 banner-session-46111 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 04:26:12 banner-session-46111 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 04:26:12 banner-session-46111 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 19 04:26:12 banner-session-46111 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 04:26:27 banner-session-46111 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 19 04:26:28 banner-session-46111 usermod[764]: change user 'sshd' password
+Nov 19 04:26:28 banner-session-46111 chage[771]: changed password expiry for sshd
+Nov 19 04:26:30 banner-session-46111 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 19 04:26:30 banner-session-46111 sshd[1206]: Server listening on :: port 22.
+Nov 19 04:26:31 banner-session-46111 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 04:26:31 banner-session-46111 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 19 04:26:31 banner-session-46111 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 04:26:38 banner-session-46111 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 05:09:59 banner-session-46111 useradd[1563]: failed adding user 'root', data deleted
+Nov 19 05:09:59 banner-session-46111 usermod[1564]: change user 'root' password
+Nov 19 05:09:59 banner-session-46111 sshd[1571]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.3.1  user=root
+Nov 19 05:10:01 banner-session-46111 sshd[1571]: Failed password for root from 10.0.3.1 port 40846 ssh2
+Nov 19 05:10:02 banner-session-46111 sshd[1571]: Received disconnect from 10.0.3.1 port 40846:11:  [preauth]
+Nov 19 05:10:02 banner-session-46111 sshd[1571]: Disconnected from authenticating user root 10.0.3.1 port 40846 [preauth]

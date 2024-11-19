@@ -1,0 +1,27 @@
+Nov 18 23:51:27 nobanner-nosession-46072 systemd-logind[164]: New seat seat0.
+Nov 18 23:51:30 nobanner-nosession-46072 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 18 23:51:30 nobanner-nosession-46072 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 23:51:37 nobanner-nosession-46072 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 23:51:37 nobanner-nosession-46072 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 18 23:51:37 nobanner-nosession-46072 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 23:51:52 nobanner-nosession-46072 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 18 23:51:52 nobanner-nosession-46072 usermod[764]: change user 'sshd' password
+Nov 18 23:51:52 nobanner-nosession-46072 chage[771]: changed password expiry for sshd
+Nov 18 23:51:54 nobanner-nosession-46072 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 18 23:51:54 nobanner-nosession-46072 sshd[1206]: Server listening on :: port 22.
+Nov 18 23:51:56 nobanner-nosession-46072 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 23:51:57 nobanner-nosession-46072 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 18 23:51:57 nobanner-nosession-46072 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 18 23:52:06 nobanner-nosession-46072 sudo: pam_unix(sudo:session): session closed for user root
+Nov 18 23:52:51 nobanner-nosession-46072 useradd[1548]: new group: name=dev, GID=1001
+Nov 18 23:52:51 nobanner-nosession-46072 useradd[1548]: new user: name=dev, UID=1001, GID=1001, home=/home/dev, shell=/bin/bash, from=none
+Nov 18 23:52:51 nobanner-nosession-46072 usermod[1557]: change user 'dev' password
+Nov 18 23:52:51 nobanner-nosession-46072 sshd[1564]: Accepted password for dev from 10.0.3.1 port 60062 ssh2
+Nov 18 23:52:51 nobanner-nosession-46072 sshd[1564]: pam_unix(sshd:session): session opened for user dev by (uid=0)
+Nov 18 23:52:51 nobanner-nosession-46072 systemd-logind[164]: New session 1962 of user dev.
+Nov 18 23:52:51 nobanner-nosession-46072 systemd: pam_unix(systemd-user:session): session opened for user dev by (uid=0)
+Nov 18 23:52:54 nobanner-nosession-46072 sshd[1581]: Received disconnect from 10.0.3.1 port 60062:11: 
+Nov 18 23:52:54 nobanner-nosession-46072 sshd[1581]: Disconnected from user dev 10.0.3.1 port 60062
+Nov 18 23:52:54 nobanner-nosession-46072 sshd[1564]: pam_unix(sshd:session): session closed for user dev
+Nov 18 23:52:54 nobanner-nosession-46072 systemd-logind[164]: Session 1962 logged out. Waiting for processes to exit.
+Nov 18 23:52:54 nobanner-nosession-46072 systemd-logind[164]: Removed session 1962.

@@ -39,4 +39,4 @@ echo "Stopping and destroying the container" >> /home/student/container_logs/"$c
 # Call create_container.sh to create a new container
 echo "Creating a new container for" "$external_ip" >> /home/student/container_logs/"$container_name"
 
-sudo /home/student/create_container.sh "$external_ip"
+# sudo /home/student/create_container.sh "$external_ip"

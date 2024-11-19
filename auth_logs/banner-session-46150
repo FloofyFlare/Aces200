@@ -1,0 +1,35 @@
+Nov 19 14:12:20 banner-session-46150 systemd-logind[164]: New seat seat0.
+Nov 19 14:12:24 banner-session-46150 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 19 14:12:24 banner-session-46150 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 14:12:32 banner-session-46150 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 14:12:32 banner-session-46150 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 19 14:12:32 banner-session-46150 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 14:12:44 banner-session-46150 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 19 14:12:44 banner-session-46150 usermod[764]: change user 'sshd' password
+Nov 19 14:12:44 banner-session-46150 chage[771]: changed password expiry for sshd
+Nov 19 14:12:47 banner-session-46150 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 19 14:12:47 banner-session-46150 sshd[1206]: Server listening on :: port 22.
+Nov 19 14:12:49 banner-session-46150 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 14:12:49 banner-session-46150 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 19 14:12:49 banner-session-46150 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 14:13:00 banner-session-46150 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 14:14:57 banner-session-46150 useradd[1557]: new group: name=pi, GID=1001
+Nov 19 14:14:57 banner-session-46150 useradd[1557]: new user: name=pi, UID=1001, GID=1001, home=/home/pi, shell=/bin/bash, from=none
+Nov 19 14:14:57 banner-session-46150 usermod[1566]: change user 'pi' password
+Nov 19 14:14:58 banner-session-46150 sshd[1574]: Accepted password for pi from 10.0.3.1 port 36110 ssh2
+Nov 19 14:14:58 banner-session-46150 sshd[1573]: Accepted password for pi from 10.0.3.1 port 36104 ssh2
+Nov 19 14:14:58 banner-session-46150 sshd[1573]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Nov 19 14:14:58 banner-session-46150 sshd[1574]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Nov 19 14:14:58 banner-session-46150 systemd-logind[164]: New session 2058 of user pi.
+Nov 19 14:14:58 banner-session-46150 systemd-logind[164]: New session 2059 of user pi.
+Nov 19 14:14:58 banner-session-46150 systemd: pam_unix(systemd-user:session): session opened for user pi by (uid=0)
+Nov 19 14:14:58 banner-session-46150 sshd[1597]: Received disconnect from 10.0.3.1 port 36104:11: 
+Nov 19 14:14:58 banner-session-46150 sshd[1597]: Disconnected from user pi 10.0.3.1 port 36104
+Nov 19 14:14:58 banner-session-46150 sshd[1573]: pam_unix(sshd:session): session closed for user pi
+Nov 19 14:14:58 banner-session-46150 systemd-logind[164]: Session 2058 logged out. Waiting for processes to exit.
+Nov 19 14:14:58 banner-session-46150 sshd[1602]: Received disconnect from 10.0.3.1 port 36110:11: 
+Nov 19 14:14:58 banner-session-46150 sshd[1602]: Disconnected from user pi 10.0.3.1 port 36110
+Nov 19 14:14:58 banner-session-46150 systemd-logind[164]: Removed session 2058.
+Nov 19 14:14:58 banner-session-46150 sshd[1574]: pam_unix(sshd:session): session closed for user pi
+Nov 19 14:14:58 banner-session-46150 systemd-logind[164]: Session 2059 logged out. Waiting for processes to exit.
+Nov 19 14:14:58 banner-session-46150 systemd-logind[164]: Removed session 2059.

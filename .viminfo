@@ -15,7 +15,7 @@
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1731511481,,"wq"
+|2,0,1732032637,,"wq"
 :s
 |2,0,1731511137,,"s"
 :wi
@@ -99,36 +99,72 @@
 |3,0,36,0,1,0,1730840722,"1"
 
 # File marks:
-'0  106  0  ~/create_container.sh
-|4,48,106,0,1731511482,"~/create_container.sh"
-'1  16  51  ~/reboot.sh
-|4,49,16,51,1731511467,"~/reboot.sh"
-'2  107  72  ~/monitor.sh
-|4,50,107,72,1731511268,"~/monitor.sh"
-'3  1  0  ~/monitor_container.sh
-|4,51,1,0,1731511211,"~/monitor_container.sh"
-'4  132  5  ~/create_container.sh
-|4,52,132,5,1731511191,"~/create_container.sh"
-'5  132  5  ~/create_container.sh
-|4,53,132,5,1731511191,"~/create_container.sh"
-'6  130  80  ~/create_container.sh
-|4,54,130,80,1731511150,"~/create_container.sh"
-'7  130  80  ~/create_container.sh
-|4,55,130,80,1731511150,"~/create_container.sh"
-'8  130  80  ~/create_container.sh
-|4,56,130,80,1731511150,"~/create_container.sh"
+'0  42  1  ~/destroy_container.sh
+|4,48,42,1,1732032637,"~/destroy_container.sh"
+'1  10  0  ~/reboot.sh
+|4,49,10,0,1732032510,"~/reboot.sh"
+'2  106  0  ~/create_container.sh
+|4,50,106,0,1731511482,"~/create_container.sh"
+'3  16  51  ~/reboot.sh
+|4,51,16,51,1731511467,"~/reboot.sh"
+'4  16  51  ~/reboot.sh
+|4,52,16,51,1731511467,"~/reboot.sh"
+'5  107  72  ~/monitor.sh
+|4,53,107,72,1731511268,"~/monitor.sh"
+'6  1  0  ~/monitor_container.sh
+|4,54,1,0,1731511211,"~/monitor_container.sh"
+'7  132  5  ~/create_container.sh
+|4,55,132,5,1731511191,"~/create_container.sh"
+'8  132  5  ~/create_container.sh
+|4,56,132,5,1731511191,"~/create_container.sh"
 '9  130  80  ~/create_container.sh
 |4,57,130,80,1731511150,"~/create_container.sh"
 
 # Jumplist (newest first):
+-'  42  1  ~/destroy_container.sh
+|4,39,42,1,1732032637,"~/destroy_container.sh"
+-'  1  0  ~/destroy_container.sh
+|4,39,1,0,1732032632,"~/destroy_container.sh"
+-'  10  0  ~/reboot.sh
+|4,39,10,0,1732032510,"~/reboot.sh"
+-'  10  0  ~/reboot.sh
+|4,39,10,0,1732032510,"~/reboot.sh"
+-'  1  0  ~/reboot.sh
+|4,39,1,0,1732032502,"~/reboot.sh"
+-'  1  0  ~/reboot.sh
+|4,39,1,0,1732032502,"~/reboot.sh"
 -'  106  0  ~/create_container.sh
 |4,39,106,0,1731511482,"~/create_container.sh"
+-'  106  0  ~/create_container.sh
+|4,39,106,0,1731511482,"~/create_container.sh"
+-'  106  0  ~/create_container.sh
+|4,39,106,0,1731511482,"~/create_container.sh"
+-'  106  0  ~/create_container.sh
+|4,39,106,0,1731511482,"~/create_container.sh"
+-'  1  0  ~/create_container.sh
+|4,39,1,0,1731511476,"~/create_container.sh"
+-'  1  0  ~/create_container.sh
+|4,39,1,0,1731511476,"~/create_container.sh"
+-'  1  0  ~/create_container.sh
+|4,39,1,0,1731511476,"~/create_container.sh"
 -'  1  0  ~/create_container.sh
 |4,39,1,0,1731511476,"~/create_container.sh"
 -'  16  51  ~/reboot.sh
 |4,39,16,51,1731511467,"~/reboot.sh"
 -'  16  51  ~/reboot.sh
 |4,39,16,51,1731511467,"~/reboot.sh"
+-'  16  51  ~/reboot.sh
+|4,39,16,51,1731511467,"~/reboot.sh"
+-'  16  51  ~/reboot.sh
+|4,39,16,51,1731511467,"~/reboot.sh"
+-'  16  51  ~/reboot.sh
+|4,39,16,51,1731511467,"~/reboot.sh"
+-'  16  51  ~/reboot.sh
+|4,39,16,51,1731511467,"~/reboot.sh"
+-'  1  0  ~/reboot.sh
+|4,39,1,0,1731511357,"~/reboot.sh"
+-'  1  0  ~/reboot.sh
+|4,39,1,0,1731511357,"~/reboot.sh"
 -'  1  0  ~/reboot.sh
 |4,39,1,0,1731511357,"~/reboot.sh"
 -'  1  0  ~/reboot.sh
@@ -141,6 +177,54 @@
 |4,39,107,72,1731511268,"~/monitor.sh"
 -'  107  72  ~/monitor.sh
 |4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  107  72  ~/monitor.sh
+|4,39,107,72,1731511268,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
+-'  1  0  ~/monitor.sh
+|4,39,1,0,1731511224,"~/monitor.sh"
 -'  1  0  ~/monitor.sh
 |4,39,1,0,1731511224,"~/monitor.sh"
 -'  1  0  ~/monitor.sh
@@ -165,6 +249,54 @@
 |4,39,1,0,1731511211,"~/monitor_container.sh"
 -'  1  0  ~/monitor_container.sh
 |4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
+-'  1  0  ~/monitor_container.sh
+|4,39,1,0,1731511211,"~/monitor_container.sh"
 -'  132  5  ~/create_container.sh
 |4,39,132,5,1731511191,"~/create_container.sh"
 -'  132  5  ~/create_container.sh
@@ -183,146 +315,135 @@
 |4,39,132,5,1731511191,"~/create_container.sh"
 -'  132  5  ~/create_container.sh
 |4,39,132,5,1731511191,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511155,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  130  80  ~/create_container.sh
-|4,39,130,80,1731511150,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511129,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  130  79  ~/create_container.sh
-|4,39,130,79,1731511101,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  1  0  ~/create_container.sh
-|4,39,1,0,1731511023,"~/create_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
--'  42  0  ~/destroy_container.sh
-|4,39,42,0,1731511016,"~/destroy_container.sh"
+-'  132  5  ~/create_container.sh
+|4,39,132,5,1731511191,"~/create_container.sh"
+-'  132  5  ~/create_container.sh
+|4,39,132,5,1731511191,"~/create_container.sh"
+-'  132  5  ~/create_container.sh
+|4,39,132,5,1731511191,"~/create_container.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/destroy_container.sh
+	*	1732032637	0
+	"	42	1
+	^	42	2
+	.	42	1
+	+	1	0
+	+	1	87
+	+	1	28
+	+	1	40
+	+	1	51
+	+	1	0
+	+	1	156
+	+	1	4
+	+	1	19
+	+	1	22
+	+	1	2
+	+	1	16
+	+	1	43
+	+	1	47
+	+	1	0
+	+	1	22
+	+	1	0
+	+	1	26
+	+	1	81
+	+	1	56
+	+	1	3
+	+	1	81
+	+	1	0
+	+	1	4
+	+	1	7
+	+	1	47
+	+	1	0
+	+	1	90
+	+	1	100
+	+	1	18
+	+	1	81
+	+	1	75
+	+	1	80
+	+	1	81
+	+	1	13
+	+	1	10
+	+	1	99
+	+	1	0
+	+	1	34
+	+	1	13
+	+	1	68
+	+	1	0
+	+	1	36
+	+	1	20
+	+	1	29
+	+	1	0
+	+	1	22
+	+	1	0
+	+	1	11
+	+	39	53
+	+	26	156
+	+	39	52
+	+	30	51
+	+	14	0
+	+	15	66
+	+	13	16
+	+	15	64
+	+	16	28
+	+	15	89
+	+	39	52
+	+	42	0
+	+	39	53
+	+	38	1
+	+	39	52
+	+	20	98
+	+	39	53
+	+	20	4
+	+	39	52
+	+	42	4
+	+	17	78
+	+	20	0
+	+	17	78
+	+	27	79
+	+	35	93
+	+	40	100
+	+	42	1
+	i	15	0
+
+> ~/reboot.sh
+	*	1732032510	0
+	"	10	0
+	^	10	1
+	.	10	1
+	+	14	32
+	+	7	33
+	+	7	0
+	+	7	53
+	+	14	4
+	+	4	9
+	+	5	0
+	+	7	0
+	+	7	17
+	+	7	1
+	+	10	0
+	+	9	45
+	+	10	0
+	+	14	1
+	+	7	1
+	+	12	47
+	+	14	0
+	+	7	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	8	0
+	+	10	0
+	+	13	46
+	+	10	4
+	+	13	51
+	+	14	47
+	+	13	51
+	+	14	52
+	+	16	51
+	+	10	1
 
 > ~/create_container.sh
 	*	1731511481	0
@@ -429,43 +550,6 @@
 	+	130	80
 	+	106	0
 	+	132	6
-
-> ~/reboot.sh
-	*	1731511464	0
-	"	16	51
-	^	16	52
-	.	16	51
-	+	14	32
-	+	7	33
-	+	7	0
-	+	7	53
-	+	14	4
-	+	4	9
-	+	5	0
-	+	7	0
-	+	7	17
-	+	7	1
-	+	10	0
-	+	9	45
-	+	10	0
-	+	14	1
-	+	7	1
-	+	12	47
-	+	14	0
-	+	7	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	8	0
-	+	10	0
-	+	13	46
-	+	10	4
-	+	13	51
-	+	14	47
-	+	13	51
-	+	14	52
-	+	16	51
 
 > ~/monitor.sh
 	*	1731511266	0
@@ -576,89 +660,6 @@
 > ~/monitor_container.sh
 	*	1731511210	0
 	"	1	0
-
-> ~/destroy_container.sh
-	*	1731511015	0
-	"	42	0
-	^	42	0
-	.	42	0
-	+	1	0
-	+	1	87
-	+	1	28
-	+	1	40
-	+	1	51
-	+	1	0
-	+	1	156
-	+	1	4
-	+	1	19
-	+	1	22
-	+	1	2
-	+	1	16
-	+	1	43
-	+	1	47
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	26
-	+	1	81
-	+	1	56
-	+	1	3
-	+	1	81
-	+	1	0
-	+	1	4
-	+	1	7
-	+	1	47
-	+	1	0
-	+	1	90
-	+	1	100
-	+	1	18
-	+	1	81
-	+	1	75
-	+	1	80
-	+	1	81
-	+	1	13
-	+	1	10
-	+	1	99
-	+	1	0
-	+	1	34
-	+	1	13
-	+	1	68
-	+	1	0
-	+	1	36
-	+	1	20
-	+	1	29
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	11
-	+	39	53
-	+	26	156
-	+	39	52
-	+	30	51
-	+	14	0
-	+	15	66
-	+	13	16
-	+	15	64
-	+	16	28
-	+	15	89
-	+	39	52
-	+	42	0
-	+	39	53
-	+	38	1
-	+	39	52
-	+	20	98
-	+	39	53
-	+	20	4
-	+	39	52
-	+	42	4
-	+	17	78
-	+	20	0
-	+	17	78
-	+	27	79
-	+	35	93
-	+	40	100
-	+	42	0
-	i	15	0
 
 > ~/creat_container.sh
 	*	1731361388	0

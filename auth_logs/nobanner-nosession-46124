@@ -1,0 +1,25 @@
+Nov 19 08:13:43 nobanner-nosession-46124 systemd-logind[165]: New seat seat0.
+Nov 19 08:13:46 nobanner-nosession-46124 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 19 08:13:46 nobanner-nosession-46124 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 08:13:53 nobanner-nosession-46124 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 08:13:53 nobanner-nosession-46124 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 19 08:13:53 nobanner-nosession-46124 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 08:14:05 nobanner-nosession-46124 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 19 08:14:05 nobanner-nosession-46124 usermod[764]: change user 'sshd' password
+Nov 19 08:14:05 nobanner-nosession-46124 chage[771]: changed password expiry for sshd
+Nov 19 08:14:08 nobanner-nosession-46124 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 19 08:14:08 nobanner-nosession-46124 sshd[1206]: Server listening on :: port 22.
+Nov 19 08:14:11 nobanner-nosession-46124 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 08:14:11 nobanner-nosession-46124 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 19 08:14:11 nobanner-nosession-46124 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 08:14:20 nobanner-nosession-46124 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 08:14:27 nobanner-nosession-46124 useradd[1548]: new group: name=reza, GID=1001
+Nov 19 08:14:27 nobanner-nosession-46124 useradd[1548]: new user: name=reza, UID=1001, GID=1001, home=/home/reza, shell=/bin/bash, from=none
+Nov 19 08:14:27 nobanner-nosession-46124 usermod[1557]: change user 'reza' password
+Nov 19 08:14:28 nobanner-nosession-46124 sshd[1564]: Accepted password for reza from 10.0.3.1 port 37042 ssh2
+Nov 19 08:14:28 nobanner-nosession-46124 sshd[1564]: pam_unix(sshd:session): session opened for user reza by (uid=0)
+Nov 19 08:14:28 nobanner-nosession-46124 systemd-logind[165]: New session 2019 of user reza.
+Nov 19 08:14:28 nobanner-nosession-46124 systemd: pam_unix(systemd-user:session): session opened for user reza by (uid=0)
+Nov 19 08:14:34 nobanner-nosession-46124 sshd[1564]: pam_unix(sshd:session): session closed for user reza
+Nov 19 08:14:34 nobanner-nosession-46124 systemd-logind[165]: Session 2019 logged out. Waiting for processes to exit.
+Nov 19 08:14:34 nobanner-nosession-46124 systemd-logind[165]: Removed session 2019.

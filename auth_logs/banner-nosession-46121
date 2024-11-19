@@ -1,0 +1,29 @@
+Nov 19 06:57:42 banner-nosession-46121 systemd-logind[164]: New seat seat0.
+Nov 19 06:57:46 banner-nosession-46121 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Nov 19 06:57:46 banner-nosession-46121 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 06:57:52 banner-nosession-46121 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 06:57:52 banner-nosession-46121 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server -y
+Nov 19 06:57:52 banner-nosession-46121 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 06:58:08 banner-nosession-46121 useradd[756]: new user: name=sshd, UID=106, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov 19 06:58:08 banner-nosession-46121 usermod[764]: change user 'sshd' password
+Nov 19 06:58:08 banner-nosession-46121 chage[771]: changed password expiry for sshd
+Nov 19 06:58:10 banner-nosession-46121 sshd[1206]: Server listening on 0.0.0.0 port 22.
+Nov 19 06:58:10 banner-nosession-46121 sshd[1206]: Server listening on :: port 22.
+Nov 19 06:58:13 banner-nosession-46121 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 06:58:13 banner-nosession-46121 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Nov 19 06:58:13 banner-nosession-46121 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 19 06:58:21 banner-nosession-46121 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 07:17:01 banner-nosession-46121 CRON[1561]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 07:17:01 banner-nosession-46121 CRON[1561]: pam_unix(cron:session): session closed for user root
+Nov 19 08:08:45 banner-nosession-46121 useradd[1567]: new group: name=ts3server, GID=1001
+Nov 19 08:08:45 banner-nosession-46121 useradd[1567]: new user: name=ts3server, UID=1001, GID=1001, home=/home/ts3server, shell=/bin/bash, from=none
+Nov 19 08:08:45 banner-nosession-46121 usermod[1576]: change user 'ts3server' password
+Nov 19 08:08:46 banner-nosession-46121 sshd[1583]: Accepted password for ts3server from 10.0.3.1 port 56512 ssh2
+Nov 19 08:08:46 banner-nosession-46121 sshd[1583]: pam_unix(sshd:session): session opened for user ts3server by (uid=0)
+Nov 19 08:08:46 banner-nosession-46121 systemd-logind[164]: New session 2014 of user ts3server.
+Nov 19 08:08:46 banner-nosession-46121 systemd: pam_unix(systemd-user:session): session opened for user ts3server by (uid=0)
+Nov 19 08:08:48 banner-nosession-46121 sshd[1600]: Received disconnect from 10.0.3.1 port 56512:11: 
+Nov 19 08:08:48 banner-nosession-46121 sshd[1600]: Disconnected from user ts3server 10.0.3.1 port 56512
+Nov 19 08:08:48 banner-nosession-46121 sshd[1583]: pam_unix(sshd:session): session closed for user ts3server
+Nov 19 08:08:48 banner-nosession-46121 systemd-logind[164]: Session 2014 logged out. Waiting for processes to exit.
+Nov 19 08:08:48 banner-nosession-46121 systemd-logind[164]: Removed session 2014.
